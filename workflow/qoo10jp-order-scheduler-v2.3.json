@@ -1,0 +1,170 @@
+{
+  "name": "qoo10jp-order-scheduler-v2.3",
+  "nodes": [
+    {
+      "parameters": {
+        "rule": {
+          "interval": [
+            {
+              "field": "cronExpression", 
+              "expression": "*/5 * * * *"
+            }
+          ]
+        }
+      },
+      "name": "Every 5 Minutes",
+      "type": "n8n-nodes-base.cron",
+      "typeVersion": 1,
+      "position": [300, 400],
+      "id": "76056aee-148b-4ac3-9f52-f2aa6a4296ba"
+    },
+    {
+      "parameters": {
+        "operation": "getAll",
+        "tableId": "sales_platform_accounts_qoo10jp",
+        "filterType": "manual",
+        "matchType": "allFilters",
+        "filters": {
+          "conditions": [
+            {
+              "keyName": "certification_key",
+              "condition": "neq",
+              "keyValue": ""
+            },
+            {
+              "keyName": "is_active",
+              "condition": "eq",
+              "keyValue": "true"
+            }
+          ]
+        }
+      },
+      "name": "Get Active Accounts",
+      "type": "n8n-nodes-base.supabase",
+      "typeVersion": 1,
+      "position": [500, 400],
+      "id": "fd2e0cf1-3d20-4e57-a217-781285907a26",
+      "credentials": {
+        "supabaseApi": {
+          "id": "2decYS56WYHYUPWi",
+          "name": "Supabase account-acsell"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "string": [
+            {
+              "value1": "={{ $json.length }}",
+              "operation": "isNotEmpty"
+            }
+          ]
+        }
+      },
+      "name": "Check If Accounts Exist",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 1,
+      "position": [700, 400],
+      "id": "b074e4bc-43fc-489f-a0cd-92006852e3d8"
+    },
+    {
+      "parameters": {
+        "options": {}
+      },
+      "name": "Split Each Account",
+      "type": "n8n-nodes-base.splitInBatches",
+      "typeVersion": 3,
+      "position": [900, 300],
+      "id": "a46c7916-15f8-43b3-9d2a-0b7cd3c0e6d2"
+    },
+    {
+      "parameters": {
+        "operation": "publish",
+        "channel": "qoo10jp_order_collection",
+        "messageData": "={{ JSON.stringify({ account_id: $json.id, certification_key: $json.certification_key, account_name: $json.account_name, timestamp: new Date().toISOString() }) }}"
+      },
+      "type": "@fancyheat/n8n-nodes-redis-enhanced.redisEnhanced",
+      "typeVersion": 1,
+      "position": [1100, 300],
+      "id": "e54f6ae5-c0f2-4ab8-97e1-52cef9e0d7be",
+      "name": "Redis Enhanced",
+      "credentials": {
+        "redis": {
+          "id": "zE1Y2AlnzqmYnUPT",
+          "name": "redis_connection"
+        }
+      }
+    },
+    {
+      "parameters": {},
+      "name": "No Active Accounts",
+      "type": "n8n-nodes-base.noOp",
+      "typeVersion": 1,
+      "position": [900, 500],
+      "id": "f978f19c-32e0-4cda-869d-232e94da1bd7"
+    }
+  ],
+  "pinData": {},
+  "connections": {
+    "Every 5 Minutes": {
+      "main": [
+        [
+          {
+            "node": "Get Active Accounts",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Get Active Accounts": {
+      "main": [
+        [
+          {
+            "node": "Check If Accounts Exist",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Check If Accounts Exist": {
+      "main": [
+        [
+          {
+            "node": "Split Each Account",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "No Active Accounts",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Split Each Account": {
+      "main": [
+        [
+          {
+            "node": "Redis Enhanced",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": false,
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "meta": {
+    "templateCredsSetupCompleted": true,
+    "instanceId": "f250376847468ef71913716e149635733b4b8efaa1e3a4a13a2fff8384a6074a"
+  }
+}

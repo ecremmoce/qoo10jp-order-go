@@ -1,0 +1,21 @@
+{
+  "mcpServers": {
+    "n8n-workflow": {
+      "command": "npx",
+      "args": ["@n8nkor/n8n-workflow-mcp"],
+      "env": {
+        "N8N_BASE_URL": "https://ec.ddns.net",
+        "N8N_API_KEY": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxYTY3ZTQ1ZS1lZTk5LTQ2MDMtYTBjYy02NTU0YTJmMGJhM2QiLCJpc3MiOiJuOG4iLCJhdWQiOiJwdWJsaWMtYXBpIiwiaWF0IjoxNzQ5OTM1NTQ1fQ.4blaWC6Dl9hmv5dkFd2aKQvD0Gnj7cXCOQEmp4RAaU8"
+      }
+    },
+    "supabase": {
+      "command": "npx",
+      "args": ["@modelcontextprotocol/server-supabase"],
+      "env": {
+        "SUPABASE_URL": "your_supabase_url",
+        "SUPABASE_ANON_KEY": "your_supabase_anon_key"
+      }
+    }
+  }
+}
+

@@ -1,0 +1,167 @@
+{
+  "name": "qoo10jp-order-scheduler-v2.1",
+  "nodes": [
+    {
+      "parameters": {
+        "rule": {
+          "interval": [
+            {
+              "field": "cronExpression", 
+              "expression": "*/5 * * * *"
+            }
+          ]
+        }
+      },
+      "name": "Every 5 Minutes",
+      "type": "n8n-nodes-base.cron",
+      "typeVersion": 1,
+      "position": [300, 400],
+      "id": "c17003a6-e60f-4abe-a345-2b90bdd3f7f4"
+    },
+    {
+      "parameters": {
+        "operation": "getAll",
+        "tableId": "sales_platform_accounts_qoo10jp",
+        "filters": {
+          "conditions": [
+            {
+              "keyName": "certification_key",
+              "condition": "isNotNull"
+            },
+            {
+              "keyName": "is_active",
+              "condition": "equals",
+              "keyValue": true
+            }
+          ]
+        }
+      },
+      "name": "Get Active Accounts",
+      "type": "n8n-nodes-base.supabase",
+      "typeVersion": 1,
+      "position": [500, 400],
+      "id": "12985c10-e5cd-4d1c-80fc-369a6a49e81e",
+      "credentials": {
+        "supabaseApi": {
+          "id": "2decYS56WYHYUPWi",
+          "name": "Supabase account-acsell"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "string": [
+            {
+              "value1": "={{ $json.length }}",
+              "operation": "isNotEmpty"
+            }
+          ]
+        }
+      },
+      "name": "Check If Accounts Exist",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 1,
+      "position": [700, 400],
+      "id": "459443bc-a105-4a4d-9f3f-32ff915ed227"
+    },
+    {
+      "parameters": {
+        "options": {}
+      },
+      "name": "Split Each Account",
+      "type": "n8n-nodes-base.splitInBatches",
+      "typeVersion": 3,
+      "position": [900, 300],
+      "id": "6e25b2d4-01d5-4f8a-b3d8-c53f7b3c33df"
+    },
+    {
+      "parameters": {
+        "operation": "publish",
+        "channel": "qoo10jp_order_collection",
+        "messageData": "={{ JSON.stringify({ account_id: $json.id, certification_key: $json.certification_key, account_name: $json.account_name, timestamp: new Date().toISOString() }) }}"
+      },
+      "type": "@fancyheat/n8n-nodes-redis-enhanced.redisEnhanced",
+      "typeVersion": 1,
+      "position": [1100, 300],
+      "id": "71fb16fb-7db0-4758-b351-aa219245188a",
+      "name": "Redis Enhanced",
+      "credentials": {
+        "redis": {
+          "id": "zE1Y2AlnzqmYnUPT",
+          "name": "redis_connection"
+        }
+      }
+    },
+    {
+      "parameters": {},
+      "name": "No Active Accounts",
+      "type": "n8n-nodes-base.noOp",
+      "typeVersion": 1,
+      "position": [900, 500],
+      "id": "09e3890d-0e20-4716-bca4-e23496fc9650"
+    }
+  ],
+  "pinData": {},
+  "connections": {
+    "Every 5 Minutes": {
+      "main": [
+        [
+          {
+            "node": "Get Active Accounts",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Get Active Accounts": {
+      "main": [
+        [
+          {
+            "node": "Check If Accounts Exist",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Check If Accounts Exist": {
+      "main": [
+        [
+          {
+            "node": "Split Each Account",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "No Active Accounts",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Split Each Account": {
+      "main": [
+        [
+          {
+            "node": "Redis Enhanced",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": false,
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "meta": {
+    "templateCredsSetupCompleted": true,
+    "instanceId": "f250376847468ef71913716e149635733b4b8efaa1e3a4a13a2fff8384a6074a"
+  }
+}

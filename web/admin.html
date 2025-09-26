@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Qoo10JP Order Collector - Admin Panel</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            height: 100vh;
+            margin: 0;
+            padding: 10px;
+            overflow: hidden;
+        }
+        
+        .container {
+            max-width: 2000px;
+            width: 98%;
+            height: calc(100vh - 20px);
+            margin: 0 auto;
+            background: white;
+            border-radius: 16px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 20px 30px;
+            text-align: center;
+            flex-shrink: 0;
+        }
+        
+        .header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+        
+        .header p {
+            opacity: 0.9;
+            font-size: 1.1rem;
+        }
+        
+        .content {
+            padding: 20px 40px;
+            display: grid;
+            grid-template-columns: 1fr 1.5fr;
+            gap: 40px;
+            flex: 1;
+            overflow: hidden;
+        }
+        
+        .left-panel {
+            overflow-y: auto;
+        }
+        
+        .right-panel {
+            background: #f8f9fa;
+            border-radius: 12px;
+            padding: 20px;
+            border-left: 4px solid #667eea;
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+        }
+        
+        .section {
+            margin-bottom: 40px;
+        }
+        
+        .section h2 {
+            color: #333;
+            margin-bottom: 20px;
+            font-size: 1.5rem;
+            border-bottom: 2px solid #667eea;
+            padding-bottom: 10px;
+        }
+        
+        .controls {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin-bottom: 30px;
+        }
+        
+        .btn {
+            padding: 15px 25px;
+            border: none;
+            border-radius: 8px;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: inline-block;
+            text-align: center;
+            color: white;
+        }
+        
+        .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+        }
+        
+        .btn-primary { background: #667eea; }
+        .btn-success { background: #28a745; }
+        .btn-danger { background: #dc3545; }
+        .btn-info { background: #17a2b8; }
+        .btn-warning { background: #ffc107; color: #333; }
+        
+        .status-card {
+            background: #f8f9fa;
+            border-radius: 12px;
+            padding: 25px;
+            margin: 20px 0;
+            border-left: 4px solid #667eea;
+        }
+        
+        .status-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+            gap: 12px;
+        }
+        
+        .status-item {
+            text-align: center;
+            padding: 15px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        .status-label {
+            font-size: 0.9rem;
+            color: #666;
+            margin-bottom: 5px;
+        }
+        
+        .status-value {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #333;
+        }
+        
+        .log-container {
+            background: #1e1e1e;
+            color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            font-family: 'Courier New', monospace;
+            height: calc(100vh - 300px);
+            overflow-y: auto;
+            margin-top: 20px;
+            font-size: 0.9rem;
+            line-height: 1.4;
+        }
+        
+        .log-entry {
+            padding: 2px 0;
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+        }
+        
+        .log-entry:last-child {
+            border-bottom: none;
+        }
+        
+        .log-timestamp {
+            color: #888;
+            font-size: 0.8rem;
+        }
+        
+        .log-success { color: #4CAF50; }
+        .log-error { color: #f44336; }
+        .log-warning { color: #ff9800; }
+        .log-info { color: #2196F3; }
+        
+        .loading {
+            opacity: 0.6;
+            pointer-events: none;
+        }
+        
+        .alert {
+            padding: 15px;
+            border-radius: 8px;
+            margin: 15px 0;
+            font-weight: 500;
+        }
+        
+        .alert-success { background: #d4edda; color: #155724; border: 1px solid #c3e6cb; }
+        .alert-error { background: #f8d7da; color: #721c24; border: 1px solid #f5c6cb; }
+        .alert-info { background: #d1ecf1; color: #0c5460; border: 1px solid #bee5eb; }
+        
+        @media (max-width: 768px) {
+            .controls {
+                grid-template-columns: 1fr;
+            }
+            
+            .header h1 {
+                font-size: 2rem;
+            }
+            
+            .content {
+                padding: 20px;
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+            
+            .log-container {
+                height: 300px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🚀 Qoo10JP Order Collector</h1>
+            <p>Worker Management Dashboard</p>
+        </div>
+        
+        <div class="content">
+            <!-- Left Panel - Controls -->
+            <div class="left-panel">
+                <!-- Worker Controls -->
+                <div class="section">
+                    <h2>⚙️ Worker Controls</h2>
+                    <div class="controls">
+                        <button class="btn btn-success" onclick="startWorker()">▶️ Start Worker</button>
+                        <button class="btn btn-danger" onclick="stopWorker()">⏹️ Stop Worker</button>
+                        <button class="btn btn-info" onclick="getStatus()">📊 Refresh Status</button>
+                        <button class="btn btn-warning" onclick="restartWorker()">🔄 Restart Worker</button>
+                    </div>
+                </div>
+                
+                <div class="section">
+                    <h3>⚙️ Worker Settings</h3>
+                    <div style="display: flex; gap: 10px; align-items: center; margin-bottom: 15px;">
+                        <label for="workerCount">Worker Count:</label>
+                        <input type="number" id="workerCount" min="1" max="20" value="3" style="width: 80px; padding: 5px; border: 1px solid #ddd; border-radius: 4px;">
+                        <button onclick="updateWorkerCount()" class="btn btn-primary" style="padding: 5px 15px;">Update</button>
+                    </div>
+                </div>
+                
+                <!-- System Status -->
+                <div class="section">
+                    <h2>📈 System Status</h2>
+                    <div class="status-card">
+                        <div class="status-grid">
+                            <div class="status-item">
+                                <div class="status-label">Application</div>
+                                <div class="status-value" id="app-status">🔍 Checking...</div>
+                            </div>
+                            <div class="status-item">
+                                <div class="status-label">Worker Status</div>
+                                <div class="status-value" id="worker-status">🔍 Checking...</div>
+                            </div>
+                            <div class="status-item">
+                                <div class="status-label">Active Workers</div>
+                                <div class="status-value" id="worker-count">-</div>
+                            </div>
+                            <div class="status-item">
+                                <div class="status-label">Max Workers</div>
+                                <div class="status-value" id="max-workers">-</div>
+                            </div>
+                            <div class="status-item">
+                                <div class="status-label">Queue Length</div>
+                                <div class="status-value" id="queue-length">-</div>
+                            </div>
+                            <div class="status-item">
+                                <div class="status-label">Last Execution</div>
+                                <div class="status-value" id="last-execution">-</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Quick Actions -->
+                <div class="section">
+                    <h2>🔗 Quick Links</h2>
+                    <div class="controls">
+                        <a href="http://localhost:8080/api/v1/health" target="_blank" class="btn btn-primary">🏥 Health Check</a>
+                        <a href="http://localhost:8080/api/v1/scheduler/status" target="_blank" class="btn btn-info">📋 Raw Status JSON</a>
+                        <button class="btn btn-warning" onclick="testQueue()">🧪 Test Queue</button>
+                        <button class="btn btn-primary" onclick="openN8N()">🔄 Open n8n</button>
+                    </div>
+                </div>
+                
+                <!-- Messages -->
+                <div id="messages"></div>
+            </div>
+            
+            <!-- Right Panel - Logs -->
+            <div class="right-panel">
+                <h2>📝 Real-time Activity Log</h2>
+                <div class="log-container" id="activity-log">
+                    <div class="log-entry log-success">
+                        <span class="log-timestamp">[INIT]</span> 🚀 Admin panel loaded
+                    </div>
+                    <div class="log-entry log-info">
+                        <span class="log-timestamp">[READY]</span> 📊 Ready to manage workers...
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const API_BASE = 'http://localhost:8080/api/v1';
+        
+        // Utility functions
+        function log(message, type = 'info') {
+            const logContainer = document.getElementById('activity-log');
+            const timestamp = new Date().toLocaleTimeString();
+            const typeClass = `log-${type}`;
+            
+            const logEntry = document.createElement('div');
+            logEntry.className = `log-entry ${typeClass}`;
+            logEntry.innerHTML = `<span class="log-timestamp">[${timestamp}]</span> ${message}`;
+            
+            logContainer.appendChild(logEntry);
+            logContainer.scrollTop = logContainer.scrollHeight;
+            
+            // Keep only last 100 entries to prevent memory issues
+            while (logContainer.children.length > 100) {
+                logContainer.removeChild(logContainer.firstChild);
+            }
+        }
+        
+        function showMessage(message, type = 'info') {
+            const messagesContainer = document.getElementById('messages');
+            const alertClass = type === 'error' ? 'alert-error' : type === 'success' ? 'alert-success' : 'alert-info';
+            
+            const alertDiv = document.createElement('div');
+            alertDiv.className = `alert ${alertClass}`;
+            alertDiv.textContent = message;
+            
+            messagesContainer.appendChild(alertDiv);
+            
+            setTimeout(() => {
+                alertDiv.remove();
+            }, 5000);
+        }
+        
+        // API functions
+        async function apiCall(endpoint, method = 'GET', body = null) {
+            try {
+                log(`🌐 API Call: ${method} ${endpoint}`);
+                const options = { 
+                    method,
+                    headers: {
+                        'Content-Type': 'application/json'
+                    }
+                };
+                
+                if (body && method !== 'GET') {
+                    options.body = JSON.stringify(body);
+                }
+                
+                const response = await fetch(`${API_BASE}${endpoint}`, options);
+                
+                log(`📡 Response Status: ${response.status} ${response.statusText}`);
+                
+                const data = await response.json();
+                
+                if (response.ok) {
+                    log(`✅ Success Response: ${JSON.stringify(data)}`, 'success');
+                    return { success: true, data };
+                } else {
+                    log(`❌ Error Response: ${JSON.stringify(data)}`, 'error');
+                    return { success: false, error: data.error || data.message || 'Unknown error' };
+                }
+            } catch (error) {
+                log(`💥 Network Error: ${error.message}`, 'error');
+                return { success: false, error: error.message };
+            }
+        }
+        
+        // Worker control functions
+        async function startWorker() {
+            log('🚀 Starting worker...');
+            const result = await apiCall('/scheduler/worker/start', 'POST');
+            
+            if (result.success) {
+                showMessage('Worker started successfully!', 'success');
+                log('✅ Worker started successfully', 'success');
+                await getStatus();
+            } else {
+                showMessage(`Failed to start worker: ${result.error}`, 'error');
+                log(`❌ Start failed: ${result.error}`, 'error');
+            }
+        }
+        
+        async function stopWorker() {
+            log('⏹️ Stopping worker...');
+            showMessage('Stopping worker... Please wait.', 'info');
+            
+            const result = await apiCall('/scheduler/worker/stop', 'POST');
+            
+            if (result.success) {
+                showMessage('Worker stopped successfully!', 'success');
+                log('✅ Worker stopped successfully');
+                
+                // Wait a moment then refresh status
+                setTimeout(async () => {
+                    await getStatus();
+                }, 2000);
+            } else {
+                showMessage(`Failed to stop worker: ${result.error}`, 'error');
+                log(`❌ Stop failed: ${result.error}`);
+            }
+        }
+        
+        async function restartWorker() {
+            log('🔄 Restarting worker...');
+            await stopWorker();
+            setTimeout(async () => {
+                await startWorker();
+            }, 2000);
+        }
+
+        async function updateWorkerCount() {
+            const count = parseInt(document.getElementById('workerCount').value);
+            if (count < 1 || count > 20) {
+                log('❌ Worker count must be between 1 and 20', 'error');
+                return;
+            }
+
+            log(`⚙️ Updating worker count to ${count}...`, 'info');
+            
+            const result = await apiCall('/scheduler/worker/count', 'POST', { count: count });
+            if (result.success) {
+                log(`✅ Worker count updated to ${count}`, 'success');
+                await getStatus(); // Refresh status
+            } else {
+                log(`❌ Failed to update worker count: ${result.error}`, 'error');
+            }
+        }
+        
+        async function getStatus() {
+            log('📊 Fetching status...');
+            
+            // Check application health
+            const healthResult = await apiCall('/health');
+            if (healthResult.success) {
+                document.getElementById('app-status').textContent = '✅ Running';
+                document.getElementById('app-status').style.color = '#28a745';
+            } else {
+                document.getElementById('app-status').textContent = '❌ Down';
+                document.getElementById('app-status').style.color = '#dc3545';
+                return;
+            }
+            
+            // Check worker status
+            const statusResult = await apiCall('/scheduler/status');
+            if (statusResult.success) {
+                const status = statusResult.data;
+                
+                document.getElementById('worker-status').textContent = status.is_running ? '✅ Running' : '⏹️ Stopped';
+                document.getElementById('worker-status').style.color = status.is_running ? '#28a745' : '#dc3545';
+                
+                document.getElementById('worker-count').textContent = status.worker_count || '0';
+                document.getElementById('workerCount').value = status.configured_workers || 3;
+                document.getElementById('max-workers').textContent = status.configured_workers || '3';
+                document.getElementById('queue-length').textContent = status.queue_length || '0';
+                
+                if (status.last_execution_time) {
+                    const lastExec = new Date(status.last_execution_time).toLocaleString();
+                    document.getElementById('last-execution').textContent = lastExec;
+                } else {
+                    document.getElementById('last-execution').textContent = 'Never';
+                }
+                
+                showMessage('Status updated successfully!', 'success');
+            } else {
+                showMessage(`Failed to get status: ${statusResult.error}`, 'error');
+            }
+        }
+        
+        async function testQueue() {
+            log('🧪 Testing queue...');
+            showMessage('Queue test feature coming soon!', 'info');
+        }
+        
+        function openN8N() {
+            log('🔄 Opening n8n...');
+            window.open('https://n01.acsell.ai', '_blank');
+        }
+        
+        // Initialize
+        document.addEventListener('DOMContentLoaded', async () => {
+            log('🔄 Initializing dashboard...', 'info');
+            await getStatus();
+            
+            // Auto-refresh every 30 seconds
+            setInterval(getStatus, 30000);
+            log('⏰ Auto-refresh enabled (30s interval)', 'info');
+        });
+    </script>
+</body>
+</html>

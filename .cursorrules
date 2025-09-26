@@ -1,0 +1,21 @@
+# Cursor MCP Configuration for n8n Integration
+
+## MCP Servers Configuration
+# Add MCP servers for n8n workflow management
+
+# n8n Workflow MCP Server
+mcp:
+  servers:
+    n8n:
+      command: "npx"
+      args: ["@n8nkor/n8n-workflow-mcp"]
+      env:
+        N8N_BASE_URL: "https://ec.ddns.net"
+        N8N_API_KEY: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxYTY3ZTQ1ZS1lZTk5LTQ2MDMtYTBjYy02NTU0YTJmMGJhM2QiLCJpc3MiOiJuOG4iLCJhdWQiOiJwdWJsaWMtYXBpIiwiaWF0IjoxNzQ5OTM1NTQ1fQ.4blaWC6Dl9hmv5dkFd2aKQvD0Gnj7cXCOQEmp4RAaU8"
+
+# Project specific rules
+- Always use Korean for responses
+- Focus on n8n workflow automation
+- Use existing Redis connection (zE1Y2AInzqmYnUPT)
+- Prefer PowerShell commands for Windows environment
+
