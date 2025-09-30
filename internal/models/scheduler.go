@@ -18,6 +18,14 @@ type OrderJob struct {
 	EndDatetime   time.Time `json:"end_datetime"`   // Full datetime for precise filtering
 }
 
+// N8NOrderMessage represents the message from n8n workflow
+type N8NOrderMessage struct {
+	AccountID        string `json:"account_id"`
+	CertificationKey string `json:"certification_key"`
+	AccountName      string `json:"account_name"`
+	Timestamp        string `json:"timestamp"`
+}
+
 // JobResult represents the result of a processed job
 type JobResult struct {
 	JobID       string    `json:"job_id"`
@@ -47,4 +55,15 @@ func OrderJobFromJSON(data string) (*OrderJob, error) {
 	var job OrderJob
 	err := json.Unmarshal([]byte(data), &job)
 	return &job, err
+}
+
+func N8NOrderMessageFromJSON(data string) (*N8NOrderMessage, error) {
+	var msg N8NOrderMessage
+	err := json.Unmarshal([]byte(data), &msg)
+	return &msg, err
+}
+
+func (msg *N8NOrderMessage) ToJSON() (string, error) {
+	data, err := json.Marshal(msg)
+	return string(data), err
 }

@@ -65,6 +65,12 @@ QOO10JP_BASE_URL=https://api.qoo10.jp
 # Server Configuration
 PORT=8080
 GIN_MODE=debug
+
+# Worker Configuration
+WORKER_COUNT=3
+
+# Webhook Configuration
+ORDER_COLLECTION_WEBHOOK_URL=https://n01.acsell.ai/webhook-test/qoo10-order-collect-message
 ```
 
 ### 2. 의존성 설치
@@ -402,6 +408,55 @@ WORKDIR /root/
 COPY --from=builder /app/main .
 CMD ["./main"]
 ```
+
+## 웹훅 기능
+
+### 개요
+워커가 주문 수집을 시작하고 완료할 때 자동으로 웹훅을 호출하여 외부 시스템에 알림을 보냅니다.
+
+### 설정
+환경변수 `ORDER_COLLECTION_WEBHOOK_URL`에 웹훅 URL을 설정하세요:
+
+```bash
+ORDER_COLLECTION_WEBHOOK_URL=https://n01.acsell.ai/webhook-test/qoo10-order-collect-message
+```
+
+### 웹훅 메시지 형식
+
+#### 1. 주문 수집 시작
+```
+GET https://your-webhook-url?message=qoo10주문수집시작%20(계정:%20계정명)
+```
+
+#### 2. 주문 수집 완료
+```
+GET https://your-webhook-url?message=qoo10주문수집완료%20(계정:%20계정명,%205/10개%20저장)
+```
+
+#### 3. 주문 수집 실패
+```
+GET https://your-webhook-url?message=qoo10주문수집실패%20(계정:%20계정명,%20오류:%20API%20연결%20실패)
+```
+
+### 웹훅 테스트
+
+웹훅 기능을 테스트하려면:
+
+```bash
+# Windows
+test-webhook.bat
+
+# 또는 직접 실행
+go run scripts/test-webhook.go
+```
+
+### 웹훅 기능 특징
+
+- **비동기 호출**: 워커 처리 속도에 영향을 주지 않음
+- **재시도 로직**: 최대 2회 재시도
+- **오류 처리**: 웹훅 실패 시 로그 기록
+- **URL 인코딩**: 한글 메시지 자동 인코딩
+- **타임아웃**: 10초 타임아웃 설정
 
 ## 라이센스
 

@@ -173,6 +173,10 @@ func (s *SchedulerService) GetQueueStatus() (int64, error) {
 	return s.redisClient.GetQueueLength(OrderJobQueue)
 }
 
+func (s *SchedulerService) GetRedisClient() *redis.Client {
+	return s.redisClient
+}
+
 // ScheduleNextJob creates the next job based on the last execution time
 func (s *SchedulerService) ScheduleNextJob() error {
 	state, err := s.GetSchedulerState()

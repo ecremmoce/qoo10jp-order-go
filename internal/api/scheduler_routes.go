@@ -18,6 +18,9 @@ func SetupSchedulerRoutes(router *gin.Engine, schedulerService *services.Schedul
 		api.POST("/worker/count", setWorkerCount(workerService))
 		api.POST("/schedule-next", scheduleNext(schedulerService))
 	}
+	
+	// Test endpoint for Redis queue
+	router.POST("/api/test-redis-push", testRedisPush(schedulerService))
 }
 
 func createJob(schedulerService *services.SchedulerService) gin.HandlerFunc {
@@ -119,6 +122,31 @@ func scheduleNext(schedulerService *services.SchedulerService) gin.HandlerFunc {
 		}
 
 		c.JSON(http.StatusOK, gin.H{"message": "Next job scheduled successfully"})
+	}
+}
+
+func testRedisPush(schedulerService *services.SchedulerService) gin.HandlerFunc {
+	return func(c *gin.Context) {
+		var req struct {
+			Message string `json:"message" binding:"required"`
+		}
+		
+		if err := c.ShouldBindJSON(&req); err != nil {
+			c.JSON(http.StatusBadRequest, gin.H{"error": err.Error()})
+			return
+		}
+
+		// Push message to the worker queue
+		queueName := "qoo10jp_order_queue"
+		if err := schedulerService.GetRedisClient().PushToQueue(queueName, req.Message); err != nil {
+			c.JSON(http.StatusInternalServerError, gin.H{"error": err.Error()})
+			return
+		}
+
+		c.JSON(http.StatusOK, gin.H{
+			"message": "Test message pushed to Redis queue successfully",
+			"queue":   queueName,
+		})
 	}
 }
 

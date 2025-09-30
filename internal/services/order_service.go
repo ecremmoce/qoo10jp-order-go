@@ -55,8 +55,8 @@ func (s *OrderService) CollectOrders(startDate, endDate time.Time) error {
 			return fmt.Errorf("failed to fetch orders: %v", err)
 		}
 
-		if orderResp.ResultCode != "0" {
-			return fmt.Errorf("API error: %s", orderResp.ResultMessage)
+		if orderResp.ResultCode != 0 {
+			return fmt.Errorf("API error: %s", orderResp.ResultMsg)
 		}
 
 		if len(orderResp.ResultObject) == 0 {
@@ -152,34 +152,32 @@ func (s *OrderService) convertQoo10JPOrder(qooOrder qoo10jp.Order) (*models.Orde
 	}
 
 	order := &models.Order{
-		ID:              fmt.Sprintf("qoo10jp_%s", qooOrder.OrderNo),
-		OrderNo:         qooOrder.OrderNo,
+		ID:              fmt.Sprintf("qoo10jp_%d", qooOrder.OrderNo),
+		OrderNo:         fmt.Sprintf("%d", qooOrder.OrderNo),
 		OrderDate:       orderDate,
-		CustomerID:      qooOrder.BuyerID,
-		CustomerName:    qooOrder.BuyerName,
+		CustomerID:      qooOrder.SellerID,
+		CustomerName:    qooOrder.Buyer,
 		CustomerEmail:   qooOrder.BuyerEmail,
-		CustomerPhone:   qooOrder.BuyerPhone,
-		TotalAmount:     qooOrder.TotalAmount,
-		PaymentStatus:   qooOrder.PaymentStatus,
-		OrderStatus:     qooOrder.OrderStatus,
-		ShippingAddress: qooOrder.ShipAddress,
+		CustomerPhone:   qooOrder.BuyerMobile,
+		TotalAmount:     qooOrder.Total,
+		PaymentStatus:   qooOrder.PaymentMethod,
+		OrderStatus:     qooOrder.ShippingStatus,
+		ShippingAddress: qooOrder.ShippingAddress,
 		CreatedAt:       time.Now(),
 		UpdatedAt:       time.Now(),
 	}
 
-	// Convert order items
-	for _, qooItem := range qooOrder.OrderItems {
-		item := models.OrderItem{
-			ID:          fmt.Sprintf("%s_%s", order.ID, qooItem.ItemCode),
-			OrderID:     order.ID,
-			ProductID:   qooItem.ItemCode,
-			ProductName: qooItem.ItemName,
-			Quantity:    qooItem.Quantity,
-			Price:       qooItem.ItemPrice,
-			TotalPrice:  qooItem.TotalPrice,
-		}
-		order.Items = append(order.Items, item)
+	// Create single order item from the order data
+	item := models.OrderItem{
+		ID:          fmt.Sprintf("%s_%s", order.ID, qooOrder.ItemNo),
+		OrderID:     order.ID,
+		ProductID:   qooOrder.ItemNo,
+		ProductName: qooOrder.ItemTitle,
+		Quantity:    qooOrder.OrderQty,
+		Price:       qooOrder.OrderPrice,
+		TotalPrice:  qooOrder.Total,
 	}
+	order.Items = append(order.Items, item)
 
 	return order, nil
 }

@@ -21,12 +21,15 @@ import (
 
 func main() {
 	// Load environment variables
-	if err := godotenv.Load(); err != nil {
-		log.Println("No .env file found")
+	if err := godotenv.Load("env"); err != nil {
+		log.Printf("No env file found: %v", err)
 	}
 
 	// Load configuration
 	cfg := config.Load()
+
+	// 웹훅 URL 확인 로그
+	log.Printf("🔗 로드된 웹훅 URL: %s", cfg.Webhook.OrderCollectionURL)
 
 	// Initialize Redis
 	redisClient, err := redis.NewClient(cfg.Redis)
@@ -43,9 +46,9 @@ func main() {
 
 	// Initialize services
 	orderService := services.NewOrderService(supabaseClient, redisClient)
-	qoo10jpOrderService := services.NewQoo10JPOrderService(supabaseClient, redisClient)
+	qoo10jpOrderService := services.NewQoo10JPOrderService(cfg, supabaseClient, redisClient)
 	schedulerService := services.NewSchedulerService(redisClient, supabaseClient, orderService)
-	workerService := services.NewWorkerService(schedulerService, cfg.Worker.Count)
+	workerService := services.NewWorkerService(cfg, schedulerService, cfg.Worker.Count)
 
 	// Auto-start worker service
 	log.Println("Auto-starting worker service...")
@@ -64,21 +67,15 @@ func main() {
 	api.SetupQoo10JPRoutes(router, qoo10jpOrderService)
 	api.SetupSchedulerRoutes(router, schedulerService, workerService)
 
-	// Start server
-	port := os.Getenv("PORT")
-	if port == "" {
-		port = "8080"
-	}
-
 	// Create HTTP server
 	srv := &http.Server{
-		Addr:    ":" + port,
+		Addr:    ":" + cfg.Server.Port,
 		Handler: router,
 	}
 
 	// Start server in goroutine
 	go func() {
-		log.Printf("Server starting on port %s", port)
+		log.Printf("Server starting on port %s", cfg.Server.Port)
 		if err := srv.ListenAndServe(); err != nil && err != http.ErrServerClosed {
 			log.Fatalf("Failed to start server: %v", err)
 		}

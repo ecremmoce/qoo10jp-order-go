@@ -40,8 +40,8 @@ type Qoo10JPOrder struct {
 	// 원본 데이터
 	RawData interface{} `json:"raw_data" db:"raw_data"`
 
-	// 주문 상품들
-	Items []Qoo10JPOrderItem `json:"items"`
+	// 주문 상품들 (별도 테이블에서 로드)
+	Items []Qoo10JPOrderItem `json:"-" db:"-"`
 
 	// 시스템 정보
 	SyncedAt  time.Time `json:"synced_at" db:"synced_at"`
@@ -95,6 +95,8 @@ type Qoo10JPOrderStats struct {
 	CompletedOrders int    `json:"completed_orders"`
 	CancelledOrders int    `json:"cancelled_orders"`
 }
+
+
 
 
 

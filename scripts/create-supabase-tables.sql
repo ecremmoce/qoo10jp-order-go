@@ -85,3 +85,14 @@ $$;
 GRANT EXECUTE ON FUNCTION get_recent_jobs TO authenticated;
 GRANT EXECUTE ON FUNCTION get_recent_jobs TO anon;
 
+
+
+
+
+
+
+
+
+
+
+

@@ -4,7 +4,9 @@ import (
 	"crypto/hmac"
 	"crypto/sha256"
 	"encoding/hex"
+	"encoding/json"
 	"fmt"
+	"io"
 	"net/http"
 	"net/url"
 	"sort"
@@ -20,23 +22,51 @@ type Client struct {
 }
 
 type OrderResponse struct {
-	ResultCode    string  `json:"ResultCode"`
-	ResultMessage string  `json:"ResultMessage"`
+	ResultCode    int     `json:"ResultCode"`
+	ResultMsg     string  `json:"ResultMsg"`
 	ResultObject  []Order `json:"ResultObject"`
 }
 
 type Order struct {
-	OrderNo       string    `json:"OrderNo"`
-	OrderDate     string    `json:"OrderDate"`
-	BuyerID       string    `json:"BuyerID"`
-	BuyerName     string    `json:"BuyerName"`
-	BuyerEmail    string    `json:"BuyerEmail"`
-	BuyerPhone    string    `json:"BuyerPhone"`
-	TotalAmount   float64   `json:"TotalAmount"`
-	PaymentStatus string    `json:"PaymentStatus"`
-	OrderStatus   string    `json:"OrderStatus"`
-	ShipAddress   string    `json:"ShipAddress"`
-	OrderItems    []OrderItem `json:"OrderItems"`
+	OrderNo             int64   `json:"OrderNo"`
+	PackNo              int64   `json:"PackNo"`
+	OrderDate           string  `json:"OrderDate"`
+	PaymentDate         string  `json:"PaymentDate"`
+	ShippingDate        string  `json:"ShippingDate"`
+	DeliveredDate       string  `json:"DeliveredDate"`
+	ShippingStatus      string  `json:"ShippingStatus"`
+	SellerID            string  `json:"SellerID"`
+	Buyer               string  `json:"Buyer"`
+	BuyerKana           string  `json:"BuyerKana"`
+	BuyerTel            string  `json:"BuyerTel"`
+	BuyerMobile         string  `json:"BuyerMobile"`
+	BuyerEmail          string  `json:"BuyerEmail"`
+	ItemNo              string  `json:"ItemNo"`
+	SellerItemCode      string  `json:"SellerItemCode"`
+	ItemTitle           string  `json:"ItemTitle"`
+	Option              string  `json:"Option"`
+	OptionCode          string  `json:"OptionCode"`
+	OrderPrice          float64 `json:"OrderPrice"`
+	OrderQty            int     `json:"OrderQty"`
+	Discount            float64 `json:"Discount"`
+	Total               float64 `json:"Total"`
+	Receiver            string  `json:"Receiver"`
+	ReceiverKana        string  `json:"ReceiverKana"`
+	ZipCode             string  `json:"ZipCode"`
+	ShippingAddress     string  `json:"ShippingAddress"`
+	Address1            string  `json:"Address1"`
+	Address2            string  `json:"Address2"`
+	ReceiverTel         string  `json:"ReceiverTel"`
+	ReceiverMobile      string  `json:"ReceiverMobile"`
+	PaymentMethod       string  `json:"PaymentMethod"`
+	SellerDiscount      float64 `json:"SellerDiscount"`
+	Currency            string  `json:"Currency"`
+	ShippingRate        float64 `json:"ShippingRate"`
+	DeliveryCompany     string  `json:"DeliveryCompany"`
+	PackingNo           string  `json:"PackingNo"`
+	SellerDeliveryNo    string  `json:"SellerDeliveryNo"`
+	SettlePrice         float64 `json:"SettlePrice"`
+	TrackingNo          string  `json:"TrackingNo"`
 }
 
 type OrderItem struct {
@@ -57,64 +87,58 @@ func NewClient(apiID, certificationKey, baseURL string) *Client {
 }
 
 func (c *Client) GetOrders(startDate, endDate time.Time, page, pageSize int) (*OrderResponse, error) {
-	// 테스트용 Mock 데이터 반환
-	mockOrders := []Order{
-		{
-			OrderNo:       "QOO10JP-2024-001",
-			OrderDate:     startDate.Format("2006-01-02 15:04:05"),
-			BuyerID:       "test_buyer_001",
-			BuyerName:     "테스트 구매자",
-			BuyerEmail:    "test@example.com",
-			BuyerPhone:    "090-1234-5678",
-			TotalAmount:   15000.0,
-			PaymentStatus: "completed",
-			OrderStatus:   "delivered",
-			ShipAddress:   "도쿄도 시부야구 테스트 주소 1-1-1",
-			OrderItems: []OrderItem{
-				{
-					ItemCode:   "ITEM001",
-					ItemName:   "테스트 상품 1",
-					Quantity:   2,
-					ItemPrice:  5000.0,
-					TotalPrice: 10000.0,
-				},
-				{
-					ItemCode:   "ITEM002",
-					ItemName:   "테스트 상품 2",
-					Quantity:   1,
-					ItemPrice:  5000.0,
-					TotalPrice: 5000.0,
-				},
-			},
-		},
-		{
-			OrderNo:       "QOO10JP-2024-002",
-			OrderDate:     startDate.AddDate(0, 0, 1).Format("2006-01-02 15:04:05"),
-			BuyerID:       "test_buyer_002",
-			BuyerName:     "테스트 구매자 2",
-			BuyerEmail:    "test2@example.com",
-			BuyerPhone:    "090-9876-5432",
-			TotalAmount:   25000.0,
-			PaymentStatus: "completed",
-			OrderStatus:   "processing",
-			ShipAddress:   "오사카부 오사카시 테스트 주소 2-2-2",
-			OrderItems: []OrderItem{
-				{
-					ItemCode:   "ITEM003",
-					ItemName:   "테스트 상품 3",
-					Quantity:   1,
-					ItemPrice:  25000.0,
-					TotalPrice: 25000.0,
-				},
-			},
-		},
+	// API 파라미터 설정 (Postman 예시 기반)
+	params := map[string]string{
+		"QAPIVersion":      "1.0",
+		"ShippingStatus":   "5", // 이미지에서 확인한 값
+		"SearchStartDate":  startDate.Format("20060102"),
+		"SearchEndDate":    endDate.Format("20060102"),
+		"SearchCondition":  "2", // 주문일자 기준
+		"v":                "1.0",
+		"returnType":       "json",
+		"method":           "ShippingBasic.GetShippingInfo_v3",
+		"key":              c.certificationKey,
 	}
 
-	return &OrderResponse{
-		ResultCode:    "0",
-		ResultMessage: "Success",
-		ResultObject:  mockOrders,
-	}, nil
+	// API URL 생성 (올바른 엔드포인트 사용)
+	apiURL := c.buildURL("/GMKT.INC.Front.QAPIService/ebayjapan.qapi", params)
+	
+	// 디버깅용 로그
+	fmt.Printf("🔗 API URL: %s\n", apiURL)
+	fmt.Printf("📋 API 파라미터: %+v\n", params)
+
+	// HTTP 요청
+	resp, err := c.httpClient.Get(apiURL)
+	if err != nil {
+		return nil, fmt.Errorf("API 요청 실패: %v", err)
+	}
+	defer resp.Body.Close()
+
+	fmt.Printf("📡 API 응답 상태: %d %s\n", resp.StatusCode, resp.Status)
+
+	if resp.StatusCode != http.StatusOK {
+		// 응답 본문 읽어서 오류 내용 확인
+		body := make([]byte, 1024)
+		n, _ := resp.Body.Read(body)
+		fmt.Printf("❌ API 오류 응답: %s\n", string(body[:n]))
+		return nil, fmt.Errorf("API 응답 오류: %d - %s", resp.StatusCode, string(body[:n]))
+	}
+
+	// 응답 본문을 먼저 읽어서 로그로 출력
+	body, err := io.ReadAll(resp.Body)
+	if err != nil {
+		return nil, fmt.Errorf("응답 읽기 실패: %v", err)
+	}
+	
+	fmt.Printf("📄 API 응답 내용: %s\n", string(body))
+
+	// 응답 파싱
+	var orderResponse OrderResponse
+	if err := json.Unmarshal(body, &orderResponse); err != nil {
+		return nil, fmt.Errorf("응답 파싱 실패: %v", err)
+	}
+
+	return &orderResponse, nil
 }
 
 func (c *Client) generateSignature(params map[string]string) string {

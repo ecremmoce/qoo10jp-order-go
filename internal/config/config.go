@@ -12,6 +12,7 @@ type Config struct {
 	N8N      N8NConfig
 	Qoo10JP  Qoo10JPConfig
 	Worker   WorkerConfig
+	Webhook  WebhookConfig
 }
 
 type ServerConfig struct {
@@ -48,6 +49,10 @@ type WorkerConfig struct {
 	Count int
 }
 
+type WebhookConfig struct {
+	OrderCollectionURL string
+}
+
 func Load() *Config {
 	return &Config{
 		Server: ServerConfig{
@@ -77,6 +82,9 @@ func Load() *Config {
 		},
 		Worker: WorkerConfig{
 			Count: getEnvInt("WORKER_COUNT", 3),
+		},
+		Webhook: WebhookConfig{
+			OrderCollectionURL: getEnv("ORDER_COLLECTION_WEBHOOK_URL", ""),
 		},
 	}
 }

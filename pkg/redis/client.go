@@ -70,8 +70,8 @@ func (c *Client) PushToQueue(queueName string, data interface{}) error {
 }
 
 func (c *Client) PopFromQueue(queueName string) (string, error) {
-	// Use 3 second timeout instead of blocking forever
-	result, err := c.rdb.BRPop(c.ctx, 3*time.Second, queueName).Result()
+	// Use 10 second timeout for better efficiency
+	result, err := c.rdb.BRPop(c.ctx, 10*time.Second, queueName).Result()
 	if err != nil {
 		// Check if it's a timeout (no data available)
 		if err.Error() == "redis: nil" {

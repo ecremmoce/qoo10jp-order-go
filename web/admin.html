@@ -233,52 +233,60 @@
             <div class="left-panel">
                 <!-- Worker Controls -->
                 <div class="section">
-                    <h2>⚙️ Worker Controls</h2>
+                    <h2>⚙️ 워커 제어</h2>
                     <div class="controls">
-                        <button class="btn btn-success" onclick="startWorker()">▶️ Start Worker</button>
-                        <button class="btn btn-danger" onclick="stopWorker()">⏹️ Stop Worker</button>
-                        <button class="btn btn-info" onclick="getStatus()">📊 Refresh Status</button>
-                        <button class="btn btn-warning" onclick="restartWorker()">🔄 Restart Worker</button>
+                        <button class="btn btn-success" onclick="startWorker()">▶️ 워커 시작</button>
+                        <button class="btn btn-danger" onclick="stopWorker()">⏹️ 워커 중지</button>
+                        <button class="btn btn-info" onclick="getStatus()">📊 상태 새로고침</button>
+                        <button class="btn btn-warning" onclick="restartWorker()">🔄 워커 재시작</button>
                     </div>
                 </div>
                 
                 <div class="section">
-                    <h3>⚙️ Worker Settings</h3>
+                    <h3>⚙️ 워커 설정</h3>
                     <div style="display: flex; gap: 10px; align-items: center; margin-bottom: 15px;">
-                        <label for="workerCount">Worker Count:</label>
+                        <label for="workerCount">워커 개수:</label>
                         <input type="number" id="workerCount" min="1" max="20" value="3" style="width: 80px; padding: 5px; border: 1px solid #ddd; border-radius: 4px;">
-                        <button onclick="updateWorkerCount()" class="btn btn-primary" style="padding: 5px 15px;">Update</button>
+                        <button onclick="updateWorkerCount()" class="btn btn-primary" style="padding: 5px 15px;">업데이트</button>
                     </div>
                 </div>
                 
                 <!-- System Status -->
                 <div class="section">
-                    <h2>📈 System Status</h2>
+                    <h2>📈 시스템 상태</h2>
                     <div class="status-card">
                         <div class="status-grid">
                             <div class="status-item">
-                                <div class="status-label">Application</div>
-                                <div class="status-value" id="app-status">🔍 Checking...</div>
+                                <div class="status-label">워커 상태</div>
+                                <div class="status-value" id="worker-status">🔍 확인중...</div>
                             </div>
                             <div class="status-item">
-                                <div class="status-label">Worker Status</div>
-                                <div class="status-value" id="worker-status">🔍 Checking...</div>
-                            </div>
-                            <div class="status-item">
-                                <div class="status-label">Active Workers</div>
+                                <div class="status-label">활성 워커</div>
                                 <div class="status-value" id="worker-count">-</div>
                             </div>
                             <div class="status-item">
-                                <div class="status-label">Max Workers</div>
+                                <div class="status-label">최대 워커</div>
                                 <div class="status-value" id="max-workers">-</div>
                             </div>
                             <div class="status-item">
-                                <div class="status-label">Queue Length</div>
+                                <div class="status-label">대기열 길이</div>
                                 <div class="status-value" id="queue-length">-</div>
                             </div>
                             <div class="status-item">
-                                <div class="status-label">Last Execution</div>
+                                <div class="status-label">마지막 실행</div>
                                 <div class="status-value" id="last-execution">-</div>
+                            </div>
+                            <div class="status-item">
+                                <div class="status-label">오늘 처리</div>
+                                <div class="status-value" id="today-processed">-</div>
+                            </div>
+                            <div class="status-item">
+                                <div class="status-label">다음 실행</div>
+                                <div class="status-value" id="next-execution">-</div>
+                            </div>
+                            <div class="status-item">
+                                <div class="status-label">최근 오류</div>
+                                <div class="status-value" id="recent-errors">-</div>
                             </div>
                         </div>
                     </div>
@@ -286,12 +294,13 @@
                 
                 <!-- Quick Actions -->
                 <div class="section">
-                    <h2>🔗 Quick Links</h2>
+                    <h2>🔗 빠른 링크</h2>
                     <div class="controls">
-                        <a href="http://localhost:8080/api/v1/health" target="_blank" class="btn btn-primary">🏥 Health Check</a>
-                        <a href="http://localhost:8080/api/v1/scheduler/status" target="_blank" class="btn btn-info">📋 Raw Status JSON</a>
-                        <button class="btn btn-warning" onclick="testQueue()">🧪 Test Queue</button>
-                        <button class="btn btn-primary" onclick="openN8N()">🔄 Open n8n</button>
+                        <a href="http://localhost:8080/api/v1/health" target="_blank" class="btn btn-primary">🏥 상태 확인</a>
+                        <a href="http://localhost:8080/api/v1/scheduler/status" target="_blank" class="btn btn-info">📋 상태 JSON</a>
+                        <button class="btn btn-warning" onclick="testQueue()">🧪 큐 테스트</button>
+                        <button class="btn btn-success" onclick="testOrderCollection()">📦 주문 수집 테스트</button>
+                        <button class="btn btn-primary" onclick="openN8N()">🔄 n8n 열기</button>
                     </div>
                 </div>
                 
@@ -301,7 +310,7 @@
             
             <!-- Right Panel - Logs -->
             <div class="right-panel">
-                <h2>📝 Real-time Activity Log</h2>
+                    <h2>📝 실시간 활동 로그</h2>
                 <div class="log-container" id="activity-log">
                     <div class="log-entry log-success">
                         <span class="log-timestamp">[INIT]</span> 🚀 Admin panel loaded
@@ -447,52 +456,147 @@
         }
         
         async function getStatus() {
-            log('📊 Fetching status...');
-            
-            // Check application health
-            const healthResult = await apiCall('/health');
-            if (healthResult.success) {
-                document.getElementById('app-status').textContent = '✅ Running';
-                document.getElementById('app-status').style.color = '#28a745';
-            } else {
-                document.getElementById('app-status').textContent = '❌ Down';
-                document.getElementById('app-status').style.color = '#dc3545';
-                return;
-            }
+            log('📊 상태 정보 업데이트...');
             
             // Check worker status
             const statusResult = await apiCall('/scheduler/status');
             if (statusResult.success) {
                 const status = statusResult.data;
                 
-                document.getElementById('worker-status').textContent = status.is_running ? '✅ Running' : '⏹️ Stopped';
+                // 워커 상태
+                document.getElementById('worker-status').textContent = status.is_running ? '✅ 실행중' : '⏹️ 중지됨';
                 document.getElementById('worker-status').style.color = status.is_running ? '#28a745' : '#dc3545';
                 
-                document.getElementById('worker-count').textContent = status.worker_count || '0';
+                // 워커 개수
+                document.getElementById('worker-count').textContent = `${status.worker_count || 0}개`;
                 document.getElementById('workerCount').value = status.configured_workers || 3;
-                document.getElementById('max-workers').textContent = status.configured_workers || '3';
-                document.getElementById('queue-length').textContent = status.queue_length || '0';
+                document.getElementById('max-workers').textContent = `${status.configured_workers || 3}개`;
                 
+                // 큐 길이
+                const queueLength = status.queue_length || 0;
+                document.getElementById('queue-length').textContent = queueLength > 0 ? `${queueLength}개 대기` : '비어있음';
+                
+                // 마지막 실행 시간
                 if (status.last_execution_time) {
-                    const lastExec = new Date(status.last_execution_time).toLocaleString();
-                    document.getElementById('last-execution').textContent = lastExec;
+                    const lastExec = new Date(status.last_execution_time);
+                    const now = new Date();
+                    const diffMinutes = Math.floor((now - lastExec) / (1000 * 60));
+                    
+                    if (diffMinutes < 1) {
+                        document.getElementById('last-execution').textContent = '방금 전';
+                    } else if (diffMinutes < 60) {
+                        document.getElementById('last-execution').textContent = `${diffMinutes}분 전`;
+                    } else {
+                        document.getElementById('last-execution').textContent = lastExec.toLocaleString();
+                    }
                 } else {
-                    document.getElementById('last-execution').textContent = 'Never';
+                    document.getElementById('last-execution').textContent = '실행 기록 없음';
                 }
                 
-                showMessage('Status updated successfully!', 'success');
+                // 오늘 처리된 주문 수 (API에서 가져온 실제 데이터)
+                const todayProcessed = status.today_processed || 0;
+                document.getElementById('today-processed').textContent = `${todayProcessed}건`;
+                
+                // 다음 실행 예정 시간 (API에서 계산된 값)
+                const nextMinutes = status.next_execution_minutes;
+                if (nextMinutes === -1) {
+                    document.getElementById('next-execution').textContent = '스케줄 없음';
+                } else if (nextMinutes === 0) {
+                    document.getElementById('next-execution').textContent = '실행 대기중';
+                } else if (nextMinutes === -2) {
+                    // 1시간 이상인 경우 시간으로 표시
+                    if (status.next_schedule_time) {
+                        const nextTime = new Date(status.next_schedule_time);
+                        const hours = Math.ceil((nextTime - new Date()) / (1000 * 60 * 60));
+                        document.getElementById('next-execution').textContent = `약 ${hours}시간 후`;
+                    } else {
+                        document.getElementById('next-execution').textContent = '미정';
+                    }
+                } else {
+                    document.getElementById('next-execution').textContent = `${nextMinutes}분 후`;
+                }
+                
+                // 최근 오류 상태 (API에서 가져온 실제 데이터)
+                const recentErrors = status.recent_errors || '없음';
+                document.getElementById('recent-errors').textContent = recentErrors;
+                document.getElementById('recent-errors').style.color = (recentErrors !== '없음') ? '#dc3545' : '#28a745';
+                
+                log('✅ 상태 정보 업데이트 완료', 'success');
             } else {
-                showMessage(`Failed to get status: ${statusResult.error}`, 'error');
+                log(`❌ 상태 조회 실패: ${statusResult.error}`, 'error');
+                // 오류 시 기본값 설정
+                document.getElementById('worker-status').textContent = '❌ 연결 실패';
+                document.getElementById('worker-status').style.color = '#dc3545';
             }
         }
         
         async function testQueue() {
-            log('🧪 Testing queue...');
-            showMessage('Queue test feature coming soon!', 'info');
+            log('🧪 Redis 큐에 N8N 메시지 테스트...', 'info');
+            
+            // N8N 형태의 테스트 메시지 생성
+            const testMessage = {
+                account_id: "680e4c20-b999-4189-9e7b-6bbd5345426b",
+                certification_key: "S5bnbfynQvOmUtfa830MyW5XpMs6LUVcCSRBi7Dd0S1QUxetQp3OjfDrKIx5w49QAt7cT_g_1_noT8qSzn4hzIPPUdYDmWr1zbHrBdPvIXkfL_g_1_EJmP7jMWJgfSnPfBnWShRc",
+                account_name: "online94",
+                timestamp: new Date().toISOString()
+            };
+            
+            log(`📤 테스트 메시지 전송: ${JSON.stringify(testMessage)}`, 'info');
+            
+            // Redis에 메시지 푸시 (실제로는 n8n이 수행)
+            try {
+                const response = await fetch('/api/test-redis-push', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ message: JSON.stringify(testMessage) })
+                });
+                
+                if (response.ok) {
+                    log('✅ 테스트 메시지가 Redis 큐에 추가되었습니다', 'success');
+                    log('🔄 워커가 메시지를 처리하는지 로그를 확인하세요', 'info');
+                } else {
+                    log('❌ Redis 큐 테스트 실패', 'error');
+                }
+            } catch (error) {
+                log(`❌ 큐 테스트 오류: ${error.message}`, 'error');
+            }
         }
         
+        async function testOrderCollection() {
+            log('📦 주문 수집 테스트 시작...', 'info');
+            
+            // 먼저 저장된 주문 조회 테스트
+            const getResult = await apiCall('/qoo10jp/orders?limit=10');
+            if (getResult.success) {
+                log(`📋 저장된 주문 조회: ${getResult.data.count || 0}개 주문`, 'success');
+                if (getResult.data.orders && getResult.data.orders.length > 0) {
+                    getResult.data.orders.forEach((order, index) => {
+                        log(`📦 주문 ${index + 1}: ${order.order_no} - ${order.buyer_name} (${order.total_amount}원)`, 'info');
+                    });
+                } else {
+                    log('📭 저장된 주문이 없습니다', 'info');
+                }
+            } else {
+                log(`❌ 주문 조회 실패: ${getResult.error}`, 'error');
+            }
+            
+            // Mock 데이터 수집 테스트 (실제 API는 platform_account_id 필요)
+            log('🔄 Mock 주문 수집 테스트...', 'info');
+            const collectResult = await apiCall('/qoo10jp/orders/collect', 'POST', {
+                start_date: "2024-01-01",
+                end_date: "2024-12-31",
+                platform_account_id: "test-account-001"
+            });
+            
+            if (collectResult.success) {
+                log(`✅ 주문 수집 완료: ${collectResult.data.message}`, 'success');
+            } else {
+                log(`❌ 주문 수집 실패: ${collectResult.error}`, 'error');
+            }
+        }
+
         function openN8N() {
-            log('🔄 Opening n8n...');
+            log('🔄 n8n 대시보드 열기...', 'info');
             window.open('https://n01.acsell.ai', '_blank');
         }
         

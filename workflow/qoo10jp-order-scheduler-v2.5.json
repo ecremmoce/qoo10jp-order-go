@@ -1,0 +1,217 @@
+{
+  "name": "qoo10jp-order-scheduler-v2.5",
+  "nodes": [
+    {
+      "parameters": {},
+      "name": "Every 5 Minutes",
+      "type": "n8n-nodes-base.cron",
+      "typeVersion": 1,
+      "position": [
+        -432,
+        -16
+      ],
+      "id": "87b3e9dc-efff-4df8-8f23-f70db491400f"
+    },
+    {
+      "parameters": {
+        "operation": "getAll",
+        "tableId": "sales_platform_accounts_qoo10jp",
+        "filterType": "string",
+        "filterString": "certification_key=not.is.null,is_active=eq.true"
+      },
+      "name": "Get Active Accounts",
+      "type": "n8n-nodes-base.supabase",
+      "typeVersion": 1,
+      "position": [
+        -224,
+        -16
+      ],
+      "id": "5f2f4b58-5686-43da-90f0-ff41e70912b0",
+      "credentials": {
+        "supabaseApi": {
+          "id": "2decYS56WYHYUPWi",
+          "name": "Supabase account-acsell"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "string": [
+            {
+              "value1": "={{ $input.all().length }}",
+              "operation": "isNotEmpty"
+            }
+          ]
+        }
+      },
+      "name": "Check If Accounts Exist",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 1,
+      "position": [
+        -32,
+        -16
+      ],
+      "id": "3155d9c3-2293-42f8-856a-1f313ca98228"
+    },
+    {
+      "parameters": {
+        "options": {}
+      },
+      "name": "Split Each Account",
+      "type": "n8n-nodes-base.splitInBatches",
+      "typeVersion": 3,
+      "position": [
+        176,
+        -112
+      ],
+      "id": "24552d09-b423-4aa0-95cb-0a7621af17e0"
+    },
+    {
+      "parameters": {
+        "operation": "push",
+        "list": "qoo10jp_order_queue",
+        "messageData": "={{ JSON.stringify({ account_id: $json.id, certification_key: $json.certification_key, account_name: $json.seller_id, timestamp: new Date().toISOString() }) }}"
+      },
+      "type": "@fancyheat/n8n-nodes-redis-enhanced.redisEnhanced",
+      "typeVersion": 1,
+      "position": [
+        560,
+        -112
+      ],
+      "id": "bbdc8c97-42db-463a-899c-e0562a98b9af",
+      "name": "Redis Enhanced",
+      "credentials": {
+        "redis": {
+          "id": "zE1Y2AlnzqmYnUPT",
+          "name": "redis_connection"
+        }
+      }
+    },
+    {
+      "parameters": {},
+      "name": "No Active Accounts",
+      "type": "n8n-nodes-base.noOp",
+      "typeVersion": 1,
+      "position": [
+        176,
+        96
+      ],
+      "id": "c30c573a-a70c-4d4c-9cd9-adc75378f5d5"
+    },
+    {
+      "parameters": {
+        "select": "channel",
+        "channelId": {
+          "__rl": true,
+          "value": "C09FQSWH2TD",
+          "mode": "list",
+          "cachedResultName": "acsell-ai"
+        },
+        "text": "={{ $json.seller_id }} 주문수집 요청",
+        "otherOptions": {}
+      },
+      "type": "n8n-nodes-base.slack",
+      "typeVersion": 2.3,
+      "position": [
+        384,
+        -208
+      ],
+      "id": "0a805b80-51fa-4d42-a48d-effb59c66950",
+      "name": "Send a message",
+      "webhookId": "18ea7b6d-8d3f-46c8-a700-4ab38e9bf9fa",
+      "credentials": {
+        "slackApi": {
+          "id": "XR9r9cSTypkvBmoC",
+          "name": "Slack account"
+        }
+      }
+    }
+  ],
+  "pinData": {},
+  "connections": {
+    "Every 5 Minutes": {
+      "main": [
+        [
+          {
+            "node": "Get Active Accounts",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Get Active Accounts": {
+      "main": [
+        [
+          {
+            "node": "Check If Accounts Exist",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Check If Accounts Exist": {
+      "main": [
+        [
+          {
+            "node": "Split Each Account",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "No Active Accounts",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Split Each Account": {
+      "main": [
+        [
+          {
+            "node": "Send a message",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Redis Enhanced",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Redis Enhanced": {
+      "main": [
+        [
+          {
+            "node": "Split Each Account",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": true,
+  "settings": {
+    "executionOrder": "v1",
+    "timezone": "Asia/Seoul",
+    "callerPolicy": "workflowsFromSameOwner",
+    "executionTimeout": -1
+  },
+  "versionId": "54f2e773-23cb-44b5-8c50-1981dbf1c732",
+  "meta": {
+    "templateCredsSetupCompleted": true,
+    "instanceId": "f250376847468ef71913716e149635733b4b8efaa1e3a4a13a2fff8384a6074a"
+  },
+  "id": "jG7eFD8LQpsAwMcu",
+  "tags": []
+}
