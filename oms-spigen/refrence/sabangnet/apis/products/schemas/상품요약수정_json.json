@@ -1,0 +1,51 @@
+{
+  "type": "object",
+  "title": "상품요약수정",
+  "description": "- 상품등록 & 수정 API 항목의 축소판으로 수정이 빈번히 일어나는 항목를 수정하기 위한 API 입니다. - 재고송신을 위하여 주로 사용됩니다. - 옵션 수정은 가능하지만 등록 또는 삭제는 불가능합니다. 등록 또는 삭제를 원하실 경우 상품등록 & 수정 API 로 진행합니다.",
+  "required": [
+    "compaynyGoodsCd",
+    "status"
+  ],
+  "properties": {
+    "goodsNm": {
+      "type": "string",
+      "description": "상품명",
+      "xml_name": "GOODS_NM"
+    },
+    "compaynyGoodsCd": {
+      "type": "string",
+      "description": "자체상품코드",
+      "xml_name": "COMPAYNY_GOODS_CD"
+    },
+    "status": {
+      "type": "string",
+      "description": "상품상태",
+      "xml_name": "STATUS"
+    },
+    "goodsCost": {
+      "type": "string",
+      "description": "원가",
+      "xml_name": "GOODS_COST"
+    },
+    "goodsPrice": {
+      "type": "string",
+      "description": "판매가",
+      "xml_name": "GOODS_PRICE"
+    },
+    "goodsConsumerPrice": {
+      "type": "string",
+      "description": "TAG가(소비자가)",
+      "xml_name": "GOODS_CONSUMER_PRICE"
+    },
+    "skuInfo": {
+      "type": "string",
+      "description": "",
+      "xml_name": "SKU_INFO"
+    },
+    "skuValue": {
+      "type": "string",
+      "description": "수정할 옵션내용",
+      "xml_name": "SKU_VALUE"
+    }
+  }
+}

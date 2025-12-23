@@ -1,0 +1,48 @@
+======================================================================
+API SPECIFICATION SUMMARY
+======================================================================
+
+Endpoint: None None
+
+Parameters (2):
+----------------------------------------------------------------------
+  success_response (object)
+   Response format
+  * status (string)
+     Response status
+  * message (string)
+     Response message
+  * code (integer)
+     Response code
+  * data (object)
+     Response data
+      total_count (integer)
+       Total count
+      page_count (integer)
+       Page count
+      current_page (integer)
+       Current page
+      per_page (integer)
+       Items per page
+  error_response (object)
+   Error response format
+  * status (string)
+     Error status
+  * message (string)
+     Error message
+  * code (integer)
+     Error code
+
+Metadata:
+----------------------------------------------------------------------
+  total_chunks: 1
+  chunks_with_errors: 0
+  total_parameters_before_dedup: 2
+  total_parameters_after_dedup: 2
+  update_log_entries: 2
+  hidden_fields_count: 0
+  source_results: workspaces\v2.product.get_item_promotion\results\all_chunks_results.json
+
+======================================================================
+Legend: * = required parameter
+======================================================================

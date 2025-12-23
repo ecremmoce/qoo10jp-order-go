@@ -1,0 +1,42 @@
+======================================================================
+API SPECIFICATION SUMMARY
+======================================================================
+
+Endpoint: GET v2_public_get_token_by_reward_code
+Description: Use the reward code to get access token and collect token. When you call your access token to refresh token, you can go to authentication, get reward exchange page to check if token code is exchanged. Token code can be redeemed for chain tokens, and NFT support or on-chain permissions.
+
+Parameters (1):
+----------------------------------------------------------------------
+* reward_code (string)
+   The code to redeem an offer code reward code in on-chain protocol ERC721. This code can only be used one time once, expires in 15minutes
+
+Response Fields (7):
+----------------------------------------------------------------------
+  request_id (string)
+   The identifier for an API request for error tracking
+  code (string)
+   Indicate error type if not zero
+  message (string)
+   Indicate error details if not zero
+  received_id (int)
+   Return when reward code is redeemed
+  refresh_token (string)
+   Use refresh_token to obtain new access_token. The refresh_token lasts forever unless revoked by administrators and the risk system
+  access_token (string)
+   Access_token expire time is 24000 second from this api. Used for normal api
+  expire_in (int)
+   Access_token expiration time unit is second
+
+Metadata:
+----------------------------------------------------------------------
+  total_chunks: 1
+  chunks_with_errors: 0
+  total_parameters_before_dedup: 1
+  total_parameters_after_dedup: 1
+  update_log_entries: 1
+  hidden_fields_count: 0
+  source_results: workspaces\v2.public.get_token_by_resend_code\results\all_chunks_results.json
+
+======================================================================
+Legend: * = required parameter
+======================================================================

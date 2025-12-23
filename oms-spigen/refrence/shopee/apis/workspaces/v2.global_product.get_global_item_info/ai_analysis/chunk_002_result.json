@@ -1,0 +1,50 @@
+{
+  "chunk_index": 2,
+  "endpoint": null,
+  "method": null,
+  "description": "API Permissions and Update Log information",
+  "parameters": [],
+  "response_fields": [
+    {
+      "name": "API Permissions",
+      "type": "array",
+      "description": "APP types that can call this API: ERP System, Seller In House System, Product Management, Swarm ERP",
+      "children": []
+    },
+    {
+      "name": "Update Log",
+      "type": "array",
+      "description": "Log of updates",
+      "children": [
+        {
+          "name": "2025-02-18",
+          "type": "string",
+          "description": "add size_chart_id"
+        },
+        {
+          "name": "2025-02-17",
+          "type": "string",
+          "description": "add is_fulfillment_by_shopee"
+        },
+        {
+          "name": "2024-06-21",
+          "type": "string",
+          "description": "update the description of DTS"
+        }
+      ]
+    }
+  ],
+  "chunk_metadata": {
+    "index": 2,
+    "total": 2,
+    "y_start": 7250,
+    "y_end": 9230,
+    "overlap_top": 500,
+    "overlap_bottom": 0,
+    "height": 1980,
+    "path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\workspaces\\v2.global_product.get_global_item_info\\chunks\\chunk_002.png",
+    "filename": "chunk_002.png",
+    "width": 837
+  },
+  "chunk_path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\workspaces\\v2.global_product.get_global_item_info\\chunks\\chunk_002.png"
+}

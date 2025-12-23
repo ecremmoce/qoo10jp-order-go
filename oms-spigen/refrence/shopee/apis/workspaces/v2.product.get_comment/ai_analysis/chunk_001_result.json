@@ -1,0 +1,84 @@
+{
+  "chunk_index": 1,
+  "total_chunks": 1,
+  "endpoint": null,
+  "method": null,
+  "description": null,
+  "update_log": [],
+  "hidden_fields": [
+    {
+      "name": "access_token",
+      "found_in": "parameters list",
+      "extracted_from_description": true
+    },
+    {
+      "name": "grant_type",
+      "found_in": "parameters list",
+      "extracted_from_description": true
+    }
+  ],
+  "parameters": [
+    {
+      "name": "string",
+      "type": "string",
+      "required": true,
+      "description": "You need to obtain from API",
+      "children": []
+    },
+    {
+      "name": "grant_type",
+      "type": "string",
+      "required": true,
+      "description": "The grant type",
+      "children": []
+    },
+    {
+      "name": "expires_in",
+      "type": "integer",
+      "required": false,
+      "description": "Token expiration time in seconds",
+      "children": []
+    },
+    {
+      "name": "scope",
+      "type": "string",
+      "required": false,
+      "description": "The scope requested",
+      "children": []
+    },
+    {
+      "name": "success",
+      "type": "boolean",
+      "required": false,
+      "description": "The operation status",
+      "children": []
+    }
+  ],
+  "response_fields": [
+    {
+      "name": "error_code",
+      "type": "string",
+      "description": "Error code like 'invalid_client'"
+    },
+    {
+      "name": "error_description",
+      "type": "string",
+      "description": "Human readable error message"
+    }
+  ],
+  "notes": "This appears to be OAuth/authentication related API documentation. Some parameters may be truncated or partially visible. There's also what appears to be error code documentation at the bottom of the image.",
+  "chunk_metadata": {
+    "index": 1,
+    "total": 1,
+    "y_start": 0,
+    "y_end": 6757,
+    "overlap_top": 0,
+    "overlap_bottom": 0,
+    "height": 6757,
+    "path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\workspaces\\v2.product.get_comment\\chunks\\chunk_001.png",
+    "filename": "chunk_001.png",
+    "width": 837
+  },
+  "analysis_timestamp": "2025-10-10T06:27:02.743504",
+  "model": "claude-3-5-sonnet-20241022"
+}

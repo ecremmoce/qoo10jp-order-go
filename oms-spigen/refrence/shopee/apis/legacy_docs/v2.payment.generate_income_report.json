@@ -1,0 +1,93 @@
+{
+  "endpoint": "/v2/payment/generate_income_report",
+  "method": "HTTP",
+  "description": "Trigger income report generation",
+  "parameters": [
+    {
+      "name": "partner_id",
+      "type": "string",
+      "required": true,
+      "description": "Partner ID assigned upon registration is successful. Required for all requests."
+    },
+    {
+      "name": "timestamp",
+      "type": "timestamp",
+      "required": true,
+      "description": "This is to indicate the timestamp of the request. Required for all requests. Expires in 5 minutes."
+    },
+    {
+      "name": "access_token",
+      "type": "string",
+      "required": true,
+      "description": "The token for API access, using to identify your permission to the api. Valid for multiple use and expires in 4 hours."
+    },
+    {
+      "name": "shop_id",
+      "type": "int",
+      "required": true,
+      "description": "Shopee's unique identifier for a shop. Required param for most APIs."
+    },
+    {
+      "name": "sign",
+      "type": "string",
+      "required": true,
+      "description": "Authentication signature calculated using partner_id, api_path, timestamp, access_token, and partner_key as hash algorithm. More detail"
+    },
+    {
+      "name": "release_time_from",
+      "type": "int64",
+      "required": true,
+      "description": "Start time in epoch"
+    },
+    {
+      "name": "release_time_to",
+      "type": "int64",
+      "required": true,
+      "description": "End time in epoch"
+    }
+  ],
+  "response_fields": [
+    {
+      "name": "response",
+      "type": "object",
+      "children": [
+        {
+          "name": "id",
+          "type": "int64",
+          "description": "Identifier of income report file"
+        },
+        {
+          "name": "error",
+          "type": "string",
+          "description": "error code"
+        },
+        {
+          "name": "msg",
+          "type": "string",
+          "description": "error message"
+        },
+        {
+          "name": "request_id",
+          "type": "string",
+          "description": "request id"
+        }
+      ]
+    }
+  ],
+  "update_log": [
+    {
+      "date": "2019-05-15",
+      "change": "New API"
+    }
+  ],
+  "hidden_fields": [],
+  "metadata": {
+    "total_chunks": 1,
+    "chunks_with_errors": 0,
+    "total_parameters_before_dedup": 7,
+    "total_parameters_after_dedup": 7,
+    "update_log_entries": 1,
+    "hidden_fields_count": 0,
+    "source_results": "workspaces\\v2.payment.generate_income_report\\results\\all_chunks_results.json"
+  }
+}

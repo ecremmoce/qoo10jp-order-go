@@ -1,0 +1,46 @@
+{
+  "chunk_index": 2,
+  "endpoint": null,
+  "method": null,
+  "description": null,
+  "parameters": [],
+  "response_fields": [
+    {
+      "name": "error_shop",
+      "type": "string",
+      "description": "shopid is invalid",
+      "children": []
+    },
+    {
+      "name": "error_param",
+      "type": "string",
+      "description": "request not from gateway",
+      "children": []
+    },
+    {
+      "name": "error_item_not_found",
+      "type": "string",
+      "description": "item_id is not found",
+      "children": []
+    },
+    {
+      "name": "error_shop_offline",
+      "type": "string",
+      "description": "Shop_id is not found",
+      "children": []
+    }
+  ],
+  "chunk_metadata": {
+    "index": 2,
+    "total": 3,
+    "y_start": 7558,
+    "y_end": 15558,
+    "overlap_top": 500,
+    "overlap_bottom": 500,
+    "height": 8000,
+    "path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\workspaces\\v2.product.get_item_base_info\\chunks\\chunk_002.png",
+    "filename": "chunk_002.png",
+    "width": 837
+  },
+  "chunk_path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\workspaces\\v2.product.get_item_base_info\\chunks\\chunk_002.png"
+}

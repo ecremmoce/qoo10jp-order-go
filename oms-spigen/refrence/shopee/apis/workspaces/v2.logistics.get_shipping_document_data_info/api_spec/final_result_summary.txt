@@ -1,0 +1,52 @@
+======================================================================
+API SPECIFICATION SUMMARY
+======================================================================
+
+Endpoint: POST /api/v1/process
+Description: Process an API request with given parameters
+
+Parameters (4):
+----------------------------------------------------------------------
+* options (object)
+   Core options for the API
+  * apiKey (string)
+     API key for authentication
+    timeout (integer)
+     Request timeout in milliseconds
+    endpoint (string)
+     Custom API endpoint URL
+* id (string)
+   Unique identifier
+* type (string)
+   Request type
+* data (object)
+   Request payload
+    attributes (object)
+     Additional attributes
+    metadata (object)
+     Request metadata
+
+Response Fields (1):
+----------------------------------------------------------------------
+  Response (object)
+   Standard API response format
+    data (object)
+     Response payload
+    error (object)
+     Error details if any
+    status (integer)
+     HTTP status code
+
+Metadata:
+----------------------------------------------------------------------
+  total_chunks: 2
+  chunks_with_errors: 0
+  total_parameters_before_dedup: 4
+  total_parameters_after_dedup: 4
+  update_log_entries: 0
+  hidden_fields_count: 0
+  source_results: workspaces\v2.logistics.get_shipping_document_data_info\results\all_chunks_results.json
+
+======================================================================
+Legend: * = required parameter
+======================================================================

@@ -1,0 +1,48 @@
+======================================================================
+API SPECIFICATION SUMMARY
+======================================================================
+
+Endpoint: GET /v2/product/get_main_item_list
+Description: Get main item list
+
+Parameters (5):
+----------------------------------------------------------------------
+* partner_id (int)
+   Partner ID is a unique user registration id successful
+* timestamp (timestamp)
+   This is to calculate the timestamp of the request. Required for all requests.
+* access_token (string)
+   The token for API access, used to identify user permissions to call API.
+* shop_id (string)
+   Shopee's unique identifier for a shop. Required
+* sign (string)
+   Unique identifier for partnering system.
+
+Response Fields (6):
+----------------------------------------------------------------------
+  error (string)
+   Indicate error type if error occurred
+  message (string)
+   Indicate error details if error occurred
+  warning (string)
+   Indicate warning details if warning. Empty if no warning
+  request_id (string)
+   The identifier for an API request for your reference
+  direct_item_id (int64)
+   Item ID of direct shop
+  main_item_id (int64)
+   ID of main shop
+
+Metadata:
+----------------------------------------------------------------------
+  total_chunks: 1
+  chunks_with_errors: 0
+  total_parameters_before_dedup: 5
+  total_parameters_after_dedup: 5
+  update_log_entries: 1
+  hidden_fields_count: 0
+  source_results: workspaces\v2.product.get_main_item_list\results\all_chunks_results.json
+
+======================================================================
+Legend: * = required parameter
+======================================================================

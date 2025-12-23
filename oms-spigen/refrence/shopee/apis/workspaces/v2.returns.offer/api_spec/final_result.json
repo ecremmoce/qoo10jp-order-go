@@ -1,0 +1,77 @@
+{
+  "endpoint": null,
+  "method": null,
+  "description": null,
+  "parameters": [
+    {
+      "name": "url",
+      "type": "string",
+      "required": true,
+      "description": "Base URL parameter",
+      "children": []
+    },
+    {
+      "name": "url_prepare_download",
+      "type": "string",
+      "required": true,
+      "description": "URL for prepare download action",
+      "children": []
+    },
+    {
+      "name": "url_m3u8",
+      "type": "string",
+      "required": true,
+      "description": "URL for m3u8 resource",
+      "children": []
+    },
+    {
+      "name": "storage_id",
+      "type": "string",
+      "required": true,
+      "description": "The media ID of object",
+      "children": []
+    },
+    {
+      "name": "progress_callback_interval",
+      "type": "string",
+      "required": false,
+      "description": "Time interval to call back",
+      "children": []
+    },
+    {
+      "name": "progress_callback_method",
+      "type": "string",
+      "required": false,
+      "description": "The time interval to call back",
+      "children": []
+    }
+  ],
+  "response_fields": [
+    {
+      "name": "result_id",
+      "type": "string",
+      "description": "The result is an M3U request for each"
+    },
+    {
+      "name": "download",
+      "type": "string",
+      "description": "The new description"
+    },
+    {
+      "name": "media_id",
+      "type": "string",
+      "description": "The media number of object"
+    }
+  ],
+  "update_log": [],
+  "hidden_fields": [],
+  "metadata": {
+    "total_chunks": 1,
+    "chunks_with_errors": 0,
+    "total_parameters_before_dedup": 6,
+    "total_parameters_after_dedup": 6,
+    "update_log_entries": 0,
+    "hidden_fields_count": 0,
+    "source_results": "workspaces\\v2.returns.offer\\results\\all_chunks_results.json"
+  }
+}

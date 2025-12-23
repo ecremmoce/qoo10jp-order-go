@@ -1,0 +1,124 @@
+[
+  {
+    "chunk_index": 1,
+    "total_chunks": 1,
+    "endpoint": "v2/payment/generate_income_statement",
+    "method": "POST",
+    "description": "Generate income statement request",
+    "update_log": [
+      {
+        "date": "2024-01-12",
+        "change": "Update the description of the time"
+      }
+    ],
+    "parameters": [
+      {
+        "name": "partner_id",
+        "type": "int",
+        "required": true,
+        "description": "Platform id, must match with registered id in merchant side.",
+        "children": []
+      },
+      {
+        "name": "timestamp",
+        "type": "timestamp",
+        "required": true,
+        "description": "API request timestamp in milliseconds",
+        "children": []
+      },
+      {
+        "name": "income_token",
+        "type": "string",
+        "required": true,
+        "description": "The age. Valid for multiple use and expires in 4 hours",
+        "children": []
+      },
+      {
+        "name": "time_id",
+        "type": "int",
+        "required": true,
+        "description": "Statement time identifier for a week",
+        "children": []
+      },
+      {
+        "name": "sign",
+        "type": "string",
+        "required": true,
+        "description": "Request signing parameter",
+        "children": []
+      }
+    ],
+    "request_parameters": [
+      {
+        "name": "release_time_from",
+        "type": "date",
+        "required": true,
+        "description": "The release time from must be Monday. must have time of a week report.",
+        "children": []
+      },
+      {
+        "name": "release_time_to",
+        "type": "date",
+        "required": true,
+        "description": "The release time to must be Sunday. must have time of a week report.",
+        "children": []
+      },
+      {
+        "name": "statement_type",
+        "type": "int",
+        "required": true,
+        "description": "Local order income statement request type (0: initial, 1: final)",
+        "children": []
+      }
+    ],
+    "response_fields": [
+      {
+        "name": "response",
+        "type": "object",
+        "description": "Response object",
+        "children": [
+          {
+            "name": "id",
+            "type": "int",
+            "description": "identifier of income statement file"
+          },
+          {
+            "name": "error",
+            "type": "string",
+            "description": "error code"
+          },
+          {
+            "name": "message",
+            "type": "string",
+            "description": "error message"
+          }
+        ]
+      }
+    ],
+    "error_codes": [
+      {
+        "code": "error_data",
+        "description": "some data failed"
+      },
+      {
+        "code": "error_param",
+        "description": "parameter invalid"
+      }
+    ],
+    "notes": "The documentation includes various URLs for different regions (Chinese Mainland, Global) and example request/response structures. Error codes section shows multiple possible error conditions but some appear to be cut off in the image.",
+    "chunk_metadata": {
+      "index": 1,
+      "total": 1,
+      "y_start": 0,
+      "y_end": 3867,
+      "overlap_top": 0,
+      "overlap_bottom": 0,
+      "height": 3867,
+      "path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\workspaces\\v2.payment.generate_income_statement\\chunks\\chunk_001.png",
+      "filename": "chunk_001.png",
+      "width": 837
+    },
+    "analysis_timestamp": "2025-10-10T06:19:09.062761",
+    "model": "claude-3-5-sonnet-20241022"
+  }
+]

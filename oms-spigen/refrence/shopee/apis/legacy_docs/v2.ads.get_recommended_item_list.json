@@ -1,0 +1,94 @@
+{
+  "endpoint": "http://partner.dingzepei.com/budget/recommended_item_list",
+  "method": "GET",
+  "description": "Get recommended items list",
+  "parameters": [
+    {
+      "name": "timestamp",
+      "type": "timestamp",
+      "required": true,
+      "description": "Request timestamp, format: YYYYMMDDHHmmss"
+    },
+    {
+      "name": "access_token",
+      "type": "string",
+      "required": true,
+      "description": "Access token to verify user permission to the get recommended items service"
+    },
+    {
+      "name": "shop_id",
+      "type": "int",
+      "required": true,
+      "description": null
+    },
+    {
+      "name": "sign",
+      "type": "string",
+      "required": true,
+      "description": "Signature parameter to confirm authorization"
+    },
+    {
+      "name": "request_id",
+      "type": "string",
+      "required": true,
+      "description": "Request id is unique for each request"
+    }
+  ],
+  "response_fields": [
+    {
+      "name": "code",
+      "type": "string",
+      "description": "Error code, empty when no error occurred"
+    },
+    {
+      "name": "message",
+      "type": "string",
+      "description": "Error description"
+    },
+    {
+      "name": "warning",
+      "type": "string",
+      "description": "If some data cannot request success, set the warning"
+    },
+    {
+      "name": "request_id",
+      "type": "string",
+      "description": "Request id is unique for each request"
+    },
+    {
+      "name": "mix_id",
+      "type": "int64",
+      "description": "Recommended item list id"
+    },
+    {
+      "name": "max_status_cnt",
+      "type": "int64",
+      "description": "The corresponding list no Page field belongs to max_id, maximum follow no next setting field. Assume cancel"
+    },
+    {
+      "name": "suggest_ad_click_list",
+      "type": "object[]",
+      "description": "Current list of the ad id no the list. 1-3 pieces."
+    }
+  ],
+  "update_log": [
+    {
+      "date": "2025-09-26",
+      "change": "Added new parameters"
+    },
+    {
+      "date": "2025-09-16",
+      "change": "New API"
+    }
+  ],
+  "hidden_fields": [],
+  "metadata": {
+    "total_chunks": 1,
+    "chunks_with_errors": 0,
+    "total_parameters_before_dedup": 5,
+    "total_parameters_after_dedup": 5,
+    "update_log_entries": 2,
+    "hidden_fields_count": 0,
+    "source_results": "workspaces\\v2.ads.get_recommended_item_list\\results\\all_chunks_results.json"
+  }
+}

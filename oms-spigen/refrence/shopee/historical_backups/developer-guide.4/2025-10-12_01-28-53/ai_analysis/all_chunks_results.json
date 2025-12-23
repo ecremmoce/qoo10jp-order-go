@@ -1,0 +1,64 @@
+[
+  {
+    "chunk_index": 1,
+    "total_chunks": 1,
+    "endpoint": null,
+    "method": null,
+    "description": "Shopee Open Platform documentation page introducing the platform and its capabilities",
+    "update_log": [
+      {
+        "date": "2024-11-11",
+        "change": "Last documented update"
+      }
+    ],
+    "hidden_fields": [],
+    "parameters": [],
+    "response_fields": [],
+    "documentation_structure": {
+      "supported_languages": [
+        "English",
+        "简体中文",
+        "繁體中文",
+        "Português",
+        "ไทย"
+      ],
+      "main_sections": [
+        {
+          "title": "What is Shopee Open Platform?",
+          "description": "Created to support developers serving Shopee sellers with different ecommerce needs, Shopee Open Platform is your go-to source of Open APIs and services"
+        },
+        {
+          "title": "Benefits of using Shopee Open API?",
+          "description": "Shopee Open API provides sellers with quick and easy access to important shop data for selling on Shopee. This includes information for product, order, and campaign management, amongst others."
+        },
+        {
+          "title": "Who can access Shopee Open Platform?",
+          "description": "Platform caters to 2 types of developers: software service providers and sellers with software development capabilities"
+        }
+      ],
+      "key_features": [
+        "Powerful APIs for orders, products, marketing",
+        "Push notification services",
+        "Comprehensive developer services",
+        "Open API testing tools",
+        "Sandbox testing environments",
+        "Documentation and Support Center access"
+      ]
+    },
+    "notes": "This appears to be the main introduction page of the Shopee Open Platform documentation. It contains no specific API endpoint information but provides an overview of the platform's capabilities and features. The page shows a navigation menu on the left with various sections including Getting Started, API Best Practices, and various integration guides.",
+    "chunk_metadata": {
+      "index": 1,
+      "total": 1,
+      "y_start": 0,
+      "y_end": 1080,
+      "overlap_top": 0,
+      "overlap_bottom": 0,
+      "height": 1080,
+      "path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\platforms\\shopee\\apis\\workspaces\\developer-guide.4\\chunks\\chunk_001.png",
+      "filename": "chunk_001.png",
+      "width": 1920
+    },
+    "analysis_timestamp": "2025-10-12T01:28:53.031321",
+    "model": "claude-3-5-sonnet-20241022"
+  }
+]

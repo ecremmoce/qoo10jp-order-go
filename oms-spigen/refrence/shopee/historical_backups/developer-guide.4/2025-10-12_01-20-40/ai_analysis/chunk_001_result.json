@@ -1,0 +1,36 @@
+{
+  "chunk_index": 1,
+  "total_chunks": 1,
+  "endpoint": null,
+  "method": null,
+  "description": "Shopee Open Platform documentation page introducing the platform and its capabilities",
+  "update_log": [
+    {
+      "date": "2024-11-11",
+      "change": "Last documented update"
+    }
+  ],
+  "hidden_fields": [],
+  "parameters": [],
+  "response_fields": [],
+  "notes": "This appears to be an introduction/overview page rather than specific API endpoint documentation. Key information extracted:\n\n1. Languages supported: English, 简体中文, 繁體中文, Português, ไทย\n\n2. Main sections visible:\n- Getting Started\n- API Best Practices\n- Developer account registration\n- App management\n- API calls\n- Push Mechanism notifications\n- Authorization and Authentication\n- Sandbox Testing V2\n- Service Partner Program\n\n3. Platform capabilities:\n- Provides APIs for orders, products, marketing\n- Offers developer services including onboarding, testing, and maintenance\n- Includes API testing tools and sandbox environments\n- Supports multiple markets with single API integration\n\n4. Target users:\n- Software service providers\n- Sellers with software development capabilities",
+  "metadata": {
+    "platform_name": "Shopee Open Platform",
+    "documentation_type": "Introduction",
+    "last_updated": "2024-11-11"
+  },
+  "chunk_metadata": {
+    "index": 1,
+    "total": 1,
+    "y_start": 0,
+    "y_end": 1080,
+    "overlap_top": 0,
+    "overlap_bottom": 0,
+    "height": 1080,
+    "path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\platforms\\shopee\\apis\\workspaces\\developer-guide.4\\chunks\\chunk_001.png",
+    "filename": "chunk_001.png",
+    "width": 1920
+  },
+  "analysis_timestamp": "2025-10-12T01:20:40.169174",
+  "model": "claude-3-5-sonnet-20241022"
+}

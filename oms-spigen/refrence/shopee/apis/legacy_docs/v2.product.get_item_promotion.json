@@ -1,0 +1,112 @@
+{
+  "endpoint": null,
+  "method": null,
+  "description": null,
+  "parameters": [
+    {
+      "name": "success_response",
+      "type": "object",
+      "required": false,
+      "description": "Response format",
+      "children": [
+        {
+          "name": "status",
+          "type": "string",
+          "required": true,
+          "description": "Response status"
+        },
+        {
+          "name": "message",
+          "type": "string",
+          "required": true,
+          "description": "Response message"
+        },
+        {
+          "name": "code",
+          "type": "integer",
+          "required": true,
+          "description": "Response code"
+        },
+        {
+          "name": "data",
+          "type": "object",
+          "required": true,
+          "description": "Response data",
+          "children": [
+            {
+              "name": "total_count",
+              "type": "integer",
+              "required": false,
+              "description": "Total count"
+            },
+            {
+              "name": "page_count",
+              "type": "integer",
+              "required": false,
+              "description": "Page count"
+            },
+            {
+              "name": "current_page",
+              "type": "integer",
+              "required": false,
+              "description": "Current page"
+            },
+            {
+              "name": "per_page",
+              "type": "integer",
+              "required": false,
+              "description": "Items per page"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "error_response",
+      "type": "object",
+      "required": false,
+      "description": "Error response format",
+      "children": [
+        {
+          "name": "status",
+          "type": "string",
+          "required": true,
+          "description": "Error status"
+        },
+        {
+          "name": "message",
+          "type": "string",
+          "required": true,
+          "description": "Error message"
+        },
+        {
+          "name": "code",
+          "type": "integer",
+          "required": true,
+          "description": "Error code"
+        }
+      ]
+    }
+  ],
+  "response_fields": [],
+  "update_log": [
+    {
+      "date": "2022-10-27",
+      "change": "Get error massage when the page doesn't exist"
+    },
+    {
+      "date": "2022-10-26",
+      "change": "Fixed bugs related to pagination"
+    }
+  ],
+  "hidden_fields": [],
+  "metadata": {
+    "total_chunks": 1,
+    "chunks_with_errors": 0,
+    "total_parameters_before_dedup": 2,
+    "total_parameters_after_dedup": 2,
+    "update_log_entries": 2,
+    "hidden_fields_count": 0,
+    "source_results": "workspaces\\v2.product.get_item_promotion\\results\\all_chunks_results.json"
+  }
+}

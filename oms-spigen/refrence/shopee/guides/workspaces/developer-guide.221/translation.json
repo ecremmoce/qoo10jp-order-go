@@ -1,0 +1,58 @@
+{
+  "document_id": "developer-guide.221",
+  "document_type": "guide",
+  "platform": "shopee",
+  "content_ko": "# API 모범 사례 > 상품 기본 정보 관리\n\n이 API를 사용하면 상점의 모든 상품 목록을 가져오거나 update_time 범위 및 상품 상태별로 필터링할 수 있습니다.\n\n## 1. item_id 검색\nAPI: `v2.product.search_item`\n\n이 API를 사용하면 다음과 같은 특정 조건을 기반으로 item_id 목록을 검색할 수 있습니다.\n- 상품 이름 키워드를 포함하는 item_id 목록\n- SKU 키워드를 포함하는 item_id 목록\n- 문의 속성을 추적하는 item_id 목록\n- 선택적 속성을 추적하는 item_id 목록\n\n---\n\n## 2. 상품 정보 가져오기\nAPI: `v2.product.get_item_base_info`, `v2.product.get_model_list`\n\n`v2.product.get_item_base_info`를 호출하여 상품 기본 정보를 가져올 수 있습니다. 그렇지 않으면 `v2.product.get_model_list` API를 호출하여 variant 가격 및 재고를 가져와야 합니다.\n\n`v2.product.get_item_base_info` API의 \"has_model\" 필드는 상품에 variant가 있는지 여부를 나타냅니다.\n\n---\n\n## 3. 상품 데이터 가져오기\nAPI: `v2.product.get_item_extra_info`\n\n이 API는 상품의 조회수, 좋아요, 판매량, 평점 및 별점을 가져올 수 있습니다.\n\n조회수 데이터는 지난 90일간의 통계에서 가져온 것이며, 판매 데이터는 누적 값입니다.\n\n---\n\n## 4. 상품 프로모션 정보 가져오기\nAPI: `v2.product.get_item_promotion`\n\n이 API를 사용하면 상품이 추가된 모든 진행 중이거나 예정된 프로모션에 대한 정보를 가져올 수 있습니다. 상품이 여러 프로모션에 추가된 경우 `v2.product.get_item_promotion`의 promotion_id 필드는 둘 이상의 promotion_id를 반환하며, 모든 권한 정보를 얻기 위해 `v2.product.get_item_promotion`을 계속 호출하는 것이 좋습니다.\n\n---\n\n## 5. 상품 정보 업데이트\nAPI: `v2.product.update_item`\n\n1. 이 API는 size_chart/price/stock/video 정보를 제외한 상품 정보 업데이트를 지원합니다. 업데이트 가능한 필드는 업데이트되고, 업데이트 불가능한 필드는 업데이트되지 않습니다.\n\n2. item_sku/wholesales/video_upload_id의 경우 삭제 작업을 지원합니다. null 문자열을 업로드하면 삭제됩니다.\n\nitem_sku 삭제 예시\n```\n\"item_sku\":6001B2459,\n\"item_sku\":\"\"\n```\n\n3. 관련 설명 업데이트에 대한 FAQ를 참조하십시오.\n\n4. 일부 필드를 업데이트하지 않았지만 해당 필드가 잘못 채워졌다는 메시지가 표시되는 경우, 업데이트할 때마다 모든 상품 정보의 적법성을 확인하므로 요구 사항을 충족하지 않으면 수정하십시오.\n\n---\n\n## 6. 상품 판매 중지 또는 삭제\nAPI: `v2.product.unlist_item`, `v2.product.delete_item`\n\n\"unlist\" - true는 상품이 판매 중지됨을 의미하고, \"unlist\" - false는 상품이 다시 판매됨을 의미합니다.\n\n이 API는 item_status를 \"deleted\"로 변경할 수 있습니다. 삭제 후에는 상품을 업데이트할 수 없으며 판매자는 판매자 센터를 통해 이 상품을 볼 수 없습니다.\n\nShopee에서 삭제된 상품 및 판매자가 삭제한 상품의 경우 90일 이내에는 API를 통해 상품 정보를 계속 가져올 수 있으며, 90일 후에는 상품 데이터가 Shopee 데이터베이스에서 영구적으로 삭제되어 이 상품에 대한 정보를 쿼리할 수 없습니다. 필요한 경우 상품 정보를 제때 저장하십시오.\n\n---\n\n## 7. 사이즈 차트 이미지 업데이트\nAPI: `v2.product.update_size_chart`\n\n이 API는 상품의 이미지 사이즈 차트를 추가하거나 업데이트하는 데 사용할 수 있습니다. \"Your shop can not edit image size chart\" 오류가 발생하면 공지 사항을 확인하십시오.\n\n---\n\n## 8. 브랜드 등록\nAPI: `v2.product.register_brand`\n\n판매자는 이 API를 통해 자신의 브랜드를 등록할 수 있습니다. Shopee가 이 브랜드를 성공적으로 감사하면 상품을 추가하거나 업데이트하기 위한 유효한 brand_id를 얻게 됩니다.\n\n브랜드 등록 상태는 FAQ에서 확인할 수 있습니다.\n\n*다음 내용은 CN/SG/PH/SG 판매자에게만 적용됩니다.\n\n---\n\n## 9. 글로벌 상품 목록 가져오기\nAPI: `v2.global_product.get_global_item_list`\n\n이 API를 사용하면 판매자 아래의 모든 global_item_id 목록을 가져오거나 update_time 범위별로 필터링할 수 있습니다. 이 API는 삭제된 global_item_id 목록을 반환하지 않습니다.\n\n---\n\n## 10. 글로벌 상품 ID 가져오기\nAPI: `v2.global_product.get_global_item_id`\n\n이 API를 호출하면 상점 상품의 global_item_id를 빠르게 찾을 수 있습니다.\n\n---\n\n## 11. 글로벌 상품 정보 가져오기\nAPI: `v2.global_product.get_global_item_info`, `v2.global_product.get_global_model_list`\n\n1. 글로벌 상품에 variant가 포함되어 있지 않으면 `v2.global_product.get_global_item_info`만 호출하여 글로벌 상품 정보를 가져오면 됩니다. 그렇지 않으면 `v2.global_product.get_global_model_list`를 호출하여 variant 재고 및 가격 정보를 가져와야 합니다.\n\n2. global_product 관련 인터페이스는 글로벌 상품에서 제공되지 않습니다.\n\n`v2.product.get_item_extra_info`를 호출하여 상점 상품 데이터를 가져오거나 `v2.product.get_item_promotion`을 호출하여 상점 상품의 프로모션 데이터를 가져올 수 있습니다.\n\n---\n\n## 12. 글로벌 상품 업데이트\nAPI: `v2.global_product.update_global_item`\n\n1. 일부 필드는 글로벌 상품과 상점 상품에서 함께 관리할 수 있으므로 \"Updateable or not-updateable fields\" 문서를 확인하여 글로벌 상품 수준에서 상점 상품 수준으로 동기화되는 필드를 볼 수 있습니다. API가 나열되고 v2_global_item API를 통해 동기화되면 글로벌 상품을 업데이트한 후 Shopee가 자동으로 상점 상품에 동기화합니다.\n\n---\n\n## 13. 글로벌 상품 삭제\nAPI: `v2.global_product.delete_global_item`\n\n글로벌 상품은 \"판매 중지\"를 지원하지 않지만 삭제할 수 있습니다. 글로벌 상품이 삭제되면 게시된 모든 상점 상품도 삭제됩니다.\n\n---\n\n## 14. 사이즈 차트 이미지 업데이트\nAPI: `v2.global_product.update_size_chart`\n\n이 API를 사용하면 글로벌 상품의 사이즈 차트를 추가하거나 업데이트할 수 있습니다. 글로벌 상품을 통해 상점 상품의 사이즈 차트를 업데이트하려면 `v2.product.update_size_chart` API를 호출하면 됩니다.\n\nCN/SG/PH/SG 판매자가 개별적으로 보유한 상품 모듈 인터페이스 권한에 대해 자세히 알아보려면 이 FAQ를 확인하십시오.",
+  "translated_at": "2025-10-16T08:46:41",
+  "char_count": 3822,
+  "metadata_ko": {
+    "title": "API 모범 사례 - 상품 기본 정보 관리",
+    "summary": "본 가이드는 Shopee API를 사용하여 상품 기본 정보를 관리하는 모범 사례를 설명합니다. 여기에는 글로벌 상품 및 사이즈 차트를 포함하여 상품 데이터 검색, 검색, 업데이트 및 삭제와 같은 다양한 작업이 포함됩니다.",
+    "keywords": [
+      "상품 정보",
+      "API",
+      "상품 관리",
+      "글로벌 상품",
+      "사이즈 차트",
+      "상품 프로모션",
+      "상품 업데이트",
+      "상품 삭제"
+    ],
+    "category": "모범 사례",
+    "tags": [
+      "product",
+      "item",
+      "API",
+      "management",
+      "shopee"
+    ],
+    "difficulty": "medium",
+    "importance": 5,
+    "use_cases": [
+      "판매자 대시보드에 표시하기 위한 상품 세부 정보 검색.",
+      "이름, 설명 또는 카테고리와 같은 상품 정보 업데이트.",
+      "상품 프로모션 및 할인 관리.",
+      "판매자 시스템과 Shopee 간의 상품 데이터 동기화.",
+      "Shopee에 브랜드 등록."
+    ],
+    "related_apis": [
+      "v2.product.search_item",
+      "v2.product.get_item_base_info",
+      "v2.product.get_model_list",
+      "v2.product.get_item_extra_info",
+      "v2.product.get_item_promotion",
+      "v2.product.update_item",
+      "v2.product.unlist_item",
+      "v2.product.delete_item",
+      "v2.product.update_size_chart",
+      "v2.product.register_brand",
+      "v2.global_product.get_global_item_list",
+      "v2.global_product.get_global_item_id",
+      "v2.global_product.get_global_item_info",
+      "v2.global_product.get_global_model_list",
+      "v2.global_product.update_global_item",
+      "v2.global_product.delete_global_item"
+    ]
+  },
+  "metadata_translated_at": "2025-10-16T08:46:44"
+}

@@ -1,0 +1,95 @@
+[
+  {
+    "chunk_index": 1,
+    "total_chunks": 1,
+    "endpoint": "https://openplatform.dfocus.net/cattle/movies/recommended/movies_play_list",
+    "method": "GET",
+    "description": "Movie recommendation API",
+    "update_log": [],
+    "hidden_fields": [],
+    "parameters": [
+      {
+        "name": "player_id",
+        "type": "string",
+        "required": true,
+        "description": "Required for all requests",
+        "children": []
+      },
+      {
+        "name": "access_token",
+        "type": "string",
+        "required": true,
+        "description": "This is the token for access to the server. Example: 4n23nk42ln",
+        "children": []
+      },
+      {
+        "name": "pkg_id",
+        "type": "string",
+        "required": false,
+        "description": "Package unique identifier for a play. Required param for some apps",
+        "children": []
+      },
+      {
+        "name": "cp",
+        "type": "string",
+        "required": false,
+        "description": "Required by content provider for special content",
+        "children": []
+      }
+    ],
+    "response_parameters": [
+      {
+        "name": "id",
+        "type": "string",
+        "description": "Unique movie ID"
+      },
+      {
+        "name": "movieid",
+        "type": "string",
+        "description": "Movie unique identifier"
+      },
+      {
+        "name": "name",
+        "type": "string",
+        "description": "Movie name"
+      }
+    ],
+    "error_codes": [
+      {
+        "code": "error_player",
+        "description": "There is no device failed to obtain"
+      },
+      {
+        "code": "error_permission_id",
+        "description": "There is no permission for current movie"
+      },
+      {
+        "code": "error_play",
+        "description": "Missing URL"
+      },
+      {
+        "code": "error_param",
+        "description": "Something wrong. Failed to load."
+      },
+      {
+        "code": "error_play_charging_info",
+        "description": "Failed to get play charging info"
+      }
+    ],
+    "notes": "The documentation includes many more error codes and API permissions section at the bottom which were partially visible in the image. The response example section shows JSON structure but was not fully visible to extract complete information.",
+    "chunk_metadata": {
+      "index": 1,
+      "total": 1,
+      "y_start": 0,
+      "y_end": 4972,
+      "overlap_top": 0,
+      "overlap_bottom": 0,
+      "height": 4972,
+      "path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\workspaces\\v2.product.update_sip_item_price\\chunks\\chunk_001.png",
+      "filename": "chunk_001.png",
+      "width": 837
+    },
+    "analysis_timestamp": "2025-10-10T06:36:20.543227",
+    "model": "claude-3-5-sonnet-20241022"
+  }
+]

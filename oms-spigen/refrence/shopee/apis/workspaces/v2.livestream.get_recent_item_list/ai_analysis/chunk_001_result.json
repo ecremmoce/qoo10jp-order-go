@@ -1,0 +1,94 @@
+{
+  "chunk_index": 1,
+  "total_chunks": 1,
+  "endpoint": null,
+  "method": null,
+  "description": null,
+  "update_log": [],
+  "hidden_fields": [],
+  "parameters": [
+    {
+      "name": "url",
+      "type": "string",
+      "required": true,
+      "description": "The API endpoint URL",
+      "children": []
+    },
+    {
+      "name": "method",
+      "type": "string",
+      "required": true,
+      "description": "HTTP method",
+      "children": []
+    },
+    {
+      "name": "text",
+      "type": "string",
+      "required": false,
+      "description": "Request text",
+      "children": []
+    },
+    {
+      "name": "required",
+      "type": "boolean",
+      "required": false,
+      "description": "Whether the field is required",
+      "children": []
+    },
+    {
+      "name": "example_value",
+      "type": "string",
+      "required": false,
+      "description": "Example value for the field",
+      "children": []
+    }
+  ],
+  "response_parameters": [
+    {
+      "name": "code",
+      "type": "integer",
+      "required": true,
+      "description": "Response status code",
+      "children": []
+    },
+    {
+      "name": "message",
+      "type": "string",
+      "required": true,
+      "description": "Response message",
+      "children": []
+    },
+    {
+      "name": "data",
+      "type": "object",
+      "required": false,
+      "description": "Response data object",
+      "children": []
+    }
+  ],
+  "error_codes": [
+    {
+      "code": "error_code",
+      "description": "The error code"
+    },
+    {
+      "code": "error_message",
+      "description": "The error message"
+    }
+  ],
+  "notes": "This appears to be API documentation showing common parameters, response structure, and error handling. The image shows both request parameters, response parameters, and error codes sections with examples.",
+  "chunk_metadata": {
+    "index": 1,
+    "total": 1,
+    "y_start": 0,
+    "y_end": 5098,
+    "overlap_top": 0,
+    "overlap_bottom": 0,
+    "height": 5098,
+    "path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\workspaces\\v2.livestream.get_recent_item_list\\chunks\\chunk_001.png",
+    "filename": "chunk_001.png",
+    "width": 837
+  },
+  "analysis_timestamp": "2025-10-10T05:56:05.590061",
+  "model": "claude-3-5-sonnet-20241022"
+}

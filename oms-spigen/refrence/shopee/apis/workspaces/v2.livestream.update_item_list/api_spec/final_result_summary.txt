@@ -1,0 +1,36 @@
+======================================================================
+API SPECIFICATION SUMMARY
+======================================================================
+
+Endpoint: None None
+Description: Q2 Dashboard update item_pd API
+
+Parameters (3):
+----------------------------------------------------------------------
+* session_id (string)
+   Pattern of 32 standard case alpha-numeric characters
+* store_name (string)
+   The store name is required in the request
+* item_id (string)
+   The item id of the item
+
+Response Fields (2):
+----------------------------------------------------------------------
+  message (string)
+   Status message about the error state if an error happened
+  result_id (string)
+   The identifier for API request error tracking
+
+Metadata:
+----------------------------------------------------------------------
+  total_chunks: 1
+  chunks_with_errors: 0
+  total_parameters_before_dedup: 3
+  total_parameters_after_dedup: 3
+  update_log_entries: 1
+  hidden_fields_count: 0
+  source_results: workspaces\v2.livestream.update_item_list\results\all_chunks_results.json
+
+======================================================================
+Legend: * = required parameter
+======================================================================

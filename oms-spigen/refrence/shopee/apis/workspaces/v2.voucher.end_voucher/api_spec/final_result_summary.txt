@@ -1,0 +1,40 @@
+======================================================================
+API SPECIFICATION SUMMARY
+======================================================================
+
+Endpoint: None /api/wechat/mini_voucher
+
+Parameters (3):
+----------------------------------------------------------------------
+* voucher_id (string)
+   The base for id system, using a stable code generated in the api. Will be valid for voucher list.
+* shop_id (integer)
+   Shopping center identifier for a shop. Required parts for the api
+* partner_id (string)
+
+Response Fields (5):
+----------------------------------------------------------------------
+  error (string)
+   Indicates error type if true error. Empty if no error happened
+  message (string)
+   Indicates error details if any error. Empty if no error
+  success (boolean)
+   Standard response code of success true or false
+  response (object)
+   Response information you are querying
+  partner_id (string)
+   The unique identifier for the voucher it is being queried
+
+Metadata:
+----------------------------------------------------------------------
+  total_chunks: 1
+  chunks_with_errors: 0
+  total_parameters_before_dedup: 3
+  total_parameters_after_dedup: 3
+  update_log_entries: 1
+  hidden_fields_count: 0
+  source_results: workspaces\v2.voucher.end_voucher\results\all_chunks_results.json
+
+======================================================================
+Legend: * = required parameter
+======================================================================

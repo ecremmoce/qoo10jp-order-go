@@ -1,0 +1,162 @@
+[
+  {
+    "chunk_index": 1,
+    "total_chunks": 1,
+    "endpoint": null,
+    "method": null,
+    "description": null,
+    "update_log": [],
+    "hidden_fields": [],
+    "parameters": [
+      {
+        "name": "client_id",
+        "type": "string",
+        "required": true,
+        "description": null,
+        "children": []
+      },
+      {
+        "name": "url_dl",
+        "type": "string",
+        "required": true,
+        "description": "Download URL reference",
+        "children": []
+      },
+      {
+        "name": "url_st",
+        "type": "string",
+        "required": false,
+        "description": null,
+        "children": []
+      },
+      {
+        "name": "url_ul",
+        "type": "string",
+        "required": true,
+        "description": "Upload URL reference",
+        "children": []
+      },
+      {
+        "name": "message_id",
+        "type": "string",
+        "required": false,
+        "description": null,
+        "children": []
+      },
+      {
+        "name": "source_id",
+        "type": "string",
+        "required": false,
+        "description": null,
+        "children": []
+      },
+      {
+        "name": "confidence_id",
+        "type": "integer",
+        "required": false,
+        "description": "Confidence identification number",
+        "children": []
+      },
+      {
+        "name": "continuous_data",
+        "type": "string",
+        "required": false,
+        "description": "Continuous data reference",
+        "children": []
+      },
+      {
+        "name": "metadata_type",
+        "type": "string",
+        "required": false,
+        "description": "Type of metadata reference",
+        "children": []
+      },
+      {
+        "name": "entity",
+        "type": "object",
+        "required": false,
+        "description": "Entity object data",
+        "children": []
+      },
+      {
+        "name": "address_status",
+        "type": "string",
+        "required": false,
+        "description": "Status of address reference",
+        "children": []
+      },
+      {
+        "name": "source",
+        "type": "string",
+        "required": false,
+        "description": "Source identifier reference",
+        "children": []
+      },
+      {
+        "name": "pid",
+        "type": "string",
+        "required": false,
+        "description": "Process identification number",
+        "children": []
+      },
+      {
+        "name": "uuid",
+        "type": "string",
+        "required": false,
+        "description": "Unique identifier reference",
+        "children": []
+      },
+      {
+        "name": "ts_type",
+        "type": "string",
+        "required": false,
+        "description": "Type specification reference",
+        "children": []
+      },
+      {
+        "name": "metadata_ids",
+        "type": "string",
+        "required": false,
+        "description": "Metadata identification references",
+        "children": []
+      },
+      {
+        "name": "message_status",
+        "type": "string",
+        "required": false,
+        "description": "Status of message reference",
+        "children": []
+      },
+      {
+        "name": "time_sequence_id",
+        "type": "string",
+        "required": false,
+        "description": "Sequence identifier for time",
+        "children": []
+      },
+      {
+        "name": "ts_host_value",
+        "type": "string",
+        "required": false,
+        "description": "Host value for timestamp",
+        "children": []
+      }
+    ],
+    "response_fields": [],
+    "notes": "The image appears to be an API documentation showing various parameters. Most parameters are optional (not marked as required) except for client_id, url_dl, and url_ul. The documentation includes both common parameters and what appears to be response or specialized parameters. Some descriptions were visible while others were not included in the image.",
+    "chunk_metadata": {
+      "index": 1,
+      "total": 1,
+      "y_start": 0,
+      "y_end": 5373,
+      "overlap_top": 0,
+      "overlap_bottom": 0,
+      "height": 5373,
+      "path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\workspaces\\v2.merchant.get_merchant_warehouse_list\\chunks\\chunk_001.png",
+      "filename": "chunk_001.png",
+      "width": 837
+    },
+    "analysis_timestamp": "2025-10-10T06:12:04.469954",
+    "model": "claude-3-5-sonnet-20241022"
+  }
+]

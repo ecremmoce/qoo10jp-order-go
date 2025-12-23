@@ -1,0 +1,2017 @@
+{
+  "last_updated": "2025-10-16T07:59:38.214894",
+  "developer_guide": {
+    "developer-guide.4": {
+      "title": "Introduction",
+      "url": "https://open.shopee.com/developer-guide/4",
+      "discovered_at": "2025-10-16T07:59:34.059968"
+    },
+    "developer-guide.12": {
+      "title": "Developer account registration",
+      "url": "https://open.shopee.com/developer-guide/12",
+      "discovered_at": "2025-10-16T07:59:34.059979"
+    },
+    "developer-guide.14": {
+      "title": "App management",
+      "url": "https://open.shopee.com/developer-guide/14",
+      "discovered_at": "2025-10-16T07:59:34.059982"
+    },
+    "developer-guide.16": {
+      "title": "API calls",
+      "url": "https://open.shopee.com/developer-guide/16",
+      "discovered_at": "2025-10-16T07:59:34.059984"
+    },
+    "developer-guide.18": {
+      "title": "Push Mechanism notifications",
+      "url": "https://open.shopee.com/developer-guide/18",
+      "discovered_at": "2025-10-16T07:59:34.059986"
+    },
+    "developer-guide.20": {
+      "title": "Authorization and Authentication",
+      "url": "https://open.shopee.com/developer-guide/20",
+      "discovered_at": "2025-10-16T07:59:34.059987"
+    },
+    "developer-guide.644": {
+      "title": "Sandbox Testing V2",
+      "url": "https://open.shopee.com/developer-guide/644",
+      "discovered_at": "2025-10-16T07:59:34.059989"
+    },
+    "developer-guide.24": {
+      "title": "Service Partner Program",
+      "url": "https://open.shopee.com/developer-guide/24",
+      "discovered_at": "2025-10-16T07:59:34.059991"
+    },
+    "developer-guide.27": {
+      "title": "V2.0 API Call Flow",
+      "url": "https://open.shopee.com/developer-guide/27",
+      "discovered_at": "2025-10-16T07:59:34.059993"
+    },
+    "developer-guide.28": {
+      "title": "CNSC API Integration Guide",
+      "url": "https://open.shopee.com/developer-guide/28",
+      "discovered_at": "2025-10-16T07:59:34.059994"
+    },
+    "developer-guide.29": {
+      "title": "KRSC API Integration Guide",
+      "url": "https://open.shopee.com/developer-guide/29",
+      "discovered_at": "2025-10-16T07:59:34.059996"
+    },
+    "developer-guide.31": {
+      "title": "V2.0 Data Definition",
+      "url": "https://open.shopee.com/developer-guide/31",
+      "discovered_at": "2025-10-16T07:59:34.059998"
+    },
+    "developer-guide.217": {
+      "title": "Guidelines for Creating Product",
+      "url": "https://open.shopee.com/developer-guide/217",
+      "discovered_at": "2025-10-16T07:59:34.060000"
+    },
+    "developer-guide.209": {
+      "title": "Product creation preparation",
+      "url": "https://open.shopee.com/developer-guide/209",
+      "discovered_at": "2025-10-16T07:59:34.060001"
+    },
+    "developer-guide.211": {
+      "title": "Creating product",
+      "url": "https://open.shopee.com/developer-guide/211",
+      "discovered_at": "2025-10-16T07:59:34.060003"
+    },
+    "developer-guide.213": {
+      "title": "Creating global product",
+      "url": "https://open.shopee.com/developer-guide/213",
+      "discovered_at": "2025-10-16T07:59:34.060005"
+    },
+    "developer-guide.215": {
+      "title": "Publishing global product",
+      "url": "https://open.shopee.com/developer-guide/215",
+      "discovered_at": "2025-10-16T07:59:34.060007"
+    },
+    "developer-guide.219": {
+      "title": "Variant management",
+      "url": "https://open.shopee.com/developer-guide/219",
+      "discovered_at": "2025-10-16T07:59:34.060009"
+    },
+    "developer-guide.221": {
+      "title": "Product base info management",
+      "url": "https://open.shopee.com/developer-guide/221",
+      "discovered_at": "2025-10-16T07:59:34.060010"
+    },
+    "developer-guide.223": {
+      "title": "Stock & Price Management",
+      "url": "https://open.shopee.com/developer-guide/223",
+      "discovered_at": "2025-10-16T07:59:34.060012"
+    },
+    "developer-guide.229": {
+      "title": "Order Management",
+      "url": "https://open.shopee.com/developer-guide/229",
+      "discovered_at": "2025-10-16T07:59:34.060013"
+    },
+    "developer-guide.225": {
+      "title": "First Mile Binding",
+      "url": "https://open.shopee.com/developer-guide/225",
+      "discovered_at": "2025-10-16T07:59:34.060015"
+    },
+    "developer-guide.227": {
+      "title": "Return Refund Management",
+      "url": "https://open.shopee.com/developer-guide/227",
+      "discovered_at": "2025-10-16T07:59:34.060017"
+    },
+    "developer-guide.261": {
+      "title": "SIP best practices",
+      "url": "https://open.shopee.com/developer-guide/261",
+      "discovered_at": "2025-10-16T07:59:34.060018"
+    },
+    "developer-guide.277": {
+      "title": "Shopee On-Platform Ads API Guide",
+      "url": "https://open.shopee.com/developer-guide/277",
+      "discovered_at": "2025-10-16T07:59:34.060020"
+    },
+    "developer-guide.677": {
+      "title": "Shopee Xpress - Package-free Integration Guide",
+      "url": "https://open.shopee.com/developer-guide/677",
+      "discovered_at": "2025-10-16T07:59:34.060021"
+    },
+    "developer-guide.286": {
+      "title": "API de Cotação (Logística do Vendedor)",
+      "url": "https://open.shopee.com/developer-guide/286",
+      "discovered_at": "2025-10-16T07:59:34.060023"
+    },
+    "developer-guide.290": {
+      "title": "Shopee Entrega Direta",
+      "url": "https://open.shopee.com/developer-guide/290",
+      "discovered_at": "2025-10-16T07:59:34.060032"
+    },
+    "developer-guide.378": {
+      "title": "AUTO PARTS: COMPATIBILIDADE DE AUTOPEÇAS",
+      "url": "https://open.shopee.com/developer-guide/378",
+      "discovered_at": "2025-10-16T07:59:34.060033"
+    },
+    "developer-guide.292": {
+      "title": "Passo a Passo Logistica API",
+      "url": "https://open.shopee.com/developer-guide/292",
+      "discovered_at": "2025-10-16T07:59:34.060035"
+    },
+    "developer-guide.381": {
+      "title": "Ferramenta de Log da Open Platform",
+      "url": "https://open.shopee.com/developer-guide/381",
+      "discovered_at": "2025-10-16T07:59:34.060037"
+    },
+    "developer-guide.382": {
+      "title": "Passo a passo para subir a NF-e através da OpenAPI",
+      "url": "https://open.shopee.com/developer-guide/382",
+      "discovered_at": "2025-10-16T07:59:34.060038"
+    },
+    "developer-guide.383": {
+      "title": "APIs de orders",
+      "url": "https://open.shopee.com/developer-guide/383",
+      "discovered_at": "2025-10-16T07:59:34.060040"
+    },
+    "developer-guide.384": {
+      "title": "Shopee Open API Platform | Passo a Passo de Solicitação",
+      "url": "https://open.shopee.com/developer-guide/384",
+      "discovered_at": "2025-10-16T07:59:34.060041"
+    },
+    "developer-guide.385": {
+      "title": "Open API auth call | Fluxo autorização ",
+      "url": "https://open.shopee.com/developer-guide/385",
+      "discovered_at": "2025-10-16T07:59:34.060043"
+    },
+    "developer-guide.568": {
+      "title": "Fulfilled by Shopee (BR)",
+      "url": "https://open.shopee.com/developer-guide/568",
+      "discovered_at": "2025-10-16T07:59:34.060045"
+    },
+    "developer-guide.697": {
+      "title": "Quotation API (Entrega Expressa) Developer Guide",
+      "url": "https://open.shopee.com/developer-guide/697",
+      "discovered_at": "2025-10-16T07:59:34.060046"
+    },
+    "developer-guide.643": {
+      "title": "Instant Mart Integration Guide",
+      "url": "https://open.shopee.com/developer-guide/643",
+      "discovered_at": "2025-10-16T07:59:34.060048"
+    },
+    "developer-guide.669": {
+      "title": "Livestream API Integration Guide",
+      "url": "https://open.shopee.com/developer-guide/669",
+      "discovered_at": "2025-10-16T07:59:34.060049"
+    },
+    "developer-guide.36": {
+      "title": "Terms of Service",
+      "url": "https://open.shopee.com/developer-guide/36",
+      "discovered_at": "2025-10-16T07:59:34.060051"
+    },
+    "developer-guide.32": {
+      "title": "Data Protection Policy",
+      "url": "https://open.shopee.com/developer-guide/32",
+      "discovered_at": "2025-10-16T07:59:34.060053"
+    },
+    "developer-guide.34": {
+      "title": "Platform Partner Rules",
+      "url": "https://open.shopee.com/developer-guide/34",
+      "discovered_at": "2025-10-16T07:59:34.060054"
+    },
+    "developer-guide.646": {
+      "title": "TW Developer Screening",
+      "url": "https://open.shopee.com/developer-guide/646",
+      "discovered_at": "2025-10-16T07:59:34.060055"
+    }
+  },
+  "api_reference": {
+    "v2.product.get_category": {
+      "title": "v2.product.get_category",
+      "url": "https://open.shopee.com/documents/v2/v2.product.get_category?module=89&type=1",
+      "discovered_at": "2025-10-16T07:59:37.895974"
+    },
+    "v2.product.get_attribute_tree": {
+      "title": "v2.product.get_attribute_tree",
+      "url": "https://open.shopee.com/documents/v2/v2.product.get_attribute_tree?module=89&type=1",
+      "discovered_at": "2025-10-16T07:59:37.895985"
+    },
+    "v2.product.get_brand_list": {
+      "title": "v2.product.get_brand_list",
+      "url": "https://open.shopee.com/documents/v2/v2.product.get_brand_list?module=89&type=1",
+      "discovered_at": "2025-10-16T07:59:37.895988"
+    },
+    "v2.product.get_item_limit": {
+      "title": "v2.product.get_item_limit",
+      "url": "https://open.shopee.com/documents/v2/v2.product.get_item_limit?module=89&type=1",
+      "discovered_at": "2025-10-16T07:59:37.895990"
+    },
+    "v2.product.get_item_list": {
+      "title": "v2.product.get_item_list",
+      "url": "https://open.shopee.com/documents/v2/v2.product.get_item_list?module=89&type=1",
+      "discovered_at": "2025-10-16T07:59:37.895991"
+    },
+    "v2.product.get_item_base_info": {
+      "title": "v2.product.get_item_base_info",
+      "url": "https://open.shopee.com/documents/v2/v2.product.get_item_base_info?module=89&type=1",
+      "discovered_at": "2025-10-16T07:59:37.895993"
+    },
+    "v2.product.get_item_extra_info": {
+      "title": "v2.product.get_item_extra_info",
+      "url": "https://open.shopee.com/documents/v2/v2.product.get_item_extra_info?module=89&type=1",
+      "discovered_at": "2025-10-16T07:59:37.895994"
+    },
+    "v2.product.add_item": {
+      "title": "v2.product.add_item",
+      "url": "https://open.shopee.com/documents/v2/v2.product.add_item?module=89&type=1",
+      "discovered_at": "2025-10-16T07:59:37.895996"
+    },
+    "v2.product.update_item": {
+      "title": "v2.product.update_item",
+      "url": "https://open.shopee.com/documents/v2/v2.product.update_item?module=89&type=1",
+      "discovered_at": "2025-10-16T07:59:37.895997"
+    },
+    "v2.product.delete_item": {
+      "title": "v2.product.delete_item",
+      "url": "https://open.shopee.com/documents/v2/v2.product.delete_item?module=89&type=1",
+      "discovered_at": "2025-10-16T07:59:37.895999"
+    },
+    "v2.product.init_tier_variation": {
+      "title": "v2.product.init_tier_variation",
+      "url": "https://open.shopee.com/documents/v2/v2.product.init_tier_variation?module=89&type=1",
+      "discovered_at": "2025-10-16T07:59:37.896000"
+    },
+    "v2.product.update_tier_variation": {
+      "title": "v2.product.update_tier_variation",
+      "url": "https://open.shopee.com/documents/v2/v2.product.update_tier_variation?module=89&type=1",
+      "discovered_at": "2025-10-16T07:59:37.896002"
+    },
+    "v2.product.get_model_list": {
+      "title": "v2.product.get_model_list",
+      "url": "https://open.shopee.com/documents/v2/v2.product.get_model_list?module=89&type=1",
+      "discovered_at": "2025-10-16T07:59:37.896003"
+    },
+    "v2.product.add_model": {
+      "title": "v2.product.add_model",
+      "url": "https://open.shopee.com/documents/v2/v2.product.add_model?module=89&type=1",
+      "discovered_at": "2025-10-16T07:59:37.896005"
+    },
+    "v2.product.update_model": {
+      "title": "v2.product.update_model",
+      "url": "https://open.shopee.com/documents/v2/v2.product.update_model?module=89&type=1",
+      "discovered_at": "2025-10-16T07:59:37.896006"
+    },
+    "v2.product.delete_model": {
+      "title": "v2.product.delete_model",
+      "url": "https://open.shopee.com/documents/v2/v2.product.delete_model?module=89&type=1",
+      "discovered_at": "2025-10-16T07:59:37.896007"
+    },
+    "v2.product.unlist_item": {
+      "title": "v2.product.unlist_item",
+      "url": "https://open.shopee.com/documents/v2/v2.product.unlist_item?module=89&type=1",
+      "discovered_at": "2025-10-16T07:59:37.896009"
+    },
+    "v2.product.update_price": {
+      "title": "v2.product.update_price",
+      "url": "https://open.shopee.com/documents/v2/v2.product.update_price?module=89&type=1",
+      "discovered_at": "2025-10-16T07:59:37.896010"
+    },
+    "v2.product.update_stock": {
+      "title": "v2.product.update_stock",
+      "url": "https://open.shopee.com/documents/v2/v2.product.update_stock?module=89&type=1",
+      "discovered_at": "2025-10-16T07:59:37.896011"
+    },
+    "v2.product.boost_item": {
+      "title": "v2.product.boost_item",
+      "url": "https://open.shopee.com/documents/v2/v2.product.boost_item?module=89&type=1",
+      "discovered_at": "2025-10-16T07:59:37.896013"
+    },
+    "v2.product.get_boosted_list": {
+      "title": "v2.product.get_boosted_list",
+      "url": "https://open.shopee.com/documents/v2/v2.product.get_boosted_list?module=89&type=1",
+      "discovered_at": "2025-10-16T07:59:37.896014"
+    },
+    "v2.product.get_item_promotion": {
+      "title": "v2.product.get_item_promotion",
+      "url": "https://open.shopee.com/documents/v2/v2.product.get_item_promotion?module=89&type=1",
+      "discovered_at": "2025-10-16T07:59:37.896016"
+    },
+    "v2.product.update_sip_item_price": {
+      "title": "v2.product.update_sip_item_price",
+      "url": "https://open.shopee.com/documents/v2/v2.product.update_sip_item_price?module=89&type=1",
+      "discovered_at": "2025-10-16T07:59:37.896018"
+    },
+    "v2.product.search_item": {
+      "title": "v2.product.search_item",
+      "url": "https://open.shopee.com/documents/v2/v2.product.search_item?module=89&type=1",
+      "discovered_at": "2025-10-16T07:59:37.896020"
+    },
+    "v2.product.get_comment": {
+      "title": "v2.product.get_comment",
+      "url": "https://open.shopee.com/documents/v2/v2.product.get_comment?module=89&type=1",
+      "discovered_at": "2025-10-16T07:59:37.896021"
+    },
+    "v2.product.reply_comment": {
+      "title": "v2.product.reply_comment",
+      "url": "https://open.shopee.com/documents/v2/v2.product.reply_comment?module=89&type=1",
+      "discovered_at": "2025-10-16T07:59:37.896022"
+    },
+    "v2.product.category_recommend": {
+      "title": "v2.product.category_recommend",
+      "url": "https://open.shopee.com/documents/v2/v2.product.category_recommend?module=89&type=1",
+      "discovered_at": "2025-10-16T07:59:37.896024"
+    },
+    "v2.product.register_brand": {
+      "title": "v2.product.register_brand",
+      "url": "https://open.shopee.com/documents/v2/v2.product.register_brand?module=89&type=1",
+      "discovered_at": "2025-10-16T07:59:37.896025"
+    },
+    "v2.product.get_recommend_attribute": {
+      "title": "v2.product.get_recommend_attribute",
+      "url": "https://open.shopee.com/documents/v2/v2.product.get_recommend_attribute?module=89&type=1",
+      "discovered_at": "2025-10-16T07:59:37.896027"
+    },
+    "v2.product.get_weight_recommendation": {
+      "title": "v2.product.get_weight_recommendation",
+      "url": "https://open.shopee.com/documents/v2/v2.product.get_weight_recommendation?module=89&type=1",
+      "discovered_at": "2025-10-16T07:59:37.896028"
+    },
+    "v2.product.get_size_chart_list ": {
+      "title": "v2.product.get_size_chart_list ",
+      "url": "https://open.shopee.com/documents/v2/v2.product.get_size_chart_list ?module=89&type=1",
+      "discovered_at": "2025-10-16T07:59:37.896030"
+    },
+    "v2.product.get_size_chart_detail": {
+      "title": "v2.product.get_size_chart_detail",
+      "url": "https://open.shopee.com/documents/v2/v2.product.get_size_chart_detail?module=89&type=1",
+      "discovered_at": "2025-10-16T07:59:37.896031"
+    },
+    "v2.product.get_item_violation_info": {
+      "title": "v2.product.get_item_violation_info",
+      "url": "https://open.shopee.com/documents/v2/v2.product.get_item_violation_info?module=89&type=1",
+      "discovered_at": "2025-10-16T07:59:37.896033"
+    },
+    "v2.product.get_variations": {
+      "title": "v2.product.get_variations",
+      "url": "https://open.shopee.com/documents/v2/v2.product.get_variations?module=89&type=1",
+      "discovered_at": "2025-10-16T07:59:37.896034"
+    },
+    "v2.product.get_all_vehicle_list": {
+      "title": "v2.product.get_all_vehicle_list",
+      "url": "https://open.shopee.com/documents/v2/v2.product.get_all_vehicle_list?module=89&type=1",
+      "discovered_at": "2025-10-16T07:59:37.896036"
+    },
+    "v2.product.get_vehicle_list_by_compatibility_detail": {
+      "title": "v2.product.get_vehicle_list_by_compatibility_detail",
+      "url": "https://open.shopee.com/documents/v2/v2.product.get_vehicle_list_by_compatibility_detail?module=89&type=1",
+      "discovered_at": "2025-10-16T07:59:37.896037"
+    },
+    "v2.product.get_item_content_diagnosis_result": {
+      "title": "v2.product.get_item_content_diagnosis_result",
+      "url": "https://open.shopee.com/documents/v2/v2.product.get_item_content_diagnosis_result?module=89&type=1",
+      "discovered_at": "2025-10-16T07:59:37.896039"
+    },
+    "v2.product.get_item_list_by_content_diagnosis": {
+      "title": "v2.product.get_item_list_by_content_diagnosis",
+      "url": "https://open.shopee.com/documents/v2/v2.product.get_item_list_by_content_diagnosis?module=89&type=1",
+      "discovered_at": "2025-10-16T07:59:37.896040"
+    },
+    "v2.product.get_kit_item_limit": {
+      "title": "v2.product.get_kit_item_limit",
+      "url": "https://open.shopee.com/documents/v2/v2.product.get_kit_item_limit?module=89&type=1",
+      "discovered_at": "2025-10-16T07:59:37.896042"
+    },
+    "v2.product.add_kit_item": {
+      "title": "v2.product.add_kit_item",
+      "url": "https://open.shopee.com/documents/v2/v2.product.add_kit_item?module=89&type=1",
+      "discovered_at": "2025-10-16T07:59:37.896043"
+    },
+    "v2.product.update_kit_item": {
+      "title": "v2.product.update_kit_item",
+      "url": "https://open.shopee.com/documents/v2/v2.product.update_kit_item?module=89&type=1",
+      "discovered_at": "2025-10-16T07:59:37.896045"
+    },
+    "v2.product.get_kit_item_info": {
+      "title": "v2.product.get_kit_item_info",
+      "url": "https://open.shopee.com/documents/v2/v2.product.get_kit_item_info?module=89&type=1",
+      "discovered_at": "2025-10-16T07:59:37.896046"
+    },
+    "v2.product.get_ssp_list": {
+      "title": "v2.product.get_ssp_list",
+      "url": "https://open.shopee.com/documents/v2/v2.product.get_ssp_list?module=89&type=1",
+      "discovered_at": "2025-10-16T07:59:37.896048"
+    },
+    "v2.product.get_ssp_info": {
+      "title": "v2.product.get_ssp_info",
+      "url": "https://open.shopee.com/documents/v2/v2.product.get_ssp_info?module=89&type=1",
+      "discovered_at": "2025-10-16T07:59:37.896050"
+    },
+    "v2.product.add_ssp_item": {
+      "title": "v2.product.add_ssp_item",
+      "url": "https://open.shopee.com/documents/v2/v2.product.add_ssp_item?module=89&type=1",
+      "discovered_at": "2025-10-16T07:59:37.896051"
+    },
+    "v2.product.link_ssp": {
+      "title": "v2.product.link_ssp",
+      "url": "https://open.shopee.com/documents/v2/v2.product.link_ssp?module=89&type=1",
+      "discovered_at": "2025-10-16T07:59:37.896052"
+    },
+    "v2.product.unlink_ssp": {
+      "title": "v2.product.unlink_ssp",
+      "url": "https://open.shopee.com/documents/v2/v2.product.unlink_ssp?module=89&type=1",
+      "discovered_at": "2025-10-16T07:59:37.896054"
+    },
+    "v2.product.get_aitem_by_pitem_id": {
+      "title": "v2.product.get_aitem_by_pitem_id",
+      "url": "https://open.shopee.com/documents/v2/v2.product.get_aitem_by_pitem_id?module=89&type=1",
+      "discovered_at": "2025-10-16T07:59:37.896055"
+    },
+    "v2.product.search_attribute_value_list": {
+      "title": "v2.product.search_attribute_value_list",
+      "url": "https://open.shopee.com/documents/v2/v2.product.search_attribute_value_list?module=89&type=1",
+      "discovered_at": "2025-10-16T07:59:37.896056"
+    },
+    "v2.product.get_main_item_list": {
+      "title": "v2.product.get_main_item_list",
+      "url": "https://open.shopee.com/documents/v2/v2.product.get_main_item_list?module=89&type=1",
+      "discovered_at": "2025-10-16T07:59:37.896058"
+    },
+    "v2.product.get_direct_item_list": {
+      "title": "v2.product.get_direct_item_list",
+      "url": "https://open.shopee.com/documents/v2/v2.product.get_direct_item_list?module=89&type=1",
+      "discovered_at": "2025-10-16T07:59:37.896059"
+    },
+    "v2.product.get_direct_shop_recommended_price": {
+      "title": "v2.product.get_direct_shop_recommended_price",
+      "url": "https://open.shopee.com/documents/v2/v2.product.get_direct_shop_recommended_price?module=89&type=1",
+      "discovered_at": "2025-10-16T07:59:37.896061"
+    },
+    "v2.product.get_product_certification_rule": {
+      "title": "v2.product.get_product_certification_rule",
+      "url": "https://open.shopee.com/documents/v2/v2.product.get_product_certification_rule?module=89&type=1",
+      "discovered_at": "2025-10-16T07:59:37.896062"
+    },
+    "v2.product.search_unpackaged_model_list": {
+      "title": "v2.product.search_unpackaged_model_list",
+      "url": "https://open.shopee.com/documents/v2/v2.product.search_unpackaged_model_list?module=89&type=1",
+      "discovered_at": "2025-10-16T07:59:37.896064"
+    },
+    "v2.product.generate_kit_image": {
+      "title": "v2.product.generate_kit_image",
+      "url": "https://open.shopee.com/documents/v2/v2.product.generate_kit_image?module=89&type=1",
+      "discovered_at": "2025-10-16T07:59:37.896065"
+    },
+    "v2.global_product.get_category": {
+      "title": "v2.global_product.get_category",
+      "url": "https://open.shopee.com/documents/v2/v2.global_product.get_category?module=90&type=1",
+      "discovered_at": "2025-10-16T07:59:37.896067"
+    },
+    "v2.global_product.get_attribute_tree": {
+      "title": "v2.global_product.get_attribute_tree",
+      "url": "https://open.shopee.com/documents/v2/v2.global_product.get_attribute_tree?module=90&type=1",
+      "discovered_at": "2025-10-16T07:59:37.896068"
+    },
+    "v2.global_product.get_brand_list": {
+      "title": "v2.global_product.get_brand_list",
+      "url": "https://open.shopee.com/documents/v2/v2.global_product.get_brand_list?module=90&type=1",
+      "discovered_at": "2025-10-16T07:59:37.896070"
+    },
+    "v2.global_product.get_global_item_limit": {
+      "title": "v2.global_product.get_global_item_limit",
+      "url": "https://open.shopee.com/documents/v2/v2.global_product.get_global_item_limit?module=90&type=1",
+      "discovered_at": "2025-10-16T07:59:37.896071"
+    },
+    "v2.global_product.get_global_item_list": {
+      "title": "v2.global_product.get_global_item_list",
+      "url": "https://open.shopee.com/documents/v2/v2.global_product.get_global_item_list?module=90&type=1",
+      "discovered_at": "2025-10-16T07:59:37.896073"
+    },
+    "v2.global_product.get_global_item_info": {
+      "title": "v2.global_product.get_global_item_info",
+      "url": "https://open.shopee.com/documents/v2/v2.global_product.get_global_item_info?module=90&type=1",
+      "discovered_at": "2025-10-16T07:59:37.896075"
+    },
+    "v2.global_product.add_global_item": {
+      "title": "v2.global_product.add_global_item",
+      "url": "https://open.shopee.com/documents/v2/v2.global_product.add_global_item?module=90&type=1",
+      "discovered_at": "2025-10-16T07:59:37.896076"
+    },
+    "v2.global_product.update_global_item": {
+      "title": "v2.global_product.update_global_item",
+      "url": "https://open.shopee.com/documents/v2/v2.global_product.update_global_item?module=90&type=1",
+      "discovered_at": "2025-10-16T07:59:37.896077"
+    },
+    "v2.global_product.delete_global_item": {
+      "title": "v2.global_product.delete_global_item",
+      "url": "https://open.shopee.com/documents/v2/v2.global_product.delete_global_item?module=90&type=1",
+      "discovered_at": "2025-10-16T07:59:37.896079"
+    },
+    "v2.global_product.init_tier_variation": {
+      "title": "v2.global_product.init_tier_variation",
+      "url": "https://open.shopee.com/documents/v2/v2.global_product.init_tier_variation?module=90&type=1",
+      "discovered_at": "2025-10-16T07:59:37.896080"
+    },
+    "v2.global_product.update_tier_variation": {
+      "title": "v2.global_product.update_tier_variation",
+      "url": "https://open.shopee.com/documents/v2/v2.global_product.update_tier_variation?module=90&type=1",
+      "discovered_at": "2025-10-16T07:59:37.896085"
+    },
+    "v2.global_product.add_global_model": {
+      "title": "v2.global_product.add_global_model",
+      "url": "https://open.shopee.com/documents/v2/v2.global_product.add_global_model?module=90&type=1",
+      "discovered_at": "2025-10-16T07:59:37.896087"
+    },
+    "v2.global_product.update_global_model": {
+      "title": "v2.global_product.update_global_model",
+      "url": "https://open.shopee.com/documents/v2/v2.global_product.update_global_model?module=90&type=1",
+      "discovered_at": "2025-10-16T07:59:37.896088"
+    },
+    "v2.global_product.delete_global_model": {
+      "title": "v2.global_product.delete_global_model",
+      "url": "https://open.shopee.com/documents/v2/v2.global_product.delete_global_model?module=90&type=1",
+      "discovered_at": "2025-10-16T07:59:37.896090"
+    },
+    "v2.global_product.get_global_model_list": {
+      "title": "v2.global_product.get_global_model_list",
+      "url": "https://open.shopee.com/documents/v2/v2.global_product.get_global_model_list?module=90&type=1",
+      "discovered_at": "2025-10-16T07:59:37.896091"
+    },
+    "v2.global_product.support_size_chart": {
+      "title": "v2.global_product.support_size_chart",
+      "url": "https://open.shopee.com/documents/v2/v2.global_product.support_size_chart?module=90&type=1",
+      "discovered_at": "2025-10-16T07:59:37.896093"
+    },
+    "v2.global_product.update_size_chart": {
+      "title": "v2.global_product.update_size_chart",
+      "url": "https://open.shopee.com/documents/v2/v2.global_product.update_size_chart?module=90&type=1",
+      "discovered_at": "2025-10-16T07:59:37.896094"
+    },
+    "v2.global_product.create_publish_task": {
+      "title": "v2.global_product.create_publish_task",
+      "url": "https://open.shopee.com/documents/v2/v2.global_product.create_publish_task?module=90&type=1",
+      "discovered_at": "2025-10-16T07:59:37.896096"
+    },
+    "v2.global_product.get_publishable_shop": {
+      "title": "v2.global_product.get_publishable_shop",
+      "url": "https://open.shopee.com/documents/v2/v2.global_product.get_publishable_shop?module=90&type=1",
+      "discovered_at": "2025-10-16T07:59:37.896098"
+    },
+    "v2.global_product.get_publish_task_result": {
+      "title": "v2.global_product.get_publish_task_result",
+      "url": "https://open.shopee.com/documents/v2/v2.global_product.get_publish_task_result?module=90&type=1",
+      "discovered_at": "2025-10-16T07:59:37.896099"
+    },
+    "v2.global_product.get_published_list": {
+      "title": "v2.global_product.get_published_list",
+      "url": "https://open.shopee.com/documents/v2/v2.global_product.get_published_list?module=90&type=1",
+      "discovered_at": "2025-10-16T07:59:37.896101"
+    },
+    "v2.global_product.update_price": {
+      "title": "v2.global_product.update_price",
+      "url": "https://open.shopee.com/documents/v2/v2.global_product.update_price?module=90&type=1",
+      "discovered_at": "2025-10-16T07:59:37.896102"
+    },
+    "v2.global_product.update_stock": {
+      "title": "v2.global_product.update_stock",
+      "url": "https://open.shopee.com/documents/v2/v2.global_product.update_stock?module=90&type=1",
+      "discovered_at": "2025-10-16T07:59:37.896104"
+    },
+    "v2.global_product.set_sync_field": {
+      "title": "v2.global_product.set_sync_field",
+      "url": "https://open.shopee.com/documents/v2/v2.global_product.set_sync_field?module=90&type=1",
+      "discovered_at": "2025-10-16T07:59:37.896106"
+    },
+    "v2.global_product.get_global_item_id": {
+      "title": "v2.global_product.get_global_item_id",
+      "url": "https://open.shopee.com/documents/v2/v2.global_product.get_global_item_id?module=90&type=1",
+      "discovered_at": "2025-10-16T07:59:37.896107"
+    },
+    "v2.global_product.category_recommend": {
+      "title": "v2.global_product.category_recommend",
+      "url": "https://open.shopee.com/documents/v2/v2.global_product.category_recommend?module=90&type=1",
+      "discovered_at": "2025-10-16T07:59:37.896109"
+    },
+    "v2.global_product.get_recommend_attribute": {
+      "title": "v2.global_product.get_recommend_attribute",
+      "url": "https://open.shopee.com/documents/v2/v2.global_product.get_recommend_attribute?module=90&type=1",
+      "discovered_at": "2025-10-16T07:59:37.896111"
+    },
+    "v2.global_product.get_shop_publishable_status": {
+      "title": "v2.global_product.get_shop_publishable_status",
+      "url": "https://open.shopee.com/documents/v2/v2.global_product.get_shop_publishable_status?module=90&type=1",
+      "discovered_at": "2025-10-16T07:59:37.896112"
+    },
+    "v2.global_product.get_variations": {
+      "title": "v2.global_product.get_variations",
+      "url": "https://open.shopee.com/documents/v2/v2.global_product.get_variations?module=90&type=1",
+      "discovered_at": "2025-10-16T07:59:37.896114"
+    },
+    "v2.global_product.get_size_chart_detail": {
+      "title": "v2.global_product.get_size_chart_detail",
+      "url": "https://open.shopee.com/documents/v2/v2.global_product.get_size_chart_detail?module=90&type=1",
+      "discovered_at": "2025-10-16T07:59:37.896115"
+    },
+    "v2.global_product.get_size_chart_list ": {
+      "title": "v2.global_product.get_size_chart_list ",
+      "url": "https://open.shopee.com/documents/v2/v2.global_product.get_size_chart_list ?module=90&type=1",
+      "discovered_at": "2025-10-16T07:59:37.896117"
+    },
+    "v2.global_product.search_global_attribute_value_list": {
+      "title": "v2.global_product.search_global_attribute_value_list",
+      "url": "https://open.shopee.com/documents/v2/v2.global_product.search_global_attribute_value_list?module=90&type=1",
+      "discovered_at": "2025-10-16T07:59:37.896120"
+    },
+    "v2.global_product.get_local_adjustment_rate": {
+      "title": "v2.global_product.get_local_adjustment_rate",
+      "url": "https://open.shopee.com/documents/v2/v2.global_product.get_local_adjustment_rate?module=90&type=1",
+      "discovered_at": "2025-10-16T07:59:37.896122"
+    },
+    "v2.global_product.update_local_adjustment_rate": {
+      "title": "v2.global_product.update_local_adjustment_rate",
+      "url": "https://open.shopee.com/documents/v2/v2.global_product.update_local_adjustment_rate?module=90&type=1",
+      "discovered_at": "2025-10-16T07:59:37.896123"
+    },
+    "v2.media_space.init_video_upload": {
+      "title": "v2.media_space.init_video_upload",
+      "url": "https://open.shopee.com/documents/v2/v2.media_space.init_video_upload?module=91&type=1",
+      "discovered_at": "2025-10-16T07:59:37.896125"
+    },
+    "v2.media_space.upload_video_part": {
+      "title": "v2.media_space.upload_video_part",
+      "url": "https://open.shopee.com/documents/v2/v2.media_space.upload_video_part?module=91&type=1",
+      "discovered_at": "2025-10-16T07:59:37.896126"
+    },
+    "v2.media_space.complete_video_upload": {
+      "title": "v2.media_space.complete_video_upload",
+      "url": "https://open.shopee.com/documents/v2/v2.media_space.complete_video_upload?module=91&type=1",
+      "discovered_at": "2025-10-16T07:59:37.896128"
+    },
+    "v2.media_space.get_video_upload_result": {
+      "title": "v2.media_space.get_video_upload_result",
+      "url": "https://open.shopee.com/documents/v2/v2.media_space.get_video_upload_result?module=91&type=1",
+      "discovered_at": "2025-10-16T07:59:37.896129"
+    },
+    "v2.media_space.cancel_video_upload": {
+      "title": "v2.media_space.cancel_video_upload",
+      "url": "https://open.shopee.com/documents/v2/v2.media_space.cancel_video_upload?module=91&type=1",
+      "discovered_at": "2025-10-16T07:59:37.896131"
+    },
+    "v2.media_space.upload_image": {
+      "title": "v2.media_space.upload_image",
+      "url": "https://open.shopee.com/documents/v2/v2.media_space.upload_image?module=91&type=1",
+      "discovered_at": "2025-10-16T07:59:37.896132"
+    },
+    "v2.media.upload_image": {
+      "title": "v2.media.upload_image",
+      "url": "https://open.shopee.com/documents/v2/v2.media.upload_image?module=89&type=1",
+      "discovered_at": "2025-10-16T07:59:37.896133"
+    },
+    "v2.shop.get_shop_info": {
+      "title": "v2.shop.get_shop_info",
+      "url": "https://open.shopee.com/documents/v2/v2.shop.get_shop_info?module=92&type=1",
+      "discovered_at": "2025-10-16T07:59:37.896135"
+    },
+    "v2.shop.get_profile": {
+      "title": "v2.shop.get_profile",
+      "url": "https://open.shopee.com/documents/v2/v2.shop.get_profile?module=92&type=1",
+      "discovered_at": "2025-10-16T07:59:37.896136"
+    },
+    "v2.shop.update_profile": {
+      "title": "v2.shop.update_profile",
+      "url": "https://open.shopee.com/documents/v2/v2.shop.update_profile?module=92&type=1",
+      "discovered_at": "2025-10-16T07:59:37.896138"
+    },
+    "v2.shop.get_warehouse_detail": {
+      "title": "v2.shop.get_warehouse_detail",
+      "url": "https://open.shopee.com/documents/v2/v2.shop.get_warehouse_detail?module=92&type=1",
+      "discovered_at": "2025-10-16T07:59:37.896139"
+    },
+    "v2.shop.get_shop_notification": {
+      "title": "v2.shop.get_shop_notification",
+      "url": "https://open.shopee.com/documents/v2/v2.shop.get_shop_notification?module=92&type=1",
+      "discovered_at": "2025-10-16T07:59:37.896140"
+    },
+    "v2.shop.get_authorised_reseller_brand": {
+      "title": "v2.shop.get_authorised_reseller_brand",
+      "url": "https://open.shopee.com/documents/v2/v2.shop.get_authorised_reseller_brand?module=92&type=1",
+      "discovered_at": "2025-10-16T07:59:37.896142"
+    },
+    "v2.merchant.get_merchant_info": {
+      "title": "v2.merchant.get_merchant_info",
+      "url": "https://open.shopee.com/documents/v2/v2.merchant.get_merchant_info?module=93&type=1",
+      "discovered_at": "2025-10-16T07:59:37.896143"
+    },
+    "v2.merchant.get_shop_list_by_merchant": {
+      "title": "v2.merchant.get_shop_list_by_merchant",
+      "url": "https://open.shopee.com/documents/v2/v2.merchant.get_shop_list_by_merchant?module=93&type=1",
+      "discovered_at": "2025-10-16T07:59:37.896145"
+    },
+    "v2.merchant.get_merchant_warehouse_location_list": {
+      "title": "v2.merchant.get_merchant_warehouse_location_list",
+      "url": "https://open.shopee.com/documents/v2/v2.merchant.get_merchant_warehouse_location_list?module=93&type=1",
+      "discovered_at": "2025-10-16T07:59:37.896146"
+    },
+    "v2.merchant.get_merchant_warehouse_list": {
+      "title": "v2.merchant.get_merchant_warehouse_list",
+      "url": "https://open.shopee.com/documents/v2/v2.merchant.get_merchant_warehouse_list?module=93&type=1",
+      "discovered_at": "2025-10-16T07:59:37.896148"
+    },
+    "v2.merchant.get_warehouse_eligible_shop_list": {
+      "title": "v2.merchant.get_warehouse_eligible_shop_list",
+      "url": "https://open.shopee.com/documents/v2/v2.merchant.get_warehouse_eligible_shop_list?module=93&type=1",
+      "discovered_at": "2025-10-16T07:59:37.896150"
+    },
+    "v2.merchant.get_merchant_prepaid_account_list": {
+      "title": "v2.merchant.get_merchant_prepaid_account_list",
+      "url": "https://open.shopee.com/documents/v2/v2.merchant.get_merchant_prepaid_account_list?module=93&type=1",
+      "discovered_at": "2025-10-16T07:59:37.896151"
+    },
+    "v2.order.get_order_list": {
+      "title": "v2.order.get_order_list",
+      "url": "https://open.shopee.com/documents/v2/v2.order.get_order_list?module=94&type=1",
+      "discovered_at": "2025-10-16T07:59:37.896153"
+    },
+    "v2.order.get_order_detail": {
+      "title": "v2.order.get_order_detail",
+      "url": "https://open.shopee.com/documents/v2/v2.order.get_order_detail?module=94&type=1",
+      "discovered_at": "2025-10-16T07:59:37.896154"
+    },
+    "v2.order.get_shipment_list": {
+      "title": "v2.order.get_shipment_list",
+      "url": "https://open.shopee.com/documents/v2/v2.order.get_shipment_list?module=94&type=1",
+      "discovered_at": "2025-10-16T07:59:37.896155"
+    },
+    "v2.order.search_package_list": {
+      "title": "v2.order.search_package_list",
+      "url": "https://open.shopee.com/documents/v2/v2.order.search_package_list?module=94&type=1",
+      "discovered_at": "2025-10-16T07:59:37.896157"
+    },
+    "v2.order.get_package_detail": {
+      "title": "v2.order.get_package_detail",
+      "url": "https://open.shopee.com/documents/v2/v2.order.get_package_detail?module=94&type=1",
+      "discovered_at": "2025-10-16T07:59:37.896158"
+    },
+    "v2.order.split_order": {
+      "title": "v2.order.split_order",
+      "url": "https://open.shopee.com/documents/v2/v2.order.split_order?module=94&type=1",
+      "discovered_at": "2025-10-16T07:59:37.896159"
+    },
+    "v2.order.unsplit_order": {
+      "title": "v2.order.unsplit_order",
+      "url": "https://open.shopee.com/documents/v2/v2.order.unsplit_order?module=94&type=1",
+      "discovered_at": "2025-10-16T07:59:37.896161"
+    },
+    "v2.order.cancel_order": {
+      "title": "v2.order.cancel_order",
+      "url": "https://open.shopee.com/documents/v2/v2.order.cancel_order?module=94&type=1",
+      "discovered_at": "2025-10-16T07:59:37.896162"
+    },
+    "v2.order.handle_buyer_cancellation": {
+      "title": "v2.order.handle_buyer_cancellation",
+      "url": "https://open.shopee.com/documents/v2/v2.order.handle_buyer_cancellation?module=94&type=1",
+      "discovered_at": "2025-10-16T07:59:37.896164"
+    },
+    "v2.order.set_note": {
+      "title": "v2.order.set_note",
+      "url": "https://open.shopee.com/documents/v2/v2.order.set_note?module=94&type=1",
+      "discovered_at": "2025-10-16T07:59:37.896165"
+    },
+    "v2.order.get_pending_buyer_invoice_order_list": {
+      "title": "v2.order.get_pending_buyer_invoice_order_list",
+      "url": "https://open.shopee.com/documents/v2/v2.order.get_pending_buyer_invoice_order_list?module=94&type=1",
+      "discovered_at": "2025-10-16T07:59:37.896167"
+    },
+    "v2.order.get_buyer_invoice_info": {
+      "title": "v2.order.get_buyer_invoice_info",
+      "url": "https://open.shopee.com/documents/v2/v2.order.get_buyer_invoice_info?module=94&type=1",
+      "discovered_at": "2025-10-16T07:59:37.896168"
+    },
+    "v2.order.upload_invoice_doc": {
+      "title": "v2.order.upload_invoice_doc",
+      "url": "https://open.shopee.com/documents/v2/v2.order.upload_invoice_doc?module=94&type=1",
+      "discovered_at": "2025-10-16T07:59:37.896170"
+    },
+    "v2.order.download_invoice_doc": {
+      "title": "v2.order.download_invoice_doc",
+      "url": "https://open.shopee.com/documents/v2/v2.order.download_invoice_doc?module=94&type=1",
+      "discovered_at": "2025-10-16T07:59:37.896171"
+    },
+    "v2.order.handle_prescription_check": {
+      "title": "v2.order.handle_prescription_check",
+      "url": "https://open.shopee.com/documents/v2/v2.order.handle_prescription_check?module=94&type=1",
+      "discovered_at": "2025-10-16T07:59:37.896173"
+    },
+    "v2.order.get_warehouse_filter_config": {
+      "title": "v2.order.get_warehouse_filter_config",
+      "url": "https://open.shopee.com/documents/v2/v2.order.get_warehouse_filter_config?module=94&type=1",
+      "discovered_at": "2025-10-16T07:59:37.896174"
+    },
+    "v2.order.get_booking_list": {
+      "title": "v2.order.get_booking_list",
+      "url": "https://open.shopee.com/documents/v2/v2.order.get_booking_list?module=94&type=1",
+      "discovered_at": "2025-10-16T07:59:37.896176"
+    },
+    "v2.order.get_booking_detail": {
+      "title": "v2.order.get_booking_detail",
+      "url": "https://open.shopee.com/documents/v2/v2.order.get_booking_detail?module=94&type=1",
+      "discovered_at": "2025-10-16T07:59:37.896177"
+    },
+    "v2.order.generate_fbs_invoices": {
+      "title": "v2.order.generate_fbs_invoices",
+      "url": "https://open.shopee.com/documents/v2/v2.order.generate_fbs_invoices?module=94&type=1",
+      "discovered_at": "2025-10-16T07:59:37.896178"
+    },
+    "v2.order.get_fbs_invoices_result": {
+      "title": "v2.order.get_fbs_invoices_result",
+      "url": "https://open.shopee.com/documents/v2/v2.order.get_fbs_invoices_result?module=94&type=1",
+      "discovered_at": "2025-10-16T07:59:37.896180"
+    },
+    "v2.order.download_fbs_invoices": {
+      "title": "v2.order.download_fbs_invoices",
+      "url": "https://open.shopee.com/documents/v2/v2.order.download_fbs_invoices?module=94&type=1",
+      "discovered_at": "2025-10-16T07:59:37.896184"
+    },
+    "v2.logistics.get_shipping_parameter": {
+      "title": "v2.logistics.get_shipping_parameter",
+      "url": "https://open.shopee.com/documents/v2/v2.logistics.get_shipping_parameter?module=95&type=1",
+      "discovered_at": "2025-10-16T07:59:37.896185"
+    },
+    "v2.logistics.get_mass_shipping_parameter": {
+      "title": "v2.logistics.get_mass_shipping_parameter",
+      "url": "https://open.shopee.com/documents/v2/v2.logistics.get_mass_shipping_parameter?module=95&type=1",
+      "discovered_at": "2025-10-16T07:59:37.896187"
+    },
+    "v2.logistics.ship_order": {
+      "title": "v2.logistics.ship_order",
+      "url": "https://open.shopee.com/documents/v2/v2.logistics.ship_order?module=95&type=1",
+      "discovered_at": "2025-10-16T07:59:37.896188"
+    },
+    "v2.logistics.mass_ship_order": {
+      "title": "v2.logistics.mass_ship_order",
+      "url": "https://open.shopee.com/documents/v2/v2.logistics.mass_ship_order?module=95&type=1",
+      "discovered_at": "2025-10-16T07:59:37.896189"
+    },
+    "v2.logistics.update_shipping_order": {
+      "title": "v2.logistics.update_shipping_order",
+      "url": "https://open.shopee.com/documents/v2/v2.logistics.update_shipping_order?module=95&type=1",
+      "discovered_at": "2025-10-16T07:59:37.896191"
+    },
+    "v2.logistics.get_tracking_number": {
+      "title": "v2.logistics.get_tracking_number",
+      "url": "https://open.shopee.com/documents/v2/v2.logistics.get_tracking_number?module=95&type=1",
+      "discovered_at": "2025-10-16T07:59:37.896192"
+    },
+    "v2.logistics.get_mass_tracking_number": {
+      "title": "v2.logistics.get_mass_tracking_number",
+      "url": "https://open.shopee.com/documents/v2/v2.logistics.get_mass_tracking_number?module=95&type=1",
+      "discovered_at": "2025-10-16T07:59:37.896194"
+    },
+    "v2.logistics.get_shipping_document_parameter": {
+      "title": "v2.logistics.get_shipping_document_parameter",
+      "url": "https://open.shopee.com/documents/v2/v2.logistics.get_shipping_document_parameter?module=95&type=1",
+      "discovered_at": "2025-10-16T07:59:37.896195"
+    },
+    "v2.logistics.create_shipping_document": {
+      "title": "v2.logistics.create_shipping_document",
+      "url": "https://open.shopee.com/documents/v2/v2.logistics.create_shipping_document?module=95&type=1",
+      "discovered_at": "2025-10-16T07:59:37.896197"
+    },
+    "v2.logistics.get_shipping_document_result": {
+      "title": "v2.logistics.get_shipping_document_result",
+      "url": "https://open.shopee.com/documents/v2/v2.logistics.get_shipping_document_result?module=95&type=1",
+      "discovered_at": "2025-10-16T07:59:37.896198"
+    },
+    "v2.logistics.download_shipping_document": {
+      "title": "v2.logistics.download_shipping_document",
+      "url": "https://open.shopee.com/documents/v2/v2.logistics.download_shipping_document?module=95&type=1",
+      "discovered_at": "2025-10-16T07:59:37.896200"
+    },
+    "v2.logistics.get_shipping_document_data_info": {
+      "title": "v2.logistics.get_shipping_document_data_info",
+      "url": "https://open.shopee.com/documents/v2/v2.logistics.get_shipping_document_data_info?module=95&type=1",
+      "discovered_at": "2025-10-16T07:59:37.896201"
+    },
+    "v2.logistics.get_tracking_info": {
+      "title": "v2.logistics.get_tracking_info",
+      "url": "https://open.shopee.com/documents/v2/v2.logistics.get_tracking_info?module=95&type=1",
+      "discovered_at": "2025-10-16T07:59:37.896202"
+    },
+    "v2.logistics.get_address_list": {
+      "title": "v2.logistics.get_address_list",
+      "url": "https://open.shopee.com/documents/v2/v2.logistics.get_address_list?module=95&type=1",
+      "discovered_at": "2025-10-16T07:59:37.896204"
+    },
+    "v2.logistics.set_address_config": {
+      "title": "v2.logistics.set_address_config",
+      "url": "https://open.shopee.com/documents/v2/v2.logistics.set_address_config?module=95&type=1",
+      "discovered_at": "2025-10-16T07:59:37.896205"
+    },
+    "v2.logistics.delete_address": {
+      "title": "v2.logistics.delete_address",
+      "url": "https://open.shopee.com/documents/v2/v2.logistics.delete_address?module=95&type=1",
+      "discovered_at": "2025-10-16T07:59:37.896207"
+    },
+    "v2.logistics.get_channel_list": {
+      "title": "v2.logistics.get_channel_list",
+      "url": "https://open.shopee.com/documents/v2/v2.logistics.get_channel_list?module=95&type=1",
+      "discovered_at": "2025-10-16T07:59:37.896208"
+    },
+    "v2.logistics.update_channel": {
+      "title": "v2.logistics.update_channel",
+      "url": "https://open.shopee.com/documents/v2/v2.logistics.update_channel?module=95&type=1",
+      "discovered_at": "2025-10-16T07:59:37.896209"
+    },
+    "v2.logistics.get_operating_hours": {
+      "title": "v2.logistics.get_operating_hours",
+      "url": "https://open.shopee.com/documents/v2/v2.logistics.get_operating_hours?module=95&type=1",
+      "discovered_at": "2025-10-16T07:59:37.896211"
+    },
+    "v2.logistics.get_operating_hour_restrictions": {
+      "title": "v2.logistics.get_operating_hour_restrictions",
+      "url": "https://open.shopee.com/documents/v2/v2.logistics.get_operating_hour_restrictions?module=95&type=1",
+      "discovered_at": "2025-10-16T07:59:37.896212"
+    },
+    "v2.logistics.update_operating_hours": {
+      "title": "v2.logistics.update_operating_hours",
+      "url": "https://open.shopee.com/documents/v2/v2.logistics.update_operating_hours?module=95&type=1",
+      "discovered_at": "2025-10-16T07:59:37.896214"
+    },
+    "v2.logistics.delete_special_operating_hour": {
+      "title": "v2.logistics.delete_special_operating_hour",
+      "url": "https://open.shopee.com/documents/v2/v2.logistics.delete_special_operating_hour?module=95&type=1",
+      "discovered_at": "2025-10-16T07:59:37.896215"
+    },
+    "v2.logistics.batch_update_tpf_warehouse_tracking_status": {
+      "title": "v2.logistics.batch_update_tpf_warehouse_tracking_status",
+      "url": "https://open.shopee.com/documents/v2/v2.logistics.batch_update_tpf_warehouse_tracking_status?module=95&type=1",
+      "discovered_at": "2025-10-16T07:59:37.896217"
+    },
+    "v2.logistics.batch_ship_order": {
+      "title": "v2.logistics.batch_ship_order",
+      "url": "https://open.shopee.com/documents/v2/v2.logistics.batch_ship_order?module=95&type=1",
+      "discovered_at": "2025-10-16T07:59:37.896218"
+    },
+    "v2.logistics.update_tracking_status": {
+      "title": "v2.logistics.update_tracking_status",
+      "url": "https://open.shopee.com/documents/v2/v2.logistics.update_tracking_status?module=95&type=1",
+      "discovered_at": "2025-10-16T07:59:37.896220"
+    },
+    "v2.logistics.get_booking_shipping_parameter": {
+      "title": "v2.logistics.get_booking_shipping_parameter",
+      "url": "https://open.shopee.com/documents/v2/v2.logistics.get_booking_shipping_parameter?module=95&type=1",
+      "discovered_at": "2025-10-16T07:59:37.896221"
+    },
+    "v2.logistics.ship_booking": {
+      "title": "v2.logistics.ship_booking",
+      "url": "https://open.shopee.com/documents/v2/v2.logistics.ship_booking?module=95&type=1",
+      "discovered_at": "2025-10-16T07:59:37.896223"
+    },
+    "v2.logistics.get_booking_tracking_number": {
+      "title": "v2.logistics.get_booking_tracking_number",
+      "url": "https://open.shopee.com/documents/v2/v2.logistics.get_booking_tracking_number?module=95&type=1",
+      "discovered_at": "2025-10-16T07:59:37.896224"
+    },
+    "v2.logistics.get_booking_shipping_document_parameter": {
+      "title": "v2.logistics.get_booking_shipping_document_parameter",
+      "url": "https://open.shopee.com/documents/v2/v2.logistics.get_booking_shipping_document_parameter?module=95&type=1",
+      "discovered_at": "2025-10-16T07:59:37.896226"
+    },
+    "v2.logistics.create_booking_shipping_document": {
+      "title": "v2.logistics.create_booking_shipping_document",
+      "url": "https://open.shopee.com/documents/v2/v2.logistics.create_booking_shipping_document?module=95&type=1",
+      "discovered_at": "2025-10-16T07:59:37.896228"
+    },
+    "v2.logistics.get_booking_shipping_document_result": {
+      "title": "v2.logistics.get_booking_shipping_document_result",
+      "url": "https://open.shopee.com/documents/v2/v2.logistics.get_booking_shipping_document_result?module=95&type=1",
+      "discovered_at": "2025-10-16T07:59:37.896229"
+    },
+    "v2.logistics.download_booking_shipping_document": {
+      "title": "v2.logistics.download_booking_shipping_document",
+      "url": "https://open.shopee.com/documents/v2/v2.logistics.download_booking_shipping_document?module=95&type=1",
+      "discovered_at": "2025-10-16T07:59:37.896231"
+    },
+    "v2.logistics.get_booking_shipping_document_data_info": {
+      "title": "v2.logistics.get_booking_shipping_document_data_info",
+      "url": "https://open.shopee.com/documents/v2/v2.logistics.get_booking_shipping_document_data_info?module=95&type=1",
+      "discovered_at": "2025-10-16T07:59:37.896232"
+    },
+    "v2.logistics.get_booking_tracking_info": {
+      "title": "v2.logistics.get_booking_tracking_info",
+      "url": "https://open.shopee.com/documents/v2/v2.logistics.get_booking_tracking_info?module=95&type=1",
+      "discovered_at": "2025-10-16T07:59:37.896233"
+    },
+    "v2.logistics.download_to_label": {
+      "title": "v2.logistics.download_to_label",
+      "url": "https://open.shopee.com/documents/v2/v2.logistics.download_to_label?module=95&type=1",
+      "discovered_at": "2025-10-16T07:59:37.896235"
+    },
+    "v2.logistics.create_shipping_document_job": {
+      "title": "v2.logistics.create_shipping_document_job",
+      "url": "https://open.shopee.com/documents/v2/v2.logistics.create_shipping_document_job?module=95&type=1",
+      "discovered_at": "2025-10-16T07:59:37.896236"
+    },
+    "v2.logistics.get_shipping_document_job_status": {
+      "title": "v2.logistics.get_shipping_document_job_status",
+      "url": "https://open.shopee.com/documents/v2/v2.logistics.get_shipping_document_job_status?module=95&type=1",
+      "discovered_at": "2025-10-16T07:59:37.896238"
+    },
+    "v2.logistics.download_shipping_document_job": {
+      "title": "v2.logistics.download_shipping_document_job",
+      "url": "https://open.shopee.com/documents/v2/v2.logistics.download_shipping_document_job?module=95&type=1",
+      "discovered_at": "2025-10-16T07:59:37.896239"
+    },
+    "v2.logistics.get_mart_packaging_info": {
+      "title": "v2.logistics.get_mart_packaging_info",
+      "url": "https://open.shopee.com/documents/v2/v2.logistics.get_mart_packaging_info?module=95&type=1",
+      "discovered_at": "2025-10-16T07:59:37.896240"
+    },
+    "v2.logistics.set_mart_packaging_info": {
+      "title": "v2.logistics.set_mart_packaging_info",
+      "url": "https://open.shopee.com/documents/v2/v2.logistics.set_mart_packaging_info?module=95&type=1",
+      "discovered_at": "2025-10-16T07:59:37.896242"
+    },
+    "v2.logistics.update_self_collection_order_logistics": {
+      "title": "v2.logistics.update_self_collection_order_logistics",
+      "url": "https://open.shopee.com/documents/v2/v2.logistics.update_self_collection_order_logistics?module=95&type=1",
+      "discovered_at": "2025-10-16T07:59:37.896243"
+    },
+    "v2.first_mile.get_unbind_order_list": {
+      "title": "v2.first_mile.get_unbind_order_list",
+      "url": "https://open.shopee.com/documents/v2/v2.first_mile.get_unbind_order_list?module=103&type=1",
+      "discovered_at": "2025-10-16T07:59:37.896244"
+    },
+    "v2.first_mile.get_detail": {
+      "title": "v2.first_mile.get_detail",
+      "url": "https://open.shopee.com/documents/v2/v2.first_mile.get_detail?module=103&type=1",
+      "discovered_at": "2025-10-16T07:59:37.896248"
+    },
+    "v2.first_mile.generate_first_mile_tracking_number": {
+      "title": "v2.first_mile.generate_first_mile_tracking_number",
+      "url": "https://open.shopee.com/documents/v2/v2.first_mile.generate_first_mile_tracking_number?module=103&type=1",
+      "discovered_at": "2025-10-16T07:59:37.896250"
+    },
+    "v2.first_mile.bind_first_mile_tracking_number": {
+      "title": "v2.first_mile.bind_first_mile_tracking_number",
+      "url": "https://open.shopee.com/documents/v2/v2.first_mile.bind_first_mile_tracking_number?module=103&type=1",
+      "discovered_at": "2025-10-16T07:59:37.896251"
+    },
+    "v2.first_mile.unbind_first_mile_tracking_number": {
+      "title": "v2.first_mile.unbind_first_mile_tracking_number",
+      "url": "https://open.shopee.com/documents/v2/v2.first_mile.unbind_first_mile_tracking_number?module=103&type=1",
+      "discovered_at": "2025-10-16T07:59:37.896253"
+    },
+    "v2.first_mile.get_tracking_number_list": {
+      "title": "v2.first_mile.get_tracking_number_list",
+      "url": "https://open.shopee.com/documents/v2/v2.first_mile.get_tracking_number_list?module=103&type=1",
+      "discovered_at": "2025-10-16T07:59:37.896254"
+    },
+    "v2.first_mile.get_waybill": {
+      "title": "v2.first_mile.get_waybill",
+      "url": "https://open.shopee.com/documents/v2/v2.first_mile.get_waybill?module=103&type=1",
+      "discovered_at": "2025-10-16T07:59:37.896255"
+    },
+    "v2.first_mile.get_channel_list": {
+      "title": "v2.first_mile.get_channel_list",
+      "url": "https://open.shopee.com/documents/v2/v2.first_mile.get_channel_list?module=103&type=1",
+      "discovered_at": "2025-10-16T07:59:37.896257"
+    },
+    "v2.first_mile.get_courier_delivery_channel_list": {
+      "title": "v2.first_mile.get_courier_delivery_channel_list",
+      "url": "https://open.shopee.com/documents/v2/v2.first_mile.get_courier_delivery_channel_list?module=103&type=1",
+      "discovered_at": "2025-10-16T07:59:37.896258"
+    },
+    "v2.first_mile.get_transit_warehouse_list": {
+      "title": "v2.first_mile.get_transit_warehouse_list",
+      "url": "https://open.shopee.com/documents/v2/v2.first_mile.get_transit_warehouse_list?module=103&type=1",
+      "discovered_at": "2025-10-16T07:59:37.896259"
+    },
+    "v2.first_mile.generate_and_bind_first_mile_tracking_number": {
+      "title": "v2.first_mile.generate_and_bind_first_mile_tracking_number",
+      "url": "https://open.shopee.com/documents/v2/v2.first_mile.generate_and_bind_first_mile_tracking_number?module=103&type=1",
+      "discovered_at": "2025-10-16T07:59:37.896261"
+    },
+    "v2.first_mile.bind_courier_delivery_first_mile_tracking_number": {
+      "title": "v2.first_mile.bind_courier_delivery_first_mile_tracking_number",
+      "url": "https://open.shopee.com/documents/v2/v2.first_mile.bind_courier_delivery_first_mile_tracking_number?module=103&type=1",
+      "discovered_at": "2025-10-16T07:59:37.896262"
+    },
+    "v2.first_mile.unbind_first_mile_tracking_number_all": {
+      "title": "v2.first_mile.unbind_first_mile_tracking_number_all",
+      "url": "https://open.shopee.com/documents/v2/v2.first_mile.unbind_first_mile_tracking_number_all?module=103&type=1",
+      "discovered_at": "2025-10-16T07:59:37.896264"
+    },
+    "v2.first_mile.get_courier_delivery_detail": {
+      "title": "v2.first_mile.get_courier_delivery_detail",
+      "url": "https://open.shopee.com/documents/v2/v2.first_mile.get_courier_delivery_detail?module=103&type=1",
+      "discovered_at": "2025-10-16T07:59:37.896265"
+    },
+    "v2.first_mile.get_courier_delivery_waybill": {
+      "title": "v2.first_mile.get_courier_delivery_waybill",
+      "url": "https://open.shopee.com/documents/v2/v2.first_mile.get_courier_delivery_waybill?module=103&type=1",
+      "discovered_at": "2025-10-16T07:59:37.896267"
+    },
+    "v2.first_mile.get_courier_delivery_tracking_number_list": {
+      "title": "v2.first_mile.get_courier_delivery_tracking_number_list",
+      "url": "https://open.shopee.com/documents/v2/v2.first_mile.get_courier_delivery_tracking_number_list?module=103&type=1",
+      "discovered_at": "2025-10-16T07:59:37.896268"
+    },
+    "v2.payment.get_escrow_detail": {
+      "title": "v2.payment.get_escrow_detail",
+      "url": "https://open.shopee.com/documents/v2/v2.payment.get_escrow_detail?module=97&type=1",
+      "discovered_at": "2025-10-16T07:59:37.896269"
+    },
+    "v2.payment.set_shop_installment_status": {
+      "title": "v2.payment.set_shop_installment_status",
+      "url": "https://open.shopee.com/documents/v2/v2.payment.set_shop_installment_status?module=97&type=1",
+      "discovered_at": "2025-10-16T07:59:37.896275"
+    },
+    "v2.payment.get_shop_installment_status": {
+      "title": "v2.payment.get_shop_installment_status",
+      "url": "https://open.shopee.com/documents/v2/v2.payment.get_shop_installment_status?module=97&type=1",
+      "discovered_at": "2025-10-16T07:59:37.896277"
+    },
+    "v2.payment.get_payout_detail": {
+      "title": "v2.payment.get_payout_detail",
+      "url": "https://open.shopee.com/documents/v2/v2.payment.get_payout_detail?module=97&type=1",
+      "discovered_at": "2025-10-16T07:59:37.896278"
+    },
+    "v2.payment.set_item_installment_status": {
+      "title": "v2.payment.set_item_installment_status",
+      "url": "https://open.shopee.com/documents/v2/v2.payment.set_item_installment_status?module=97&type=1",
+      "discovered_at": "2025-10-16T07:59:37.896279"
+    },
+    "v2.payment.get_item_installment_status": {
+      "title": "v2.payment.get_item_installment_status",
+      "url": "https://open.shopee.com/documents/v2/v2.payment.get_item_installment_status?module=97&type=1",
+      "discovered_at": "2025-10-16T07:59:37.896281"
+    },
+    "v2.payment.get_payment_method_list": {
+      "title": "v2.payment.get_payment_method_list",
+      "url": "https://open.shopee.com/documents/v2/v2.payment.get_payment_method_list?module=97&type=1",
+      "discovered_at": "2025-10-16T07:59:37.896282"
+    },
+    "v2.payment.get_wallet_transaction_list": {
+      "title": "v2.payment.get_wallet_transaction_list",
+      "url": "https://open.shopee.com/documents/v2/v2.payment.get_wallet_transaction_list?module=97&type=1",
+      "discovered_at": "2025-10-16T07:59:37.896284"
+    },
+    "v2.payment.get_escrow_list": {
+      "title": "v2.payment.get_escrow_list",
+      "url": "https://open.shopee.com/documents/v2/v2.payment.get_escrow_list?module=97&type=1",
+      "discovered_at": "2025-10-16T07:59:37.896285"
+    },
+    "v2.payment.get_payout_info": {
+      "title": "v2.payment.get_payout_info",
+      "url": "https://open.shopee.com/documents/v2/v2.payment.get_payout_info?module=97&type=1",
+      "discovered_at": "2025-10-16T07:59:37.896287"
+    },
+    "v2.payment.get_billing_transaction_info": {
+      "title": "v2.payment.get_billing_transaction_info",
+      "url": "https://open.shopee.com/documents/v2/v2.payment.get_billing_transaction_info?module=97&type=1",
+      "discovered_at": "2025-10-16T07:59:37.896288"
+    },
+    "v2.payment.get_escrow_detail_batch": {
+      "title": "v2.payment.get_escrow_detail_batch",
+      "url": "https://open.shopee.com/documents/v2/v2.payment.get_escrow_detail_batch?module=97&type=1",
+      "discovered_at": "2025-10-16T07:59:37.896290"
+    },
+    "v2.payment.generate_income_statement": {
+      "title": "v2.payment.generate_income_statement",
+      "url": "https://open.shopee.com/documents/v2/v2.payment.generate_income_statement?module=97&type=1",
+      "discovered_at": "2025-10-16T07:59:37.896291"
+    },
+    "v2.payment.get_income_statement": {
+      "title": "v2.payment.get_income_statement",
+      "url": "https://open.shopee.com/documents/v2/v2.payment.get_income_statement?module=97&type=1",
+      "discovered_at": "2025-10-16T07:59:37.896293"
+    },
+    "v2.payment.generate_income_report": {
+      "title": "v2.payment.generate_income_report",
+      "url": "https://open.shopee.com/documents/v2/v2.payment.generate_income_report?module=97&type=1",
+      "discovered_at": "2025-10-16T07:59:37.896294"
+    },
+    "v2.payment.get_income_report": {
+      "title": "v2.payment.get_income_report",
+      "url": "https://open.shopee.com/documents/v2/v2.payment.get_income_report?module=97&type=1",
+      "discovered_at": "2025-10-16T07:59:37.896296"
+    },
+    "v2.discount.add_discount": {
+      "title": "v2.discount.add_discount",
+      "url": "https://open.shopee.com/documents/v2/v2.discount.add_discount?module=96&type=1",
+      "discovered_at": "2025-10-16T07:59:37.896297"
+    },
+    "v2.discount.add_discount_item": {
+      "title": "v2.discount.add_discount_item",
+      "url": "https://open.shopee.com/documents/v2/v2.discount.add_discount_item?module=96&type=1",
+      "discovered_at": "2025-10-16T07:59:37.896298"
+    },
+    "v2.discount.delete_discount": {
+      "title": "v2.discount.delete_discount",
+      "url": "https://open.shopee.com/documents/v2/v2.discount.delete_discount?module=96&type=1",
+      "discovered_at": "2025-10-16T07:59:37.896300"
+    },
+    "v2.discount.delete_discount_item": {
+      "title": "v2.discount.delete_discount_item",
+      "url": "https://open.shopee.com/documents/v2/v2.discount.delete_discount_item?module=96&type=1",
+      "discovered_at": "2025-10-16T07:59:37.896301"
+    },
+    "v2.discount.get_discount": {
+      "title": "v2.discount.get_discount",
+      "url": "https://open.shopee.com/documents/v2/v2.discount.get_discount?module=96&type=1",
+      "discovered_at": "2025-10-16T07:59:37.896302"
+    },
+    "v2.discount.get_discount_list": {
+      "title": "v2.discount.get_discount_list",
+      "url": "https://open.shopee.com/documents/v2/v2.discount.get_discount_list?module=96&type=1",
+      "discovered_at": "2025-10-16T07:59:37.896304"
+    },
+    "v2.discount.update_discount": {
+      "title": "v2.discount.update_discount",
+      "url": "https://open.shopee.com/documents/v2/v2.discount.update_discount?module=96&type=1",
+      "discovered_at": "2025-10-16T07:59:37.896305"
+    },
+    "v2.discount.update_discount_item": {
+      "title": "v2.discount.update_discount_item",
+      "url": "https://open.shopee.com/documents/v2/v2.discount.update_discount_item?module=96&type=1",
+      "discovered_at": "2025-10-16T07:59:37.896306"
+    },
+    "v2.discount.end_discount": {
+      "title": "v2.discount.end_discount",
+      "url": "https://open.shopee.com/documents/v2/v2.discount.end_discount?module=96&type=1",
+      "discovered_at": "2025-10-16T07:59:37.896308"
+    },
+    "v2.bundle_deal.add_bundle_deal": {
+      "title": "v2.bundle_deal.add_bundle_deal",
+      "url": "https://open.shopee.com/documents/v2/v2.bundle_deal.add_bundle_deal?module=98&type=1",
+      "discovered_at": "2025-10-16T07:59:37.896309"
+    },
+    "v2.bundle_deal.add_bundle_deal_item": {
+      "title": "v2.bundle_deal.add_bundle_deal_item",
+      "url": "https://open.shopee.com/documents/v2/v2.bundle_deal.add_bundle_deal_item?module=98&type=1",
+      "discovered_at": "2025-10-16T07:59:37.896310"
+    },
+    "v2.bundle_deal.get_bundle_deal_list": {
+      "title": "v2.bundle_deal.get_bundle_deal_list",
+      "url": "https://open.shopee.com/documents/v2/v2.bundle_deal.get_bundle_deal_list?module=98&type=1",
+      "discovered_at": "2025-10-16T07:59:37.896312"
+    },
+    "v2.bundle_deal.get_bundle_deal": {
+      "title": "v2.bundle_deal.get_bundle_deal",
+      "url": "https://open.shopee.com/documents/v2/v2.bundle_deal.get_bundle_deal?module=98&type=1",
+      "discovered_at": "2025-10-16T07:59:37.896313"
+    },
+    "v2.bundle_deal.get_bundle_deal_item": {
+      "title": "v2.bundle_deal.get_bundle_deal_item",
+      "url": "https://open.shopee.com/documents/v2/v2.bundle_deal.get_bundle_deal_item?module=98&type=1",
+      "discovered_at": "2025-10-16T07:59:37.896314"
+    },
+    "v2.bundle_deal.update_bundle_deal": {
+      "title": "v2.bundle_deal.update_bundle_deal",
+      "url": "https://open.shopee.com/documents/v2/v2.bundle_deal.update_bundle_deal?module=98&type=1",
+      "discovered_at": "2025-10-16T07:59:37.896316"
+    },
+    "v2.bundle_deal.update_bundle_deal_item": {
+      "title": "v2.bundle_deal.update_bundle_deal_item",
+      "url": "https://open.shopee.com/documents/v2/v2.bundle_deal.update_bundle_deal_item?module=98&type=1",
+      "discovered_at": "2025-10-16T07:59:37.896318"
+    },
+    "v2.bundle_deal.end_bundle_deal": {
+      "title": "v2.bundle_deal.end_bundle_deal",
+      "url": "https://open.shopee.com/documents/v2/v2.bundle_deal.end_bundle_deal?module=98&type=1",
+      "discovered_at": "2025-10-16T07:59:37.896319"
+    },
+    "v2.bundle_deal.delete_bundle_deal": {
+      "title": "v2.bundle_deal.delete_bundle_deal",
+      "url": "https://open.shopee.com/documents/v2/v2.bundle_deal.delete_bundle_deal?module=98&type=1",
+      "discovered_at": "2025-10-16T07:59:37.896321"
+    },
+    "v2.bundle_deal.delete_bundle_deal_item": {
+      "title": "v2.bundle_deal.delete_bundle_deal_item",
+      "url": "https://open.shopee.com/documents/v2/v2.bundle_deal.delete_bundle_deal_item?module=98&type=1",
+      "discovered_at": "2025-10-16T07:59:37.896323"
+    },
+    "v2.add_on_deal.add_add_on_deal": {
+      "title": "v2.add_on_deal.add_add_on_deal",
+      "url": "https://open.shopee.com/documents/v2/v2.add_on_deal.add_add_on_deal?module=99&type=1",
+      "discovered_at": "2025-10-16T07:59:37.896324"
+    },
+    "v2.add_on_deal.add_add_on_deal_main_item": {
+      "title": "v2.add_on_deal.add_add_on_deal_main_item",
+      "url": "https://open.shopee.com/documents/v2/v2.add_on_deal.add_add_on_deal_main_item?module=99&type=1",
+      "discovered_at": "2025-10-16T07:59:37.896326"
+    },
+    "v2.add_on_deal.add_add_on_deal_sub_item": {
+      "title": "v2.add_on_deal.add_add_on_deal_sub_item",
+      "url": "https://open.shopee.com/documents/v2/v2.add_on_deal.add_add_on_deal_sub_item?module=99&type=1",
+      "discovered_at": "2025-10-16T07:59:37.896327"
+    },
+    "v2.add_on_deal.delete_add_on_deal": {
+      "title": "v2.add_on_deal.delete_add_on_deal",
+      "url": "https://open.shopee.com/documents/v2/v2.add_on_deal.delete_add_on_deal?module=99&type=1",
+      "discovered_at": "2025-10-16T07:59:37.896329"
+    },
+    "v2.add_on_deal.delete_add_on_deal_main_item": {
+      "title": "v2.add_on_deal.delete_add_on_deal_main_item",
+      "url": "https://open.shopee.com/documents/v2/v2.add_on_deal.delete_add_on_deal_main_item?module=99&type=1",
+      "discovered_at": "2025-10-16T07:59:37.896330"
+    },
+    "v2.add_on_deal.delete_add_on_deal_sub_item": {
+      "title": "v2.add_on_deal.delete_add_on_deal_sub_item",
+      "url": "https://open.shopee.com/documents/v2/v2.add_on_deal.delete_add_on_deal_sub_item?module=99&type=1",
+      "discovered_at": "2025-10-16T07:59:37.896332"
+    },
+    "v2.add_on_deal.get_add_on_deal_list": {
+      "title": "v2.add_on_deal.get_add_on_deal_list",
+      "url": "https://open.shopee.com/documents/v2/v2.add_on_deal.get_add_on_deal_list?module=99&type=1",
+      "discovered_at": "2025-10-16T07:59:37.896333"
+    },
+    "v2.add_on_deal.get_add_on_deal": {
+      "title": "v2.add_on_deal.get_add_on_deal",
+      "url": "https://open.shopee.com/documents/v2/v2.add_on_deal.get_add_on_deal?module=99&type=1",
+      "discovered_at": "2025-10-16T07:59:37.896335"
+    },
+    "v2.add_on_deal.get_add_on_deal_main_item": {
+      "title": "v2.add_on_deal.get_add_on_deal_main_item",
+      "url": "https://open.shopee.com/documents/v2/v2.add_on_deal.get_add_on_deal_main_item?module=99&type=1",
+      "discovered_at": "2025-10-16T07:59:37.896336"
+    },
+    "v2.add_on_deal.get_add_on_deal_sub_item": {
+      "title": "v2.add_on_deal.get_add_on_deal_sub_item",
+      "url": "https://open.shopee.com/documents/v2/v2.add_on_deal.get_add_on_deal_sub_item?module=99&type=1",
+      "discovered_at": "2025-10-16T07:59:37.896338"
+    },
+    "v2.add_on_deal.update_add_on_deal": {
+      "title": "v2.add_on_deal.update_add_on_deal",
+      "url": "https://open.shopee.com/documents/v2/v2.add_on_deal.update_add_on_deal?module=99&type=1",
+      "discovered_at": "2025-10-16T07:59:37.896339"
+    },
+    "v2.add_on_deal.update_add_on_deal_main_item": {
+      "title": "v2.add_on_deal.update_add_on_deal_main_item",
+      "url": "https://open.shopee.com/documents/v2/v2.add_on_deal.update_add_on_deal_main_item?module=99&type=1",
+      "discovered_at": "2025-10-16T07:59:37.896340"
+    },
+    "v2.add_on_deal.update_add_on_deal_sub_item": {
+      "title": "v2.add_on_deal.update_add_on_deal_sub_item",
+      "url": "https://open.shopee.com/documents/v2/v2.add_on_deal.update_add_on_deal_sub_item?module=99&type=1",
+      "discovered_at": "2025-10-16T07:59:37.896342"
+    },
+    "v2.add_on_deal.end_add_on_deal": {
+      "title": "v2.add_on_deal.end_add_on_deal",
+      "url": "https://open.shopee.com/documents/v2/v2.add_on_deal.end_add_on_deal?module=99&type=1",
+      "discovered_at": "2025-10-16T07:59:37.896343"
+    },
+    "v2.voucher.add_voucher": {
+      "title": "v2.voucher.add_voucher",
+      "url": "https://open.shopee.com/documents/v2/v2.voucher.add_voucher?module=100&type=1",
+      "discovered_at": "2025-10-16T07:59:37.896345"
+    },
+    "v2.voucher.delete_voucher": {
+      "title": "v2.voucher.delete_voucher",
+      "url": "https://open.shopee.com/documents/v2/v2.voucher.delete_voucher?module=100&type=1",
+      "discovered_at": "2025-10-16T07:59:37.896346"
+    },
+    "v2.voucher.end_voucher": {
+      "title": "v2.voucher.end_voucher",
+      "url": "https://open.shopee.com/documents/v2/v2.voucher.end_voucher?module=100&type=1",
+      "discovered_at": "2025-10-16T07:59:37.896347"
+    },
+    "v2.voucher.update_voucher": {
+      "title": "v2.voucher.update_voucher",
+      "url": "https://open.shopee.com/documents/v2/v2.voucher.update_voucher?module=100&type=1",
+      "discovered_at": "2025-10-16T07:59:37.896349"
+    },
+    "v2.voucher.get_voucher": {
+      "title": "v2.voucher.get_voucher",
+      "url": "https://open.shopee.com/documents/v2/v2.voucher.get_voucher?module=100&type=1",
+      "discovered_at": "2025-10-16T07:59:37.896350"
+    },
+    "v2.voucher.get_voucher_list": {
+      "title": "v2.voucher.get_voucher_list",
+      "url": "https://open.shopee.com/documents/v2/v2.voucher.get_voucher_list?module=100&type=1",
+      "discovered_at": "2025-10-16T07:59:37.896351"
+    },
+    "v2.shop_flash_sale.get_time_slot_id": {
+      "title": "v2.shop_flash_sale.get_time_slot_id",
+      "url": "https://open.shopee.com/documents/v2/v2.shop_flash_sale.get_time_slot_id?module=89&type=1",
+      "discovered_at": "2025-10-16T07:59:37.896353"
+    },
+    "v2.shop_flash_sale.create_shop_flash_sale": {
+      "title": "v2.shop_flash_sale.create_shop_flash_sale",
+      "url": "https://open.shopee.com/documents/v2/v2.shop_flash_sale.create_shop_flash_sale?module=89&type=1",
+      "discovered_at": "2025-10-16T07:59:37.896354"
+    },
+    "v2.shop_flash_sale.get_item_criteria": {
+      "title": "v2.shop_flash_sale.get_item_criteria",
+      "url": "https://open.shopee.com/documents/v2/v2.shop_flash_sale.get_item_criteria?module=89&type=1",
+      "discovered_at": "2025-10-16T07:59:37.896355"
+    },
+    "v2.shop_flash_sale.add_shop_flash_sale_items": {
+      "title": "v2.shop_flash_sale.add_shop_flash_sale_items",
+      "url": "https://open.shopee.com/documents/v2/v2.shop_flash_sale.add_shop_flash_sale_items?module=89&type=1",
+      "discovered_at": "2025-10-16T07:59:37.896357"
+    },
+    "v2.shop_flash_sale.get_shop_flash_sale_list": {
+      "title": "v2.shop_flash_sale.get_shop_flash_sale_list",
+      "url": "https://open.shopee.com/documents/v2/v2.shop_flash_sale.get_shop_flash_sale_list?module=89&type=1",
+      "discovered_at": "2025-10-16T07:59:37.896358"
+    },
+    "v2.shop_flash_sale.get_shop_flash_sale": {
+      "title": "v2.shop_flash_sale.get_shop_flash_sale",
+      "url": "https://open.shopee.com/documents/v2/v2.shop_flash_sale.get_shop_flash_sale?module=89&type=1",
+      "discovered_at": "2025-10-16T07:59:37.896360"
+    },
+    "v2.shop_flash_sale.get_shop_flash_sale_items": {
+      "title": "v2.shop_flash_sale.get_shop_flash_sale_items",
+      "url": "https://open.shopee.com/documents/v2/v2.shop_flash_sale.get_shop_flash_sale_items?module=89&type=1",
+      "discovered_at": "2025-10-16T07:59:37.896361"
+    },
+    "v2.shop_flash_sale.update_shop_flash_sale": {
+      "title": "v2.shop_flash_sale.update_shop_flash_sale",
+      "url": "https://open.shopee.com/documents/v2/v2.shop_flash_sale.update_shop_flash_sale?module=89&type=1",
+      "discovered_at": "2025-10-16T07:59:37.896363"
+    },
+    "v2.shop_flash_sale.update_shop_flash_sale_items": {
+      "title": "v2.shop_flash_sale.update_shop_flash_sale_items",
+      "url": "https://open.shopee.com/documents/v2/v2.shop_flash_sale.update_shop_flash_sale_items?module=89&type=1",
+      "discovered_at": "2025-10-16T07:59:37.896364"
+    },
+    "v2.shop_flash_sale.delete_shop_flash_sale": {
+      "title": "v2.shop_flash_sale.delete_shop_flash_sale",
+      "url": "https://open.shopee.com/documents/v2/v2.shop_flash_sale.delete_shop_flash_sale?module=89&type=1",
+      "discovered_at": "2025-10-16T07:59:37.896366"
+    },
+    "v2.shop_flash_sale.delete_shop_flash_sale_items": {
+      "title": "v2.shop_flash_sale.delete_shop_flash_sale_items",
+      "url": "https://open.shopee.com/documents/v2/v2.shop_flash_sale.delete_shop_flash_sale_items?module=89&type=1",
+      "discovered_at": "2025-10-16T07:59:37.896368"
+    },
+    "v2.follow_prize.add_follow_prize": {
+      "title": "v2.follow_prize.add_follow_prize",
+      "url": "https://open.shopee.com/documents/v2/v2.follow_prize.add_follow_prize?module=101&type=1",
+      "discovered_at": "2025-10-16T07:59:37.896370"
+    },
+    "v2.follow_prize.delete_follow_prize": {
+      "title": "v2.follow_prize.delete_follow_prize",
+      "url": "https://open.shopee.com/documents/v2/v2.follow_prize.delete_follow_prize?module=101&type=1",
+      "discovered_at": "2025-10-16T07:59:37.896371"
+    },
+    "v2.follow_prize.end_follow_prize": {
+      "title": "v2.follow_prize.end_follow_prize",
+      "url": "https://open.shopee.com/documents/v2/v2.follow_prize.end_follow_prize?module=101&type=1",
+      "discovered_at": "2025-10-16T07:59:37.896372"
+    },
+    "v2.follow_prize.update_follow_prize": {
+      "title": "v2.follow_prize.update_follow_prize",
+      "url": "https://open.shopee.com/documents/v2/v2.follow_prize.update_follow_prize?module=101&type=1",
+      "discovered_at": "2025-10-16T07:59:37.896374"
+    },
+    "v2.follow_prize.get_follow_prize_detail": {
+      "title": "v2.follow_prize.get_follow_prize_detail",
+      "url": "https://open.shopee.com/documents/v2/v2.follow_prize.get_follow_prize_detail?module=101&type=1",
+      "discovered_at": "2025-10-16T07:59:37.896375"
+    },
+    "v2.follow_prize.get_follow_prize_list": {
+      "title": "v2.follow_prize.get_follow_prize_list",
+      "url": "https://open.shopee.com/documents/v2/v2.follow_prize.get_follow_prize_list?module=101&type=1",
+      "discovered_at": "2025-10-16T07:59:37.896377"
+    },
+    "v2.top_picks.get_top_picks_list": {
+      "title": "v2.top_picks.get_top_picks_list",
+      "url": "https://open.shopee.com/documents/v2/v2.top_picks.get_top_picks_list?module=107&type=1",
+      "discovered_at": "2025-10-16T07:59:37.896378"
+    },
+    "v2.top_picks.add_top_picks": {
+      "title": "v2.top_picks.add_top_picks",
+      "url": "https://open.shopee.com/documents/v2/v2.top_picks.add_top_picks?module=107&type=1",
+      "discovered_at": "2025-10-16T07:59:37.896379"
+    },
+    "v2.top_picks.update_top_picks": {
+      "title": "v2.top_picks.update_top_picks",
+      "url": "https://open.shopee.com/documents/v2/v2.top_picks.update_top_picks?module=107&type=1",
+      "discovered_at": "2025-10-16T07:59:37.896381"
+    },
+    "v2.top_picks.delete_top_picks": {
+      "title": "v2.top_picks.delete_top_picks",
+      "url": "https://open.shopee.com/documents/v2/v2.top_picks.delete_top_picks?module=107&type=1",
+      "discovered_at": "2025-10-16T07:59:37.896382"
+    },
+    "v2.shop_category.add_shop_category": {
+      "title": "v2.shop_category.add_shop_category",
+      "url": "https://open.shopee.com/documents/v2/v2.shop_category.add_shop_category?module=89&type=1",
+      "discovered_at": "2025-10-16T07:59:37.896384"
+    },
+    "v2.shop_category.get_shop_category_list": {
+      "title": "v2.shop_category.get_shop_category_list",
+      "url": "https://open.shopee.com/documents/v2/v2.shop_category.get_shop_category_list?module=89&type=1",
+      "discovered_at": "2025-10-16T07:59:37.896385"
+    },
+    "v2.shop_category.delete_shop_category": {
+      "title": "v2.shop_category.delete_shop_category",
+      "url": "https://open.shopee.com/documents/v2/v2.shop_category.delete_shop_category?module=89&type=1",
+      "discovered_at": "2025-10-16T07:59:37.896386"
+    },
+    "v2.shop_category.update_shop_category": {
+      "title": "v2.shop_category.update_shop_category",
+      "url": "https://open.shopee.com/documents/v2/v2.shop_category.update_shop_category?module=89&type=1",
+      "discovered_at": "2025-10-16T07:59:37.896388"
+    },
+    "v2.shop_category.add_item_list": {
+      "title": "v2.shop_category.add_item_list",
+      "url": "https://open.shopee.com/documents/v2/v2.shop_category.add_item_list?module=89&type=1",
+      "discovered_at": "2025-10-16T07:59:37.896389"
+    },
+    "v2.shop_category.get_item_list": {
+      "title": "v2.shop_category.get_item_list",
+      "url": "https://open.shopee.com/documents/v2/v2.shop_category.get_item_list?module=89&type=1",
+      "discovered_at": "2025-10-16T07:59:37.896390"
+    },
+    "v2.shop_category.delete_item_list": {
+      "title": "v2.shop_category.delete_item_list",
+      "url": "https://open.shopee.com/documents/v2/v2.shop_category.delete_item_list?module=89&type=1",
+      "discovered_at": "2025-10-16T07:59:37.896392"
+    },
+    "v2.returns.get_return_detail": {
+      "title": "v2.returns.get_return_detail",
+      "url": "https://open.shopee.com/documents/v2/v2.returns.get_return_detail?module=102&type=1",
+      "discovered_at": "2025-10-16T07:59:37.896393"
+    },
+    "v2.returns.get_return_list": {
+      "title": "v2.returns.get_return_list",
+      "url": "https://open.shopee.com/documents/v2/v2.returns.get_return_list?module=102&type=1",
+      "discovered_at": "2025-10-16T07:59:37.896394"
+    },
+    "v2.returns.confirm": {
+      "title": "v2.returns.confirm",
+      "url": "https://open.shopee.com/documents/v2/v2.returns.confirm?module=102&type=1",
+      "discovered_at": "2025-10-16T07:59:37.896396"
+    },
+    "v2.returns.dispute": {
+      "title": "v2.returns.dispute",
+      "url": "https://open.shopee.com/documents/v2/v2.returns.dispute?module=102&type=1",
+      "discovered_at": "2025-10-16T07:59:37.896397"
+    },
+    "v2.returns.get_available_solutions": {
+      "title": "v2.returns.get_available_solutions",
+      "url": "https://open.shopee.com/documents/v2/v2.returns.get_available_solutions?module=102&type=1",
+      "discovered_at": "2025-10-16T07:59:37.896398"
+    },
+    "v2.returns.offer": {
+      "title": "v2.returns.offer",
+      "url": "https://open.shopee.com/documents/v2/v2.returns.offer?module=102&type=1",
+      "discovered_at": "2025-10-16T07:59:37.896400"
+    },
+    "v2.returns.accept_offer": {
+      "title": "v2.returns.accept_offer",
+      "url": "https://open.shopee.com/documents/v2/v2.returns.accept_offer?module=102&type=1",
+      "discovered_at": "2025-10-16T07:59:37.896401"
+    },
+    "v2.returns.convert_image": {
+      "title": "v2.returns.convert_image",
+      "url": "https://open.shopee.com/documents/v2/v2.returns.convert_image?module=102&type=1",
+      "discovered_at": "2025-10-16T07:59:37.896403"
+    },
+    "v2.returns.upload_proof": {
+      "title": "v2.returns.upload_proof",
+      "url": "https://open.shopee.com/documents/v2/v2.returns.upload_proof?module=102&type=1",
+      "discovered_at": "2025-10-16T07:59:37.896404"
+    },
+    "v2.returns.query_proof": {
+      "title": "v2.returns.query_proof",
+      "url": "https://open.shopee.com/documents/v2/v2.returns.query_proof?module=102&type=1",
+      "discovered_at": "2025-10-16T07:59:37.896405"
+    },
+    "v2.returns.get_return_dispute_reason": {
+      "title": "v2.returns.get_return_dispute_reason",
+      "url": "https://open.shopee.com/documents/v2/v2.returns.get_return_dispute_reason?module=102&type=1",
+      "discovered_at": "2025-10-16T07:59:37.896407"
+    },
+    "v2.returns.cancel_dispute": {
+      "title": "v2.returns.cancel_dispute",
+      "url": "https://open.shopee.com/documents/v2/v2.returns.cancel_dispute?module=102&type=1",
+      "discovered_at": "2025-10-16T07:59:37.896408"
+    },
+    "v2.returns.get_shipping_carrier": {
+      "title": "v2.returns.get_shipping_carrier",
+      "url": "https://open.shopee.com/documents/v2/v2.returns.get_shipping_carrier?module=102&type=1",
+      "discovered_at": "2025-10-16T07:59:37.896410"
+    },
+    "v2.returns.upload_shipping_proof": {
+      "title": "v2.returns.upload_shipping_proof",
+      "url": "https://open.shopee.com/documents/v2/v2.returns.upload_shipping_proof?module=102&type=1",
+      "discovered_at": "2025-10-16T07:59:37.896411"
+    },
+    "v2.returns.get_reverse_tracking_info": {
+      "title": "v2.returns.get_reverse_tracking_info",
+      "url": "https://open.shopee.com/documents/v2/v2.returns.get_reverse_tracking_info?module=102&type=1",
+      "discovered_at": "2025-10-16T07:59:37.896413"
+    },
+    "v2.account_health.get_shop_performance": {
+      "title": "v2.account_health.get_shop_performance",
+      "url": "https://open.shopee.com/documents/v2/v2.account_health.get_shop_performance?module=106&type=1",
+      "discovered_at": "2025-10-16T07:59:37.896414"
+    },
+    "v2.account_health.get_metric_source_detail": {
+      "title": "v2.account_health.get_metric_source_detail",
+      "url": "https://open.shopee.com/documents/v2/v2.account_health.get_metric_source_detail?module=106&type=1",
+      "discovered_at": "2025-10-16T07:59:37.896416"
+    },
+    "v2.account_health.get_penalty_point_history": {
+      "title": "v2.account_health.get_penalty_point_history",
+      "url": "https://open.shopee.com/documents/v2/v2.account_health.get_penalty_point_history?module=106&type=1",
+      "discovered_at": "2025-10-16T07:59:37.896418"
+    },
+    "v2.account_health.get_punishment_history": {
+      "title": "v2.account_health.get_punishment_history",
+      "url": "https://open.shopee.com/documents/v2/v2.account_health.get_punishment_history?module=106&type=1",
+      "discovered_at": "2025-10-16T07:59:37.896419"
+    },
+    "v2.account_health.get_listings_with_issues": {
+      "title": "v2.account_health.get_listings_with_issues",
+      "url": "https://open.shopee.com/documents/v2/v2.account_health.get_listings_with_issues?module=106&type=1",
+      "discovered_at": "2025-10-16T07:59:37.896421"
+    },
+    "v2.account_health.get_late_orders": {
+      "title": "v2.account_health.get_late_orders",
+      "url": "https://open.shopee.com/documents/v2/v2.account_health.get_late_orders?module=106&type=1",
+      "discovered_at": "2025-10-16T07:59:37.896422"
+    },
+    "v2.ads.get_total_balance": {
+      "title": "v2.ads.get_total_balance",
+      "url": "https://open.shopee.com/documents/v2/v2.ads.get_total_balance?module=89&type=1",
+      "discovered_at": "2025-10-16T07:59:37.896423"
+    },
+    "v2.ads.get_shop_toggle_info": {
+      "title": "v2.ads.get_shop_toggle_info",
+      "url": "https://open.shopee.com/documents/v2/v2.ads.get_shop_toggle_info?module=89&type=1",
+      "discovered_at": "2025-10-16T07:59:37.896425"
+    },
+    "v2.ads.get_recommended_keyword_list": {
+      "title": "v2.ads.get_recommended_keyword_list",
+      "url": "https://open.shopee.com/documents/v2/v2.ads.get_recommended_keyword_list?module=89&type=1",
+      "discovered_at": "2025-10-16T07:59:37.896426"
+    },
+    "v2.ads.get_recommended_item_list": {
+      "title": "v2.ads.get_recommended_item_list",
+      "url": "https://open.shopee.com/documents/v2/v2.ads.get_recommended_item_list?module=89&type=1",
+      "discovered_at": "2025-10-16T07:59:37.896427"
+    },
+    "v2.ads.get_all_cpc_ads_hourly_performance": {
+      "title": "v2.ads.get_all_cpc_ads_hourly_performance",
+      "url": "https://open.shopee.com/documents/v2/v2.ads.get_all_cpc_ads_hourly_performance?module=89&type=1",
+      "discovered_at": "2025-10-16T07:59:37.896429"
+    },
+    "v2.ads.get_all_cpc_ads_daily_performance": {
+      "title": "v2.ads.get_all_cpc_ads_daily_performance",
+      "url": "https://open.shopee.com/documents/v2/v2.ads.get_all_cpc_ads_daily_performance?module=89&type=1",
+      "discovered_at": "2025-10-16T07:59:37.896430"
+    },
+    "v2.ads.create_auto_product_ads": {
+      "title": "v2.ads.create_auto_product_ads",
+      "url": "https://open.shopee.com/documents/v2/v2.ads.create_auto_product_ads?module=89&type=1",
+      "discovered_at": "2025-10-16T07:59:37.896432"
+    },
+    "v2.ads.edit_auto_product_ads": {
+      "title": "v2.ads.edit_auto_product_ads",
+      "url": "https://open.shopee.com/documents/v2/v2.ads.edit_auto_product_ads?module=89&type=1",
+      "discovered_at": "2025-10-16T07:59:37.896433"
+    },
+    "v2.ads.get_product_campaign_daily_performance": {
+      "title": "v2.ads.get_product_campaign_daily_performance",
+      "url": "https://open.shopee.com/documents/v2/v2.ads.get_product_campaign_daily_performance?module=89&type=1",
+      "discovered_at": "2025-10-16T07:59:37.896434"
+    },
+    "v2.ads.get_product_campaign_hourly_performance": {
+      "title": "v2.ads.get_product_campaign_hourly_performance",
+      "url": "https://open.shopee.com/documents/v2/v2.ads.get_product_campaign_hourly_performance?module=89&type=1",
+      "discovered_at": "2025-10-16T07:59:37.896436"
+    },
+    "v2.ads.get_product_level_campaign_id_list": {
+      "title": "v2.ads.get_product_level_campaign_id_list",
+      "url": "https://open.shopee.com/documents/v2/v2.ads.get_product_level_campaign_id_list?module=89&type=1",
+      "discovered_at": "2025-10-16T07:59:37.896438"
+    },
+    "v2.ads.get_product_level_campaign_setting_info": {
+      "title": "v2.ads.get_product_level_campaign_setting_info",
+      "url": "https://open.shopee.com/documents/v2/v2.ads.get_product_level_campaign_setting_info?module=89&type=1",
+      "discovered_at": "2025-10-16T07:59:37.896439"
+    },
+    "v2.ads.create_manual_product_ads": {
+      "title": "v2.ads.create_manual_product_ads",
+      "url": "https://open.shopee.com/documents/v2/v2.ads.create_manual_product_ads?module=89&type=1",
+      "discovered_at": "2025-10-16T07:59:37.896441"
+    },
+    "v2.ads.edit_manual_product_ad_keywords": {
+      "title": "v2.ads.edit_manual_product_ad_keywords",
+      "url": "https://open.shopee.com/documents/v2/v2.ads.edit_manual_product_ad_keywords?module=89&type=1",
+      "discovered_at": "2025-10-16T07:59:37.896442"
+    },
+    "v2.ads.edit_manual_product_ads": {
+      "title": "v2.ads.edit_manual_product_ads",
+      "url": "https://open.shopee.com/documents/v2/v2.ads.edit_manual_product_ads?module=89&type=1",
+      "discovered_at": "2025-10-16T07:59:37.896443"
+    },
+    "v2.ads.get_create_product_ad_budget_suggestion": {
+      "title": "v2.ads.get_create_product_ad_budget_suggestion",
+      "url": "https://open.shopee.com/documents/v2/v2.ads.get_create_product_ad_budget_suggestion?module=89&type=1",
+      "discovered_at": "2025-10-16T07:59:37.896445"
+    },
+    "v2.ads.get_product_recommended_roi_target": {
+      "title": "v2.ads.get_product_recommended_roi_target",
+      "url": "https://open.shopee.com/documents/v2/v2.ads.get_product_recommended_roi_target?module=89&type=1",
+      "discovered_at": "2025-10-16T07:59:37.896446"
+    },
+    "v2.ads.get_ads_fácil_shop_rate": {
+      "title": "v2.ads.get_ads_fácil_shop_rate",
+      "url": "https://open.shopee.com/documents/v2/v2.ads.get_ads_fácil_shop_rate?module=89&type=1",
+      "discovered_at": "2025-10-16T07:59:37.896448"
+    },
+    "v2.ads.check_create_gms_product_campaign_eligibility": {
+      "title": "v2.ads.check_create_gms_product_campaign_eligibility",
+      "url": "https://open.shopee.com/documents/v2/v2.ads.check_create_gms_product_campaign_eligibility?module=89&type=1",
+      "discovered_at": "2025-10-16T07:59:37.896449"
+    },
+    "v2.ads.create_gms_product_campaign": {
+      "title": "v2.ads.create_gms_product_campaign",
+      "url": "https://open.shopee.com/documents/v2/v2.ads.create_gms_product_campaign?module=89&type=1",
+      "discovered_at": "2025-10-16T07:59:37.896451"
+    },
+    "v2.ads.edit_gms_product_campaign": {
+      "title": "v2.ads.edit_gms_product_campaign",
+      "url": "https://open.shopee.com/documents/v2/v2.ads.edit_gms_product_campaign?module=89&type=1",
+      "discovered_at": "2025-10-16T07:59:37.896452"
+    },
+    "v2.ads.list_gms_user_deleted_item": {
+      "title": "v2.ads.list_gms_user_deleted_item",
+      "url": "https://open.shopee.com/documents/v2/v2.ads.list_gms_user_deleted_item?module=89&type=1",
+      "discovered_at": "2025-10-16T07:59:37.896454"
+    },
+    "v2.ads.edit_gms_item_product_campaign": {
+      "title": "v2.ads.edit_gms_item_product_campaign",
+      "url": "https://open.shopee.com/documents/v2/v2.ads.edit_gms_item_product_campaign?module=89&type=1",
+      "discovered_at": "2025-10-16T07:59:37.896455"
+    },
+    "v2.ads.get_gms_campaign_performance": {
+      "title": "v2.ads.get_gms_campaign_performance",
+      "url": "https://open.shopee.com/documents/v2/v2.ads.get_gms_campaign_performance?module=89&type=1",
+      "discovered_at": "2025-10-16T07:59:37.896457"
+    },
+    "v2.ads.get_gms_item_performance": {
+      "title": "v2.ads.get_gms_item_performance",
+      "url": "https://open.shopee.com/documents/v2/v2.ads.get_gms_item_performance?module=89&type=1",
+      "discovered_at": "2025-10-16T07:59:37.896466"
+    },
+    "v2.public.get_shops_by_partner": {
+      "title": "v2.public.get_shops_by_partner",
+      "url": "https://open.shopee.com/documents/v2/v2.public.get_shops_by_partner?module=104&type=1",
+      "discovered_at": "2025-10-16T07:59:37.896468"
+    },
+    "v2.public.get_merchants_by_partner": {
+      "title": "v2.public.get_merchants_by_partner",
+      "url": "https://open.shopee.com/documents/v2/v2.public.get_merchants_by_partner?module=104&type=1",
+      "discovered_at": "2025-10-16T07:59:37.896469"
+    },
+    "v2.public.get_access_token": {
+      "title": "v2.public.get_access_token",
+      "url": "https://open.shopee.com/documents/v2/v2.public.get_access_token?module=104&type=1",
+      "discovered_at": "2025-10-16T07:59:37.896471"
+    },
+    "v2.public.refresh_access_token": {
+      "title": "v2.public.refresh_access_token",
+      "url": "https://open.shopee.com/documents/v2/v2.public.refresh_access_token?module=104&type=1",
+      "discovered_at": "2025-10-16T07:59:37.896472"
+    },
+    "v2.public.get_token_by_resend_code": {
+      "title": "v2.public.get_token_by_resend_code",
+      "url": "https://open.shopee.com/documents/v2/v2.public.get_token_by_resend_code?module=104&type=1",
+      "discovered_at": "2025-10-16T07:59:37.896474"
+    },
+    "v2.public.get_shopee_ip_ranges": {
+      "title": "v2.public.get_shopee_ip_ranges",
+      "url": "https://open.shopee.com/documents/v2/v2.public.get_shopee_ip_ranges?module=104&type=1",
+      "discovered_at": "2025-10-16T07:59:37.896475"
+    },
+    "v2.push.set_app_push_config": {
+      "title": "v2.push.set_app_push_config",
+      "url": "https://open.shopee.com/documents/v2/v2.push.set_app_push_config?module=105&type=1",
+      "discovered_at": "2025-10-16T07:59:37.896476"
+    },
+    "v2.push.get_app_push_config": {
+      "title": "v2.push.get_app_push_config",
+      "url": "https://open.shopee.com/documents/v2/v2.push.get_app_push_config?module=105&type=1",
+      "discovered_at": "2025-10-16T07:59:37.896478"
+    },
+    "v2.push.get_lost_push_message": {
+      "title": "v2.push.get_lost_push_message",
+      "url": "https://open.shopee.com/documents/v2/v2.push.get_lost_push_message?module=105&type=1",
+      "discovered_at": "2025-10-16T07:59:37.896479"
+    },
+    "v2.push.confirm_consumed_lost_push_message": {
+      "title": "v2.push.confirm_consumed_lost_push_message",
+      "url": "https://open.shopee.com/documents/v2/v2.push.confirm_consumed_lost_push_message?module=105&type=1",
+      "discovered_at": "2025-10-16T07:59:37.896480"
+    },
+    "v2.sbs.get_bound_whs_info": {
+      "title": "v2.sbs.get_bound_whs_info",
+      "url": "https://open.shopee.com/documents/v2/v2.sbs.get_bound_whs_info?module=89&type=1",
+      "discovered_at": "2025-10-16T07:59:37.896482"
+    },
+    "v2.sbs.get_current_inventory": {
+      "title": "v2.sbs.get_current_inventory",
+      "url": "https://open.shopee.com/documents/v2/v2.sbs.get_current_inventory?module=89&type=1",
+      "discovered_at": "2025-10-16T07:59:37.896483"
+    },
+    "v2.sbs.get_expiry_report": {
+      "title": "v2.sbs.get_expiry_report",
+      "url": "https://open.shopee.com/documents/v2/v2.sbs.get_expiry_report?module=89&type=1",
+      "discovered_at": "2025-10-16T07:59:37.896484"
+    },
+    "v2.sbs.get_stock_aging": {
+      "title": "v2.sbs.get_stock_aging",
+      "url": "https://open.shopee.com/documents/v2/v2.sbs.get_stock_aging?module=89&type=1",
+      "discovered_at": "2025-10-16T07:59:37.896486"
+    },
+    "v2.sbs.get_stock_movement": {
+      "title": "v2.sbs.get_stock_movement",
+      "url": "https://open.shopee.com/documents/v2/v2.sbs.get_stock_movement?module=89&type=1",
+      "discovered_at": "2025-10-16T07:59:37.896487"
+    },
+    "v2.fbs.query_br_shop_enrollment_status": {
+      "title": "v2.fbs.query_br_shop_enrollment_status",
+      "url": "https://open.shopee.com/documents/v2/v2.fbs.query_br_shop_enrollment_status?module=89&type=1",
+      "discovered_at": "2025-10-16T07:59:37.896488"
+    },
+    "v2.fbs.query_br_shop_invoice_error": {
+      "title": "v2.fbs.query_br_shop_invoice_error",
+      "url": "https://open.shopee.com/documents/v2/v2.fbs.query_br_shop_invoice_error?module=89&type=1",
+      "discovered_at": "2025-10-16T07:59:37.896490"
+    },
+    "v2.fbs.query_br_shop_block_status": {
+      "title": "v2.fbs.query_br_shop_block_status",
+      "url": "https://open.shopee.com/documents/v2/v2.fbs.query_br_shop_block_status?module=89&type=1",
+      "discovered_at": "2025-10-16T07:59:37.896491"
+    },
+    "v2.fbs.query_br_sku_block_status": {
+      "title": "v2.fbs.query_br_sku_block_status",
+      "url": "https://open.shopee.com/documents/v2/v2.fbs.query_br_sku_block_status?module=89&type=1",
+      "discovered_at": "2025-10-16T07:59:37.896492"
+    },
+    "v2.livestream.upload_image": {
+      "title": "v2.livestream.upload_image",
+      "url": "https://open.shopee.com/documents/v2/v2.livestream.upload_image?module=89&type=1",
+      "discovered_at": "2025-10-16T07:59:37.896494"
+    },
+    "v2.livestream.create_session": {
+      "title": "v2.livestream.create_session",
+      "url": "https://open.shopee.com/documents/v2/v2.livestream.create_session?module=89&type=1",
+      "discovered_at": "2025-10-16T07:59:37.896495"
+    },
+    "v2.livestream.update_session": {
+      "title": "v2.livestream.update_session",
+      "url": "https://open.shopee.com/documents/v2/v2.livestream.update_session?module=89&type=1",
+      "discovered_at": "2025-10-16T07:59:37.896497"
+    },
+    "v2.livestream.start_session": {
+      "title": "v2.livestream.start_session",
+      "url": "https://open.shopee.com/documents/v2/v2.livestream.start_session?module=89&type=1",
+      "discovered_at": "2025-10-16T07:59:37.896498"
+    },
+    "v2.livestream.end_session": {
+      "title": "v2.livestream.end_session",
+      "url": "https://open.shopee.com/documents/v2/v2.livestream.end_session?module=89&type=1",
+      "discovered_at": "2025-10-16T07:59:37.896499"
+    },
+    "v2.livestream.get_session_detail": {
+      "title": "v2.livestream.get_session_detail",
+      "url": "https://open.shopee.com/documents/v2/v2.livestream.get_session_detail?module=89&type=1",
+      "discovered_at": "2025-10-16T07:59:37.896501"
+    },
+    "v2.livestream.add_item_list": {
+      "title": "v2.livestream.add_item_list",
+      "url": "https://open.shopee.com/documents/v2/v2.livestream.add_item_list?module=89&type=1",
+      "discovered_at": "2025-10-16T07:59:37.896502"
+    },
+    "v2.livestream.delete_item_list": {
+      "title": "v2.livestream.delete_item_list",
+      "url": "https://open.shopee.com/documents/v2/v2.livestream.delete_item_list?module=89&type=1",
+      "discovered_at": "2025-10-16T07:59:37.896504"
+    },
+    "v2.livestream.update_item_list": {
+      "title": "v2.livestream.update_item_list",
+      "url": "https://open.shopee.com/documents/v2/v2.livestream.update_item_list?module=89&type=1",
+      "discovered_at": "2025-10-16T07:59:37.896508"
+    },
+    "v2.livestream.get_item_count": {
+      "title": "v2.livestream.get_item_count",
+      "url": "https://open.shopee.com/documents/v2/v2.livestream.get_item_count?module=89&type=1",
+      "discovered_at": "2025-10-16T07:59:37.896510"
+    },
+    "v2.livestream.get_item_list": {
+      "title": "v2.livestream.get_item_list",
+      "url": "https://open.shopee.com/documents/v2/v2.livestream.get_item_list?module=89&type=1",
+      "discovered_at": "2025-10-16T07:59:37.896511"
+    },
+    "v2.livestream.update_show_item": {
+      "title": "v2.livestream.update_show_item",
+      "url": "https://open.shopee.com/documents/v2/v2.livestream.update_show_item?module=89&type=1",
+      "discovered_at": "2025-10-16T07:59:37.896512"
+    },
+    "v2.livestream.delete_show_item": {
+      "title": "v2.livestream.delete_show_item",
+      "url": "https://open.shopee.com/documents/v2/v2.livestream.delete_show_item?module=89&type=1",
+      "discovered_at": "2025-10-16T07:59:37.896517"
+    },
+    "v2.livestream.get_show_item": {
+      "title": "v2.livestream.get_show_item",
+      "url": "https://open.shopee.com/documents/v2/v2.livestream.get_show_item?module=89&type=1",
+      "discovered_at": "2025-10-16T07:59:37.896519"
+    },
+    "v2.livestream.get_like_item_list": {
+      "title": "v2.livestream.get_like_item_list",
+      "url": "https://open.shopee.com/documents/v2/v2.livestream.get_like_item_list?module=89&type=1",
+      "discovered_at": "2025-10-16T07:59:37.896520"
+    },
+    "v2.livestream.get_recent_item_list": {
+      "title": "v2.livestream.get_recent_item_list",
+      "url": "https://open.shopee.com/documents/v2/v2.livestream.get_recent_item_list?module=89&type=1",
+      "discovered_at": "2025-10-16T07:59:37.896521"
+    },
+    "v2.livestream.get_item_set_list": {
+      "title": "v2.livestream.get_item_set_list",
+      "url": "https://open.shopee.com/documents/v2/v2.livestream.get_item_set_list?module=89&type=1",
+      "discovered_at": "2025-10-16T07:59:37.896523"
+    },
+    "v2.livestream.get_item_set_item_list": {
+      "title": "v2.livestream.get_item_set_item_list",
+      "url": "https://open.shopee.com/documents/v2/v2.livestream.get_item_set_item_list?module=89&type=1",
+      "discovered_at": "2025-10-16T07:59:37.896524"
+    },
+    "v2.livestream.apply_item_set": {
+      "title": "v2.livestream.apply_item_set",
+      "url": "https://open.shopee.com/documents/v2/v2.livestream.apply_item_set?module=89&type=1",
+      "discovered_at": "2025-10-16T07:59:37.896525"
+    },
+    "v2.livestream.get_session_metric": {
+      "title": "v2.livestream.get_session_metric",
+      "url": "https://open.shopee.com/documents/v2/v2.livestream.get_session_metric?module=89&type=1",
+      "discovered_at": "2025-10-16T07:59:37.896527"
+    },
+    "v2.livestream.get_session_item_metric": {
+      "title": "v2.livestream.get_session_item_metric",
+      "url": "https://open.shopee.com/documents/v2/v2.livestream.get_session_item_metric?module=89&type=1",
+      "discovered_at": "2025-10-16T07:59:37.896528"
+    },
+    "v2.livestream.get_latest_comment_list": {
+      "title": "v2.livestream.get_latest_comment_list",
+      "url": "https://open.shopee.com/documents/v2/v2.livestream.get_latest_comment_list?module=89&type=1",
+      "discovered_at": "2025-10-16T07:59:37.896529"
+    },
+    "v2.livestream.post_comment": {
+      "title": "v2.livestream.post_comment",
+      "url": "https://open.shopee.com/documents/v2/v2.livestream.post_comment?module=89&type=1",
+      "discovered_at": "2025-10-16T07:59:37.896531"
+    },
+    "v2.livestream.ban_user_comment": {
+      "title": "v2.livestream.ban_user_comment",
+      "url": "https://open.shopee.com/documents/v2/v2.livestream.ban_user_comment?module=89&type=1",
+      "discovered_at": "2025-10-16T07:59:37.896532"
+    },
+    "v2.livestream.unban_user_comment": {
+      "title": "v2.livestream.unban_user_comment",
+      "url": "https://open.shopee.com/documents/v2/v2.livestream.unban_user_comment?module=89&type=1",
+      "discovered_at": "2025-10-16T07:59:37.896533"
+    }
+  }
+}

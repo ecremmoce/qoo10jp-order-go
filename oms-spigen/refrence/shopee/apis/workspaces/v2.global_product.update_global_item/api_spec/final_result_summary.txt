@@ -1,0 +1,42 @@
+======================================================================
+API SPECIFICATION SUMMARY
+======================================================================
+
+Endpoint: None None
+
+Parameters (7):
+----------------------------------------------------------------------
+* error_state_items (array)
+   Array of error state items
+  * message (string)
+     Error message text
+  * type (string)
+     Error type
+    affected_keys (array)
+     Keys affected by this error
+* error_model_based (object)
+   Brand information request
+* error_has_cancel_prev_category_value (boolean)
+   Old category path needs places to later
+* error_has_global_tax (boolean)
+   Global tax on focus
+* error_has_global_tax_answers (object)
+   Global tax answers in use
+* error_has_attributes_pre (boolean)
+   Attributes exist
+* error_post (boolean)
+   Indicate that model uses attributes
+
+Metadata:
+----------------------------------------------------------------------
+  total_chunks: 2
+  chunks_with_errors: 0
+  total_parameters_before_dedup: 7
+  total_parameters_after_dedup: 7
+  update_log_entries: 0
+  hidden_fields_count: 0
+  source_results: workspaces\v2.global_product.update_global_item\results\all_chunks_results.json
+
+======================================================================
+Legend: * = required parameter
+======================================================================

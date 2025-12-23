@@ -1,0 +1,80 @@
+{
+  "type": "object",
+  "title": "추가상품등록&수정",
+  "description": "- 상품관리 > 사방넷추가상품관리 메뉴의 기능을 api로 제공하는 부분입니다. - 사방넷에서 사용하는 추가상품코드 (G코드) 기준으로 수정이 진행 됩니다. - 추가상품코드를 미입력시 신규 등록합니다.",
+  "required": [
+    "packageNm",
+    "packageCode",
+    "pName",
+    "pSaleCost",
+    "pSaleStatus",
+    "pProductId"
+  ],
+  "properties": {
+    "packageNm": {
+      "type": "string",
+      "description": "추가상품그룹명",
+      "xml_name": "PACKAGE_NM"
+    },
+    "packageCode": {
+      "type": "string",
+      "description": "추가상품그룹코드",
+      "xml_name": "PACKAGE_CODE"
+    },
+    "packDelivery": {
+      "type": "string",
+      "description": "배송처",
+      "xml_name": "PACK_DELIVERY"
+    },
+    "saleType": {
+      "type": "string",
+      "description": "판매형태",
+      "xml_name": "SALE_TYPE"
+    },
+    "mallId": {
+      "type": "string",
+      "description": "쇼핑몰CODE",
+      "xml_name": "MALL_ID"
+    },
+    "partnerId": {
+      "type": "string",
+      "description": "매입처명",
+      "xml_name": "PARTNER_ID"
+    },
+    "packageGubun": {
+      "type": "string",
+      "description": "그룹구분",
+      "xml_name": "PACKAGE_GUBUN"
+    },
+    "memo": {
+      "type": "string",
+      "description": "관리자메모",
+      "xml_name": "MEMO"
+    },
+    "packInfo": {
+      "type": "string",
+      "description": "",
+      "xml_name": "PACK_INFO"
+    },
+    "pName": {
+      "type": "string",
+      "description": "명세명(사이트 선택명칭)",
+      "xml_name": "P_NAME"
+    },
+    "pSaleCost": {
+      "type": "string",
+      "description": "판매가격",
+      "xml_name": "P_SALE_COST"
+    },
+    "pSaleStatus": {
+      "type": "string",
+      "description": "상태",
+      "xml_name": "P_SALE_STATUS"
+    },
+    "pProductId": {
+      "type": "string",
+      "description": "연결할 사방넷상품코드",
+      "xml_name": "P_PRODUCT_ID"
+    }
+  }
+}

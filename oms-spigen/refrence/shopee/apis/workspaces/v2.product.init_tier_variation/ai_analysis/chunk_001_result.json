@@ -1,0 +1,57 @@
+{
+  "chunk_index": 1,
+  "endpoint": null,
+  "method": null,
+  "description": null,
+  "parameters": [
+    {
+      "name": "error_data",
+      "type": "string",
+      "required": false,
+      "description": "data not exist",
+      "children": []
+    },
+    {
+      "name": "error_param",
+      "type": "string",
+      "required": false,
+      "description": "parameter invalid",
+      "children": []
+    },
+    {
+      "name": "error_param_size",
+      "type": "string",
+      "required": false,
+      "description": "The information can operate is not found",
+      "children": []
+    },
+    {
+      "name": "error_param",
+      "type": "string",
+      "required": false,
+      "description": "Wrong parameters, data: {msg}",
+      "children": []
+    },
+    {
+      "name": "error_info",
+      "type": "string",
+      "required": false,
+      "description": "Something wrong, Please try later",
+      "children": []
+    }
+  ],
+  "response_fields": [],
+  "chunk_metadata": {
+    "index": 1,
+    "total": 2,
+    "y_start": 0,
+    "y_end": 8000,
+    "overlap_top": 0,
+    "overlap_bottom": 500,
+    "height": 8000,
+    "path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\workspaces\\v2.product.init_tier_variation\\chunks\\chunk_001.png",
+    "filename": "chunk_001.png",
+    "width": 837
+  },
+  "chunk_path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\workspaces\\v2.product.init_tier_variation\\chunks\\chunk_001.png"
+}

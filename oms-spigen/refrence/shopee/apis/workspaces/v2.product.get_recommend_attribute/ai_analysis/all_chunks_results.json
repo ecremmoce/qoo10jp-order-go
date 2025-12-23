@@ -1,0 +1,86 @@
+[
+  {
+    "chunk_index": 1,
+    "total_chunks": 1,
+    "endpoint": "checklist_agreement_attribute",
+    "method": null,
+    "description": null,
+    "update_log": [],
+    "hidden_fields": [],
+    "parameters": [
+      {
+        "name": "partner_id",
+        "type": "string",
+        "required": true,
+        "description": "Partner ID is assigned upon registration is successful",
+        "children": []
+      },
+      {
+        "name": "timestamp",
+        "type": "string",
+        "required": true,
+        "description": "Used to enforce the freshness of the request. Request will expired after 15 minutes",
+        "children": []
+      },
+      {
+        "name": "access_token",
+        "type": "string",
+        "required": true,
+        "description": "The token for API caller using to identify app permission to our API. Platform admin will provide at token.",
+        "children": []
+      },
+      {
+        "name": "shop_id",
+        "type": "string",
+        "required": true,
+        "description": "Shopee's unique identifier for a shop. Required param to call APIs",
+        "children": []
+      }
+    ],
+    "response_fields": [
+      {
+        "name": "msg",
+        "type": "string",
+        "required": false,
+        "description": "Success description message",
+        "children": []
+      },
+      {
+        "name": "request_id",
+        "type": "string",
+        "required": false,
+        "description": "The identifier for an API request for error tracking",
+        "children": []
+      },
+      {
+        "name": "warning",
+        "type": "string",
+        "required": false,
+        "description": "Warning message for this request",
+        "children": []
+      },
+      {
+        "name": "response",
+        "type": "object",
+        "required": false,
+        "description": null,
+        "children": []
+      }
+    ],
+    "notes": "The documentation shows both Common Parameters and Response Parameters sections. There are also error codes and example requests/responses shown in JSON format. The API appears to be related to Shopee's platform and deals with checklist agreement attributes.",
+    "chunk_metadata": {
+      "index": 1,
+      "total": 1,
+      "y_start": 0,
+      "y_end": 4492,
+      "overlap_top": 0,
+      "overlap_bottom": 0,
+      "height": 4492,
+      "path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\workspaces\\v2.product.get_recommend_attribute\\chunks\\chunk_001.png",
+      "filename": "chunk_001.png",
+      "width": 837
+    },
+    "analysis_timestamp": "2025-10-10T06:30:43.638698",
+    "model": "claude-3-5-sonnet-20241022"
+  }
+]

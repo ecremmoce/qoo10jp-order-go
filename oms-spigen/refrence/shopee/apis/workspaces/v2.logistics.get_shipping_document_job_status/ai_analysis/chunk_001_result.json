@@ -1,0 +1,97 @@
+{
+  "chunk_index": 1,
+  "total_chunks": 1,
+  "endpoint": "/v2/logistics/get_shipping_document/job_status",
+  "method": "GET",
+  "description": "This API retrieves the status of a shipping document job using the job ID provided",
+  "update_log": [],
+  "parameters": {
+    "common_parameters": [
+      {
+        "name": "partner_id",
+        "type": "string",
+        "required": true,
+        "description": "Partner ID is assigned upon registration is successful. Required for all requests."
+      },
+      {
+        "name": "timestamp",
+        "type": "string",
+        "required": true,
+        "description": "This is to indicate the timestamp of the request. Required for all requests. Expires in 5 minutes."
+      },
+      {
+        "name": "access_token",
+        "type": "string",
+        "required": true,
+        "description": "The token for API access, using to identify your permission to use. Valid for runtime use and expires in 4 hours"
+      },
+      {
+        "name": "shop_id",
+        "type": "string",
+        "required": true,
+        "description": "Shopee's unique identifier for a shop. Required param for shop APIs."
+      },
+      {
+        "name": "sign",
+        "type": "string",
+        "required": true,
+        "description": "Authentication signature for the API call"
+      }
+    ],
+    "request_parameters": [
+      {
+        "name": "job_id",
+        "type": "string",
+        "required": true,
+        "description": "Generated job ID for status tracking and download the Shipping Document"
+      }
+    ],
+    "response_parameters": [
+      {
+        "name": "request_id",
+        "type": "string",
+        "description": "The identifier of the API request for error tracking"
+      },
+      {
+        "name": "error",
+        "type": "string",
+        "description": "Indicate error type if an error happened"
+      },
+      {
+        "name": "message",
+        "type": "string",
+        "description": "Indicate error details if an error happened. Empty if no error happened"
+      },
+      {
+        "name": "job_id",
+        "type": "string",
+        "description": "Generated job ID for status tracking and download the Shipping Document"
+      },
+      {
+        "name": "doc_status",
+        "type": "string",
+        "description": "Generated Shipping Document file name"
+      },
+      {
+        "name": "doc_status",
+        "type": "string",
+        "description": "Generated Shipping Document current status. Available values: PROCESSING, READY, EXPIRE"
+      }
+    ]
+  },
+  "notes": "The documentation includes example requests and responses in multiple formats (PHP, Python, CURL) and error codes which have been included in the structured data. The API appears to be part of a logistics/shipping document management system.",
+  "chunk_metadata": {
+    "index": 1,
+    "total": 1,
+    "y_start": 0,
+    "y_end": 3581,
+    "overlap_top": 0,
+    "overlap_bottom": 0,
+    "height": 3581,
+    "path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\workspaces\\v2.logistics.get_shipping_document_job_status\\chunks\\chunk_001.png",
+    "filename": "chunk_001.png",
+    "width": 837
+  },
+  "analysis_timestamp": "2025-10-10T06:05:44.607379",
+  "model": "claude-3-5-sonnet-20241022"
+}

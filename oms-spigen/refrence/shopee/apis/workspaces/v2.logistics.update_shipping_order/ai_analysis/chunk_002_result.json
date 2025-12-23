@@ -1,0 +1,51 @@
+{
+  "chunk_index": 2,
+  "endpoint": "/api/something",
+  "method": "GET",
+  "description": "Get list of items",
+  "parameters": [
+    {
+      "name": "filter",
+      "type": "object",
+      "required": false,
+      "description": "Filter parameters",
+      "children": [
+        {
+          "name": "start_date",
+          "type": "string",
+          "required": false,
+          "description": "Filter by start date",
+          "children": []
+        },
+        {
+          "name": "end_date",
+          "type": "string",
+          "required": false,
+          "description": "Filter by end date",
+          "children": []
+        }
+      ]
+    },
+    {
+      "name": "page",
+      "type": "integer",
+      "required": false,
+      "description": "Page number for pagination",
+      "children": []
+    }
+  ],
+  "response_fields": [],
+  "chunk_metadata": {
+    "index": 2,
+    "total": 2,
+    "y_start": 7250,
+    "y_end": 13959,
+    "overlap_top": 500,
+    "overlap_bottom": 0,
+    "height": 6709,
+    "path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\workspaces\\v2.logistics.update_shipping_order\\chunks\\chunk_002.png",
+    "filename": "chunk_002.png",
+    "width": 837
+  },
+  "chunk_path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\workspaces\\v2.logistics.update_shipping_order\\chunks\\chunk_002.png"
+}

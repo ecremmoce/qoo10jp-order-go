@@ -1,0 +1,88 @@
+[
+  {
+    "chunk_index": 1,
+    "total_chunks": 1,
+    "endpoint": null,
+    "method": "GET",
+    "description": "A method to get marking number list",
+    "update_log": [],
+    "hidden_fields": [],
+    "parameters": [
+      {
+        "name": "url",
+        "type": "string",
+        "required": true,
+        "description": "Base system URL parameter",
+        "children": []
+      },
+      {
+        "name": "jwt_token",
+        "type": "string",
+        "required": true,
+        "description": null,
+        "children": []
+      },
+      {
+        "name": "marking_number",
+        "type": "string",
+        "required": true,
+        "description": "Used to verify token",
+        "children": []
+      }
+    ],
+    "response_parameters": [
+      {
+        "name": "marking_number",
+        "type": "string",
+        "description": "The marking number applied when the api is called"
+      },
+      {
+        "name": "req_no",
+        "type": "string",
+        "description": "Top level time of marking date"
+      },
+      {
+        "name": "is_active",
+        "type": "boolean",
+        "description": "Each level only opened the page or permission, return to legal value [false], opened the page and permission returned value [true]"
+      }
+    ],
+    "error_codes": [
+      {
+        "code": "error_jwt_token",
+        "description": "Wrong parameter, token error"
+      },
+      {
+        "code": "error_marking_save",
+        "description": "Error save marking number value"
+      },
+      {
+        "code": "browse_role_verify",
+        "description": "The page role permission for the first time interval update missing"
+      },
+      {
+        "code": "error_role",
+        "description": "There is an existing default value"
+      },
+      {
+        "code": "error_jwt",
+        "description": "Invalid Token value"
+      }
+    ],
+    "notes": "The documentation appears to be for an API related to marking numbers and authentication. It includes common parameters, response parameters, and error codes. The structure shows both required parameters and possible error conditions.",
+    "chunk_metadata": {
+      "index": 1,
+      "total": 1,
+      "y_start": 0,
+      "y_end": 5202,
+      "overlap_top": 0,
+      "overlap_bottom": 0,
+      "height": 5202,
+      "path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\workspaces\\v2.first_mile.get_tracking_number_list\\chunks\\chunk_001.png",
+      "filename": "chunk_001.png",
+      "width": 837
+    },
+    "analysis_timestamp": "2025-10-10T05:41:55.525586",
+    "model": "claude-3-5-sonnet-20241022"
+  }
+]

@@ -1,0 +1,44 @@
+======================================================================
+API SPECIFICATION SUMMARY
+======================================================================
+
+Endpoint: GET v2.abs.get_sound_wtsi_info
+Description: Get sound expression abs snapshot
+
+Parameters (5):
+----------------------------------------------------------------------
+* partner_id (int)
+   Partner ID of snapshot
+* timestamp (timestamp)
+   This is to indicate the timestamp of the request. Required for all requests. 6 months is 15552000
+* access_token (string)
+   The token for API access, using to identify your permission to use. Valid for multiple call and expires in 2 hours
+* shop_id (int)
+   Shop/store unique identifier for a shop. Required param for
+* sign (string)
+   Signature generated to protect API call path
+
+Response Fields (6):
+----------------------------------------------------------------------
+  message (string)
+  response (object)
+  shop_id (int)
+  board_info (object)
+  wtsi_region (string)
+   The warehouse region found with the shop
+  wtsi_ids (string)
+   The warehouse id bound with the shop
+
+Metadata:
+----------------------------------------------------------------------
+  total_chunks: 1
+  chunks_with_errors: 0
+  total_parameters_before_dedup: 5
+  total_parameters_after_dedup: 5
+  update_log_entries: 1
+  hidden_fields_count: 0
+  source_results: workspaces\v2.sbs.get_bound_whs_info\results\all_chunks_results.json
+
+======================================================================
+Legend: * = required parameter
+======================================================================

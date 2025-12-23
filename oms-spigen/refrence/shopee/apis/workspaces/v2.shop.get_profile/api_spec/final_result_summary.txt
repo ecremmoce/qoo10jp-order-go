@@ -1,0 +1,40 @@
+======================================================================
+API SPECIFICATION SUMMARY
+======================================================================
+
+Endpoint: POST /v1/shop/get_profile
+Description: Get shop profile information
+
+Parameters (3):
+----------------------------------------------------------------------
+* partner_id (string)
+   Partner ID is a required user registration parameter
+* access_token (string)
+   Use token for API validation using a mobile user permission to access the shop details and just query it if token existed
+* shop_id (string)
+   Shopee's unique identifier for a shop. Required param for APIs
+
+Response Fields (4):
+----------------------------------------------------------------------
+  msg (string)
+   The content for an API request for error description
+  shop_name (string)
+   The content of the shop name
+  description (string)
+   The content of the shop description
+  device_number (string)
+   The device-bound information for this shop. It must be unique. Max length: 80 chars
+
+Metadata:
+----------------------------------------------------------------------
+  total_chunks: 1
+  chunks_with_errors: 0
+  total_parameters_before_dedup: 3
+  total_parameters_after_dedup: 3
+  update_log_entries: 1
+  hidden_fields_count: 0
+  source_results: workspaces\v2.shop.get_profile\results\all_chunks_results.json
+
+======================================================================
+Legend: * = required parameter
+======================================================================

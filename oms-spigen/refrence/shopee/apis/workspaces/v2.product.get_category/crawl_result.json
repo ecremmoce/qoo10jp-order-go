@@ -1,0 +1,11 @@
+{
+  "document_id": "v2.product.get_category",
+  "document_type": "api",
+  "url": "https://open.shopee.com/documents/v2/v2.product.get_category?module=89&type=1",
+  "platform": "shopee",
+  "crawled_at": "2025-10-16T05:51:26",
+  "screenshot_path": "platforms\\shopee\\apis\\workspaces\\v2.product.get_category\\screenshots\\screenshot.png",
+  "html_path": "platforms\\shopee\\apis\\workspaces\\v2.product.get_category\\page.html",
+  "workspace_dir": "platforms\\shopee\\apis\\workspaces\\v2.product.get_category",
+  "has_changes": true
+}

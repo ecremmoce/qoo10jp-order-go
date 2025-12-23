@@ -1,0 +1,3259 @@
+{
+  "timestamp": "2025-10-10T00:19:09.208080",
+  "api_reference": {
+    "count": 358,
+    "items": [
+      {
+        "type": "api_ref",
+        "category": "Product",
+        "category_id": "89",
+        "api_name": "v2.product.get_category",
+        "display_name": "get_category",
+        "content_id": "653",
+        "url": "https://open.shopee.com/documents/v2/v2.product.get_category?module=89&type=1"
+      },
+      {
+        "type": "api_ref",
+        "category": "Product",
+        "category_id": "89",
+        "api_name": "v2.product.get_attribute_tree",
+        "display_name": "get_attribute_tree",
+        "content_id": "1825",
+        "url": "https://open.shopee.com/documents/v2/v2.product.get_attribute_tree?module=89&type=1"
+      },
+      {
+        "type": "api_ref",
+        "category": "Product",
+        "category_id": "89",
+        "api_name": "v2.product.get_brand_list",
+        "display_name": "get_brand_list",
+        "content_id": "684",
+        "url": "https://open.shopee.com/documents/v2/v2.product.get_brand_list?module=89&type=1"
+      },
+      {
+        "type": "api_ref",
+        "category": "Product",
+        "category_id": "89",
+        "api_name": "v2.product.get_item_limit",
+        "display_name": "get_item_limit",
+        "content_id": "629",
+        "url": "https://open.shopee.com/documents/v2/v2.product.get_item_limit?module=89&type=1"
+      },
+      {
+        "type": "api_ref",
+        "category": "Product",
+        "category_id": "89",
+        "api_name": "v2.product.get_item_list",
+        "display_name": "get_item_list",
+        "content_id": "614",
+        "url": "https://open.shopee.com/documents/v2/v2.product.get_item_list?module=89&type=1"
+      },
+      {
+        "type": "api_ref",
+        "category": "Product",
+        "category_id": "89",
+        "api_name": "v2.product.get_item_base_info",
+        "display_name": "get_item_base_info",
+        "content_id": "612",
+        "url": "https://open.shopee.com/documents/v2/v2.product.get_item_base_info?module=89&type=1"
+      },
+      {
+        "type": "api_ref",
+        "category": "Product",
+        "category_id": "89",
+        "api_name": "v2.product.get_item_extra_info",
+        "display_name": "get_item_extra_info",
+        "content_id": "613",
+        "url": "https://open.shopee.com/documents/v2/v2.product.get_item_extra_info?module=89&type=1"
+      },
+      {
+        "type": "api_ref",
+        "category": "Product",
+        "category_id": "89",
+        "api_name": "v2.product.add_item",
+        "display_name": "add_item",
+        "content_id": "616",
+        "url": "https://open.shopee.com/documents/v2/v2.product.add_item?module=89&type=1"
+      },
+      {
+        "type": "api_ref",
+        "category": "Product",
+        "category_id": "89",
+        "api_name": "v2.product.update_item",
+        "display_name": "update_item",
+        "content_id": "617",
+        "url": "https://open.shopee.com/documents/v2/v2.product.update_item?module=89&type=1"
+      },
+      {
+        "type": "api_ref",
+        "category": "Product",
+        "category_id": "89",
+        "api_name": "v2.product.delete_item",
+        "display_name": "delete_item",
+        "content_id": "615",
+        "url": "https://open.shopee.com/documents/v2/v2.product.delete_item?module=89&type=1"
+      },
+      {
+        "type": "api_ref",
+        "category": "Product",
+        "category_id": "89",
+        "api_name": "v2.product.init_tier_variation",
+        "display_name": "init_tier_variation",
+        "content_id": "646",
+        "url": "https://open.shopee.com/documents/v2/v2.product.init_tier_variation?module=89&type=1"
+      },
+      {
+        "type": "api_ref",
+        "category": "Product",
+        "category_id": "89",
+        "api_name": "v2.product.update_tier_variation",
+        "display_name": "update_tier_variation",
+        "content_id": "647",
+        "url": "https://open.shopee.com/documents/v2/v2.product.update_tier_variation?module=89&type=1"
+      },
+      {
+        "type": "api_ref",
+        "category": "Product",
+        "category_id": "89",
+        "api_name": "v2.product.get_model_list",
+        "display_name": "get_model_list",
+        "content_id": "618",
+        "url": "https://open.shopee.com/documents/v2/v2.product.get_model_list?module=89&type=1"
+      },
+      {
+        "type": "api_ref",
+        "category": "Product",
+        "category_id": "89",
+        "api_name": "v2.product.add_model",
+        "display_name": "add_model",
+        "content_id": "649",
+        "url": "https://open.shopee.com/documents/v2/v2.product.add_model?module=89&type=1"
+      },
+      {
+        "type": "api_ref",
+        "category": "Product",
+        "category_id": "89",
+        "api_name": "v2.product.update_model",
+        "display_name": "update_model",
+        "content_id": "648",
+        "url": "https://open.shopee.com/documents/v2/v2.product.update_model?module=89&type=1"
+      },
+      {
+        "type": "api_ref",
+        "category": "Product",
+        "category_id": "89",
+        "api_name": "v2.product.delete_model",
+        "display_name": "delete_model",
+        "content_id": "650",
+        "url": "https://open.shopee.com/documents/v2/v2.product.delete_model?module=89&type=1"
+      },
+      {
+        "type": "api_ref",
+        "category": "Product",
+        "category_id": "89",
+        "api_name": "v2.product.unlist_item",
+        "display_name": "unlist_item",
+        "content_id": "622",
+        "url": "https://open.shopee.com/documents/v2/v2.product.unlist_item?module=89&type=1"
+      },
+      {
+        "type": "api_ref",
+        "category": "Product",
+        "category_id": "89",
+        "api_name": "v2.product.update_price",
+        "display_name": "update_price",
+        "content_id": "651",
+        "url": "https://open.shopee.com/documents/v2/v2.product.update_price?module=89&type=1"
+      },
+      {
+        "type": "api_ref",
+        "category": "Product",
+        "category_id": "89",
+        "api_name": "v2.product.update_stock",
+        "display_name": "update_stock",
+        "content_id": "652",
+        "url": "https://open.shopee.com/documents/v2/v2.product.update_stock?module=89&type=1"
+      },
+      {
+        "type": "api_ref",
+        "category": "Product",
+        "category_id": "89",
+        "api_name": "v2.product.boost_item",
+        "display_name": "boost_item",
+        "content_id": "624",
+        "url": "https://open.shopee.com/documents/v2/v2.product.boost_item?module=89&type=1"
+      },
+      {
+        "type": "api_ref",
+        "category": "Product",
+        "category_id": "89",
+        "api_name": "v2.product.get_boosted_list",
+        "display_name": "get_boosted_list",
+        "content_id": "626",
+        "url": "https://open.shopee.com/documents/v2/v2.product.get_boosted_list?module=89&type=1"
+      },
+      {
+        "type": "api_ref",
+        "category": "Product",
+        "category_id": "89",
+        "api_name": "v2.product.get_item_promotion",
+        "display_name": "get_item_promotion",
+        "content_id": "661",
+        "url": "https://open.shopee.com/documents/v2/v2.product.get_item_promotion?module=89&type=1"
+      },
+      {
+        "type": "api_ref",
+        "category": "Product",
+        "category_id": "89",
+        "api_name": "v2.product.update_sip_item_price",
+        "display_name": "update_sip_item_price",
+        "content_id": "662",
+        "url": "https://open.shopee.com/documents/v2/v2.product.update_sip_item_price?module=89&type=1"
+      },
+      {
+        "type": "api_ref",
+        "category": "Product",
+        "category_id": "89",
+        "api_name": "v2.product.search_item",
+        "display_name": "search_item",
+        "content_id": "701",
+        "url": "https://open.shopee.com/documents/v2/v2.product.search_item?module=89&type=1"
+      },
+      {
+        "type": "api_ref",
+        "category": "Product",
+        "category_id": "89",
+        "api_name": "v2.product.get_comment",
+        "display_name": "get_comment",
+        "content_id": "562",
+        "url": "https://open.shopee.com/documents/v2/v2.product.get_comment?module=89&type=1"
+      },
+      {
+        "type": "api_ref",
+        "category": "Product",
+        "category_id": "89",
+        "api_name": "v2.product.reply_comment",
+        "display_name": "reply_comment",
+        "content_id": "563",
+        "url": "https://open.shopee.com/documents/v2/v2.product.reply_comment?module=89&type=1"
+      },
+      {
+        "type": "api_ref",
+        "category": "Product",
+        "category_id": "89",
+        "api_name": "v2.product.category_recommend",
+        "display_name": "category_recommend",
+        "content_id": "702",
+        "url": "https://open.shopee.com/documents/v2/v2.product.category_recommend?module=89&type=1"
+      },
+      {
+        "type": "api_ref",
+        "category": "Product",
+        "category_id": "89",
+        "api_name": "v2.product.register_brand",
+        "display_name": "register_brand",
+        "content_id": "743",
+        "url": "https://open.shopee.com/documents/v2/v2.product.register_brand?module=89&type=1"
+      },
+      {
+        "type": "api_ref",
+        "category": "Product",
+        "category_id": "89",
+        "api_name": "v2.product.get_recommend_attribute",
+        "display_name": "get_recommend_attribute",
+        "content_id": "750",
+        "url": "https://open.shopee.com/documents/v2/v2.product.get_recommend_attribute?module=89&type=1"
+      },
+      {
+        "type": "api_ref",
+        "category": "Product",
+        "category_id": "89",
+        "api_name": "v2.product.get_weight_recommendation",
+        "display_name": "get_weight_recommendation",
+        "content_id": "1800",
+        "url": "https://open.shopee.com/documents/v2/v2.product.get_weight_recommendation?module=89&type=1"
+      },
+      {
+        "type": "api_ref",
+        "category": "Product",
+        "category_id": "89",
+        "api_name": "v2.product.get_size_chart_list ",
+        "display_name": "get_size_chart_list",
+        "content_id": "1801",
+        "url": "https://open.shopee.com/documents/v2/v2.product.get_size_chart_list ?module=89&type=1"
+      },
+      {
+        "type": "api_ref",
+        "category": "Product",
+        "category_id": "89",
+        "api_name": "v2.product.get_size_chart_detail",
+        "display_name": "get_size_chart_detail",
+        "content_id": "1802",
+        "url": "https://open.shopee.com/documents/v2/v2.product.get_size_chart_detail?module=89&type=1"
+      },
+      {
+        "type": "api_ref",
+        "category": "Product",
+        "category_id": "89",
+        "api_name": "v2.product.get_item_violation_info",
+        "display_name": "get_item_violation_info",
+        "content_id": "1862",
+        "url": "https://open.shopee.com/documents/v2/v2.product.get_item_violation_info?module=89&type=1"
+      },
+      {
+        "type": "api_ref",
+        "category": "Product",
+        "category_id": "89",
+        "api_name": "v2.product.get_variations",
+        "display_name": "get_variations",
+        "content_id": "1981",
+        "url": "https://open.shopee.com/documents/v2/v2.product.get_variations?module=89&type=1"
+      },
+      {
+        "type": "api_ref",
+        "category": "Product",
+        "category_id": "89",
+        "api_name": "v2.product.get_all_vehicle_list",
+        "display_name": "get_all_vehicle_list",
+        "content_id": "2136",
+        "url": "https://open.shopee.com/documents/v2/v2.product.get_all_vehicle_list?module=89&type=1"
+      },
+      {
+        "type": "api_ref",
+        "category": "Product",
+        "category_id": "89",
+        "api_name": "v2.product.get_vehicle_list_by_compatibility_detail",
+        "display_name": "get_vehicle_list_by_compatibility_detail",
+        "content_id": "2138",
+        "url": "https://open.shopee.com/documents/v2/v2.product.get_vehicle_list_by_compatibility_detail?module=89&type=1"
+      },
+      {
+        "type": "api_ref",
+        "category": "Product",
+        "category_id": "89",
+        "api_name": "v2.product.get_item_content_diagnosis_result",
+        "display_name": "get_item_content_diagnosis_result",
+        "content_id": "2208",
+        "url": "https://open.shopee.com/documents/v2/v2.product.get_item_content_diagnosis_result?module=89&type=1"
+      },
+      {
+        "type": "api_ref",
+        "category": "Product",
+        "category_id": "89",
+        "api_name": "v2.product.get_item_list_by_content_diagnosis",
+        "display_name": "get_item_list_by_content_diagnosis",
+        "content_id": "2210",
+        "url": "https://open.shopee.com/documents/v2/v2.product.get_item_list_by_content_diagnosis?module=89&type=1"
+      },
+      {
+        "type": "api_ref",
+        "category": "Product",
+        "category_id": "89",
+        "api_name": "v2.product.get_kit_item_limit",
+        "display_name": "get_kit_item_limit",
+        "content_id": "2241",
+        "url": "https://open.shopee.com/documents/v2/v2.product.get_kit_item_limit?module=89&type=1"
+      },
+      {
+        "type": "api_ref",
+        "category": "Product",
+        "category_id": "89",
+        "api_name": "v2.product.add_kit_item",
+        "display_name": "add_kit_item",
+        "content_id": "2242",
+        "url": "https://open.shopee.com/documents/v2/v2.product.add_kit_item?module=89&type=1"
+      },
+      {
+        "type": "api_ref",
+        "category": "Product",
+        "category_id": "89",
+        "api_name": "v2.product.update_kit_item",
+        "display_name": "update_kit_item",
+        "content_id": "2247",
+        "url": "https://open.shopee.com/documents/v2/v2.product.update_kit_item?module=89&type=1"
+      },
+      {
+        "type": "api_ref",
+        "category": "Product",
+        "category_id": "89",
+        "api_name": "v2.product.get_kit_item_info",
+        "display_name": "get_kit_item_info",
+        "content_id": "2248",
+        "url": "https://open.shopee.com/documents/v2/v2.product.get_kit_item_info?module=89&type=1"
+      },
+      {
+        "type": "api_ref",
+        "category": "Product",
+        "category_id": "89",
+        "api_name": "v2.product.get_ssp_list",
+        "display_name": "get_ssp_list",
+        "content_id": "2270",
+        "url": "https://open.shopee.com/documents/v2/v2.product.get_ssp_list?module=89&type=1"
+      },
+      {
+        "type": "api_ref",
+        "category": "Product",
+        "category_id": "89",
+        "api_name": "v2.product.get_ssp_info",
+        "display_name": "get_ssp_info",
+        "content_id": "2271",
+        "url": "https://open.shopee.com/documents/v2/v2.product.get_ssp_info?module=89&type=1"
+      },
+      {
+        "type": "api_ref",
+        "category": "Product",
+        "category_id": "89",
+        "api_name": "v2.product.add_ssp_item",
+        "display_name": "add_ssp_item",
+        "content_id": "2273",
+        "url": "https://open.shopee.com/documents/v2/v2.product.add_ssp_item?module=89&type=1"
+      },
+      {
+        "type": "api_ref",
+        "category": "Product",
+        "category_id": "89",
+        "api_name": "v2.product.link_ssp",
+        "display_name": "link_ssp",
+        "content_id": "2275",
+        "url": "https://open.shopee.com/documents/v2/v2.product.link_ssp?module=89&type=1"
+      },
+      {
+        "type": "api_ref",
+        "category": "Product",
+        "category_id": "89",
+        "api_name": "v2.product.unlink_ssp",
+        "display_name": "unlink_ssp",
+        "content_id": "2276",
+        "url": "https://open.shopee.com/documents/v2/v2.product.unlink_ssp?module=89&type=1"
+      },
+      {
+        "type": "api_ref",
+        "category": "Product",
+        "category_id": "89",
+        "api_name": "v2.product.get_aitem_by_pitem_id",
+        "display_name": "get_aitem_by_pitem_id",
+        "content_id": "2318",
+        "url": "https://open.shopee.com/documents/v2/v2.product.get_aitem_by_pitem_id?module=89&type=1"
+      },
+      {
+        "type": "api_ref",
+        "category": "Product",
+        "category_id": "89",
+        "api_name": "v2.product.search_attribute_value_list",
+        "display_name": "search_attribute_value_list",
+        "content_id": "2401",
+        "url": "https://open.shopee.com/documents/v2/v2.product.search_attribute_value_list?module=89&type=1"
+      },
+      {
+        "type": "api_ref",
+        "category": "Product",
+        "category_id": "89",
+        "api_name": "v2.product.get_main_item_list",
+        "display_name": "get_main_item_list",
+        "content_id": "2447",
+        "url": "https://open.shopee.com/documents/v2/v2.product.get_main_item_list?module=89&type=1"
+      },
+      {
+        "type": "api_ref",
+        "category": "Product",
+        "category_id": "89",
+        "api_name": "v2.product.get_direct_item_list",
+        "display_name": "get_direct_item_list",
+        "content_id": "2448",
+        "url": "https://open.shopee.com/documents/v2/v2.product.get_direct_item_list?module=89&type=1"
+      },
+      {
+        "type": "api_ref",
+        "category": "Product",
+        "category_id": "89",
+        "api_name": "v2.product.get_direct_shop_recommended_price",
+        "display_name": "get_direct_shop_recommended_price",
+        "content_id": "2450",
+        "url": "https://open.shopee.com/documents/v2/v2.product.get_direct_shop_recommended_price?module=89&type=1"
+      },
+      {
+        "type": "api_ref",
+        "category": "Product",
+        "category_id": "89",
+        "api_name": "v2.product.get_product_certification_rule",
+        "display_name": "get_product_certification_rule",
+        "content_id": "2470",
+        "url": "https://open.shopee.com/documents/v2/v2.product.get_product_certification_rule?module=89&type=1"
+      },
+      {
+        "type": "api_ref",
+        "category": "Product",
+        "category_id": "89",
+        "api_name": "v2.product.search_unpackaged_model_list",
+        "display_name": "search_unpackaged_model_list",
+        "content_id": "2576",
+        "url": "https://open.shopee.com/documents/v2/v2.product.search_unpackaged_model_list?module=89&type=1"
+      },
+      {
+        "type": "api_ref",
+        "category": "Product",
+        "category_id": "89",
+        "api_name": "v2.product.generate_kit_image",
+        "display_name": "generate_kit_image",
+        "content_id": "2868",
+        "url": "https://open.shopee.com/documents/v2/v2.product.generate_kit_image?module=89&type=1"
+      },
+      {
+        "type": "api_ref",
+        "category": "GlobalProduct(CB seller only)",
+        "category_id": "90",
+        "api_name": "v2.global_product.get_category",
+        "display_name": "get_category",
+        "content_id": "654",
+        "url": "https://open.shopee.com/documents/v2/v2.global_product.get_category?module=90&type=1"
+      },
+      {
+        "type": "api_ref",
+        "category": "GlobalProduct(CB seller only)",
+        "category_id": "90",
+        "api_name": "v2.global_product.get_attribute_tree",
+        "display_name": "get_attribute_tree",
+        "content_id": "1827",
+        "url": "https://open.shopee.com/documents/v2/v2.global_product.get_attribute_tree?module=90&type=1"
+      },
+      {
+        "type": "api_ref",
+        "category": "GlobalProduct(CB seller only)",
+        "category_id": "90",
+        "api_name": "v2.global_product.get_brand_list",
+        "display_name": "get_brand_list",
+        "content_id": "703",
+        "url": "https://open.shopee.com/documents/v2/v2.global_product.get_brand_list?module=90&type=1"
+      },
+      {
+        "type": "api_ref",
+        "category": "GlobalProduct(CB seller only)",
+        "category_id": "90",
+        "api_name": "v2.global_product.get_global_item_limit",
+        "display_name": "get_global_item_limit",
+        "content_id": "637",
+        "url": "https://open.shopee.com/documents/v2/v2.global_product.get_global_item_limit?module=90&type=1"
+      },
+      {
+        "type": "api_ref",
+        "category": "GlobalProduct(CB seller only)",
+        "category_id": "90",
+        "api_name": "v2.global_product.get_global_item_list",
+        "display_name": "get_global_item_list",
+        "content_id": "640",
+        "url": "https://open.shopee.com/documents/v2/v2.global_product.get_global_item_list?module=90&type=1"
+      },
+      {
+        "type": "api_ref",
+        "category": "GlobalProduct(CB seller only)",
+        "category_id": "90",
+        "api_name": "v2.global_product.get_global_item_info",
+        "display_name": "get_global_item_info",
+        "content_id": "644",
+        "url": "https://open.shopee.com/documents/v2/v2.global_product.get_global_item_info?module=90&type=1"
+      },
+      {
+        "type": "api_ref",
+        "category": "GlobalProduct(CB seller only)",
+        "category_id": "90",
+        "api_name": "v2.global_product.add_global_item",
+        "display_name": "add_global_item",
+        "content_id": "611",
+        "url": "https://open.shopee.com/documents/v2/v2.global_product.add_global_item?module=90&type=1"
+      },
+      {
+        "type": "api_ref",
+        "category": "GlobalProduct(CB seller only)",
+        "category_id": "90",
+        "api_name": "v2.global_product.update_global_item",
+        "display_name": "update_global_item",
+        "content_id": "620",
+        "url": "https://open.shopee.com/documents/v2/v2.global_product.update_global_item?module=90&type=1"
+      },
+      {
+        "type": "api_ref",
+        "category": "GlobalProduct(CB seller only)",
+        "category_id": "90",
+        "api_name": "v2.global_product.delete_global_item",
+        "display_name": "delete_global_item",
+        "content_id": "621",
+        "url": "https://open.shopee.com/documents/v2/v2.global_product.delete_global_item?module=90&type=1"
+      },
+      {
+        "type": "api_ref",
+        "category": "GlobalProduct(CB seller only)",
+        "category_id": "90",
+        "api_name": "v2.global_product.init_tier_variation",
+        "display_name": "init_tier_variation",
+        "content_id": "635",
+        "url": "https://open.shopee.com/documents/v2/v2.global_product.init_tier_variation?module=90&type=1"
+      },
+      {
+        "type": "api_ref",
+        "category": "GlobalProduct(CB seller only)",
+        "category_id": "90",
+        "api_name": "v2.global_product.update_tier_variation",
+        "display_name": "update_tier_variation",
+        "content_id": "636",
+        "url": "https://open.shopee.com/documents/v2/v2.global_product.update_tier_variation?module=90&type=1"
+      },
+      {
+        "type": "api_ref",
+        "category": "GlobalProduct(CB seller only)",
+        "category_id": "90",
+        "api_name": "v2.global_product.add_global_model",
+        "display_name": "add_global_model",
+        "content_id": "643",
+        "url": "https://open.shopee.com/documents/v2/v2.global_product.add_global_model?module=90&type=1"
+      },
+      {
+        "type": "api_ref",
+        "category": "GlobalProduct(CB seller only)",
+        "category_id": "90",
+        "api_name": "v2.global_product.update_global_model",
+        "display_name": "update_global_model",
+        "content_id": "645",
+        "url": "https://open.shopee.com/documents/v2/v2.global_product.update_global_model?module=90&type=1"
+      },
+      {
+        "type": "api_ref",
+        "category": "GlobalProduct(CB seller only)",
+        "category_id": "90",
+        "api_name": "v2.global_product.delete_global_model",
+        "display_name": "delete_global_model",
+        "content_id": "638",
+        "url": "https://open.shopee.com/documents/v2/v2.global_product.delete_global_model?module=90&type=1"
+      },
+      {
+        "type": "api_ref",
+        "category": "GlobalProduct(CB seller only)",
+        "category_id": "90",
+        "api_name": "v2.global_product.get_global_model_list",
+        "display_name": "get_global_model_list",
+        "content_id": "623",
+        "url": "https://open.shopee.com/documents/v2/v2.global_product.get_global_model_list?module=90&type=1"
+      },
+      {
+        "type": "api_ref",
+        "category": "GlobalProduct(CB seller only)",
+        "category_id": "90",
+        "api_name": "v2.global_product.support_size_chart",
+        "display_name": "support_size_chart",
+        "content_id": "632",
+        "url": "https://open.shopee.com/documents/v2/v2.global_product.support_size_chart?module=90&type=1"
+      },
+      {
+        "type": "api_ref",
+        "category": "GlobalProduct(CB seller only)",
+        "category_id": "90",
+        "api_name": "v2.global_product.update_size_chart",
+        "display_name": "update_size_chart",
+        "content_id": "625",
+        "url": "https://open.shopee.com/documents/v2/v2.global_product.update_size_chart?module=90&type=1"
+      },
+      {
+        "type": "api_ref",
+        "category": "GlobalProduct(CB seller only)",
+        "category_id": "90",
+        "api_name": "v2.global_product.create_publish_task",
+        "display_name": "create_publish_task",
+        "content_id": "639",
+        "url": "https://open.shopee.com/documents/v2/v2.global_product.create_publish_task?module=90&type=1"
+      },
+      {
+        "type": "api_ref",
+        "category": "GlobalProduct(CB seller only)",
+        "category_id": "90",
+        "api_name": "v2.global_product.get_publishable_shop",
+        "display_name": "get_publishable_shop",
+        "content_id": "630",
+        "url": "https://open.shopee.com/documents/v2/v2.global_product.get_publishable_shop?module=90&type=1"
+      },
+      {
+        "type": "api_ref",
+        "category": "GlobalProduct(CB seller only)",
+        "category_id": "90",
+        "api_name": "v2.global_product.get_publish_task_result",
+        "display_name": "get_publish_task_result",
+        "content_id": "627",
+        "url": "https://open.shopee.com/documents/v2/v2.global_product.get_publish_task_result?module=90&type=1"
+      },
+      {
+        "type": "api_ref",
+        "category": "GlobalProduct(CB seller only)",
+        "category_id": "90",
+        "api_name": "v2.global_product.get_published_list",
+        "display_name": "get_published_list",
+        "content_id": "633",
+        "url": "https://open.shopee.com/documents/v2/v2.global_product.get_published_list?module=90&type=1"
+      },
+      {
+        "type": "api_ref",
+        "category": "GlobalProduct(CB seller only)",
+        "category_id": "90",
+        "api_name": "v2.global_product.update_price",
+        "display_name": "update_price",
+        "content_id": "642",
+        "url": "https://open.shopee.com/documents/v2/v2.global_product.update_price?module=90&type=1"
+      },
+      {
+        "type": "api_ref",
+        "category": "GlobalProduct(CB seller only)",
+        "category_id": "90",
+        "api_name": "v2.global_product.update_stock",
+        "display_name": "update_stock",
+        "content_id": "641",
+        "url": "https://open.shopee.com/documents/v2/v2.global_product.update_stock?module=90&type=1"
+      },
+      {
+        "type": "api_ref",
+        "category": "GlobalProduct(CB seller only)",
+        "category_id": "90",
+        "api_name": "v2.global_product.set_sync_field",
+        "display_name": "set_sync_field",
+        "content_id": "656",
+        "url": "https://open.shopee.com/documents/v2/v2.global_product.set_sync_field?module=90&type=1"
+      },
+      {
+        "type": "api_ref",
+        "category": "GlobalProduct(CB seller only)",
+        "category_id": "90",
+        "api_name": "v2.global_product.get_global_item_id",
+        "display_name": "get_global_item_id",
+        "content_id": "657",
+        "url": "https://open.shopee.com/documents/v2/v2.global_product.get_global_item_id?module=90&type=1"
+      },
+      {
+        "type": "api_ref",
+        "category": "GlobalProduct(CB seller only)",
+        "category_id": "90",
+        "api_name": "v2.global_product.category_recommend",
+        "display_name": "category_recommend",
+        "content_id": "705",
+        "url": "https://open.shopee.com/documents/v2/v2.global_product.category_recommend?module=90&type=1"
+      },
+      {
+        "type": "api_ref",
+        "category": "GlobalProduct(CB seller only)",
+        "category_id": "90",
+        "api_name": "v2.global_product.get_recommend_attribute",
+        "display_name": "get_recommend_attribute",
+        "content_id": "751",
+        "url": "https://open.shopee.com/documents/v2/v2.global_product.get_recommend_attribute?module=90&type=1"
+      },
+      {
+        "type": "api_ref",
+        "category": "GlobalProduct(CB seller only)",
+        "category_id": "90",
+        "api_name": "v2.global_product.get_shop_publishable_status",
+        "display_name": "get_shop_publishable_status",
+        "content_id": "1902",
+        "url": "https://open.shopee.com/documents/v2/v2.global_product.get_shop_publishable_status?module=90&type=1"
+      },
+      {
+        "type": "api_ref",
+        "category": "GlobalProduct(CB seller only)",
+        "category_id": "90",
+        "api_name": "v2.global_product.get_variations",
+        "display_name": "get_variations",
+        "content_id": "1990",
+        "url": "https://open.shopee.com/documents/v2/v2.global_product.get_variations?module=90&type=1"
+      },
+      {
+        "type": "api_ref",
+        "category": "GlobalProduct(CB seller only)",
+        "category_id": "90",
+        "api_name": "v2.global_product.get_size_chart_detail",
+        "display_name": "get_size_chart_detail",
+        "content_id": "2334",
+        "url": "https://open.shopee.com/documents/v2/v2.global_product.get_size_chart_detail?module=90&type=1"
+      },
+      {
+        "type": "api_ref",
+        "category": "GlobalProduct(CB seller only)",
+        "category_id": "90",
+        "api_name": "v2.global_product.get_size_chart_list ",
+        "display_name": "get_size_chart_list",
+        "content_id": "2335",
+        "url": "https://open.shopee.com/documents/v2/v2.global_product.get_size_chart_list ?module=90&type=1"
+      },
+      {
+        "type": "api_ref",
+        "category": "GlobalProduct(CB seller only)",
+        "category_id": "90",
+        "api_name": "v2.global_product.search_global_attribute_value_list",
+        "display_name": "search_global_attribute_value_list",
+        "content_id": "2399",
+        "url": "https://open.shopee.com/documents/v2/v2.global_product.search_global_attribute_value_list?module=90&type=1"
+      },
+      {
+        "type": "api_ref",
+        "category": "GlobalProduct(CB seller only)",
+        "category_id": "90",
+        "api_name": "v2.global_product.get_local_adjustment_rate",
+        "display_name": "get_local_adjustment_rate",
+        "content_id": "2640",
+        "url": "https://open.shopee.com/documents/v2/v2.global_product.get_local_adjustment_rate?module=90&type=1"
+      },
+      {
+        "type": "api_ref",
+        "category": "GlobalProduct(CB seller only)",
+        "category_id": "90",
+        "api_name": "v2.global_product.update_local_adjustment_rate",
+        "display_name": "update_local_adjustment_rate",
+        "content_id": "2641",
+        "url": "https://open.shopee.com/documents/v2/v2.global_product.update_local_adjustment_rate?module=90&type=1"
+      },
+      {
+        "type": "api_ref",
+        "category": "MediaSpace",
+        "category_id": "91",
+        "api_name": "v2.media_space.init_video_upload",
+        "display_name": "init_video_upload",
+        "content_id": "531",
+        "url": "https://open.shopee.com/documents/v2/v2.media_space.init_video_upload?module=91&type=1"
+      },
+      {
+        "type": "api_ref",
+        "category": "MediaSpace",
+        "category_id": "91",
+        "api_name": "v2.media_space.upload_video_part",
+        "display_name": "upload_video_part",
+        "content_id": "532",
+        "url": "https://open.shopee.com/documents/v2/v2.media_space.upload_video_part?module=91&type=1"
+      },
+      {
+        "type": "api_ref",
+        "category": "MediaSpace",
+        "category_id": "91",
+        "api_name": "v2.media_space.complete_video_upload",
+        "display_name": "complete_video_upload",
+        "content_id": "533",
+        "url": "https://open.shopee.com/documents/v2/v2.media_space.complete_video_upload?module=91&type=1"
+      },
+      {
+        "type": "api_ref",
+        "category": "MediaSpace",
+        "category_id": "91",
+        "api_name": "v2.media_space.get_video_upload_result",
+        "display_name": "get_video_upload_result",
+        "content_id": "534",
+        "url": "https://open.shopee.com/documents/v2/v2.media_space.get_video_upload_result?module=91&type=1"
+      },
+      {
+        "type": "api_ref",
+        "category": "MediaSpace",
+        "category_id": "91",
+        "api_name": "v2.media_space.cancel_video_upload",
+        "display_name": "cancel_video_upload",
+        "content_id": "535",
+        "url": "https://open.shopee.com/documents/v2/v2.media_space.cancel_video_upload?module=91&type=1"
+      },
+      {
+        "type": "api_ref",
+        "category": "MediaSpace",
+        "category_id": "91",
+        "api_name": "v2.media_space.upload_image",
+        "display_name": "upload_image",
+        "content_id": "660",
+        "url": "https://open.shopee.com/documents/v2/v2.media_space.upload_image?module=91&type=1"
+      },
+      {
+        "type": "api_ref",
+        "category": "Media",
+        "category_id": "130",
+        "api_name": "v2.media.upload_image",
+        "display_name": "upload_image",
+        "content_id": "2761",
+        "url": "https://open.shopee.com/documents/v2/v2.media.upload_image?module=130&type=1"
+      },
+      {
+        "type": "api_ref",
+        "category": "Shop",
+        "category_id": "92",
+        "api_name": "v2.shop.get_shop_info",
+        "display_name": "get_shop_info",
+        "content_id": "536",
+        "url": "https://open.shopee.com/documents/v2/v2.shop.get_shop_info?module=92&type=1"
+      },
+      {
+        "type": "api_ref",
+        "category": "Shop",
+        "category_id": "92",
+        "api_name": "v2.shop.get_profile",
+        "display_name": "get_profile",
+        "content_id": "584",
+        "url": "https://open.shopee.com/documents/v2/v2.shop.get_profile?module=92&type=1"
+      },
+      {
+        "type": "api_ref",
+        "category": "Shop",
+        "category_id": "92",
+        "api_name": "v2.shop.update_profile",
+        "display_name": "update_profile",
+        "content_id": "585",
+        "url": "https://open.shopee.com/documents/v2/v2.shop.update_profile?module=92&type=1"
+      },
+      {
+        "type": "api_ref",
+        "category": "Shop",
+        "category_id": "92",
+        "api_name": "v2.shop.get_warehouse_detail",
+        "display_name": "get_warehouse_detail",
+        "content_id": "1061",
+        "url": "https://open.shopee.com/documents/v2/v2.shop.get_warehouse_detail?module=92&type=1"
+      },
+      {
+        "type": "api_ref",
+        "category": "Shop",
+        "category_id": "92",
+        "api_name": "v2.shop.get_shop_notification",
+        "display_name": "get_shop_notification",
+        "content_id": "1994",
+        "url": "https://open.shopee.com/documents/v2/v2.shop.get_shop_notification?module=92&type=1"
+      },
+      {
+        "type": "api_ref",
+        "category": "Shop",
+        "category_id": "92",
+        "api_name": "v2.shop.get_authorised_reseller_brand",
+        "display_name": "get_authorised_reseller_brand",
+        "content_id": "2238",
+        "url": "https://open.shopee.com/documents/v2/v2.shop.get_authorised_reseller_brand?module=92&type=1"
+      },
+      {
+        "type": "api_ref",
+        "category": "Merchant",
+        "category_id": "93",
+        "api_name": "v2.merchant.get_merchant_info",
+        "display_name": "get_merchant_info",
+        "content_id": "537",
+        "url": "https://open.shopee.com/documents/v2/v2.merchant.get_merchant_info?module=93&type=1"
+      },
+      {
+        "type": "api_ref",
+        "category": "Merchant",
+        "category_id": "93",
+        "api_name": "v2.merchant.get_shop_list_by_merchant",
+        "display_name": "get_shop_list_by_merchant",
+        "content_id": "700",
+        "url": "https://open.shopee.com/documents/v2/v2.merchant.get_shop_list_by_merchant?module=93&type=1"
+      },
+      {
+        "type": "api_ref",
+        "category": "Merchant",
+        "category_id": "93",
+        "api_name": "v2.merchant.get_merchant_warehouse_location_list",
+        "display_name": "get_merchant_warehouse_location_list",
+        "content_id": "1781",
+        "url": "https://open.shopee.com/documents/v2/v2.merchant.get_merchant_warehouse_location_list?module=93&type=1"
+      },
+      {
+        "type": "api_ref",
+        "category": "Merchant",
+        "category_id": "93",
+        "api_name": "v2.merchant.get_merchant_warehouse_list",
+        "display_name": "get_merchant_warehouse_list",
+        "content_id": "1864",
+        "url": "https://open.shopee.com/documents/v2/v2.merchant.get_merchant_warehouse_list?module=93&type=1"
+      },
+      {
+        "type": "api_ref",
+        "category": "Merchant",
+        "category_id": "93",
+        "api_name": "v2.merchant.get_warehouse_eligible_shop_list",
+        "display_name": "get_warehouse_eligible_shop_list",
+        "content_id": "1865",
+        "url": "https://open.shopee.com/documents/v2/v2.merchant.get_warehouse_eligible_shop_list?module=93&type=1"
+      },
+      {
+        "type": "api_ref",
+        "category": "Merchant",
+        "category_id": "93",
+        "api_name": "v2.merchant.get_merchant_prepaid_account_list",
+        "display_name": "get_merchant_prepaid_account_list",
+        "content_id": "2302",
+        "url": "https://open.shopee.com/documents/v2/v2.merchant.get_merchant_prepaid_account_list?module=93&type=1"
+      },
+      {
+        "type": "api_ref",
+        "category": "Order",
+        "category_id": "94",
+        "api_name": "v2.order.get_order_list",
+        "display_name": "get_order_list",
+        "content_id": "542",
+        "url": "https://open.shopee.com/documents/v2/v2.order.get_order_list?module=94&type=1"
+      },
+      {
+        "type": "api_ref",
+        "category": "Order",
+        "category_id": "94",
+        "api_name": "v2.order.get_order_detail",
+        "display_name": "get_order_detail",
+        "content_id": "557",
+        "url": "https://open.shopee.com/documents/v2/v2.order.get_order_detail?module=94&type=1"
+      },
+      {
+        "type": "api_ref",
+        "category": "Order",
+        "category_id": "94",
+        "api_name": "v2.order.get_shipment_list",
+        "display_name": "get_shipment_list",
+        "content_id": "543",
+        "url": "https://open.shopee.com/documents/v2/v2.order.get_shipment_list?module=94&type=1"
+      },
+      {
+        "type": "api_ref",
+        "category": "Order",
+        "category_id": "94",
+        "api_name": "v2.order.search_package_list",
+        "display_name": "search_package_list",
+        "content_id": "2420",
+        "url": "https://open.shopee.com/documents/v2/v2.order.search_package_list?module=94&type=1"
+      },
+      {
+        "type": "api_ref",
+        "category": "Order",
+        "category_id": "94",
+        "api_name": "v2.order.get_package_detail",
+        "display_name": "get_package_detail",
+        "content_id": "2527",
+        "url": "https://open.shopee.com/documents/v2/v2.order.get_package_detail?module=94&type=1"
+      },
+      {
+        "type": "api_ref",
+        "category": "Order",
+        "category_id": "94",
+        "api_name": "v2.order.split_order",
+        "display_name": "split_order",
+        "content_id": "545",
+        "url": "https://open.shopee.com/documents/v2/v2.order.split_order?module=94&type=1"
+      },
+      {
+        "type": "api_ref",
+        "category": "Order",
+        "category_id": "94",
+        "api_name": "v2.order.unsplit_order",
+        "display_name": "unsplit_order",
+        "content_id": "546",
+        "url": "https://open.shopee.com/documents/v2/v2.order.unsplit_order?module=94&type=1"
+      },
+      {
+        "type": "api_ref",
+        "category": "Order",
+        "category_id": "94",
+        "api_name": "v2.order.cancel_order",
+        "display_name": "cancel_order",
+        "content_id": "541",
+        "url": "https://open.shopee.com/documents/v2/v2.order.cancel_order?module=94&type=1"
+      },
+      {
+        "type": "api_ref",
+        "category": "Order",
+        "category_id": "94",
+        "api_name": "v2.order.handle_buyer_cancellation",
+        "display_name": "handle_buyer_cancellation",
+        "content_id": "544",
+        "url": "https://open.shopee.com/documents/v2/v2.order.handle_buyer_cancellation?module=94&type=1"
+      },
+      {
+        "type": "api_ref",
+        "category": "Order",
+        "category_id": "94",
+        "api_name": "v2.order.set_note",
+        "display_name": "set_note",
+        "content_id": "540",
+        "url": "https://open.shopee.com/documents/v2/v2.order.set_note?module=94&type=1"
+      },
+      {
+        "type": "api_ref",
+        "category": "Order",
+        "category_id": "94",
+        "api_name": "v2.order.get_pending_buyer_invoice_order_list",
+        "display_name": "get_pending_buyer_invoice_order_list",
+        "content_id": "745",
+        "url": "https://open.shopee.com/documents/v2/v2.order.get_pending_buyer_invoice_order_list?module=94&type=1"
+      },
+      {
+        "type": "api_ref",
+        "category": "Order",
+        "category_id": "94",
+        "api_name": "v2.order.get_buyer_invoice_info",
+        "display_name": "get_buyer_invoice_info",
+        "content_id": "1021",
+        "url": "https://open.shopee.com/documents/v2/v2.order.get_buyer_invoice_info?module=94&type=1"
+      },
+      {
+        "type": "api_ref",
+        "category": "Order",
+        "category_id": "94",
+        "api_name": "v2.order.upload_invoice_doc",
+        "display_name": "upload_invoice_doc",
+        "content_id": "744",
+        "url": "https://open.shopee.com/documents/v2/v2.order.upload_invoice_doc?module=94&type=1"
+      },
+      {
+        "type": "api_ref",
+        "category": "Order",
+        "category_id": "94",
+        "api_name": "v2.order.download_invoice_doc",
+        "display_name": "download_invoice_doc",
+        "content_id": "746",
+        "url": "https://open.shopee.com/documents/v2/v2.order.download_invoice_doc?module=94&type=1"
+      },
+      {
+        "type": "api_ref",
+        "category": "Order",
+        "category_id": "94",
+        "api_name": "v2.order.handle_prescription_check",
+        "display_name": "handle_prescription_check",
+        "content_id": "1521",
+        "url": "https://open.shopee.com/documents/v2/v2.order.handle_prescription_check?module=94&type=1"
+      },
+      {
+        "type": "api_ref",
+        "category": "Order",
+        "category_id": "94",
+        "api_name": "v2.order.get_warehouse_filter_config",
+        "display_name": "get_warehouse_filter_config",
+        "content_id": "2440",
+        "url": "https://open.shopee.com/documents/v2/v2.order.get_warehouse_filter_config?module=94&type=1"
+      },
+      {
+        "type": "api_ref",
+        "category": "Order",
+        "category_id": "94",
+        "api_name": "v2.order.get_booking_list",
+        "display_name": "get_booking_list",
+        "content_id": "2177",
+        "url": "https://open.shopee.com/documents/v2/v2.order.get_booking_list?module=94&type=1"
+      },
+      {
+        "type": "api_ref",
+        "category": "Order",
+        "category_id": "94",
+        "api_name": "v2.order.get_booking_detail",
+        "display_name": "get_booking_detail",
+        "content_id": "2178",
+        "url": "https://open.shopee.com/documents/v2/v2.order.get_booking_detail?module=94&type=1"
+      },
+      {
+        "type": "api_ref",
+        "category": "Order",
+        "category_id": "94",
+        "api_name": "v2.order.generate_fbs_invoices",
+        "display_name": "generate_fbs_invoices",
+        "content_id": "2634",
+        "url": "https://open.shopee.com/documents/v2/v2.order.generate_fbs_invoices?module=94&type=1"
+      },
+      {
+        "type": "api_ref",
+        "category": "Order",
+        "category_id": "94",
+        "api_name": "v2.order.get_fbs_invoices_result",
+        "display_name": "get_fbs_invoices_result",
+        "content_id": "2635",
+        "url": "https://open.shopee.com/documents/v2/v2.order.get_fbs_invoices_result?module=94&type=1"
+      },
+      {
+        "type": "api_ref",
+        "category": "Order",
+        "category_id": "94",
+        "api_name": "v2.order.download_fbs_invoices",
+        "display_name": "download_fbs_invoices",
+        "content_id": "2636",
+        "url": "https://open.shopee.com/documents/v2/v2.order.download_fbs_invoices?module=94&type=1"
+      },
+      {
+        "type": "api_ref",
+        "category": "Logistics",
+        "category_id": "95",
+        "api_name": "v2.logistics.get_shipping_parameter",
+        "display_name": "get_shipping_parameter",
+        "content_id": "550",
+        "url": "https://open.shopee.com/documents/v2/v2.logistics.get_shipping_parameter?module=95&type=1"
+      },
+      {
+        "type": "api_ref",
+        "category": "Logistics",
+        "category_id": "95",
+        "api_name": "v2.logistics.get_mass_shipping_parameter",
+        "display_name": "get_mass_shipping_parameter",
+        "content_id": "2421",
+        "url": "https://open.shopee.com/documents/v2/v2.logistics.get_mass_shipping_parameter?module=95&type=1"
+      },
+      {
+        "type": "api_ref",
+        "category": "Logistics",
+        "category_id": "95",
+        "api_name": "v2.logistics.ship_order",
+        "display_name": "ship_order",
+        "content_id": "553",
+        "url": "https://open.shopee.com/documents/v2/v2.logistics.ship_order?module=95&type=1"
+      },
+      {
+        "type": "api_ref",
+        "category": "Logistics",
+        "category_id": "95",
+        "api_name": "v2.logistics.mass_ship_order",
+        "display_name": "mass_ship_order",
+        "content_id": "2422",
+        "url": "https://open.shopee.com/documents/v2/v2.logistics.mass_ship_order?module=95&type=1"
+      },
+      {
+        "type": "api_ref",
+        "category": "Logistics",
+        "category_id": "95",
+        "api_name": "v2.logistics.update_shipping_order",
+        "display_name": "update_shipping_order",
+        "content_id": "555",
+        "url": "https://open.shopee.com/documents/v2/v2.logistics.update_shipping_order?module=95&type=1"
+      },
+      {
+        "type": "api_ref",
+        "category": "Logistics",
+        "category_id": "95",
+        "api_name": "v2.logistics.get_tracking_number",
+        "display_name": "get_tracking_number",
+        "content_id": "552",
+        "url": "https://open.shopee.com/documents/v2/v2.logistics.get_tracking_number?module=95&type=1"
+      },
+      {
+        "type": "api_ref",
+        "category": "Logistics",
+        "category_id": "95",
+        "api_name": "v2.logistics.get_mass_tracking_number",
+        "display_name": "get_mass_tracking_number",
+        "content_id": "2423",
+        "url": "https://open.shopee.com/documents/v2/v2.logistics.get_mass_tracking_number?module=95&type=1"
+      },
+      {
+        "type": "api_ref",
+        "category": "Logistics",
+        "category_id": "95",
+        "api_name": "v2.logistics.get_shipping_document_parameter",
+        "display_name": "get_shipping_document_parameter",
+        "content_id": "549",
+        "url": "https://open.shopee.com/documents/v2/v2.logistics.get_shipping_document_parameter?module=95&type=1"
+      },
+      {
+        "type": "api_ref",
+        "category": "Logistics",
+        "category_id": "95",
+        "api_name": "v2.logistics.create_shipping_document",
+        "display_name": "create_shipping_document",
+        "content_id": "547",
+        "url": "https://open.shopee.com/documents/v2/v2.logistics.create_shipping_document?module=95&type=1"
+      },
+      {
+        "type": "api_ref",
+        "category": "Logistics",
+        "category_id": "95",
+        "api_name": "v2.logistics.get_shipping_document_result",
+        "display_name": "get_shipping_document_result",
+        "content_id": "561",
+        "url": "https://open.shopee.com/documents/v2/v2.logistics.get_shipping_document_result?module=95&type=1"
+      },
+      {
+        "type": "api_ref",
+        "category": "Logistics",
+        "category_id": "95",
+        "api_name": "v2.logistics.download_shipping_document",
+        "display_name": "download_shipping_document",
+        "content_id": "548",
+        "url": "https://open.shopee.com/documents/v2/v2.logistics.download_shipping_document?module=95&type=1"
+      },
+      {
+        "type": "api_ref",
+        "category": "Logistics",
+        "category_id": "95",
+        "api_name": "v2.logistics.get_shipping_document_data_info",
+        "display_name": "get_shipping_document_data_info",
+        "content_id": "1534",
+        "url": "https://open.shopee.com/documents/v2/v2.logistics.get_shipping_document_data_info?module=95&type=1"
+      },
+      {
+        "type": "api_ref",
+        "category": "Logistics",
+        "category_id": "95",
+        "api_name": "v2.logistics.get_tracking_info",
+        "display_name": "get_tracking_info",
+        "content_id": "551",
+        "url": "https://open.shopee.com/documents/v2/v2.logistics.get_tracking_info?module=95&type=1"
+      },
+      {
+        "type": "api_ref",
+        "category": "Logistics",
+        "category_id": "95",
+        "api_name": "v2.logistics.get_address_list",
+        "display_name": "get_address_list",
+        "content_id": "558",
+        "url": "https://open.shopee.com/documents/v2/v2.logistics.get_address_list?module=95&type=1"
+      },
+      {
+        "type": "api_ref",
+        "category": "Logistics",
+        "category_id": "95",
+        "api_name": "v2.logistics.set_address_config",
+        "display_name": "set_address_config",
+        "content_id": "556",
+        "url": "https://open.shopee.com/documents/v2/v2.logistics.set_address_config?module=95&type=1"
+      },
+      {
+        "type": "api_ref",
+        "category": "Logistics",
+        "category_id": "95",
+        "api_name": "v2.logistics.delete_address",
+        "display_name": "delete_address",
+        "content_id": "598",
+        "url": "https://open.shopee.com/documents/v2/v2.logistics.delete_address?module=95&type=1"
+      },
+      {
+        "type": "api_ref",
+        "category": "Logistics",
+        "category_id": "95",
+        "api_name": "v2.logistics.get_channel_list",
+        "display_name": "get_channel_list",
+        "content_id": "559",
+        "url": "https://open.shopee.com/documents/v2/v2.logistics.get_channel_list?module=95&type=1"
+      },
+      {
+        "type": "api_ref",
+        "category": "Logistics",
+        "category_id": "95",
+        "api_name": "v2.logistics.update_channel",
+        "display_name": "update_channel",
+        "content_id": "554",
+        "url": "https://open.shopee.com/documents/v2/v2.logistics.update_channel?module=95&type=1"
+      },
+      {
+        "type": "api_ref",
+        "category": "Logistics",
+        "category_id": "95",
+        "api_name": "v2.logistics.get_operating_hours",
+        "display_name": "get_operating_hours",
+        "content_id": "2432",
+        "url": "https://open.shopee.com/documents/v2/v2.logistics.get_operating_hours?module=95&type=1"
+      },
+      {
+        "type": "api_ref",
+        "category": "Logistics",
+        "category_id": "95",
+        "api_name": "v2.logistics.get_operating_hour_restrictions",
+        "display_name": "get_operating_hour_restrictions",
+        "content_id": "2431",
+        "url": "https://open.shopee.com/documents/v2/v2.logistics.get_operating_hour_restrictions?module=95&type=1"
+      },
+      {
+        "type": "api_ref",
+        "category": "Logistics",
+        "category_id": "95",
+        "api_name": "v2.logistics.update_operating_hours",
+        "display_name": "update_operating_hours",
+        "content_id": "2433",
+        "url": "https://open.shopee.com/documents/v2/v2.logistics.update_operating_hours?module=95&type=1"
+      },
+      {
+        "type": "api_ref",
+        "category": "Logistics",
+        "category_id": "95",
+        "api_name": "v2.logistics.delete_special_operating_hour",
+        "display_name": "delete_special_operating_hour",
+        "content_id": "2434",
+        "url": "https://open.shopee.com/documents/v2/v2.logistics.delete_special_operating_hour?module=95&type=1"
+      },
+      {
+        "type": "api_ref",
+        "category": "Logistics",
+        "category_id": "95",
+        "api_name": "v2.logistics.batch_update_tpf_warehouse_tracking_status",
+        "display_name": "batch_update_tpf_warehouse_tracking_status",
+        "content_id": "2397",
+        "url": "https://open.shopee.com/documents/v2/v2.logistics.batch_update_tpf_warehouse_tracking_status?module=95&type=1"
+      },
+      {
+        "type": "api_ref",
+        "category": "Logistics",
+        "category_id": "95",
+        "api_name": "v2.logistics.batch_ship_order",
+        "display_name": "batch_ship_order",
+        "content_id": "688",
+        "url": "https://open.shopee.com/documents/v2/v2.logistics.batch_ship_order?module=95&type=1"
+      },
+      {
+        "type": "api_ref",
+        "category": "Logistics",
+        "category_id": "95",
+        "api_name": "v2.logistics.update_tracking_status",
+        "display_name": "update_tracking_status",
+        "content_id": "2016",
+        "url": "https://open.shopee.com/documents/v2/v2.logistics.update_tracking_status?module=95&type=1"
+      },
+      {
+        "type": "api_ref",
+        "category": "Logistics",
+        "category_id": "95",
+        "api_name": "v2.logistics.get_booking_shipping_parameter",
+        "display_name": "get_booking_shipping_parameter",
+        "content_id": "2180",
+        "url": "https://open.shopee.com/documents/v2/v2.logistics.get_booking_shipping_parameter?module=95&type=1"
+      },
+      {
+        "type": "api_ref",
+        "category": "Logistics",
+        "category_id": "95",
+        "api_name": "v2.logistics.ship_booking",
+        "display_name": "ship_booking",
+        "content_id": "2181",
+        "url": "https://open.shopee.com/documents/v2/v2.logistics.ship_booking?module=95&type=1"
+      },
+      {
+        "type": "api_ref",
+        "category": "Logistics",
+        "category_id": "95",
+        "api_name": "v2.logistics.get_booking_tracking_number",
+        "display_name": "get_booking_tracking_number",
+        "content_id": "2182",
+        "url": "https://open.shopee.com/documents/v2/v2.logistics.get_booking_tracking_number?module=95&type=1"
+      },
+      {
+        "type": "api_ref",
+        "category": "Logistics",
+        "category_id": "95",
+        "api_name": "v2.logistics.get_booking_shipping_document_parameter",
+        "display_name": "get_booking_shipping_document_parameter",
+        "content_id": "2183",
+        "url": "https://open.shopee.com/documents/v2/v2.logistics.get_booking_shipping_document_parameter?module=95&type=1"
+      },
+      {
+        "type": "api_ref",
+        "category": "Logistics",
+        "category_id": "95",
+        "api_name": "v2.logistics.create_booking_shipping_document",
+        "display_name": "create_booking_shipping_document",
+        "content_id": "2184",
+        "url": "https://open.shopee.com/documents/v2/v2.logistics.create_booking_shipping_document?module=95&type=1"
+      },
+      {
+        "type": "api_ref",
+        "category": "Logistics",
+        "category_id": "95",
+        "api_name": "v2.logistics.get_booking_shipping_document_result",
+        "display_name": "get_booking_shipping_document_result",
+        "content_id": "2185",
+        "url": "https://open.shopee.com/documents/v2/v2.logistics.get_booking_shipping_document_result?module=95&type=1"
+      },
+      {
+        "type": "api_ref",
+        "category": "Logistics",
+        "category_id": "95",
+        "api_name": "v2.logistics.download_booking_shipping_document",
+        "display_name": "download_booking_shipping_document",
+        "content_id": "2186",
+        "url": "https://open.shopee.com/documents/v2/v2.logistics.download_booking_shipping_document?module=95&type=1"
+      },
+      {
+        "type": "api_ref",
+        "category": "Logistics",
+        "category_id": "95",
+        "api_name": "v2.logistics.get_booking_shipping_document_data_info",
+        "display_name": "get_booking_shipping_document_data_info",
+        "content_id": "2187",
+        "url": "https://open.shopee.com/documents/v2/v2.logistics.get_booking_shipping_document_data_info?module=95&type=1"
+      },
+      {
+        "type": "api_ref",
+        "category": "Logistics",
+        "category_id": "95",
+        "api_name": "v2.logistics.get_booking_tracking_info",
+        "display_name": "get_booking_tracking_info",
+        "content_id": "2196",
+        "url": "https://open.shopee.com/documents/v2/v2.logistics.get_booking_tracking_info?module=95&type=1"
+      },
+      {
+        "type": "api_ref",
+        "category": "Logistics",
+        "category_id": "95",
+        "api_name": "v2.logistics.download_to_label",
+        "display_name": "download_to_label",
+        "content_id": "2556",
+        "url": "https://open.shopee.com/documents/v2/v2.logistics.download_to_label?module=95&type=1"
+      },
+      {
+        "type": "api_ref",
+        "category": "Logistics",
+        "category_id": "95",
+        "api_name": "v2.logistics.create_shipping_document_job",
+        "display_name": "create_shipping_document_job",
+        "content_id": "2660",
+        "url": "https://open.shopee.com/documents/v2/v2.logistics.create_shipping_document_job?module=95&type=1"
+      },
+      {
+        "type": "api_ref",
+        "category": "Logistics",
+        "category_id": "95",
+        "api_name": "v2.logistics.get_shipping_document_job_status",
+        "display_name": "get_shipping_document_job_status",
+        "content_id": "2661",
+        "url": "https://open.shopee.com/documents/v2/v2.logistics.get_shipping_document_job_status?module=95&type=1"
+      },
+      {
+        "type": "api_ref",
+        "category": "Logistics",
+        "category_id": "95",
+        "api_name": "v2.logistics.download_shipping_document_job",
+        "display_name": "download_shipping_document_job",
+        "content_id": "2662",
+        "url": "https://open.shopee.com/documents/v2/v2.logistics.download_shipping_document_job?module=95&type=1"
+      },
+      {
+        "type": "api_ref",
+        "category": "Logistics",
+        "category_id": "95",
+        "api_name": "v2.logistics.get_mart_packaging_info",
+        "display_name": "get_mart_packaging_info",
+        "content_id": "2575",
+        "url": "https://open.shopee.com/documents/v2/v2.logistics.get_mart_packaging_info?module=95&type=1"
+      },
+      {
+        "type": "api_ref",
+        "category": "Logistics",
+        "category_id": "95",
+        "api_name": "v2.logistics.set_mart_packaging_info",
+        "display_name": "set_mart_packaging_info",
+        "content_id": "2577",
+        "url": "https://open.shopee.com/documents/v2/v2.logistics.set_mart_packaging_info?module=95&type=1"
+      },
+      {
+        "type": "api_ref",
+        "category": "Logistics",
+        "category_id": "95",
+        "api_name": "v2.logistics.update_self_collection_order_logistics",
+        "display_name": "update_self_collection_order_logistics",
+        "content_id": "2840",
+        "url": "https://open.shopee.com/documents/v2/v2.logistics.update_self_collection_order_logistics?module=95&type=1"
+      },
+      {
+        "type": "api_ref",
+        "category": "FirstMile",
+        "category_id": "96",
+        "api_name": "v2.first_mile.get_unbind_order_list",
+        "display_name": "get_unbind_order_list",
+        "content_id": "605",
+        "url": "https://open.shopee.com/documents/v2/v2.first_mile.get_unbind_order_list?module=96&type=1"
+      },
+      {
+        "type": "api_ref",
+        "category": "FirstMile",
+        "category_id": "96",
+        "api_name": "v2.first_mile.get_detail",
+        "display_name": "get_detail",
+        "content_id": "601",
+        "url": "https://open.shopee.com/documents/v2/v2.first_mile.get_detail?module=96&type=1"
+      },
+      {
+        "type": "api_ref",
+        "category": "FirstMile",
+        "category_id": "96",
+        "api_name": "v2.first_mile.generate_first_mile_tracking_number",
+        "display_name": "generate_first_mile_tracking_number",
+        "content_id": "600",
+        "url": "https://open.shopee.com/documents/v2/v2.first_mile.generate_first_mile_tracking_number?module=96&type=1"
+      },
+      {
+        "type": "api_ref",
+        "category": "FirstMile",
+        "category_id": "96",
+        "api_name": "v2.first_mile.bind_first_mile_tracking_number",
+        "display_name": "bind_first_mile_tracking_number",
+        "content_id": "599",
+        "url": "https://open.shopee.com/documents/v2/v2.first_mile.bind_first_mile_tracking_number?module=96&type=1"
+      },
+      {
+        "type": "api_ref",
+        "category": "FirstMile",
+        "category_id": "96",
+        "api_name": "v2.first_mile.unbind_first_mile_tracking_number",
+        "display_name": "unbind_first_mile_tracking_number",
+        "content_id": "604",
+        "url": "https://open.shopee.com/documents/v2/v2.first_mile.unbind_first_mile_tracking_number?module=96&type=1"
+      },
+      {
+        "type": "api_ref",
+        "category": "FirstMile",
+        "category_id": "96",
+        "api_name": "v2.first_mile.get_tracking_number_list",
+        "display_name": "get_tracking_number_list",
+        "content_id": "602",
+        "url": "https://open.shopee.com/documents/v2/v2.first_mile.get_tracking_number_list?module=96&type=1"
+      },
+      {
+        "type": "api_ref",
+        "category": "FirstMile",
+        "category_id": "96",
+        "api_name": "v2.first_mile.get_waybill",
+        "display_name": "get_waybill",
+        "content_id": "603",
+        "url": "https://open.shopee.com/documents/v2/v2.first_mile.get_waybill?module=96&type=1"
+      },
+      {
+        "type": "api_ref",
+        "category": "FirstMile",
+        "category_id": "96",
+        "api_name": "v2.first_mile.get_channel_list",
+        "display_name": "get_channel_list",
+        "content_id": "606",
+        "url": "https://open.shopee.com/documents/v2/v2.first_mile.get_channel_list?module=96&type=1"
+      },
+      {
+        "type": "api_ref",
+        "category": "FirstMile",
+        "category_id": "96",
+        "api_name": "v2.first_mile.get_courier_delivery_channel_list",
+        "display_name": "get_courier_delivery_channel_list",
+        "content_id": "2288",
+        "url": "https://open.shopee.com/documents/v2/v2.first_mile.get_courier_delivery_channel_list?module=96&type=1"
+      },
+      {
+        "type": "api_ref",
+        "category": "FirstMile",
+        "category_id": "96",
+        "api_name": "v2.first_mile.get_transit_warehouse_list",
+        "display_name": "get_transit_warehouse_list",
+        "content_id": "2289",
+        "url": "https://open.shopee.com/documents/v2/v2.first_mile.get_transit_warehouse_list?module=96&type=1"
+      },
+      {
+        "type": "api_ref",
+        "category": "FirstMile",
+        "category_id": "96",
+        "api_name": "v2.first_mile.generate_and_bind_first_mile_tracking_number",
+        "display_name": "generate_and_bind_first_mile_tracking_number",
+        "content_id": "2290",
+        "url": "https://open.shopee.com/documents/v2/v2.first_mile.generate_and_bind_first_mile_tracking_number?module=96&type=1"
+      },
+      {
+        "type": "api_ref",
+        "category": "FirstMile",
+        "category_id": "96",
+        "api_name": "v2.first_mile.bind_courier_delivery_first_mile_tracking_number",
+        "display_name": "bind_courier_delivery_first_mile_tracking_number",
+        "content_id": "2291",
+        "url": "https://open.shopee.com/documents/v2/v2.first_mile.bind_courier_delivery_first_mile_tracking_number?module=96&type=1"
+      },
+      {
+        "type": "api_ref",
+        "category": "FirstMile",
+        "category_id": "96",
+        "api_name": "v2.first_mile.unbind_first_mile_tracking_number_all",
+        "display_name": "unbind_first_mile_tracking_number_all",
+        "content_id": "2292",
+        "url": "https://open.shopee.com/documents/v2/v2.first_mile.unbind_first_mile_tracking_number_all?module=96&type=1"
+      },
+      {
+        "type": "api_ref",
+        "category": "FirstMile",
+        "category_id": "96",
+        "api_name": "v2.first_mile.get_courier_delivery_detail",
+        "display_name": "get_courier_delivery_detail",
+        "content_id": "2296",
+        "url": "https://open.shopee.com/documents/v2/v2.first_mile.get_courier_delivery_detail?module=96&type=1"
+      },
+      {
+        "type": "api_ref",
+        "category": "FirstMile",
+        "category_id": "96",
+        "api_name": "v2.first_mile.get_courier_delivery_waybill",
+        "display_name": "get_courier_delivery_waybill",
+        "content_id": "2300",
+        "url": "https://open.shopee.com/documents/v2/v2.first_mile.get_courier_delivery_waybill?module=96&type=1"
+      },
+      {
+        "type": "api_ref",
+        "category": "FirstMile",
+        "category_id": "96",
+        "api_name": "v2.first_mile.get_courier_delivery_tracking_number_list",
+        "display_name": "get_courier_delivery_tracking_number_list",
+        "content_id": "2301",
+        "url": "https://open.shopee.com/documents/v2/v2.first_mile.get_courier_delivery_tracking_number_list?module=96&type=1"
+      },
+      {
+        "type": "api_ref",
+        "category": "Payment",
+        "category_id": "97",
+        "api_name": "v2.payment.get_escrow_detail",
+        "display_name": "get_escrow_detail",
+        "content_id": "565",
+        "url": "https://open.shopee.com/documents/v2/v2.payment.get_escrow_detail?module=97&type=1"
+      },
+      {
+        "type": "api_ref",
+        "category": "Payment",
+        "category_id": "97",
+        "api_name": "v2.payment.set_shop_installment_status",
+        "display_name": "set_shop_installment_status",
+        "content_id": "566",
+        "url": "https://open.shopee.com/documents/v2/v2.payment.set_shop_installment_status?module=97&type=1"
+      },
+      {
+        "type": "api_ref",
+        "category": "Payment",
+        "category_id": "97",
+        "api_name": "v2.payment.get_shop_installment_status",
+        "display_name": "get_shop_installment_status",
+        "content_id": "567",
+        "url": "https://open.shopee.com/documents/v2/v2.payment.get_shop_installment_status?module=97&type=1"
+      },
+      {
+        "type": "api_ref",
+        "category": "Payment",
+        "category_id": "97",
+        "api_name": "v2.payment.get_payout_detail",
+        "display_name": "get_payout_detail",
+        "content_id": "573",
+        "url": "https://open.shopee.com/documents/v2/v2.payment.get_payout_detail?module=97&type=1"
+      },
+      {
+        "type": "api_ref",
+        "category": "Payment",
+        "category_id": "97",
+        "api_name": "v2.payment.set_item_installment_status",
+        "display_name": "set_item_installment_status",
+        "content_id": "582",
+        "url": "https://open.shopee.com/documents/v2/v2.payment.set_item_installment_status?module=97&type=1"
+      },
+      {
+        "type": "api_ref",
+        "category": "Payment",
+        "category_id": "97",
+        "api_name": "v2.payment.get_item_installment_status",
+        "display_name": "get_item_installment_status",
+        "content_id": "583",
+        "url": "https://open.shopee.com/documents/v2/v2.payment.get_item_installment_status?module=97&type=1"
+      },
+      {
+        "type": "api_ref",
+        "category": "Payment",
+        "category_id": "97",
+        "api_name": "v2.payment.get_payment_method_list",
+        "display_name": "get_payment_method_list",
+        "content_id": "593",
+        "url": "https://open.shopee.com/documents/v2/v2.payment.get_payment_method_list?module=97&type=1"
+      },
+      {
+        "type": "api_ref",
+        "category": "Payment",
+        "category_id": "97",
+        "api_name": "v2.payment.get_wallet_transaction_list",
+        "display_name": "get_wallet_transaction_list",
+        "content_id": "594",
+        "url": "https://open.shopee.com/documents/v2/v2.payment.get_wallet_transaction_list?module=97&type=1"
+      },
+      {
+        "type": "api_ref",
+        "category": "Payment",
+        "category_id": "97",
+        "api_name": "v2.payment.get_escrow_list",
+        "display_name": "get_escrow_list",
+        "content_id": "669",
+        "url": "https://open.shopee.com/documents/v2/v2.payment.get_escrow_list?module=97&type=1"
+      },
+      {
+        "type": "api_ref",
+        "category": "Payment",
+        "category_id": "97",
+        "api_name": "v2.payment.get_payout_info",
+        "display_name": "get_payout_info",
+        "content_id": "1886",
+        "url": "https://open.shopee.com/documents/v2/v2.payment.get_payout_info?module=97&type=1"
+      },
+      {
+        "type": "api_ref",
+        "category": "Payment",
+        "category_id": "97",
+        "api_name": "v2.payment.get_billing_transaction_info",
+        "display_name": "get_billing_transaction_info",
+        "content_id": "1885",
+        "url": "https://open.shopee.com/documents/v2/v2.payment.get_billing_transaction_info?module=97&type=1"
+      },
+      {
+        "type": "api_ref",
+        "category": "Payment",
+        "category_id": "97",
+        "api_name": "v2.payment.get_escrow_detail_batch",
+        "display_name": "get_escrow_detail_batch",
+        "content_id": "2068",
+        "url": "https://open.shopee.com/documents/v2/v2.payment.get_escrow_detail_batch?module=97&type=1"
+      },
+      {
+        "type": "api_ref",
+        "category": "Payment",
+        "category_id": "97",
+        "api_name": "v2.payment.generate_income_statement",
+        "display_name": "generate_income_statement",
+        "content_id": "2346",
+        "url": "https://open.shopee.com/documents/v2/v2.payment.generate_income_statement?module=97&type=1"
+      },
+      {
+        "type": "api_ref",
+        "category": "Payment",
+        "category_id": "97",
+        "api_name": "v2.payment.get_income_statement",
+        "display_name": "get_income_statement",
+        "content_id": "2347",
+        "url": "https://open.shopee.com/documents/v2/v2.payment.get_income_statement?module=97&type=1"
+      },
+      {
+        "type": "api_ref",
+        "category": "Payment",
+        "category_id": "97",
+        "api_name": "v2.payment.generate_income_report",
+        "display_name": "generate_income_report",
+        "content_id": "2504",
+        "url": "https://open.shopee.com/documents/v2/v2.payment.generate_income_report?module=97&type=1"
+      },
+      {
+        "type": "api_ref",
+        "category": "Payment",
+        "category_id": "97",
+        "api_name": "v2.payment.get_income_report",
+        "display_name": "get_income_report",
+        "content_id": "2505",
+        "url": "https://open.shopee.com/documents/v2/v2.payment.get_income_report?module=97&type=1"
+      },
+      {
+        "type": "api_ref",
+        "category": "Discount",
+        "category_id": "99",
+        "api_name": "v2.discount.add_discount",
+        "display_name": "add_discount",
+        "content_id": "569",
+        "url": "https://open.shopee.com/documents/v2/v2.discount.add_discount?module=99&type=1"
+      },
+      {
+        "type": "api_ref",
+        "category": "Discount",
+        "category_id": "99",
+        "api_name": "v2.discount.add_discount_item",
+        "display_name": "add_discount_item",
+        "content_id": "570",
+        "url": "https://open.shopee.com/documents/v2/v2.discount.add_discount_item?module=99&type=1"
+      },
+      {
+        "type": "api_ref",
+        "category": "Discount",
+        "category_id": "99",
+        "api_name": "v2.discount.delete_discount",
+        "display_name": "delete_discount",
+        "content_id": "571",
+        "url": "https://open.shopee.com/documents/v2/v2.discount.delete_discount?module=99&type=1"
+      },
+      {
+        "type": "api_ref",
+        "category": "Discount",
+        "category_id": "99",
+        "api_name": "v2.discount.delete_discount_item",
+        "display_name": "delete_discount_item",
+        "content_id": "572",
+        "url": "https://open.shopee.com/documents/v2/v2.discount.delete_discount_item?module=99&type=1"
+      },
+      {
+        "type": "api_ref",
+        "category": "Discount",
+        "category_id": "99",
+        "api_name": "v2.discount.get_discount",
+        "display_name": "get_discount",
+        "content_id": "574",
+        "url": "https://open.shopee.com/documents/v2/v2.discount.get_discount?module=99&type=1"
+      },
+      {
+        "type": "api_ref",
+        "category": "Discount",
+        "category_id": "99",
+        "api_name": "v2.discount.get_discount_list",
+        "display_name": "get_discount_list",
+        "content_id": "575",
+        "url": "https://open.shopee.com/documents/v2/v2.discount.get_discount_list?module=99&type=1"
+      },
+      {
+        "type": "api_ref",
+        "category": "Discount",
+        "category_id": "99",
+        "api_name": "v2.discount.update_discount",
+        "display_name": "update_discount",
+        "content_id": "576",
+        "url": "https://open.shopee.com/documents/v2/v2.discount.update_discount?module=99&type=1"
+      },
+      {
+        "type": "api_ref",
+        "category": "Discount",
+        "category_id": "99",
+        "api_name": "v2.discount.update_discount_item",
+        "display_name": "update_discount_item",
+        "content_id": "577",
+        "url": "https://open.shopee.com/documents/v2/v2.discount.update_discount_item?module=99&type=1"
+      },
+      {
+        "type": "api_ref",
+        "category": "Discount",
+        "category_id": "99",
+        "api_name": "v2.discount.end_discount",
+        "display_name": "end_discount",
+        "content_id": "597",
+        "url": "https://open.shopee.com/documents/v2/v2.discount.end_discount?module=99&type=1"
+      },
+      {
+        "type": "api_ref",
+        "category": "Bundle Deal",
+        "category_id": "110",
+        "api_name": "v2.bundle_deal.add_bundle_deal",
+        "display_name": "add_bundle_deal",
+        "content_id": "689",
+        "url": "https://open.shopee.com/documents/v2/v2.bundle_deal.add_bundle_deal?module=110&type=1"
+      },
+      {
+        "type": "api_ref",
+        "category": "Bundle Deal",
+        "category_id": "110",
+        "api_name": "v2.bundle_deal.add_bundle_deal_item",
+        "display_name": "add_bundle_deal_item",
+        "content_id": "690",
+        "url": "https://open.shopee.com/documents/v2/v2.bundle_deal.add_bundle_deal_item?module=110&type=1"
+      },
+      {
+        "type": "api_ref",
+        "category": "Bundle Deal",
+        "category_id": "110",
+        "api_name": "v2.bundle_deal.get_bundle_deal_list",
+        "display_name": "get_bundle_deal_list",
+        "content_id": "694",
+        "url": "https://open.shopee.com/documents/v2/v2.bundle_deal.get_bundle_deal_list?module=110&type=1"
+      },
+      {
+        "type": "api_ref",
+        "category": "Bundle Deal",
+        "category_id": "110",
+        "api_name": "v2.bundle_deal.get_bundle_deal",
+        "display_name": "get_bundle_deal",
+        "content_id": "695",
+        "url": "https://open.shopee.com/documents/v2/v2.bundle_deal.get_bundle_deal?module=110&type=1"
+      },
+      {
+        "type": "api_ref",
+        "category": "Bundle Deal",
+        "category_id": "110",
+        "api_name": "v2.bundle_deal.get_bundle_deal_item",
+        "display_name": "get_bundle_deal_item",
+        "content_id": "696",
+        "url": "https://open.shopee.com/documents/v2/v2.bundle_deal.get_bundle_deal_item?module=110&type=1"
+      },
+      {
+        "type": "api_ref",
+        "category": "Bundle Deal",
+        "category_id": "110",
+        "api_name": "v2.bundle_deal.update_bundle_deal",
+        "display_name": "update_bundle_deal",
+        "content_id": "697",
+        "url": "https://open.shopee.com/documents/v2/v2.bundle_deal.update_bundle_deal?module=110&type=1"
+      },
+      {
+        "type": "api_ref",
+        "category": "Bundle Deal",
+        "category_id": "110",
+        "api_name": "v2.bundle_deal.update_bundle_deal_item",
+        "display_name": "update_bundle_deal_item",
+        "content_id": "698",
+        "url": "https://open.shopee.com/documents/v2/v2.bundle_deal.update_bundle_deal_item?module=110&type=1"
+      },
+      {
+        "type": "api_ref",
+        "category": "Bundle Deal",
+        "category_id": "110",
+        "api_name": "v2.bundle_deal.end_bundle_deal",
+        "display_name": "end_bundle_deal",
+        "content_id": "693",
+        "url": "https://open.shopee.com/documents/v2/v2.bundle_deal.end_bundle_deal?module=110&type=1"
+      },
+      {
+        "type": "api_ref",
+        "category": "Bundle Deal",
+        "category_id": "110",
+        "api_name": "v2.bundle_deal.delete_bundle_deal",
+        "display_name": "delete_bundle_deal",
+        "content_id": "691",
+        "url": "https://open.shopee.com/documents/v2/v2.bundle_deal.delete_bundle_deal?module=110&type=1"
+      },
+      {
+        "type": "api_ref",
+        "category": "Bundle Deal",
+        "category_id": "110",
+        "api_name": "v2.bundle_deal.delete_bundle_deal_item",
+        "display_name": "delete_bundle_deal_item",
+        "content_id": "692",
+        "url": "https://open.shopee.com/documents/v2/v2.bundle_deal.delete_bundle_deal_item?module=110&type=1"
+      },
+      {
+        "type": "api_ref",
+        "category": "Add-On Deal",
+        "category_id": "111",
+        "api_name": "v2.add_on_deal.add_add_on_deal",
+        "display_name": "add_add_on_deal",
+        "content_id": "710",
+        "url": "https://open.shopee.com/documents/v2/v2.add_on_deal.add_add_on_deal?module=111&type=1"
+      },
+      {
+        "type": "api_ref",
+        "category": "Add-On Deal",
+        "category_id": "111",
+        "api_name": "v2.add_on_deal.add_add_on_deal_main_item",
+        "display_name": "add_add_on_deal_main_item",
+        "content_id": "708",
+        "url": "https://open.shopee.com/documents/v2/v2.add_on_deal.add_add_on_deal_main_item?module=111&type=1"
+      },
+      {
+        "type": "api_ref",
+        "category": "Add-On Deal",
+        "category_id": "111",
+        "api_name": "v2.add_on_deal.add_add_on_deal_sub_item",
+        "display_name": "add_add_on_deal_sub_item",
+        "content_id": "709",
+        "url": "https://open.shopee.com/documents/v2/v2.add_on_deal.add_add_on_deal_sub_item?module=111&type=1"
+      },
+      {
+        "type": "api_ref",
+        "category": "Add-On Deal",
+        "category_id": "111",
+        "api_name": "v2.add_on_deal.delete_add_on_deal",
+        "display_name": "delete_add_on_deal",
+        "content_id": "713",
+        "url": "https://open.shopee.com/documents/v2/v2.add_on_deal.delete_add_on_deal?module=111&type=1"
+      },
+      {
+        "type": "api_ref",
+        "category": "Add-On Deal",
+        "category_id": "111",
+        "api_name": "v2.add_on_deal.delete_add_on_deal_main_item",
+        "display_name": "delete_add_on_deal_main_item",
+        "content_id": "711",
+        "url": "https://open.shopee.com/documents/v2/v2.add_on_deal.delete_add_on_deal_main_item?module=111&type=1"
+      },
+      {
+        "type": "api_ref",
+        "category": "Add-On Deal",
+        "category_id": "111",
+        "api_name": "v2.add_on_deal.delete_add_on_deal_sub_item",
+        "display_name": "delete_add_on_deal_sub_item",
+        "content_id": "712",
+        "url": "https://open.shopee.com/documents/v2/v2.add_on_deal.delete_add_on_deal_sub_item?module=111&type=1"
+      },
+      {
+        "type": "api_ref",
+        "category": "Add-On Deal",
+        "category_id": "111",
+        "api_name": "v2.add_on_deal.get_add_on_deal_list",
+        "display_name": "get_add_on_deal_list",
+        "content_id": "715",
+        "url": "https://open.shopee.com/documents/v2/v2.add_on_deal.get_add_on_deal_list?module=111&type=1"
+      },
+      {
+        "type": "api_ref",
+        "category": "Add-On Deal",
+        "category_id": "111",
+        "api_name": "v2.add_on_deal.get_add_on_deal",
+        "display_name": "get_add_on_deal",
+        "content_id": "719",
+        "url": "https://open.shopee.com/documents/v2/v2.add_on_deal.get_add_on_deal?module=111&type=1"
+      },
+      {
+        "type": "api_ref",
+        "category": "Add-On Deal",
+        "category_id": "111",
+        "api_name": "v2.add_on_deal.get_add_on_deal_main_item",
+        "display_name": "get_add_on_deal_main_item",
+        "content_id": "717",
+        "url": "https://open.shopee.com/documents/v2/v2.add_on_deal.get_add_on_deal_main_item?module=111&type=1"
+      },
+      {
+        "type": "api_ref",
+        "category": "Add-On Deal",
+        "category_id": "111",
+        "api_name": "v2.add_on_deal.get_add_on_deal_sub_item",
+        "display_name": "get_add_on_deal_sub_item",
+        "content_id": "718",
+        "url": "https://open.shopee.com/documents/v2/v2.add_on_deal.get_add_on_deal_sub_item?module=111&type=1"
+      },
+      {
+        "type": "api_ref",
+        "category": "Add-On Deal",
+        "category_id": "111",
+        "api_name": "v2.add_on_deal.update_add_on_deal",
+        "display_name": "update_add_on_deal",
+        "content_id": "722",
+        "url": "https://open.shopee.com/documents/v2/v2.add_on_deal.update_add_on_deal?module=111&type=1"
+      },
+      {
+        "type": "api_ref",
+        "category": "Add-On Deal",
+        "category_id": "111",
+        "api_name": "v2.add_on_deal.update_add_on_deal_main_item",
+        "display_name": "update_add_on_deal_main_item",
+        "content_id": "720",
+        "url": "https://open.shopee.com/documents/v2/v2.add_on_deal.update_add_on_deal_main_item?module=111&type=1"
+      },
+      {
+        "type": "api_ref",
+        "category": "Add-On Deal",
+        "category_id": "111",
+        "api_name": "v2.add_on_deal.update_add_on_deal_sub_item",
+        "display_name": "update_add_on_deal_sub_item",
+        "content_id": "721",
+        "url": "https://open.shopee.com/documents/v2/v2.add_on_deal.update_add_on_deal_sub_item?module=111&type=1"
+      },
+      {
+        "type": "api_ref",
+        "category": "Add-On Deal",
+        "category_id": "111",
+        "api_name": "v2.add_on_deal.end_add_on_deal",
+        "display_name": "end_add_on_deal",
+        "content_id": "714",
+        "url": "https://open.shopee.com/documents/v2/v2.add_on_deal.end_add_on_deal?module=111&type=1"
+      },
+      {
+        "type": "api_ref",
+        "category": "Voucher",
+        "category_id": "112",
+        "api_name": "v2.voucher.add_voucher",
+        "display_name": "add_voucher",
+        "content_id": "723",
+        "url": "https://open.shopee.com/documents/v2/v2.voucher.add_voucher?module=112&type=1"
+      },
+      {
+        "type": "api_ref",
+        "category": "Voucher",
+        "category_id": "112",
+        "api_name": "v2.voucher.delete_voucher",
+        "display_name": "delete_voucher",
+        "content_id": "724",
+        "url": "https://open.shopee.com/documents/v2/v2.voucher.delete_voucher?module=112&type=1"
+      },
+      {
+        "type": "api_ref",
+        "category": "Voucher",
+        "category_id": "112",
+        "api_name": "v2.voucher.end_voucher",
+        "display_name": "end_voucher",
+        "content_id": "725",
+        "url": "https://open.shopee.com/documents/v2/v2.voucher.end_voucher?module=112&type=1"
+      },
+      {
+        "type": "api_ref",
+        "category": "Voucher",
+        "category_id": "112",
+        "api_name": "v2.voucher.update_voucher",
+        "display_name": "update_voucher",
+        "content_id": "726",
+        "url": "https://open.shopee.com/documents/v2/v2.voucher.update_voucher?module=112&type=1"
+      },
+      {
+        "type": "api_ref",
+        "category": "Voucher",
+        "category_id": "112",
+        "api_name": "v2.voucher.get_voucher",
+        "display_name": "get_voucher",
+        "content_id": "727",
+        "url": "https://open.shopee.com/documents/v2/v2.voucher.get_voucher?module=112&type=1"
+      },
+      {
+        "type": "api_ref",
+        "category": "Voucher",
+        "category_id": "112",
+        "api_name": "v2.voucher.get_voucher_list",
+        "display_name": "get_voucher_list",
+        "content_id": "728",
+        "url": "https://open.shopee.com/documents/v2/v2.voucher.get_voucher_list?module=112&type=1"
+      },
+      {
+        "type": "api_ref",
+        "category": "ShopFlashSale",
+        "category_id": "123",
+        "api_name": "v2.shop_flash_sale.get_time_slot_id",
+        "display_name": "get_time_slot_id",
+        "content_id": "2225",
+        "url": "https://open.shopee.com/documents/v2/v2.shop_flash_sale.get_time_slot_id?module=123&type=1"
+      },
+      {
+        "type": "api_ref",
+        "category": "ShopFlashSale",
+        "category_id": "123",
+        "api_name": "v2.shop_flash_sale.create_shop_flash_sale",
+        "display_name": "create_shop_flash_sale",
+        "content_id": "2217",
+        "url": "https://open.shopee.com/documents/v2/v2.shop_flash_sale.create_shop_flash_sale?module=123&type=1"
+      },
+      {
+        "type": "api_ref",
+        "category": "ShopFlashSale",
+        "category_id": "123",
+        "api_name": "v2.shop_flash_sale.get_item_criteria",
+        "display_name": "get_item_criteria",
+        "content_id": "2220",
+        "url": "https://open.shopee.com/documents/v2/v2.shop_flash_sale.get_item_criteria?module=123&type=1"
+      },
+      {
+        "type": "api_ref",
+        "category": "ShopFlashSale",
+        "category_id": "123",
+        "api_name": "v2.shop_flash_sale.add_shop_flash_sale_items",
+        "display_name": "add_shop_flash_sale_items",
+        "content_id": "2216",
+        "url": "https://open.shopee.com/documents/v2/v2.shop_flash_sale.add_shop_flash_sale_items?module=123&type=1"
+      },
+      {
+        "type": "api_ref",
+        "category": "ShopFlashSale",
+        "category_id": "123",
+        "api_name": "v2.shop_flash_sale.get_shop_flash_sale_list",
+        "display_name": "get_shop_flash_sale_list",
+        "content_id": "2226",
+        "url": "https://open.shopee.com/documents/v2/v2.shop_flash_sale.get_shop_flash_sale_list?module=123&type=1"
+      },
+      {
+        "type": "api_ref",
+        "category": "ShopFlashSale",
+        "category_id": "123",
+        "api_name": "v2.shop_flash_sale.get_shop_flash_sale",
+        "display_name": "get_shop_flash_sale",
+        "content_id": "2221",
+        "url": "https://open.shopee.com/documents/v2/v2.shop_flash_sale.get_shop_flash_sale?module=123&type=1"
+      },
+      {
+        "type": "api_ref",
+        "category": "ShopFlashSale",
+        "category_id": "123",
+        "api_name": "v2.shop_flash_sale.get_shop_flash_sale_items",
+        "display_name": "get_shop_flash_sale_items",
+        "content_id": "2222",
+        "url": "https://open.shopee.com/documents/v2/v2.shop_flash_sale.get_shop_flash_sale_items?module=123&type=1"
+      },
+      {
+        "type": "api_ref",
+        "category": "ShopFlashSale",
+        "category_id": "123",
+        "api_name": "v2.shop_flash_sale.update_shop_flash_sale",
+        "display_name": "update_shop_flash_sale",
+        "content_id": "2224",
+        "url": "https://open.shopee.com/documents/v2/v2.shop_flash_sale.update_shop_flash_sale?module=123&type=1"
+      },
+      {
+        "type": "api_ref",
+        "category": "ShopFlashSale",
+        "category_id": "123",
+        "api_name": "v2.shop_flash_sale.update_shop_flash_sale_items",
+        "display_name": "update_shop_flash_sale_items",
+        "content_id": "2223",
+        "url": "https://open.shopee.com/documents/v2/v2.shop_flash_sale.update_shop_flash_sale_items?module=123&type=1"
+      },
+      {
+        "type": "api_ref",
+        "category": "ShopFlashSale",
+        "category_id": "123",
+        "api_name": "v2.shop_flash_sale.delete_shop_flash_sale",
+        "display_name": "delete_shop_flash_sale",
+        "content_id": "2218",
+        "url": "https://open.shopee.com/documents/v2/v2.shop_flash_sale.delete_shop_flash_sale?module=123&type=1"
+      },
+      {
+        "type": "api_ref",
+        "category": "ShopFlashSale",
+        "category_id": "123",
+        "api_name": "v2.shop_flash_sale.delete_shop_flash_sale_items",
+        "display_name": "delete_shop_flash_sale_items",
+        "content_id": "2219",
+        "url": "https://open.shopee.com/documents/v2/v2.shop_flash_sale.delete_shop_flash_sale_items?module=123&type=1"
+      },
+      {
+        "type": "api_ref",
+        "category": "Follow Prize",
+        "category_id": "113",
+        "api_name": "v2.follow_prize.add_follow_prize",
+        "display_name": "add_follow_prize",
+        "content_id": "729",
+        "url": "https://open.shopee.com/documents/v2/v2.follow_prize.add_follow_prize?module=113&type=1"
+      },
+      {
+        "type": "api_ref",
+        "category": "Follow Prize",
+        "category_id": "113",
+        "api_name": "v2.follow_prize.delete_follow_prize",
+        "display_name": "delete_follow_prize",
+        "content_id": "730",
+        "url": "https://open.shopee.com/documents/v2/v2.follow_prize.delete_follow_prize?module=113&type=1"
+      },
+      {
+        "type": "api_ref",
+        "category": "Follow Prize",
+        "category_id": "113",
+        "api_name": "v2.follow_prize.end_follow_prize",
+        "display_name": "end_follow_prize",
+        "content_id": "731",
+        "url": "https://open.shopee.com/documents/v2/v2.follow_prize.end_follow_prize?module=113&type=1"
+      },
+      {
+        "type": "api_ref",
+        "category": "Follow Prize",
+        "category_id": "113",
+        "api_name": "v2.follow_prize.update_follow_prize",
+        "display_name": "update_follow_prize",
+        "content_id": "732",
+        "url": "https://open.shopee.com/documents/v2/v2.follow_prize.update_follow_prize?module=113&type=1"
+      },
+      {
+        "type": "api_ref",
+        "category": "Follow Prize",
+        "category_id": "113",
+        "api_name": "v2.follow_prize.get_follow_prize_detail",
+        "display_name": "get_follow_prize_detail",
+        "content_id": "733",
+        "url": "https://open.shopee.com/documents/v2/v2.follow_prize.get_follow_prize_detail?module=113&type=1"
+      },
+      {
+        "type": "api_ref",
+        "category": "Follow Prize",
+        "category_id": "113",
+        "api_name": "v2.follow_prize.get_follow_prize_list",
+        "display_name": "get_follow_prize_list",
+        "content_id": "734",
+        "url": "https://open.shopee.com/documents/v2/v2.follow_prize.get_follow_prize_list?module=113&type=1"
+      },
+      {
+        "type": "api_ref",
+        "category": "TopPicks",
+        "category_id": "100",
+        "api_name": "v2.top_picks.get_top_picks_list",
+        "display_name": "get_top_picks_list",
+        "content_id": "578",
+        "url": "https://open.shopee.com/documents/v2/v2.top_picks.get_top_picks_list?module=100&type=1"
+      },
+      {
+        "type": "api_ref",
+        "category": "TopPicks",
+        "category_id": "100",
+        "api_name": "v2.top_picks.add_top_picks",
+        "display_name": "add_top_picks",
+        "content_id": "579",
+        "url": "https://open.shopee.com/documents/v2/v2.top_picks.add_top_picks?module=100&type=1"
+      },
+      {
+        "type": "api_ref",
+        "category": "TopPicks",
+        "category_id": "100",
+        "api_name": "v2.top_picks.update_top_picks",
+        "display_name": "update_top_picks",
+        "content_id": "580",
+        "url": "https://open.shopee.com/documents/v2/v2.top_picks.update_top_picks?module=100&type=1"
+      },
+      {
+        "type": "api_ref",
+        "category": "TopPicks",
+        "category_id": "100",
+        "api_name": "v2.top_picks.delete_top_picks",
+        "display_name": "delete_top_picks",
+        "content_id": "581",
+        "url": "https://open.shopee.com/documents/v2/v2.top_picks.delete_top_picks?module=100&type=1"
+      },
+      {
+        "type": "api_ref",
+        "category": "ShopCategory",
+        "category_id": "101",
+        "api_name": "v2.shop_category.add_shop_category",
+        "display_name": "add_shop_category",
+        "content_id": "586",
+        "url": "https://open.shopee.com/documents/v2/v2.shop_category.add_shop_category?module=101&type=1"
+      },
+      {
+        "type": "api_ref",
+        "category": "ShopCategory",
+        "category_id": "101",
+        "api_name": "v2.shop_category.get_shop_category_list",
+        "display_name": "get_shop_category_list",
+        "content_id": "587",
+        "url": "https://open.shopee.com/documents/v2/v2.shop_category.get_shop_category_list?module=101&type=1"
+      },
+      {
+        "type": "api_ref",
+        "category": "ShopCategory",
+        "category_id": "101",
+        "api_name": "v2.shop_category.delete_shop_category",
+        "display_name": "delete_shop_category",
+        "content_id": "588",
+        "url": "https://open.shopee.com/documents/v2/v2.shop_category.delete_shop_category?module=101&type=1"
+      },
+      {
+        "type": "api_ref",
+        "category": "ShopCategory",
+        "category_id": "101",
+        "api_name": "v2.shop_category.update_shop_category",
+        "display_name": "update_shop_category",
+        "content_id": "589",
+        "url": "https://open.shopee.com/documents/v2/v2.shop_category.update_shop_category?module=101&type=1"
+      },
+      {
+        "type": "api_ref",
+        "category": "ShopCategory",
+        "category_id": "101",
+        "api_name": "v2.shop_category.add_item_list",
+        "display_name": "add_item_list",
+        "content_id": "590",
+        "url": "https://open.shopee.com/documents/v2/v2.shop_category.add_item_list?module=101&type=1"
+      },
+      {
+        "type": "api_ref",
+        "category": "ShopCategory",
+        "category_id": "101",
+        "api_name": "v2.shop_category.get_item_list",
+        "display_name": "get_item_list",
+        "content_id": "591",
+        "url": "https://open.shopee.com/documents/v2/v2.shop_category.get_item_list?module=101&type=1"
+      },
+      {
+        "type": "api_ref",
+        "category": "ShopCategory",
+        "category_id": "101",
+        "api_name": "v2.shop_category.delete_item_list",
+        "display_name": "delete_item_list",
+        "content_id": "592",
+        "url": "https://open.shopee.com/documents/v2/v2.shop_category.delete_item_list?module=101&type=1"
+      },
+      {
+        "type": "api_ref",
+        "category": "Returns",
+        "category_id": "102",
+        "api_name": "v2.returns.get_return_detail",
+        "display_name": "get_return_detail",
+        "content_id": "607",
+        "url": "https://open.shopee.com/documents/v2/v2.returns.get_return_detail?module=102&type=1"
+      },
+      {
+        "type": "api_ref",
+        "category": "Returns",
+        "category_id": "102",
+        "api_name": "v2.returns.get_return_list",
+        "display_name": "get_return_list",
+        "content_id": "608",
+        "url": "https://open.shopee.com/documents/v2/v2.returns.get_return_list?module=102&type=1"
+      },
+      {
+        "type": "api_ref",
+        "category": "Returns",
+        "category_id": "102",
+        "api_name": "v2.returns.confirm",
+        "display_name": "confirm",
+        "content_id": "609",
+        "url": "https://open.shopee.com/documents/v2/v2.returns.confirm?module=102&type=1"
+      },
+      {
+        "type": "api_ref",
+        "category": "Returns",
+        "category_id": "102",
+        "api_name": "v2.returns.dispute",
+        "display_name": "dispute",
+        "content_id": "610",
+        "url": "https://open.shopee.com/documents/v2/v2.returns.dispute?module=102&type=1"
+      },
+      {
+        "type": "api_ref",
+        "category": "Returns",
+        "category_id": "102",
+        "api_name": "v2.returns.get_available_solutions",
+        "display_name": "get_available_solutions",
+        "content_id": "755",
+        "url": "https://open.shopee.com/documents/v2/v2.returns.get_available_solutions?module=102&type=1"
+      },
+      {
+        "type": "api_ref",
+        "category": "Returns",
+        "category_id": "102",
+        "api_name": "v2.returns.offer",
+        "display_name": "offer",
+        "content_id": "756",
+        "url": "https://open.shopee.com/documents/v2/v2.returns.offer?module=102&type=1"
+      },
+      {
+        "type": "api_ref",
+        "category": "Returns",
+        "category_id": "102",
+        "api_name": "v2.returns.accept_offer",
+        "display_name": "accept_offer",
+        "content_id": "757",
+        "url": "https://open.shopee.com/documents/v2/v2.returns.accept_offer?module=102&type=1"
+      },
+      {
+        "type": "api_ref",
+        "category": "Returns",
+        "category_id": "102",
+        "api_name": "v2.returns.convert_image",
+        "display_name": "convert_image",
+        "content_id": "1312",
+        "url": "https://open.shopee.com/documents/v2/v2.returns.convert_image?module=102&type=1"
+      },
+      {
+        "type": "api_ref",
+        "category": "Returns",
+        "category_id": "102",
+        "api_name": "v2.returns.upload_proof",
+        "display_name": "upload_proof",
+        "content_id": "1313",
+        "url": "https://open.shopee.com/documents/v2/v2.returns.upload_proof?module=102&type=1"
+      },
+      {
+        "type": "api_ref",
+        "category": "Returns",
+        "category_id": "102",
+        "api_name": "v2.returns.query_proof",
+        "display_name": "query_proof",
+        "content_id": "1311",
+        "url": "https://open.shopee.com/documents/v2/v2.returns.query_proof?module=102&type=1"
+      },
+      {
+        "type": "api_ref",
+        "category": "Returns",
+        "category_id": "102",
+        "api_name": "v2.returns.get_return_dispute_reason",
+        "display_name": "get_return_dispute_reason",
+        "content_id": "1884",
+        "url": "https://open.shopee.com/documents/v2/v2.returns.get_return_dispute_reason?module=102&type=1"
+      },
+      {
+        "type": "api_ref",
+        "category": "Returns",
+        "category_id": "102",
+        "api_name": "v2.returns.cancel_dispute",
+        "display_name": "cancel_dispute",
+        "content_id": "2371",
+        "url": "https://open.shopee.com/documents/v2/v2.returns.cancel_dispute?module=102&type=1"
+      },
+      {
+        "type": "api_ref",
+        "category": "Returns",
+        "category_id": "102",
+        "api_name": "v2.returns.get_shipping_carrier",
+        "display_name": "get_shipping_carrier",
+        "content_id": "2623",
+        "url": "https://open.shopee.com/documents/v2/v2.returns.get_shipping_carrier?module=102&type=1"
+      },
+      {
+        "type": "api_ref",
+        "category": "Returns",
+        "category_id": "102",
+        "api_name": "v2.returns.upload_shipping_proof",
+        "display_name": "upload_shipping_proof",
+        "content_id": "2625",
+        "url": "https://open.shopee.com/documents/v2/v2.returns.upload_shipping_proof?module=102&type=1"
+      },
+      {
+        "type": "api_ref",
+        "category": "AccountHealth",
+        "category_id": "103",
+        "api_name": "v2.account_health.get_shop_performance",
+        "display_name": "get_shop_performance",
+        "content_id": "2150",
+        "url": "https://open.shopee.com/documents/v2/v2.account_health.get_shop_performance?module=103&type=1"
+      },
+      {
+        "type": "api_ref",
+        "category": "AccountHealth",
+        "category_id": "103",
+        "api_name": "v2.account_health.get_metric_source_detail",
+        "display_name": "get_metric_source_detail",
+        "content_id": "2323",
+        "url": "https://open.shopee.com/documents/v2/v2.account_health.get_metric_source_detail?module=103&type=1"
+      },
+      {
+        "type": "api_ref",
+        "category": "AccountHealth",
+        "category_id": "103",
+        "api_name": "v2.account_health.get_penalty_point_history",
+        "display_name": "get_penalty_point_history",
+        "content_id": "2324",
+        "url": "https://open.shopee.com/documents/v2/v2.account_health.get_penalty_point_history?module=103&type=1"
+      },
+      {
+        "type": "api_ref",
+        "category": "AccountHealth",
+        "category_id": "103",
+        "api_name": "v2.account_health.get_punishment_history",
+        "display_name": "get_punishment_history",
+        "content_id": "2325",
+        "url": "https://open.shopee.com/documents/v2/v2.account_health.get_punishment_history?module=103&type=1"
+      },
+      {
+        "type": "api_ref",
+        "category": "AccountHealth",
+        "category_id": "103",
+        "api_name": "v2.account_health.get_listings_with_issues",
+        "display_name": "get_listings_with_issues",
+        "content_id": "2326",
+        "url": "https://open.shopee.com/documents/v2/v2.account_health.get_listings_with_issues?module=103&type=1"
+      },
+      {
+        "type": "api_ref",
+        "category": "AccountHealth",
+        "category_id": "103",
+        "api_name": "v2.account_health.get_late_orders",
+        "display_name": "get_late_orders",
+        "content_id": "2327",
+        "url": "https://open.shopee.com/documents/v2/v2.account_health.get_late_orders?module=103&type=1"
+      },
+      {
+        "type": "api_ref",
+        "category": "Ads",
+        "category_id": "117",
+        "api_name": "v2.ads.get_total_balance",
+        "display_name": "get_total_balance",
+        "content_id": "1833",
+        "url": "https://open.shopee.com/documents/v2/v2.ads.get_total_balance?module=117&type=1"
+      },
+      {
+        "type": "api_ref",
+        "category": "Ads",
+        "category_id": "117",
+        "api_name": "v2.ads.get_shop_toggle_info",
+        "display_name": "get_shop_toggle_info",
+        "content_id": "1836",
+        "url": "https://open.shopee.com/documents/v2/v2.ads.get_shop_toggle_info?module=117&type=1"
+      },
+      {
+        "type": "api_ref",
+        "category": "Ads",
+        "category_id": "117",
+        "api_name": "v2.ads.get_recommended_keyword_list",
+        "display_name": "get_recommended_keyword_list",
+        "content_id": "1838",
+        "url": "https://open.shopee.com/documents/v2/v2.ads.get_recommended_keyword_list?module=117&type=1"
+      },
+      {
+        "type": "api_ref",
+        "category": "Ads",
+        "category_id": "117",
+        "api_name": "v2.ads.get_recommended_item_list",
+        "display_name": "get_recommended_item_list",
+        "content_id": "1839",
+        "url": "https://open.shopee.com/documents/v2/v2.ads.get_recommended_item_list?module=117&type=1"
+      },
+      {
+        "type": "api_ref",
+        "category": "Ads",
+        "category_id": "117",
+        "api_name": "v2.ads.get_all_cpc_ads_hourly_performance",
+        "display_name": "get_all_cpc_ads_hourly_performance",
+        "content_id": "1840",
+        "url": "https://open.shopee.com/documents/v2/v2.ads.get_all_cpc_ads_hourly_performance?module=117&type=1"
+      },
+      {
+        "type": "api_ref",
+        "category": "Ads",
+        "category_id": "117",
+        "api_name": "v2.ads.get_all_cpc_ads_daily_performance",
+        "display_name": "get_all_cpc_ads_daily_performance",
+        "content_id": "1841",
+        "url": "https://open.shopee.com/documents/v2/v2.ads.get_all_cpc_ads_daily_performance?module=117&type=1"
+      },
+      {
+        "type": "api_ref",
+        "category": "Ads",
+        "category_id": "117",
+        "api_name": "v2.ads.create_auto_product_ads",
+        "display_name": "create_auto_product_ads",
+        "content_id": "2197",
+        "url": "https://open.shopee.com/documents/v2/v2.ads.create_auto_product_ads?module=117&type=1"
+      },
+      {
+        "type": "api_ref",
+        "category": "Ads",
+        "category_id": "117",
+        "api_name": "v2.ads.edit_auto_product_ads",
+        "display_name": "edit_auto_product_ads",
+        "content_id": "2198",
+        "url": "https://open.shopee.com/documents/v2/v2.ads.edit_auto_product_ads?module=117&type=1"
+      },
+      {
+        "type": "api_ref",
+        "category": "Ads",
+        "category_id": "117",
+        "api_name": "v2.ads.get_product_campaign_daily_performance",
+        "display_name": "get_product_campaign_daily_performance",
+        "content_id": "2199",
+        "url": "https://open.shopee.com/documents/v2/v2.ads.get_product_campaign_daily_performance?module=117&type=1"
+      },
+      {
+        "type": "api_ref",
+        "category": "Ads",
+        "category_id": "117",
+        "api_name": "v2.ads.get_product_campaign_hourly_performance",
+        "display_name": "get_product_campaign_hourly_performance",
+        "content_id": "2200",
+        "url": "https://open.shopee.com/documents/v2/v2.ads.get_product_campaign_hourly_performance?module=117&type=1"
+      },
+      {
+        "type": "api_ref",
+        "category": "Ads",
+        "category_id": "117",
+        "api_name": "v2.ads.get_product_level_campaign_id_list",
+        "display_name": "get_product_level_campaign_id_list",
+        "content_id": "2201",
+        "url": "https://open.shopee.com/documents/v2/v2.ads.get_product_level_campaign_id_list?module=117&type=1"
+      },
+      {
+        "type": "api_ref",
+        "category": "Ads",
+        "category_id": "117",
+        "api_name": "v2.ads.get_product_level_campaign_setting_info",
+        "display_name": "get_product_level_campaign_setting_info",
+        "content_id": "2202",
+        "url": "https://open.shopee.com/documents/v2/v2.ads.get_product_level_campaign_setting_info?module=117&type=1"
+      },
+      {
+        "type": "api_ref",
+        "category": "Ads",
+        "category_id": "117",
+        "api_name": "v2.ads.create_manual_product_ads",
+        "display_name": "create_manual_product_ads",
+        "content_id": "2253",
+        "url": "https://open.shopee.com/documents/v2/v2.ads.create_manual_product_ads?module=117&type=1"
+      },
+      {
+        "type": "api_ref",
+        "category": "Ads",
+        "category_id": "117",
+        "api_name": "v2.ads.edit_manual_product_ad_keywords",
+        "display_name": "edit_manual_product_ad_keywords",
+        "content_id": "2254",
+        "url": "https://open.shopee.com/documents/v2/v2.ads.edit_manual_product_ad_keywords?module=117&type=1"
+      },
+      {
+        "type": "api_ref",
+        "category": "Ads",
+        "category_id": "117",
+        "api_name": "v2.ads.edit_manual_product_ads",
+        "display_name": "edit_manual_product_ads",
+        "content_id": "2255",
+        "url": "https://open.shopee.com/documents/v2/v2.ads.edit_manual_product_ads?module=117&type=1"
+      },
+      {
+        "type": "api_ref",
+        "category": "Ads",
+        "category_id": "117",
+        "api_name": "v2.ads.get_create_product_ad_budget_suggestion",
+        "display_name": "get_create_product_ad_budget_suggestion",
+        "content_id": "2256",
+        "url": "https://open.shopee.com/documents/v2/v2.ads.get_create_product_ad_budget_suggestion?module=117&type=1"
+      },
+      {
+        "type": "api_ref",
+        "category": "Ads",
+        "category_id": "117",
+        "api_name": "v2.ads.get_product_recommended_roi_target",
+        "display_name": "get_product_recommended_roi_target",
+        "content_id": "2349",
+        "url": "https://open.shopee.com/documents/v2/v2.ads.get_product_recommended_roi_target?module=117&type=1"
+      },
+      {
+        "type": "api_ref",
+        "category": "Ads",
+        "category_id": "117",
+        "api_name": "v2.ads.get_ads_fácil_shop_rate",
+        "display_name": "get_ads_fácil_shop_rate",
+        "content_id": "2650",
+        "url": "https://open.shopee.com/documents/v2/v2.ads.get_ads_fácil_shop_rate?module=117&type=1"
+      },
+      {
+        "type": "api_ref",
+        "category": "Ads",
+        "category_id": "117",
+        "api_name": "v2.ads.check_create_gms_product_campaign_eligibility",
+        "display_name": "check_create_gms_product_campaign_eligibility",
+        "content_id": "2711",
+        "url": "https://open.shopee.com/documents/v2/v2.ads.check_create_gms_product_campaign_eligibility?module=117&type=1"
+      },
+      {
+        "type": "api_ref",
+        "category": "Ads",
+        "category_id": "117",
+        "api_name": "v2.ads.create_gms_product_campaign",
+        "display_name": "create_gms_product_campaign",
+        "content_id": "2712",
+        "url": "https://open.shopee.com/documents/v2/v2.ads.create_gms_product_campaign?module=117&type=1"
+      },
+      {
+        "type": "api_ref",
+        "category": "Ads",
+        "category_id": "117",
+        "api_name": "v2.ads.edit_gms_product_campaign",
+        "display_name": "edit_gms_product_campaign",
+        "content_id": "2713",
+        "url": "https://open.shopee.com/documents/v2/v2.ads.edit_gms_product_campaign?module=117&type=1"
+      },
+      {
+        "type": "api_ref",
+        "category": "Ads",
+        "category_id": "117",
+        "api_name": "v2.ads.list_gms_user_deleted_item",
+        "display_name": "list_gms_user_deleted_item",
+        "content_id": "2714",
+        "url": "https://open.shopee.com/documents/v2/v2.ads.list_gms_user_deleted_item?module=117&type=1"
+      },
+      {
+        "type": "api_ref",
+        "category": "Ads",
+        "category_id": "117",
+        "api_name": "v2.ads.edit_gms_item_product_campaign",
+        "display_name": "edit_gms_item_product_campaign",
+        "content_id": "2715",
+        "url": "https://open.shopee.com/documents/v2/v2.ads.edit_gms_item_product_campaign?module=117&type=1"
+      },
+      {
+        "type": "api_ref",
+        "category": "Ads",
+        "category_id": "117",
+        "api_name": "v2.ads.get_gms_campaign_performance",
+        "display_name": "get_gms_campaign_performance",
+        "content_id": "2716",
+        "url": "https://open.shopee.com/documents/v2/v2.ads.get_gms_campaign_performance?module=117&type=1"
+      },
+      {
+        "type": "api_ref",
+        "category": "Ads",
+        "category_id": "117",
+        "api_name": "v2.ads.get_gms_item_performance",
+        "display_name": "get_gms_item_performance",
+        "content_id": "2717",
+        "url": "https://open.shopee.com/documents/v2/v2.ads.get_gms_item_performance?module=117&type=1"
+      },
+      {
+        "type": "api_ref",
+        "category": "Public",
+        "category_id": "104",
+        "api_name": "v2.public.get_shops_by_partner",
+        "display_name": "get_shops_by_partner",
+        "content_id": "663",
+        "url": "https://open.shopee.com/documents/v2/v2.public.get_shops_by_partner?module=104&type=1"
+      },
+      {
+        "type": "api_ref",
+        "category": "Public",
+        "category_id": "104",
+        "api_name": "v2.public.get_merchants_by_partner",
+        "display_name": "get_merchants_by_partner",
+        "content_id": "664",
+        "url": "https://open.shopee.com/documents/v2/v2.public.get_merchants_by_partner?module=104&type=1"
+      },
+      {
+        "type": "api_ref",
+        "category": "Public",
+        "category_id": "104",
+        "api_name": "v2.public.get_access_token",
+        "display_name": "get_access_token",
+        "content_id": "741",
+        "url": "https://open.shopee.com/documents/v2/v2.public.get_access_token?module=104&type=1"
+      },
+      {
+        "type": "api_ref",
+        "category": "Public",
+        "category_id": "104",
+        "api_name": "v2.public.refresh_access_token",
+        "display_name": "refresh_access_token",
+        "content_id": "742",
+        "url": "https://open.shopee.com/documents/v2/v2.public.refresh_access_token?module=104&type=1"
+      },
+      {
+        "type": "api_ref",
+        "category": "Public",
+        "category_id": "104",
+        "api_name": "v2.public.get_token_by_resend_code",
+        "display_name": "get_token_by_resend_code",
+        "content_id": "752",
+        "url": "https://open.shopee.com/documents/v2/v2.public.get_token_by_resend_code?module=104&type=1"
+      },
+      {
+        "type": "api_ref",
+        "category": "Public",
+        "category_id": "104",
+        "api_name": "v2.public.get_shopee_ip_ranges",
+        "display_name": "get_shopee_ip_ranges",
+        "content_id": "1285",
+        "url": "https://open.shopee.com/documents/v2/v2.public.get_shopee_ip_ranges?module=104&type=1"
+      },
+      {
+        "type": "api_ref",
+        "category": "Push",
+        "category_id": "105",
+        "api_name": "v2.push.set_app_push_config",
+        "display_name": "set_app_push_config",
+        "content_id": "1542",
+        "url": "https://open.shopee.com/documents/v2/v2.push.set_app_push_config?module=105&type=1"
+      },
+      {
+        "type": "api_ref",
+        "category": "Push",
+        "category_id": "105",
+        "api_name": "v2.push.get_app_push_config",
+        "display_name": "get_app_push_config",
+        "content_id": "1543",
+        "url": "https://open.shopee.com/documents/v2/v2.push.get_app_push_config?module=105&type=1"
+      },
+      {
+        "type": "api_ref",
+        "category": "Push",
+        "category_id": "105",
+        "api_name": "v2.push.get_lost_push_message",
+        "display_name": "get_lost_push_message",
+        "content_id": "1867",
+        "url": "https://open.shopee.com/documents/v2/v2.push.get_lost_push_message?module=105&type=1"
+      },
+      {
+        "type": "api_ref",
+        "category": "Push",
+        "category_id": "105",
+        "api_name": "v2.push.confirm_consumed_lost_push_message",
+        "display_name": "confirm_consumed_lost_push_message",
+        "content_id": "1869",
+        "url": "https://open.shopee.com/documents/v2/v2.push.confirm_consumed_lost_push_message?module=105&type=1"
+      },
+      {
+        "type": "api_ref",
+        "category": "SBS",
+        "category_id": "124",
+        "api_name": "v2.sbs.get_bound_whs_info",
+        "display_name": "get_bound_whs_info",
+        "content_id": "2495",
+        "url": "https://open.shopee.com/documents/v2/v2.sbs.get_bound_whs_info?module=124&type=1"
+      },
+      {
+        "type": "api_ref",
+        "category": "SBS",
+        "category_id": "124",
+        "api_name": "v2.sbs.get_current_inventory",
+        "display_name": "get_current_inventory",
+        "content_id": "2496",
+        "url": "https://open.shopee.com/documents/v2/v2.sbs.get_current_inventory?module=124&type=1"
+      },
+      {
+        "type": "api_ref",
+        "category": "SBS",
+        "category_id": "124",
+        "api_name": "v2.sbs.get_expiry_report",
+        "display_name": "get_expiry_report",
+        "content_id": "2498",
+        "url": "https://open.shopee.com/documents/v2/v2.sbs.get_expiry_report?module=124&type=1"
+      },
+      {
+        "type": "api_ref",
+        "category": "SBS",
+        "category_id": "124",
+        "api_name": "v2.sbs.get_stock_aging",
+        "display_name": "get_stock_aging",
+        "content_id": "2499",
+        "url": "https://open.shopee.com/documents/v2/v2.sbs.get_stock_aging?module=124&type=1"
+      },
+      {
+        "type": "api_ref",
+        "category": "SBS",
+        "category_id": "124",
+        "api_name": "v2.sbs.get_stock_movement",
+        "display_name": "get_stock_movement",
+        "content_id": "2500",
+        "url": "https://open.shopee.com/documents/v2/v2.sbs.get_stock_movement?module=124&type=1"
+      },
+      {
+        "type": "api_ref",
+        "category": "FBS",
+        "category_id": "126",
+        "api_name": "v2.fbs.query_br_shop_enrollment_status",
+        "display_name": "query_br_shop_enrollment_status",
+        "content_id": "2630",
+        "url": "https://open.shopee.com/documents/v2/v2.fbs.query_br_shop_enrollment_status?module=126&type=1"
+      },
+      {
+        "type": "api_ref",
+        "category": "FBS",
+        "category_id": "126",
+        "api_name": "v2.fbs.query_br_shop_invoice_error",
+        "display_name": "query_br_shop_invoice_error",
+        "content_id": "2631",
+        "url": "https://open.shopee.com/documents/v2/v2.fbs.query_br_shop_invoice_error?module=126&type=1"
+      },
+      {
+        "type": "api_ref",
+        "category": "FBS",
+        "category_id": "126",
+        "api_name": "v2.fbs.query_br_shop_block_status",
+        "display_name": "query_br_shop_block_status",
+        "content_id": "2632",
+        "url": "https://open.shopee.com/documents/v2/v2.fbs.query_br_shop_block_status?module=126&type=1"
+      },
+      {
+        "type": "api_ref",
+        "category": "FBS",
+        "category_id": "126",
+        "api_name": "v2.fbs.query_br_sku_block_status",
+        "display_name": "query_br_sku_block_status",
+        "content_id": "2633",
+        "url": "https://open.shopee.com/documents/v2/v2.fbs.query_br_sku_block_status?module=126&type=1"
+      },
+      {
+        "type": "api_ref",
+        "category": "Livestream",
+        "category_id": "125",
+        "api_name": "v2.livestream.upload_image",
+        "display_name": "upload_image",
+        "content_id": "2529",
+        "url": "https://open.shopee.com/documents/v2/v2.livestream.upload_image?module=125&type=1"
+      },
+      {
+        "type": "api_ref",
+        "category": "Livestream",
+        "category_id": "125",
+        "api_name": "v2.livestream.create_session",
+        "display_name": "create_session",
+        "content_id": "2530",
+        "url": "https://open.shopee.com/documents/v2/v2.livestream.create_session?module=125&type=1"
+      },
+      {
+        "type": "api_ref",
+        "category": "Livestream",
+        "category_id": "125",
+        "api_name": "v2.livestream.update_session",
+        "display_name": "update_session",
+        "content_id": "2532",
+        "url": "https://open.shopee.com/documents/v2/v2.livestream.update_session?module=125&type=1"
+      },
+      {
+        "type": "api_ref",
+        "category": "Livestream",
+        "category_id": "125",
+        "api_name": "v2.livestream.start_session",
+        "display_name": "start_session",
+        "content_id": "2533",
+        "url": "https://open.shopee.com/documents/v2/v2.livestream.start_session?module=125&type=1"
+      },
+      {
+        "type": "api_ref",
+        "category": "Livestream",
+        "category_id": "125",
+        "api_name": "v2.livestream.end_session",
+        "display_name": "end_session",
+        "content_id": "2534",
+        "url": "https://open.shopee.com/documents/v2/v2.livestream.end_session?module=125&type=1"
+      },
+      {
+        "type": "api_ref",
+        "category": "Livestream",
+        "category_id": "125",
+        "api_name": "v2.livestream.get_session_detail",
+        "display_name": "get_session_detail",
+        "content_id": "2531",
+        "url": "https://open.shopee.com/documents/v2/v2.livestream.get_session_detail?module=125&type=1"
+      },
+      {
+        "type": "api_ref",
+        "category": "Livestream",
+        "category_id": "125",
+        "api_name": "v2.livestream.add_item_list",
+        "display_name": "add_item_list",
+        "content_id": "2540",
+        "url": "https://open.shopee.com/documents/v2/v2.livestream.add_item_list?module=125&type=1"
+      },
+      {
+        "type": "api_ref",
+        "category": "Livestream",
+        "category_id": "125",
+        "api_name": "v2.livestream.delete_item_list",
+        "display_name": "delete_item_list",
+        "content_id": "2541",
+        "url": "https://open.shopee.com/documents/v2/v2.livestream.delete_item_list?module=125&type=1"
+      },
+      {
+        "type": "api_ref",
+        "category": "Livestream",
+        "category_id": "125",
+        "api_name": "v2.livestream.update_item_list",
+        "display_name": "update_item_list",
+        "content_id": "2543",
+        "url": "https://open.shopee.com/documents/v2/v2.livestream.update_item_list?module=125&type=1"
+      },
+      {
+        "type": "api_ref",
+        "category": "Livestream",
+        "category_id": "125",
+        "api_name": "v2.livestream.get_item_count",
+        "display_name": "get_item_count",
+        "content_id": "2537",
+        "url": "https://open.shopee.com/documents/v2/v2.livestream.get_item_count?module=125&type=1"
+      },
+      {
+        "type": "api_ref",
+        "category": "Livestream",
+        "category_id": "125",
+        "api_name": "v2.livestream.get_item_list",
+        "display_name": "get_item_list",
+        "content_id": "2542",
+        "url": "https://open.shopee.com/documents/v2/v2.livestream.get_item_list?module=125&type=1"
+      },
+      {
+        "type": "api_ref",
+        "category": "Livestream",
+        "category_id": "125",
+        "api_name": "v2.livestream.update_show_item",
+        "display_name": "update_show_item",
+        "content_id": "2546",
+        "url": "https://open.shopee.com/documents/v2/v2.livestream.update_show_item?module=125&type=1"
+      },
+      {
+        "type": "api_ref",
+        "category": "Livestream",
+        "category_id": "125",
+        "api_name": "v2.livestream.delete_show_item",
+        "display_name": "delete_show_item",
+        "content_id": "2545",
+        "url": "https://open.shopee.com/documents/v2/v2.livestream.delete_show_item?module=125&type=1"
+      },
+      {
+        "type": "api_ref",
+        "category": "Livestream",
+        "category_id": "125",
+        "api_name": "v2.livestream.get_show_item",
+        "display_name": "get_show_item",
+        "content_id": "2544",
+        "url": "https://open.shopee.com/documents/v2/v2.livestream.get_show_item?module=125&type=1"
+      },
+      {
+        "type": "api_ref",
+        "category": "Livestream",
+        "category_id": "125",
+        "api_name": "v2.livestream.get_like_item_list",
+        "display_name": "get_like_item_list",
+        "content_id": "2538",
+        "url": "https://open.shopee.com/documents/v2/v2.livestream.get_like_item_list?module=125&type=1"
+      },
+      {
+        "type": "api_ref",
+        "category": "Livestream",
+        "category_id": "125",
+        "api_name": "v2.livestream.get_recent_item_list",
+        "display_name": "get_recent_item_list",
+        "content_id": "2539",
+        "url": "https://open.shopee.com/documents/v2/v2.livestream.get_recent_item_list?module=125&type=1"
+      },
+      {
+        "type": "api_ref",
+        "category": "Livestream",
+        "category_id": "125",
+        "api_name": "v2.livestream.get_item_set_list",
+        "display_name": "get_item_set_list",
+        "content_id": "2547",
+        "url": "https://open.shopee.com/documents/v2/v2.livestream.get_item_set_list?module=125&type=1"
+      },
+      {
+        "type": "api_ref",
+        "category": "Livestream",
+        "category_id": "125",
+        "api_name": "v2.livestream.get_item_set_item_list",
+        "display_name": "get_item_set_item_list",
+        "content_id": "2548",
+        "url": "https://open.shopee.com/documents/v2/v2.livestream.get_item_set_item_list?module=125&type=1"
+      },
+      {
+        "type": "api_ref",
+        "category": "Livestream",
+        "category_id": "125",
+        "api_name": "v2.livestream.apply_item_set",
+        "display_name": "apply_item_set",
+        "content_id": "2549",
+        "url": "https://open.shopee.com/documents/v2/v2.livestream.apply_item_set?module=125&type=1"
+      },
+      {
+        "type": "api_ref",
+        "category": "Livestream",
+        "category_id": "125",
+        "api_name": "v2.livestream.get_session_metric",
+        "display_name": "get_session_metric",
+        "content_id": "2535",
+        "url": "https://open.shopee.com/documents/v2/v2.livestream.get_session_metric?module=125&type=1"
+      },
+      {
+        "type": "api_ref",
+        "category": "Livestream",
+        "category_id": "125",
+        "api_name": "v2.livestream.get_session_item_metric",
+        "display_name": "get_session_item_metric",
+        "content_id": "2536",
+        "url": "https://open.shopee.com/documents/v2/v2.livestream.get_session_item_metric?module=125&type=1"
+      },
+      {
+        "type": "api_ref",
+        "category": "Livestream",
+        "category_id": "125",
+        "api_name": "v2.livestream.get_latest_comment_list",
+        "display_name": "get_latest_comment_list",
+        "content_id": "2550",
+        "url": "https://open.shopee.com/documents/v2/v2.livestream.get_latest_comment_list?module=125&type=1"
+      },
+      {
+        "type": "api_ref",
+        "category": "Livestream",
+        "category_id": "125",
+        "api_name": "v2.livestream.post_comment",
+        "display_name": "post_comment",
+        "content_id": "2551",
+        "url": "https://open.shopee.com/documents/v2/v2.livestream.post_comment?module=125&type=1"
+      },
+      {
+        "type": "api_ref",
+        "category": "Livestream",
+        "category_id": "125",
+        "api_name": "v2.livestream.ban_user_comment",
+        "display_name": "ban_user_comment",
+        "content_id": "2552",
+        "url": "https://open.shopee.com/documents/v2/v2.livestream.ban_user_comment?module=125&type=1"
+      },
+      {
+        "type": "api_ref",
+        "category": "Livestream",
+        "category_id": "125",
+        "api_name": "v2.livestream.unban_user_comment",
+        "display_name": "unban_user_comment",
+        "content_id": "2553",
+        "url": "https://open.shopee.com/documents/v2/v2.livestream.unban_user_comment?module=125&type=1"
+      }
+    ]
+  },
+  "developer_guide": {
+    "count": 3,
+    "items": [
+      {
+        "type": "dev_guide",
+        "display_name": "Getting Started\n     Getting Started",
+        "category": "Getting Started",
+        "category_id": "50",
+        "level": "1",
+        "url": "https://open.shopee.com/developer-guide/50"
+      },
+      {
+        "type": "dev_guide",
+        "display_name": "API Best Practices\n     API Best Practices",
+        "category": "API Best Practices",
+        "category_id": "2058",
+        "level": "1",
+        "url": "https://open.shopee.com/developer-guide/2058"
+      },
+      {
+        "type": "dev_guide",
+        "display_name": "Terms of Use\n     Terms of Use",
+        "category": "Terms of Use",
+        "category_id": "54",
+        "level": "1",
+        "url": "https://open.shopee.com/developer-guide/54"
+      }
+    ]
+  }
+}

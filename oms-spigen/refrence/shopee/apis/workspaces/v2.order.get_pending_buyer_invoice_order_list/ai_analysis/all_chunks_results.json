@@ -1,0 +1,142 @@
+[
+  {
+    "chunk_index": 1,
+    "total_chunks": 1,
+    "endpoint": "/v1/store/get_pending_home_owner_order_list",
+    "method": "GET",
+    "description": "The endpoint gets pending home orders. You can't combine each order to select a list to view by the pre-paying home based owner",
+    "update_log": [
+      {
+        "date": "2024-03-14",
+        "change": "Update the description, supporting the full text index to use this API"
+      },
+      {
+        "date": "2024-01-11",
+        "change": "Update API description"
+      },
+      {
+        "date": "2021-09-16",
+        "change": "Update API"
+      }
+    ],
+    "parameters": [
+      {
+        "name": "offset",
+        "type": "string",
+        "required": false,
+        "description": "Identifies the starting point of data to return in the data set",
+        "children": []
+      },
+      {
+        "name": "limit",
+        "type": "integer",
+        "required": false,
+        "description": "Each result set is returned as a page of information, max numbers of entries to retrieve per request, max page size=1000, default=50",
+        "children": []
+      },
+      {
+        "name": "result_id",
+        "type": "string",
+        "required": false,
+        "description": "Previous id to request given pagination is correctly sorted by id. Required",
+        "children": []
+      },
+      {
+        "name": "type",
+        "type": "string",
+        "required": false,
+        "description": "This is to define the hierarchy of the header. Required to return null for this request",
+        "children": []
+      },
+      {
+        "name": "store_id",
+        "type": "string",
+        "required": false,
+        "description": "2021/09/16/0360",
+        "children": []
+      }
+    ],
+    "error_codes": [
+      {
+        "code": "error_param",
+        "description": "There is no access, token or login"
+      },
+      {
+        "code": "error_param",
+        "description": "Invalid access_token"
+      },
+      {
+        "code": "error_param",
+        "description": "There is no parameter_id"
+      },
+      {
+        "code": "error_param",
+        "description": "The permission is incorrect"
+      },
+      {
+        "code": "error_param",
+        "description": "There is no sign or token"
+      },
+      {
+        "code": "error_param",
+        "description": "String invalid"
+      },
+      {
+        "code": "error_param",
+        "description": "Not processing"
+      },
+      {
+        "code": "error_param",
+        "description": "Invalid timestamp"
+      },
+      {
+        "code": "error_param",
+        "description": "Invalid sign bit token"
+      },
+      {
+        "code": "error_param",
+        "description": "Invalid time token"
+      },
+      {
+        "code": "error_param",
+        "description": "Parameter invalid"
+      },
+      {
+        "code": "error_param",
+        "description": "The information you entered is not found"
+      },
+      {
+        "code": "error_param",
+        "description": "Wrong parameter value"
+      },
+      {
+        "code": "error_param",
+        "description": "Something wrong. Please try later"
+      },
+      {
+        "code": "error_param",
+        "description": "Invalid id invalid"
+      },
+      {
+        "code": "error_param",
+        "description": "Request with bare product"
+      }
+    ],
+    "response_fields": [],
+    "notes": "The documentation includes comprehensive error codes and parameter descriptions. The API appears to be related to retrieving pending home owner orders with pagination support.",
+    "chunk_metadata": {
+      "index": 1,
+      "total": 1,
+      "y_start": 0,
+      "y_end": 4742,
+      "overlap_top": 0,
+      "overlap_bottom": 0,
+      "height": 4742,
+      "path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\workspaces\\v2.order.get_pending_buyer_invoice_order_list\\chunks\\chunk_001.png",
+      "filename": "chunk_001.png",
+      "width": 837
+    },
+    "analysis_timestamp": "2025-10-10T06:16:07.148211",
+    "model": "claude-3-5-sonnet-20241022"
+  }
+]

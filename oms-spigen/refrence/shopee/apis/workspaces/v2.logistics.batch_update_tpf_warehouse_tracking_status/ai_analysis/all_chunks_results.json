@@ -1,0 +1,116 @@
+[
+  {
+    "chunk_index": 1,
+    "total_chunks": 1,
+    "endpoint": "api/ogp/batch_update_s3_warehouse_tracking_status",
+    "method": "POST",
+    "description": "API for updating warehouse tracking status",
+    "update_log": [
+      {
+        "date": "2020-08-04",
+        "change": "Supplemented the formula to define a destination method of S3 when track bitfield by api"
+      },
+      {
+        "date": "2020-05-22",
+        "change": "Changed /api/info (Basic)"
+      }
+    ],
+    "parameters": {
+      "common_parameters": [
+        {
+          "name": "url",
+          "type": "string",
+          "required": true,
+          "description": "API endpoint URLs for different environments"
+        },
+        {
+          "name": "host",
+          "type": "string",
+          "required": true,
+          "description": "API host URLs"
+        }
+      ],
+      "request_parameters": [
+        {
+          "name": "params_id",
+          "type": "string",
+          "required": true,
+          "description": "Param id to support page navigation is successful"
+        },
+        {
+          "name": "tracking_id",
+          "type": "string",
+          "required": false,
+          "description": "The tracking number"
+        },
+        {
+          "name": "order_id",
+          "type": "string",
+          "required": true,
+          "description": "The basic API setting, only to redirect user parameters to the new table bit method and return a result"
+        },
+        {
+          "name": "msg_id",
+          "type": "string",
+          "required": true,
+          "description": "Message body identifier for a track. Request param to be used"
+        }
+      ],
+      "response_parameters": [
+        {
+          "name": "error",
+          "type": "string",
+          "required": false,
+          "description": "Indicate error type if bit error. Empty if no errors"
+        },
+        {
+          "name": "message",
+          "type": "string",
+          "required": false,
+          "description": "Indicate error details if bit error. Empty if no errors"
+        },
+        {
+          "name": "request_id",
+          "type": "string",
+          "required": false,
+          "description": "The identifier for an API request the error belongs"
+        },
+        {
+          "name": "code",
+          "type": "integer",
+          "required": false,
+          "description": "Response status code"
+        }
+      ]
+    },
+    "error_codes": [
+      {
+        "code": "error_data",
+        "description": "Data error type"
+      },
+      {
+        "code": "error_failed",
+        "description": "Operation failed"
+      },
+      {
+        "code": "error_params",
+        "description": "Parameter invalid"
+      }
+    ],
+    "notes": "The documentation shows both request and response parameters, along with common parameters for different environments. There are also error codes and an update log section. The API appears to be related to warehouse tracking status updates using S3.",
+    "chunk_metadata": {
+      "index": 1,
+      "total": 1,
+      "y_start": 0,
+      "y_end": 4562,
+      "overlap_top": 0,
+      "overlap_bottom": 0,
+      "height": 4562,
+      "path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\workspaces\\v2.logistics.batch_update_tpf_warehouse_tracking_status\\chunks\\chunk_001.png",
+      "filename": "chunk_001.png",
+      "width": 837
+    },
+    "analysis_timestamp": "2025-10-10T05:59:29.000161",
+    "model": "claude-3-5-sonnet-20241022"
+  }
+]

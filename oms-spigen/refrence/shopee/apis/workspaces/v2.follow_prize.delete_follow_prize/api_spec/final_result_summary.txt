@@ -1,0 +1,37 @@
+======================================================================
+API SPECIFICATION SUMMARY
+======================================================================
+
+Endpoint: POST /choose.chouse.com/api/follow_prize/delete_prize
+
+Parameters (3):
+----------------------------------------------------------------------
+* prize_id (string)
+   Prize ID is grouped when registration is successful
+* group_token (string)
+   The token for DY Users, using to identify prize permission to group, need to refresh one time every 30 days
+* shop_id (integer)
+   Standard unique identifier for a shop. Required param for shopwise.
+
+Response Fields (3):
+----------------------------------------------------------------------
+  campaign_id (int32)
+   The unique identifier for the coupled token
+  message (string)
+   Message error text in group: Every the shop response
+  request_id (string)
+   The identifier of the API request for you
+
+Metadata:
+----------------------------------------------------------------------
+  total_chunks: 1
+  chunks_with_errors: 0
+  total_parameters_before_dedup: 3
+  total_parameters_after_dedup: 3
+  update_log_entries: 4
+  hidden_fields_count: 0
+  source_results: workspaces\v2.follow_prize.delete_follow_prize\results\all_chunks_results.json
+
+======================================================================
+Legend: * = required parameter
+======================================================================

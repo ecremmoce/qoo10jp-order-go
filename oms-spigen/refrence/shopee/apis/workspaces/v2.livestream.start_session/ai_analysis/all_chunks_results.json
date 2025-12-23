@@ -1,0 +1,90 @@
+[
+  {
+    "chunk_index": 1,
+    "total_chunks": 1,
+    "endpoint": "v2/bestdream/start_session",
+    "method": null,
+    "description": null,
+    "update_log": [
+      {
+        "date": "2024-09-24",
+        "change": "New API"
+      }
+    ],
+    "parameters": [
+      {
+        "name": "partner_id",
+        "type": "string",
+        "required": false,
+        "description": null
+      },
+      {
+        "name": "session_id",
+        "type": "string",
+        "required": true,
+        "description": "The identifier of bestdream session"
+      },
+      {
+        "name": "device_id",
+        "type": "string",
+        "required": true,
+        "description": "The identifier of the stream session"
+      }
+    ],
+    "response_fields": [
+      {
+        "name": "error",
+        "type": "string",
+        "required": false,
+        "description": "Indicate error type if an error [false] if no error happened"
+      },
+      {
+        "name": "message",
+        "type": "string",
+        "required": false,
+        "description": "Indicate error details if an error [false if no error happened]"
+      },
+      {
+        "name": "request_id",
+        "type": "string",
+        "required": false,
+        "description": "The identifier for an API request for error tracking"
+      },
+      {
+        "name": "response",
+        "type": "object",
+        "required": false,
+        "description": "Data information you are querying"
+      }
+    ],
+    "error_codes": [
+      {
+        "code": "error_data",
+        "description": "same data failed"
+      },
+      {
+        "code": "error_param",
+        "description": "parameter invalid"
+      },
+      {
+        "code": "error_permission",
+        "description": "You do not have permission to bestdream"
+      }
+    ],
+    "notes": "The documentation includes several URLs for different environments (test, dev, etc.) and includes request/response examples in various formats (JSON, Python). There are also additional error codes listed in the image that indicate various error conditions related to sessions and permissions.",
+    "chunk_metadata": {
+      "index": 1,
+      "total": 1,
+      "y_start": 0,
+      "y_end": 4093,
+      "overlap_top": 0,
+      "overlap_bottom": 0,
+      "height": 4093,
+      "path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\workspaces\\v2.livestream.start_session\\chunks\\chunk_001.png",
+      "filename": "chunk_001.png",
+      "width": 837
+    },
+    "analysis_timestamp": "2025-10-10T05:57:32.954429",
+    "model": "claude-3-5-sonnet-20241022"
+  }
+]

@@ -1,0 +1,85 @@
+[
+  {
+    "chunk_index": 1,
+    "total_chunks": 1,
+    "endpoint": null,
+    "method": null,
+    "description": null,
+    "update_log": [],
+    "hidden_fields": [],
+    "parameters": [
+      {
+        "name": "URL",
+        "type": "string",
+        "required": true,
+        "description": "API endpoint URLs",
+        "children": [
+          {
+            "name": "release",
+            "type": "string",
+            "required": true,
+            "description": "http://partner.example.com/commerces/success_account_set"
+          },
+          {
+            "name": "test",
+            "type": "string",
+            "required": true,
+            "description": "http://partner-test.example.com/commerces/success_account_set"
+          }
+        ]
+      },
+      {
+        "name": "sign",
+        "type": "string",
+        "required": true,
+        "description": "Signature parameter is similar to v1_prods, however, parameters needed to be signed are different from those in v1_prods."
+      },
+      {
+        "name": "partner_id",
+        "type": "string",
+        "required": true,
+        "description": "Unique partner identifier provided by the platform"
+      },
+      {
+        "name": "timestamp",
+        "type": "string",
+        "required": true,
+        "description": "Request timestamp"
+      },
+      {
+        "name": "account_id",
+        "type": "string",
+        "required": true,
+        "description": "The identifier of the user account for your service"
+      },
+      {
+        "name": "user_id",
+        "type": "string",
+        "required": false,
+        "description": "User identifier linked to the user"
+      },
+      {
+        "name": "version",
+        "type": "string",
+        "required": true,
+        "description": "Interface version"
+      }
+    ],
+    "response_fields": [],
+    "notes": "The image appears to be API documentation for an account-related endpoint. It includes both release and test URLs, along with various required and optional parameters. Some sections of the documentation appear to continue beyond what's visible in the image, particularly error codes at the bottom.",
+    "chunk_metadata": {
+      "index": 1,
+      "total": 1,
+      "y_start": 0,
+      "y_end": 5433,
+      "overlap_top": 0,
+      "overlap_bottom": 0,
+      "height": 5433,
+      "path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\workspaces\\v2.discount.get_discount_list\\chunks\\chunk_001.png",
+      "filename": "chunk_001.png",
+      "width": 837
+    },
+    "analysis_timestamp": "2025-10-10T05:36:52.830686",
+    "model": "claude-3-5-sonnet-20241022"
+  }
+]

@@ -1,0 +1,38 @@
+[
+  {
+    "chunk_index": 1,
+    "total_chunks": 1,
+    "endpoint": null,
+    "method": null,
+    "description": "Shopee Open Platform is a go-to source of Open APIs and services for developers serving Shopee sellers with different ecommerce needs",
+    "update_log": [
+      {
+        "date": "2024-11-11",
+        "change": "Last updated"
+      }
+    ],
+    "hidden_fields": [],
+    "parameters": [],
+    "response_fields": [],
+    "notes": "This appears to be the introduction/overview page of Shopee Open Platform documentation. Key information extracted:\n\n1. Language Support: English/简体中文/繁體中文/Português/ไทย\n\n2. Main Features:\n- Powerful APIs for orders, products, marketing with push notification services\n- Comprehensive developer services including onboarding, testing, and maintenance\n- API testing tools and sandbox environments\n- Documentation and support center access\n\n3. Benefits:\n- Quick access to shop data for product, order, and campaign management\n- Available in all markets\n- Single API set for multiple markets\n\n4. User Types:\n- Software service providers\n- Sellers with software development capabilities\n\nNo specific API endpoints or parameters are shown in this overview page.",
+    "page_metadata": {
+      "title": "Introduction",
+      "section": "Getting Started",
+      "last_updated": "2024-11-11"
+    },
+    "chunk_metadata": {
+      "index": 1,
+      "total": 1,
+      "y_start": 0,
+      "y_end": 1080,
+      "overlap_top": 0,
+      "overlap_bottom": 0,
+      "height": 1080,
+      "path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\platforms\\shopee\\apis\\workspaces\\developer-guide.4\\chunks\\chunk_001.png",
+      "filename": "chunk_001.png",
+      "width": 1920
+    },
+    "analysis_timestamp": "2025-10-12T01:22:00.105921",
+    "model": "claude-3-5-sonnet-20241022"
+  }
+]

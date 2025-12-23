@@ -1,0 +1,41 @@
+======================================================================
+API SPECIFICATION SUMMARY
+======================================================================
+
+Endpoint: None None
+
+Parameters (5):
+----------------------------------------------------------------------
+* gid (string)
+  lng (string)
+   Set language
+  sorting (integer)
+   Set sorting order
+  priority (integer)
+  get_line (boolean)
+   Get line data flag
+
+Response Fields (4):
+----------------------------------------------------------------------
+  automatic_match_min (integer)
+   Min range length max line
+  automatic_match_max (integer)
+   Max range length max line
+  automatic_match_shift (integer)
+   Range shift length max line
+  min_price (float)
+   Min price
+
+Metadata:
+----------------------------------------------------------------------
+  total_chunks: 1
+  chunks_with_errors: 0
+  total_parameters_before_dedup: 5
+  total_parameters_after_dedup: 5
+  update_log_entries: 0
+  hidden_fields_count: 0
+  source_results: workspaces\v2.product.get_kit_item_limit\results\all_chunks_results.json
+
+======================================================================
+Legend: * = required parameter
+======================================================================

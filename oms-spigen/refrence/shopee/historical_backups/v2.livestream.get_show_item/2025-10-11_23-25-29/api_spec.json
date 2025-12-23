@@ -1,0 +1,61 @@
+{
+  "endpoint": "/openserver/api_video/achievement/get_video_item",
+  "method": "GET",
+  "description": null,
+  "parameters": [
+    {
+      "name": "achievement_id",
+      "type": "string",
+      "required": true,
+      "description": "Achievement ID parameter",
+      "children": []
+    },
+    {
+      "name": "url",
+      "type": "string",
+      "required": true,
+      "description": "Video url parameter",
+      "children": []
+    },
+    {
+      "name": "vid_url",
+      "type": "string",
+      "required": true,
+      "description": "The video url for player/3rd party player",
+      "children": []
+    },
+    {
+      "name": "msg_src",
+      "type": "string",
+      "required": true,
+      "description": "Original source identifier for an error",
+      "children": []
+    },
+    {
+      "name": "msg_id",
+      "type": "string",
+      "required": true,
+      "description": "The message id of the error",
+      "children": []
+    },
+    {
+      "name": "error",
+      "type": "string",
+      "required": true,
+      "description": "Name of the error in your language",
+      "children": []
+    }
+  ],
+  "response_fields": [],
+  "update_log": [],
+  "hidden_fields": [],
+  "metadata": {
+    "total_chunks": 1,
+    "chunks_with_errors": 0,
+    "total_parameters_before_dedup": 6,
+    "total_parameters_after_dedup": 6,
+    "update_log_entries": 0,
+    "hidden_fields_count": 0,
+    "source_results": "platforms\\shopee\\apis\\workspaces\\v2.livestream.get_show_item\\results\\all_chunks_results.json"
+  }
+}

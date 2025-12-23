@@ -1,0 +1,74 @@
+{
+  "endpoint": "https://partner.myapexmedia.com/api/v2/livestream/delete_show_item",
+  "method": "POST",
+  "description": "Delete a livestream show item",
+  "parameters": [
+    {
+      "name": "partner_id",
+      "type": "int",
+      "required": true,
+      "description": "The identity of a partner. Required for all requests."
+    },
+    {
+      "name": "timestamp",
+      "type": "timestamp",
+      "required": true,
+      "description": "The Unix timestamp when the request is initiated. Required for all requests. Expires in 5 minutes."
+    },
+    {
+      "name": "access_token",
+      "type": "string",
+      "required": true,
+      "description": "The token for API access, cases sensitive and expires in 4 hours."
+    },
+    {
+      "name": "sign",
+      "type": "string",
+      "required": true,
+      "description": "Signature generated according to different APIs."
+    },
+    {
+      "name": "session_id",
+      "type": "int64",
+      "required": true,
+      "description": "The identifier of livestream session"
+    },
+    {
+      "name": "error",
+      "type": "string",
+      "description": "Include error type if the error. Empty if no error"
+    },
+    {
+      "name": "message",
+      "type": "string",
+      "description": "Include error detail if the error. Empty if no error"
+    },
+    {
+      "name": "request_id",
+      "type": "string",
+      "description": "The identifier for an API request for error"
+    },
+    {
+      "name": "response",
+      "type": "object",
+      "description": "Other information you are querying"
+    }
+  ],
+  "response_fields": [],
+  "update_log": [
+    {
+      "date": "2025-06-24",
+      "change": "New API"
+    }
+  ],
+  "hidden_fields": [],
+  "metadata": {
+    "total_chunks": 1,
+    "chunks_with_errors": 0,
+    "total_parameters_before_dedup": 9,
+    "total_parameters_after_dedup": 9,
+    "update_log_entries": 1,
+    "hidden_fields_count": 0,
+    "source_results": "workspaces\\v2.livestream.delete_show_item\\results\\all_chunks_results.json"
+  }
+}

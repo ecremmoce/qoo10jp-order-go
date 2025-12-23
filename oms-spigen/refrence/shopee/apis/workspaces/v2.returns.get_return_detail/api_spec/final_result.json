@@ -1,0 +1,77 @@
+{
+  "endpoint": "/ping",
+  "method": "GET",
+  "description": "Simple ping endpoint to test API connectivity",
+  "parameters": [
+    {
+      "name": "user_credentials",
+      "type": "object",
+      "required": true,
+      "description": null,
+      "children": [
+        {
+          "name": "email",
+          "type": "string",
+          "required": true,
+          "description": "User's email address"
+        },
+        {
+          "name": "password",
+          "type": "string",
+          "required": true,
+          "description": "User's password"
+        }
+      ]
+    },
+    {
+      "name": "server_settings",
+      "type": "object",
+      "required": false,
+      "description": null,
+      "children": [
+        {
+          "name": "region",
+          "type": "string",
+          "required": true,
+          "description": "Server region code"
+        },
+        {
+          "name": "timeout",
+          "type": "integer",
+          "required": false,
+          "description": "Connection timeout in seconds"
+        }
+      ]
+    }
+  ],
+  "response_fields": [
+    {
+      "name": "status",
+      "type": "string",
+      "description": "Response status message"
+    },
+    {
+      "name": "data",
+      "type": "object",
+      "description": "Response payload",
+      "children": [
+        {
+          "name": "session_token",
+          "type": "string",
+          "description": "Authentication token"
+        }
+      ]
+    }
+  ],
+  "update_log": [],
+  "hidden_fields": [],
+  "metadata": {
+    "total_chunks": 2,
+    "chunks_with_errors": 0,
+    "total_parameters_before_dedup": 2,
+    "total_parameters_after_dedup": 2,
+    "update_log_entries": 0,
+    "hidden_fields_count": 0,
+    "source_results": "workspaces\\v2.returns.get_return_detail\\results\\all_chunks_results.json"
+  }
+}

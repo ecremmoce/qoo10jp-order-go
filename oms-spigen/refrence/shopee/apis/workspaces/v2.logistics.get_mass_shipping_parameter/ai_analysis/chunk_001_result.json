@@ -1,0 +1,133 @@
+{
+  "chunk_index": 1,
+  "total_chunks": 1,
+  "endpoint": "/api/v2/product/release_product",
+  "method": "POST",
+  "description": "Release product API",
+  "update_log": [
+    {
+      "date": "2023-08-28",
+      "change": "Added new fields and logic updates"
+    }
+  ],
+  "hidden_fields": [],
+  "parameters": [
+    {
+      "name": "seller_id",
+      "type": "string",
+      "required": true,
+      "description": "Seller ID",
+      "children": []
+    },
+    {
+      "name": "product",
+      "type": "object",
+      "required": true,
+      "description": "Product information object",
+      "children": [
+        {
+          "name": "title",
+          "type": "string",
+          "required": true,
+          "description": "Product title",
+          "children": []
+        },
+        {
+          "name": "price",
+          "type": "float",
+          "required": true,
+          "description": "Product price",
+          "children": []
+        },
+        {
+          "name": "description",
+          "type": "string",
+          "required": true,
+          "description": "Product description",
+          "children": []
+        },
+        {
+          "name": "category",
+          "type": "string",
+          "required": true,
+          "description": "Product category",
+          "children": []
+        },
+        {
+          "name": "images",
+          "type": "array",
+          "required": true,
+          "description": "Array of product image URLs",
+          "children": []
+        },
+        {
+          "name": "specifications",
+          "type": "object",
+          "required": true,
+          "description": "Product specifications",
+          "children": [
+            {
+              "name": "brand",
+              "type": "string",
+              "required": true,
+              "description": "Product brand name",
+              "children": []
+            },
+            {
+              "name": "model",
+              "type": "string",
+              "required": true,
+              "description": "Product model number",
+              "children": []
+            },
+            {
+              "name": "dimensions",
+              "type": "object",
+              "required": true,
+              "description": "Product dimensions",
+              "children": [
+                {
+                  "name": "length",
+                  "type": "float",
+                  "required": true,
+                  "description": "Length in cm",
+                  "children": []
+                },
+                {
+                  "name": "width",
+                  "type": "float",
+                  "required": true,
+                  "description": "Width in cm",
+                  "children": []
+                },
+                {
+                  "name": "height",
+                  "type": "float",
+                  "required": true,
+                  "description": "Height in cm",
+                  "children": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "response_fields": [],
+  "notes": "The documentation appears to be for a product release API with nested object structures for product details and specifications. All visible parameters have been captured with their respective types and hierarchy.",
+  "chunk_metadata": {
+    "index": 1,
+    "total": 1,
+    "y_start": 0,
+    "y_end": 7180,
+    "overlap_top": 0,
+    "overlap_bottom": 0,
+    "height": 7180,
+    "path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\workspaces\\v2.logistics.get_mass_shipping_parameter\\chunks\\chunk_001.png",
+    "filename": "chunk_001.png",
+    "width": 837
+  },
+  "analysis_timestamp": "2025-10-10T06:04:35.293104",
+  "model": "claude-3-5-sonnet-20241022"
+}

@@ -1,0 +1,109 @@
+[
+  {
+    "chunk_index": 1,
+    "total_chunks": 1,
+    "endpoint": "/api/merchant/get_item_set_list",
+    "method": "POST",
+    "description": "API to retrieve item sets",
+    "update_log": [
+      {
+        "date": "2024-06-21",
+        "change": "Initial API"
+      }
+    ],
+    "parameters": [
+      {
+        "name": "timestamp",
+        "type": "string",
+        "required": true,
+        "description": "Unix timestamp",
+        "children": []
+      },
+      {
+        "name": "shop_id",
+        "type": "uint64",
+        "required": true,
+        "description": "Specify the selling price to shop to want to access. This needs to be related to a shop bound to your partner authorization",
+        "children": []
+      },
+      {
+        "name": "keyword",
+        "type": "string",
+        "required": false,
+        "description": "Search keyword",
+        "children": []
+      }
+    ],
+    "response_fields": [
+      {
+        "name": "error",
+        "type": "string",
+        "description": "Error message if the error exists",
+        "children": []
+      },
+      {
+        "name": "message",
+        "type": "string",
+        "description": "Error information you are battling",
+        "children": []
+      },
+      {
+        "name": "warn",
+        "type": "boolean",
+        "description": "This is to indicate whether the list is more than 24 hours. If this field is true, you may need to update the cache for a better performance",
+        "children": []
+      },
+      {
+        "name": "next_offset",
+        "type": "int64",
+        "description": "The identifier of the item set",
+        "children": []
+      },
+      {
+        "name": "item_set_list",
+        "type": "array",
+        "description": "The items of the item set",
+        "children": []
+      },
+      {
+        "name": "item_count",
+        "type": "int64",
+        "description": "The number of items in the item set",
+        "children": []
+      }
+    ],
+    "error_codes": [
+      {
+        "code": "error_404",
+        "description": "shop data does not exist"
+      },
+      {
+        "code": "error_auth",
+        "description": "You are not authorized"
+      },
+      {
+        "code": "error_param",
+        "description": "The API's req parameter is invalid"
+      },
+      {
+        "code": "error_server",
+        "description": "Some internal error has occur"
+      }
+    ],
+    "notes": "The documentation shows both request and response parameters clearly, along with error codes. The API appears to be for retrieving item sets with pagination support (given the next_offset parameter).",
+    "chunk_metadata": {
+      "index": 1,
+      "total": 1,
+      "y_start": 0,
+      "y_end": 4409,
+      "overlap_top": 0,
+      "overlap_bottom": 0,
+      "height": 4409,
+      "path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\workspaces\\v2.livestream.get_item_set_list\\chunks\\chunk_001.png",
+      "filename": "chunk_001.png",
+      "width": 837
+    },
+    "analysis_timestamp": "2025-10-10T05:55:27.765545",
+    "model": "claude-3-5-sonnet-20241022"
+  }
+]

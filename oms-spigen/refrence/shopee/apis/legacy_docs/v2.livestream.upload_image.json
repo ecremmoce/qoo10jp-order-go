@@ -1,0 +1,68 @@
+{
+  "endpoint": "/v2/livestream/upload_image",
+  "method": "POST",
+  "description": "Upload an image for livestream use case",
+  "parameters": [
+    {
+      "name": "partner_id",
+      "type": "string",
+      "required": true,
+      "description": "Permanent unique identifier is successful. Required for all requests"
+    },
+    {
+      "name": "timestamp",
+      "type": "timestamp",
+      "required": true,
+      "description": "Unix time stamp for API validity, needs to identify your permission to call APIs. Expires in 5 minutes"
+    },
+    {
+      "name": "sign",
+      "type": "string",
+      "required": true,
+      "description": "Signature generated to indicate your different API permission. partner_key sig HMAC-SHA256 hashing algorithm generated string"
+    },
+    {
+      "name": "image",
+      "type": "file",
+      "required": true,
+      "description": "The image file to upload"
+    },
+    {
+      "name": "code",
+      "type": "string",
+      "description": "Indicates error type if not zero. Empty if no error happened"
+    },
+    {
+      "name": "message",
+      "type": "string",
+      "description": "Indicates error status if not zero. Empty if no error happened"
+    },
+    {
+      "name": "request_id",
+      "type": "string",
+      "description": "The identifier for an API request for error tracking"
+    },
+    {
+      "name": "image_url",
+      "type": "string",
+      "description": "The image URL"
+    }
+  ],
+  "response_fields": [],
+  "update_log": [
+    {
+      "date": "2024-06-14",
+      "change": "New API"
+    }
+  ],
+  "hidden_fields": [],
+  "metadata": {
+    "total_chunks": 1,
+    "chunks_with_errors": 0,
+    "total_parameters_before_dedup": 8,
+    "total_parameters_after_dedup": 8,
+    "update_log_entries": 1,
+    "hidden_fields_count": 0,
+    "source_results": "workspaces\\v2.livestream.upload_image\\results\\all_chunks_results.json"
+  }
+}

@@ -1,0 +1,102 @@
+{
+  "chunk_index": 1,
+  "total_chunks": 1,
+  "endpoint": null,
+  "method": null,
+  "description": null,
+  "update_log": [
+    {
+      "date": "2023-09-19",
+      "change": "Added Request Parameter"
+    }
+  ],
+  "parameters": [
+    {
+      "name": "url",
+      "type": "string",
+      "required": true,
+      "description": "Target url template",
+      "children": []
+    },
+    {
+      "name": "img",
+      "type": "string",
+      "required": true,
+      "description": "Replaced url template in this image",
+      "children": []
+    },
+    {
+      "name": "ext_url",
+      "type": "string",
+      "required": true,
+      "description": "The link that you can click and jump to the web page I want",
+      "children": []
+    },
+    {
+      "name": "request_id",
+      "type": "string",
+      "required": true,
+      "description": "Unique identifier for a request",
+      "children": []
+    },
+    {
+      "name": "creative_id",
+      "type": "string",
+      "required": false,
+      "description": "Value indicating the creative_id parameter for html",
+      "children": []
+    },
+    {
+      "name": "traffic_info",
+      "type": "timestamp",
+      "required": false,
+      "description": "Indicates date and time",
+      "children": []
+    },
+    {
+      "name": "metadata",
+      "type": "string",
+      "required": false,
+      "description": "Indicates date and time I'm not allowed",
+      "children": []
+    }
+  ],
+  "response_fields": [],
+  "error_codes": [
+    {
+      "code": "error_gateway_not_this_type",
+      "description": "Error: Prevent this error before sending"
+    },
+    {
+      "code": "account_device_profile_fail",
+      "description": "Parameter location must be valid"
+    },
+    {
+      "code": "account_device_profile_fail_id",
+      "description": "The link that results in this error: I have all that link"
+    },
+    {
+      "code": "account_device_profile_fail_tp",
+      "description": "Parameter url has an empty tp parameter"
+    },
+    {
+      "code": "price_param",
+      "description": "There is no price_param in param"
+    }
+  ],
+  "notes": "The documentation appears to be for some kind of URL/link tracking or redirection API. It includes both required and optional parameters, along with several error codes related to validation and processing. There are code examples shown but they appear to be partially truncated in the image.",
+  "chunk_metadata": {
+    "index": 1,
+    "total": 1,
+    "y_start": 0,
+    "y_end": 5059,
+    "overlap_top": 0,
+    "overlap_bottom": 0,
+    "height": 5059,
+    "path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\workspaces\\v2.discount.update_discount\\chunks\\chunk_001.png",
+    "filename": "chunk_001.png",
+    "width": 837
+  },
+  "analysis_timestamp": "2025-10-10T05:37:09.143436",
+  "model": "claude-3-5-sonnet-20241022"
+}

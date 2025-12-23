@@ -1,0 +1,11 @@
+{
+  "document_id": "developer-guide.219",
+  "document_type": "guide",
+  "url": "https://open.shopee.com/developer-guide/219",
+  "platform": "shopee",
+  "crawled_at": "2025-10-16T08:43:40",
+  "screenshot_path": "platforms\\shopee\\guides\\workspaces\\developer-guide.219\\screenshots\\screenshot.png",
+  "html_path": "phase1_poc\\output\\page.html",
+  "workspace_dir": "platforms\\shopee\\guides\\workspaces\\developer-guide.219",
+  "has_changes": true
+}

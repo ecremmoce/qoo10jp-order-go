@@ -1,0 +1,106 @@
+[
+  {
+    "chunk_index": 1,
+    "total_chunks": 1,
+    "endpoint": "/v2/benchmark/obtain_user_comment",
+    "method": null,
+    "description": "Obtain a user item posting comment",
+    "update_log": [
+      {
+        "date": "2023-09-26",
+        "change": "New API"
+      }
+    ],
+    "parameters": [
+      {
+        "name": "partner_id",
+        "type": "int64",
+        "required": true,
+        "description": "The identifier of benchmark session",
+        "children": []
+      },
+      {
+        "name": "obtain_order_id",
+        "type": "int64",
+        "required": true,
+        "description": "The order ID that call be understand from posting comments",
+        "children": []
+      }
+    ],
+    "response_fields": [
+      {
+        "name": "success",
+        "type": "boolean",
+        "description": "Indicate when type first time. Empty if no error happened",
+        "children": []
+      },
+      {
+        "name": "message",
+        "type": "string",
+        "description": "The error text when error happened",
+        "children": []
+      },
+      {
+        "name": "request_id",
+        "type": "string",
+        "description": "The identifier for call API request for error tracing",
+        "children": []
+      },
+      {
+        "name": "response",
+        "type": "object",
+        "description": "Detail information you are querying",
+        "children": []
+      }
+    ],
+    "error_codes": [
+      {
+        "code": "error_data",
+        "description": "Some data failed"
+      },
+      {
+        "code": "error_data",
+        "description": "Key not exist"
+      },
+      {
+        "code": "error_param",
+        "description": "Parameter invalid"
+      },
+      {
+        "code": "error_data",
+        "description": "You can not exist account"
+      },
+      {
+        "code": "error_param",
+        "description": "Invalid message_id"
+      },
+      {
+        "code": "error_data",
+        "description": "Should have network"
+      },
+      {
+        "code": "error_param",
+        "description": "You are not authorized"
+      },
+      {
+        "code": "error_data",
+        "description": "The session{message_id} is not belong to you"
+      }
+    ],
+    "notes": "The documentation includes URL variations and request/response examples that are partially visible in the image. The error codes section shows multiple possible error states that can be returned by the API.",
+    "chunk_metadata": {
+      "index": 1,
+      "total": 1,
+      "y_start": 0,
+      "y_end": 4043,
+      "overlap_top": 0,
+      "overlap_bottom": 0,
+      "height": 4043,
+      "path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\workspaces\\v2.livestream.unban_user_comment\\chunks\\chunk_001.png",
+      "filename": "chunk_001.png",
+      "width": 837
+    },
+    "analysis_timestamp": "2025-10-10T05:57:47.532640",
+    "model": "claude-3-5-sonnet-20241022"
+  }
+]

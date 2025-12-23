@@ -1,0 +1,55 @@
+{
+  "document_id": "developer-guide.677",
+  "document_type": "guide",
+  "platform": "shopee",
+  "content_ko": "# API 모범 사례 > 배송사 서비스 - 패키지\n\n## 1 정렬 그룹\n정렬 그룹: 이 물류 채널로 중단할 때 팩 목록 흐름을 함께 선택하는 데 사용되는 이름입니다.\n\n## 2 비즈니스 운영 로직\n\n### 2.1 자동 드롭 배송\n물류 채널 50029를 사용하는 주문의 경우, 주문 상태가 \"READY_TO_SHIP\"이 되면 시스템은 드롭 투 클라이언트 배송이 존재하는지 확인하기 위해 원산지 정보(주문) 패키지 드롭 정보를 자동으로 가져옵니다.\n- 드롭 투 클라이언트 배송이 존재하는 경우, 패키지 드롭이 실행되고 1개의 패키지에 3개의 드롭 투 클라이언트 유형의 상태가 업데이트되며, 각 유형은 1개의 수량을 포함합니다.\n\n### 2.2 평균 배송 드롭\n물류 채널 50029를 사용하여 품목을 드롭하는 경우, 판매자는 더 이상 주문 라인별로 포장할 필요가 없습니다. 단계는 다음과 같습니다.\n- 패키지 SKU ID Label은 여전히 경로 및 재고 SKU입니다. 배송 소포에 SKU Label을 사용하지 마십시오.\n- 중단 시, 배치 재고 SKU에 따라 포장하십시오.\n\n자세한 내용은 판매자 교육 허브 문서 [提报发货包, 智能发货包], [三方发货报包]를 참조하십시오.\n\n## 3 품목의 미포장 SKU ID 조회\n\"미포장 SKU ID-U Label\"은 물류 채널 내의 SKU 품목을 기록합니다. 다음 API를 통해 정보를 얻을 수 있습니다.\n- V3 [logistics/get_shipping_parameter](/open-api/01_logistics_get_shipping_parameter)\n- V2 [product:search_unpackage_master_sku](/open-api/02_product_search_unpackage_master_sku)\n\n## 4 주문 정보 및 세부 정보 가져오기\n이 물류 채널은 자동으로 주문을 가져오지 않습니다. 다음 API를 사용하는 동안 패키지 수준 정보를 가져와야 합니다.\n- V3 [order:search_package_list](/open-api/03_order_search_package_list) 패키지 목록을 조회합니다.\n- V3 [order:get_package_detail](/open-api/04_order_get_package_detail) 패키지 세부 정보를 조회합니다.\n\n주문 정보를 얻은 후, \"shipping_carrier\" 필드가 값 \"package_id\"와 일치하는지 확인하고 요청 매개변수 \"response_optional_fields\"에 포함되어 있는지 확인하십시오.\n\n## 5 기본 배송 로직\n\n### 5.1 필수 API 호출 흐름\n이 물류 채널은 자동으로 주문을 분할하지 않습니다. 다음 API의 요청 매개변수에 \"package_number\"가 포함되어 있는지 확인하십시오.\n- V3 [order:ship_package](/open-api/05_order_ship_package) 주문 배송 시 (\"package_list\"에 배송 매개변수 \"tracking_number\"도 필요합니다.)\n또한:\n- V2 [logistics:init_and_order](/open-api/06_logistics_init_and_order) 배송을 준비할 때 \"sorting_group\" 필드에서 값을 얻을 수 있습니다.\n\n### 5.2 평균 배송 드롭\n단계:\n1) 미포장 SKU ID 데드 콜 흐름 가져오기\n미포장 SKU ID는 패키지에 해당하는 미포장 SKU ID의 고유 식별자입니다.\n- V3 [logistics:get_shipping_document_parameter](/open-api/07_logistics_get_shipping_document_parameter)\n- V2 [logistics:get_airway_bill_for_seller](/open-api/08_logistics_get_airway_bill_for_seller)\n- V2 [logistics:get_tracking_number](/open-api/09_logistics_get_tracking_number)\n\n물류 채널 ID 필드 \"response_OPTIONAL_UNPACKAGED_LABEL\"의 값은 \"shipping_document_type\"입니다.\n\n2) To Label ID 가져오기\n정렬 그룹에 따라 패키지를 완료한 후, 다음 API를 통해 TO 레이블 파일을 얻을 수 있습니다.\n- V3 [logistics:download_shipping_document](/open-api/10_logistics_download_shipping_document) TO 레이블 다운로드 (드롭 배송 정보를 포함하며, 드롭 오프 프로세스에 영향을 미치는 필수 레이블입니다.)\n\n## 6 기타 프로세스\n\n### 6.1 주문 생성 전 U-Label 생성 또는 업데이트\n1. 주문 생성 전에 미포장 SKU ID-Label을 인쇄하는 경우\n   판매자가 주문을 생성할 수 있도록 지원 및 업로드하여 고급 라벨링 및 효율성을 보장합니다.\n\n다음 API를 호출하여 파일을 얻을 수 있습니다.\n- V3 [logistics:batch_ship_package](/open-api/11_logistics_batch_ship_package) \"인쇄 작업 생성\" 호출\n- V3 [logistics:download_shipping_document_job](/open-api/12_logistics_download_shipping_document_job) 레이블 파일 다운로드\n\n데이터는 소포 채널 50029부터 시작해야 이 고급 레이블 인쇄 프로세스를 효율적으로 사용할 수 있습니다.\n\n### 6.2 맞춤형 U-Label\n물류 시스템에서는 시스템 기본 설정에 따라 \"미포장 SKU ID Label\"을 디자인하는 것이 좋습니다. FAQ 첨부 파일의 \"판매자 도움말\" 섹션 사양을 참조하여 레이블을 만들 수 있습니다(반품 배송사에서 배송).\n- API를 통해 \"Unpackage_sku_id\" 및 \"Unpackaged_sku_id_group\" 필드가 있는지 확인하십시오.\n- 참조용 지침이며, 공식 사양은 FAQ 첨부 파일에 있습니다(영문 버전만 해당).\n  * 10cm x 10cm를 초과할 수 없습니다.\n  * EC 모드는 허용되지 않습니다.\n  * QR 코드를 가리는 QR 코드 또는 기타 장애물을 피하십시오.\n  * 글꼴 크기 또는 텍스트는 최소한 읽을 수 있어야 합니다.\n  * 페인트 도구 및 막대 끊기 지침이 제거되었습니다.\n  * 사용자 정의 레이블이 사용자 정의되지 않은 영역의 표시 또는 레이아웃에 영향을 미치지 않도록 하십시오.\n\n## 7 권장 API 호출 흐름\n\n### 7.1 주문 생성 전 미포장 SKU ID-Label 인쇄\n\n[이것은 순서도입니다: 주문 생성 전 미포장 SKU ID Label 인쇄를 위한 프로세스 흐름을 보여주며, 여러 의사 결정 지점과 노란색 상자의 프로세스 단계를 포함합니다.]\n\n### 7.2 주문 생성 전 미포장 SKU ID-Label 인쇄하는 경우\n\n[이것은 순서도입니다: 주문 생성 및 레이블 인쇄 프로세스를 포함하여 여러 단계와 의사 결정 지점이 있는 대체 프로세스 흐름을 보여줍니다.]\n\n## 8 FAQ\n\n**Q: 물류 채널에 여러 패키지가 있는 주문의 경우, 패키지의 물류 상태가 다른 경우 주문 상태는 어떻게 표시됩니까?**\n\nA: [주문 시스템 장(/open-faq/01)]에 대한 FAQ를 참조하십시오.\n\n**Q: V2 (order:get_order_detail) API를 통해 주문 세부 정보를 검색하는 동안 주문 수준의 \"shipping_carrier\" 필드가 비어 있는 이유는 무엇입니까?**\n\nA: 이 물류 운송업체의 물류 채널에 있지 않으면 API는 값을 표시하지 않습니다. \"package_list\"의 각 배송에서 \"shipping_carrier\" 필드를 검색하십시오.\n\n**Q: 배송 (또는 미포장 SKU ID-Label) API를 호출할 때 시스템에서 오류 메시지를 반환하는 이유는 무엇입니까?**\n\nA: 물류 채널이 자동으로 주문을 분할합니다. 물류 관련 API를 호출할 때 \"package_number\" 필드 매개변수가 API에 포함되도록 요청하십시오.\n\n## 9 데이터 정의\n\n[V3 주문 시스템(https://example.com)] 페이지를 참조하십시오.",
+  "translated_at": "2025-10-16T09:00:44",
+  "char_count": 4065,
+  "metadata_ko": {
+    "title": "Shipper Service - 패키지",
+    "summary": "본 가이드는 Shipper Service 패키지 기능 사용에 대한 모범 사례를 제공합니다. 그룹 정렬, 비즈니스 운영 로직, 포장되지 않은 SKU ID 조회, 주문 정보 획득, 기본 배송 로직 및 물류 채널 내 패키지 처리와 관련된 기타 프로세스와 같은 주제를 다룹니다.",
+    "keywords": [
+      "Shipper Service",
+      "Package",
+      "물류 채널",
+      "Unpackaged SKU ID",
+      "배송",
+      "정렬 그룹",
+      "Drop Shipment",
+      "API",
+      "주문 관리"
+    ],
+    "category": "모범 사례",
+    "tags": [
+      "배송",
+      "물류",
+      "API",
+      "패키지 관리",
+      "주문 처리"
+    ],
+    "difficulty": "medium",
+    "importance": 4,
+    "use_cases": [
+      "특정 물류 채널 내에서 패키지 관리.",
+      "자동 Drop Shipment 프로세스 구현.",
+      "아이템에 대한 포장되지 않은 SKU ID 조회.",
+      "주문 정보 및 패키지 세부 정보 획득.",
+      "필수 API 호출 흐름을 사용하여 패키지 배송."
+    ],
+    "related_apis": [
+      "/open-api/01_logistics_get_shipping_parameter",
+      "/open-api/02_product_search_unpackage_master_sku",
+      "/open-api/03_order_search_package_list",
+      "/open-api/04_order_get_package_detail",
+      "/open-api/05_order_ship_package",
+      "/open-api/06_logistics_init_and_order",
+      "/open-api/07_logistics_get_shipping_document_parameter",
+      "/open-api/08_logistics_get_airway_bill_for_seller",
+      "/open-api/09_logistics_get_tracking_number",
+      "/open-api/10_logistics_download_shipping_document",
+      "/open-api/11_logistics_batch_ship_package",
+      "/open-api/12_logistics_download_shipping_document_job"
+    ]
+  },
+  "metadata_translated_at": "2025-10-16T09:00:49"
+}

@@ -1,0 +1,102 @@
+{
+  "endpoint": "/compatibility_check",
+  "method": "GET",
+  "description": "Check compatibility settings",
+  "parameters": [
+    {
+      "name": "compatibility_select",
+      "type": "string",
+      "required": true,
+      "description": "To select compatibility list will be input",
+      "children": []
+    },
+    {
+      "name": "event_id",
+      "type": "string",
+      "required": true,
+      "description": "ID of the event",
+      "children": []
+    },
+    {
+      "name": "model_id",
+      "type": "string",
+      "required": true,
+      "description": "ID of the model",
+      "children": []
+    },
+    {
+      "name": "language",
+      "type": "string",
+      "required": true,
+      "description": "A language is pre-defined by default",
+      "children": []
+    }
+  ],
+  "response_fields": [
+    {
+      "name": "error",
+      "type": "string",
+      "description": "Indicate error first line error. Empty if no error",
+      "children": []
+    },
+    {
+      "name": "message",
+      "type": "string",
+      "description": "Message error first line error. Empty if no error",
+      "children": []
+    },
+    {
+      "name": "warning",
+      "type": "string",
+      "description": "Always empty before first error. Empty if no error",
+      "children": []
+    },
+    {
+      "name": "model_type",
+      "type": "string",
+      "description": "Name of the model",
+      "children": []
+    },
+    {
+      "name": "event_id",
+      "type": "string",
+      "description": "ID of the event",
+      "children": []
+    },
+    {
+      "name": "model_name",
+      "type": "string",
+      "description": "Name of the model",
+      "children": []
+    },
+    {
+      "name": "line_id",
+      "type": "integer",
+      "description": "ID of the line",
+      "children": []
+    },
+    {
+      "name": "cell_name",
+      "type": "string",
+      "description": "Name of the cell",
+      "children": []
+    },
+    {
+      "name": "model_status",
+      "type": "string",
+      "description": "Name of the status",
+      "children": []
+    }
+  ],
+  "update_log": [],
+  "hidden_fields": [],
+  "metadata": {
+    "total_chunks": 1,
+    "chunks_with_errors": 0,
+    "total_parameters_before_dedup": 4,
+    "total_parameters_after_dedup": 4,
+    "update_log_entries": 0,
+    "hidden_fields_count": 0,
+    "source_results": "workspaces\\v2.product.get_vehicle_list_by_compatibility_detail\\results\\all_chunks_results.json"
+  }
+}

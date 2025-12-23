@@ -4,9 +4,9 @@ import (
 	"encoding/json"
 	"fmt"
 	"log"
-	"qoo10jp-order-go/internal/config"
-	"qoo10jp-order-go/internal/models"
-	"qoo10jp-order-go/pkg/redis"
+	"shopee-order-go/internal/config"
+	"shopee-order-go/internal/models"
+	"shopee-order-go/pkg/redis"
 	"time"
 
 	"github.com/joho/godotenv"
@@ -27,7 +27,7 @@ func main() {
 	if err != nil {
 		log.Fatalf("Redis 클라이언트 생성 실패: %v", err)
 	}
-	
+
 	fmt.Println("=== 실제 계정 테스트 시작 ===")
 
 	// 실제 online94 계정 정보로 메시지 생성
@@ -47,7 +47,7 @@ func main() {
 	fmt.Printf("실제 계정 메시지 생성: %s\n", string(messageJSON))
 
 	// Redis 큐에 메시지 추가
-	queueName := "qoo10jp_order_queue"
+	queueName := "shopee_order_queue"
 	err = redisClient.PushToQueue(queueName, string(messageJSON))
 	if err != nil {
 		log.Fatalf("Redis 큐 푸시 실패: %v", err)
@@ -65,16 +65,6 @@ func main() {
 
 	fmt.Println("\n이제 워커가 실제 API 호출을 시도하고 실패 시 웹훅을 보낼 것입니다.")
 	fmt.Println("워커 로그를 확인하여 실패 웹훅 메시지가 전송되는지 확인하세요.")
-	
+
 	fmt.Println("\n=== 테스트 완료 ===")
 }
-
-
-
-
-
-
-
-
-
-

@@ -1,0 +1,88 @@
+[
+  {
+    "chunk_index": 1,
+    "total_chunks": 1,
+    "endpoint": "/choose.chouse.com/api/follow_prize/delete_prize",
+    "method": "POST",
+    "description": null,
+    "update_log": [
+      {
+        "date": "2020-08-04",
+        "change": "reset logs for beta parameters"
+      },
+      {
+        "date": "2020-07-14",
+        "change": "add the full path information"
+      },
+      {
+        "date": "2020-06-14",
+        "change": "Optimize the nested parameter and response parameter description information"
+      },
+      {
+        "date": "2017-11-28",
+        "change": "updated the challenge_id"
+      }
+    ],
+    "parameters": [
+      {
+        "name": "prize_id",
+        "type": "string",
+        "required": true,
+        "description": "Prize ID is grouped when registration is successful",
+        "children": []
+      },
+      {
+        "name": "group_token",
+        "type": "string",
+        "required": true,
+        "description": "The token for DY Users, using to identify prize permission to group, need to refresh one time every 30 days",
+        "children": []
+      },
+      {
+        "name": "shop_id",
+        "type": "integer",
+        "required": true,
+        "description": "Standard unique identifier for a shop. Required param for shopwise.",
+        "children": []
+      }
+    ],
+    "response_fields": [
+      {
+        "name": "campaign_id",
+        "type": "int32",
+        "required": false,
+        "description": "The unique identifier for the coupled token",
+        "children": []
+      },
+      {
+        "name": "message",
+        "type": "string",
+        "required": false,
+        "description": "Message error text in group: Every the shop response",
+        "children": []
+      },
+      {
+        "name": "request_id",
+        "type": "string",
+        "required": false,
+        "description": "The identifier of the API request for you",
+        "children": []
+      }
+    ],
+    "notes": "The documentation includes error codes and examples sections that I've not fully detailed in the JSON structure as they weren't specifically requested in the extraction requirements. The API appears to be related to prize deletion functionality in what seems to be a shopping or rewards system.",
+    "chunk_metadata": {
+      "index": 1,
+      "total": 1,
+      "y_start": 0,
+      "y_end": 4529,
+      "overlap_top": 0,
+      "overlap_bottom": 0,
+      "height": 4529,
+      "path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\workspaces\\v2.follow_prize.delete_follow_prize\\chunks\\chunk_001.png",
+      "filename": "chunk_001.png",
+      "width": 837
+    },
+    "analysis_timestamp": "2025-10-10T05:43:32.462963",
+    "model": "claude-3-5-sonnet-20241022"
+  }
+]

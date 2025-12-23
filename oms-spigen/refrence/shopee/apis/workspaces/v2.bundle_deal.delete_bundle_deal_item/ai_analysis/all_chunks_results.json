@@ -1,0 +1,85 @@
+[
+  {
+    "chunk_index": 1,
+    "total_chunks": 1,
+    "endpoint": "bundle_bundle_buy",
+    "method": null,
+    "description": null,
+    "update_log": [],
+    "hidden_fields": [],
+    "parameters": [
+      {
+        "name": "id",
+        "type": "string",
+        "required": true,
+        "description": "http://platform2.mywebsite.com/m/Bundle_business_bundle_buy.html",
+        "children": []
+      },
+      {
+        "name": "ver",
+        "type": "string",
+        "required": true,
+        "description": "Version number",
+        "children": []
+      },
+      {
+        "name": "sign",
+        "type": "string",
+        "required": true,
+        "description": null,
+        "children": []
+      },
+      {
+        "name": "bundle_info_id",
+        "type": "string",
+        "required": true,
+        "description": "Request unique identifier for a shop",
+        "children": []
+      },
+      {
+        "name": "size_id",
+        "type": "string",
+        "required": true,
+        "description": "Request unique identifier for an item",
+        "children": []
+      }
+    ],
+    "response_fields": [
+      {
+        "name": "error_code",
+        "type": "string",
+        "description": "The API is not in use"
+      },
+      {
+        "name": "bundle_bundle_buy_size",
+        "type": "string",
+        "description": "Connect error occurred"
+      },
+      {
+        "name": "price_server",
+        "type": "string",
+        "description": "No permission to connect api"
+      },
+      {
+        "name": "price",
+        "type": "string",
+        "description": "Invalid parameters"
+      }
+    ],
+    "notes": "The documentation appears to be for a bundle purchase API. The image shows both required parameters and error codes. Some descriptions and context might be truncated or missing. The endpoint name suggests it's related to bundle buying functionality.",
+    "chunk_metadata": {
+      "index": 1,
+      "total": 1,
+      "y_start": 0,
+      "y_end": 5014,
+      "overlap_top": 0,
+      "overlap_bottom": 0,
+      "height": 5014,
+      "path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\workspaces\\v2.bundle_deal.delete_bundle_deal_item\\chunks\\chunk_001.png",
+      "filename": "chunk_001.png",
+      "width": 837
+    },
+    "analysis_timestamp": "2025-10-10T05:33:59.622916",
+    "model": "claude-3-5-sonnet-20241022"
+  }
+]

@@ -1,0 +1,71 @@
+{
+  "chunk_index": 4,
+  "endpoint": null,
+  "method": null,
+  "description": null,
+  "parameters": [],
+  "response_fields": [
+    {
+      "name": "API Permissions",
+      "type": "object",
+      "description": "APP types that can call this API",
+      "children": [
+        {
+          "name": "ERP System",
+          "type": "string",
+          "description": null
+        },
+        {
+          "name": "Seller In House System",
+          "type": "string",
+          "description": null
+        },
+        {
+          "name": "Product Management",
+          "type": "string",
+          "description": null
+        },
+        {
+          "name": "Swam ERP",
+          "type": "string",
+          "description": null
+        }
+      ]
+    },
+    {
+      "name": "Update Log",
+      "type": "object",
+      "description": "API update history",
+      "children": [
+        {
+          "name": "2025-09-19",
+          "type": "string",
+          "description": "The request field certification_type has been removed. If this field is still passed in the request, it will be ignored by the system"
+        },
+        {
+          "name": "2025-04-28",
+          "type": "string",
+          "description": "Add permit_id"
+        },
+        {
+          "name": "2025-04-23",
+          "type": "string",
+          "description": "Add PH certification_info"
+        }
+      ]
+    }
+  ],
+  "chunk_metadata": {
+    "index": 4,
+    "total": 4,
+    "y_start": 22250,
+    "y_end": 24121,
+    "overlap_top": 500,
+    "overlap_bottom": 0,
+    "height": 1871,
+    "path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\workspaces\\v2.product.add_item\\chunks\\chunk_004.png",
+    "filename": "chunk_004.png",
+    "width": 837
+  },
+  "chunk_path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\workspaces\\v2.product.add_item\\chunks\\chunk_004.png"
+}

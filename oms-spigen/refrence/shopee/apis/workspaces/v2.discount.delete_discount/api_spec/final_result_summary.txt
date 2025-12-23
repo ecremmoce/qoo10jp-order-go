@@ -1,0 +1,37 @@
+======================================================================
+API SPECIFICATION SUMMARY
+======================================================================
+
+Endpoint: None DiscountDelete_discount
+Description: Discount delete, discount
+
+Parameters (7):
+----------------------------------------------------------------------
+* access_token (string)
+   Use the key to call config to obtain your permission to operate
+* shop_id (int)
+   Uniquee id
+* sign (string)
+   Signature
+* discount_id (int)
+   Discount unique identifier for a discount
+  error (string)
+   Indicate error details if any error. Empty if no error occurred
+  discount_id (int)
+   Discount unique identifier for a discount
+  result_type (string)
+   The results of the API request for error details
+
+Metadata:
+----------------------------------------------------------------------
+  total_chunks: 1
+  chunks_with_errors: 0
+  total_parameters_before_dedup: 7
+  total_parameters_after_dedup: 7
+  update_log_entries: 3
+  hidden_fields_count: 0
+  source_results: workspaces\v2.discount.delete_discount\results\all_chunks_results.json
+
+======================================================================
+Legend: * = required parameter
+======================================================================

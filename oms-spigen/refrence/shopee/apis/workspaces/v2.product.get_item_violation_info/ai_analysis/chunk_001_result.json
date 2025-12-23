@@ -1,0 +1,97 @@
+{
+  "chunk_index": 1,
+  "total_chunks": 1,
+  "endpoint": null,
+  "method": null,
+  "description": null,
+  "update_log": [],
+  "hidden_fields": [],
+  "parameters": [
+    {
+      "name": "URL",
+      "type": "string",
+      "required": true,
+      "description": "System reference URL",
+      "children": []
+    },
+    {
+      "name": "video_title",
+      "type": "string",
+      "required": false,
+      "description": "Video title",
+      "children": []
+    },
+    {
+      "name": "voice_id",
+      "type": "string",
+      "required": true,
+      "description": "Voice ID to be used",
+      "children": []
+    },
+    {
+      "name": "max_id",
+      "type": "integer",
+      "required": false,
+      "description": "Used for pagination of the request. Required if pagination is needed.",
+      "children": []
+    },
+    {
+      "name": "translate",
+      "type": "string",
+      "required": false,
+      "description": "Language code (e.g. ja,en,zh)",
+      "children": []
+    },
+    {
+      "name": "country",
+      "type": "string",
+      "required": false,
+      "description": "Variable country prefix (e.g., jp)",
+      "children": []
+    },
+    {
+      "name": "special_id",
+      "type": "string",
+      "required": false,
+      "description": "Two digits to be used for each request.",
+      "children": []
+    },
+    {
+      "name": "method",
+      "type": "string",
+      "required": false,
+      "description": "Method used to deliver content.",
+      "children": []
+    },
+    {
+      "name": "creative_type",
+      "type": "string",
+      "required": false,
+      "description": "Content creation type defined by feature",
+      "children": []
+    },
+    {
+      "name": "suggestion",
+      "type": "string",
+      "required": false,
+      "description": "Content provider can set suggestions for content flow",
+      "children": []
+    }
+  ],
+  "response_fields": [],
+  "notes": "The image shows an API documentation page with various parameters. Some parameters appear to be related to video/content delivery and localization. The documentation includes common parameters and optional parameters with their types and descriptions.",
+  "chunk_metadata": {
+    "index": 1,
+    "total": 1,
+    "y_start": 0,
+    "y_end": 5257,
+    "overlap_top": 0,
+    "overlap_bottom": 0,
+    "height": 5257,
+    "path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\workspaces\\v2.product.get_item_violation_info\\chunks\\chunk_001.png",
+    "filename": "chunk_001.png",
+    "width": 837
+  },
+  "analysis_timestamp": "2025-10-10T06:29:16.847059",
+  "model": "claude-3-5-sonnet-20241022"
+}

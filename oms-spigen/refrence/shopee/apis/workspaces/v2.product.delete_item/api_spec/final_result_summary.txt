@@ -1,0 +1,30 @@
+======================================================================
+API SPECIFICATION SUMMARY
+======================================================================
+
+Endpoint: None None
+
+Parameters (4):
+----------------------------------------------------------------------
+* url (string)
+   The target API URL
+  img_client (string)
+   This is to display the hierarchy of the request. Required to distinguish if client is Chinese
+  article_type (string)
+   The type to tell article using to decide user preference in order to process data
+  img_id (string)
+   Identifies server-side numerical id: pids, file_path
+
+Metadata:
+----------------------------------------------------------------------
+  total_chunks: 1
+  chunks_with_errors: 0
+  total_parameters_before_dedup: 4
+  total_parameters_after_dedup: 4
+  update_log_entries: 0
+  hidden_fields_count: 0
+  source_results: workspaces\v2.product.delete_item\results\all_chunks_results.json
+
+======================================================================
+Legend: * = required parameter
+======================================================================

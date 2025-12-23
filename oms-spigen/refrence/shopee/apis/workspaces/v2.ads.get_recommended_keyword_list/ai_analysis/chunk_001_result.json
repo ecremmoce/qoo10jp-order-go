@@ -1,0 +1,97 @@
+{
+  "chunk_index": 1,
+  "total_chunks": 1,
+  "endpoint": "ads_get_recommended_keyword_list",
+  "method": "GET",
+  "description": "API endpoint for retrieving recommended keywords",
+  "update_log": [
+    {
+      "date": "2025-08-18",
+      "change": "Search logs for more parameters"
+    },
+    {
+      "date": "2025-08-18",
+      "change": "Search"
+    }
+  ],
+  "parameters": [
+    {
+      "name": "access_token",
+      "type": "string",
+      "required": true,
+      "description": "Required authorization token",
+      "children": []
+    },
+    {
+      "name": "prog_id",
+      "type": "string",
+      "required": false,
+      "description": null,
+      "children": []
+    },
+    {
+      "name": "opt",
+      "type": "string",
+      "required": false,
+      "description": "Suggests unique identifier for a prog. Required params to start PNS",
+      "children": []
+    }
+  ],
+  "response_fields": [
+    {
+      "name": "error",
+      "type": "string",
+      "description": "Error code details when an error returned",
+      "children": []
+    },
+    {
+      "name": "message",
+      "type": "string",
+      "description": "Error description",
+      "children": []
+    },
+    {
+      "name": "request_id",
+      "type": "string",
+      "description": "Request ID unique to each request",
+      "children": []
+    },
+    {
+      "name": "suggested_keywords",
+      "type": "array",
+      "description": "Suggested keywords recommended from program",
+      "children": []
+    },
+    {
+      "name": "sample_size",
+      "type": "integer",
+      "description": "Size of sample dataset used",
+      "children": []
+    }
+  ],
+  "error_codes": [
+    {
+      "code": "error_param",
+      "description": "Wrong parameters"
+    },
+    {
+      "code": "error_not_found",
+      "description": "The information you queried is not found"
+    }
+  ],
+  "notes": "The documentation shows common parameters, request parameters, response parameters, error codes and API permissions sections. Some descriptions appear to be truncated or incomplete in the image.",
+  "chunk_metadata": {
+    "index": 1,
+    "total": 1,
+    "y_start": 0,
+    "y_end": 4453,
+    "overlap_top": 0,
+    "overlap_bottom": 0,
+    "height": 4453,
+    "path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\workspaces\\v2.ads.get_recommended_keyword_list\\chunks\\chunk_001.png",
+    "filename": "chunk_001.png",
+    "width": 837
+  },
+  "analysis_timestamp": "2025-10-10T05:32:16.067128",
+  "model": "claude-3-5-sonnet-20241022"
+}

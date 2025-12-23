@@ -1,0 +1,120 @@
+{
+  "chunk_index": 1,
+  "total_chunks": 1,
+  "endpoint": null,
+  "method": null,
+  "description": null,
+  "update_log": [
+    {
+      "date": "2022-10-27",
+      "change": "Get error massage when the page doesn't exist"
+    },
+    {
+      "date": "2022-10-26",
+      "change": "Fixed bugs related to pagination"
+    }
+  ],
+  "hidden_fields": [],
+  "parameters": [
+    {
+      "name": "success_response",
+      "type": "object",
+      "required": false,
+      "description": "Response format",
+      "children": [
+        {
+          "name": "status",
+          "type": "string",
+          "required": true,
+          "description": "Response status"
+        },
+        {
+          "name": "message",
+          "type": "string",
+          "required": true,
+          "description": "Response message"
+        },
+        {
+          "name": "code",
+          "type": "integer",
+          "required": true,
+          "description": "Response code"
+        },
+        {
+          "name": "data",
+          "type": "object",
+          "required": true,
+          "description": "Response data",
+          "children": [
+            {
+              "name": "total_count",
+              "type": "integer",
+              "required": false,
+              "description": "Total count"
+            },
+            {
+              "name": "page_count",
+              "type": "integer",
+              "required": false,
+              "description": "Page count"
+            },
+            {
+              "name": "current_page",
+              "type": "integer",
+              "required": false,
+              "description": "Current page"
+            },
+            {
+              "name": "per_page",
+              "type": "integer",
+              "required": false,
+              "description": "Items per page"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "error_response",
+      "type": "object",
+      "required": false,
+      "description": "Error response format",
+      "children": [
+        {
+          "name": "status",
+          "type": "string",
+          "required": true,
+          "description": "Error status"
+        },
+        {
+          "name": "message",
+          "type": "string",
+          "required": true,
+          "description": "Error message"
+        },
+        {
+          "name": "code",
+          "type": "integer",
+          "required": true,
+          "description": "Error code"
+        }
+      ]
+    }
+  ],
+  "response_fields": [],
+  "notes": "This appears to be documentation for a standard API response format with pagination support. It includes both success and error response structures, along with detailed update logs showing recent pagination-related changes.",
+  "chunk_metadata": {
+    "index": 1,
+    "total": 1,
+    "y_start": 0,
+    "y_end": 6438,
+    "overlap_top": 0,
+    "overlap_bottom": 0,
+    "height": 6438,
+    "path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\workspaces\\v2.product.get_item_promotion\\chunks\\chunk_001.png",
+    "filename": "chunk_001.png",
+    "width": 837
+  },
+  "analysis_timestamp": "2025-10-10T06:29:03.984021",
+  "model": "claude-3-5-sonnet-20241022"
+}

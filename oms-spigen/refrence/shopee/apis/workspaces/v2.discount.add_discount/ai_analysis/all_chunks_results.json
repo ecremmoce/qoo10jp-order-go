@@ -1,0 +1,99 @@
+[
+  {
+    "chunk_index": 1,
+    "total_chunks": 1,
+    "endpoint": null,
+    "method": null,
+    "description": null,
+    "update_log": [
+      {
+        "date": "2022-09-26",
+        "change": "Add API Tags"
+      },
+      {
+        "date": "2022-08-25",
+        "change": "Update the Request Parameter and Response Parameter legacy information"
+      }
+    ],
+    "hidden_fields": [],
+    "parameters": [
+      {
+        "name": "URL",
+        "type": "string",
+        "required": true,
+        "description": "API endpoint URL",
+        "children": []
+      },
+      {
+        "name": "request_id",
+        "type": "string",
+        "required": true,
+        "description": "Request unique identifier for a return",
+        "children": []
+      },
+      {
+        "name": "seller_token",
+        "type": "string",
+        "required": true,
+        "description": "This is an access key to verify user permissions to call the SaaS API service.",
+        "children": []
+      },
+      {
+        "name": "shop_id",
+        "type": "string",
+        "required": true,
+        "description": "Shopee's unique identifier for a shop",
+        "children": []
+      }
+    ],
+    "response_fields": [
+      {
+        "name": "error",
+        "type": "string",
+        "description": "Error code",
+        "children": []
+      },
+      {
+        "name": "message",
+        "type": "string",
+        "description": "Error message",
+        "children": []
+      },
+      {
+        "name": "request_id",
+        "type": "string",
+        "description": "Request unique identifier for a returned record",
+        "children": []
+      }
+    ],
+    "error_codes": [
+      {
+        "code": "error_param",
+        "description": "Invalid parameter value"
+      },
+      {
+        "code": "error_auth",
+        "description": "Authentication failed"
+      },
+      {
+        "code": "error_code",
+        "description": "There's no error code"
+      }
+    ],
+    "notes": "The documentation appears to be for a Shopee API endpoint. While the specific endpoint path is not visible in the image, it contains comprehensive parameter, response, and error code documentation. The update log shows recent changes related to API tags and parameter information updates.",
+    "chunk_metadata": {
+      "index": 1,
+      "total": 1,
+      "y_start": 0,
+      "y_end": 4957,
+      "overlap_top": 0,
+      "overlap_bottom": 0,
+      "height": 4957,
+      "path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\workspaces\\v2.discount.add_discount\\chunks\\chunk_001.png",
+      "filename": "chunk_001.png",
+      "width": 837
+    },
+    "analysis_timestamp": "2025-10-10T05:35:36.755518",
+    "model": "claude-3-5-sonnet-20241022"
+  }
+]

@@ -1,0 +1,38 @@
+======================================================================
+API SPECIFICATION SUMMARY
+======================================================================
+
+Endpoint: None None
+
+Parameters (8):
+----------------------------------------------------------------------
+  error_data (string)
+   data not exist
+  error_param (string)
+   parameter invalid
+  error_param_size (string)
+   The information can operate is not found
+  error_info (string)
+   Something wrong, Please try later
+  error_product_id_not_found (string)
+   Item_id's not found
+  error_param_time_is_not_found (string)
+   time_id's not found
+  error_permission (string)
+   Count of the variation should be under 50. Count of nested variations combinations should be under 3000
+  error_exist (string)
+   Our system is being some time to respond, please try later
+
+Metadata:
+----------------------------------------------------------------------
+  total_chunks: 2
+  chunks_with_errors: 0
+  total_parameters_before_dedup: 10
+  total_parameters_after_dedup: 8
+  update_log_entries: 0
+  hidden_fields_count: 0
+  source_results: workspaces\v2.product.init_tier_variation\results\all_chunks_results.json
+
+======================================================================
+Legend: * = required parameter
+======================================================================

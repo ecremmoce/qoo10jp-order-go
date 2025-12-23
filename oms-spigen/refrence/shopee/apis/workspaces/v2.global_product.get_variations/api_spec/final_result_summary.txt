@@ -1,0 +1,33 @@
+======================================================================
+API SPECIFICATION SUMMARY
+======================================================================
+
+Endpoint: GET /api/v2/global_product/get_variations
+Description: Get the standardized tier variation defined by Shopee, which consists of three layers. The first layer is tiers, the second is groups, groups are used to divide options, and the third layer is options.
+
+Parameters (5):
+----------------------------------------------------------------------
+* URL (string)
+   Production endpoint
+* URL (Chinese Mainland) (string)
+   Production endpoint for Chinese Mainland
+* URL (Brazil) (string)
+   Production endpoint for Brazil
+* Test URL (string)
+   Test/Sandbox endpoint
+* Test URL (Chinese Mainland) (string)
+   Test/Sandbox endpoint for Chinese Mainland
+
+Metadata:
+----------------------------------------------------------------------
+  total_chunks: 1
+  chunks_with_errors: 0
+  total_parameters_before_dedup: 5
+  total_parameters_after_dedup: 5
+  update_log_entries: 0
+  hidden_fields_count: 0
+  source_results: workspaces\v2.global_product.get_variations\results\all_chunks_results.json
+
+======================================================================
+Legend: * = required parameter
+======================================================================

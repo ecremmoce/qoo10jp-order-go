@@ -1,0 +1,43 @@
+======================================================================
+API SPECIFICATION SUMMARY
+======================================================================
+
+Endpoint: GET https://mansightfx.com/v1/fx/processes_and_fees_test_size_trading_number
+Description: Test function for checking fees and processes related to trading size numbers
+
+Parameters (10):
+----------------------------------------------------------------------
+* service_id (string)
+   Unique ID related to each request
+* broker_token (string)
+   Token for MT4/MT5 query, using to identify fund permission to the api query process
+* mt_type (string)
+   The platform identifier to protect api call ends. Available values: mt4, mt5
+* margin (float)
+   Used for test to identify free margin used to open order
+* order_lot (float)
+   The lot in order. You can specify up to 10 decimal places like 0.01234567891
+* user_id (string)
+   Uniquely unique identifier for an order
+* symbol_name_short (string)
+   The symbol to look for process and test action
+* process_id (string)
+   The unique related process request
+* command_id (integer)
+   The command number
+* opening_process_id (string)
+   ID of original process. Required
+
+Metadata:
+----------------------------------------------------------------------
+  total_chunks: 1
+  chunks_with_errors: 0
+  total_parameters_before_dedup: 10
+  total_parameters_after_dedup: 10
+  update_log_entries: 0
+  hidden_fields_count: 0
+  source_results: workspaces\v2.first_mile.generate_and_bind_first_mile_tracking_number\results\all_chunks_results.json
+
+======================================================================
+Legend: * = required parameter
+======================================================================

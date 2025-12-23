@@ -1,0 +1,148 @@
+[
+  {
+    "chunk_index": 1,
+    "total_chunks": 1,
+    "endpoint": "/v2/payment/generate_income_report",
+    "method": "HTTP",
+    "description": "Trigger income report generation",
+    "update_log": [
+      {
+        "date": "2019-05-15",
+        "change": "New API"
+      }
+    ],
+    "parameters": [
+      {
+        "name": "partner_id",
+        "type": "string",
+        "required": true,
+        "description": "Partner ID assigned upon registration is successful. Required for all requests."
+      },
+      {
+        "name": "timestamp",
+        "type": "timestamp",
+        "required": true,
+        "description": "This is to indicate the timestamp of the request. Required for all requests. Expires in 5 minutes."
+      },
+      {
+        "name": "access_token",
+        "type": "string",
+        "required": true,
+        "description": "The token for API access, using to identify your permission to the api. Valid for multiple use and expires in 4 hours."
+      },
+      {
+        "name": "shop_id",
+        "type": "int",
+        "required": true,
+        "description": "Shopee's unique identifier for a shop. Required param for most APIs."
+      },
+      {
+        "name": "sign",
+        "type": "string",
+        "required": true,
+        "description": "Authentication signature calculated using partner_id, api_path, timestamp, access_token, and partner_key as hash algorithm. More detail"
+      },
+      {
+        "name": "release_time_from",
+        "type": "int64",
+        "required": true,
+        "description": "Start time in epoch"
+      },
+      {
+        "name": "release_time_to",
+        "type": "int64",
+        "required": true,
+        "description": "End time in epoch"
+      }
+    ],
+    "response_fields": [
+      {
+        "name": "response",
+        "type": "object",
+        "children": [
+          {
+            "name": "id",
+            "type": "int64",
+            "description": "Identifier of income report file"
+          },
+          {
+            "name": "error",
+            "type": "string",
+            "description": "error code"
+          },
+          {
+            "name": "msg",
+            "type": "string",
+            "description": "error message"
+          },
+          {
+            "name": "request_id",
+            "type": "string",
+            "description": "request id"
+          }
+        ]
+      }
+    ],
+    "error_codes": [
+      {
+        "code": "error_data",
+        "description": "param data failed"
+      },
+      {
+        "code": "error_data",
+        "description": "data not exist"
+      },
+      {
+        "code": "error_param",
+        "description": "parameter invalid"
+      },
+      {
+        "code": "error_param",
+        "description": "Shop is not a mart shop. Please use Mart Shop ID"
+      },
+      {
+        "code": "error_param",
+        "description": "release_time_from and/or release_time_to parameter is missing or invalid. Please provide both a valid start date and end date to query where start date cannot be later than the end date"
+      },
+      {
+        "code": "error_param",
+        "description": "Please enter a valid time range input, where the start date should not be later than the end date"
+      },
+      {
+        "code": "error_param",
+        "description": "The information you queried is not found"
+      },
+      {
+        "code": "error_param",
+        "description": "Wrong parameters /data config/"
+      },
+      {
+        "code": "error_server",
+        "description": "Something wrong. Please try later"
+      },
+      {
+        "code": "error_shop",
+        "description": "shopid is invalid"
+      },
+      {
+        "code": "error_param",
+        "description": "request not from gateway"
+      }
+    ],
+    "notes": "The API documentation includes multiple URL variants for different environments (Console Standard, Chinese Mainland, Brazil). The error codes section is comprehensive and provides detailed information about possible failure scenarios.",
+    "chunk_metadata": {
+      "index": 1,
+      "total": 1,
+      "y_start": 0,
+      "y_end": 2937,
+      "overlap_top": 0,
+      "overlap_bottom": 0,
+      "height": 2937,
+      "path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\workspaces\\v2.payment.generate_income_report\\chunks\\chunk_001.png",
+      "filename": "chunk_001.png",
+      "width": 837
+    },
+    "analysis_timestamp": "2025-10-10T06:18:53.029496",
+    "model": "claude-3-5-sonnet-20241022"
+  }
+]

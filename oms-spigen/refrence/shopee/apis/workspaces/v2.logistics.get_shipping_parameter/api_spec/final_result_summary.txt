@@ -1,0 +1,42 @@
+======================================================================
+API SPECIFICATION SUMMARY
+======================================================================
+
+Endpoint: None None
+
+Parameters (9):
+----------------------------------------------------------------------
+* id (string)
+* user_id (string)
+* create_time (integer)
+   Unix timestamp in seconds
+* update_time (integer)
+   Unix timestamp in seconds
+* status (integer)
+   Current status
+* type (integer)
+   Type of record
+* amount (string)
+   Amount value
+* currency (string)
+   Currency code
+* details (object)
+   Additional details
+    reference_id (string)
+     Reference identifier
+    notes (string)
+     Additional notes
+
+Metadata:
+----------------------------------------------------------------------
+  total_chunks: 1
+  chunks_with_errors: 0
+  total_parameters_before_dedup: 9
+  total_parameters_after_dedup: 9
+  update_log_entries: 2
+  hidden_fields_count: 0
+  source_results: workspaces\v2.logistics.get_shipping_parameter\results\all_chunks_results.json
+
+======================================================================
+Legend: * = required parameter
+======================================================================

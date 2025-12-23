@@ -1,0 +1,45 @@
+======================================================================
+API SPECIFICATION SUMMARY
+======================================================================
+
+Endpoint: GET /ads/ads_get_plan_product_campaign
+Description: Campaign parameters response
+
+Parameters (5):
+----------------------------------------------------------------------
+* country_id (string)
+   Two ISO3 Character ID (Provide if available)
+* end_period (string)
+   Campaign dates filter
+  time_budget (float)
+   Daily budget for Campaign
+* end_date (string)
+   Format in YYYY-MM-DD ( ex. 2017-11-25)
+* start_date (string)
+   Format in YYYY-MM-DD
+
+Response Fields (5):
+----------------------------------------------------------------------
+  good (string)
+   Indicate error type first error. Empty if no error
+  campaign (string)
+   Indicate error details first error. Empty if no error
+  training (string)
+   An occurred error in training, Empty if training succeed
+  response (mixed)
+   The identifier for API request for error tracking
+  campaign_id (mixed)
+
+Metadata:
+----------------------------------------------------------------------
+  total_chunks: 1
+  chunks_with_errors: 0
+  total_parameters_before_dedup: 5
+  total_parameters_after_dedup: 5
+  update_log_entries: 0
+  hidden_fields_count: 0
+  source_results: workspaces\v2.ads.edit_gms_product_campaign\results\all_chunks_results.json
+
+======================================================================
+Legend: * = required parameter
+======================================================================

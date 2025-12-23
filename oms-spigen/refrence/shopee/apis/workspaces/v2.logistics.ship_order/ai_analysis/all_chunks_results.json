@@ -1,0 +1,134 @@
+[
+  {
+    "chunk_index": 1,
+    "endpoint": null,
+    "method": null,
+    "description": null,
+    "parameters": [],
+    "response_fields": [
+      {
+        "name": "logistics.shipping_order_needs_tracking_number",
+        "type": "string",
+        "description": "Parameter tracking_number can not be null",
+        "children": []
+      },
+      {
+        "name": "logistics.shipping_order_real_ready_package_number",
+        "type": "string",
+        "description": "Please don't request with package_number for this unpaid order",
+        "children": []
+      },
+      {
+        "name": "logistics.shipping_order_real_ready_to_ship",
+        "type": "string",
+        "description": "The order is not ready to ship",
+        "children": []
+      }
+    ],
+    "chunk_metadata": {
+      "index": 1,
+      "total": 3,
+      "y_start": 0,
+      "y_end": 8000,
+      "overlap_top": 0,
+      "overlap_bottom": 500,
+      "height": 8000,
+      "path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\workspaces\\v2.logistics.ship_order\\chunks\\chunk_001.png",
+      "filename": "chunk_001.png",
+      "width": 837
+    },
+    "chunk_path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\workspaces\\v2.logistics.ship_order\\chunks\\chunk_001.png"
+  },
+  {
+    "chunk_index": 2,
+    "endpoint": null,
+    "method": null,
+    "description": null,
+    "parameters": [],
+    "response_fields": [
+      {
+        "name": "logistics.error_param",
+        "type": "string",
+        "description": "The address is invalid. Please check the address.",
+        "children": []
+      },
+      {
+        "name": "logistics.error_status",
+        "type": "string",
+        "description": "Logistic status is not supported",
+        "children": []
+      },
+      {
+        "name": "error_param",
+        "type": "string",
+        "description": "Invalid timestamp",
+        "children": []
+      },
+      {
+        "name": "error_network",
+        "type": "string",
+        "description": "Inner http call failed",
+        "children": []
+      },
+      {
+        "name": "error_data",
+        "type": "string",
+        "description": "data not exist",
+        "children": []
+      }
+    ],
+    "chunk_metadata": {
+      "index": 2,
+      "total": 3,
+      "y_start": 7250,
+      "y_end": 15250,
+      "overlap_top": 500,
+      "overlap_bottom": 500,
+      "height": 8000,
+      "path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\workspaces\\v2.logistics.ship_order\\chunks\\chunk_002.png",
+      "filename": "chunk_002.png",
+      "width": 837
+    },
+    "chunk_path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\workspaces\\v2.logistics.ship_order\\chunks\\chunk_002.png"
+  },
+  {
+    "chunk_index": 3,
+    "endpoint": null,
+    "method": null,
+    "description": "API Documentation Update Log",
+    "parameters": [],
+    "response_fields": [
+      {
+        "name": "error_param",
+        "type": "string",
+        "description": "Please do not request with tracking_no for this channel which does not require tracking_no",
+        "children": []
+      },
+      {
+        "name": "error_param",
+        "type": "string",
+        "description": "Slug not allowed empty",
+        "children": []
+      },
+      {
+        "name": "error_param",
+        "type": "string",
+        "description": "Slug not required",
+        "children": []
+      }
+    ],
+    "chunk_metadata": {
+      "index": 3,
+      "total": 3,
+      "y_start": 14750,
+      "y_end": 17713,
+      "overlap_top": 500,
+      "overlap_bottom": 0,
+      "height": 2963,
+      "path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\workspaces\\v2.logistics.ship_order\\chunks\\chunk_003.png",
+      "filename": "chunk_003.png",
+      "width": 837
+    },
+    "chunk_path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\workspaces\\v2.logistics.ship_order\\chunks\\chunk_003.png"
+  }
+]

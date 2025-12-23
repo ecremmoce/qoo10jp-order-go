@@ -1,0 +1,41 @@
+======================================================================
+API SPECIFICATION SUMMARY
+======================================================================
+
+Endpoint: None None
+
+Parameters (5):
+----------------------------------------------------------------------
+* url (string)
+   Request endpoint
+* method (string)
+   Request method (GET/POST/PUT/DELETE)
+  data (object)
+   The data to be transmitted in the request
+  params (object)
+   URL parameters
+  headers (object)
+   Request headers
+
+Response Fields (3):
+----------------------------------------------------------------------
+  status (integer)
+   Status code of the response
+  ok (boolean)
+   Whether the request was successful
+  data (object)
+   The response data
+
+Metadata:
+----------------------------------------------------------------------
+  total_chunks: 1
+  chunks_with_errors: 0
+  total_parameters_before_dedup: 5
+  total_parameters_after_dedup: 5
+  update_log_entries: 0
+  hidden_fields_count: 0
+  source_results: workspaces\v2.livestream.get_session_detail\results\all_chunks_results.json
+
+======================================================================
+Legend: * = required parameter
+======================================================================

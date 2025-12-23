@@ -1,0 +1,48 @@
+======================================================================
+API SPECIFICATION SUMMARY
+======================================================================
+
+Endpoint: GET /openapi/get_video_info
+Description: API for retrieving video information
+
+Parameters (4):
+----------------------------------------------------------------------
+* secret_id (string)
+   Partner ID is assigned upon registration to successful onboarding of the network
+* access_token (string)
+   The token for API system, which is initially sent permission to partner when first authentication
+* sign (string)
+   Digital signature formulated as shown in Ex.
+* timestamp (integer)
+   UNIX timestamp
+
+Response Fields (4):
+----------------------------------------------------------------------
+  code (integer)
+   Response status code
+  message (string)
+   Response message
+  request_id (string)
+   The identifier for an API request for each tracking
+  video_info (object)
+   Video information
+    title (string)
+     Title of the video
+    desc (string)
+     Description of the video
+    cover (string)
+     Cover image URL
+
+Metadata:
+----------------------------------------------------------------------
+  total_chunks: 1
+  chunks_with_errors: 0
+  total_parameters_before_dedup: 4
+  total_parameters_after_dedup: 4
+  update_log_entries: 0
+  hidden_fields_count: 0
+  source_results: platforms\shopee\apis\workspaces\v2.livestream.get_show_item\results\all_chunks_results.json
+
+======================================================================
+Legend: * = required parameter
+======================================================================

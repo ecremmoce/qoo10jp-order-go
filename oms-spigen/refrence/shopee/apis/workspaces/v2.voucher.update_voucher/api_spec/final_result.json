@@ -1,0 +1,89 @@
+{
+  "endpoint": null,
+  "method": null,
+  "description": null,
+  "parameters": [
+    {
+      "name": "product_id",
+      "type": "string",
+      "required": true,
+      "description": "Product ID",
+      "children": []
+    },
+    {
+      "name": "sku",
+      "type": "string",
+      "required": true,
+      "description": "Product SKU",
+      "children": []
+    },
+    {
+      "name": "amount",
+      "type": "integer",
+      "required": true,
+      "description": "Product amount/quantity",
+      "children": []
+    },
+    {
+      "name": "shipping_provider_id",
+      "type": "string",
+      "required": false,
+      "description": "Shipping provider ID",
+      "children": []
+    },
+    {
+      "name": "shipping_fee",
+      "type": "float",
+      "required": false,
+      "description": "Shipping fee",
+      "children": []
+    },
+    {
+      "name": "shipping_fee_original",
+      "type": "float",
+      "required": false,
+      "description": "Original shipping fee before any adjustments",
+      "children": []
+    },
+    {
+      "name": "shipping_fee_vat_amount",
+      "type": "float",
+      "required": false,
+      "description": "VAT amount for shipping fee",
+      "children": []
+    }
+  ],
+  "response_fields": [],
+  "update_log": [
+    {
+      "date": "2023-11-29",
+      "change": "Added support for new fields: shipping_fee_vat_amount"
+    },
+    {
+      "date": "2023-08-28",
+      "change": "New API launched"
+    },
+    {
+      "date": "2023-07-03",
+      "change": "Updated description of sku field"
+    },
+    {
+      "date": "2023-06-30",
+      "change": "Added support for new fields: shipping_fee_original"
+    },
+    {
+      "date": "2023-05-24",
+      "change": "Added support for new fields: shipping_provider_id"
+    }
+  ],
+  "hidden_fields": [],
+  "metadata": {
+    "total_chunks": 1,
+    "chunks_with_errors": 0,
+    "total_parameters_before_dedup": 7,
+    "total_parameters_after_dedup": 7,
+    "update_log_entries": 5,
+    "hidden_fields_count": 0,
+    "source_results": "workspaces\\v2.voucher.update_voucher\\results\\all_chunks_results.json"
+  }
+}

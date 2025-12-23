@@ -1,0 +1,99 @@
+{
+  "chunk_index": 1,
+  "total_chunks": 1,
+  "endpoint": "/chinese_advertisement_video_post",
+  "method": "POST",
+  "description": "API used to call the upload of Chinese video advertisement.",
+  "update_log": [],
+  "hidden_fields": [],
+  "parameters": [
+    {
+      "name": "postal_id",
+      "type": "int",
+      "required": true,
+      "description": "Product ID is generated upon registration is successful.",
+      "truncated": false,
+      "continued": false,
+      "children": []
+    },
+    {
+      "name": "timestamp",
+      "type": "string",
+      "required": true,
+      "description": "Signature Generation time, Unix timestamp format. Example: 1613608833",
+      "truncated": false,
+      "continued": false,
+      "children": []
+    },
+    {
+      "name": "video_upload_id",
+      "type": "string",
+      "required": true,
+      "description": "Frequency of the current post, starts from 0",
+      "truncated": false,
+      "continued": false,
+      "children": []
+    },
+    {
+      "name": "part_no",
+      "type": "int",
+      "required": true,
+      "description": "ID of this part",
+      "truncated": false,
+      "continued": false,
+      "children": []
+    },
+    {
+      "name": "part_content",
+      "type": "string",
+      "required": true,
+      "description": "The content of this part of file, Part size should be equals with partition_length",
+      "truncated": false,
+      "continued": false,
+      "children": []
+    }
+  ],
+  "response_fields": [
+    {
+      "name": "message",
+      "type": "string",
+      "description": "Status error details if the error. Empty if no validation errors",
+      "children": []
+    },
+    {
+      "name": "request_id",
+      "type": "string",
+      "description": "The identifier for an API request for error tracking",
+      "children": []
+    }
+  ],
+  "error_codes": [
+    {
+      "code": "error_param",
+      "description": "There is an error, linear or input"
+    },
+    {
+      "code": "error_path",
+      "description": "invalid access token"
+    },
+    {
+      "code": "error_length",
+      "description": "wrong file size failed"
+    }
+  ],
+  "notes": "The documentation includes multiple error codes and examples in different programming languages (Java, PHP, CURL, Python). There are also different URLs provided for Chinese Mainland and Global regions.",
+  "chunk_metadata": {
+    "index": 1,
+    "total": 1,
+    "y_start": 0,
+    "y_end": 4322,
+    "overlap_top": 0,
+    "overlap_bottom": 0,
+    "height": 4322,
+    "path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\workspaces\\v2.media_space.upload_video_part\\chunks\\chunk_001.png",
+    "filename": "chunk_001.png",
+    "width": 837
+  },
+  "analysis_timestamp": "2025-10-10T06:11:15.152886",
+  "model": "claude-3-5-sonnet-20241022"
+}

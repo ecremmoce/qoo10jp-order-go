@@ -1,0 +1,79 @@
+{
+  "chunk_index": 1,
+  "total_chunks": 1,
+  "endpoint": null,
+  "method": null,
+  "description": null,
+  "update_log": [],
+  "hidden_fields": [],
+  "parameters": [
+    {
+      "name": "URL",
+      "type": "string",
+      "required": true,
+      "description": "HTTP submission path, containing 'global_protect_token' parameter",
+      "children": []
+    },
+    {
+      "name": "method",
+      "type": "string",
+      "required": true,
+      "description": null,
+      "children": []
+    },
+    {
+      "name": "version",
+      "type": "string",
+      "required": true,
+      "description": null,
+      "children": []
+    }
+  ],
+  "response_fields": [
+    {
+      "name": "err_code",
+      "type": "integer",
+      "description": "Error code",
+      "children": []
+    },
+    {
+      "name": "err_msg",
+      "type": "string",
+      "description": "Error message text",
+      "children": []
+    }
+  ],
+  "error_codes": [
+    {
+      "code": "err_no_err",
+      "description": "No errors occurred"
+    },
+    {
+      "code": "err_system",
+      "description": "System error"
+    },
+    {
+      "code": "err_invalid_param",
+      "description": "Invalid parameter"
+    },
+    {
+      "code": "err_no_stock",
+      "description": "Out of stock"
+    }
+  ],
+  "notes": "The image appears to be API documentation showing common parameters, request parameters, response parameters, request examples, and error codes. The documentation seems to be for some kind of e-commerce or inventory system based on the error codes present.",
+  "chunk_metadata": {
+    "index": 1,
+    "total": 1,
+    "y_start": 0,
+    "y_end": 5567,
+    "overlap_top": 0,
+    "overlap_bottom": 0,
+    "height": 5567,
+    "path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\workspaces\\v2.global_product.update_price\\chunks\\chunk_001.png",
+    "filename": "chunk_001.png",
+    "width": 837
+  },
+  "analysis_timestamp": "2025-10-10T05:52:13.678867",
+  "model": "claude-3-5-sonnet-20241022"
+}

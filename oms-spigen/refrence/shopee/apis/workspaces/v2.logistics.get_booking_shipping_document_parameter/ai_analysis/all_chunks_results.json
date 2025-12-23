@@ -1,0 +1,96 @@
+[
+  {
+    "chunk_index": 1,
+    "total_chunks": 1,
+    "endpoint": "logistics/get_booking_mapping_document_parameter",
+    "method": "GET",
+    "description": "Get logistics mapping document parameters",
+    "update_log": [],
+    "hidden_fields": [],
+    "parameters": [
+      {
+        "name": "booking_id",
+        "type": "string",
+        "required": true,
+        "description": "The id of booking you want to get, less 24 bit",
+        "children": []
+      },
+      {
+        "name": "booking_sn",
+        "type": "string",
+        "required": true,
+        "description": "Request number identifier for a booking",
+        "children": []
+      }
+    ],
+    "response_fields": [
+      {
+        "name": "request_id",
+        "type": "string",
+        "description": "The identifier for an API request for error tracking",
+        "children": []
+      },
+      {
+        "name": "error",
+        "type": "string",
+        "description": "Indicate error type if any. Empty if no error happened",
+        "children": []
+      },
+      {
+        "name": "message",
+        "type": "string",
+        "description": "Indicate error message if any error happened",
+        "children": []
+      },
+      {
+        "name": "warning",
+        "type": "object",
+        "description": "Include warning message you should take care of",
+        "children": []
+      },
+      {
+        "name": "booking_id",
+        "type": "string",
+        "description": "Property unique identifier for a booking",
+        "children": []
+      },
+      {
+        "name": "result",
+        "type": "object",
+        "description": "The data of this API calls",
+        "children": []
+      },
+      {
+        "name": "need_doc",
+        "type": "string",
+        "description": "The shipping document type needed supports",
+        "children": []
+      }
+    ],
+    "error_codes": [
+      {
+        "code": "error_param",
+        "description": "Can not get some data for warehouse booking orders"
+      },
+      {
+        "code": "error_param",
+        "description": "Can not properly imported for warehouse booking orders"
+      }
+    ],
+    "notes": "The documentation shows both request and response parameters, along with error codes and examples in multiple formats (JSON, PHP, CURL, Python). The API appears to be related to logistics document mapping parameters for bookings.",
+    "chunk_metadata": {
+      "index": 1,
+      "total": 1,
+      "y_start": 0,
+      "y_end": 4270,
+      "overlap_top": 0,
+      "overlap_bottom": 0,
+      "height": 4270,
+      "path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\workspaces\\v2.logistics.get_booking_shipping_document_parameter\\chunks\\chunk_001.png",
+      "filename": "chunk_001.png",
+      "width": 837
+    },
+    "analysis_timestamp": "2025-10-10T06:02:47.365866",
+    "model": "claude-3-5-sonnet-20241022"
+  }
+]

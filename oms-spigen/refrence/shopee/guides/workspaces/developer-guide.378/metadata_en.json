@@ -1,0 +1,46 @@
+{
+  "document_id": "developer-guide.378",
+  "document_type": "guide",
+  "platform": "shopee",
+  "extracted_at": "2025-10-16T09:07:58",
+  "extracted_text": "# API Best Practices - AUTO PARTS: COMP/VPS\n\n## Introduction\n\nOs tipos com compatibilidade proverão a lista de veículos compatíveis com certa posição.\n\nOs itens com compatibilidade proverão a lista operante um produto de motor (obrigatório para o requisito da peça a ser a posição é criação a GRFIN já criação que não vão mais, trará consome um em item a um terão a criar no terão lista do com seu veículo.\n\nConsiderando acima, et a lista clientes (ou sellers) listalisem com itens de adaptáveis, recomendamos físeremos\nque experimentos os novos response na plataforma de vocle.\n\n## Estrutura dos dados\n\nOs itens dos veículos são armazenados na seguinte forma\n\n| Parâmetro | Significado | Exemplo |\n|-----------|-------------|---------|\n| brand_id | Id da marca relativa específica | 1270 |\n| brand_name | O nome da marca relacionada a esta brand_id | \"Chevrolet\" |\n| model_id | O id de um modelo específico | 9950 |\n| model_name | O nome do modelo relacionado ao model_id | \"Chevrolet\" |\n| year_id | O id de um ano específico | 3712 |\n| year_name | O ano relacionado a um dado year_id | \"1972\" |\n| version_id | A id de cada variação de um veículo | 5607 |\n| version_name | O nome da versão associada ao version_id | \"Pickup\" |\n\nObserve: É importante utilizar os ids dos parâmetros listados acima segundo-resultão do hyperProduct\n(brand -> model -> year -> version\n\n## Notas: productnfo\n\n**vp_product_with_api_vehicle_list**\n\n- Como o motor inicial, é o endpoint responsável por trazer toda a lista de veículos possíveis na base de dados do\n  adaptivo. Para ver ele, o elemento pluginado será criado da página page, além que pode ver no máximo 100\n  veículos por página. É possível fazer com ele será possível no filtro de marca.\n- Exemplos de retorno da requisição:\n\n```json\n\"price\" : 0,\n\"items\" : [\n  {\n    \"response\" : {\n      \"https://api.mercadolibre.com/items/MLM572819345?attributes=id,title,price\",\n      \"id\": \"MLM572819345\",\n      \"brand_id\": 1270,\n      \"brand_name\": \"Chevrolet\",\n      \"model_id\": 9950,\n      \"model_name\": \"Chevrolet\",\n      \"year_id\": 3712,\n      \"year_name\": \"1972\",\n      \"version_id\": 5607,\n      \"version_name\": \"Pickup\",\n      \"brand_id\": 1270,\n      \"brand_name\": \"Chevrolet\",\n      \"model_id\": 9950,\n      \"model_name\": \"Chevrolet\",\n      \"year_id\": 3712,\n      \"year_name\": \"1972\",\n      \"version_id\": 5607,\n      \"version_name\": \"Pickup\"\n    },\n    \"item_id\": null,\n    \"body\": null,\n  }\n]\n```\n\n## vp_product_api_vehicle_list_by_compatibility_detail\n\n- Neste endpoint é possível identificar as obterais para cada um dos elementos de veículo (marca / modelo / ano)\n  e versão. Este response pluginado é o \"compatibility_details\" onde você especificar o modelo do \"model_id\" para\n  visualização. Assim pode-se filtrar as informações os ids informados na base, no uso de model_id / o parâmetro além todos\n  informações em um paging na API listado.\n- Exemplos de chamada da endpoint:\n\n| Required | Response |\n|----------|----------|\n| compatibility_details=\"Brand\" | |\n\n```json\n{\n  \"response\": [\n    {\n      \"model_id\": [\"v_type\"]\n    },\n    {\n      \"model_id\": [\"v_attr\"]\n    }\n  ],\n  \"total\": null,\n  {\n    \"brand_id\": [],\n  },\n  {\n    \"brand_name\": []\n  },\n  \"FIAT\": \"\",\n  {\n    \"Result\": {\n    }\n  },\n  \"FIAT\": \"\",\n  {\n    \"Chevrolet\": \"\"\n  }\n}\n```\n\n**compatibility_brand_id=1234&compatibility_details=\"Model\"**\n\n```json\n{\n  \"response\": [\n    {\n      \"model_id\": [\"v_type\"]\n    },\n    {\n      \"model_id\": [\"v_attr\"]\n    }\n  ],\n  \"total\": null,\n  {\n    \"by-list\": \"\",\n  },\n  {\n    \"avto_moto\"\n  },\n  \"Onix-bx\": \"\",\n  {\n    \"Onix-bx\"\n  },\n  \"Classic\": \"\",\n  {\n    \"Dualr-plof-bx\"\n  },\n  {\n    \"Dualr-classic\"\n  },\n  \"Blockbuster-bx\": \"\"\n}\n```\n\n## Búsqueda con endpoint extendidos\n\n### vp_product_with_auto\n\n- Este endpoint es utilizado para obtener el listado de todos los productos que sean compatibles con determinados filtros compatibles. Además también:\n\n**vp_product_list_by_[BRAND]_AND_item=(> [BRAND_ITEM]_AND_v= [> [BRAND]_autom_item**\n\nNos dois primeiros endpoints a posição passa será informações da compatibilidade para todos esses / modelos.\n\nConsidere o seguinte dado de exemplo:\n\nDado el siguiente para (franchise, os v. [BRAND] AND_item=(> [BRAND]_autom_item\n\n```json\n{\n  \"model_id\": [\"v_type\"],\n  \"category_id\": [\"MLM1747\"],\n  \"results\": [\n    {\n      \"brand_id\": 1270,\n      \"model_year\": \"\",\n      \"series_id\": \"Pickup\",\n      \"series_id\": 5607\n    },\n    {\n      \"sales\": 0,\n      \"year_id\": 3950,\n      \"year_filter\": \"\"\n    }\n  ]\n}\n```\n\n---\n\n# Compatibility Info Documentation\n\n## Data Structure\n\n```python\n\"compatibility_info\": {\n  \"vehicle_info_list\": [\n    {\n      \"brand_id\": 5770,\n      \"model_id\": 5911,\n      \"year_id\": 5590,\n      \"version_id\": 5912\n    },\n    {\n      \"brand_id\": 5508,\n      \"model_id\": 5509,\n      \"year_id\": 5515\n    },\n    {\n      \"brand_id\": 5770,\n      \"model_id\": 5905\n    }\n  ]\n},\n```\n\n## Important Considerations\n\n- **Se um determinado produto é compatível com todas as versões de um determinado ano, basta informar os ids para brand, model e year; o sistema entenderá que todas as versões daquele ano deverão ser inseridas na lista de compatibilidade;**\n\n```python\n{\n  \"brand_id\": 5508,\n  \"model_id\": 5509,\n  \"year_id\": 5515\n}\n```\n\n- **De maneira similar, se todas as versões de todos os anos de um dado modelo forem compatíveis com o produto, basta informar os ids para brand e model;**\n\n```python\n{\n  \"brand_id\": 5770,\n  \"model_id\": 5905\n}\n```\n\n- **O v2 product update_item poderá ser usado normalmente para adicionar as informações de compatibilidade em itens existentes que não a possuam. Nesse caso, basta informar a lista de compatibilidade conforme exemplos acima.**\n\n- **ATENÇÃO: Ao usar o v2 product update_item para adicionar compatibilidade em um item que já possui veículos em sua lista, você deverá informar a lista de ids existente atualmente no item + os novos ids de compatibilidade. Caso contrário, a lista de ids existente será sobreposta pelos novos ids informados na chamada do update item.**\n\n**Se restar alguma dúvida no uso dos novos endpoints, basta abrir um ticket e iremos te auxiliar a integrar corretamente com a nova funcionalidade.**",
+  "metadata": {
+    "title": "API Best Practices - AUTO PARTS: COMP/VPS",
+    "summary": "This guide provides best practices for using the AUTO PARTS compatibility API (COMP/VPS). It covers data structures for vehicle compatibility, including brand, model, year, and version IDs. The guide also details specific endpoints for retrieving vehicle lists and compatibility details.",
+    "keywords": [
+      "API",
+      "Best Practices",
+      "Auto Parts",
+      "Compatibility",
+      "Vehicle Data",
+      "Endpoints",
+      "Data Structure",
+      "brand_id",
+      "model_id",
+      "year_id",
+      "version_id"
+    ],
+    "category": "Best Practices",
+    "tags": [
+      "API",
+      "Auto Parts",
+      "Compatibility",
+      "COMP/VPS",
+      "Vehicle"
+    ],
+    "difficulty": "medium",
+    "importance": 4,
+    "use_cases": [
+      "Retrieving a list of compatible vehicles for a specific auto part.",
+      "Identifying vehicle details (brand, model, year, version) for compatibility.",
+      "Filtering vehicle compatibility data based on specific criteria.",
+      "Adding compatibility information to existing items."
+    ],
+    "related_apis": [
+      "vp_product_with_api_vehicle_list",
+      "vp_product_api_vehicle_list_by_compatibility_detail",
+      "vp_product_with_auto",
+      "v2 product update_item"
+    ]
+  }
+}

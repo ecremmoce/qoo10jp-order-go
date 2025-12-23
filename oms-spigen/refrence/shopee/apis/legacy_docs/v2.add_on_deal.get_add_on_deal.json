@@ -1,0 +1,96 @@
+{
+  "endpoint": "http://example.com/cloud-cart/v3/{client_id}_market_cart_op_data",
+  "method": null,
+  "description": null,
+  "parameters": [
+    {
+      "name": "client_id",
+      "type": "string",
+      "required": true,
+      "description": "Partner ID is passed by partner registration in merchant.",
+      "children": []
+    },
+    {
+      "name": "access_token",
+      "type": "string",
+      "required": true,
+      "description": "This is a standard token obtained from the cart authentication API in merchant.",
+      "children": []
+    },
+    {
+      "name": "sign",
+      "type": "string",
+      "required": true,
+      "description": "The sign rule of the API request for each permission.",
+      "children": []
+    },
+    {
+      "name": "app",
+      "type": "string",
+      "required": true,
+      "description": "First code",
+      "children": []
+    },
+    {
+      "name": "request_id",
+      "type": "string",
+      "required": true,
+      "description": "The identifier of the API request for each request",
+      "children": []
+    },
+    {
+      "name": "v",
+      "type": "string",
+      "required": true,
+      "description": "The first letter of the date at this article",
+      "children": []
+    },
+    {
+      "name": "tws_time",
+      "type": "int",
+      "required": true,
+      "description": "Timestamp",
+      "children": []
+    },
+    {
+      "name": "tws_biz",
+      "type": "int",
+      "required": true,
+      "description": "The first part of the date at this article",
+      "children": []
+    },
+    {
+      "name": "cart_get_limit",
+      "type": "int",
+      "required": true,
+      "description": "Maximum number of gift which can be get",
+      "children": []
+    },
+    {
+      "name": "promotion_purchase_limit",
+      "type": "int",
+      "required": true,
+      "description": "Max. number of whole products that a promotion can purchase",
+      "children": []
+    },
+    {
+      "name": "cart_op_data_all",
+      "type": "string",
+      "required": true,
+      "description": "The id for cart at last",
+      "children": []
+    }
+  ],
+  "response_fields": [],
+  "update_log": [],
+  "hidden_fields": [],
+  "metadata": {
+    "total_chunks": 1,
+    "chunks_with_errors": 0,
+    "total_parameters_before_dedup": 11,
+    "total_parameters_after_dedup": 11,
+    "update_log_entries": 0,
+    "hidden_fields_count": 0,
+    "source_results": "workspaces\\v2.add_on_deal.get_add_on_deal\\results\\all_chunks_results.json"
+  }
+}

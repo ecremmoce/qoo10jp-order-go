@@ -1,0 +1,56 @@
+{
+  "endpoint": null,
+  "method": null,
+  "description": null,
+  "parameters": [
+    {
+      "name": "url",
+      "type": "string",
+      "required": true,
+      "description": "The request URL",
+      "children": []
+    },
+    {
+      "name": "url_id",
+      "type": "string",
+      "required": false,
+      "description": "The unique identifier for the URL",
+      "children": []
+    },
+    {
+      "name": "token",
+      "type": "string",
+      "required": true,
+      "description": "Authentication token",
+      "children": []
+    }
+  ],
+  "response_fields": [
+    {
+      "name": "ret",
+      "type": "string",
+      "description": "Response status code"
+    },
+    {
+      "name": "msg",
+      "type": "string",
+      "description": "Response message"
+    },
+    {
+      "name": "ret_url_id",
+      "type": "string",
+      "description": "The identifier of the processed URL"
+    }
+  ],
+  "update_log": [],
+  "hidden_fields": [],
+  "metadata": {
+    "total_chunks": 1,
+    "chunks_with_errors": 0,
+    "total_parameters_before_dedup": 3,
+    "total_parameters_after_dedup": 3,
+    "update_log_entries": 0,
+    "hidden_fields_count": 0,
+    "source_results": "workspaces\\v2.add_on_deal.add_add_on_deal_main_item\\results\\all_chunks_results.json"
+  }
+}

@@ -1,0 +1,102 @@
+[
+  {
+    "chunk_index": 1,
+    "total_chunks": 1,
+    "endpoint": "/users/get_joined_list",
+    "method": "POST",
+    "description": null,
+    "update_log": [],
+    "hidden_fields": [],
+    "parameters": [
+      {
+        "name": "partner_id",
+        "type": "string",
+        "required": true,
+        "description": "Partner ID is provided upon registration in merchant's management system",
+        "truncated": false,
+        "continued": false,
+        "children": []
+      },
+      {
+        "name": "access_token",
+        "type": "string",
+        "required": true,
+        "description": "The access token will be issued after registration in merchant's management system. Expires in 24 hours.",
+        "truncated": false,
+        "continued": false,
+        "children": []
+      },
+      {
+        "name": "lang",
+        "type": "string",
+        "required": false,
+        "description": "The result will be returned in the specified language. Currently supported languages: en",
+        "truncated": false,
+        "continued": false,
+        "children": []
+      },
+      {
+        "name": "page_size",
+        "type": "string",
+        "required": false,
+        "description": "Each page can be specified as a number of records. Used for data pagination.",
+        "truncated": false,
+        "continued": false,
+        "children": []
+      }
+    ],
+    "response_fields": [
+      {
+        "name": "event",
+        "type": "string",
+        "description": "Usually event first time event in your time zone",
+        "children": []
+      },
+      {
+        "name": "message",
+        "type": "string",
+        "description": "Usually error when first your time in your time zone",
+        "children": []
+      },
+      {
+        "name": "code",
+        "type": "integer",
+        "description": "Error codes should be zero to success",
+        "children": []
+      }
+    ],
+    "error_codes": [
+      {
+        "code": "error_not_found",
+        "description": "String parameters detect error"
+      },
+      {
+        "code": "error_permission",
+        "description": "Sorry you don't have the permission"
+      },
+      {
+        "code": "error_client",
+        "description": "System error. Please try again later"
+      },
+      {
+        "code": "error_server",
+        "description": "There is no system detect token"
+      }
+    ],
+    "notes": "The documentation includes error codes and examples sections. The examples section shows request/response examples in JSON format but they are partially cut off in the image.",
+    "chunk_metadata": {
+      "index": 1,
+      "total": 1,
+      "y_start": 0,
+      "y_end": 4861,
+      "overlap_top": 0,
+      "overlap_bottom": 0,
+      "height": 4861,
+      "path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\workspaces\\v2.order.get_shipment_list\\chunks\\chunk_001.png",
+      "filename": "chunk_001.png",
+      "width": 837
+    },
+    "analysis_timestamp": "2025-10-10T06:16:21.224493",
+    "model": "claude-3-5-sonnet-20241022"
+  }
+]

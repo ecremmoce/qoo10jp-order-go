@@ -1,0 +1,43 @@
+{
+  "batch_id": "20251011_232701",
+  "platform": "shopee",
+  "total": 1,
+  "successful": 1,
+  "failed": 0,
+  "workers": 4,
+  "results": [
+    {
+      "url_index": 0,
+      "url": "https://open.shopee.com/documents/v2/v2.product.get_size_chart_list?module=89&type=1",
+      "api_name": "v2.product.get_size_chart_list",
+      "success": true,
+      "workspace": {
+        "root": "platforms\\shopee\\apis\\workspaces\\v2.product.get_size_chart_list",
+        "chunks": "platforms\\shopee\\apis\\workspaces\\v2.product.get_size_chart_list\\chunks",
+        "results": "platforms\\shopee\\apis\\workspaces\\v2.product.get_size_chart_list\\results",
+        "final": "platforms\\shopee\\apis\\workspaces\\v2.product.get_size_chart_list\\final"
+      },
+      "screenshot": "platforms\\shopee\\apis\\workspaces\\v2.product.get_size_chart_list\\screenshot.png",
+      "stage": "archive",
+      "split_success": true,
+      "analyze_success": true,
+      "merge_success": true,
+      "archive_success": true,
+      "final_success": true,
+      "archive_path": "platforms\\shopee\\archive\\v2.product.get_size_chart_list\\2025-10-11_23-28-19",
+      "content_changes": {
+        "api_endpoints": {
+          "before": 5,
+          "after": 8,
+          "new": 3
+        },
+        "dev_guide_sections": {
+          "before": 6,
+          "after": 6,
+          "new": 0
+        }
+      },
+      "duration": 77.167141
+    }
+  ]
+}

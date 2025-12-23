@@ -1,0 +1,74 @@
+{
+  "endpoint": "/api/v2/user/get_user_info",
+  "method": "GET",
+  "description": "Get user information",
+  "parameters": [
+    {
+      "name": "user_id",
+      "type": "string",
+      "required": true,
+      "description": "User ID",
+      "children": []
+    }
+  ],
+  "response_fields": [
+    {
+      "name": "user_id",
+      "type": "string",
+      "description": "User ID",
+      "children": []
+    },
+    {
+      "name": "username",
+      "type": "string",
+      "description": "Username",
+      "children": []
+    },
+    {
+      "name": "email",
+      "type": "string",
+      "description": "Email address",
+      "children": []
+    },
+    {
+      "name": "phone",
+      "type": "string",
+      "description": "Phone number",
+      "children": []
+    },
+    {
+      "name": "status",
+      "type": "string",
+      "description": "Account status",
+      "children": []
+    },
+    {
+      "name": "created_at",
+      "type": "string",
+      "description": "Account creation timestamp",
+      "children": []
+    },
+    {
+      "name": "last_login",
+      "type": "string",
+      "description": "Last login timestamp",
+      "children": []
+    }
+  ],
+  "update_log": [
+    {
+      "date": "2021-12-14",
+      "change": "API Released"
+    }
+  ],
+  "hidden_fields": [],
+  "metadata": {
+    "total_chunks": 1,
+    "chunks_with_errors": 0,
+    "total_parameters_before_dedup": 1,
+    "total_parameters_after_dedup": 1,
+    "update_log_entries": 1,
+    "hidden_fields_count": 0,
+    "source_results": "workspaces\\v2.global_product.get_global_model_list\\results\\all_chunks_results.json"
+  }
+}

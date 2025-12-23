@@ -1,0 +1,43 @@
+======================================================================
+API SPECIFICATION SUMMARY
+======================================================================
+
+Endpoint: None None
+
+Parameters (7):
+----------------------------------------------------------------------
+* shipping_provider (string)
+   Shipping provider credentials profile, default: acme_std
+* order_address (object)
+   Order address object containing delivery details
+* carrier (string)
+   The shipping carrier to use
+  delivery_time (string)
+   Delivery time of the shipment
+* request_id (string)
+   A request identifier for a specific order
+* seller_sku_id (string)
+   The SKU code that should be used
+* tracking_id (string)
+   The tracking code that matches the carrier
+
+Response Fields (2):
+----------------------------------------------------------------------
+  error_code (integer)
+   Error code indicating success or failure
+  error_message (string)
+   Descriptive error message
+
+Metadata:
+----------------------------------------------------------------------
+  total_chunks: 1
+  chunks_with_errors: 0
+  total_parameters_before_dedup: 7
+  total_parameters_after_dedup: 7
+  update_log_entries: 0
+  hidden_fields_count: 0
+  source_results: workspaces\v2.bundle_deal.get_bundle_deal\results\all_chunks_results.json
+
+======================================================================
+Legend: * = required parameter
+======================================================================

@@ -1,0 +1,38 @@
+======================================================================
+API SPECIFICATION SUMMARY
+======================================================================
+
+Endpoint: None None
+
+Parameters (4):
+----------------------------------------------------------------------
+* batch_id (string)
+   Batch process ID
+  error_code (integer)
+   Error code
+  error_message (string)
+   Error message
+  response (object)
+   Response data
+    batch_result (array)
+     Batch processing results
+      shop_id (integer)
+       Shop ID
+      error_code (integer)
+       Error code for this item
+      error_message (string)
+       Error message for this item
+
+Metadata:
+----------------------------------------------------------------------
+  total_chunks: 1
+  chunks_with_errors: 0
+  total_parameters_before_dedup: 4
+  total_parameters_after_dedup: 4
+  update_log_entries: 3
+  hidden_fields_count: 1
+  source_results: workspaces\v2.product.get_ssp_info\results\all_chunks_results.json
+
+======================================================================
+Legend: * = required parameter
+======================================================================

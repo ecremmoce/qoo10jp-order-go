@@ -1,0 +1,80 @@
+{
+  "chunk_index": 1,
+  "total_chunks": 1,
+  "endpoint": null,
+  "method": null,
+  "description": null,
+  "update_log": [
+    {
+      "date": "2023-10-10",
+      "change": "Added new parameters to modify review settings"
+    },
+    {
+      "date": "2023-09-26",
+      "change": "API launch"
+    }
+  ],
+  "hidden_fields": [],
+  "parameters": [
+    {
+      "name": "type",
+      "type": "string",
+      "required": true,
+      "description": "Type identifier",
+      "children": []
+    },
+    {
+      "name": "lang",
+      "type": "string",
+      "required": false,
+      "description": "Language code",
+      "children": []
+    },
+    {
+      "name": "data",
+      "type": "object",
+      "required": true,
+      "description": "Main data object",
+      "children": [
+        {
+          "name": "review_settings",
+          "type": "object",
+          "required": false,
+          "description": "Review configuration settings",
+          "children": [
+            {
+              "name": "enabled",
+              "type": "boolean",
+              "required": true,
+              "description": "Enable/disable reviews",
+              "children": []
+            },
+            {
+              "name": "moderation_required",
+              "type": "boolean",
+              "required": false,
+              "description": "Whether reviews require moderation",
+              "children": []
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "response_fields": [],
+  "notes": "The image appears to be an API documentation page showing parameter definitions for what seems to be a review settings configuration endpoint. The exact endpoint path is not visible in this chunk.",
+  "chunk_metadata": {
+    "index": 1,
+    "total": 1,
+    "y_start": 0,
+    "y_end": 7082,
+    "overlap_top": 0,
+    "overlap_bottom": 0,
+    "height": 7082,
+    "path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\workspaces\\v2.bundle_deal.add_bundle_deal\\chunks\\chunk_001.png",
+    "filename": "chunk_001.png",
+    "width": 837
+  },
+  "analysis_timestamp": "2025-10-10T05:33:20.194336",
+  "model": "claude-3-5-sonnet-20241022"
+}

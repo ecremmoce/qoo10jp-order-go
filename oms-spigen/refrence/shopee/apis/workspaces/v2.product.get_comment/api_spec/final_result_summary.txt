@@ -1,0 +1,39 @@
+======================================================================
+API SPECIFICATION SUMMARY
+======================================================================
+
+Endpoint: None None
+
+Parameters (5):
+----------------------------------------------------------------------
+* string (string)
+   You need to obtain from API
+* grant_type (string)
+   The grant type
+  expires_in (integer)
+   Token expiration time in seconds
+  scope (string)
+   The scope requested
+  success (boolean)
+   The operation status
+
+Response Fields (2):
+----------------------------------------------------------------------
+  error_code (string)
+   Error code like 'invalid_client'
+  error_description (string)
+   Human readable error message
+
+Metadata:
+----------------------------------------------------------------------
+  total_chunks: 1
+  chunks_with_errors: 0
+  total_parameters_before_dedup: 5
+  total_parameters_after_dedup: 5
+  update_log_entries: 0
+  hidden_fields_count: 2
+  source_results: workspaces\v2.product.get_comment\results\all_chunks_results.json
+
+======================================================================
+Legend: * = required parameter
+======================================================================

@@ -1,0 +1,39 @@
+{
+  "document_id": "v2/v2.product.get_attribute_tree",
+  "document_type": "api",
+  "platform": "shopee",
+  "content_ko": "# API 문서\n\n## 공통 파라미터\n\n| Parameter | Type | Required | Description |\n|-----------|------|----------|-------------|\n| crop_size | string | - | 이미지 자르기 크기 |\n| save_path | string | - | 이미지 저장 시 저장 경로 |\n| mode_key | string | - | 이미지 편집 모드 사용 시 |\n| edited_by | string | - | 편집자 정보 |\n\n## 요청 파라미터\n\n| Parameter | Type | Required | Description |\n|-----------|------|----------|-------------|\n| category | string | Yes | 카테고리 필드 |\n\n(추가 필드는 이미지에 표시되지만 텍스트가 명확하게 읽히지 않습니다.)\n\n## 응답 파라미터\n\n| Field | Type | Description |\n|-------|------|-------------|\n| id | string | - |\n| category | string | Required |\n| ordering | string | Required |\n| images | array | Required |\n| thumbnail | string | Required |\n| status | string | Required |\n| attribute_key | string | - |\n| created_at | string | - |\n| updated_at | string | - |\n| deleted_at | string | - |\n\n## 응답 예시\n\n```json\n{\n  \"result\": {\n    \"id\": \"...\",\n    \"category\": \"...\",\n    \"ordering\": \"...\"\n  }\n}\n```\n\n## 오류 코드\n\n| Code | Description |\n|------|-------------|\n| error_400 | 잘못된 요청 |\n| error_401 | 권한 없음 |\n| error_403 | 접근 금지됨 |\n| error_404 | 찾을 수 없음 |\n| error_500 | 내부 서버 오류 |\n\n참고: 이미지의 일부 내용은 부분적으로 보이거나 잘려 있으므로 명확하게 보이는 필드와 구조만 포함했습니다. 이 문서는 카테고리화 및 편집 기능을 갖춘 일종의 이미지 관리 API에 대한 것으로 보입니다.",
+  "translated_at": "2025-10-13T10:21:27",
+  "char_count": 1226,
+  "metadata_ko": {
+    "title": "Image Management API",
+    "summary": "This API manages images, allowing for categorization, editing, and retrieval. It provides endpoints for creating, updating, and retrieving image metadata, including categories, ordering, and associated thumbnails.",
+    "keywords": [
+      "image",
+      "management",
+      "category",
+      "editing",
+      "thumbnail",
+      "metadata",
+      "API",
+      "crop",
+      "storage"
+    ],
+    "category": "Product",
+    "tags": [
+      "image processing",
+      "content management",
+      "media"
+    ],
+    "difficulty": "medium",
+    "importance": 4,
+    "use_cases": [
+      "Categorizing images for a product catalog.",
+      "Managing image thumbnails for faster loading.",
+      "Tracking image edits and versions.",
+      "Displaying images in a specific order."
+    ],
+    "related_apis": []
+  },
+  "metadata_translated_at": "2025-10-13T10:21:28"
+}

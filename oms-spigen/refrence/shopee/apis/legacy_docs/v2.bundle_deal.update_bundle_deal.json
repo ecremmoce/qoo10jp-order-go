@@ -1,0 +1,83 @@
+{
+  "endpoint": null,
+  "method": null,
+  "description": "API Permissions and Update Log information",
+  "parameters": [],
+  "response_fields": [
+    {
+      "name": "error_network",
+      "type": "string",
+      "description": "Inner http call failed",
+      "children": []
+    },
+    {
+      "name": "error_data",
+      "type": "string",
+      "description": "parse data failed",
+      "children": []
+    },
+    {
+      "name": "error_param",
+      "type": "string",
+      "description": "parameter invalid",
+      "children": []
+    },
+    {
+      "name": "error_server",
+      "type": "string",
+      "description": "Something wrong. Please try later.",
+      "children": []
+    },
+    {
+      "name": "error_shop",
+      "type": "string",
+      "description": "shopid is invalid",
+      "children": []
+    },
+    {
+      "name": "bundle.bundle_deal_start_time_error",
+      "type": "string",
+      "description": "Promotion start time can only be changed to a later timing.",
+      "children": []
+    },
+    {
+      "name": "API Permissions",
+      "type": "object",
+      "description": "APP types that can call this API: ERP System, Seller In House System, Marketing, Swam ERP",
+      "children": []
+    },
+    {
+      "name": "Update Log",
+      "type": "array",
+      "description": "List of updates",
+      "children": [
+        {
+          "name": "2025-09-08",
+          "type": "string",
+          "description": "select type for some parameters"
+        },
+        {
+          "name": "2022-08-29",
+          "type": "string",
+          "description": "add additional_tiers"
+        },
+        {
+          "name": "2022-07-26",
+          "type": "string",
+          "description": "Add Error Example information"
+        }
+      ]
+    }
+  ],
+  "update_log": [],
+  "hidden_fields": [],
+  "metadata": {
+    "total_chunks": 2,
+    "chunks_with_errors": 0,
+    "total_parameters_before_dedup": 0,
+    "total_parameters_after_dedup": 0,
+    "update_log_entries": 0,
+    "hidden_fields_count": 0,
+    "source_results": "workspaces\\v2.bundle_deal.update_bundle_deal\\results\\all_chunks_results.json"
+  }
+}

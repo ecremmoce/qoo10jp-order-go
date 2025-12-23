@@ -1,0 +1,40 @@
+======================================================================
+API SPECIFICATION SUMMARY
+======================================================================
+
+Endpoint: None /api/checkin_handle_prescription_check
+Description: Check prescription rules
+
+Parameters (4):
+----------------------------------------------------------------------
+* action_type (string)
+   Whether it is accepted and registration is successful
+* order_create_code (string)
+   Use base64 AES encode, check to identify your permissions to write data for model and add variable to excel
+  price_id (integer)
+   Student's unique identifier for a clinic
+  is_approved (integer)
+   The validity of product activation. For items in pharmacy/clinic service, if they cannot view and modify their own records in the app, they should check to see if their activation code is properly activated. Product users must have an active code.
+
+Response Fields (3):
+----------------------------------------------------------------------
+* success (string)
+   Status information you are scanning
+* message (string)
+   This message is a null API request or error
+* error (string)
+   Indicate error type if not error, Empty if no error occurred
+
+Metadata:
+----------------------------------------------------------------------
+  total_chunks: 1
+  chunks_with_errors: 0
+  total_parameters_before_dedup: 4
+  total_parameters_after_dedup: 4
+  update_log_entries: 2
+  hidden_fields_count: 0
+  source_results: workspaces\v2.order.handle_prescription_check\results\all_chunks_results.json
+
+======================================================================
+Legend: * = required parameter
+======================================================================

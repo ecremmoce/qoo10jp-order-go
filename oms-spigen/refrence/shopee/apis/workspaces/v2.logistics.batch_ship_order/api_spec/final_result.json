@@ -1,0 +1,79 @@
+{
+  "endpoint": null,
+  "method": null,
+  "description": null,
+  "parameters": [],
+  "response_fields": [
+    {
+      "name": "error_param",
+      "type": "string",
+      "description": "There is no access_token in query.",
+      "children": []
+    },
+    {
+      "name": "error_auth",
+      "type": "string",
+      "description": "Invalid access_token.",
+      "children": []
+    },
+    {
+      "name": "error_sign",
+      "type": "string",
+      "description": "Wrong sign.",
+      "children": []
+    },
+    {
+      "name": "error_network",
+      "type": "string",
+      "description": "Inner http call failed",
+      "children": []
+    },
+    {
+      "name": "error_data",
+      "type": "string",
+      "description": "parse data failed",
+      "children": []
+    },
+    {
+      "name": "logistics.error_sender_address",
+      "type": "string",
+      "description": "Pickup address not valid. Please add/tag a new pickup_address in Seller Center to continue shipping",
+      "children": []
+    },
+    {
+      "name": "error_server",
+      "type": "string",
+      "description": "Something wrong. Please try later.",
+      "children": []
+    },
+    {
+      "name": "error_shop",
+      "type": "string",
+      "description": "shopid is invalid",
+      "children": []
+    },
+    {
+      "name": "error_not_found",
+      "type": "string",
+      "description": "Fail to get order fulfillment group, please try again later.",
+      "children": []
+    },
+    {
+      "name": "error_status",
+      "type": "string",
+      "description": "Buyer hasn't completed pre-authorization yet.",
+      "children": []
+    }
+  ],
+  "update_log": [],
+  "hidden_fields": [],
+  "metadata": {
+    "total_chunks": 2,
+    "chunks_with_errors": 0,
+    "total_parameters_before_dedup": 0,
+    "total_parameters_after_dedup": 0,
+    "update_log_entries": 0,
+    "hidden_fields_count": 0,
+    "source_results": "workspaces\\v2.logistics.batch_ship_order\\results\\all_chunks_results.json"
+  }
+}

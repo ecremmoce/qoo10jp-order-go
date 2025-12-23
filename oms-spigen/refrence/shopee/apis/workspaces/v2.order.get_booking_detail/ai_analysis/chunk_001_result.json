@@ -1,0 +1,92 @@
+{
+  "chunk_index": 1,
+  "total_chunks": 1,
+  "endpoint": "/api/v2/goods/getShopGoodsRebateBatchList",
+  "method": "GET",
+  "description": "Get shop goods rebate batch list",
+  "update_log": [],
+  "hidden_fields": [],
+  "parameters": [
+    {
+      "name": "shop_id",
+      "type": "integer",
+      "required": true,
+      "description": "Shop ID",
+      "children": []
+    },
+    {
+      "name": "current_page",
+      "type": "integer",
+      "required": true,
+      "description": "Current page number",
+      "children": []
+    },
+    {
+      "name": "page_size",
+      "type": "integer",
+      "required": true,
+      "description": "Number of items per page",
+      "children": []
+    }
+  ],
+  "response_fields": [
+    {
+      "name": "total",
+      "type": "integer",
+      "description": "Total number of records",
+      "children": []
+    },
+    {
+      "name": "data",
+      "type": "array",
+      "description": "List of rebate batch data",
+      "children": [
+        {
+          "name": "batch_id",
+          "type": "string",
+          "description": "Batch ID",
+          "children": []
+        },
+        {
+          "name": "batch_name",
+          "type": "string",
+          "description": "Batch name",
+          "children": []
+        },
+        {
+          "name": "create_time",
+          "type": "string",
+          "description": "Creation time",
+          "children": []
+        },
+        {
+          "name": "status",
+          "type": "integer",
+          "description": "Status code",
+          "children": []
+        },
+        {
+          "name": "status_desc",
+          "type": "string",
+          "description": "Status description",
+          "children": []
+        }
+      ]
+    }
+  ],
+  "notes": "The documentation appears to be for an API endpoint that retrieves a paginated list of shop goods rebate batches. The response includes both pagination information and detailed batch data.",
+  "chunk_metadata": {
+    "index": 1,
+    "total": 1,
+    "y_start": 0,
+    "y_end": 6813,
+    "overlap_top": 0,
+    "overlap_bottom": 0,
+    "height": 6813,
+    "path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\workspaces\\v2.order.get_booking_detail\\chunks\\chunk_001.png",
+    "filename": "chunk_001.png",
+    "width": 837
+  },
+  "analysis_timestamp": "2025-10-10T06:14:25.110014",
+  "model": "claude-3-5-sonnet-20241022"
+}

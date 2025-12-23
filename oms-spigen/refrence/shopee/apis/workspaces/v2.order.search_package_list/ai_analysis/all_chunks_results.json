@@ -1,0 +1,84 @@
+[
+  {
+    "chunk_index": 1,
+    "total_chunks": 1,
+    "endpoint": "/order/match/presale_package_list",
+    "method": "GET",
+    "description": "Retrieves presale package information",
+    "update_log": [],
+    "hidden_fields": [],
+    "parameters": [
+      {
+        "name": "url",
+        "type": "string",
+        "required": true,
+        "description": "Request URL",
+        "truncated": false,
+        "continued": false,
+        "children": []
+      },
+      {
+        "name": "cms_template",
+        "type": "string",
+        "required": false,
+        "description": "CMS template parameter",
+        "truncated": false,
+        "continued": false,
+        "children": []
+      },
+      {
+        "name": "status",
+        "type": "string",
+        "required": false,
+        "description": "Status filter parameter",
+        "truncated": false,
+        "continued": false,
+        "children": []
+      },
+      {
+        "name": "seller_type",
+        "type": "integer",
+        "required": false,
+        "description": "Seller type identifier",
+        "truncated": false,
+        "continued": false,
+        "children": []
+      }
+    ],
+    "response_fields": [
+      {
+        "name": "status",
+        "type": "string",
+        "description": "Response status",
+        "children": []
+      },
+      {
+        "name": "message",
+        "type": "string",
+        "description": "Response message",
+        "children": []
+      },
+      {
+        "name": "data",
+        "type": "object",
+        "description": "Response data object",
+        "children": []
+      }
+    ],
+    "notes": "The image appears to be API documentation for a presale package listing endpoint. The documentation shows both request parameters and response fields. Some sections appear to be collapsed or not fully expanded in the interface.",
+    "chunk_metadata": {
+      "index": 1,
+      "total": 1,
+      "y_start": 0,
+      "y_end": 5700,
+      "overlap_top": 0,
+      "overlap_bottom": 0,
+      "height": 5700,
+      "path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\workspaces\\v2.order.search_package_list\\chunks\\chunk_001.png",
+      "filename": "chunk_001.png",
+      "width": 837
+    },
+    "analysis_timestamp": "2025-10-10T06:17:27.564051",
+    "model": "claude-3-5-sonnet-20241022"
+  }
+]

@@ -1,0 +1,75 @@
+{
+  "endpoint": null,
+  "method": null,
+  "description": null,
+  "parameters": [
+    {
+      "name": "gid",
+      "type": "string",
+      "required": true,
+      "description": null,
+      "children": []
+    },
+    {
+      "name": "lng",
+      "type": "string",
+      "required": false,
+      "description": "Set language",
+      "children": []
+    },
+    {
+      "name": "sorting",
+      "type": "integer",
+      "required": false,
+      "description": "Set sorting order",
+      "children": []
+    },
+    {
+      "name": "priority",
+      "type": "integer",
+      "required": false,
+      "description": null,
+      "children": []
+    },
+    {
+      "name": "get_line",
+      "type": "boolean",
+      "required": false,
+      "description": "Get line data flag",
+      "children": []
+    }
+  ],
+  "response_fields": [
+    {
+      "name": "automatic_match_min",
+      "type": "integer",
+      "description": "Min range length max line"
+    },
+    {
+      "name": "automatic_match_max",
+      "type": "integer",
+      "description": "Max range length max line"
+    },
+    {
+      "name": "automatic_match_shift",
+      "type": "integer",
+      "description": "Range shift length max line"
+    },
+    {
+      "name": "min_price",
+      "type": "float",
+      "description": "Min price"
+    }
+  ],
+  "update_log": [],
+  "hidden_fields": [],
+  "metadata": {
+    "total_chunks": 1,
+    "chunks_with_errors": 0,
+    "total_parameters_before_dedup": 5,
+    "total_parameters_after_dedup": 5,
+    "update_log_entries": 0,
+    "hidden_fields_count": 0,
+    "source_results": "workspaces\\v2.product.get_kit_item_limit\\results\\all_chunks_results.json"
+  }
+}

@@ -1,0 +1,72 @@
+{
+  "endpoint": "/api/v2/product/add_item",
+  "method": "POST",
+  "description": "Add a product item",
+  "parameters": [
+    {
+      "name": "seller_id",
+      "type": "string",
+      "required": true,
+      "description": "Seller ID",
+      "children": []
+    },
+    {
+      "name": "buyer_id",
+      "type": "string",
+      "required": true,
+      "description": "Buyer ID",
+      "children": []
+    },
+    {
+      "name": "seller_product_code",
+      "type": "string",
+      "required": true,
+      "description": "Seller's product code",
+      "children": []
+    },
+    {
+      "name": "buyer_email_address",
+      "type": "string",
+      "required": true,
+      "description": "Buyer's email address",
+      "children": []
+    }
+  ],
+  "response_fields": [
+    {
+      "name": "result",
+      "type": "object",
+      "description": "Result object",
+      "children": [
+        {
+          "name": "code",
+          "type": "string",
+          "description": "Response code",
+          "children": []
+        },
+        {
+          "name": "message",
+          "type": "string",
+          "description": "Response message",
+          "children": []
+        }
+      ]
+    }
+  ],
+  "update_log": [
+    {
+      "date": "2024-01-11",
+      "change": "API Published"
+    }
+  ],
+  "hidden_fields": [],
+  "metadata": {
+    "total_chunks": 1,
+    "chunks_with_errors": 0,
+    "total_parameters_before_dedup": 4,
+    "total_parameters_after_dedup": 4,
+    "update_log_entries": 1,
+    "hidden_fields_count": 0,
+    "source_results": "workspaces\\v2.product.update_model\\results\\all_chunks_results.json"
+  }
+}

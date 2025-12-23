@@ -1,0 +1,4487 @@
+{
+  "12": {
+    "api_name": "12",
+    "last_crawled": "2025-10-10T04:14:30.402035",
+    "content_hash": "cb1b337fcb7cb7f73bbd40a6ece90caca83bab20b5697543881b8b385f1e38e7",
+    "update_log_date": null,
+    "parameters_count": 8,
+    "response_fields_count": 3,
+    "endpoint": "/products/get_price_list",
+    "method": "GET"
+  },
+  "14": {
+    "api_name": "14",
+    "last_crawled": "2025-10-10T04:14:30.402347",
+    "content_hash": "cb1b337fcb7cb7f73bbd40a6ece90caca83bab20b5697543881b8b385f1e38e7",
+    "update_log_date": null,
+    "parameters_count": 8,
+    "response_fields_count": 3,
+    "endpoint": "/products/get_price_list",
+    "method": "GET"
+  },
+  "16": {
+    "api_name": "16",
+    "last_crawled": "2025-10-10T04:14:30.402608",
+    "content_hash": "cb1b337fcb7cb7f73bbd40a6ece90caca83bab20b5697543881b8b385f1e38e7",
+    "update_log_date": null,
+    "parameters_count": 8,
+    "response_fields_count": 3,
+    "endpoint": "/products/get_price_list",
+    "method": "GET"
+  },
+  "18": {
+    "api_name": "18",
+    "last_crawled": "2025-10-10T04:14:30.402857",
+    "content_hash": "cb1b337fcb7cb7f73bbd40a6ece90caca83bab20b5697543881b8b385f1e38e7",
+    "update_log_date": null,
+    "parameters_count": 8,
+    "response_fields_count": 3,
+    "endpoint": "/products/get_price_list",
+    "method": "GET"
+  },
+  "20": {
+    "api_name": "20",
+    "last_crawled": "2025-10-10T04:14:30.403119",
+    "content_hash": "cb1b337fcb7cb7f73bbd40a6ece90caca83bab20b5697543881b8b385f1e38e7",
+    "update_log_date": null,
+    "parameters_count": 8,
+    "response_fields_count": 3,
+    "endpoint": "/products/get_price_list",
+    "method": "GET"
+  },
+  "2058": {
+    "api_name": "2058",
+    "last_crawled": "2025-10-10T04:14:30.403365",
+    "content_hash": "cb1b337fcb7cb7f73bbd40a6ece90caca83bab20b5697543881b8b385f1e38e7",
+    "update_log_date": null,
+    "parameters_count": 8,
+    "response_fields_count": 3,
+    "endpoint": "/products/get_price_list",
+    "method": "GET"
+  },
+  "209": {
+    "api_name": "209",
+    "last_crawled": "2025-10-10T04:14:30.403607",
+    "content_hash": "cb1b337fcb7cb7f73bbd40a6ece90caca83bab20b5697543881b8b385f1e38e7",
+    "update_log_date": null,
+    "parameters_count": 8,
+    "response_fields_count": 3,
+    "endpoint": "/products/get_price_list",
+    "method": "GET"
+  },
+  "211": {
+    "api_name": "211",
+    "last_crawled": "2025-10-10T04:14:30.403850",
+    "content_hash": "cb1b337fcb7cb7f73bbd40a6ece90caca83bab20b5697543881b8b385f1e38e7",
+    "update_log_date": null,
+    "parameters_count": 8,
+    "response_fields_count": 3,
+    "endpoint": "/products/get_price_list",
+    "method": "GET"
+  },
+  "213": {
+    "api_name": "213",
+    "last_crawled": "2025-10-10T04:14:30.404120",
+    "content_hash": "cb1b337fcb7cb7f73bbd40a6ece90caca83bab20b5697543881b8b385f1e38e7",
+    "update_log_date": null,
+    "parameters_count": 8,
+    "response_fields_count": 3,
+    "endpoint": "/products/get_price_list",
+    "method": "GET"
+  },
+  "215": {
+    "api_name": "215",
+    "last_crawled": "2025-10-10T04:14:30.404388",
+    "content_hash": "cb1b337fcb7cb7f73bbd40a6ece90caca83bab20b5697543881b8b385f1e38e7",
+    "update_log_date": null,
+    "parameters_count": 8,
+    "response_fields_count": 3,
+    "endpoint": "/products/get_price_list",
+    "method": "GET"
+  },
+  "217": {
+    "api_name": "217",
+    "last_crawled": "2025-10-10T04:14:30.404646",
+    "content_hash": "cb1b337fcb7cb7f73bbd40a6ece90caca83bab20b5697543881b8b385f1e38e7",
+    "update_log_date": null,
+    "parameters_count": 8,
+    "response_fields_count": 3,
+    "endpoint": "/products/get_price_list",
+    "method": "GET"
+  },
+  "219": {
+    "api_name": "219",
+    "last_crawled": "2025-10-10T04:14:30.404888",
+    "content_hash": "cb1b337fcb7cb7f73bbd40a6ece90caca83bab20b5697543881b8b385f1e38e7",
+    "update_log_date": null,
+    "parameters_count": 8,
+    "response_fields_count": 3,
+    "endpoint": "/products/get_price_list",
+    "method": "GET"
+  },
+  "221": {
+    "api_name": "221",
+    "last_crawled": "2025-10-10T04:14:30.405129",
+    "content_hash": "cb1b337fcb7cb7f73bbd40a6ece90caca83bab20b5697543881b8b385f1e38e7",
+    "update_log_date": null,
+    "parameters_count": 8,
+    "response_fields_count": 3,
+    "endpoint": "/products/get_price_list",
+    "method": "GET"
+  },
+  "223": {
+    "api_name": "223",
+    "last_crawled": "2025-10-10T04:14:30.405370",
+    "content_hash": "cb1b337fcb7cb7f73bbd40a6ece90caca83bab20b5697543881b8b385f1e38e7",
+    "update_log_date": null,
+    "parameters_count": 8,
+    "response_fields_count": 3,
+    "endpoint": "/products/get_price_list",
+    "method": "GET"
+  },
+  "225": {
+    "api_name": "225",
+    "last_crawled": "2025-10-10T04:14:30.405624",
+    "content_hash": "cb1b337fcb7cb7f73bbd40a6ece90caca83bab20b5697543881b8b385f1e38e7",
+    "update_log_date": null,
+    "parameters_count": 8,
+    "response_fields_count": 3,
+    "endpoint": "/products/get_price_list",
+    "method": "GET"
+  },
+  "227": {
+    "api_name": "227",
+    "last_crawled": "2025-10-10T04:14:30.405865",
+    "content_hash": "cb1b337fcb7cb7f73bbd40a6ece90caca83bab20b5697543881b8b385f1e38e7",
+    "update_log_date": null,
+    "parameters_count": 8,
+    "response_fields_count": 3,
+    "endpoint": "/products/get_price_list",
+    "method": "GET"
+  },
+  "229": {
+    "api_name": "229",
+    "last_crawled": "2025-10-10T04:14:30.406100",
+    "content_hash": "cb1b337fcb7cb7f73bbd40a6ece90caca83bab20b5697543881b8b385f1e38e7",
+    "update_log_date": null,
+    "parameters_count": 8,
+    "response_fields_count": 3,
+    "endpoint": "/products/get_price_list",
+    "method": "GET"
+  },
+  "24": {
+    "api_name": "24",
+    "last_crawled": "2025-10-10T04:14:30.406339",
+    "content_hash": "cb1b337fcb7cb7f73bbd40a6ece90caca83bab20b5697543881b8b385f1e38e7",
+    "update_log_date": null,
+    "parameters_count": 8,
+    "response_fields_count": 3,
+    "endpoint": "/products/get_price_list",
+    "method": "GET"
+  },
+  "261": {
+    "api_name": "261",
+    "last_crawled": "2025-10-10T04:14:30.406578",
+    "content_hash": "cb1b337fcb7cb7f73bbd40a6ece90caca83bab20b5697543881b8b385f1e38e7",
+    "update_log_date": null,
+    "parameters_count": 8,
+    "response_fields_count": 3,
+    "endpoint": "/products/get_price_list",
+    "method": "GET"
+  },
+  "27": {
+    "api_name": "27",
+    "last_crawled": "2025-10-10T04:14:30.406820",
+    "content_hash": "cb1b337fcb7cb7f73bbd40a6ece90caca83bab20b5697543881b8b385f1e38e7",
+    "update_log_date": null,
+    "parameters_count": 8,
+    "response_fields_count": 3,
+    "endpoint": "/products/get_price_list",
+    "method": "GET"
+  },
+  "277": {
+    "api_name": "277",
+    "last_crawled": "2025-10-10T04:14:30.407060",
+    "content_hash": "cb1b337fcb7cb7f73bbd40a6ece90caca83bab20b5697543881b8b385f1e38e7",
+    "update_log_date": null,
+    "parameters_count": 8,
+    "response_fields_count": 3,
+    "endpoint": "/products/get_price_list",
+    "method": "GET"
+  },
+  "28": {
+    "api_name": "28",
+    "last_crawled": "2025-10-10T04:14:30.407289",
+    "content_hash": "cb1b337fcb7cb7f73bbd40a6ece90caca83bab20b5697543881b8b385f1e38e7",
+    "update_log_date": null,
+    "parameters_count": 8,
+    "response_fields_count": 3,
+    "endpoint": "/products/get_price_list",
+    "method": "GET"
+  },
+  "286": {
+    "api_name": "286",
+    "last_crawled": "2025-10-10T04:14:30.407546",
+    "content_hash": "cb1b337fcb7cb7f73bbd40a6ece90caca83bab20b5697543881b8b385f1e38e7",
+    "update_log_date": null,
+    "parameters_count": 8,
+    "response_fields_count": 3,
+    "endpoint": "/products/get_price_list",
+    "method": "GET"
+  },
+  "29": {
+    "api_name": "29",
+    "last_crawled": "2025-10-10T04:14:30.407782",
+    "content_hash": "cb1b337fcb7cb7f73bbd40a6ece90caca83bab20b5697543881b8b385f1e38e7",
+    "update_log_date": null,
+    "parameters_count": 8,
+    "response_fields_count": 3,
+    "endpoint": "/products/get_price_list",
+    "method": "GET"
+  },
+  "290": {
+    "api_name": "290",
+    "last_crawled": "2025-10-10T04:14:30.408013",
+    "content_hash": "cb1b337fcb7cb7f73bbd40a6ece90caca83bab20b5697543881b8b385f1e38e7",
+    "update_log_date": null,
+    "parameters_count": 8,
+    "response_fields_count": 3,
+    "endpoint": "/products/get_price_list",
+    "method": "GET"
+  },
+  "292": {
+    "api_name": "292",
+    "last_crawled": "2025-10-10T04:14:30.408248",
+    "content_hash": "cb1b337fcb7cb7f73bbd40a6ece90caca83bab20b5697543881b8b385f1e38e7",
+    "update_log_date": null,
+    "parameters_count": 8,
+    "response_fields_count": 3,
+    "endpoint": "/products/get_price_list",
+    "method": "GET"
+  },
+  "31": {
+    "api_name": "31",
+    "last_crawled": "2025-10-10T04:14:30.408478",
+    "content_hash": "cb1b337fcb7cb7f73bbd40a6ece90caca83bab20b5697543881b8b385f1e38e7",
+    "update_log_date": null,
+    "parameters_count": 8,
+    "response_fields_count": 3,
+    "endpoint": "/products/get_price_list",
+    "method": "GET"
+  },
+  "34": {
+    "api_name": "34",
+    "last_crawled": "2025-10-10T04:14:30.408718",
+    "content_hash": "cb1b337fcb7cb7f73bbd40a6ece90caca83bab20b5697543881b8b385f1e38e7",
+    "update_log_date": null,
+    "parameters_count": 8,
+    "response_fields_count": 3,
+    "endpoint": "/products/get_price_list",
+    "method": "GET"
+  },
+  "378": {
+    "api_name": "378",
+    "last_crawled": "2025-10-10T04:14:30.408965",
+    "content_hash": "cb1b337fcb7cb7f73bbd40a6ece90caca83bab20b5697543881b8b385f1e38e7",
+    "update_log_date": null,
+    "parameters_count": 8,
+    "response_fields_count": 3,
+    "endpoint": "/products/get_price_list",
+    "method": "GET"
+  },
+  "381": {
+    "api_name": "381",
+    "last_crawled": "2025-10-10T04:14:30.409204",
+    "content_hash": "cb1b337fcb7cb7f73bbd40a6ece90caca83bab20b5697543881b8b385f1e38e7",
+    "update_log_date": null,
+    "parameters_count": 8,
+    "response_fields_count": 3,
+    "endpoint": "/products/get_price_list",
+    "method": "GET"
+  },
+  "382": {
+    "api_name": "382",
+    "last_crawled": "2025-10-10T04:14:30.409435",
+    "content_hash": "cb1b337fcb7cb7f73bbd40a6ece90caca83bab20b5697543881b8b385f1e38e7",
+    "update_log_date": null,
+    "parameters_count": 8,
+    "response_fields_count": 3,
+    "endpoint": "/products/get_price_list",
+    "method": "GET"
+  },
+  "383": {
+    "api_name": "383",
+    "last_crawled": "2025-10-10T04:14:30.409669",
+    "content_hash": "cb1b337fcb7cb7f73bbd40a6ece90caca83bab20b5697543881b8b385f1e38e7",
+    "update_log_date": null,
+    "parameters_count": 8,
+    "response_fields_count": 3,
+    "endpoint": "/products/get_price_list",
+    "method": "GET"
+  },
+  "384": {
+    "api_name": "384",
+    "last_crawled": "2025-10-10T04:14:30.409908",
+    "content_hash": "cb1b337fcb7cb7f73bbd40a6ece90caca83bab20b5697543881b8b385f1e38e7",
+    "update_log_date": null,
+    "parameters_count": 8,
+    "response_fields_count": 3,
+    "endpoint": "/products/get_price_list",
+    "method": "GET"
+  },
+  "385": {
+    "api_name": "385",
+    "last_crawled": "2025-10-10T04:14:30.410149",
+    "content_hash": "cb1b337fcb7cb7f73bbd40a6ece90caca83bab20b5697543881b8b385f1e38e7",
+    "update_log_date": null,
+    "parameters_count": 8,
+    "response_fields_count": 3,
+    "endpoint": "/products/get_price_list",
+    "method": "GET"
+  },
+  "4": {
+    "api_name": "4",
+    "last_crawled": "2025-10-10T04:14:30.410413",
+    "content_hash": "cb1b337fcb7cb7f73bbd40a6ece90caca83bab20b5697543881b8b385f1e38e7",
+    "update_log_date": null,
+    "parameters_count": 8,
+    "response_fields_count": 3,
+    "endpoint": "/products/get_price_list",
+    "method": "GET"
+  },
+  "50": {
+    "api_name": "50",
+    "last_crawled": "2025-10-10T04:14:30.410676",
+    "content_hash": "cb1b337fcb7cb7f73bbd40a6ece90caca83bab20b5697543881b8b385f1e38e7",
+    "update_log_date": null,
+    "parameters_count": 8,
+    "response_fields_count": 3,
+    "endpoint": "/products/get_price_list",
+    "method": "GET"
+  },
+  "54": {
+    "api_name": "54",
+    "last_crawled": "2025-10-10T04:14:30.410919",
+    "content_hash": "cb1b337fcb7cb7f73bbd40a6ece90caca83bab20b5697543881b8b385f1e38e7",
+    "update_log_date": null,
+    "parameters_count": 8,
+    "response_fields_count": 3,
+    "endpoint": "/products/get_price_list",
+    "method": "GET"
+  },
+  "568": {
+    "api_name": "568",
+    "last_crawled": "2025-10-10T04:14:30.411155",
+    "content_hash": "cb1b337fcb7cb7f73bbd40a6ece90caca83bab20b5697543881b8b385f1e38e7",
+    "update_log_date": null,
+    "parameters_count": 8,
+    "response_fields_count": 3,
+    "endpoint": "/products/get_price_list",
+    "method": "GET"
+  },
+  "643": {
+    "api_name": "643",
+    "last_crawled": "2025-10-10T04:14:30.411389",
+    "content_hash": "cb1b337fcb7cb7f73bbd40a6ece90caca83bab20b5697543881b8b385f1e38e7",
+    "update_log_date": null,
+    "parameters_count": 8,
+    "response_fields_count": 3,
+    "endpoint": "/products/get_price_list",
+    "method": "GET"
+  },
+  "669": {
+    "api_name": "669",
+    "last_crawled": "2025-10-10T04:14:30.411631",
+    "content_hash": "cb1b337fcb7cb7f73bbd40a6ece90caca83bab20b5697543881b8b385f1e38e7",
+    "update_log_date": null,
+    "parameters_count": 8,
+    "response_fields_count": 3,
+    "endpoint": "/products/get_price_list",
+    "method": "GET"
+  },
+  "677": {
+    "api_name": "677",
+    "last_crawled": "2025-10-10T04:14:30.411857",
+    "content_hash": "cb1b337fcb7cb7f73bbd40a6ece90caca83bab20b5697543881b8b385f1e38e7",
+    "update_log_date": null,
+    "parameters_count": 8,
+    "response_fields_count": 3,
+    "endpoint": "/products/get_price_list",
+    "method": "GET"
+  },
+  "697": {
+    "api_name": "697",
+    "last_crawled": "2025-10-10T04:14:30.412088",
+    "content_hash": "cb1b337fcb7cb7f73bbd40a6ece90caca83bab20b5697543881b8b385f1e38e7",
+    "update_log_date": null,
+    "parameters_count": 8,
+    "response_fields_count": 3,
+    "endpoint": "/products/get_price_list",
+    "method": "GET"
+  },
+  "developer-guide.12": {
+    "api_name": "developer-guide.12",
+    "last_crawled": "2025-10-10T04:14:30.412312",
+    "content_hash": "59d4f00fbab0cb80042613ba623b369944c93eaf1ef86716713e242114f8c52c",
+    "update_log_date": null,
+    "parameters_count": 1,
+    "response_fields_count": 0,
+    "endpoint": null,
+    "method": null
+  },
+  "developer-guide.14": {
+    "api_name": "developer-guide.14",
+    "last_crawled": "2025-10-10T04:14:30.412501",
+    "content_hash": "ff71f07ebef13c3b8a730c03c448191ecf313a34bd91968ae2f79c90f699fd74",
+    "update_log_date": null,
+    "parameters_count": 0,
+    "response_fields_count": 0,
+    "endpoint": null,
+    "method": null
+  },
+  "developer-guide.16": {
+    "api_name": "developer-guide.16",
+    "last_crawled": "2025-10-10T04:14:30.412706",
+    "content_hash": "3d5e0b4d4a5c817d2a0a37b5bf83583035232536c631f6fba7910713ad1586d5",
+    "update_log_date": null,
+    "parameters_count": 2,
+    "response_fields_count": 0,
+    "endpoint": null,
+    "method": null
+  },
+  "developer-guide.18": {
+    "api_name": "developer-guide.18",
+    "last_crawled": "2025-10-10T04:14:30.412900",
+    "content_hash": "ad3295dc4a894eb4de602485fb1269619a0633d8c0dbfde5f659cf8e26621ab3",
+    "update_log_date": null,
+    "parameters_count": 0,
+    "response_fields_count": 0,
+    "endpoint": null,
+    "method": "HTTP POST"
+  },
+  "developer-guide.20": {
+    "api_name": "developer-guide.20",
+    "last_crawled": "2025-10-10T04:14:30.413109",
+    "content_hash": "e07a91e573688afe68d193ac30a6926574c93d0a0bff2e857c31704620e0fc85",
+    "update_log_date": null,
+    "parameters_count": 0,
+    "response_fields_count": 0,
+    "endpoint": null,
+    "method": null
+  },
+  "developer-guide.2058": {
+    "api_name": "developer-guide.2058",
+    "last_crawled": "2025-10-10T04:14:30.413320",
+    "content_hash": "f9a249efca44d031c2de226a463295b51b0de8a52f1c00086f0c3a6fdb98bd1f",
+    "update_log_date": null,
+    "parameters_count": 0,
+    "response_fields_count": 0,
+    "endpoint": null,
+    "method": null
+  },
+  "developer-guide.209": {
+    "api_name": "developer-guide.209",
+    "last_crawled": "2025-10-10T04:14:30.413558",
+    "content_hash": "fe60876185ada48155400cb2058524e093812a30707ca6b47e64d0b08a6e2c24",
+    "update_log_date": null,
+    "parameters_count": 1,
+    "response_fields_count": 1,
+    "endpoint": "/v2/product/get_category",
+    "method": "GET"
+  },
+  "developer-guide.211": {
+    "api_name": "developer-guide.211",
+    "last_crawled": "2025-10-10T04:14:30.413772",
+    "content_hash": "1fd12173a1611bca44198cac24ffa0c1a23d458426648ef0c8621ce7d36436f2",
+    "update_log_date": null,
+    "parameters_count": 1,
+    "response_fields_count": 2,
+    "endpoint": "v2.media_space.upload_image",
+    "method": null
+  },
+  "developer-guide.213": {
+    "api_name": "developer-guide.213",
+    "last_crawled": "2025-10-10T04:14:30.413967",
+    "content_hash": "bdab95361a5e67579c5a88d344102919e6674b472d750604285c1cf4ad1cff43",
+    "update_log_date": null,
+    "parameters_count": 0,
+    "response_fields_count": 0,
+    "endpoint": null,
+    "method": null
+  },
+  "developer-guide.215": {
+    "api_name": "developer-guide.215",
+    "last_crawled": "2025-10-10T04:14:30.414180",
+    "content_hash": "582d321a613d542f4759f4dfb031a939beab28f836f63ac565a882cafbf0ab11",
+    "update_log_date": null,
+    "parameters_count": 1,
+    "response_fields_count": 0,
+    "endpoint": "v2.global_product.create_publish_task",
+    "method": null
+  },
+  "developer-guide.217": {
+    "api_name": "developer-guide.217",
+    "last_crawled": "2025-10-10T04:14:30.414409",
+    "content_hash": "91cc50774020435d11b562f079f2865669c665b9f39e29b7520d39bdd659cb29",
+    "update_log_date": null,
+    "parameters_count": 5,
+    "response_fields_count": 0,
+    "endpoint": "media_space",
+    "method": null
+  },
+  "developer-guide.219": {
+    "api_name": "developer-guide.219",
+    "last_crawled": "2025-10-10T04:14:30.414636",
+    "content_hash": "0ed6f4ad2ec2f7c802f21614f6e24ca6f52ac3a21fc75113975b27b1e8b9dd86",
+    "update_log_date": null,
+    "parameters_count": 3,
+    "response_fields_count": 0,
+    "endpoint": "v2/product.update_tier_variation + v2.product.add_model",
+    "method": null
+  },
+  "developer-guide.221": {
+    "api_name": "developer-guide.221",
+    "last_crawled": "2025-10-10T04:14:30.414832",
+    "content_hash": "ebc94417576af2bc80fc8287271330e2cb4094a2e1ab22063fe0720859d3e5fb",
+    "update_log_date": null,
+    "parameters_count": 0,
+    "response_fields_count": 0,
+    "endpoint": null,
+    "method": null
+  },
+  "developer-guide.223": {
+    "api_name": "developer-guide.223",
+    "last_crawled": "2025-10-10T04:14:30.415062",
+    "content_hash": "be2288b36a8b2b525c030d386c4090aa14bc56d5dcfeff15d53b4280b3b2e97d",
+    "update_log_date": null,
+    "parameters_count": 0,
+    "response_fields_count": 1,
+    "endpoint": null,
+    "method": null
+  },
+  "developer-guide.225": {
+    "api_name": "developer-guide.225",
+    "last_crawled": "2025-10-10T04:14:30.415278",
+    "content_hash": "01f272a1d15ae61a9beb809d26ac875d304f62bd19f229350aa753f7ab6758c2",
+    "update_log_date": null,
+    "parameters_count": 3,
+    "response_fields_count": 0,
+    "endpoint": null,
+    "method": null
+  },
+  "developer-guide.227": {
+    "api_name": "developer-guide.227",
+    "last_crawled": "2025-10-10T04:14:30.415495",
+    "content_hash": "5bb9ab7b47a76fc01578eb5f00a702252068aa4eb53e1d4dba6f8826d4655a83",
+    "update_log_date": null,
+    "parameters_count": 2,
+    "response_fields_count": 0,
+    "endpoint": null,
+    "method": null
+  },
+  "developer-guide.229": {
+    "api_name": "developer-guide.229",
+    "last_crawled": "2025-10-10T04:14:30.415703",
+    "content_hash": "2af66c8d47903b23d319b0331f869de53de28aad941129845199b1b6bd3b3d65",
+    "update_log_date": null,
+    "parameters_count": 0,
+    "response_fields_count": 0,
+    "endpoint": null,
+    "method": null
+  },
+  "developer-guide.24": {
+    "api_name": "developer-guide.24",
+    "last_crawled": "2025-10-10T04:14:30.415897",
+    "content_hash": "ba5470cc84bde258cf70d28dd4ac084602c0afe07dc875ea4994dfc9f03168cc",
+    "update_log_date": null,
+    "parameters_count": 0,
+    "response_fields_count": 0,
+    "endpoint": null,
+    "method": null
+  },
+  "developer-guide.261": {
+    "api_name": "developer-guide.261",
+    "last_crawled": "2025-10-10T04:14:30.416093",
+    "content_hash": "cfc0c7c08674ae16d39dfe8647fe431588bbffcafe87caea9fe644cd9088f833",
+    "update_log_date": null,
+    "parameters_count": 0,
+    "response_fields_count": 0,
+    "endpoint": null,
+    "method": null
+  },
+  "developer-guide.27": {
+    "api_name": "developer-guide.27",
+    "last_crawled": "2025-10-10T04:14:30.416353",
+    "content_hash": "9e832c4736c2b00ee618e88beeaf9bb73f1a8c9ca2a9cfb968540a887cff9ca3",
+    "update_log_date": null,
+    "parameters_count": 9,
+    "response_fields_count": 0,
+    "endpoint": null,
+    "method": null
+  },
+  "developer-guide.277": {
+    "api_name": "developer-guide.277",
+    "last_crawled": "2025-10-10T04:14:30.416571",
+    "content_hash": "b93bb1e231caf834ad11a0ff5eeb547d1305d3178116284f28e8eb9d6d6188ba",
+    "update_log_date": null,
+    "parameters_count": 2,
+    "response_fields_count": 0,
+    "endpoint": null,
+    "method": null
+  },
+  "developer-guide.28": {
+    "api_name": "developer-guide.28",
+    "last_crawled": "2025-10-10T04:14:30.416769",
+    "content_hash": "fdcb56fa01ca0be6fc8e849610305748e2b643b0e912a2d50d78c40eb92ece1e",
+    "update_log_date": null,
+    "parameters_count": 0,
+    "response_fields_count": 1,
+    "endpoint": "v2.shop.get_shop_info",
+    "method": "GET"
+  },
+  "developer-guide.286": {
+    "api_name": "developer-guide.286",
+    "last_crawled": "2025-10-10T04:14:30.416983",
+    "content_hash": "136d0628ccc40e058b71affb07512e0a0201cd1ef705bbf56138a789a7d24918",
+    "update_log_date": null,
+    "parameters_count": 1,
+    "response_fields_count": 0,
+    "endpoint": null,
+    "method": "POST"
+  },
+  "developer-guide.29": {
+    "api_name": "developer-guide.29",
+    "last_crawled": "2025-10-10T04:14:30.417193",
+    "content_hash": "f4f98154f9a0adb70e086805d80a278c2e0a08368498d1325d533f60fe8b022a",
+    "update_log_date": null,
+    "parameters_count": 0,
+    "response_fields_count": 2,
+    "endpoint": "v2.shop.get_shop_info",
+    "method": "GET"
+  },
+  "developer-guide.290": {
+    "api_name": "developer-guide.290",
+    "last_crawled": "2025-10-10T04:14:30.417406",
+    "content_hash": "6df8703aef1bc26d4b204c3fe7471d62477729a06127c7f4ff992622de4f3bbe",
+    "update_log_date": null,
+    "parameters_count": 3,
+    "response_fields_count": 0,
+    "endpoint": "v2/logistics/get_channel_list",
+    "method": "GET"
+  },
+  "developer-guide.292": {
+    "api_name": "developer-guide.292",
+    "last_crawled": "2025-10-10T04:14:30.417647",
+    "content_hash": "ed847f9f602e2dccca03f0456fbdaf4810bda1c04ab8f614c7f85d8bdab064bc",
+    "update_log_date": null,
+    "parameters_count": 7,
+    "response_fields_count": 0,
+    "endpoint": null,
+    "method": null
+  },
+  "developer-guide.31": {
+    "api_name": "developer-guide.31",
+    "last_crawled": "2025-10-10T04:14:30.417935",
+    "content_hash": "8f6fb8c23bc59f311360e904ed344b9c73b687415baec0088c4e21e4669dbd5d",
+    "update_log_date": null,
+    "parameters_count": 3,
+    "response_fields_count": 0,
+    "endpoint": null,
+    "method": null
+  },
+  "developer-guide.32": {
+    "api_name": "developer-guide.32",
+    "last_crawled": "2025-10-10T04:14:30.418149",
+    "content_hash": "b418c058885419d562eea819704c6f3b406dc64ae8f21e39273a08f380c945e0",
+    "update_log_date": null,
+    "parameters_count": 0,
+    "response_fields_count": 0,
+    "endpoint": null,
+    "method": null
+  },
+  "developer-guide.34": {
+    "api_name": "developer-guide.34",
+    "last_crawled": "2025-10-10T04:14:30.418350",
+    "content_hash": "3024d9c59bd88968a56faa3518403cc6af8ab930591907e2239765f78d29c11a",
+    "update_log_date": null,
+    "parameters_count": 0,
+    "response_fields_count": 0,
+    "endpoint": null,
+    "method": null
+  },
+  "developer-guide.36": {
+    "api_name": "developer-guide.36",
+    "last_crawled": "2025-10-10T04:14:30.418542",
+    "content_hash": "ebc94417576af2bc80fc8287271330e2cb4094a2e1ab22063fe0720859d3e5fb",
+    "update_log_date": null,
+    "parameters_count": 0,
+    "response_fields_count": 0,
+    "endpoint": null,
+    "method": null
+  },
+  "developer-guide.378": {
+    "api_name": "developer-guide.378",
+    "last_crawled": "2025-10-10T04:14:30.418775",
+    "content_hash": "2e6d9fc4730cba2417d7596f5e3ef84a4b3912b00284769034b63ad57f6d5b3b",
+    "update_log_date": null,
+    "parameters_count": 6,
+    "response_fields_count": 0,
+    "endpoint": null,
+    "method": null
+  },
+  "developer-guide.381": {
+    "api_name": "developer-guide.381",
+    "last_crawled": "2025-10-10T04:14:30.419011",
+    "content_hash": "fe175fd555a4cd293ea122f149b88b4616203b6fde8563d85a0ccb198379385d",
+    "update_log_date": null,
+    "parameters_count": 5,
+    "response_fields_count": 0,
+    "endpoint": null,
+    "method": null
+  },
+  "developer-guide.382": {
+    "api_name": "developer-guide.382",
+    "last_crawled": "2025-10-10T04:14:30.419264",
+    "content_hash": "bab4d0bffb3b2d273043388ef15ef083101e2f6aff3e28df84f891d5c485aa29",
+    "update_log_date": null,
+    "parameters_count": 1,
+    "response_fields_count": 0,
+    "endpoint": "/v2/order/get_order_detail",
+    "method": "GET"
+  },
+  "developer-guide.383": {
+    "api_name": "developer-guide.383",
+    "last_crawled": "2025-10-10T04:14:30.419510",
+    "content_hash": "0cd8efa10176bd8c1bfc5196b6a0ccf765195445cbc6a7706f23ade0cf9290e8",
+    "update_log_date": null,
+    "parameters_count": 0,
+    "response_fields_count": 1,
+    "endpoint": "v2.order.get_order_list",
+    "method": "GET"
+  },
+  "developer-guide.384": {
+    "api_name": "developer-guide.384",
+    "last_crawled": "2025-10-10T04:14:30.419754",
+    "content_hash": "1bb9cec757ee95fe426236d1267ea8cb38e24e887036558ebcfef2cfd339ddf7",
+    "update_log_date": null,
+    "parameters_count": 1,
+    "response_fields_count": 0,
+    "endpoint": "https://open.shopee.com/signup/email",
+    "method": null
+  },
+  "developer-guide.385": {
+    "api_name": "developer-guide.385",
+    "last_crawled": "2025-10-10T04:14:30.419977",
+    "content_hash": "90866051d40170ccc98c6f7a56fb12841b388ec767a3f1b87eea92b52c069f69",
+    "update_log_date": null,
+    "parameters_count": 6,
+    "response_fields_count": 0,
+    "endpoint": "/api/v2/shop/auth_partner",
+    "method": "GET"
+  },
+  "developer-guide.4": {
+    "api_name": "developer-guide.4",
+    "last_crawled": "2025-10-10T04:14:30.420176",
+    "content_hash": "15249e6c922ff09af7e5ecf7053e7a76b7c6fa5a214dd7cfc00deb7c7dc3cd59",
+    "update_log_date": null,
+    "parameters_count": 0,
+    "response_fields_count": 0,
+    "endpoint": null,
+    "method": null
+  },
+  "developer-guide.50": {
+    "api_name": "developer-guide.50",
+    "last_crawled": "2025-10-10T04:14:30.420371",
+    "content_hash": "16d0a78a1d0ac0a37439cd24f156ca96e3f4bb93fc8f54e3368dfc2c6e81689f",
+    "update_log_date": null,
+    "parameters_count": 0,
+    "response_fields_count": 0,
+    "endpoint": null,
+    "method": null
+  },
+  "developer-guide.54": {
+    "api_name": "developer-guide.54",
+    "last_crawled": "2025-10-10T04:14:30.420561",
+    "content_hash": "9d2d03cc3b34958df507acb5fd386cfad23756ed50208a7d6f4f7edb160a31b2",
+    "update_log_date": null,
+    "parameters_count": 0,
+    "response_fields_count": 0,
+    "endpoint": null,
+    "method": null
+  },
+  "developer-guide.568": {
+    "api_name": "developer-guide.568",
+    "last_crawled": "2025-10-10T04:14:30.420762",
+    "content_hash": "e647ed8a12dbfdbc0d1c5535f51d738a03fe8ff386ceba2eb20284080d2803d2",
+    "update_log_date": null,
+    "parameters_count": 2,
+    "response_fields_count": 0,
+    "endpoint": "/api/v2/shop/get_shop_info",
+    "method": "GET"
+  },
+  "developer-guide.643": {
+    "api_name": "developer-guide.643",
+    "last_crawled": "2025-10-10T04:14:30.420973",
+    "content_hash": "9e0b9e6d3e07b3f34b5382d689a62028187daede6c69a6c2eb3e681543d484c9",
+    "update_log_date": null,
+    "parameters_count": 0,
+    "response_fields_count": 0,
+    "endpoint": null,
+    "method": null
+  },
+  "developer-guide.644": {
+    "api_name": "developer-guide.644",
+    "last_crawled": "2025-10-10T04:14:30.421161",
+    "content_hash": "21fb919d063b16141e4b8cd923ea5ec2727fd6a57a8cf0c65d1be35a388805c3",
+    "update_log_date": null,
+    "parameters_count": 0,
+    "response_fields_count": 0,
+    "endpoint": null,
+    "method": null
+  },
+  "developer-guide.669": {
+    "api_name": "developer-guide.669",
+    "last_crawled": "2025-10-10T04:14:30.421388",
+    "content_hash": "8ef600bb1408eb512eb8bf3073ff41f9a05a3c458c6dd0d43fd0076876a8d45e",
+    "update_log_date": null,
+    "parameters_count": 1,
+    "response_fields_count": 0,
+    "endpoint": null,
+    "method": null
+  },
+  "developer-guide.677": {
+    "api_name": "developer-guide.677",
+    "last_crawled": "2025-10-10T04:14:30.421594",
+    "content_hash": "410fd02a2300b0ac7056b726489efbd43f41a2170816206885dccdf417fc413d",
+    "update_log_date": null,
+    "parameters_count": 0,
+    "response_fields_count": 0,
+    "endpoint": "v2.product.search_unpackaged_model_list",
+    "method": "GET"
+  },
+  "developer-guide.697": {
+    "api_name": "developer-guide.697",
+    "last_crawled": "2025-10-10T04:14:30.421827",
+    "content_hash": "acc02e4c8e1329a449fe8a2b7d28f16fed32443c09e63dea1cd9ea8ef940d3e8",
+    "update_log_date": null,
+    "parameters_count": 2,
+    "response_fields_count": 2,
+    "endpoint": null,
+    "method": "HTTP POST"
+  },
+  "v2.account_health.get_late_orders": {
+    "api_name": "v2.account_health.get_late_orders",
+    "last_crawled": "2025-10-10T04:14:30.422137",
+    "content_hash": "3720aac966ce269875ec6769790cb3a2ec0e2327e581d1941114b3e4c194240f",
+    "update_log_date": null,
+    "parameters_count": 5,
+    "response_fields_count": 7,
+    "endpoint": "/account_health/get_late_orders",
+    "method": "GET"
+  },
+  "v2.account_health.get_listings_with_issues": {
+    "api_name": "v2.account_health.get_listings_with_issues",
+    "last_crawled": "2025-10-10T04:14:30.422345",
+    "content_hash": "aa133edff8448135d93265a4171987c552631a66e5ce8c03bb31783ae14f26fc",
+    "update_log_date": null,
+    "parameters_count": 0,
+    "response_fields_count": 0,
+    "endpoint": "https://partner.shopeemobile.com/api/v2/account_health/get_listings_with_issues",
+    "method": "GET"
+  },
+  "v2.account_health.get_metric_source_detail": {
+    "api_name": "v2.account_health.get_metric_source_detail",
+    "last_crawled": "2025-10-10T04:14:30.422543",
+    "content_hash": "ac39598c53156505d9c9322427bc677d93cae483da79df73284dc4fa8c43f1dd",
+    "update_log_date": null,
+    "parameters_count": 0,
+    "response_fields_count": 0,
+    "endpoint": "https://partner.shopeemobile.com/api/v2/account_health/get_metric_source_detail",
+    "method": "GET"
+  },
+  "v2.account_health.get_penalty_point_history": {
+    "api_name": "v2.account_health.get_penalty_point_history",
+    "last_crawled": "2025-10-10T04:14:30.422733",
+    "content_hash": "3881630dfaf25dd6cfe34d0a37f61d6656be732aa04d2f2c74cc67561635885d",
+    "update_log_date": null,
+    "parameters_count": 0,
+    "response_fields_count": 0,
+    "endpoint": "https://partner.shopeemobile.com/api/v2/account_health/get_penalty_point_history",
+    "method": "GET"
+  },
+  "v2.account_health.get_punishment_history": {
+    "api_name": "v2.account_health.get_punishment_history",
+    "last_crawled": "2025-10-10T04:14:30.422930",
+    "content_hash": "a81c17b338efc88e21545ae2646695f8696d40ca79ff3d40dca791b3aebda577",
+    "update_log_date": null,
+    "parameters_count": 0,
+    "response_fields_count": 0,
+    "endpoint": "https://partner.shopeemobile.com/api/v2/account_health/get_punishment_history",
+    "method": "GET"
+  },
+  "v2.account_health.get_shop_performance": {
+    "api_name": "v2.account_health.get_shop_performance",
+    "last_crawled": "2025-10-10T04:14:30.423133",
+    "content_hash": "642da0b83ce644627767d98395c8f3e5bac165594a52b2035747a6a70c689044",
+    "update_log_date": null,
+    "parameters_count": 0,
+    "response_fields_count": 0,
+    "endpoint": "https://partner.shopeemobile.com/api/v2/account_health/get_shop_performance",
+    "method": "GET"
+  },
+  "v2.add_on_deal.add_add_on_deal": {
+    "api_name": "v2.add_on_deal.add_add_on_deal",
+    "last_crawled": "2025-10-10T04:14:30.423324",
+    "content_hash": "700a929761ccaaa59d6e9757efa18b6ecd300e8fcc9f1c3e1e60d675286a91f7",
+    "update_log_date": null,
+    "parameters_count": 0,
+    "response_fields_count": 0,
+    "endpoint": "https://partner.shopeemobile.com/api/v2/add_on_deal/add_add_on_deal",
+    "method": "POST"
+  },
+  "v2.add_on_deal.add_add_on_deal_main_item": {
+    "api_name": "v2.add_on_deal.add_add_on_deal_main_item",
+    "last_crawled": "2025-10-10T04:14:30.423572",
+    "content_hash": "d16d519450238c3cb427a4574c7a58f6823a8eb5a4974b6605ec6141d61757c2",
+    "update_log_date": null,
+    "parameters_count": 0,
+    "response_fields_count": 0,
+    "endpoint": "https://partner.shopeemobile.com/api/v2/add_on_deal/add_add_on_deal_main_item",
+    "method": "POST"
+  },
+  "v2.add_on_deal.add_add_on_deal_sub_item": {
+    "api_name": "v2.add_on_deal.add_add_on_deal_sub_item",
+    "last_crawled": "2025-10-10T04:14:30.423785",
+    "content_hash": "b9a193fd04619ead4cfb9035d0d19ddce0de48f1b3202241da14d8b5c0511357",
+    "update_log_date": null,
+    "parameters_count": 0,
+    "response_fields_count": 0,
+    "endpoint": "https://partner.shopeemobile.com/api/v2/add_on_deal/add_add_on_deal_sub_item",
+    "method": "POST"
+  },
+  "v2.add_on_deal.delete_add_on_deal": {
+    "api_name": "v2.add_on_deal.delete_add_on_deal",
+    "last_crawled": "2025-10-10T04:14:30.423990",
+    "content_hash": "1cf70c2f9b3c4af63812f4dce481642ba6931dd46564d7e4f4be694917e58ebd",
+    "update_log_date": null,
+    "parameters_count": 0,
+    "response_fields_count": 0,
+    "endpoint": "https://partner.shopeemobile.com/api/v2/add_on_deal/delete_add_on_deal",
+    "method": "POST"
+  },
+  "v2.add_on_deal.delete_add_on_deal_main_item": {
+    "api_name": "v2.add_on_deal.delete_add_on_deal_main_item",
+    "last_crawled": "2025-10-10T04:14:30.424190",
+    "content_hash": "6a0b89228aca8ac94baa52abf891387593ca8480053389d1bad5614386a401af",
+    "update_log_date": null,
+    "parameters_count": 0,
+    "response_fields_count": 0,
+    "endpoint": "https://partner.shopeemobile.com/api/v2/add_on_deal/delete_add_on_deal_main_item",
+    "method": "POST"
+  },
+  "v2.add_on_deal.delete_add_on_deal_sub_item": {
+    "api_name": "v2.add_on_deal.delete_add_on_deal_sub_item",
+    "last_crawled": "2025-10-10T04:14:30.424392",
+    "content_hash": "baafd8b9f9baaab13dc07056585b57adddf7964ac5c00b71d30a37d960ad4b28",
+    "update_log_date": null,
+    "parameters_count": 0,
+    "response_fields_count": 0,
+    "endpoint": "https://partner.shopeemobile.com/api/v2/add_on_deal/delete_add_on_deal_sub_item",
+    "method": "POST"
+  },
+  "v2.add_on_deal.end_add_on_deal": {
+    "api_name": "v2.add_on_deal.end_add_on_deal",
+    "last_crawled": "2025-10-10T04:14:30.424592",
+    "content_hash": "d39cb919a072236604dd80185ab4e0dc6e926d18833de82356d7d88ade6f108d",
+    "update_log_date": null,
+    "parameters_count": 0,
+    "response_fields_count": 0,
+    "endpoint": "https://partner.shopeemobile.com/api/v2/add_on_deal/end_add_on_deal",
+    "method": "POST"
+  },
+  "v2.add_on_deal.get_add_on_deal": {
+    "api_name": "v2.add_on_deal.get_add_on_deal",
+    "last_crawled": "2025-10-10T04:14:30.424787",
+    "content_hash": "0f8ee575577851773d7664fe99fcc4d312aa0630a5c796f65af76fcf6adcdf61",
+    "update_log_date": null,
+    "parameters_count": 0,
+    "response_fields_count": 0,
+    "endpoint": "https://partner.shopeemobile.com/api/v2/add_on_deal/get_add_on_deal",
+    "method": "POST"
+  },
+  "v2.add_on_deal.get_add_on_deal_list": {
+    "api_name": "v2.add_on_deal.get_add_on_deal_list",
+    "last_crawled": "2025-10-10T04:14:30.424980",
+    "content_hash": "ba397ce03a907b372f010c0637ce11ab77eff309f9d0f84c9f65ca64c5487c06",
+    "update_log_date": null,
+    "parameters_count": 0,
+    "response_fields_count": 0,
+    "endpoint": "https://partner.shopeemobile.com/api/v2/add_on_deal/get_add_on_deal_list",
+    "method": "POST"
+  },
+  "v2.add_on_deal.get_add_on_deal_main_item": {
+    "api_name": "v2.add_on_deal.get_add_on_deal_main_item",
+    "last_crawled": "2025-10-10T04:14:30.425184",
+    "content_hash": "42123fbaf4c4e7532f7125ed99882275e0b5d967da38d096820bf1d8dba9459d",
+    "update_log_date": null,
+    "parameters_count": 0,
+    "response_fields_count": 0,
+    "endpoint": "https://partner.shopeemobile.com/api/v2/add_on_deal/get_add_on_deal_main_item",
+    "method": "POST"
+  },
+  "v2.add_on_deal.get_add_on_deal_sub_item": {
+    "api_name": "v2.add_on_deal.get_add_on_deal_sub_item",
+    "last_crawled": "2025-10-10T04:14:30.425383",
+    "content_hash": "6437aee54681688c018bcccd078ff230af188675a0e467f3dfefeda78d8a5273",
+    "update_log_date": null,
+    "parameters_count": 0,
+    "response_fields_count": 0,
+    "endpoint": "https://partner.shopeemobile.com/api/v2/add_on_deal/get_add_on_deal_sub_item",
+    "method": "POST"
+  },
+  "v2.add_on_deal.update_add_on_deal": {
+    "api_name": "v2.add_on_deal.update_add_on_deal",
+    "last_crawled": "2025-10-10T04:14:30.425592",
+    "content_hash": "7f4da1ac46683f536f294ebc23bdf42ea83765d6533e6d13f3c7e8f07e84ac88",
+    "update_log_date": null,
+    "parameters_count": 0,
+    "response_fields_count": 0,
+    "endpoint": "https://partner.shopeemobile.com/api/v2/add_on_deal/update_add_on_deal",
+    "method": "POST"
+  },
+  "v2.add_on_deal.update_add_on_deal_main_item": {
+    "api_name": "v2.add_on_deal.update_add_on_deal_main_item",
+    "last_crawled": "2025-10-10T04:14:30.425780",
+    "content_hash": "14807d6ad66dd8947ca89dc6ab18c701495fe1509908dd08504a363146c6914e",
+    "update_log_date": null,
+    "parameters_count": 0,
+    "response_fields_count": 0,
+    "endpoint": "https://partner.shopeemobile.com/api/v2/add_on_deal/update_add_on_deal_main_item",
+    "method": "POST"
+  },
+  "v2.add_on_deal.update_add_on_deal_sub_item": {
+    "api_name": "v2.add_on_deal.update_add_on_deal_sub_item",
+    "last_crawled": "2025-10-10T04:14:30.425984",
+    "content_hash": "82cff34d896b5d8c35367b78f7b417f9e158c0625a133d08fb48a7e3f56e4510",
+    "update_log_date": null,
+    "parameters_count": 0,
+    "response_fields_count": 0,
+    "endpoint": "https://partner.shopeemobile.com/api/v2/add_on_deal/update_add_on_deal_sub_item",
+    "method": "POST"
+  },
+  "v2.ads.check_create_gms_product_campaign_eligibility": {
+    "api_name": "v2.ads.check_create_gms_product_campaign_eligibility",
+    "last_crawled": "2025-10-10T04:14:30.426181",
+    "content_hash": "61c92f4998d55c9e925b0ba3353daea1613747ae30e3576abea8fb8be2dc2519",
+    "update_log_date": null,
+    "parameters_count": 0,
+    "response_fields_count": 0,
+    "endpoint": "https://partner.shopeemobile.com/api/v2/ads/check_create_gms_product_campaign_eligibility",
+    "method": "GET"
+  },
+  "v2.ads.create_auto_product_ads": {
+    "api_name": "v2.ads.create_auto_product_ads",
+    "last_crawled": "2025-10-10T04:14:30.426379",
+    "content_hash": "0cc9b7bf6e135ff28e18eec393ab436bc58675e81e93584c71345e132ece1fcf",
+    "update_log_date": null,
+    "parameters_count": 0,
+    "response_fields_count": 0,
+    "endpoint": "https://partner.shopeemobile.com/api/v2/ads/create_auto_product_ads",
+    "method": "POST"
+  },
+  "v2.ads.create_gms_product_campaign": {
+    "api_name": "v2.ads.create_gms_product_campaign",
+    "last_crawled": "2025-10-10T04:14:30.426573",
+    "content_hash": "63708759327ea1421c6a880e6975dce0d292b4a05cece2ad2b83bdfd5a18870a",
+    "update_log_date": null,
+    "parameters_count": 0,
+    "response_fields_count": 0,
+    "endpoint": "https://partner.shopeemobile.com/api/v2/ads/create_gms_product_campaign",
+    "method": "POST"
+  },
+  "v2.ads.create_manual_product_ads": {
+    "api_name": "v2.ads.create_manual_product_ads",
+    "last_crawled": "2025-10-10T04:14:30.426769",
+    "content_hash": "c7427ce8f331b02b2fd83b5e0e931bb209e00cf91b9367d7016e1517b8617ced",
+    "update_log_date": null,
+    "parameters_count": 0,
+    "response_fields_count": 0,
+    "endpoint": "https://partner.shopeemobile.com/api/v2/ads/create_manual_product_ads",
+    "method": "POST"
+  },
+  "v2.ads.edit_auto_product_ads": {
+    "api_name": "v2.ads.edit_auto_product_ads",
+    "last_crawled": "2025-10-10T04:14:30.426963",
+    "content_hash": "a799219f0287217d2e955fd50a0cf30cb7bc1a438c3f86d7a1173b2bae096ab2",
+    "update_log_date": null,
+    "parameters_count": 0,
+    "response_fields_count": 0,
+    "endpoint": "https://partner.shopeemobile.com/api/v2/ads/edit_auto_product_ads",
+    "method": "POST"
+  },
+  "v2.ads.edit_gms_item_product_campaign": {
+    "api_name": "v2.ads.edit_gms_item_product_campaign",
+    "last_crawled": "2025-10-10T04:14:30.427158",
+    "content_hash": "fb1c8f7aa02a0091ec812f395c137af33d769d74e1333b2ad1d9be3b586c397d",
+    "update_log_date": null,
+    "parameters_count": 0,
+    "response_fields_count": 0,
+    "endpoint": "https://partner.shopeemobile.com/api/v2/ads/edit_gms_item_product_campaign",
+    "method": "POST"
+  },
+  "v2.ads.edit_gms_product_campaign": {
+    "api_name": "v2.ads.edit_gms_product_campaign",
+    "last_crawled": "2025-10-10T04:14:30.427369",
+    "content_hash": "eb5ef875e805a69b97b2092fff99d35c099d62951d819e2bb32a78d64f489423",
+    "update_log_date": null,
+    "parameters_count": 0,
+    "response_fields_count": 0,
+    "endpoint": "https://partner.shopeemobile.com/api/v2/ads/edit_gms_product_campaign",
+    "method": "POST"
+  },
+  "v2.ads.edit_manual_product_ads": {
+    "api_name": "v2.ads.edit_manual_product_ads",
+    "last_crawled": "2025-10-10T04:14:30.427571",
+    "content_hash": "fb26972148a37b528aebe4c8321b19ee7b84130160e0670904625dd81a9cf98e",
+    "update_log_date": null,
+    "parameters_count": 0,
+    "response_fields_count": 0,
+    "endpoint": "https://partner.shopeemobile.com/api/v2/ads/edit_manual_product_ads",
+    "method": "POST"
+  },
+  "v2.ads.edit_manual_product_ad_keywords": {
+    "api_name": "v2.ads.edit_manual_product_ad_keywords",
+    "last_crawled": "2025-10-10T04:14:30.427766",
+    "content_hash": "20ae95635049f544a78193f92ef1e0ed449c9697361a73cbd93509fa9f8e189c",
+    "update_log_date": null,
+    "parameters_count": 0,
+    "response_fields_count": 0,
+    "endpoint": "https://partner.shopeemobile.com/api/v2/ads/edit_manual_product_ad_keywords",
+    "method": "POST"
+  },
+  "v2.ads.get_ads_fácil_shop_rate": {
+    "api_name": "v2.ads.get_ads_fácil_shop_rate",
+    "last_crawled": "2025-10-10T04:14:30.428021",
+    "content_hash": "6fd322096934eb12f82c5898fddb3468e8207f64a3dfa6ee303b2488a9ec47f5",
+    "update_log_date": null,
+    "parameters_count": 5,
+    "response_fields_count": 2,
+    "endpoint": "https://partner.shopeemobile.com/api/v2/ads/get_ads_facil_shop_rate",
+    "method": "GET"
+  },
+  "v2.ads.get_ads_f찼cil_shop_rate": {
+    "api_name": "v2.ads.get_ads_f찼cil_shop_rate",
+    "last_crawled": "2025-10-10T04:14:30.428232",
+    "content_hash": "5bdb1b000271eeb18c0d974da457905979b13a032900c371830e235260b3bc06",
+    "update_log_date": null,
+    "parameters_count": 0,
+    "response_fields_count": 0,
+    "endpoint": "unknown",
+    "method": "POST"
+  },
+  "v2.ads.get_all_cpc_ads_daily_performance": {
+    "api_name": "v2.ads.get_all_cpc_ads_daily_performance",
+    "last_crawled": "2025-10-10T04:14:30.428451",
+    "content_hash": "ac4735e26bcc794ee9bc117ac96dc62edfdddeaeffd896752eca330be74eeb2f",
+    "update_log_date": null,
+    "parameters_count": 0,
+    "response_fields_count": 0,
+    "endpoint": "https://partner.shopeemobile.com/api/v2/ads/get_all_cpc_ads_daily_performance",
+    "method": "GET"
+  },
+  "v2.ads.get_all_cpc_ads_hourly_performance": {
+    "api_name": "v2.ads.get_all_cpc_ads_hourly_performance",
+    "last_crawled": "2025-10-10T04:14:30.428649",
+    "content_hash": "3f8c61fc06f78b72281e66c7c34bfc8f9fa5ff55a128f33e39aff87c52af7067",
+    "update_log_date": null,
+    "parameters_count": 0,
+    "response_fields_count": 0,
+    "endpoint": "https://partner.shopeemobile.com/api/v2/ads/get_all_cpc_ads_hourly_performance",
+    "method": "GET"
+  },
+  "v2.ads.get_create_product_ad_budget_suggestion": {
+    "api_name": "v2.ads.get_create_product_ad_budget_suggestion",
+    "last_crawled": "2025-10-10T04:14:30.428858",
+    "content_hash": "d0a6c29ce0115da1e629be00c03d039a1cf29d805093ebda2747d0343dff0e43",
+    "update_log_date": null,
+    "parameters_count": 0,
+    "response_fields_count": 0,
+    "endpoint": "https://partner.shopeemobile.com/api/v2/ads/get_create_product_ad_budget_suggestion",
+    "method": "GET"
+  },
+  "v2.ads.get_gms_campaign_performance": {
+    "api_name": "v2.ads.get_gms_campaign_performance",
+    "last_crawled": "2025-10-10T04:14:30.429090",
+    "content_hash": "ce78cd4f2ee3a379a09561dc1e14313618f293690d27cf6d6ae747d358cd590f",
+    "update_log_date": null,
+    "parameters_count": 0,
+    "response_fields_count": 0,
+    "endpoint": "https://partner.shopeemobile.com/api/v2/ads/get_gms_campaign_performance",
+    "method": "POST"
+  },
+  "v2.ads.get_gms_item_performance": {
+    "api_name": "v2.ads.get_gms_item_performance",
+    "last_crawled": "2025-10-10T04:14:30.429313",
+    "content_hash": "243bff16dc84857200b498672988d47af8447b031aa6e7c7a50964f3cbb3d706",
+    "update_log_date": null,
+    "parameters_count": 0,
+    "response_fields_count": 0,
+    "endpoint": "https://partner.shopeemobile.com/api/v2/ads/get_gms_item_performance",
+    "method": "POST"
+  },
+  "v2.ads.get_product_campaign_daily_performance": {
+    "api_name": "v2.ads.get_product_campaign_daily_performance",
+    "last_crawled": "2025-10-10T04:14:30.429573",
+    "content_hash": "e0fd91225d44716943bd209f5acc71aafe455272952d06de4775f5712aedc0f3",
+    "update_log_date": null,
+    "parameters_count": 0,
+    "response_fields_count": 0,
+    "endpoint": "https://partner.shopeemobile.com/api/v2/ads/get_product_campaign_daily_performance",
+    "method": "GET"
+  },
+  "v2.ads.get_product_campaign_hourly_performance": {
+    "api_name": "v2.ads.get_product_campaign_hourly_performance",
+    "last_crawled": "2025-10-10T04:14:30.429790",
+    "content_hash": "91189359f5567b5b3e9a19f1d90c294e23af3f3e076db1129f9515c3c7852672",
+    "update_log_date": null,
+    "parameters_count": 0,
+    "response_fields_count": 0,
+    "endpoint": "https://partner.shopeemobile.com/api/v2/ads/get_product_campaign_hourly_performance",
+    "method": "GET"
+  },
+  "v2.ads.get_product_level_campaign_id_list": {
+    "api_name": "v2.ads.get_product_level_campaign_id_list",
+    "last_crawled": "2025-10-10T04:14:30.430004",
+    "content_hash": "c5e5bb50c883fde9cc25ab5f99762d3c63de8be24e88be14dd3c8037534652b0",
+    "update_log_date": null,
+    "parameters_count": 0,
+    "response_fields_count": 0,
+    "endpoint": "https://partner.shopeemobile.com/api/v2/ads/get_product_level_campaign_id_list",
+    "method": "GET"
+  },
+  "v2.ads.get_product_level_campaign_setting_info": {
+    "api_name": "v2.ads.get_product_level_campaign_setting_info",
+    "last_crawled": "2025-10-10T04:14:30.430214",
+    "content_hash": "53974ddf096cda4b6d40e25dce92eb103ade02efddf9057c8f2d612fc1fa7ab9",
+    "update_log_date": null,
+    "parameters_count": 0,
+    "response_fields_count": 0,
+    "endpoint": "https://partner.shopeemobile.com/api/v2/ads/get_product_level_campaign_setting_info",
+    "method": "GET"
+  },
+  "v2.ads.get_product_recommended_roi_target": {
+    "api_name": "v2.ads.get_product_recommended_roi_target",
+    "last_crawled": "2025-10-10T04:14:30.430405",
+    "content_hash": "cac402c33951f0526ce372f38b1bdcf205a2ec3bec63dceb9586a6d43197dd35",
+    "update_log_date": null,
+    "parameters_count": 0,
+    "response_fields_count": 0,
+    "endpoint": "https://partner.shopeemobile.com/api/v2/ads/get_product_recommended_roi_target",
+    "method": "GET"
+  },
+  "v2.ads.get_recommended_item_list": {
+    "api_name": "v2.ads.get_recommended_item_list",
+    "last_crawled": "2025-10-10T04:14:30.430595",
+    "content_hash": "c4d9441cfe397478e6ee3a4cfa2af518a6d5ba5bc184a0eb39229e5f74954881",
+    "update_log_date": null,
+    "parameters_count": 0,
+    "response_fields_count": 0,
+    "endpoint": "https://partner.shopeemobile.com/api/v2/ads/get_recommended_item_list",
+    "method": "GET"
+  },
+  "v2.ads.get_recommended_keyword_list": {
+    "api_name": "v2.ads.get_recommended_keyword_list",
+    "last_crawled": "2025-10-10T04:14:30.430794",
+    "content_hash": "90e789ed80f97e2865ba7b290feff040e057afa0af3f8ed15ac697d572c5997b",
+    "update_log_date": null,
+    "parameters_count": 0,
+    "response_fields_count": 0,
+    "endpoint": "https://partner.shopeemobile.com/api/v2/ads/get_recommended_keyword_list",
+    "method": "GET"
+  },
+  "v2.ads.get_shop_toggle_info": {
+    "api_name": "v2.ads.get_shop_toggle_info",
+    "last_crawled": "2025-10-10T04:14:30.431026",
+    "content_hash": "c90ec626ad4ae8ac71928fb729b42f2067fd00fbf90a0c77aa3889b5b68d3492",
+    "update_log_date": null,
+    "parameters_count": 0,
+    "response_fields_count": 0,
+    "endpoint": "https://partner.shopeemobile.com/api/v2/ads/get_shop_toggle_info",
+    "method": "GET"
+  },
+  "v2.ads.get_total_balance": {
+    "api_name": "v2.ads.get_total_balance",
+    "last_crawled": "2025-10-10T04:14:30.431227",
+    "content_hash": "aef936cbeff5a33e939fa9e33389ee5a01a73ede4b9034dcbd5e579f5525a3bf",
+    "update_log_date": null,
+    "parameters_count": 0,
+    "response_fields_count": 0,
+    "endpoint": "https://partner.shopeemobile.com/api/v2/ads/get_total_balance",
+    "method": "GET"
+  },
+  "v2.ads.list_gms_user_deleted_item": {
+    "api_name": "v2.ads.list_gms_user_deleted_item",
+    "last_crawled": "2025-10-10T04:14:30.431428",
+    "content_hash": "701dc81a00130dba945f01d9898441e9c766b22b76ebdd53717b35f386213d3e",
+    "update_log_date": null,
+    "parameters_count": 0,
+    "response_fields_count": 0,
+    "endpoint": "https://partner.shopeemobile.com/api/v2/ads/list_gms_user_deleted_item",
+    "method": "POST"
+  },
+  "v2.bundle_deal.add_bundle_deal": {
+    "api_name": "v2.bundle_deal.add_bundle_deal",
+    "last_crawled": "2025-10-10T04:14:30.431625",
+    "content_hash": "44edf1ddb5afcb710fa55ed738fe77a67cafe3ef9cc353fcf7392fc1d2f82aac",
+    "update_log_date": null,
+    "parameters_count": 0,
+    "response_fields_count": 0,
+    "endpoint": "https://partner.shopeemobile.com/api/v2/bundle_deal/add_bundle_deal",
+    "method": "POST"
+  },
+  "v2.bundle_deal.add_bundle_deal_item": {
+    "api_name": "v2.bundle_deal.add_bundle_deal_item",
+    "last_crawled": "2025-10-10T04:14:30.431824",
+    "content_hash": "916ce0f69ef0f97a91b6b746a6a396b0a798a0fdc3e5aab0bb8331db63e90e49",
+    "update_log_date": null,
+    "parameters_count": 0,
+    "response_fields_count": 0,
+    "endpoint": "https://partner.shopeemobile.com/api/v2/bundle_deal/add_bundle_deal_item",
+    "method": "POST"
+  },
+  "v2.bundle_deal.delete_bundle_deal": {
+    "api_name": "v2.bundle_deal.delete_bundle_deal",
+    "last_crawled": "2025-10-10T04:14:30.432023",
+    "content_hash": "458d09fc1c47ce21684fe03a44c1d6b751394364935e4bc469037f6806aac972",
+    "update_log_date": null,
+    "parameters_count": 0,
+    "response_fields_count": 0,
+    "endpoint": "https://partner.shopeemobile.com/api/v2/bundle_deal/delete_bundle_deal",
+    "method": "POST"
+  },
+  "v2.bundle_deal.delete_bundle_deal_item": {
+    "api_name": "v2.bundle_deal.delete_bundle_deal_item",
+    "last_crawled": "2025-10-10T04:14:30.432223",
+    "content_hash": "562fc2c4ac604f7c78bd74d264346fed816d9aaec6eaa6e9bb34669bf12551e6",
+    "update_log_date": null,
+    "parameters_count": 0,
+    "response_fields_count": 0,
+    "endpoint": "https://partner.shopeemobile.com/api/v2/bundle_deal/delete_bundle_deal_item",
+    "method": "POST"
+  },
+  "v2.bundle_deal.end_bundle_deal": {
+    "api_name": "v2.bundle_deal.end_bundle_deal",
+    "last_crawled": "2025-10-10T04:14:30.432419",
+    "content_hash": "d7271453b25145cbd8a71074b50be1749549b6274c986c1e6525f84d66bb8a94",
+    "update_log_date": null,
+    "parameters_count": 0,
+    "response_fields_count": 0,
+    "endpoint": "https://partner.shopeemobile.com/api/v2/bundle_deal/end_bundle_deal",
+    "method": "POST"
+  },
+  "v2.bundle_deal.get_bundle_deal": {
+    "api_name": "v2.bundle_deal.get_bundle_deal",
+    "last_crawled": "2025-10-10T04:14:30.432611",
+    "content_hash": "fa1144f8afd9e8774395dd715bb9e826a4b814c87f3bf4fd4f29dadb47ac0667",
+    "update_log_date": null,
+    "parameters_count": 0,
+    "response_fields_count": 0,
+    "endpoint": "https://partner.shopeemobile.com/api/v2/bundle_deal/get_bundle_deal",
+    "method": "GET"
+  },
+  "v2.bundle_deal.get_bundle_deal_item": {
+    "api_name": "v2.bundle_deal.get_bundle_deal_item",
+    "last_crawled": "2025-10-10T04:14:30.432838",
+    "content_hash": "5fa0035fdd7515474998a0957a05b3bc9a859a0fb551828e8dda9b66b4cc615c",
+    "update_log_date": null,
+    "parameters_count": 0,
+    "response_fields_count": 0,
+    "endpoint": "https://partner.shopeemobile.com/api/v2/bundle_deal/get_bundle_deal_item",
+    "method": "POST"
+  },
+  "v2.bundle_deal.get_bundle_deal_list": {
+    "api_name": "v2.bundle_deal.get_bundle_deal_list",
+    "last_crawled": "2025-10-10T04:14:30.433037",
+    "content_hash": "8179ae9aa9a61fb497c2ae11d2b0f1c3ad7c456e81faf1a125da617be3e2b60e",
+    "update_log_date": null,
+    "parameters_count": 0,
+    "response_fields_count": 0,
+    "endpoint": "https://partner.shopeemobile.com/api/v2/bundle_deal/get_bundle_deal_list",
+    "method": "GET"
+  },
+  "v2.bundle_deal.update_bundle_deal": {
+    "api_name": "v2.bundle_deal.update_bundle_deal",
+    "last_crawled": "2025-10-10T04:14:30.433234",
+    "content_hash": "8f78bc5468997ca52efa68d9172de48982e7f9d3df4cad86679fae1b8d230d44",
+    "update_log_date": null,
+    "parameters_count": 0,
+    "response_fields_count": 0,
+    "endpoint": "https://partner.shopeemobile.com/api/v2/bundle_deal/update_bundle_deal",
+    "method": "POST"
+  },
+  "v2.bundle_deal.update_bundle_deal_item": {
+    "api_name": "v2.bundle_deal.update_bundle_deal_item",
+    "last_crawled": "2025-10-10T04:14:30.433426",
+    "content_hash": "561f7e5ef59570b3dabf6f48287b97477ad42aab60b5d961c2dfb86b666f95c8",
+    "update_log_date": null,
+    "parameters_count": 0,
+    "response_fields_count": 0,
+    "endpoint": "https://partner.shopeemobile.com/api/v2/bundle_deal/update_bundle_deal_item",
+    "method": "POST"
+  },
+  "v2.discount.add_discount": {
+    "api_name": "v2.discount.add_discount",
+    "last_crawled": "2025-10-10T04:14:30.433618",
+    "content_hash": "68c7480b46c47e642c7dca175858fe605b59d7618d3d1cbbcf8de343bf490ad5",
+    "update_log_date": null,
+    "parameters_count": 0,
+    "response_fields_count": 0,
+    "endpoint": "https://partner.shopeemobile.com/api/v2/discount/add_discount",
+    "method": "POST"
+  },
+  "v2.discount.add_discount_item": {
+    "api_name": "v2.discount.add_discount_item",
+    "last_crawled": "2025-10-10T04:14:30.433803",
+    "content_hash": "c15acf76ad08c894bd8a81c1b82da7e27e5623af6944b02b92652e8f85ba9064",
+    "update_log_date": null,
+    "parameters_count": 0,
+    "response_fields_count": 0,
+    "endpoint": "https://partner.shopeemobile.com/api/v2/discount/add_discount_item",
+    "method": "POST"
+  },
+  "v2.discount.delete_discount": {
+    "api_name": "v2.discount.delete_discount",
+    "last_crawled": "2025-10-10T04:14:30.434100",
+    "content_hash": "88b1b332c1d1191ed76d38173b4c78c14742eda11387152adcb5f87749ba2520",
+    "update_log_date": null,
+    "parameters_count": 0,
+    "response_fields_count": 0,
+    "endpoint": "https://partner.shopeemobile.com/api/v2/discount/delete_discount",
+    "method": "POST"
+  },
+  "v2.discount.delete_discount_item": {
+    "api_name": "v2.discount.delete_discount_item",
+    "last_crawled": "2025-10-10T04:14:30.434366",
+    "content_hash": "014d1e5d4b47317cbf8248217f55b51ae63d698e10a4ccf4c3f42048db62146a",
+    "update_log_date": null,
+    "parameters_count": 0,
+    "response_fields_count": 0,
+    "endpoint": "https://partner.shopeemobile.com/api/v2/discount/delete_discount_item",
+    "method": "POST"
+  },
+  "v2.discount.end_discount": {
+    "api_name": "v2.discount.end_discount",
+    "last_crawled": "2025-10-10T04:14:30.434589",
+    "content_hash": "c90fe347f5653b77aaa2ee3be9d804f4cc7427de5873cbdc5048956cde055b98",
+    "update_log_date": null,
+    "parameters_count": 0,
+    "response_fields_count": 0,
+    "endpoint": "https://partner.shopeemobile.com/api/v2/discount/end_discount",
+    "method": "POST"
+  },
+  "v2.discount.get_discount": {
+    "api_name": "v2.discount.get_discount",
+    "last_crawled": "2025-10-10T04:14:30.434806",
+    "content_hash": "690ffbbc88c2ea3d2bfcefb1650fd720e26a59d5e9e98d733f552f5985fd8c67",
+    "update_log_date": null,
+    "parameters_count": 0,
+    "response_fields_count": 0,
+    "endpoint": "https://partner.shopeemobile.com/api/v2/discount/get_discount",
+    "method": "GET"
+  },
+  "v2.discount.get_discount_list": {
+    "api_name": "v2.discount.get_discount_list",
+    "last_crawled": "2025-10-10T04:14:30.435024",
+    "content_hash": "71803dd31ed2f6671f3d8298d73e99cafcc92915e163b055537f7fc3f49223dd",
+    "update_log_date": null,
+    "parameters_count": 0,
+    "response_fields_count": 0,
+    "endpoint": "https://partner.shopeemobile.com/api/v2/discount/get_discount_list",
+    "method": "POST"
+  },
+  "v2.discount.update_discount": {
+    "api_name": "v2.discount.update_discount",
+    "last_crawled": "2025-10-10T04:14:30.435242",
+    "content_hash": "2cfa89a99a3f7cfccb0c7b7f942b8956e55eef09f3af10d129a6214eba133afd",
+    "update_log_date": null,
+    "parameters_count": 0,
+    "response_fields_count": 0,
+    "endpoint": "https://partner.shopeemobile.com/api/v2/discount/update_discount",
+    "method": "POST"
+  },
+  "v2.discount.update_discount_item": {
+    "api_name": "v2.discount.update_discount_item",
+    "last_crawled": "2025-10-10T04:14:30.435459",
+    "content_hash": "c2ee1709c06045dfa7f84bb94ca4933b11bea019dc438e9a5054765fe8b2c0ed",
+    "update_log_date": null,
+    "parameters_count": 0,
+    "response_fields_count": 0,
+    "endpoint": "https://partner.shopeemobile.com/api/v2/discount/update_discount_item",
+    "method": "POST"
+  },
+  "v2.fbs.query_br_shop_block_status": {
+    "api_name": "v2.fbs.query_br_shop_block_status",
+    "last_crawled": "2025-10-10T04:14:30.435677",
+    "content_hash": "d07e0c4c3578f01031b8e04218f939d02490a7a44debf8f5b3f1149b55c484d8",
+    "update_log_date": null,
+    "parameters_count": 0,
+    "response_fields_count": 0,
+    "endpoint": "https://partner.shopeemobile.com/api/v2/fbs/query_br_shop_block_status",
+    "method": "POST"
+  },
+  "v2.fbs.query_br_shop_enrollment_status": {
+    "api_name": "v2.fbs.query_br_shop_enrollment_status",
+    "last_crawled": "2025-10-10T04:14:30.435930",
+    "content_hash": "6b2bf7b6fc7ab915fbee81cdf6b8a1eb7a64e419464d2ce7694350a2503ef57f",
+    "update_log_date": null,
+    "parameters_count": 0,
+    "response_fields_count": 0,
+    "endpoint": "https://partner.shopeemobile.com/api/v2/fbs/query_br_shop_enrollment_status",
+    "method": "POST"
+  },
+  "v2.fbs.query_br_shop_invoice_error": {
+    "api_name": "v2.fbs.query_br_shop_invoice_error",
+    "last_crawled": "2025-10-10T04:14:30.436192",
+    "content_hash": "21fbab2c72fddc4ce83008cbccc3899adfedb3c85afd0d5dd7262680220192f8",
+    "update_log_date": null,
+    "parameters_count": 0,
+    "response_fields_count": 0,
+    "endpoint": "https://partner.shopeemobile.com/api/v2/fbs/query_br_shop_invoice_error",
+    "method": "POST"
+  },
+  "v2.fbs.query_br_sku_block_status": {
+    "api_name": "v2.fbs.query_br_sku_block_status",
+    "last_crawled": "2025-10-10T04:14:30.436424",
+    "content_hash": "9f49e684bf164d256c50f9f869ba49f8b4fe8efc07ca6155d8a92c6d4cdfe432",
+    "update_log_date": null,
+    "parameters_count": 0,
+    "response_fields_count": 0,
+    "endpoint": "https://partner.shopeemobile.com/api/v2/fbs/query_br_sku_block_status",
+    "method": "POST"
+  },
+  "v2.first_mile.bind_courier_delivery_first_mile_tracking_number": {
+    "api_name": "v2.first_mile.bind_courier_delivery_first_mile_tracking_number",
+    "last_crawled": "2025-10-10T04:14:30.436654",
+    "content_hash": "395fceabcd3b0a14f8eb29466bf8f1dc6c9883280771897c5f4f9c67fadaab8b",
+    "update_log_date": null,
+    "parameters_count": 0,
+    "response_fields_count": 0,
+    "endpoint": "https://partner.shopeemobile.com/api/v2/first_mile/bind_courier_delivery_first_mile_tracking_number",
+    "method": "POST"
+  },
+  "v2.first_mile.bind_first_mile_tracking_number": {
+    "api_name": "v2.first_mile.bind_first_mile_tracking_number",
+    "last_crawled": "2025-10-10T04:14:30.436878",
+    "content_hash": "a45668676c02459489352eec347da2cfafc7382c63e5ec0a4a16f3e00f21f260",
+    "update_log_date": null,
+    "parameters_count": 0,
+    "response_fields_count": 0,
+    "endpoint": "https://partner.shopeemobile.com/api/v2/first_mile/bind_first_mile_tracking_number",
+    "method": "POST"
+  },
+  "v2.first_mile.generate_and_bind_first_mile_tracking_number": {
+    "api_name": "v2.first_mile.generate_and_bind_first_mile_tracking_number",
+    "last_crawled": "2025-10-10T04:14:30.437110",
+    "content_hash": "4d0a2fb719fbf726a4c116430b6fc1b56609748abf55490c51bc4415d9ab9a9d",
+    "update_log_date": null,
+    "parameters_count": 0,
+    "response_fields_count": 0,
+    "endpoint": "https://partner.shopeemobile.com/api/v2/first_mile/generate_and_bind_first_mile_tracking_number",
+    "method": "POST"
+  },
+  "v2.first_mile.generate_first_mile_tracking_number": {
+    "api_name": "v2.first_mile.generate_first_mile_tracking_number",
+    "last_crawled": "2025-10-10T04:14:30.437340",
+    "content_hash": "d1d10159f07ed99141ca81fe70795a9e9ce6fc3d54f5a7c6454993f4ccc34398",
+    "update_log_date": null,
+    "parameters_count": 0,
+    "response_fields_count": 0,
+    "endpoint": "https://partner.shopeemobile.com/api/v2/first_mile/generate_first_mile_tracking_number",
+    "method": "POST"
+  },
+  "v2.first_mile.get_channel_list": {
+    "api_name": "v2.first_mile.get_channel_list",
+    "last_crawled": "2025-10-10T04:14:30.437559",
+    "content_hash": "20a309635d9abe274eff607b62a12b68f700deacfb2715438dec3b3f8a4d4d13",
+    "update_log_date": null,
+    "parameters_count": 0,
+    "response_fields_count": 0,
+    "endpoint": "https://partner.shopeemobile.com/api/v2/first_mile/get_channel_list",
+    "method": "POST"
+  },
+  "v2.first_mile.get_courier_delivery_channel_list": {
+    "api_name": "v2.first_mile.get_courier_delivery_channel_list",
+    "last_crawled": "2025-10-10T04:14:30.437783",
+    "content_hash": "a4edfbbc859a628b17290719a77abd1526ebd899ad488571e4122fa52123eb0f",
+    "update_log_date": null,
+    "parameters_count": 0,
+    "response_fields_count": 0,
+    "endpoint": "https://partner.shopeemobile.com/api/v2/first_mile/get_courier_delivery_channel_list",
+    "method": "GET"
+  },
+  "v2.first_mile.get_courier_delivery_detail": {
+    "api_name": "v2.first_mile.get_courier_delivery_detail",
+    "last_crawled": "2025-10-10T04:14:30.438021",
+    "content_hash": "22a9355efba287b8980cb9efdf0de6c9706dfcbbfbdd797fa52c5d3c5a231a23",
+    "update_log_date": null,
+    "parameters_count": 0,
+    "response_fields_count": 0,
+    "endpoint": "https://partner.shopeemobile.com/api/v2/first_mile/get_courier_delivery_detail",
+    "method": "GET"
+  },
+  "v2.first_mile.get_courier_delivery_tracking_number_list": {
+    "api_name": "v2.first_mile.get_courier_delivery_tracking_number_list",
+    "last_crawled": "2025-10-10T04:14:30.438243",
+    "content_hash": "2206f3cbdedb08d8fa1655e914b82d0f15236b82f220b50051df322d9fd4ff86",
+    "update_log_date": null,
+    "parameters_count": 0,
+    "response_fields_count": 0,
+    "endpoint": "https://partner.shopeemobile.com/api/v2/first_mile/get_courier_delivery_tracking_number_list",
+    "method": "POST"
+  },
+  "v2.first_mile.get_courier_delivery_waybill": {
+    "api_name": "v2.first_mile.get_courier_delivery_waybill",
+    "last_crawled": "2025-10-10T04:14:30.438461",
+    "content_hash": "53aef7c8af91bcb9bcc652ef149b5fc3627c18b94f344b84a4eb20ba7ba9a3a6",
+    "update_log_date": null,
+    "parameters_count": 0,
+    "response_fields_count": 0,
+    "endpoint": "https://partner.shopeemobile.com/api/v2/first_mile/get_courier_delivery_waybill",
+    "method": "POST"
+  },
+  "v2.first_mile.get_detail": {
+    "api_name": "v2.first_mile.get_detail",
+    "last_crawled": "2025-10-10T04:14:30.438711",
+    "content_hash": "9b7f5c09d8e2c84bfa724dc7a0412fdab7b69d4e87085f6b1bbb8e96097cf171",
+    "update_log_date": null,
+    "parameters_count": 0,
+    "response_fields_count": 0,
+    "endpoint": "https://partner.shopeemobile.com/api/v2/first_mile/get_detail",
+    "method": "GET"
+  },
+  "v2.first_mile.get_tracking_number_list": {
+    "api_name": "v2.first_mile.get_tracking_number_list",
+    "last_crawled": "2025-10-10T04:14:30.438946",
+    "content_hash": "f495eaabbbb6cb51149fabca70aceb7c5a22af69b93415e1048c3d423a6a8b33",
+    "update_log_date": null,
+    "parameters_count": 0,
+    "response_fields_count": 0,
+    "endpoint": "https://partner.shopeemobile.com/api/v2/first_mile/get_tracking_number_list",
+    "method": "GET"
+  },
+  "v2.first_mile.get_transit_warehouse_list": {
+    "api_name": "v2.first_mile.get_transit_warehouse_list",
+    "last_crawled": "2025-10-10T04:14:30.439176",
+    "content_hash": "d9dcc909b8a721c5ca2a16ff137b61554c37b3efcb3b458ab28b6ad163dc6609",
+    "update_log_date": null,
+    "parameters_count": 0,
+    "response_fields_count": 0,
+    "endpoint": "https://partner.shopeemobile.com/api/v2/first_mile/get_transit_warehouse_list",
+    "method": "GET"
+  },
+  "v2.first_mile.get_unbind_order_list": {
+    "api_name": "v2.first_mile.get_unbind_order_list",
+    "last_crawled": "2025-10-10T04:14:30.439400",
+    "content_hash": "b87bf87ceb801cf8e127fd7db488f8e8a708de6989db2f3a81e386c886fd9858",
+    "update_log_date": null,
+    "parameters_count": 0,
+    "response_fields_count": 0,
+    "endpoint": "https://partner.shopeemobile.com/api/v2/first_mile/get_unbind_order_list",
+    "method": "GET"
+  },
+  "v2.first_mile.get_waybill": {
+    "api_name": "v2.first_mile.get_waybill",
+    "last_crawled": "2025-10-10T04:14:30.439618",
+    "content_hash": "688963690983eb6814b96bd6d416d574236c7fb1108e1d86e54595f5dc60ce90",
+    "update_log_date": null,
+    "parameters_count": 0,
+    "response_fields_count": 0,
+    "endpoint": "https://partner.shopeemobile.com/api/v2/first_mile/get_waybill",
+    "method": "POST"
+  },
+  "v2.first_mile.unbind_first_mile_tracking_number": {
+    "api_name": "v2.first_mile.unbind_first_mile_tracking_number",
+    "last_crawled": "2025-10-10T04:14:30.439872",
+    "content_hash": "3c7ee94df742717a301b3e9b986c12ced598890fe82037df6b4602b6c787bcdc",
+    "update_log_date": null,
+    "parameters_count": 0,
+    "response_fields_count": 0,
+    "endpoint": "https://partner.shopeemobile.com/api/v2/first_mile/unbind_first_mile_tracking_number",
+    "method": "POST"
+  },
+  "v2.first_mile.unbind_first_mile_tracking_number_all": {
+    "api_name": "v2.first_mile.unbind_first_mile_tracking_number_all",
+    "last_crawled": "2025-10-10T04:14:30.440188",
+    "content_hash": "98eb7664520fdd830cda5d8d79952eb4716a3c4d40fe986aeaea4c49759b89c2",
+    "update_log_date": null,
+    "parameters_count": 0,
+    "response_fields_count": 0,
+    "endpoint": "https://partner.shopeemobile.com/api/v2/first_mile/unbind_first_mile_tracking_number_all",
+    "method": "POST"
+  },
+  "v2.follow_prize.add_follow_prize": {
+    "api_name": "v2.follow_prize.add_follow_prize",
+    "last_crawled": "2025-10-10T04:14:30.440451",
+    "content_hash": "eb9fb0ccd5ca94a17ed8f61a067d1d60313036f0d8a25b978e855323d0239f96",
+    "update_log_date": null,
+    "parameters_count": 0,
+    "response_fields_count": 0,
+    "endpoint": "https://partner.shopeemobile.com/api/v2/follow_prize/add_follow_prize",
+    "method": "POST"
+  },
+  "v2.follow_prize.delete_follow_prize": {
+    "api_name": "v2.follow_prize.delete_follow_prize",
+    "last_crawled": "2025-10-10T04:14:30.440719",
+    "content_hash": "aa0901be80e976d9ca19840b5d548a511e54b6cbce23aabbe676a68eb760cb32",
+    "update_log_date": null,
+    "parameters_count": 0,
+    "response_fields_count": 0,
+    "endpoint": "https://partner.shopeemobile.com/api/v2/follow_prize/delete_follow_prize",
+    "method": "POST"
+  },
+  "v2.follow_prize.end_follow_prize": {
+    "api_name": "v2.follow_prize.end_follow_prize",
+    "last_crawled": "2025-10-10T04:14:30.440985",
+    "content_hash": "b9a8b599ee51449539ef5ff2c956c163217cd0ac4d2d5ff3790dbaaccdcaeabb",
+    "update_log_date": null,
+    "parameters_count": 0,
+    "response_fields_count": 0,
+    "endpoint": "https://partner.shopeemobile.com/api/v2/follow_prize/end_follow_prize",
+    "method": "POST"
+  },
+  "v2.follow_prize.get_follow_prize_detail": {
+    "api_name": "v2.follow_prize.get_follow_prize_detail",
+    "last_crawled": "2025-10-10T04:14:30.441251",
+    "content_hash": "e8d421efac52cbc38130ed593e84a052b02829880ad7ce3c1f5ff953f1febe42",
+    "update_log_date": null,
+    "parameters_count": 0,
+    "response_fields_count": 0,
+    "endpoint": "https://partner.shopeemobile.com/api/v2/follow_prize/get_follow_prize_detail",
+    "method": "POST"
+  },
+  "v2.follow_prize.get_follow_prize_list": {
+    "api_name": "v2.follow_prize.get_follow_prize_list",
+    "last_crawled": "2025-10-10T04:14:30.441508",
+    "content_hash": "6ec0996df22dc297b342e71469ed227356329f02908729ca10b1621f3191f41a",
+    "update_log_date": null,
+    "parameters_count": 0,
+    "response_fields_count": 0,
+    "endpoint": "https://partner.shopeemobile.com/api/v2/follow_prize/get_follow_prize_list",
+    "method": "POST"
+  },
+  "v2.follow_prize.update_follow_prize": {
+    "api_name": "v2.follow_prize.update_follow_prize",
+    "last_crawled": "2025-10-10T04:14:30.441741",
+    "content_hash": "36d589b4b09d040101b225805ab3d645161ec64c4d8359338c87cf3eb9451a7b",
+    "update_log_date": null,
+    "parameters_count": 0,
+    "response_fields_count": 0,
+    "endpoint": "https://partner.shopeemobile.com/api/v2/follow_prize/update_follow_prize",
+    "method": "POST"
+  },
+  "v2.global_product.add_global_item": {
+    "api_name": "v2.global_product.add_global_item",
+    "last_crawled": "2025-10-10T04:14:30.441966",
+    "content_hash": "44defbbe0e0908df11d53b103678e0408b492e66644e0ec1ab8f880f63088b88",
+    "update_log_date": null,
+    "parameters_count": 0,
+    "response_fields_count": 0,
+    "endpoint": "https://partner.shopeemobile.com/api/v2/global_product/add_global_item",
+    "method": "POST"
+  },
+  "v2.global_product.add_global_model": {
+    "api_name": "v2.global_product.add_global_model",
+    "last_crawled": "2025-10-10T04:14:30.442150",
+    "content_hash": "cf9ea64e8175de855ac38e06909714be092ec7ea3c9fc26b999a0097d494f183",
+    "update_log_date": null,
+    "parameters_count": 0,
+    "response_fields_count": 0,
+    "endpoint": "https://partner.shopeemobile.com/api/v2/global_product/add_global_model",
+    "method": "POST"
+  },
+  "v2.global_product.category_recommend": {
+    "api_name": "v2.global_product.category_recommend",
+    "last_crawled": "2025-10-10T04:14:30.442339",
+    "content_hash": "bb8234d2c60208d1b56ad3273e7bc94a0c0c276a6eb14d487c2b05658a845e20",
+    "update_log_date": null,
+    "parameters_count": 0,
+    "response_fields_count": 0,
+    "endpoint": "https://partner.shopeemobile.com/api/v2/global_product/category_recommend",
+    "method": "GET"
+  },
+  "v2.global_product.create_publish_task": {
+    "api_name": "v2.global_product.create_publish_task",
+    "last_crawled": "2025-10-10T04:14:30.442529",
+    "content_hash": "0e5fff3182c365edab2aa22df2f9056868bbd814e43402fe9661b3776c07789f",
+    "update_log_date": null,
+    "parameters_count": 0,
+    "response_fields_count": 0,
+    "endpoint": "https://partner.shopeemobile.com/api/v2/global_product/create_publish_task",
+    "method": "POST"
+  },
+  "v2.global_product.delete_global_item": {
+    "api_name": "v2.global_product.delete_global_item",
+    "last_crawled": "2025-10-10T04:14:30.442726",
+    "content_hash": "ae0a4b8a8ab89018960ba63ee0b13e05b2003a85aa0916b1aae7d45476969eed",
+    "update_log_date": null,
+    "parameters_count": 0,
+    "response_fields_count": 0,
+    "endpoint": "https://partner.shopeemobile.com/api/v2/global_product/delete_global_item",
+    "method": "POST"
+  },
+  "v2.global_product.delete_global_model": {
+    "api_name": "v2.global_product.delete_global_model",
+    "last_crawled": "2025-10-10T04:14:30.442945",
+    "content_hash": "ac56cb4d0798be0e164eeadf9d9550501927b2f5e056a6a2a3d24db302735f11",
+    "update_log_date": null,
+    "parameters_count": 0,
+    "response_fields_count": 0,
+    "endpoint": "https://partner.shopeemobile.com/api/v2/global_product/delete_global_model",
+    "method": "POST"
+  },
+  "v2.global_product.get_attribute_tree": {
+    "api_name": "v2.global_product.get_attribute_tree",
+    "last_crawled": "2025-10-10T04:14:30.443129",
+    "content_hash": "fc523f3fdbb011cd1ff3375a3c3392d49cd3d52da493818ea47cb0677680c651",
+    "update_log_date": null,
+    "parameters_count": 0,
+    "response_fields_count": 0,
+    "endpoint": "https://partner.shopeemobile.com/api/v2/global_product/get_attribute_tree",
+    "method": "GET"
+  },
+  "v2.global_product.get_brand_list": {
+    "api_name": "v2.global_product.get_brand_list",
+    "last_crawled": "2025-10-10T04:14:30.443321",
+    "content_hash": "882607d969b718d0a86911213e04004a5be9132ab23baac8a3a5f82fc7f5095e",
+    "update_log_date": null,
+    "parameters_count": 0,
+    "response_fields_count": 0,
+    "endpoint": "https://partner.shopeemobile.com/api/v2/global_product/get_brand_list",
+    "method": "GET"
+  },
+  "v2.global_product.get_category": {
+    "api_name": "v2.global_product.get_category",
+    "last_crawled": "2025-10-10T04:14:30.443503",
+    "content_hash": "bd86eadcb93ff0644e0b4a523336517db3937a3b23da9fe0aa56231a3913f400",
+    "update_log_date": null,
+    "parameters_count": 0,
+    "response_fields_count": 0,
+    "endpoint": "https://partner.shopeemobile.com/api/v2/global_product/get_category",
+    "method": "GET"
+  },
+  "v2.global_product.get_global_item_id": {
+    "api_name": "v2.global_product.get_global_item_id",
+    "last_crawled": "2025-10-10T04:14:30.443695",
+    "content_hash": "aa09a7c3c22a8fed9bc75b382cad8e34ace70a2a9da225d552556c290ad6976a",
+    "update_log_date": null,
+    "parameters_count": 0,
+    "response_fields_count": 0,
+    "endpoint": "https://partner.shopeemobile.com/api/v2/global_product/get_global_item_id",
+    "method": "GET"
+  },
+  "v2.global_product.get_global_item_info": {
+    "api_name": "v2.global_product.get_global_item_info",
+    "last_crawled": "2025-10-10T04:14:30.443900",
+    "content_hash": "a3f1d485a2747be203f28b5717f1120114bd0711d68456ad2d7d5dbc85ffe0a2",
+    "update_log_date": null,
+    "parameters_count": 0,
+    "response_fields_count": 0,
+    "endpoint": "https://partner.shopeemobile.com/api/v2/global_product/get_global_item_info",
+    "method": "GET"
+  },
+  "v2.global_product.get_global_item_limit": {
+    "api_name": "v2.global_product.get_global_item_limit",
+    "last_crawled": "2025-10-10T04:14:30.444093",
+    "content_hash": "29fdc04d4c85800ea5e7f356310a7e523231d40e9445a9f34ab7881405528e93",
+    "update_log_date": null,
+    "parameters_count": 0,
+    "response_fields_count": 0,
+    "endpoint": "https://partner.shopeemobile.com/api/v2/global_product/get_global_item_limit",
+    "method": "GET"
+  },
+  "v2.global_product.get_global_item_list": {
+    "api_name": "v2.global_product.get_global_item_list",
+    "last_crawled": "2025-10-10T04:14:30.444287",
+    "content_hash": "f192793472960c3b684b64a128ea6da69b57b220a8ef6d70ebea58fc50a5df4c",
+    "update_log_date": null,
+    "parameters_count": 0,
+    "response_fields_count": 0,
+    "endpoint": "https://partner.shopeemobile.com/api/v2/global_product/get_global_item_list",
+    "method": "GET"
+  },
+  "v2.global_product.get_global_model_list": {
+    "api_name": "v2.global_product.get_global_model_list",
+    "last_crawled": "2025-10-10T04:14:30.444489",
+    "content_hash": "7f06b130ea61a9f0759c951ae71502161ae09a338b0ed90e7c43e88cc9dccfd3",
+    "update_log_date": null,
+    "parameters_count": 0,
+    "response_fields_count": 0,
+    "endpoint": "https://partner.shopeemobile.com/api/v2/global_product/get_global_model_list",
+    "method": "GET"
+  },
+  "v2.global_product.get_local_adjustment_rate": {
+    "api_name": "v2.global_product.get_local_adjustment_rate",
+    "last_crawled": "2025-10-10T04:14:30.444678",
+    "content_hash": "cfb4c57bfe8da1e96d261acc62f7d880d158f8a21ec938b9642270aac02d6831",
+    "update_log_date": null,
+    "parameters_count": 0,
+    "response_fields_count": 0,
+    "endpoint": "https://partner.shopeemobile.com/api/v2/global_product/get_local_adjustment_rate",
+    "method": "POST"
+  },
+  "v2.global_product.get_publishable_shop": {
+    "api_name": "v2.global_product.get_publishable_shop",
+    "last_crawled": "2025-10-10T04:14:30.444865",
+    "content_hash": "beef4a2995da2689b40f03910778c3bb0b21ed8bd9ab0238982ce6e866a1c75b",
+    "update_log_date": null,
+    "parameters_count": 0,
+    "response_fields_count": 0,
+    "endpoint": "https://partner.shopeemobile.com/api/v2/global_product/get_publishable_shop",
+    "method": "GET"
+  },
+  "v2.global_product.get_published_list": {
+    "api_name": "v2.global_product.get_published_list",
+    "last_crawled": "2025-10-10T04:14:30.445057",
+    "content_hash": "f97494c7c108b639cc0d28a0fa7d6c22cf80323484ea5590a62978182775a622",
+    "update_log_date": null,
+    "parameters_count": 0,
+    "response_fields_count": 0,
+    "endpoint": "https://partner.shopeemobile.com/api/v2/global_product/get_published_list",
+    "method": "GET"
+  },
+  "v2.global_product.get_publish_task_result": {
+    "api_name": "v2.global_product.get_publish_task_result",
+    "last_crawled": "2025-10-10T04:14:30.445242",
+    "content_hash": "ee90dbb7f9830d329e8fae6c89479791ed585119c0930abb37d39cabb07d6fb7",
+    "update_log_date": null,
+    "parameters_count": 0,
+    "response_fields_count": 0,
+    "endpoint": "https://partner.shopeemobile.com/api/v2/global_product/get_publish_task_result",
+    "method": "GET"
+  },
+  "v2.global_product.get_recommend_attribute": {
+    "api_name": "v2.global_product.get_recommend_attribute",
+    "last_crawled": "2025-10-10T04:14:30.445439",
+    "content_hash": "32746512f286a660972366ed9c5d8ce1217eef9de5f116f659bd2fef1e22bd42",
+    "update_log_date": null,
+    "parameters_count": 0,
+    "response_fields_count": 0,
+    "endpoint": "https://partner.shopeemobile.com/api/v2/global_product/get_recommend_attribute",
+    "method": "GET"
+  },
+  "v2.global_product.get_shop_publishable_status": {
+    "api_name": "v2.global_product.get_shop_publishable_status",
+    "last_crawled": "2025-10-10T04:14:30.445628",
+    "content_hash": "639e088412e710d462a40cba81f3660f1266bb3c2e6d88d4ca8a68f9170bced2",
+    "update_log_date": null,
+    "parameters_count": 0,
+    "response_fields_count": 0,
+    "endpoint": "https://partner.shopeemobile.com/api/v2/global_product/get_shop_publishable_status",
+    "method": "GET"
+  },
+  "v2.global_product.get_size_chart_detail": {
+    "api_name": "v2.global_product.get_size_chart_detail",
+    "last_crawled": "2025-10-10T04:14:30.445820",
+    "content_hash": "fa4b31429ebfba452661140b4a5a56ecebfc7bb4059eaeb6b6de03efc5b1b09d",
+    "update_log_date": null,
+    "parameters_count": 0,
+    "response_fields_count": 0,
+    "endpoint": "https://partner.shopeemobile.com/api/v2/global_product/get_size_chart_detail",
+    "method": "POST"
+  },
+  "v2.global_product.get_size_chart_list ": {
+    "api_name": "v2.global_product.get_size_chart_list ",
+    "last_crawled": "2025-10-10T04:14:30.446010",
+    "content_hash": "9ee4f30cfdab4b5f29981eb5ef1cb66772c1c98091a7c80f80efe8008289ac06",
+    "update_log_date": null,
+    "parameters_count": 0,
+    "response_fields_count": 0,
+    "endpoint": "https://partner.shopeemobile.com/api/v2/global_product/get_size_chart_list",
+    "method": "POST"
+  },
+  "v2.global_product.get_size_chart_list": {
+    "api_name": "v2.global_product.get_size_chart_list",
+    "last_crawled": "2025-10-10T04:14:30.446261",
+    "content_hash": "76443eee20304a62d2207747b61e8d647f13fac6776f12756ae778e60b2f99be",
+    "update_log_date": null,
+    "parameters_count": 7,
+    "response_fields_count": 5,
+    "endpoint": "/global_product/get_size_chart_list",
+    "method": "GET"
+  },
+  "v2.global_product.get_variations": {
+    "api_name": "v2.global_product.get_variations",
+    "last_crawled": "2025-10-10T04:14:30.446449",
+    "content_hash": "7c795dee82ff41b434735af8f985b93bf36488ef2f1415f4010c0cf66a7a25d6",
+    "update_log_date": null,
+    "parameters_count": 0,
+    "response_fields_count": 0,
+    "endpoint": "https://partner.shopeemobile.com/api/v2/global_product/get_variations",
+    "method": "GET"
+  },
+  "v2.global_product.init_tier_variation": {
+    "api_name": "v2.global_product.init_tier_variation",
+    "last_crawled": "2025-10-10T04:14:30.446646",
+    "content_hash": "a92de85e9fcbee9f5318a73bde20e4cf69e515cf6eb51ec1b1d2a02794980723",
+    "update_log_date": null,
+    "parameters_count": 0,
+    "response_fields_count": 0,
+    "endpoint": "https://partner.shopeemobile.com/api/v2/global_product/init_tier_variation",
+    "method": "POST"
+  },
+  "v2.global_product.search_global_attribute_value_list": {
+    "api_name": "v2.global_product.search_global_attribute_value_list",
+    "last_crawled": "2025-10-10T04:14:30.446830",
+    "content_hash": "8557f6d8a624ba9eaabf23a665bb356268ea72e35c37cfd8c03844c020cdd4ad",
+    "update_log_date": null,
+    "parameters_count": 0,
+    "response_fields_count": 0,
+    "endpoint": "https://partner.shopeemobile.com/api/v2/global_product/search_global_attribute_value_list",
+    "method": "POST"
+  },
+  "v2.global_product.set_sync_field": {
+    "api_name": "v2.global_product.set_sync_field",
+    "last_crawled": "2025-10-10T04:14:30.447014",
+    "content_hash": "5025a2814307d9c7a7ea6f3e5b3d075a71d65328becf07d17650449d0b48a28c",
+    "update_log_date": null,
+    "parameters_count": 0,
+    "response_fields_count": 0,
+    "endpoint": "https://partner.shopeemobile.com/api/v2/global_product/set_sync_field",
+    "method": "POST"
+  },
+  "v2.global_product.support_size_chart": {
+    "api_name": "v2.global_product.support_size_chart",
+    "last_crawled": "2025-10-10T04:14:30.447198",
+    "content_hash": "ada747b1c1115599f4231617d81a60e4fe728d58d7472ab79662c00a958f4c7c",
+    "update_log_date": null,
+    "parameters_count": 0,
+    "response_fields_count": 0,
+    "endpoint": "https://partner.shopeemobile.com/api/v2/global_product/support_size_chart",
+    "method": "GET"
+  },
+  "v2.global_product.update_global_item": {
+    "api_name": "v2.global_product.update_global_item",
+    "last_crawled": "2025-10-10T04:14:30.447380",
+    "content_hash": "b8de1337d2794e4dced049a0338d97bcf9f50c385228649c2500c72e0eaf4ec2",
+    "update_log_date": null,
+    "parameters_count": 0,
+    "response_fields_count": 0,
+    "endpoint": "https://partner.shopeemobile.com/api/v2/global_product/update_global_item",
+    "method": "POST"
+  },
+  "v2.global_product.update_global_model": {
+    "api_name": "v2.global_product.update_global_model",
+    "last_crawled": "2025-10-10T04:14:30.447564",
+    "content_hash": "edd2fda51d35b5de1e3400e1452a5f9630d7e7f786c6e1c662152d5dc34f5bdd",
+    "update_log_date": null,
+    "parameters_count": 0,
+    "response_fields_count": 0,
+    "endpoint": "https://partner.shopeemobile.com/api/v2/global_product/update_global_model",
+    "method": "POST"
+  },
+  "v2.global_product.update_local_adjustment_rate": {
+    "api_name": "v2.global_product.update_local_adjustment_rate",
+    "last_crawled": "2025-10-10T04:14:30.447762",
+    "content_hash": "ff6d7f0f78f5ae71a551c7a9a42e134b632c04a5512daa8330b6042807d7cc81",
+    "update_log_date": null,
+    "parameters_count": 0,
+    "response_fields_count": 0,
+    "endpoint": "https://partner.shopeemobile.com/api/v2/global_product/update_local_adjustment_rate",
+    "method": "POST"
+  },
+  "v2.global_product.update_price": {
+    "api_name": "v2.global_product.update_price",
+    "last_crawled": "2025-10-10T04:14:30.447966",
+    "content_hash": "b9053c60fae71b40b3cc6708d966f5e92f0f48dd484cb862030c9bcde12ea968",
+    "update_log_date": null,
+    "parameters_count": 0,
+    "response_fields_count": 0,
+    "endpoint": "https://partner.shopeemobile.com/api/v2/global_product/update_price",
+    "method": "POST"
+  },
+  "v2.global_product.update_size_chart": {
+    "api_name": "v2.global_product.update_size_chart",
+    "last_crawled": "2025-10-10T04:14:30.448149",
+    "content_hash": "bb95b7a3831a3f723b1506f80c1531f777eb16b68d6fe75d9e3c34f8a64b02c5",
+    "update_log_date": null,
+    "parameters_count": 0,
+    "response_fields_count": 0,
+    "endpoint": "https://partner.shopeemobile.com/api/v2/global_product/update_size_chart",
+    "method": "POST"
+  },
+  "v2.global_product.update_stock": {
+    "api_name": "v2.global_product.update_stock",
+    "last_crawled": "2025-10-10T04:14:30.448332",
+    "content_hash": "01cd8742273e09de9b9ea2318fe81326dd6aca74e0181b715b7a197e1cfdb081",
+    "update_log_date": null,
+    "parameters_count": 0,
+    "response_fields_count": 0,
+    "endpoint": "https://partner.shopeemobile.com/api/v2/global_product/update_stock",
+    "method": "POST"
+  },
+  "v2.global_product.update_tier_variation": {
+    "api_name": "v2.global_product.update_tier_variation",
+    "last_crawled": "2025-10-10T04:14:30.448518",
+    "content_hash": "ea0754415e6a1917a88fd04740f86a041d1d7a483fa80875fc3a557f1814af95",
+    "update_log_date": null,
+    "parameters_count": 0,
+    "response_fields_count": 0,
+    "endpoint": "https://partner.shopeemobile.com/api/v2/global_product/update_tier_variation",
+    "method": "POST"
+  },
+  "v2.livestream.add_item_list": {
+    "api_name": "v2.livestream.add_item_list",
+    "last_crawled": "2025-10-10T04:14:30.448703",
+    "content_hash": "7ef2c31381b57885b1af682f64ae058de0780ec91c027c026a6f59e404524822",
+    "update_log_date": null,
+    "parameters_count": 0,
+    "response_fields_count": 0,
+    "endpoint": "https://partner.shopeemobile.com/api/v2/livestream/add_item_list",
+    "method": "POST"
+  },
+  "v2.livestream.apply_item_set": {
+    "api_name": "v2.livestream.apply_item_set",
+    "last_crawled": "2025-10-10T04:14:30.448892",
+    "content_hash": "8ff8eb244864e43a32d9c1fce9e970a44550f2100e58daf6b777fb9ae1f3491f",
+    "update_log_date": null,
+    "parameters_count": 0,
+    "response_fields_count": 0,
+    "endpoint": "https://partner.shopeemobile.com/api/v2/livestream/apply_item_set",
+    "method": "POST"
+  },
+  "v2.livestream.ban_user_comment": {
+    "api_name": "v2.livestream.ban_user_comment",
+    "last_crawled": "2025-10-10T04:14:30.449077",
+    "content_hash": "8d42f69d18a4a063b148bc2fd42d3331fdecfba8aaf6ae86c6d4d77987d488f0",
+    "update_log_date": null,
+    "parameters_count": 0,
+    "response_fields_count": 0,
+    "endpoint": "https://partner.shopeemobile.com/api/v2/livestream/ban_user_comment",
+    "method": "POST"
+  },
+  "v2.livestream.create_session": {
+    "api_name": "v2.livestream.create_session",
+    "last_crawled": "2025-10-10T04:14:30.449261",
+    "content_hash": "0c5bdf331ff7b88f092b45b6c3b5f011a61fd518ec86eaa33b936084faa00bc3",
+    "update_log_date": null,
+    "parameters_count": 0,
+    "response_fields_count": 0,
+    "endpoint": "https://partner.shopeemobile.com/api/v2/livestream/create_session",
+    "method": "POST"
+  },
+  "v2.livestream.delete_item_list": {
+    "api_name": "v2.livestream.delete_item_list",
+    "last_crawled": "2025-10-10T04:14:30.449460",
+    "content_hash": "4305c0e2a66ab5eb01dca3ec34d5b2603225c098f200942dc332150596f1d88a",
+    "update_log_date": null,
+    "parameters_count": 0,
+    "response_fields_count": 0,
+    "endpoint": "https://partner.shopeemobile.com/api/v2/livestream/delete_item_list",
+    "method": "POST"
+  },
+  "v2.livestream.delete_show_item": {
+    "api_name": "v2.livestream.delete_show_item",
+    "last_crawled": "2025-10-10T04:14:30.449673",
+    "content_hash": "c405eb8d260e63da27c33cd7c9fd197b7deb1683072656c1efb69ee9b980d0f5",
+    "update_log_date": null,
+    "parameters_count": 0,
+    "response_fields_count": 0,
+    "endpoint": "https://partner.shopeemobile.com/api/v2/livestream/delete_show_item",
+    "method": "POST"
+  },
+  "v2.livestream.end_session": {
+    "api_name": "v2.livestream.end_session",
+    "last_crawled": "2025-10-10T04:14:30.449892",
+    "content_hash": "2898e7a39a02cc19d7c1dfa2acbec4ff82b67350ff0cc327b438326916e816db",
+    "update_log_date": null,
+    "parameters_count": 0,
+    "response_fields_count": 0,
+    "endpoint": "https://partner.shopeemobile.com/api/v2/livestream/end_session",
+    "method": "POST"
+  },
+  "v2.livestream.get_item_count": {
+    "api_name": "v2.livestream.get_item_count",
+    "last_crawled": "2025-10-10T04:14:30.450085",
+    "content_hash": "a900edadc18610e06071158d838897014d8b266566b18ea0ef0edb949c661368",
+    "update_log_date": null,
+    "parameters_count": 0,
+    "response_fields_count": 0,
+    "endpoint": "https://partner.shopeemobile.com/api/v2/livestream/get_item_count",
+    "method": "GET"
+  },
+  "v2.livestream.get_item_list": {
+    "api_name": "v2.livestream.get_item_list",
+    "last_crawled": "2025-10-10T04:14:30.450269",
+    "content_hash": "5764787984acb3d191aa36bc747890ac4f62e671e82b8503b21e4f9d5d44026f",
+    "update_log_date": null,
+    "parameters_count": 0,
+    "response_fields_count": 0,
+    "endpoint": "https://partner.shopeemobile.com/api/v2/livestream/get_item_list",
+    "method": "GET"
+  },
+  "v2.livestream.get_item_set_item_list": {
+    "api_name": "v2.livestream.get_item_set_item_list",
+    "last_crawled": "2025-10-10T04:14:30.450466",
+    "content_hash": "1bcf8b27d534cb26c23235a976c2c16ce7ed94890267f51085b078864b33e681",
+    "update_log_date": null,
+    "parameters_count": 0,
+    "response_fields_count": 0,
+    "endpoint": "https://partner.shopeemobile.com/api/v2/livestream/get_item_set_item_list",
+    "method": "GET"
+  },
+  "v2.livestream.get_item_set_list": {
+    "api_name": "v2.livestream.get_item_set_list",
+    "last_crawled": "2025-10-10T04:14:30.450651",
+    "content_hash": "9f43ddcfb953618e21fdde5420e02e9e668986c66e80512a03ff16de6872ecbe",
+    "update_log_date": null,
+    "parameters_count": 0,
+    "response_fields_count": 0,
+    "endpoint": "https://partner.shopeemobile.com/api/v2/livestream/get_item_set_list",
+    "method": "GET"
+  },
+  "v2.livestream.get_latest_comment_list": {
+    "api_name": "v2.livestream.get_latest_comment_list",
+    "last_crawled": "2025-10-10T04:14:30.450836",
+    "content_hash": "3be07028a89068689e4f426d41df9c0b0340c9b12ac5431599071773f6db7ef8",
+    "update_log_date": null,
+    "parameters_count": 0,
+    "response_fields_count": 0,
+    "endpoint": "https://partner.shopeemobile.com/api/v2/livestream/get_latest_comment_list",
+    "method": "GET"
+  },
+  "v2.livestream.get_like_item_list": {
+    "api_name": "v2.livestream.get_like_item_list",
+    "last_crawled": "2025-10-10T04:14:30.451019",
+    "content_hash": "7596dd670e907093a551083dcdacb835d3dc075852a94c0bbee2618420e4feba",
+    "update_log_date": null,
+    "parameters_count": 0,
+    "response_fields_count": 0,
+    "endpoint": "https://partner.shopeemobile.com/api/v2/livestream/get_like_item_list",
+    "method": "GET"
+  },
+  "v2.livestream.get_recent_item_list": {
+    "api_name": "v2.livestream.get_recent_item_list",
+    "last_crawled": "2025-10-10T04:14:30.451222",
+    "content_hash": "ffadbd566da776f4a973e6fb50b9d06c0cbd6db480d4328fdf55acb2a964cda4",
+    "update_log_date": null,
+    "parameters_count": 0,
+    "response_fields_count": 0,
+    "endpoint": "https://partner.shopeemobile.com/api/v2/livestream/get_recent_item_list",
+    "method": "GET"
+  },
+  "v2.livestream.get_session_detail": {
+    "api_name": "v2.livestream.get_session_detail",
+    "last_crawled": "2025-10-10T04:14:30.451408",
+    "content_hash": "dc4c25e1e74246fa157eebf3b37cf461c57d70447f21a425c9c5250da0317dcd",
+    "update_log_date": null,
+    "parameters_count": 0,
+    "response_fields_count": 0,
+    "endpoint": "https://partner.shopeemobile.com/api/v2/livestream/get_session_detail",
+    "method": "GET"
+  },
+  "v2.livestream.get_session_item_metric": {
+    "api_name": "v2.livestream.get_session_item_metric",
+    "last_crawled": "2025-10-10T04:14:30.451597",
+    "content_hash": "99f8e5799a4491f1d16e7d889c936fe895333e6bb1d0b81b6f278b74e5b6210b",
+    "update_log_date": null,
+    "parameters_count": 0,
+    "response_fields_count": 0,
+    "endpoint": "https://partner.shopeemobile.com/api/v2/livestream/get_session_item_metric",
+    "method": "GET"
+  },
+  "v2.livestream.get_session_metric": {
+    "api_name": "v2.livestream.get_session_metric",
+    "last_crawled": "2025-10-10T04:14:30.451784",
+    "content_hash": "fe19c97be5971280242bc605c16b43c4d9ec166ddd13e51ed68e8da01fe525e0",
+    "update_log_date": null,
+    "parameters_count": 0,
+    "response_fields_count": 0,
+    "endpoint": "https://partner.shopeemobile.com/api/v2/livestream/get_session_metric",
+    "method": "GET"
+  },
+  "v2.livestream.get_show_item": {
+    "api_name": "v2.livestream.get_show_item",
+    "last_crawled": "2025-10-10T04:14:30.451984",
+    "content_hash": "432ab515f2b2f33c3e3e4112db3560db8738b732d62c078e359d895856922820",
+    "update_log_date": null,
+    "parameters_count": 0,
+    "response_fields_count": 0,
+    "endpoint": "unknown",
+    "method": "POST"
+  },
+  "v2.livestream.post_comment": {
+    "api_name": "v2.livestream.post_comment",
+    "last_crawled": "2025-10-10T04:14:30.452171",
+    "content_hash": "d5fb0c70491258f262114ddb37b2dbc2b86a673c8a79d9773e00e3c3f7ecec7b",
+    "update_log_date": null,
+    "parameters_count": 0,
+    "response_fields_count": 0,
+    "endpoint": "https://partner.shopeemobile.com/api/v2/livestream/post_comment",
+    "method": "POST"
+  },
+  "v2.livestream.start_session": {
+    "api_name": "v2.livestream.start_session",
+    "last_crawled": "2025-10-10T04:14:30.452356",
+    "content_hash": "bf0df44c0f8aacc71b78c3040f1241ebe8b8b4ca13d8d4f99fe11f9c31e2e757",
+    "update_log_date": null,
+    "parameters_count": 0,
+    "response_fields_count": 0,
+    "endpoint": "https://partner.shopeemobile.com/api/v2/logistics/create_booking_shipping_document",
+    "method": "POST"
+  },
+  "v2.livestream.unban_user_comment": {
+    "api_name": "v2.livestream.unban_user_comment",
+    "last_crawled": "2025-10-10T04:14:30.452544",
+    "content_hash": "fe64eeb1fbfdc5154618a9dee0e991bdabb08b69d3f3bdcfd6f2016d278b506e",
+    "update_log_date": null,
+    "parameters_count": 0,
+    "response_fields_count": 0,
+    "endpoint": "https://partner.shopeemobile.com/api/v2/livestream/unban_user_comment",
+    "method": "POST"
+  },
+  "v2.livestream.update_item_list": {
+    "api_name": "v2.livestream.update_item_list",
+    "last_crawled": "2025-10-10T04:14:30.452752",
+    "content_hash": "d82b18e780db3f228ce0f02b87258851967f4991e1367cde7c1e5b591e6293c6",
+    "update_log_date": null,
+    "parameters_count": 0,
+    "response_fields_count": 0,
+    "endpoint": "https://partner.shopeemobile.com/api/v2/logistics/get_channel_list",
+    "method": "GET"
+  },
+  "v2.livestream.update_session": {
+    "api_name": "v2.livestream.update_session",
+    "last_crawled": "2025-10-10T04:14:30.452945",
+    "content_hash": "01825a7380988359963f090191655790de8e2e0b6276729f808be80113782fe9",
+    "update_log_date": null,
+    "parameters_count": 0,
+    "response_fields_count": 0,
+    "endpoint": "https://partner.shopeemobile.com/api/v2/livestream/post_comment",
+    "method": "POST"
+  },
+  "v2.livestream.update_show_item": {
+    "api_name": "v2.livestream.update_show_item",
+    "last_crawled": "2025-10-10T04:14:30.453138",
+    "content_hash": "a90362c73c95391e19ac60f37e24f58e9e6fda8a1fe4cdeb66eca9e07e564536",
+    "update_log_date": null,
+    "parameters_count": 0,
+    "response_fields_count": 0,
+    "endpoint": "https://partner.shopeemobile.com/api/v2/livestream/upload_image",
+    "method": "POST"
+  },
+  "v2.livestream.upload_image": {
+    "api_name": "v2.livestream.upload_image",
+    "last_crawled": "2025-10-10T04:14:30.453330",
+    "content_hash": "d8ff29c3fbd91f3d030b7f7ce5bd90a6e44d1f22947a7a6a7352552c2f1e46d3",
+    "update_log_date": null,
+    "parameters_count": 0,
+    "response_fields_count": 0,
+    "endpoint": "https://partner.shopeemobile.com/api/v2/livestream/upload_image",
+    "method": "POST"
+  },
+  "v2.logistics.batch_ship_order": {
+    "api_name": "v2.logistics.batch_ship_order",
+    "last_crawled": "2025-10-10T04:14:30.453528",
+    "content_hash": "40b02b43d46b2b964c12c63d87989c479f1a5ba637f3ae11ba4b672186d11303",
+    "update_log_date": null,
+    "parameters_count": 0,
+    "response_fields_count": 0,
+    "endpoint": "https://partner.shopeemobile.com/api/v2/logistics/create_booking_shipping_document",
+    "method": "POST"
+  },
+  "v2.logistics.batch_update_tpf_warehouse_tracking_status": {
+    "api_name": "v2.logistics.batch_update_tpf_warehouse_tracking_status",
+    "last_crawled": "2025-10-10T04:14:30.453727",
+    "content_hash": "cfaefd15e5e2655be0ecf285455a89bb0aa1617eca18bf4def7df167664a7e76",
+    "update_log_date": null,
+    "parameters_count": 0,
+    "response_fields_count": 0,
+    "endpoint": "https://partner.shopeemobile.com/api/v2/logistics/batch_update_tpf_warehouse_tracking_status",
+    "method": "POST"
+  },
+  "v2.logistics.create_booking_shipping_document": {
+    "api_name": "v2.logistics.create_booking_shipping_document",
+    "last_crawled": "2025-10-10T04:14:30.453926",
+    "content_hash": "7b490f034f32bf32bd34465e1510de4bb76ef6a7d56411f43c8f46bc36edbd3b",
+    "update_log_date": null,
+    "parameters_count": 0,
+    "response_fields_count": 0,
+    "endpoint": "https://partner.shopeemobile.com/api/v2/logistics/create_booking_shipping_document",
+    "method": "POST"
+  },
+  "v2.logistics.create_shipping_document": {
+    "api_name": "v2.logistics.create_shipping_document",
+    "last_crawled": "2025-10-10T04:14:30.454117",
+    "content_hash": "e36e4e5a524ced44961c261a12c74caa7ce5ff092aace718e4116ff006acbdf4",
+    "update_log_date": null,
+    "parameters_count": 0,
+    "response_fields_count": 0,
+    "endpoint": "https://partner.shopeemobile.com/api/v2/logistics/create_shipping_document",
+    "method": "POST"
+  },
+  "v2.logistics.create_shipping_document_job": {
+    "api_name": "v2.logistics.create_shipping_document_job",
+    "last_crawled": "2025-10-10T04:14:30.454311",
+    "content_hash": "6ba338de141c1edd7acb2f1291616aa96cd0c9b0b9c36d0aaf94028e741e77ec",
+    "update_log_date": null,
+    "parameters_count": 0,
+    "response_fields_count": 0,
+    "endpoint": "https://partner.shopeemobile.com/api/v2/logistics/create_shipping_document_job",
+    "method": "POST"
+  },
+  "v2.logistics.delete_address": {
+    "api_name": "v2.logistics.delete_address",
+    "last_crawled": "2025-10-10T04:14:30.454522",
+    "content_hash": "3c8d1a39f74a7d2a2967cda742e6ae988c4a45ab52a7c8194c796e944deb999e",
+    "update_log_date": null,
+    "parameters_count": 0,
+    "response_fields_count": 0,
+    "endpoint": "https://partner.shopeemobile.com/api/v2/logistics/delete_address",
+    "method": "POST"
+  },
+  "v2.logistics.delete_special_operating_hour": {
+    "api_name": "v2.logistics.delete_special_operating_hour",
+    "last_crawled": "2025-10-10T04:14:30.454719",
+    "content_hash": "5c7fcabc08b3837f1552b76b0f8d016fd731e009f61dabdfa3ec545a4728b338",
+    "update_log_date": null,
+    "parameters_count": 0,
+    "response_fields_count": 0,
+    "endpoint": "https://partner.shopeemobile.com/api/v2/logistics/delete_special_operating_hour",
+    "method": "POST"
+  },
+  "v2.logistics.download_booking_shipping_document": {
+    "api_name": "v2.logistics.download_booking_shipping_document",
+    "last_crawled": "2025-10-10T04:14:30.454913",
+    "content_hash": "a942bf29d250ef00f0d30463bccca427a52da3511a137e18699040e8b19ca3ac",
+    "update_log_date": null,
+    "parameters_count": 0,
+    "response_fields_count": 0,
+    "endpoint": "https://partner.shopeemobile.com/api/v2/logistics/delete_special_operating_hour",
+    "method": "POST"
+  },
+  "v2.logistics.download_shipping_document": {
+    "api_name": "v2.logistics.download_shipping_document",
+    "last_crawled": "2025-10-10T04:14:30.455103",
+    "content_hash": "62cecb19aa84313a8f9a29156ce47b3fea5f253ce9e2a6dcdc552bd3efe8b6b9",
+    "update_log_date": null,
+    "parameters_count": 0,
+    "response_fields_count": 0,
+    "endpoint": "https://partner.shopeemobile.com/api/v2/logistics/download_shipping_document",
+    "method": "POST"
+  },
+  "v2.logistics.download_shipping_document_job": {
+    "api_name": "v2.logistics.download_shipping_document_job",
+    "last_crawled": "2025-10-10T04:14:30.455323",
+    "content_hash": "2c1a4703bc973b292a6e78e3343ab7d74c667fcb85e1062022bd265b59383d30",
+    "update_log_date": null,
+    "parameters_count": 0,
+    "response_fields_count": 0,
+    "endpoint": "https://partner.shopeemobile.com/api/v2/logistics/download_shipping_document_job",
+    "method": "POST"
+  },
+  "v2.logistics.download_to_label": {
+    "api_name": "v2.logistics.download_to_label",
+    "last_crawled": "2025-10-10T04:14:30.455515",
+    "content_hash": "ada58ff64e935e34f2066931a6a5264dd438d54bbe735f349cd918edad210483",
+    "update_log_date": null,
+    "parameters_count": 0,
+    "response_fields_count": 0,
+    "endpoint": "https://partner.shopeemobile.com/api/v2/logistics/download_to_label",
+    "method": "POST"
+  },
+  "v2.logistics.get_address_list": {
+    "api_name": "v2.logistics.get_address_list",
+    "last_crawled": "2025-10-10T04:14:30.455703",
+    "content_hash": "a695cbca6d683a88241f13b7dc22f494ee72b297d92e19fa6ebcceca29bb2938",
+    "update_log_date": null,
+    "parameters_count": 0,
+    "response_fields_count": 0,
+    "endpoint": "https://partner.shopeemobile.com/api/v2/merchant/get_merchant_warehouse_location_list",
+    "method": "POST"
+  },
+  "v2.logistics.get_booking_shipping_document_data_info": {
+    "api_name": "v2.logistics.get_booking_shipping_document_data_info",
+    "last_crawled": "2025-10-10T04:14:30.455902",
+    "content_hash": "16b1ebf731c02e35cdf667b621632c96d1c5ff6f95669ccd1f46ac15397e35ef",
+    "update_log_date": null,
+    "parameters_count": 0,
+    "response_fields_count": 0,
+    "endpoint": "https://partner.shopeemobile.com/api/v2/logistics/get_booking_shipping_document_parameter",
+    "method": "POST"
+  },
+  "v2.logistics.get_booking_shipping_document_parameter": {
+    "api_name": "v2.logistics.get_booking_shipping_document_parameter",
+    "last_crawled": "2025-10-10T04:14:30.456087",
+    "content_hash": "d673153ca164de099a1e71563e674f7e0f1310720135e70389f78a358691def0",
+    "update_log_date": null,
+    "parameters_count": 0,
+    "response_fields_count": 0,
+    "endpoint": "https://partner.shopeemobile.com/api/v2/logistics/get_booking_shipping_document_parameter",
+    "method": "POST"
+  },
+  "v2.logistics.get_booking_shipping_document_result": {
+    "api_name": "v2.logistics.get_booking_shipping_document_result",
+    "last_crawled": "2025-10-10T04:14:30.456278",
+    "content_hash": "b8b497e9b3d099006ead6486c09df4869697b845c61040a72ab9199718743209",
+    "update_log_date": null,
+    "parameters_count": 0,
+    "response_fields_count": 0,
+    "endpoint": "https://partner.shopeemobile.com/api/v2/logistics/get_booking_shipping_document_result",
+    "method": "POST"
+  },
+  "v2.logistics.get_booking_shipping_parameter": {
+    "api_name": "v2.logistics.get_booking_shipping_parameter",
+    "last_crawled": "2025-10-10T04:14:30.456473",
+    "content_hash": "f9a1acb1b1db4a9a2a3899c6454c94901096fe50ce59bb2733e7d50e0e865391",
+    "update_log_date": null,
+    "parameters_count": 0,
+    "response_fields_count": 0,
+    "endpoint": "https://partner.shopeemobile.com/api/v2/logistics/get_booking_shipping_parameter",
+    "method": "GET"
+  },
+  "v2.logistics.get_booking_tracking_info": {
+    "api_name": "v2.logistics.get_booking_tracking_info",
+    "last_crawled": "2025-10-10T04:14:30.456667",
+    "content_hash": "56d81109fc1e0435dcf4e33bc61e9b55a6a0118b64b60da36d7f42db2d5015aa",
+    "update_log_date": null,
+    "parameters_count": 0,
+    "response_fields_count": 0,
+    "endpoint": "https://partner.shopeemobile.com/api/v2/logistics/get_booking_tracking_info",
+    "method": "GET"
+  },
+  "v2.logistics.get_booking_tracking_number": {
+    "api_name": "v2.logistics.get_booking_tracking_number",
+    "last_crawled": "2025-10-10T04:14:30.456858",
+    "content_hash": "6a5816a04b27eddd9597df59c9a4a9c4aee1c47fc217428110d1f7a83f71fa06",
+    "update_log_date": null,
+    "parameters_count": 0,
+    "response_fields_count": 0,
+    "endpoint": "https://partner.shopeemobile.com/api/v2/logistics/get_booking_tracking_number",
+    "method": "GET"
+  },
+  "v2.logistics.get_channel_list": {
+    "api_name": "v2.logistics.get_channel_list",
+    "last_crawled": "2025-10-10T04:14:30.457054",
+    "content_hash": "83425736e25643107d6c0a60a2c3d27f4472553c872739e52f197e4283db667e",
+    "update_log_date": null,
+    "parameters_count": 0,
+    "response_fields_count": 0,
+    "endpoint": "https://partner.shopeemobile.com/api/v2/logistics/get_channel_list",
+    "method": "GET"
+  },
+  "v2.logistics.get_mart_packaging_info": {
+    "api_name": "v2.logistics.get_mart_packaging_info",
+    "last_crawled": "2025-10-10T04:14:30.457250",
+    "content_hash": "bc55fd24e21346e6ba5dacd30140c00f47d0563e8fd4387fdfc4e300747b1fa3",
+    "update_log_date": null,
+    "parameters_count": 0,
+    "response_fields_count": 0,
+    "endpoint": "https://partner.shopeemobile.com/api/v2/logistics/get_channel_list",
+    "method": "GET"
+  },
+  "v2.logistics.get_mass_shipping_parameter": {
+    "api_name": "v2.logistics.get_mass_shipping_parameter",
+    "last_crawled": "2025-10-10T04:14:30.457457",
+    "content_hash": "9c114b099a7a70936ea99c7a440599802e3ad67bab996d812afee64a2c128981",
+    "update_log_date": null,
+    "parameters_count": 0,
+    "response_fields_count": 0,
+    "endpoint": "https://partner.shopeemobile.com/api/v2/logistics/get_mass_tracking_number",
+    "method": "POST"
+  },
+  "v2.logistics.get_mass_tracking_number": {
+    "api_name": "v2.logistics.get_mass_tracking_number",
+    "last_crawled": "2025-10-10T04:14:30.457711",
+    "content_hash": "c3d46d5f19573ef7ee5e99a5af5e8eadccef2ec44617a13a7ed0b5cc362b190f",
+    "update_log_date": null,
+    "parameters_count": 0,
+    "response_fields_count": 0,
+    "endpoint": "https://partner.shopeemobile.com/api/v2/logistics/get_mass_tracking_number",
+    "method": "POST"
+  },
+  "v2.logistics.get_operating_hours": {
+    "api_name": "v2.logistics.get_operating_hours",
+    "last_crawled": "2025-10-10T04:14:30.457947",
+    "content_hash": "c0ef1f0d3811e233c3cb42fa574d1ef907a2022be8b81e76f9b7ddbd61d30b16",
+    "update_log_date": null,
+    "parameters_count": 0,
+    "response_fields_count": 0,
+    "endpoint": "https://partner.shopeemobile.com/api/v2/logistics/get_operating_hours",
+    "method": "GET"
+  },
+  "v2.logistics.get_operating_hour_restrictions": {
+    "api_name": "v2.logistics.get_operating_hour_restrictions",
+    "last_crawled": "2025-10-10T04:14:30.458197",
+    "content_hash": "d8acbc77c4cd23b489e7ad8324b929bb87e3ae8f97b1a319f67856ce7b4918b2",
+    "update_log_date": null,
+    "parameters_count": 0,
+    "response_fields_count": 0,
+    "endpoint": "https://partner.shopeemobile.com/api/v2/logistics/get_operating_hour_restrictions",
+    "method": "GET"
+  },
+  "v2.logistics.get_shipping_document_data_info": {
+    "api_name": "v2.logistics.get_shipping_document_data_info",
+    "last_crawled": "2025-10-10T04:14:30.458454",
+    "content_hash": "31303d1d1ccbda5e2a81346b4b3d35252913f07579a310e88bf6b24ffbc02112",
+    "update_log_date": null,
+    "parameters_count": 0,
+    "response_fields_count": 0,
+    "endpoint": "https://partner.shopeemobile.com/api/v2/logistics/get_shipping_document_job_status",
+    "method": "POST"
+  },
+  "v2.logistics.get_shipping_document_job_status": {
+    "api_name": "v2.logistics.get_shipping_document_job_status",
+    "last_crawled": "2025-10-10T04:14:30.458698",
+    "content_hash": "51ffed2243d9090fdfad34306ba8eeefbfdb8e5035a5ab0355b9df884742ef42",
+    "update_log_date": null,
+    "parameters_count": 0,
+    "response_fields_count": 0,
+    "endpoint": "https://partner.shopeemobile.com/api/v2/logistics/get_shipping_document_job_status",
+    "method": "POST"
+  },
+  "v2.logistics.get_shipping_document_parameter": {
+    "api_name": "v2.logistics.get_shipping_document_parameter",
+    "last_crawled": "2025-10-10T04:14:30.458908",
+    "content_hash": "32c46772f239566fba345aec3d05bbc5ea2bfced4f4e6e3406f87cf1436e5151",
+    "update_log_date": null,
+    "parameters_count": 0,
+    "response_fields_count": 0,
+    "endpoint": "https://partner.shopeemobile.com/api/v2/logistics/create_shipping_document",
+    "method": "POST"
+  },
+  "v2.logistics.get_shipping_document_result": {
+    "api_name": "v2.logistics.get_shipping_document_result",
+    "last_crawled": "2025-10-10T04:14:30.459110",
+    "content_hash": "e9dec2c78c0967d57fa9f85eb928ef8791ca6fedbe31248711f1a0b0182f2a79",
+    "update_log_date": null,
+    "parameters_count": 0,
+    "response_fields_count": 0,
+    "endpoint": "https://partner.shopeemobile.com/api/v2/logistics/create_shipping_document",
+    "method": "POST"
+  },
+  "v2.logistics.get_shipping_parameter": {
+    "api_name": "v2.logistics.get_shipping_parameter",
+    "last_crawled": "2025-10-10T04:14:30.459313",
+    "content_hash": "291b8e667418c1356855043dec36889c2d0ac310eb739123bf71fd62b80e9dfe",
+    "update_log_date": null,
+    "parameters_count": 0,
+    "response_fields_count": 0,
+    "endpoint": "https://partner.shopeemobile.com/api/v2/logistics/get_tracking_info",
+    "method": "GET"
+  },
+  "v2.logistics.get_tracking_info": {
+    "api_name": "v2.logistics.get_tracking_info",
+    "last_crawled": "2025-10-10T04:14:30.459501",
+    "content_hash": "2d76ffc107a56c25b92c94ffb8490e87f2c9e72fd94e6108fad71e77ff2efb90",
+    "update_log_date": null,
+    "parameters_count": 0,
+    "response_fields_count": 0,
+    "endpoint": "https://partner.shopeemobile.com/api/v2/logistics/get_tracking_info",
+    "method": "GET"
+  },
+  "v2.logistics.get_tracking_number": {
+    "api_name": "v2.logistics.get_tracking_number",
+    "last_crawled": "2025-10-10T04:14:30.459709",
+    "content_hash": "aa7336709983d690cc878ece27d2f3ead9cd2b1542a50a6519118d8fa83ce099",
+    "update_log_date": null,
+    "parameters_count": 0,
+    "response_fields_count": 0,
+    "endpoint": "https://partner.shopeemobile.com/api/v2/logistics/get_tracking_number",
+    "method": "GET"
+  },
+  "v2.logistics.mass_ship_order": {
+    "api_name": "v2.logistics.mass_ship_order",
+    "last_crawled": "2025-10-10T04:14:30.459934",
+    "content_hash": "a1399587c317c9e3d0ebec6c5e2ea7305230322a1ec9e7d92977be57dae5b6e5",
+    "update_log_date": null,
+    "parameters_count": 0,
+    "response_fields_count": 0,
+    "endpoint": "https://partner.shopeemobile.com/api/v2/logistics/mass_ship_order",
+    "method": "POST"
+  },
+  "v2.logistics.set_address_config": {
+    "api_name": "v2.logistics.set_address_config",
+    "last_crawled": "2025-10-10T04:14:30.460140",
+    "content_hash": "99f817bf39f308efef385daa69de5e53cb7719287fc6409c45ffe351dc36e95a",
+    "update_log_date": null,
+    "parameters_count": 0,
+    "response_fields_count": 0,
+    "endpoint": "https://partner.shopeemobile.com/api/v2/logistics/set_address_config",
+    "method": "POST"
+  },
+  "v2.logistics.set_mart_packaging_info": {
+    "api_name": "v2.logistics.set_mart_packaging_info",
+    "last_crawled": "2025-10-10T04:14:30.460343",
+    "content_hash": "707e1ff606bad4ebfc6bce65a0fe3df496d57acffab1dd83e90f24d2cc47f075",
+    "update_log_date": null,
+    "parameters_count": 0,
+    "response_fields_count": 0,
+    "endpoint": "https://partner.shopeemobile.com/api/v2/logistics/set_address_config",
+    "method": "POST"
+  },
+  "v2.logistics.ship_booking": {
+    "api_name": "v2.logistics.ship_booking",
+    "last_crawled": "2025-10-10T04:14:30.460550",
+    "content_hash": "a32b93646e15599a1c14a4dfb7cbbbf7e45571e22eb4cad823bbca2da136f716",
+    "update_log_date": null,
+    "parameters_count": 0,
+    "response_fields_count": 0,
+    "endpoint": "https://partner.shopeemobile.com/api/v2/logistics/ship_booking",
+    "method": "POST"
+  },
+  "v2.logistics.ship_order": {
+    "api_name": "v2.logistics.ship_order",
+    "last_crawled": "2025-10-10T04:14:30.460734",
+    "content_hash": "39bd0624448189c88cb6ee4ece015bfbcdc67ec1d84c208cbdd65024ba811942",
+    "update_log_date": null,
+    "parameters_count": 0,
+    "response_fields_count": 0,
+    "endpoint": "https://partner.shopeemobile.com/api/v2/logistics/update_operating_hours",
+    "method": "POST"
+  },
+  "v2.logistics.update_channel": {
+    "api_name": "v2.logistics.update_channel",
+    "last_crawled": "2025-10-10T04:14:30.460958",
+    "content_hash": "427d7541199b4bccbd905af8446e819e19ffdd6e071b8a0aac70243972cf4fda",
+    "update_log_date": null,
+    "parameters_count": 0,
+    "response_fields_count": 0,
+    "endpoint": "https://partner.shopeemobile.com/api/v2/logistics/update_channel",
+    "method": "POST"
+  },
+  "v2.logistics.update_operating_hours": {
+    "api_name": "v2.logistics.update_operating_hours",
+    "last_crawled": "2025-10-10T04:14:30.461158",
+    "content_hash": "cebae1576bc05c476b5a45898d792cf1d0cf28fc8336c64b825ec4252c885df8",
+    "update_log_date": null,
+    "parameters_count": 0,
+    "response_fields_count": 0,
+    "endpoint": "https://partner.shopeemobile.com/api/v2/logistics/update_operating_hours",
+    "method": "POST"
+  },
+  "v2.logistics.update_self_collection_order_logistics": {
+    "api_name": "v2.logistics.update_self_collection_order_logistics",
+    "last_crawled": "2025-10-10T04:14:30.461357",
+    "content_hash": "0e0bab5758d8b54aa1ced3cf8ee06df549693df9fc2cc7811d2e961e4241ff51",
+    "update_log_date": null,
+    "parameters_count": 0,
+    "response_fields_count": 0,
+    "endpoint": "https://partner.shopeemobile.com/api/v2/logistics/update_self_collection_order_logistics",
+    "method": "POST"
+  },
+  "v2.logistics.update_shipping_order": {
+    "api_name": "v2.logistics.update_shipping_order",
+    "last_crawled": "2025-10-10T04:14:30.461567",
+    "content_hash": "e59f8765bc5d8eb143d8d37f019fd3156c951142b9ef96587ba48978f49a1876",
+    "update_log_date": null,
+    "parameters_count": 0,
+    "response_fields_count": 0,
+    "endpoint": "https://partner.shopeemobile.com/api/v2/logistics/update_shipping_order",
+    "method": "POST"
+  },
+  "v2.logistics.update_tracking_status": {
+    "api_name": "v2.logistics.update_tracking_status",
+    "last_crawled": "2025-10-10T04:14:30.461782",
+    "content_hash": "7985da2764f00b57605ce80d8c9640506843c666d706fbb807ce7da5a677559a",
+    "update_log_date": null,
+    "parameters_count": 0,
+    "response_fields_count": 0,
+    "endpoint": "https://partner.shopeemobile.com/api/v2/logistics/update_tracking_status",
+    "method": "POST"
+  },
+  "v2.media.upload_image": {
+    "api_name": "v2.media.upload_image",
+    "last_crawled": "2025-10-10T04:14:30.462008",
+    "content_hash": "0876677011638fc68c7f73ebdb73e424a5c21765752f9a4601eee77822e0a59f",
+    "update_log_date": null,
+    "parameters_count": 0,
+    "response_fields_count": 0,
+    "endpoint": "https://partner.shopeemobile.com/api/v2/logistics/update_tracking_status",
+    "method": "POST"
+  },
+  "v2.media_space.cancel_video_upload": {
+    "api_name": "v2.media_space.cancel_video_upload",
+    "last_crawled": "2025-10-10T04:14:30.462206",
+    "content_hash": "8d5d31aa4d011f57b56265790d73afbc0270cb11813aff6b078b9a4feef246ae",
+    "update_log_date": null,
+    "parameters_count": 0,
+    "response_fields_count": 0,
+    "endpoint": "https://partner.shopeemobile.com/api/v2/media_space/cancel_video_upload",
+    "method": "POST"
+  },
+  "v2.media_space.complete_video_upload": {
+    "api_name": "v2.media_space.complete_video_upload",
+    "last_crawled": "2025-10-10T04:14:30.462405",
+    "content_hash": "5296c902f66443d3379b0ff207bdd0b6fd81e8a68c75f81108843e8e17d0fd85",
+    "update_log_date": null,
+    "parameters_count": 0,
+    "response_fields_count": 0,
+    "endpoint": "https://partner.shopeemobile.com/api/v2/media_space/complete_video_upload",
+    "method": "POST"
+  },
+  "v2.media_space.get_video_upload_result": {
+    "api_name": "v2.media_space.get_video_upload_result",
+    "last_crawled": "2025-10-10T04:14:30.462618",
+    "content_hash": "75152a865c6a36e7e8a6518182426dad9f0471129cc4798db8d70c3b6c6cebb3",
+    "update_log_date": null,
+    "parameters_count": 0,
+    "response_fields_count": 0,
+    "endpoint": "https://partner.shopeemobile.com/api/v2/media_space/get_video_upload_result",
+    "method": "GET"
+  },
+  "v2.media_space.init_video_upload": {
+    "api_name": "v2.media_space.init_video_upload",
+    "last_crawled": "2025-10-10T04:14:30.462814",
+    "content_hash": "628f837c70fba3d8de10ed1860c1366bba8e78dd18f7b689cbf5d6d04494cf10",
+    "update_log_date": null,
+    "parameters_count": 0,
+    "response_fields_count": 0,
+    "endpoint": "https://partner.shopeemobile.com/api/v2/media_space/get_video_upload_result",
+    "method": "GET"
+  },
+  "v2.media_space.upload_image": {
+    "api_name": "v2.media_space.upload_image",
+    "last_crawled": "2025-10-10T04:14:30.463015",
+    "content_hash": "f9cf439f2fb6c7d72e6f416b37133c13609df458bfdef1668fc7b2dc691271eb",
+    "update_log_date": null,
+    "parameters_count": 0,
+    "response_fields_count": 0,
+    "endpoint": "https://partner.shopeemobile.com/api/v2/media_space/upload_image",
+    "method": "POST"
+  },
+  "v2.media_space.upload_video_part": {
+    "api_name": "v2.media_space.upload_video_part",
+    "last_crawled": "2025-10-10T04:14:30.463208",
+    "content_hash": "77cddb8fdd61d4a4215d0834571b1806c09959b3bce59ad2d917a5ae9ef4e4af",
+    "update_log_date": null,
+    "parameters_count": 0,
+    "response_fields_count": 0,
+    "endpoint": "https://partner.shopeemobile.com/api/v2/media_space/upload_video_part",
+    "method": "POST"
+  },
+  "v2.merchant.get_merchant_info": {
+    "api_name": "v2.merchant.get_merchant_info",
+    "last_crawled": "2025-10-10T04:14:30.463400",
+    "content_hash": "583931d99082ae9ab747f392954cf04d3893194f11b6a332d9fc6c17681c7493",
+    "update_log_date": null,
+    "parameters_count": 0,
+    "response_fields_count": 0,
+    "endpoint": "https://partner.shopeemobile.com/api/v2/merchant/get_merchant_info",
+    "method": "GET"
+  },
+  "v2.merchant.get_merchant_prepaid_account_list": {
+    "api_name": "v2.merchant.get_merchant_prepaid_account_list",
+    "last_crawled": "2025-10-10T04:14:30.463618",
+    "content_hash": "694859d6f8cabe16a495256f25f3cec5fd5fda5ada7229c0cd7b9b466ef75d17",
+    "update_log_date": null,
+    "parameters_count": 0,
+    "response_fields_count": 0,
+    "endpoint": "https://partner.shopeemobile.com/api/v2/merchant/get_merchant_info",
+    "method": "GET"
+  },
+  "v2.merchant.get_merchant_warehouse_list": {
+    "api_name": "v2.merchant.get_merchant_warehouse_list",
+    "last_crawled": "2025-10-10T04:14:30.463813",
+    "content_hash": "14aade419615423aa9804b55be4644aaed6667841d7365387f2c1cda93e1a263",
+    "update_log_date": null,
+    "parameters_count": 0,
+    "response_fields_count": 0,
+    "endpoint": "https://partner.shopeemobile.com/api/v2/merchant/get_merchant_warehouse_list",
+    "method": "POST"
+  },
+  "v2.merchant.get_merchant_warehouse_location_list": {
+    "api_name": "v2.merchant.get_merchant_warehouse_location_list",
+    "last_crawled": "2025-10-10T04:14:30.464013",
+    "content_hash": "0db4ea77d400dfb3adc867b64896b4df6708d64fd3e8dcaf9f90696db730a431",
+    "update_log_date": null,
+    "parameters_count": 0,
+    "response_fields_count": 0,
+    "endpoint": "https://partner.shopeemobile.com/api/v2/merchant/get_merchant_warehouse_location_list",
+    "method": "POST"
+  },
+  "v2.merchant.get_shop_list_by_merchant": {
+    "api_name": "v2.merchant.get_shop_list_by_merchant",
+    "last_crawled": "2025-10-10T04:14:30.464207",
+    "content_hash": "e8aa488b80c33d75ece75344a3d0da10c259b116f7491fbf2ac5955f25930266",
+    "update_log_date": null,
+    "parameters_count": 0,
+    "response_fields_count": 0,
+    "endpoint": "https://partner.shopeemobile.com/api/v2/merchant/get_warehouse_eligible_shop_list",
+    "method": "POST"
+  },
+  "v2.merchant.get_warehouse_eligible_shop_list": {
+    "api_name": "v2.merchant.get_warehouse_eligible_shop_list",
+    "last_crawled": "2025-10-10T04:14:30.464413",
+    "content_hash": "68cd24a1f5a6f1d1070f4b51bd52c30ce221514f44dee91e986ac19064d7651e",
+    "update_log_date": null,
+    "parameters_count": 0,
+    "response_fields_count": 0,
+    "endpoint": "https://partner.shopeemobile.com/api/v2/merchant/get_warehouse_eligible_shop_list",
+    "method": "POST"
+  },
+  "v2.order.cancel_order": {
+    "api_name": "v2.order.cancel_order",
+    "last_crawled": "2025-10-10T04:14:30.464703",
+    "content_hash": "765011dea5d8603a4f38d2949972c8b6d58fb9457a3a5d689e15e39588b1481c",
+    "update_log_date": null,
+    "parameters_count": 0,
+    "response_fields_count": 0,
+    "endpoint": "https://partner.shopeemobile.com/api/v2/order/cancel_order",
+    "method": "POST"
+  },
+  "v2.order.download_fbs_invoices": {
+    "api_name": "v2.order.download_fbs_invoices",
+    "last_crawled": "2025-10-10T04:14:30.464908",
+    "content_hash": "3d62dde9f8bfdbda68b76842e4e4d4bbbef700b6c7ea0086cb0575088c943ee0",
+    "update_log_date": null,
+    "parameters_count": 0,
+    "response_fields_count": 0,
+    "endpoint": "https://partner.shopeemobile.com/api/v2/order/download_fbs_invoices",
+    "method": "POST"
+  },
+  "v2.order.download_invoice_doc": {
+    "api_name": "v2.order.download_invoice_doc",
+    "last_crawled": "2025-10-10T04:14:30.465098",
+    "content_hash": "8a6f97905529cc907631a8d69c78b8b724d1471d55396b33e5f00d1a5c9ea513",
+    "update_log_date": null,
+    "parameters_count": 0,
+    "response_fields_count": 0,
+    "endpoint": "https://partner.shopeemobile.com/api/v2/order/download_invoice_doc",
+    "method": "GET"
+  },
+  "v2.order.generate_fbs_invoices": {
+    "api_name": "v2.order.generate_fbs_invoices",
+    "last_crawled": "2025-10-10T04:14:30.465304",
+    "content_hash": "c2aee021f9766f344d6ce2db37f487c705c85b3a6e7edf38de3ad81bc124866c",
+    "update_log_date": null,
+    "parameters_count": 0,
+    "response_fields_count": 0,
+    "endpoint": "https://partner.shopeemobile.com/api/v2/order/generate_fbs_invoices",
+    "method": "POST"
+  },
+  "v2.order.get_booking_detail": {
+    "api_name": "v2.order.get_booking_detail",
+    "last_crawled": "2025-10-10T04:14:30.465492",
+    "content_hash": "8da45cc071c9b9e1fab3ac3429e8aa3bc0b5d81f329c651fbc485f9eb89bd757",
+    "update_log_date": null,
+    "parameters_count": 0,
+    "response_fields_count": 0,
+    "endpoint": "https://partner.shopeemobile.com/api/v2/order/get_booking_detail",
+    "method": "GET"
+  },
+  "v2.order.get_booking_list": {
+    "api_name": "v2.order.get_booking_list",
+    "last_crawled": "2025-10-10T04:14:30.465683",
+    "content_hash": "67be6d0618b28453eb65ca49ba434b3aafe4675fa8993d6621506b184178b300",
+    "update_log_date": null,
+    "parameters_count": 0,
+    "response_fields_count": 0,
+    "endpoint": "https://partner.shopeemobile.com/api/v2/order/get_booking_list",
+    "method": "GET"
+  },
+  "v2.order.get_buyer_invoice_info": {
+    "api_name": "v2.order.get_buyer_invoice_info",
+    "last_crawled": "2025-10-10T04:14:30.465877",
+    "content_hash": "3a8f6aff1847ec75db4521ab104d2ef77ad4285238be6994c60f5eff4c783e1c",
+    "update_log_date": null,
+    "parameters_count": 0,
+    "response_fields_count": 0,
+    "endpoint": "https://partner.shopeemobile.com/api/v2/order/get_buyer_invoice_info",
+    "method": "POST"
+  },
+  "v2.order.get_fbs_invoices_result": {
+    "api_name": "v2.order.get_fbs_invoices_result",
+    "last_crawled": "2025-10-10T04:14:30.466064",
+    "content_hash": "54371815c905b088d5858313833f466ac38532d8894b62485128e4d8b4060cfa",
+    "update_log_date": null,
+    "parameters_count": 0,
+    "response_fields_count": 0,
+    "endpoint": "https://partner.shopeemobile.com/api/v2/order/get_fbs_invoices_result",
+    "method": "POST"
+  },
+  "v2.order.get_order_detail": {
+    "api_name": "v2.order.get_order_detail",
+    "last_crawled": "2025-10-10T04:14:30.466261",
+    "content_hash": "5f24c9ee11cefcc3248aacbfe816f71f1770d8350fba9cbf1fc78c24ff810e8c",
+    "update_log_date": null,
+    "parameters_count": 0,
+    "response_fields_count": 0,
+    "endpoint": "https://partner.shopeemobile.com/api/v2/order/get_order_detail",
+    "method": "GET"
+  },
+  "v2.order.get_order_list": {
+    "api_name": "v2.order.get_order_list",
+    "last_crawled": "2025-10-10T04:14:30.466516",
+    "content_hash": "dbf56de7c32de0992033b2a326cbb7cbfcb8e92e6af1418760443308356cf259",
+    "update_log_date": null,
+    "parameters_count": 3,
+    "response_fields_count": 2,
+    "endpoint": "/.api/get_public_api",
+    "method": "GET"
+  },
+  "v2.order.get_package_detail": {
+    "api_name": "v2.order.get_package_detail",
+    "last_crawled": "2025-10-10T04:14:30.466711",
+    "content_hash": "8cd253f9f9b19bbc2113ae803423995542ee39801bb934332afa7c6c782b8664",
+    "update_log_date": null,
+    "parameters_count": 0,
+    "response_fields_count": 0,
+    "endpoint": "https://partner.shopeemobile.com/api/v2/order/get_package_detail",
+    "method": "GET"
+  },
+  "v2.order.get_pending_buyer_invoice_order_list": {
+    "api_name": "v2.order.get_pending_buyer_invoice_order_list",
+    "last_crawled": "2025-10-10T04:14:30.466903",
+    "content_hash": "0fb8eaab9b550ab482c8cb0c7518bc12a332bdf76bf5478b3e91f19bc768f81c",
+    "update_log_date": null,
+    "parameters_count": 0,
+    "response_fields_count": 0,
+    "endpoint": "https://partner.shopeemobile.com/api/v2/order/get_pending_buyer_invoice_order_list",
+    "method": "GET"
+  },
+  "v2.order.get_shipment_list": {
+    "api_name": "v2.order.get_shipment_list",
+    "last_crawled": "2025-10-10T04:14:30.467107",
+    "content_hash": "75dc08c32ec31513004927559b1c8fb99eb5e4d9508c64007790ee256f5a567b",
+    "update_log_date": null,
+    "parameters_count": 0,
+    "response_fields_count": 0,
+    "endpoint": "https://partner.shopeemobile.com/api/v2/order/get_shipment_list",
+    "method": "GET"
+  },
+  "v2.order.get_warehouse_filter_config": {
+    "api_name": "v2.order.get_warehouse_filter_config",
+    "last_crawled": "2025-10-10T04:14:30.467302",
+    "content_hash": "55a5c1051b80db057b61b83c3d7897c354348311eacc69bbfed1a54f25cff7a2",
+    "update_log_date": null,
+    "parameters_count": 0,
+    "response_fields_count": 0,
+    "endpoint": "https://partner.shopeemobile.com/api/v2/order/get_warehouse_filter_config",
+    "method": "GET"
+  },
+  "v2.order.handle_buyer_cancellation": {
+    "api_name": "v2.order.handle_buyer_cancellation",
+    "last_crawled": "2025-10-10T04:14:30.467485",
+    "content_hash": "6cf90f6525cbc462f26fff2641cf3456faeb8a4e130d3a7f093f0e615691d24c",
+    "update_log_date": null,
+    "parameters_count": 0,
+    "response_fields_count": 0,
+    "endpoint": "https://partner.shopeemobile.com/api/v2/order/handle_buyer_cancellation",
+    "method": "POST"
+  },
+  "v2.order.handle_prescription_check": {
+    "api_name": "v2.order.handle_prescription_check",
+    "last_crawled": "2025-10-10T04:14:30.467677",
+    "content_hash": "5e0cf9501c01f2560f9ddfd4273ca73f57cd1415ac14f71428d8964bea43483f",
+    "update_log_date": null,
+    "parameters_count": 0,
+    "response_fields_count": 0,
+    "endpoint": "https://partner.shopeemobile.com/api/v2/order/handle_prescription_check",
+    "method": "POST"
+  },
+  "v2.order.search_package_list": {
+    "api_name": "v2.order.search_package_list",
+    "last_crawled": "2025-10-10T04:14:30.467871",
+    "content_hash": "ea572afc323bde0a81af88f84634d7e445cf452573265cd96a9a7e376ebc14d7",
+    "update_log_date": null,
+    "parameters_count": 0,
+    "response_fields_count": 0,
+    "endpoint": "https://partner.shopeemobile.com/api/v2/order/search_package_list",
+    "method": "POST"
+  },
+  "v2.order.set_note": {
+    "api_name": "v2.order.set_note",
+    "last_crawled": "2025-10-10T04:14:30.468054",
+    "content_hash": "1efb30ae4a5e2b8b4ce953ae5e4e1f79ffc757f308cf82962a6e7e7a6111b55e",
+    "update_log_date": null,
+    "parameters_count": 0,
+    "response_fields_count": 0,
+    "endpoint": "https://partner.shopeemobile.com/api/v2/order/set_note",
+    "method": "POST"
+  },
+  "v2.order.split_order": {
+    "api_name": "v2.order.split_order",
+    "last_crawled": "2025-10-10T04:14:30.468249",
+    "content_hash": "28856cd1bb5c8d5101c57378e3c4421817c8fc37bf66178dab10fbb5c9477616",
+    "update_log_date": null,
+    "parameters_count": 0,
+    "response_fields_count": 0,
+    "endpoint": "https://partner.shopeemobile.com/api/v2/order/split_order",
+    "method": "POST"
+  },
+  "v2.order.unsplit_order": {
+    "api_name": "v2.order.unsplit_order",
+    "last_crawled": "2025-10-10T04:14:30.468435",
+    "content_hash": "d0b3ac90ff1b6d2099a956f96a01fa11e8731db76326eeeeafd6a366feb393d0",
+    "update_log_date": null,
+    "parameters_count": 0,
+    "response_fields_count": 0,
+    "endpoint": "https://partner.shopeemobile.com/api/v2/order/unsplit_order",
+    "method": "POST"
+  },
+  "v2.order.upload_invoice_doc": {
+    "api_name": "v2.order.upload_invoice_doc",
+    "last_crawled": "2025-10-10T04:14:30.468624",
+    "content_hash": "a6fd3aa2d39f168eceb85c9c54102aa19012ec3f6efbe781072a4f3bd2b2c0a1",
+    "update_log_date": null,
+    "parameters_count": 0,
+    "response_fields_count": 0,
+    "endpoint": "https://partner.shopeemobile.com/api/v2/order/upload_invoice_doc",
+    "method": "POST"
+  },
+  "v2.payment.generate_income_report": {
+    "api_name": "v2.payment.generate_income_report",
+    "last_crawled": "2025-10-10T04:14:30.468807",
+    "content_hash": "78959bf08aaaf9b8d64fd821997110b2cf020b389e97034eeb4456772712815e",
+    "update_log_date": null,
+    "parameters_count": 0,
+    "response_fields_count": 0,
+    "endpoint": "https://partner.shopeemobile.com/api/v2/payment/generate_income_report",
+    "method": "POST"
+  },
+  "v2.payment.generate_income_statement": {
+    "api_name": "v2.payment.generate_income_statement",
+    "last_crawled": "2025-10-10T04:14:30.468995",
+    "content_hash": "e8244b714b7e20c45184b3e8502e9b8f9b6f43d85f649a1fa1f7530dbbf016ba",
+    "update_log_date": null,
+    "parameters_count": 0,
+    "response_fields_count": 0,
+    "endpoint": "https://partner.shopeemobile.com/api/v2/payment/generate_income_statement",
+    "method": "GET"
+  },
+  "v2.payment.get_billing_transaction_info": {
+    "api_name": "v2.payment.get_billing_transaction_info",
+    "last_crawled": "2025-10-10T04:14:30.469181",
+    "content_hash": "78a387012f61fc98ef059405c5979fb37645bb9248f320975020e3aa28d0ea42",
+    "update_log_date": null,
+    "parameters_count": 0,
+    "response_fields_count": 0,
+    "endpoint": "https://partner.shopeemobile.com/api/v2/payment/get_billing_transaction_info",
+    "method": "POST"
+  },
+  "v2.payment.get_escrow_detail": {
+    "api_name": "v2.payment.get_escrow_detail",
+    "last_crawled": "2025-10-10T04:14:30.469407",
+    "content_hash": "91e6548dc53e08c4294c6a4eea5e1435f266fc9a4bf50c4338cd544226d04997",
+    "update_log_date": null,
+    "parameters_count": 0,
+    "response_fields_count": 8,
+    "endpoint": null,
+    "method": null
+  },
+  "v2.payment.get_escrow_detail_batch": {
+    "api_name": "v2.payment.get_escrow_detail_batch",
+    "last_crawled": "2025-10-10T04:14:30.469608",
+    "content_hash": "11bf854272925d3a6f6025dba50a2ea43366b8d8cf0e702730d0cd9fe45ae46e",
+    "update_log_date": null,
+    "parameters_count": 0,
+    "response_fields_count": 0,
+    "endpoint": "https://partner.shopeemobile.com/api/v2/logistics/ship_booking",
+    "method": "POST"
+  },
+  "v2.payment.get_escrow_list": {
+    "api_name": "v2.payment.get_escrow_list",
+    "last_crawled": "2025-10-10T04:14:30.469791",
+    "content_hash": "8bb2e40f5d830a1d30aa4676dc570e26a96e0a41a1d602f38dd6b76693c9ad25",
+    "update_log_date": null,
+    "parameters_count": 0,
+    "response_fields_count": 0,
+    "endpoint": "https://partner.shopeemobile.com/api/v2/payment/get_escrow_list",
+    "method": "POST"
+  },
+  "v2.payment.get_income_report": {
+    "api_name": "v2.payment.get_income_report",
+    "last_crawled": "2025-10-10T04:14:30.469990",
+    "content_hash": "b4dd03778fd80f4c888d50eb17c10ec784fb1ed290b9075460534a9c902c1018",
+    "update_log_date": null,
+    "parameters_count": 0,
+    "response_fields_count": 0,
+    "endpoint": "https://partner.shopeemobile.com/api/v2/payment/set_item_installment_status",
+    "method": "POST"
+  },
+  "v2.payment.get_income_statement": {
+    "api_name": "v2.payment.get_income_statement",
+    "last_crawled": "2025-10-10T04:14:30.470181",
+    "content_hash": "4232948e12d4a6c6b722a031bb9799bd968eab5a77828712be3553c027b4ec60",
+    "update_log_date": null,
+    "parameters_count": 0,
+    "response_fields_count": 0,
+    "endpoint": "https://partner.shopeemobile.com/api/v2/payment/get_income_statement",
+    "method": "GET"
+  },
+  "v2.payment.get_item_installment_status": {
+    "api_name": "v2.payment.get_item_installment_status",
+    "last_crawled": "2025-10-10T04:14:30.470384",
+    "content_hash": "7a262cf4deb9f617abc4cffd33c5f4ca5192aa7d5d5ff14eb67be588e3d3ebea",
+    "update_log_date": null,
+    "parameters_count": 0,
+    "response_fields_count": 0,
+    "endpoint": "https://partner.shopeemobile.com/api/v2/payment/get_item_installment_status",
+    "method": "POST"
+  },
+  "v2.payment.get_payment_method_list": {
+    "api_name": "v2.payment.get_payment_method_list",
+    "last_crawled": "2025-10-10T04:14:30.470580",
+    "content_hash": "adc57628c8f6cafb90a3a4c4ce153c2594ea572c10a0039fa08040ad0c0cba51",
+    "update_log_date": null,
+    "parameters_count": 0,
+    "response_fields_count": 0,
+    "endpoint": "https://partner.shopeemobile.com/api/v2/payment/get_payment_method_list",
+    "method": "POST"
+  },
+  "v2.payment.get_payout_detail": {
+    "api_name": "v2.payment.get_payout_detail",
+    "last_crawled": "2025-10-10T04:14:30.470763",
+    "content_hash": "123bd4161ba5d3cc1609ad63ceed45ae7f188a9aa632203e325316746d850d70",
+    "update_log_date": null,
+    "parameters_count": 0,
+    "response_fields_count": 0,
+    "endpoint": "https://partner.shopeemobile.com/api/v2/payment/get_payout_detail",
+    "method": "POST"
+  },
+  "v2.payment.get_payout_info": {
+    "api_name": "v2.payment.get_payout_info",
+    "last_crawled": "2025-10-10T04:14:30.470946",
+    "content_hash": "2563cb442809bfc92458e6f467908d7b87924b98e00b61f9f6d74cab810e0354",
+    "update_log_date": null,
+    "parameters_count": 0,
+    "response_fields_count": 0,
+    "endpoint": "https://partner.shopeemobile.com/api/v2/payment/get_payout_info",
+    "method": "POST"
+  },
+  "v2.payment.get_shop_installment_status": {
+    "api_name": "v2.payment.get_shop_installment_status",
+    "last_crawled": "2025-10-10T04:14:30.471133",
+    "content_hash": "f669a69723735bc3a0d663d139578c1aeea8726d28c346077e4ba558b130134b",
+    "update_log_date": null,
+    "parameters_count": 0,
+    "response_fields_count": 0,
+    "endpoint": "https://partner.shopeemobile.com/api/v2/payment/get_shop_installment_status",
+    "method": "POST"
+  },
+  "v2.payment.get_wallet_transaction_list": {
+    "api_name": "v2.payment.get_wallet_transaction_list",
+    "last_crawled": "2025-10-10T04:14:30.471317",
+    "content_hash": "bc97e833f516e1e9fb412eac19fc4f8447112fcb0c385fc923f3371dc72e57f1",
+    "update_log_date": null,
+    "parameters_count": 0,
+    "response_fields_count": 0,
+    "endpoint": "https://partner.shopeemobile.com/api/v2/payment/get_wallet_transaction_list",
+    "method": "POST"
+  },
+  "v2.payment.set_item_installment_status": {
+    "api_name": "v2.payment.set_item_installment_status",
+    "last_crawled": "2025-10-10T04:14:30.471514",
+    "content_hash": "5475dc7d7bcd69d4d8382587c62e37de39fcb81c57da07f47381e346483704b2",
+    "update_log_date": null,
+    "parameters_count": 0,
+    "response_fields_count": 0,
+    "endpoint": "https://partner.shopeemobile.com/api/v2/payment/set_item_installment_status",
+    "method": "POST"
+  },
+  "v2.payment.set_shop_installment_status": {
+    "api_name": "v2.payment.set_shop_installment_status",
+    "last_crawled": "2025-10-10T04:14:30.471698",
+    "content_hash": "d9cf741a1723bf94a9c853ea790284f707da32786294d18c6bfadf9c59394279",
+    "update_log_date": null,
+    "parameters_count": 0,
+    "response_fields_count": 0,
+    "endpoint": "https://partner.shopeemobile.com/api/v2/payment/set_item_installment_status",
+    "method": "POST"
+  },
+  "v2.product.add_item": {
+    "api_name": "v2.product.add_item",
+    "last_crawled": "2025-10-10T04:14:30.471968",
+    "content_hash": "88bf265ed235d7fc03ba749f442deed9a546135841eabdf82fce1993aa633989",
+    "update_log_date": null,
+    "parameters_count": 2,
+    "response_fields_count": 12,
+    "endpoint": null,
+    "method": null
+  },
+  "v2.product.add_kit_item": {
+    "api_name": "v2.product.add_kit_item",
+    "last_crawled": "2025-10-10T04:14:30.472156",
+    "content_hash": "6512ac74e89b4430586526a0a88f3f7ed042f9a10b5d88b4204d838715dfff7d",
+    "update_log_date": null,
+    "parameters_count": 0,
+    "response_fields_count": 0,
+    "endpoint": "https://partner.shopeemobile.com/api/v2/product/add_kit_item",
+    "method": "POST"
+  },
+  "v2.product.add_model": {
+    "api_name": "v2.product.add_model",
+    "last_crawled": "2025-10-10T04:14:30.472338",
+    "content_hash": "eac6f1459f6d65dc89784a780dc07f6646d0669ca481057f15d8ee36419492bf",
+    "update_log_date": null,
+    "parameters_count": 0,
+    "response_fields_count": 0,
+    "endpoint": "https://partner.shopeemobile.com/api/v2/product/add_model",
+    "method": "POST"
+  },
+  "v2.product.add_ssp_item": {
+    "api_name": "v2.product.add_ssp_item",
+    "last_crawled": "2025-10-10T04:14:30.472534",
+    "content_hash": "cdd05cc390d2e1407b6a8782dd30f06dadd3666e6e8c5bf9f972e166cd4a3261",
+    "update_log_date": null,
+    "parameters_count": 0,
+    "response_fields_count": 0,
+    "endpoint": "https://partner.shopeemobile.com/api/v2/product/add_ssp_item",
+    "method": "POST"
+  },
+  "v2.product.boost_item": {
+    "api_name": "v2.product.boost_item",
+    "last_crawled": "2025-10-10T04:14:30.472735",
+    "content_hash": "ca91d9e0bcce465be0d5c109daaa4ebe4928cebebe33067c1dbae5356c813137",
+    "update_log_date": null,
+    "parameters_count": 0,
+    "response_fields_count": 0,
+    "endpoint": "https://partner.shopeemobile.com/api/v2/product/boost_item",
+    "method": "POST"
+  },
+  "v2.product.category_recommend": {
+    "api_name": "v2.product.category_recommend",
+    "last_crawled": "2025-10-10T04:14:30.472943",
+    "content_hash": "b419bf5cbb6d79a1e3c19b868ffcd79e511f570975a0c9f8874214a49cb1f2e6",
+    "update_log_date": null,
+    "parameters_count": 0,
+    "response_fields_count": 0,
+    "endpoint": "https://partner.shopeemobile.com/api/v2/product/category_recommend",
+    "method": "GET"
+  },
+  "v2.product.delete_item": {
+    "api_name": "v2.product.delete_item",
+    "last_crawled": "2025-10-10T04:14:30.473137",
+    "content_hash": "0a4ba3971633924a830d8b544f70dae5464451d10f365f9a9d115769f6ff4e40",
+    "update_log_date": null,
+    "parameters_count": 0,
+    "response_fields_count": 0,
+    "endpoint": "https://partner.shopeemobile.com/api/v2/product/delete_model",
+    "method": "POST"
+  },
+  "v2.product.delete_model": {
+    "api_name": "v2.product.delete_model",
+    "last_crawled": "2025-10-10T04:14:30.473327",
+    "content_hash": "154a8f869abe2d1052e3ef1e37ed3eb293772314db394de6172097883ad5737b",
+    "update_log_date": null,
+    "parameters_count": 0,
+    "response_fields_count": 0,
+    "endpoint": "https://partner.shopeemobile.com/api/v2/product/delete_model",
+    "method": "POST"
+  },
+  "v2.product.generate_kit_image": {
+    "api_name": "v2.product.generate_kit_image",
+    "last_crawled": "2025-10-10T04:14:30.473582",
+    "content_hash": "efcae8bd1c1858e2e6119aac5e3c2d952b43d40a05d22798205fa9a7d036b39d",
+    "update_log_date": null,
+    "parameters_count": 6,
+    "response_fields_count": 4,
+    "endpoint": "/v2/product/generate_kit_image",
+    "method": "GET"
+  },
+  "v2.product.get_aitem_by_pitem_id": {
+    "api_name": "v2.product.get_aitem_by_pitem_id",
+    "last_crawled": "2025-10-10T04:14:30.473777",
+    "content_hash": "d65af6f97c9d9d4af5105ed0f8e7ccd9aa16d259ee28b54f7621cd081f27f1bf",
+    "update_log_date": null,
+    "parameters_count": 0,
+    "response_fields_count": 0,
+    "endpoint": "https://partner.shopeemobile.com/api/v2/product/get_aitem_by_pitem_id",
+    "method": "GET"
+  },
+  "v2.product.get_all_vehicle_list": {
+    "api_name": "v2.product.get_all_vehicle_list",
+    "last_crawled": "2025-10-10T04:14:30.473974",
+    "content_hash": "ffe08929626ae40e5c890c2a85be2f8e43a7b85394cee8a6d41a24171c1dddaf",
+    "update_log_date": null,
+    "parameters_count": 0,
+    "response_fields_count": 0,
+    "endpoint": "https://partner.shopeemobile.com/api/v2/product/get_all_vehicle_list",
+    "method": "GET"
+  },
+  "v2.product.get_attribute_tree": {
+    "api_name": "v2.product.get_attribute_tree",
+    "last_crawled": "2025-10-10T04:14:30.474196",
+    "content_hash": "d3165973eafd21e84e0bbb2529895c696a53e3f182c0887fb5f258642d12bfa4",
+    "update_log_date": null,
+    "parameters_count": 0,
+    "response_fields_count": 0,
+    "endpoint": "https://partner.shopeemobile.com/api/v2/product/get_attribute_tree",
+    "method": "GET"
+  },
+  "v2.product.get_boosted_list": {
+    "api_name": "v2.product.get_boosted_list",
+    "last_crawled": "2025-10-10T04:14:30.474388",
+    "content_hash": "ee6269f95261778772e3fd7dbedfa519254ef7d7b6e52ef6106dbe61f089d47a",
+    "update_log_date": null,
+    "parameters_count": 0,
+    "response_fields_count": 0,
+    "endpoint": "https://partner.shopeemobile.com/api/v2/product/get_boosted_list",
+    "method": "GET"
+  },
+  "v2.product.get_brand_list": {
+    "api_name": "v2.product.get_brand_list",
+    "last_crawled": "2025-10-10T04:14:30.474577",
+    "content_hash": "cfb0cbd8eb859a089b2e898b0ccb9be512e57a748bc1ab679069362059696192",
+    "update_log_date": null,
+    "parameters_count": 0,
+    "response_fields_count": 0,
+    "endpoint": "https://partner.shopeemobile.com/api/v2/product/get_brand_list",
+    "method": "GET"
+  },
+  "v2.product.get_category": {
+    "api_name": "v2.product.get_category",
+    "last_crawled": "2025-10-10T04:14:30.474802",
+    "content_hash": "91274768cb88dc8eb0cc2b1692538f7475437f18ce6cafbfc3df0733e18c38ff",
+    "update_log_date": null,
+    "parameters_count": 8,
+    "response_fields_count": 0,
+    "endpoint": "/api/product/get/category",
+    "method": "GET",
+    "last_checked": "2025-10-16T00:23:24.401097",
+    "last_changed": "2025-10-16T00:23:24.401103",
+    "url": "https://open.shopee.com/documents/v2/v2.product.get_category",
+    "title": "Get Category",
+    "preview": "v2.product.get_category GET /api/v2/product/get_category Get category tree data. More detail please "
+  },
+  "v2.product.get_comment": {
+    "api_name": "v2.product.get_comment",
+    "last_crawled": "2025-10-10T04:14:30.474993",
+    "content_hash": "6c884efaa26bf9ae77fcc250dc6afd324de4b8dfabeb8325179757544fafb1d3",
+    "update_log_date": null,
+    "parameters_count": 0,
+    "response_fields_count": 0,
+    "endpoint": "https://partner.shopeemobile.com/api/v2/product/get_comment",
+    "method": "GET"
+  },
+  "v2.product.get_direct_item_list": {
+    "api_name": "v2.product.get_direct_item_list",
+    "last_crawled": "2025-10-10T04:14:30.475191",
+    "content_hash": "2fa1520f769e7c67250820b01f72dace2dfd83d8c1ef4e8dee145efc5ad4f937",
+    "update_log_date": null,
+    "parameters_count": 0,
+    "response_fields_count": 0,
+    "endpoint": "https://partner.shopeemobile.com/api/v2/product/get_direct_item_list",
+    "method": "GET"
+  },
+  "v2.product.get_direct_shop_recommended_price": {
+    "api_name": "v2.product.get_direct_shop_recommended_price",
+    "last_crawled": "2025-10-10T04:14:30.475387",
+    "content_hash": "55293f20ba2a6ed4b287afb1ecc6b23219c7bd7f3029225b8490910291331880",
+    "update_log_date": null,
+    "parameters_count": 0,
+    "response_fields_count": 0,
+    "endpoint": "https://partner.shopeemobile.com/api/v2/product/get_direct_shop_recommended_price",
+    "method": "GET"
+  },
+  "v2.product.get_item_base_info": {
+    "api_name": "v2.product.get_item_base_info",
+    "last_crawled": "2025-10-10T04:14:30.475660",
+    "content_hash": "0cabd6a0d4662fb4132435987660200dfa4378c7317cfbfaa7a76ba3bc63fb51",
+    "update_log_date": null,
+    "parameters_count": 0,
+    "response_fields_count": 7,
+    "endpoint": null,
+    "method": null
+  },
+  "v2.product.get_item_content_diagnosis_result": {
+    "api_name": "v2.product.get_item_content_diagnosis_result",
+    "last_crawled": "2025-10-10T04:14:30.475862",
+    "content_hash": "fb9dd38ea589b2a2524049194a4113a43b6a6bb1a0d9377616a400823b9a2883",
+    "update_log_date": null,
+    "parameters_count": 0,
+    "response_fields_count": 0,
+    "endpoint": "https://partner.shopeemobile.com/api/v2/product/get_item_content_diagnosis_result",
+    "method": "POST"
+  },
+  "v2.product.get_item_extra_info": {
+    "api_name": "v2.product.get_item_extra_info",
+    "last_crawled": "2025-10-10T04:14:30.476061",
+    "content_hash": "376fc89396634a3a012271802bedda6eaaa414c1b14571824246cab0dc488bfc",
+    "update_log_date": null,
+    "parameters_count": 0,
+    "response_fields_count": 0,
+    "endpoint": "https://partner.shopeemobile.com/api/v2/product/get_item_extra_info",
+    "method": "GET"
+  },
+  "v2.product.get_item_limit": {
+    "api_name": "v2.product.get_item_limit",
+    "last_crawled": "2025-10-10T04:14:30.476249",
+    "content_hash": "c6efd89094bf46df652fb0967205daa0e8c00360aeab06b6b5d0693af881b66c",
+    "update_log_date": null,
+    "parameters_count": 0,
+    "response_fields_count": 0,
+    "endpoint": "https://partner.shopeemobile.com/api/v2/product/get_item_limit",
+    "method": "GET"
+  },
+  "v2.product.get_item_list": {
+    "api_name": "v2.product.get_item_list",
+    "last_crawled": "2025-10-10T04:14:30.476440",
+    "content_hash": "657a2a88360c6e951490f542689a6a248af9b9c67435ae9991c574d1b74223dd",
+    "update_log_date": null,
+    "parameters_count": 0,
+    "response_fields_count": 0,
+    "endpoint": "https://partner.shopeemobile.com/api/v2/product/get_item_list",
+    "method": "GET"
+  },
+  "v2.product.get_item_list_by_content_diagnosis": {
+    "api_name": "v2.product.get_item_list_by_content_diagnosis",
+    "last_crawled": "2025-10-10T04:14:30.476637",
+    "content_hash": "b81ff4aa4612b26fdc21470f5de23cfd83fdf3ebdd3dab9d30f083d197bac10a",
+    "update_log_date": null,
+    "parameters_count": 0,
+    "response_fields_count": 0,
+    "endpoint": "https://partner.shopeemobile.com/api/v2/product/get_item_list_by_content_diagnosis",
+    "method": "POST"
+  },
+  "v2.product.get_item_promotion": {
+    "api_name": "v2.product.get_item_promotion",
+    "last_crawled": "2025-10-10T04:14:30.476824",
+    "content_hash": "dfeadba84bdbe62835a7cf98bb2a2a11000f197c681c2bb3877e39d46be8a372",
+    "update_log_date": null,
+    "parameters_count": 0,
+    "response_fields_count": 0,
+    "endpoint": "https://partner.shopeemobile.com/api/v2/product/get_item_promotion",
+    "method": "GET"
+  },
+  "v2.product.get_item_violation_info": {
+    "api_name": "v2.product.get_item_violation_info",
+    "last_crawled": "2025-10-10T04:14:30.477017",
+    "content_hash": "5d741b25e76aebd8e77123db4035ed17eb0616694848755828e68b35a81e3c8e",
+    "update_log_date": null,
+    "parameters_count": 0,
+    "response_fields_count": 0,
+    "endpoint": "https://partner.shopeemobile.com/api/v2/product/get_item_violation_info",
+    "method": "POST"
+  },
+  "v2.product.get_kit_item_info": {
+    "api_name": "v2.product.get_kit_item_info",
+    "last_crawled": "2025-10-10T04:14:30.477225",
+    "content_hash": "f6b44ad11162112fecde7936a0b74c3cb2c4431367510564a17f6d2953b11a1f",
+    "update_log_date": null,
+    "parameters_count": 0,
+    "response_fields_count": 0,
+    "endpoint": "https://partner.shopeemobile.com/api/v2/product/get_kit_item_info",
+    "method": "GET"
+  },
+  "v2.product.get_kit_item_limit": {
+    "api_name": "v2.product.get_kit_item_limit",
+    "last_crawled": "2025-10-10T04:14:30.477435",
+    "content_hash": "dfefdcfcc008e870f3caf5321a339dd4771f978cc4f111e635713080bb55b55c",
+    "update_log_date": null,
+    "parameters_count": 0,
+    "response_fields_count": 0,
+    "endpoint": "https://partner.shopeemobile.com/api/v2/product/get_kit_item_limit",
+    "method": "GET"
+  },
+  "v2.product.get_main_item_list": {
+    "api_name": "v2.product.get_main_item_list",
+    "last_crawled": "2025-10-10T04:14:30.477633",
+    "content_hash": "900aad566a56713dc0cfae4d9e4483fe63d4fb461e37bfd48d2e7e6c082a6eb0",
+    "update_log_date": null,
+    "parameters_count": 0,
+    "response_fields_count": 0,
+    "endpoint": "https://partner.shopeemobile.com/api/v2/product/get_main_item_list",
+    "method": "GET"
+  },
+  "v2.product.get_model_list": {
+    "api_name": "v2.product.get_model_list",
+    "last_crawled": "2025-10-10T04:14:30.477841",
+    "content_hash": "12c207e564ee2c960e79a8a482e90bb80bd33a6ccec6cef13c82b995eaf319df",
+    "update_log_date": null,
+    "parameters_count": 0,
+    "response_fields_count": 0,
+    "endpoint": "https://partner.shopeemobile.com/api/v2/product/get_model_list",
+    "method": "GET"
+  },
+  "v2.product.get_product_certification_rule": {
+    "api_name": "v2.product.get_product_certification_rule",
+    "last_crawled": "2025-10-10T04:14:30.478044",
+    "content_hash": "9e94f9f255171c6ae3971b78f6f1b00124902258e2104db7c0b5da4741c72e32",
+    "update_log_date": null,
+    "parameters_count": 0,
+    "response_fields_count": 0,
+    "endpoint": "https://partner.shopeemobile.com/api/v2/product/get_product_certification_rule",
+    "method": "POST"
+  },
+  "v2.product.get_recommend_attribute": {
+    "api_name": "v2.product.get_recommend_attribute",
+    "last_crawled": "2025-10-10T04:14:30.478237",
+    "content_hash": "96a9024b4c8023b2d7f21bb95741bd2695314fe00e1095bb5b5fb56bbdb2128d",
+    "update_log_date": null,
+    "parameters_count": 0,
+    "response_fields_count": 0,
+    "endpoint": "https://partner.shopeemobile.com/api/v2/product/get_size_chart_detail",
+    "method": "GET"
+  },
+  "v2.product.get_size_chart_detail": {
+    "api_name": "v2.product.get_size_chart_detail",
+    "last_crawled": "2025-10-10T04:14:30.478425",
+    "content_hash": "37f6d9c2588d1ef941cf5fb62510a4e8d9aa981c5c7b258d802d06dca0b649a7",
+    "update_log_date": null,
+    "parameters_count": 0,
+    "response_fields_count": 0,
+    "endpoint": "https://partner.shopeemobile.com/api/v2/product/get_size_chart_detail",
+    "method": "GET"
+  },
+  "v2.product.get_size_chart_list ": {
+    "api_name": "v2.product.get_size_chart_list ",
+    "last_crawled": "2025-10-10T04:14:30.478629",
+    "content_hash": "283c3780ce93bc38d593bf10331bd9ca41bd46fbdb8aea1610fdb1b7aae49d3b",
+    "update_log_date": null,
+    "parameters_count": 0,
+    "response_fields_count": 0,
+    "endpoint": "https://partner.shopeemobile.com/api/v2/product/get_size_chart_list",
+    "method": "GET"
+  },
+  "v2.product.get_size_chart_list": {
+    "api_name": "v2.product.get_size_chart_list",
+    "last_crawled": "2025-10-10T04:14:30.478894",
+    "content_hash": "c650598a558ce4d685886f34a3280c861fe7f8e433cbd6cb97b1b19d847a5784",
+    "update_log_date": null,
+    "parameters_count": 5,
+    "response_fields_count": 7,
+    "endpoint": "/v2/product/get_live_chat_list",
+    "method": "POST"
+  },
+  "v2.product.get_ssp_info": {
+    "api_name": "v2.product.get_ssp_info",
+    "last_crawled": "2025-10-10T04:14:30.479102",
+    "content_hash": "707216970dca022f7f089b3f5f5cba24383c9506db747cc543ebdd53e730831e",
+    "update_log_date": null,
+    "parameters_count": 0,
+    "response_fields_count": 0,
+    "endpoint": "https://partner.shopeemobile.com/api/v2/product/get_ssp_info",
+    "method": "POST"
+  },
+  "v2.product.get_ssp_list": {
+    "api_name": "v2.product.get_ssp_list",
+    "last_crawled": "2025-10-10T04:14:30.479301",
+    "content_hash": "e17dd0fda2b30cad39200e112c51de2e5e059f4d69de80f5c236d041428dc6d7",
+    "update_log_date": null,
+    "parameters_count": 0,
+    "response_fields_count": 0,
+    "endpoint": "https://partner.shopeemobile.com/api/v2/product/get_ssp_list",
+    "method": "GET"
+  },
+  "v2.product.get_variations": {
+    "api_name": "v2.product.get_variations",
+    "last_crawled": "2025-10-10T04:14:30.479496",
+    "content_hash": "f4596d3b60af8f41525c688bd9a9437cf3906cd0a9077bf6bb0f6d409682e4b5",
+    "update_log_date": null,
+    "parameters_count": 0,
+    "response_fields_count": 0,
+    "endpoint": "https://partner.shopeemobile.com/api/v2/product/get_variation_tree",
+    "method": "GET"
+  },
+  "v2.product.get_vehicle_list_by_compatibility_detail": {
+    "api_name": "v2.product.get_vehicle_list_by_compatibility_detail",
+    "last_crawled": "2025-10-10T04:14:30.479699",
+    "content_hash": "4ecadb428dcd37910e855be7d91a346a8cc0773b81df5fac3a19f89827222153",
+    "update_log_date": null,
+    "parameters_count": 0,
+    "response_fields_count": 0,
+    "endpoint": "https://partner.shopeemobile.com/api/v2/product/get_vehicle_list_by_compatibility_detail",
+    "method": "GET"
+  },
+  "v2.product.get_weight_recommendation": {
+    "api_name": "v2.product.get_weight_recommendation",
+    "last_crawled": "2025-10-10T04:14:30.479896",
+    "content_hash": "722ac072a0fc52493d4195a52eec11f938c85b231e786f275c2887218e40f049",
+    "update_log_date": null,
+    "parameters_count": 0,
+    "response_fields_count": 0,
+    "endpoint": "https://partner.shopeemobile.com/api/v2/product/get_weight_recommendation",
+    "method": "POST"
+  },
+  "v2.product.init_tier_variation": {
+    "api_name": "v2.product.init_tier_variation",
+    "last_crawled": "2025-10-10T04:14:30.480201",
+    "content_hash": "bbeba3dc919c025fc6e88a0d6692d5043278e183f76143e3261f3a9291ecdd55",
+    "update_log_date": null,
+    "parameters_count": 0,
+    "response_fields_count": 0,
+    "endpoint": "https://partner.shopeemobile.com/api/v2/product/init_tier_variation",
+    "method": "POST"
+  },
+  "v2.product.link_ssp": {
+    "api_name": "v2.product.link_ssp",
+    "last_crawled": "2025-10-10T04:14:30.480468",
+    "content_hash": "d379161de3cfe6df06506b57fd23d8d11b45a7333002870ba46466ff9cd267e1",
+    "update_log_date": null,
+    "parameters_count": 0,
+    "response_fields_count": 0,
+    "endpoint": "https://partner.shopeemobile.com/api/v2/product/link_ssp",
+    "method": "POST"
+  },
+  "v2.product.register_brand": {
+    "api_name": "v2.product.register_brand",
+    "last_crawled": "2025-10-10T04:14:30.480687",
+    "content_hash": "3da5078a1462d09247542d687074b45ee30dd395cfbd346c055db13b87b0b20a",
+    "update_log_date": null,
+    "parameters_count": 0,
+    "response_fields_count": 0,
+    "endpoint": "https://partner.shopeemobile.com/api/v2/product/register_brand",
+    "method": "POST"
+  },
+  "v2.product.reply_comment": {
+    "api_name": "v2.product.reply_comment",
+    "last_crawled": "2025-10-10T04:14:30.480893",
+    "content_hash": "4952351f2e13b10b7a852cd5d24d894b9118bfa9eae3c9f65498f9dfa26a3bd5",
+    "update_log_date": null,
+    "parameters_count": 0,
+    "response_fields_count": 0,
+    "endpoint": "https://partner.shopeemobile.com/api/v2/product/reply_comment",
+    "method": "POST"
+  },
+  "v2.product.search_attribute_value_list": {
+    "api_name": "v2.product.search_attribute_value_list",
+    "last_crawled": "2025-10-10T04:14:30.481118",
+    "content_hash": "10ff792caaaad015d42eaf172e78344ef54ae0e3517cf143d48e84ab44228194",
+    "update_log_date": null,
+    "parameters_count": 0,
+    "response_fields_count": 0,
+    "endpoint": "https://partner.shopeemobile.com/api/v2/product/search_attribute_value_list",
+    "method": "POST"
+  },
+  "v2.product.search_item": {
+    "api_name": "v2.product.search_item",
+    "last_crawled": "2025-10-10T04:14:30.481309",
+    "content_hash": "7c05b16698fff1d5b8b22e78757625ec40d27ca62252a13606cb59c02de0d443",
+    "update_log_date": null,
+    "parameters_count": 0,
+    "response_fields_count": 0,
+    "endpoint": "https://partner.shopeemobile.com/api/v2/product/search_item",
+    "method": "GET"
+  },
+  "v2.product.search_unpackaged_model_list": {
+    "api_name": "v2.product.search_unpackaged_model_list",
+    "last_crawled": "2025-10-10T04:14:30.481503",
+    "content_hash": "cb48f33d41d6cbdd09523c7e518aaf767a2238c660ccc9fb91b8bafd8601c6de",
+    "update_log_date": null,
+    "parameters_count": 0,
+    "response_fields_count": 0,
+    "endpoint": "https://partner.shopeemobile.com/api/v2/product/search_unpackaged_model_list",
+    "method": "POST"
+  },
+  "v2.product.unlink_ssp": {
+    "api_name": "v2.product.unlink_ssp",
+    "last_crawled": "2025-10-10T04:14:30.481688",
+    "content_hash": "41433bb9e19a8e55dbbc86c4448994f24d05644cfc3143d47369bbf35e66f00b",
+    "update_log_date": null,
+    "parameters_count": 0,
+    "response_fields_count": 0,
+    "endpoint": "https://partner.shopeemobile.com/api/v2/product/unlink_ssp",
+    "method": "POST"
+  },
+  "v2.product.unlist_item": {
+    "api_name": "v2.product.unlist_item",
+    "last_crawled": "2025-10-10T04:14:30.481882",
+    "content_hash": "5f2ed73bbfe01625c1e77d74df6a7cd04e0916460ab8c067973093e583771db6",
+    "update_log_date": null,
+    "parameters_count": 0,
+    "response_fields_count": 0,
+    "endpoint": "https://partner.shopeemobile.com/api/v2/product/unlist_item",
+    "method": "POST"
+  },
+  "v2.product.update_item": {
+    "api_name": "v2.product.update_item",
+    "last_crawled": "2025-10-10T04:14:30.482087",
+    "content_hash": "1cad68df8ff3d5bb9dfb9d269d951f2465f4e2ffe38958072c8f0dc4818fb3db",
+    "update_log_date": null,
+    "parameters_count": 0,
+    "response_fields_count": 0,
+    "endpoint": "https://partner.shopeemobile.com/api/v2/product/update_item",
+    "method": "POST"
+  },
+  "v2.product.update_kit_item": {
+    "api_name": "v2.product.update_kit_item",
+    "last_crawled": "2025-10-10T04:14:30.482301",
+    "content_hash": "56f45e5d34b5028cc6f4c7080b9fb03212fa9697d5855a7292f0268518d4bd16",
+    "update_log_date": null,
+    "parameters_count": 0,
+    "response_fields_count": 0,
+    "endpoint": "https://partner.shopeemobile.com/api/v2/product/update_kit_item",
+    "method": "POST"
+  },
+  "v2.product.update_model": {
+    "api_name": "v2.product.update_model",
+    "last_crawled": "2025-10-10T04:14:30.482489",
+    "content_hash": "43f16cb228fd652d813bfb05851c433b91ca688d4d3f6378f2dd137934790b03",
+    "update_log_date": null,
+    "parameters_count": 0,
+    "response_fields_count": 0,
+    "endpoint": "https://partner.shopeemobile.com/api/v2/product/update_model",
+    "method": "POST"
+  },
+  "v2.product.update_price": {
+    "api_name": "v2.product.update_price",
+    "last_crawled": "2025-10-10T04:14:30.482673",
+    "content_hash": "4ed287986b149352ca78b8e1b68f5434f7b7551aec0481a46f8829e1086d64a7",
+    "update_log_date": null,
+    "parameters_count": 0,
+    "response_fields_count": 0,
+    "endpoint": "https://partner.shopeemobile.com/api/v2/product/update_price",
+    "method": "POST"
+  },
+  "v2.product.update_sip_item_price": {
+    "api_name": "v2.product.update_sip_item_price",
+    "last_crawled": "2025-10-10T04:14:30.482894",
+    "content_hash": "f5d1d293d4c12917e784d559f35d2ba32d63e909a065c15f8955d470096212da",
+    "update_log_date": null,
+    "parameters_count": 0,
+    "response_fields_count": 0,
+    "endpoint": "https://partner.shopeemobile.com/api/v2/product/update_sip_item_price",
+    "method": "POST"
+  },
+  "v2.product.update_stock": {
+    "api_name": "v2.product.update_stock",
+    "last_crawled": "2025-10-10T04:14:30.483091",
+    "content_hash": "7f534b66e82af84c98ace86a60c1346bfa970df2b8a6a9a092a638b12b620855",
+    "update_log_date": null,
+    "parameters_count": 0,
+    "response_fields_count": 0,
+    "endpoint": "https://partner.shopeemobile.com/api/v2/product/update_tier_variation",
+    "method": "POST"
+  },
+  "v2.product.update_tier_variation": {
+    "api_name": "v2.product.update_tier_variation",
+    "last_crawled": "2025-10-10T04:14:30.483281",
+    "content_hash": "2b6d4a54f8400c1a8d1fa7d78c1e7ac24917162c85a25ae904912e1df5deaa0f",
+    "update_log_date": null,
+    "parameters_count": 0,
+    "response_fields_count": 0,
+    "endpoint": "https://partner.shopeemobile.com/api/v2/product/update_tier_variation",
+    "method": "POST"
+  },
+  "v2.public.get_access_token": {
+    "api_name": "v2.public.get_access_token",
+    "last_crawled": "2025-10-10T04:14:30.483474",
+    "content_hash": "eed673daf98f283343e474a79d146bd63723ac95dffe69f5ef133bc0b1f61abb",
+    "update_log_date": null,
+    "parameters_count": 0,
+    "response_fields_count": 0,
+    "endpoint": "https://partner.shopeemobile.com/api/v2/auth/token/get",
+    "method": "POST"
+  },
+  "v2.public.get_merchants_by_partner": {
+    "api_name": "v2.public.get_merchants_by_partner",
+    "last_crawled": "2025-10-10T04:14:30.483686",
+    "content_hash": "549fb1c73c0350cfd63282499e59e4dfea15026e5886d6a4ec7734092108b636",
+    "update_log_date": null,
+    "parameters_count": 0,
+    "response_fields_count": 0,
+    "endpoint": "https://partner.shopeemobile.com/api/v2/public/get_merchants_by_partner",
+    "method": "GET"
+  },
+  "v2.public.get_shopee_ip_ranges": {
+    "api_name": "v2.public.get_shopee_ip_ranges",
+    "last_crawled": "2025-10-10T04:14:30.483907",
+    "content_hash": "0eaf04a20331294caa4dbd923370927a3eb377d1077e1122bd955eba47553202",
+    "update_log_date": null,
+    "parameters_count": 0,
+    "response_fields_count": 0,
+    "endpoint": "https://partner.shopeemobile.com/api/v2/public/get_shopee_ip_ranges",
+    "method": "GET"
+  },
+  "v2.public.get_shops_by_partner": {
+    "api_name": "v2.public.get_shops_by_partner",
+    "last_crawled": "2025-10-10T04:14:30.484212",
+    "content_hash": "ad3dc1eb2e363e31cdb227b965cd334efb314ce44c6bbb603190753131a0f11a",
+    "update_log_date": null,
+    "parameters_count": 0,
+    "response_fields_count": 0,
+    "endpoint": "https://partner.shopeemobile.com/api/v2/public/get_shops_by_partner",
+    "method": "GET"
+  },
+  "v2.public.get_token_by_resend_code": {
+    "api_name": "v2.public.get_token_by_resend_code",
+    "last_crawled": "2025-10-10T04:14:30.484423",
+    "content_hash": "4b5310a0d9ee89ef35712d1e3c898786dfd3e786efeebefc30fabe8d3da2084e",
+    "update_log_date": null,
+    "parameters_count": 0,
+    "response_fields_count": 0,
+    "endpoint": "https://partner.shopeemobile.com/api/v2/public/get_token_by_resend_code",
+    "method": "POST"
+  },
+  "v2.public.refresh_access_token": {
+    "api_name": "v2.public.refresh_access_token",
+    "last_crawled": "2025-10-10T04:14:30.484638",
+    "content_hash": "15679ece421654390caed0a069ce94edcf6c2bf1836957afed664526823fc095",
+    "update_log_date": null,
+    "parameters_count": 0,
+    "response_fields_count": 0,
+    "endpoint": "https://partner.shopeemobile.com/api/v2/auth/access_token/get",
+    "method": "POST"
+  },
+  "v2.push.confirm_consumed_lost_push_message": {
+    "api_name": "v2.push.confirm_consumed_lost_push_message",
+    "last_crawled": "2025-10-10T04:14:30.484847",
+    "content_hash": "ba2375274f9dac61e6e20eceaaf033269f8b878c09e6ab7395c0098991502f64",
+    "update_log_date": null,
+    "parameters_count": 0,
+    "response_fields_count": 0,
+    "endpoint": "https://partner.shopeemobile.com/api/v2/push/confirm_consumed_lost_push_message",
+    "method": "POST"
+  },
+  "v2.push.get_app_push_config": {
+    "api_name": "v2.push.get_app_push_config",
+    "last_crawled": "2025-10-10T04:14:30.485062",
+    "content_hash": "1d9d2d47448da4a24720ce9ec0b0ec7e588a59c235b65879ae4b17af4da51cfc",
+    "update_log_date": null,
+    "parameters_count": 0,
+    "response_fields_count": 0,
+    "endpoint": "https://partner.shopeemobile.com/api/v2/push/get_app_push_config",
+    "method": "GET"
+  },
+  "v2.push.get_lost_push_message": {
+    "api_name": "v2.push.get_lost_push_message",
+    "last_crawled": "2025-10-10T04:14:30.485263",
+    "content_hash": "08263d8416ab139b034bf4808d5c4f2861729455406fb56282bf495cc8655d48",
+    "update_log_date": null,
+    "parameters_count": 0,
+    "response_fields_count": 0,
+    "endpoint": "https://partner.shopeemobile.com/api/v2/push/get_lost_push_message",
+    "method": "GET"
+  },
+  "v2.push.set_app_push_config": {
+    "api_name": "v2.push.set_app_push_config",
+    "last_crawled": "2025-10-10T04:14:30.485472",
+    "content_hash": "13abce2765cb8af0a40e41f4a06c2105a2433aad5d37380fc92c22111b512284",
+    "update_log_date": null,
+    "parameters_count": 0,
+    "response_fields_count": 0,
+    "endpoint": "https://partner.shopeemobile.com/api/v2/returns/accept_offer",
+    "method": "POST"
+  },
+  "v2.returns.accept_offer": {
+    "api_name": "v2.returns.accept_offer",
+    "last_crawled": "2025-10-10T04:14:30.485659",
+    "content_hash": "15713982c00ff40af9fbb2867fa79e0b81c027f073ebdd8cb942d7384319095c",
+    "update_log_date": null,
+    "parameters_count": 0,
+    "response_fields_count": 0,
+    "endpoint": "https://partner.shopeemobile.com/api/v2/returns/accept_offer",
+    "method": "POST"
+  },
+  "v2.returns.cancel_dispute": {
+    "api_name": "v2.returns.cancel_dispute",
+    "last_crawled": "2025-10-10T04:14:30.485854",
+    "content_hash": "669106c80da49db28bbd4aa277dbbdc027604cfe995071c6d5f84533c69d66ce",
+    "update_log_date": null,
+    "parameters_count": 0,
+    "response_fields_count": 0,
+    "endpoint": "https://partner.shopeemobile.com/api/v2/returns/cancel_dispute",
+    "method": "POST"
+  },
+  "v2.returns.confirm": {
+    "api_name": "v2.returns.confirm",
+    "last_crawled": "2025-10-10T04:14:30.486059",
+    "content_hash": "04dd71688c86ca256449ad43c659e585b8625642b8a6b3671d1eaaee008093bb",
+    "update_log_date": null,
+    "parameters_count": 0,
+    "response_fields_count": 0,
+    "endpoint": "https://partner.shopeemobile.com/api/v2/returns/confirm",
+    "method": "POST"
+  },
+  "v2.returns.convert_image": {
+    "api_name": "v2.returns.convert_image",
+    "last_crawled": "2025-10-10T04:14:30.486258",
+    "content_hash": "b42b192c340ceab6bc38edfe186b246dc6dd533876b70a1c51a4d58b300ad346",
+    "update_log_date": null,
+    "parameters_count": 0,
+    "response_fields_count": 0,
+    "endpoint": "https://partner.shopeemobile.com/api/v2/returns/convert_image",
+    "method": "POST"
+  },
+  "v2.returns.dispute": {
+    "api_name": "v2.returns.dispute",
+    "last_crawled": "2025-10-10T04:14:30.486475",
+    "content_hash": "321ae9c9c72879a190d8ddb65a17fa90810845e6d3fc19e9ded24e626a60c6e5",
+    "update_log_date": null,
+    "parameters_count": 0,
+    "response_fields_count": 0,
+    "endpoint": "https://partner.shopeemobile.com/api/v2/returns/dispute",
+    "method": "POST"
+  },
+  "v2.returns.get_available_solutions": {
+    "api_name": "v2.returns.get_available_solutions",
+    "last_crawled": "2025-10-10T04:14:30.486699",
+    "content_hash": "dbb9db50b7f5522078591177204ae56f0b3288bdbc5420372c8ab8b2e1f64907",
+    "update_log_date": null,
+    "parameters_count": 0,
+    "response_fields_count": 0,
+    "endpoint": "https://partner.shopeemobile.com/api/v2/returns/get_available_solutions",
+    "method": "GET"
+  },
+  "v2.returns.get_return_detail": {
+    "api_name": "v2.returns.get_return_detail",
+    "last_crawled": "2025-10-10T04:14:30.486891",
+    "content_hash": "f3c78835d858b70f2cb16aafbac1648c68928210b12994bdbf5b39aee5ad9509",
+    "update_log_date": null,
+    "parameters_count": 0,
+    "response_fields_count": 0,
+    "endpoint": "https://partner.shopeemobile.com/api/v2/returns/get_return_detail",
+    "method": "GET"
+  },
+  "v2.returns.get_return_dispute_reason": {
+    "api_name": "v2.returns.get_return_dispute_reason",
+    "last_crawled": "2025-10-10T04:14:30.487099",
+    "content_hash": "23011b358886913f1d0205c628b6ecb0f9e4e75b3abc258a0ad24fa97c9fcf50",
+    "update_log_date": null,
+    "parameters_count": 0,
+    "response_fields_count": 0,
+    "endpoint": "https://partner.shopeemobile.com/api/v2/returns/get_return_list",
+    "method": "GET"
+  },
+  "v2.returns.get_return_list": {
+    "api_name": "v2.returns.get_return_list",
+    "last_crawled": "2025-10-10T04:14:30.487301",
+    "content_hash": "a1fc40e21c53eb66b4b6f1525acbc8e02a13869e18bec62390811adf5fabde04",
+    "update_log_date": null,
+    "parameters_count": 0,
+    "response_fields_count": 0,
+    "endpoint": "https://partner.shopeemobile.com/api/v2/returns/get_return_list",
+    "method": "GET"
+  },
+  "v2.returns.get_shipping_carrier": {
+    "api_name": "v2.returns.get_shipping_carrier",
+    "last_crawled": "2025-10-10T04:14:30.487500",
+    "content_hash": "74630821d33af79617b78ebcca6562bd1f73ec58ae9b68a1137dcb238c484fc4",
+    "update_log_date": null,
+    "parameters_count": 0,
+    "response_fields_count": 0,
+    "endpoint": "https://partner.shopeemobile.com/api/v2/returns/get_shipping_carrier",
+    "method": "GET"
+  },
+  "v2.returns.offer": {
+    "api_name": "v2.returns.offer",
+    "last_crawled": "2025-10-10T04:14:30.487699",
+    "content_hash": "bd3ddbb5639736dabd2a319985cc0128ac4a641a7644e4d34c04754f60aa8fa0",
+    "update_log_date": null,
+    "parameters_count": 0,
+    "response_fields_count": 0,
+    "endpoint": "https://partner.shopeemobile.com/api/v2/returns/offer",
+    "method": "POST"
+  },
+  "v2.returns.query_proof": {
+    "api_name": "v2.returns.query_proof",
+    "last_crawled": "2025-10-10T04:14:30.487905",
+    "content_hash": "f2824fc1c430eaa9a807f36e9258e618621b740b9a55d475a72a8b247fdf2157",
+    "update_log_date": null,
+    "parameters_count": 0,
+    "response_fields_count": 0,
+    "endpoint": "https://partner.shopeemobile.com/api/v2/returns/query_proof",
+    "method": "GET"
+  },
+  "v2.returns.upload_proof": {
+    "api_name": "v2.returns.upload_proof",
+    "last_crawled": "2025-10-10T04:14:30.488111",
+    "content_hash": "ed22ccc85ff2241653ca7cdfacab29c4c55c73baf6a1cf70790c4721ef2d83a7",
+    "update_log_date": null,
+    "parameters_count": 0,
+    "response_fields_count": 0,
+    "endpoint": "https://partner.shopeemobile.com/api/v2/returns/upload_proof",
+    "method": "POST"
+  },
+  "v2.returns.upload_shipping_proof": {
+    "api_name": "v2.returns.upload_shipping_proof",
+    "last_crawled": "2025-10-10T04:14:30.488307",
+    "content_hash": "614573b49e025f76ad330caafe825ca1ef1dc41faffc36997d57bfd7420c0040",
+    "update_log_date": null,
+    "parameters_count": 0,
+    "response_fields_count": 0,
+    "endpoint": "https://partner.shopeemobile.com/api/v2/returns/upload_shipping_proof",
+    "method": "POST"
+  },
+  "v2.sbs.get_bound_whs_info": {
+    "api_name": "v2.sbs.get_bound_whs_info",
+    "last_crawled": "2025-10-10T04:14:30.488496",
+    "content_hash": "0a11eb8bd5a66597469ddefc6b9e5b90d807b311bf4e316555477f9828ccc946",
+    "update_log_date": null,
+    "parameters_count": 0,
+    "response_fields_count": 0,
+    "endpoint": "https://partner.shopeemobile.com/api/v2/sbs/get_bound_whs_info",
+    "method": "GET"
+  },
+  "v2.sbs.get_current_inventory": {
+    "api_name": "v2.sbs.get_current_inventory",
+    "last_crawled": "2025-10-10T04:14:30.488686",
+    "content_hash": "5ec2e9fe513af8d587d9d424f0e5a1dbd84db876562f5598002154a60121eb61",
+    "update_log_date": null,
+    "parameters_count": 0,
+    "response_fields_count": 0,
+    "endpoint": "https://partner.shopeemobile.com/api/v2/sbs/get_current_inventory",
+    "method": "POST"
+  },
+  "v2.sbs.get_expiry_report": {
+    "api_name": "v2.sbs.get_expiry_report",
+    "last_crawled": "2025-10-10T04:14:30.488885",
+    "content_hash": "2b21830c77fbe89e8b6891c5d028e403aabdb33aa1df6196da5187d210b178cf",
+    "update_log_date": null,
+    "parameters_count": 0,
+    "response_fields_count": 0,
+    "endpoint": "https://partner.shopeemobile.com/api/v2/sbs/get_expiry_report",
+    "method": "POST"
+  },
+  "v2.sbs.get_stock_aging": {
+    "api_name": "v2.sbs.get_stock_aging",
+    "last_crawled": "2025-10-10T04:14:30.489125",
+    "content_hash": "35fd6735729a82837f9c15939d285d133462169c14fdd721b55d63213fb1e76e",
+    "update_log_date": null,
+    "parameters_count": 0,
+    "response_fields_count": 0,
+    "endpoint": "https://partner.shopeemobile.com/api/v2/sbs/get_stock_aging",
+    "method": "POST"
+  },
+  "v2.sbs.get_stock_movement": {
+    "api_name": "v2.sbs.get_stock_movement",
+    "last_crawled": "2025-10-10T04:14:30.489330",
+    "content_hash": "a68415a8338ff83316f3246fc3b08eef27e490f21eb658f684f344167f0c20ea",
+    "update_log_date": null,
+    "parameters_count": 0,
+    "response_fields_count": 0,
+    "endpoint": "https://partner.shopeemobile.com/api/v2/sbs/get_stock_movement",
+    "method": "POST"
+  },
+  "v2.shop.get_authorised_reseller_brand": {
+    "api_name": "v2.shop.get_authorised_reseller_brand",
+    "last_crawled": "2025-10-10T04:14:30.489517",
+    "content_hash": "2fd6a9fa2321559c1c2614c36c8125921ded5aa0219f423fa5a01c0e112f09a0",
+    "update_log_date": null,
+    "parameters_count": 0,
+    "response_fields_count": 0,
+    "endpoint": "https://partner.shopeemobile.com/api/v2/shop/get_authorised_reseller_brand",
+    "method": "GET"
+  },
+  "v2.shop.get_profile": {
+    "api_name": "v2.shop.get_profile",
+    "last_crawled": "2025-10-10T04:14:30.489711",
+    "content_hash": "3aaef295a48d24bae28b29d9c1d7f74032ee608429afbf10f22d66038ea7c9fd",
+    "update_log_date": null,
+    "parameters_count": 0,
+    "response_fields_count": 0,
+    "endpoint": "https://partner.shopeemobile.com/api/v2/shop/get_profile",
+    "method": "GET"
+  },
+  "v2.shop.get_shop_info": {
+    "api_name": "v2.shop.get_shop_info",
+    "last_crawled": "2025-10-10T04:14:30.489892",
+    "content_hash": "fed274aef8d165c25337deada82dfcb5fd5002c4aa072deacd48bf21359e9b07",
+    "update_log_date": null,
+    "parameters_count": 0,
+    "response_fields_count": 0,
+    "endpoint": "https://partner.shopeemobile.com/api/v2/shop/get_shop_info",
+    "method": "GET"
+  },
+  "v2.shop.get_shop_notification": {
+    "api_name": "v2.shop.get_shop_notification",
+    "last_crawled": "2025-10-10T04:14:30.490082",
+    "content_hash": "e7543ffb56c0b8ffb539ddbd735d83ee482ccc43181b89449aec790c5a1810b2",
+    "update_log_date": null,
+    "parameters_count": 0,
+    "response_fields_count": 0,
+    "endpoint": "https://partner.shopeemobile.com/api/v2/shop/get_shop_notification",
+    "method": "GET"
+  },
+  "v2.shop.get_warehouse_detail": {
+    "api_name": "v2.shop.get_warehouse_detail",
+    "last_crawled": "2025-10-10T04:14:30.490285",
+    "content_hash": "b5774d21fec20ea6ddd86d7019c464813da8be5aa89127ef8c40c6d4259cd207",
+    "update_log_date": null,
+    "parameters_count": 0,
+    "response_fields_count": 0,
+    "endpoint": "https://partner.shopeemobile.com/api/v2/shop/get_warehouse_detail",
+    "method": "GET"
+  },
+  "v2.shop.update_profile": {
+    "api_name": "v2.shop.update_profile",
+    "last_crawled": "2025-10-10T04:14:30.490467",
+    "content_hash": "69f51d7bc27f285d8c11b58ab898f252eb36c87bbaa7a132891b5a0f16014a21",
+    "update_log_date": null,
+    "parameters_count": 0,
+    "response_fields_count": 0,
+    "endpoint": "https://partner.shopeemobile.com/api/v2/shop/update_profile",
+    "method": "POST"
+  },
+  "v2.shop_category.add_item_list": {
+    "api_name": "v2.shop_category.add_item_list",
+    "last_crawled": "2025-10-10T04:14:30.490652",
+    "content_hash": "bceb55ec9c42a30484ebbb781cd2602288a5aa05d052e2c3b1ad7a12eb9fca96",
+    "update_log_date": null,
+    "parameters_count": 0,
+    "response_fields_count": 0,
+    "endpoint": "https://partner.shopeemobile.com/api/v2/shop_category/add_item_list",
+    "method": "POST"
+  },
+  "v2.shop_category.add_shop_category": {
+    "api_name": "v2.shop_category.add_shop_category",
+    "last_crawled": "2025-10-10T04:14:30.490846",
+    "content_hash": "4b8e716e97e20ddf627acffcac3def0027cfb9fdeff4080907e2144d60867d1d",
+    "update_log_date": null,
+    "parameters_count": 0,
+    "response_fields_count": 0,
+    "endpoint": "https://partner.shopeemobile.com/api/v2/shop_category/add_shop_category",
+    "method": "POST"
+  },
+  "v2.shop_category.delete_item_list": {
+    "api_name": "v2.shop_category.delete_item_list",
+    "last_crawled": "2025-10-10T04:14:30.491042",
+    "content_hash": "a83712660b7ef3730d78029a7add045c2b012c6a6366faecf3890a1b61992773",
+    "update_log_date": null,
+    "parameters_count": 0,
+    "response_fields_count": 0,
+    "endpoint": "https://partner.shopeemobile.com/api/v2/shop_category/delete_item_list",
+    "method": "POST"
+  },
+  "v2.shop_category.delete_shop_category": {
+    "api_name": "v2.shop_category.delete_shop_category",
+    "last_crawled": "2025-10-10T04:14:30.491257",
+    "content_hash": "aca4907888b33ff5e6ab65b6f838d37f3e2c1336d571b3f339d6165d02636fd2",
+    "update_log_date": null,
+    "parameters_count": 0,
+    "response_fields_count": 0,
+    "endpoint": "https://partner.shopeemobile.com/api/v2/shop_category/delete_shop_category",
+    "method": "POST"
+  },
+  "v2.shop_category.get_item_list": {
+    "api_name": "v2.shop_category.get_item_list",
+    "last_crawled": "2025-10-10T04:14:30.491451",
+    "content_hash": "f2e88d4c7b8d8c789924d1b6c5c6fb4c956cae65313bb92260c11c8f5f870259",
+    "update_log_date": null,
+    "parameters_count": 0,
+    "response_fields_count": 0,
+    "endpoint": "https://partner.shopeemobile.com/api/v2/shop_category/get_item_list",
+    "method": "POST"
+  },
+  "v2.shop_category.get_shop_category_list": {
+    "api_name": "v2.shop_category.get_shop_category_list",
+    "last_crawled": "2025-10-10T04:14:30.491654",
+    "content_hash": "e5bde504d9eb3c95b9137811d563a65baee591406ae9a2e7b6ff2a74dbe36325",
+    "update_log_date": null,
+    "parameters_count": 0,
+    "response_fields_count": 0,
+    "endpoint": "https://partner.shopeemobile.com/api/v2/shop_category/get_shop_category_list",
+    "method": "POST"
+  },
+  "v2.shop_category.update_shop_category": {
+    "api_name": "v2.shop_category.update_shop_category",
+    "last_crawled": "2025-10-10T04:14:30.491840",
+    "content_hash": "b04b3001a5a8852902cb13bbbeeac20776e97d2af4af2b2af9211be628bb7b3b",
+    "update_log_date": null,
+    "parameters_count": 0,
+    "response_fields_count": 0,
+    "endpoint": "https://partner.shopeemobile.com/api/v2/shop_category/update_shop_category",
+    "method": "POST"
+  },
+  "v2.shop_flash_sale.add_shop_flash_sale_items": {
+    "api_name": "v2.shop_flash_sale.add_shop_flash_sale_items",
+    "last_crawled": "2025-10-10T04:14:30.492044",
+    "content_hash": "2603fd597b11527f533897525b9d143669eb639c0fc2fa7f45938b6f21b3bd67",
+    "update_log_date": null,
+    "parameters_count": 0,
+    "response_fields_count": 0,
+    "endpoint": "https://partner.shopeemobile.com/api/v2/shop_flash_sale/add_shop_flash_sale_items",
+    "method": "POST"
+  },
+  "v2.shop_flash_sale.create_shop_flash_sale": {
+    "api_name": "v2.shop_flash_sale.create_shop_flash_sale",
+    "last_crawled": "2025-10-10T04:14:30.492239",
+    "content_hash": "0c720e0aa4d50842f435b75eb6734130438bb39da85b842840db5221238617c5",
+    "update_log_date": null,
+    "parameters_count": 0,
+    "response_fields_count": 0,
+    "endpoint": "https://partner.shopeemobile.com/api/v2/shop_flash_sale/create_shop_flash_sale",
+    "method": "POST"
+  },
+  "v2.shop_flash_sale.delete_shop_flash_sale": {
+    "api_name": "v2.shop_flash_sale.delete_shop_flash_sale",
+    "last_crawled": "2025-10-10T04:14:30.492436",
+    "content_hash": "15b681edbed1c13315e1e761ad148b0fbfbff62e33774d27f18e660741d7f184",
+    "update_log_date": null,
+    "parameters_count": 0,
+    "response_fields_count": 0,
+    "endpoint": "https://partner.shopeemobile.com/api/v2/shop_flash_sale/delete_shop_flash_sale",
+    "method": "POST"
+  },
+  "v2.shop_flash_sale.delete_shop_flash_sale_items": {
+    "api_name": "v2.shop_flash_sale.delete_shop_flash_sale_items",
+    "last_crawled": "2025-10-10T04:14:30.492637",
+    "content_hash": "c5ceae38ce3fce89a3a1a2d1ad0e073545e29ec36d5b7ada99421e9af70e1786",
+    "update_log_date": null,
+    "parameters_count": 0,
+    "response_fields_count": 0,
+    "endpoint": "https://partner.shopeemobile.com/api/v2/shop_flash_sale/delete_shop_flash_sale_items",
+    "method": "POST"
+  },
+  "v2.shop_flash_sale.get_item_criteria": {
+    "api_name": "v2.shop_flash_sale.get_item_criteria",
+    "last_crawled": "2025-10-10T04:14:30.492821",
+    "content_hash": "fd6d3f8dc96caae2129c2797e19640ca7e06527df09ed7a78b293939e5372f80",
+    "update_log_date": null,
+    "parameters_count": 0,
+    "response_fields_count": 0,
+    "endpoint": "https://partner.shopeemobile.com/api/v2/shop_flash_sale/get_item_criteria",
+    "method": "POST"
+  },
+  "v2.shop_flash_sale.get_shop_flash_sale": {
+    "api_name": "v2.shop_flash_sale.get_shop_flash_sale",
+    "last_crawled": "2025-10-10T04:14:30.493006",
+    "content_hash": "9911281256fc58d5486a0a4db42a67b928513051ece700e9a8a06a23bbad3d3f",
+    "update_log_date": null,
+    "parameters_count": 0,
+    "response_fields_count": 0,
+    "endpoint": "https://partner.shopeemobile.com/api/v2/shop_flash_sale/get_shop_flash_sale",
+    "method": "POST"
+  },
+  "v2.shop_flash_sale.get_shop_flash_sale_items": {
+    "api_name": "v2.shop_flash_sale.get_shop_flash_sale_items",
+    "last_crawled": "2025-10-10T04:14:30.493199",
+    "content_hash": "0ab71fe59399c5cc63b924ecdbf1a12acb45b9d68207184aa92bda635f2d4a2e",
+    "update_log_date": null,
+    "parameters_count": 0,
+    "response_fields_count": 0,
+    "endpoint": "https://partner.shopeemobile.com/api/v2/shop_flash_sale/get_shop_flash_sale_items",
+    "method": "POST"
+  },
+  "v2.shop_flash_sale.get_shop_flash_sale_list": {
+    "api_name": "v2.shop_flash_sale.get_shop_flash_sale_list",
+    "last_crawled": "2025-10-10T04:14:30.493390",
+    "content_hash": "963208208f5dd3d3f3817d0d8eb949e3b602727f0a919c0c850065fc892e80f1",
+    "update_log_date": null,
+    "parameters_count": 0,
+    "response_fields_count": 0,
+    "endpoint": "https://partner.shopeemobile.com/api/v2/shop_flash_sale/get_shop_flash_sale_list",
+    "method": "POST"
+  },
+  "v2.shop_flash_sale.get_time_slot_id": {
+    "api_name": "v2.shop_flash_sale.get_time_slot_id",
+    "last_crawled": "2025-10-10T04:14:30.493598",
+    "content_hash": "555961f38afcb17686293bb96c271a94976ab61a2588a3e1ec6639fd49683cad",
+    "update_log_date": null,
+    "parameters_count": 0,
+    "response_fields_count": 0,
+    "endpoint": "https://partner.shopeemobile.com/api/v2/shop_flash_sale/get_time_slot_id",
+    "method": "POST"
+  },
+  "v2.shop_flash_sale.update_shop_flash_sale": {
+    "api_name": "v2.shop_flash_sale.update_shop_flash_sale",
+    "last_crawled": "2025-10-10T04:14:30.493782",
+    "content_hash": "54fe7d2646dffc08d8e15a60bb06a832d8cb96684ed28887361f48ee7d7ba73d",
+    "update_log_date": null,
+    "parameters_count": 0,
+    "response_fields_count": 0,
+    "endpoint": "https://partner.shopeemobile.com/api/v2/shop_flash_sale/update_shop_flash_sale",
+    "method": "POST"
+  },
+  "v2.shop_flash_sale.update_shop_flash_sale_items": {
+    "api_name": "v2.shop_flash_sale.update_shop_flash_sale_items",
+    "last_crawled": "2025-10-10T04:14:30.493978",
+    "content_hash": "0d7e6c539e23b67ea743d1edffe5425541cdbb915aed135e856557aacfe7bca2",
+    "update_log_date": null,
+    "parameters_count": 0,
+    "response_fields_count": 0,
+    "endpoint": "https://partner.shopeemobile.com/api/v2/shop_flash_sale/update_shop_flash_sale",
+    "method": "POST"
+  },
+  "v2.top_picks.add_top_picks": {
+    "api_name": "v2.top_picks.add_top_picks",
+    "last_crawled": "2025-10-10T04:14:30.494181",
+    "content_hash": "5dcfacb362e6d000fa0e8dfb3846ec5c2b546641f41ec4bd774a13a47880c219",
+    "update_log_date": null,
+    "parameters_count": 0,
+    "response_fields_count": 0,
+    "endpoint": "https://partner.shopeemobile.com/api/v2/top_picks/add_top_picks",
+    "method": "POST"
+  },
+  "v2.top_picks.delete_top_picks": {
+    "api_name": "v2.top_picks.delete_top_picks",
+    "last_crawled": "2025-10-10T04:14:30.494374",
+    "content_hash": "5039a73a6c6b8dd3365d4fc4f70a26fcd5506035ab4db1bc4299fb5a015dc3fc",
+    "update_log_date": null,
+    "parameters_count": 0,
+    "response_fields_count": 0,
+    "endpoint": "https://partner.shopeemobile.com/api/v2/top_picks/delete_top_picks",
+    "method": "POST"
+  },
+  "v2.top_picks.get_top_picks_list": {
+    "api_name": "v2.top_picks.get_top_picks_list",
+    "last_crawled": "2025-10-10T04:14:30.494557",
+    "content_hash": "6472f82268c00f0e39a4e3775dc74fd2a8ed792347a32123a604a0c4646c0d85",
+    "update_log_date": null,
+    "parameters_count": 0,
+    "response_fields_count": 0,
+    "endpoint": "https://partner.shopeemobile.com/api/v2/top_picks/get_top_picks_list",
+    "method": "POST"
+  },
+  "v2.top_picks.update_top_picks": {
+    "api_name": "v2.top_picks.update_top_picks",
+    "last_crawled": "2025-10-10T04:14:30.494746",
+    "content_hash": "708dff1966723d6eec299dd41a58b43beb8a4bf1222b43baa4e0f379623bdc81",
+    "update_log_date": null,
+    "parameters_count": 0,
+    "response_fields_count": 0,
+    "endpoint": "https://partner.shopeemobile.com/api/v2/top_picks/update_top_picks",
+    "method": "POST"
+  },
+  "v2.voucher.add_voucher": {
+    "api_name": "v2.voucher.add_voucher",
+    "last_crawled": "2025-10-10T04:14:30.494945",
+    "content_hash": "bb194e9f689dacbe91adfcf627ce23b2eb3671d8f30e64e9348fb216c2bf8de8",
+    "update_log_date": null,
+    "parameters_count": 0,
+    "response_fields_count": 0,
+    "endpoint": "https://partner.shopeemobile.com/api/v2/voucher/delete_voucher",
+    "method": "POST"
+  },
+  "v2.voucher.delete_voucher": {
+    "api_name": "v2.voucher.delete_voucher",
+    "last_crawled": "2025-10-10T04:14:30.495261",
+    "content_hash": "008a2889480e7fbd9b6dc30f612dc3a1910f254d9e6d8b6a7c53467ea8abe0ee",
+    "update_log_date": null,
+    "parameters_count": 0,
+    "response_fields_count": 0,
+    "endpoint": "https://partner.shopeemobile.com/api/v2/voucher/delete_voucher",
+    "method": "POST"
+  },
+  "v2.voucher.end_voucher": {
+    "api_name": "v2.voucher.end_voucher",
+    "last_crawled": "2025-10-10T04:14:30.495511",
+    "content_hash": "ed5550a5aebf6deee6d84a1cfc1fa6fa87661b236978363a1b343eed87f7539f",
+    "update_log_date": null,
+    "parameters_count": 0,
+    "response_fields_count": 0,
+    "endpoint": "https://partner.shopeemobile.com/api/v2/voucher/end_voucher",
+    "method": "POST"
+  },
+  "v2.voucher.get_voucher": {
+    "api_name": "v2.voucher.get_voucher",
+    "last_crawled": "2025-10-10T04:14:30.495713",
+    "content_hash": "b9373a57b782541a69c7ea0d0dcd8eaf2875aa44de814d5fd5beffa64d6ebfe3",
+    "update_log_date": null,
+    "parameters_count": 0,
+    "response_fields_count": 0,
+    "endpoint": "https://partner.shopeemobile.com/api/v2/voucher/get_voucher",
+    "method": "POST"
+  },
+  "v2.voucher.get_voucher_list": {
+    "api_name": "v2.voucher.get_voucher_list",
+    "last_crawled": "2025-10-10T04:14:30.495902",
+    "content_hash": "430e64ef2a09cac393a71741a6d9dcb5852a7f9a9c3ac460173d6b08c69d6089",
+    "update_log_date": null,
+    "parameters_count": 0,
+    "response_fields_count": 0,
+    "endpoint": "https://partner.shopeemobile.com/api/v2/voucher/get_voucher_list",
+    "method": "POST"
+  },
+  "v2.voucher.update_voucher": {
+    "api_name": "v2.voucher.update_voucher",
+    "last_crawled": "2025-10-10T04:14:30.496091",
+    "content_hash": "15dee8ac84175db87c914cf9288c7732357654177308841d22b6215dcb543246",
+    "update_log_date": null,
+    "parameters_count": 0,
+    "response_fields_count": 0,
+    "endpoint": "https://partner.shopeemobile.com/api/v2/voucher/update_voucher",
+    "method": "POST"
+  }
+}

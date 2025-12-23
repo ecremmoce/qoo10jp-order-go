@@ -1,0 +1,43 @@
+======================================================================
+API SPECIFICATION SUMMARY
+======================================================================
+
+Endpoint: None None
+
+Parameters (6):
+----------------------------------------------------------------------
+* contract (string)
+   The contract address
+* user_addr (string)
+   The user address
+* last_time (integer)
+   Last updated timestamp
+* caller_addr (string)
+   The caller's address
+  gas_limit (integer)
+   Gas limit for the transaction
+  gas_price (integer)
+   Gas price for the transaction
+
+Response Fields (3):
+----------------------------------------------------------------------
+  last_time (integer)
+   Last updated timestamp
+  user_addr (string)
+   User address
+  caller_addr (string)
+   Caller's address
+
+Metadata:
+----------------------------------------------------------------------
+  total_chunks: 1
+  chunks_with_errors: 0
+  total_parameters_before_dedup: 6
+  total_parameters_after_dedup: 6
+  update_log_entries: 0
+  hidden_fields_count: 0
+  source_results: workspaces\v2.logistics.get_channel_list\results\all_chunks_results.json
+
+======================================================================
+Legend: * = required parameter
+======================================================================

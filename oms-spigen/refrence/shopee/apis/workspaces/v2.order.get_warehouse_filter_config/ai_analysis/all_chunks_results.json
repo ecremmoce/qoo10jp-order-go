@@ -1,0 +1,131 @@
+[
+  {
+    "chunk_index": 1,
+    "total_chunks": 1,
+    "endpoint": "v2/order/get_warehouse_filter_config",
+    "method": "GET",
+    "description": "For draft warehouse shops, obtain all parameters with privilege that have not been SWAPPED to pickup product, whether_id and address_id. Corresponding to 2 order/get_warehouse_deliver_config states (more logic about warehouse draft has been optimized that do not need product_number_id and time) (time has been SWAPPED), gets data that have same status like default warehouse with default product_whether_id and EDITED time",
+    "update_log": [
+      {
+        "date": "2024-03-14",
+        "change": "New API"
+      }
+    ],
+    "parameters": [
+      {
+        "name": "partner_id",
+        "type": "int",
+        "required": true,
+        "description": "Partner ID is assigned when registration is successful. Required for all requests.",
+        "children": []
+      },
+      {
+        "name": "timestamp",
+        "type": "timestamp",
+        "required": true,
+        "description": "This is to indicate the timestamp of the request. Required for all requests. Expires in 5 minutes.",
+        "children": []
+      },
+      {
+        "name": "access_token",
+        "type": "string",
+        "required": true,
+        "description": "The token for API access, using to identify your permission to the api. Used for multi-use and expires in 4 hours.",
+        "children": []
+      },
+      {
+        "name": "shop_id",
+        "type": "int",
+        "required": true,
+        "description": "Shopper's unique identifier for a shop. Required param for shop APIs.",
+        "children": []
+      },
+      {
+        "name": "warehouse_filter",
+        "type": "object",
+        "required": true,
+        "description": "",
+        "children": [
+          {
+            "name": "warehouse_name",
+            "type": "string",
+            "required": true,
+            "description": "The warehouse name field in when creating the warehouse address",
+            "children": []
+          },
+          {
+            "name": "warehouse_type",
+            "type": "int32",
+            "required": true,
+            "description": "Type of warehouse. Applicable values:\n1. Local Warehouse\n2. OS Warehouse",
+            "children": []
+          },
+          {
+            "name": "product_location_id",
+            "type": "string",
+            "required": true,
+            "description": "Location identifier for pickup. Different location_ids represent that your addresses are at different time status.",
+            "children": []
+          },
+          {
+            "name": "address_id",
+            "type": "int64",
+            "required": true,
+            "description": "Identify address",
+            "children": []
+          },
+          {
+            "name": "address",
+            "type": "string",
+            "required": true,
+            "description": "Detail address of your warehouse",
+            "children": []
+          }
+        ]
+      }
+    ],
+    "response_fields": [
+      {
+        "name": "error",
+        "type": "string",
+        "description": "Error code",
+        "children": []
+      },
+      {
+        "name": "message",
+        "type": "string",
+        "description": "Error message",
+        "children": []
+      }
+    ],
+    "error_codes": [
+      {
+        "code": "error_data",
+        "description": "data not exist"
+      },
+      {
+        "code": "error_param",
+        "description": "parameter invalid"
+      },
+      {
+        "code": "error_system",
+        "description": "something wrong, Please try later"
+      }
+    ],
+    "notes": "The documentation includes sample request and response examples in both cURL and Python formats, as well as detailed error codes and API permissions section. The sign parameter shown in the documentation appears to be a computed signature value but its exact computation method is not fully visible in the image.",
+    "chunk_metadata": {
+      "index": 1,
+      "total": 1,
+      "y_start": 0,
+      "y_end": 3579,
+      "overlap_top": 0,
+      "overlap_bottom": 0,
+      "height": 3579,
+      "path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\workspaces\\v2.order.get_warehouse_filter_config\\chunks\\chunk_001.png",
+      "filename": "chunk_001.png",
+      "width": 837
+    },
+    "analysis_timestamp": "2025-10-10T06:16:43.424449",
+    "model": "claude-3-5-sonnet-20241022"
+  }
+]

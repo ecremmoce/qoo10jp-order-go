@@ -1,0 +1,42 @@
+======================================================================
+API SPECIFICATION SUMMARY
+======================================================================
+
+Endpoint: None None
+
+Parameters (5):
+----------------------------------------------------------------------
+  filter (object)
+    id (string)
+     Item ID
+    status (string)
+    type (string)
+  sort (string)
+  order (string)
+  page (integer)
+  limit (integer)
+
+Response Fields (1):
+----------------------------------------------------------------------
+  data (array)
+   Response data array
+    id (string)
+     Item ID
+    updated_at (string)
+     Last update timestamp
+    created_at (string)
+     Creation timestamp
+
+Metadata:
+----------------------------------------------------------------------
+  total_chunks: 1
+  chunks_with_errors: 0
+  total_parameters_before_dedup: 5
+  total_parameters_after_dedup: 5
+  update_log_entries: 0
+  hidden_fields_count: 0
+  source_results: workspaces\v2.shop_flash_sale.update_shop_flash_sale_items\results\all_chunks_results.json
+
+======================================================================
+Legend: * = required parameter
+======================================================================

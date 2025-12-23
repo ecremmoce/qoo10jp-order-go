@@ -1,0 +1,108 @@
+{
+  "endpoint": null,
+  "method": null,
+  "description": null,
+  "parameters": [
+    {
+      "name": "order_sn_list",
+      "type": "array",
+      "required": true,
+      "description": "List of order serial numbers to query",
+      "children": []
+    }
+  ],
+  "response_fields": [
+    {
+      "name": "message",
+      "type": "string",
+      "description": "Response message",
+      "children": []
+    },
+    {
+      "name": "request_id",
+      "type": "string",
+      "description": "Request identifier",
+      "children": []
+    },
+    {
+      "name": "response",
+      "type": "object",
+      "description": "Response data",
+      "children": [
+        {
+          "name": "order_payment_info",
+          "type": "object",
+          "description": "Payment information",
+          "children": [
+            {
+              "name": "buyer_payment_info",
+              "type": "object",
+              "description": "Buyer payment details",
+              "children": []
+            },
+            {
+              "name": "buyer_service_fee",
+              "type": "number",
+              "description": "Service fee amount",
+              "children": []
+            },
+            {
+              "name": "buyer_tax_amount",
+              "type": "number",
+              "description": "Tax amount",
+              "children": []
+            },
+            {
+              "name": "credit_card_number",
+              "type": "string",
+              "description": "Credit card number",
+              "children": []
+            },
+            {
+              "name": "credit_card_promotion",
+              "type": "number",
+              "description": "Credit card promotion value",
+              "children": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "error",
+      "type": "string",
+      "description": "Error code",
+      "children": []
+    },
+    {
+      "name": "error_detail_list",
+      "type": "array",
+      "description": "List of error details",
+      "children": [
+        {
+          "name": "error_code",
+          "type": "string",
+          "description": "Specific error code",
+          "children": []
+        },
+        {
+          "name": "message",
+          "type": "string",
+          "description": "Error message",
+          "children": []
+        }
+      ]
+    }
+  ],
+  "update_log": [],
+  "hidden_fields": [],
+  "metadata": {
+    "total_chunks": 3,
+    "chunks_with_errors": 0,
+    "total_parameters_before_dedup": 1,
+    "total_parameters_after_dedup": 1,
+    "update_log_entries": 0,
+    "hidden_fields_count": 0,
+    "source_results": "workspaces\\v2.payment.get_escrow_detail_batch\\results\\all_chunks_results.json"
+  }
+}

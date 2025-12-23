@@ -1,0 +1,102 @@
+[
+  {
+    "chunk_index": 1,
+    "total_chunks": 1,
+    "endpoint": "/product_get_vip_tel",
+    "method": "GET",
+    "description": "Product VIP Tel Get API",
+    "update_log": [
+      {
+        "date": "2024-01-23",
+        "change": "New API"
+      }
+    ],
+    "parameters": [
+      {
+        "name": "access_token",
+        "type": "string",
+        "required": true,
+        "description": "Access token used for authentication and authorization",
+        "children": []
+      },
+      {
+        "name": "shop_id",
+        "type": "integer",
+        "required": true,
+        "description": "Request target shop id. Request for specific shop or shop id.",
+        "children": []
+      },
+      {
+        "name": "sign",
+        "type": "string",
+        "required": true,
+        "description": "Request signature parameter",
+        "children": []
+      },
+      {
+        "name": "url",
+        "type": "string",
+        "required": false,
+        "description": "The URL of the page",
+        "children": []
+      },
+      {
+        "name": "offset",
+        "type": "string",
+        "required": false,
+        "description": "Indicates store type",
+        "children": []
+      },
+      {
+        "name": "warning",
+        "type": "string",
+        "required": false,
+        "description": "Indicates warning status",
+        "children": []
+      },
+      {
+        "name": "request_id",
+        "type": "string",
+        "required": false,
+        "description": "The identifier for an API request for error tracking",
+        "children": []
+      }
+    ],
+    "response_fields": [
+      {
+        "name": "error_code",
+        "type": "integer",
+        "description": "API error code"
+      }
+    ],
+    "error_codes": [
+      {
+        "code": "error_data",
+        "description": "Invalid data sent"
+      },
+      {
+        "code": "error_param",
+        "description": "Parameter invalid"
+      },
+      {
+        "code": "error_protocol",
+        "description": "The information you opened is not found"
+      }
+    ],
+    "notes": "The documentation includes multiple URL examples and request/response examples in different formats (PHP, cURL, Python). Error codes section is included at the bottom of the documentation.",
+    "chunk_metadata": {
+      "index": 1,
+      "total": 1,
+      "y_start": 0,
+      "y_end": 4377,
+      "overlap_top": 0,
+      "overlap_bottom": 0,
+      "height": 4377,
+      "path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\workspaces\\v2.product.get_ssp_list\\chunks\\chunk_001.png",
+      "filename": "chunk_001.png",
+      "width": 837
+    },
+    "analysis_timestamp": "2025-10-10T06:32:06.422387",
+    "model": "claude-3-5-sonnet-20241022"
+  }
+]

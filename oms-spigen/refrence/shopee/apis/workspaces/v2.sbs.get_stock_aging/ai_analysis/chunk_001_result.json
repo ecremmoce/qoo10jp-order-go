@@ -1,0 +1,90 @@
+{
+  "chunk_index": 1,
+  "total_chunks": 1,
+  "endpoint": null,
+  "method": null,
+  "description": null,
+  "update_log": [],
+  "hidden_fields": [],
+  "parameters": [
+    {
+      "name": "appKey",
+      "type": "string",
+      "required": true,
+      "description": null,
+      "children": []
+    },
+    {
+      "name": "sign",
+      "type": "string",
+      "required": true,
+      "description": "Sign parameter",
+      "children": []
+    },
+    {
+      "name": "timestamp",
+      "type": "string",
+      "required": true,
+      "description": "Timestamp",
+      "children": []
+    },
+    {
+      "name": "format",
+      "type": "string",
+      "required": false,
+      "description": "Response format parameter - set to JSON",
+      "children": []
+    },
+    {
+      "name": "version",
+      "type": "string",
+      "required": false,
+      "description": "API version",
+      "children": []
+    }
+  ],
+  "response_parameters": [
+    {
+      "name": "error",
+      "type": "string",
+      "description": "Error message if any"
+    },
+    {
+      "name": "message",
+      "type": "string",
+      "description": "Response message"
+    },
+    {
+      "name": "success",
+      "type": "boolean",
+      "description": "Operation success status"
+    }
+  ],
+  "request_examples": [
+    {
+      "type": "url",
+      "content": "http://openapi.example.com/router/rest?sign_agly"
+    }
+  ],
+  "error_examples": [
+    {
+      "error_code": "error",
+      "message": "sample error text"
+    }
+  ],
+  "notes": "The image appears to show standard API documentation including common parameters, request parameters, response parameters, request examples and error examples. Some sections appear to be partially cut off or truncated.",
+  "chunk_metadata": {
+    "index": 1,
+    "total": 1,
+    "y_start": 0,
+    "y_end": 5441,
+    "overlap_top": 0,
+    "overlap_bottom": 0,
+    "height": 5441,
+    "path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\workspaces\\v2.sbs.get_stock_aging\\chunks\\chunk_001.png",
+    "filename": "chunk_001.png",
+    "width": 837
+  },
+  "analysis_timestamp": "2025-10-10T06:43:56.140770",
+  "model": "claude-3-5-sonnet-20241022"
+}

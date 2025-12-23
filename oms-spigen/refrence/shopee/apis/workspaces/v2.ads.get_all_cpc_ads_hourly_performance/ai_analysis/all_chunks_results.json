@@ -1,0 +1,89 @@
+[
+  {
+    "chunk_index": 1,
+    "total_chunks": 1,
+    "endpoint": "at_job_ad_csv_ads_batch_performance",
+    "method": null,
+    "description": null,
+    "update_log": [],
+    "hidden_fields": [],
+    "parameters": [
+      {
+        "name": "url",
+        "type": "string",
+        "required": true,
+        "description": "API request URL",
+        "children": []
+      },
+      {
+        "name": "method",
+        "type": "string",
+        "required": true,
+        "description": "HTTP request method",
+        "children": []
+      },
+      {
+        "name": "params_p",
+        "type": "object",
+        "required": true,
+        "description": "Parameters to be passed",
+        "children": []
+      },
+      {
+        "name": "debug_p",
+        "type": "string",
+        "required": false,
+        "description": "Debug parameter",
+        "children": []
+      }
+    ],
+    "response_fields": [
+      {
+        "name": "error",
+        "type": "string",
+        "description": "Error message when system error occurs"
+      },
+      {
+        "name": "message",
+        "type": "string",
+        "description": "Error description text"
+      },
+      {
+        "name": "request_id",
+        "type": "string",
+        "description": "Request ID for troubleshooting"
+      },
+      {
+        "name": "data",
+        "type": "object",
+        "description": "Response data object",
+        "children": []
+      }
+    ],
+    "error_codes": [
+      {
+        "code": "400",
+        "description": "The parameter list appears to be empty"
+      },
+      {
+        "code": "401",
+        "description": "Simulating using Postman in test"
+      }
+    ],
+    "notes": "This appears to be an API documentation for batch performance reporting. The documentation shows common parameters, required parameters, response parameters, and error codes. Some sections appear to be collapsed/expandable in the interface.",
+    "chunk_metadata": {
+      "index": 1,
+      "total": 1,
+      "y_start": 0,
+      "y_end": 5552,
+      "overlap_top": 0,
+      "overlap_bottom": 0,
+      "height": 5552,
+      "path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\workspaces\\v2.ads.get_all_cpc_ads_hourly_performance\\chunks\\chunk_001.png",
+      "filename": "chunk_001.png",
+      "width": 837
+    },
+    "analysis_timestamp": "2025-10-10T05:29:58.324950",
+    "model": "claude-3-5-sonnet-20241022"
+  }
+]

@@ -1,0 +1,15 @@
+{
+  "batch_id": "20251011_224013",
+  "platform": "shopee",
+  "total": 1,
+  "successful": 1,
+  "failed": 0,
+  "workers": 4,
+  "results": [
+    {
+      "url_index": 0,
+      "url": "https://open.shopee.com/documents/v2/v2.livestream.get_show_item?module=89&type=1",
+      "api_name": "v2.livestream.get_show_item",
+      "success": true,
+      "workspace": {
+        "root": 

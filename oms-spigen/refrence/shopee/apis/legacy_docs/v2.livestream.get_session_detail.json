@@ -1,0 +1,70 @@
+{
+  "endpoint": null,
+  "method": null,
+  "description": null,
+  "parameters": [
+    {
+      "name": "url",
+      "type": "string",
+      "required": true,
+      "description": "Request endpoint",
+      "children": []
+    },
+    {
+      "name": "method",
+      "type": "string",
+      "required": true,
+      "description": "Request method (GET/POST/PUT/DELETE)",
+      "children": []
+    },
+    {
+      "name": "data",
+      "type": "object",
+      "required": false,
+      "description": "The data to be transmitted in the request",
+      "children": []
+    },
+    {
+      "name": "params",
+      "type": "object",
+      "required": false,
+      "description": "URL parameters",
+      "children": []
+    },
+    {
+      "name": "headers",
+      "type": "object",
+      "required": false,
+      "description": "Request headers",
+      "children": []
+    }
+  ],
+  "response_fields": [
+    {
+      "name": "status",
+      "type": "integer",
+      "description": "Status code of the response"
+    },
+    {
+      "name": "ok",
+      "type": "boolean",
+      "description": "Whether the request was successful"
+    },
+    {
+      "name": "data",
+      "type": "object",
+      "description": "The response data"
+    }
+  ],
+  "update_log": [],
+  "hidden_fields": [],
+  "metadata": {
+    "total_chunks": 1,
+    "chunks_with_errors": 0,
+    "total_parameters_before_dedup": 5,
+    "total_parameters_after_dedup": 5,
+    "update_log_entries": 0,
+    "hidden_fields_count": 0,
+    "source_results": "workspaces\\v2.livestream.get_session_detail\\results\\all_chunks_results.json"
+  }
+}

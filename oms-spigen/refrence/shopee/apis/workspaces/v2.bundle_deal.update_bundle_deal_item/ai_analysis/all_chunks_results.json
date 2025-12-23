@@ -1,0 +1,80 @@
+[
+  {
+    "chunk_index": 1,
+    "total_chunks": 1,
+    "endpoint": null,
+    "method": null,
+    "description": null,
+    "update_log": [],
+    "hidden_fields": [],
+    "parameters": [
+      {
+        "name": "currency",
+        "type": "string",
+        "required": true,
+        "description": "Currency code must match currency_pair base",
+        "children": []
+      },
+      {
+        "name": "side",
+        "type": "string",
+        "required": true,
+        "description": "Whether order is buy or sell",
+        "children": []
+      },
+      {
+        "name": "ord_type",
+        "type": "string",
+        "required": true,
+        "description": "Order type - limit or market",
+        "children": []
+      },
+      {
+        "name": "price",
+        "type": "string",
+        "required": false,
+        "description": "Price per unit",
+        "children": []
+      },
+      {
+        "name": "volume",
+        "type": "string",
+        "required": false,
+        "description": "Amount of base asset to trade",
+        "children": []
+      }
+    ],
+    "response_fields": [
+      {
+        "name": "trading.limit_order_min_btc_usd",
+        "type": "string",
+        "description": "Minimum order size for BTC/USD pair"
+      },
+      {
+        "name": "trading.limit_order_min_eth_usd",
+        "type": "string",
+        "description": "Minimum order size for ETH/USD pair"
+      },
+      {
+        "name": "trading.limit_order_min_eth_btc",
+        "type": "string",
+        "description": "Minimum order size for ETH/BTC pair"
+      }
+    ],
+    "notes": "The image appears to be showing API documentation for a trading platform with both request parameters and configuration/constant values. There are additional parameters and fields visible but partially cut off in the image. The documentation includes error examples and response examples at the bottom which are partially visible.",
+    "chunk_metadata": {
+      "index": 1,
+      "total": 1,
+      "y_start": 0,
+      "y_end": 5816,
+      "overlap_top": 0,
+      "overlap_bottom": 0,
+      "height": 5816,
+      "path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\workspaces\\v2.bundle_deal.update_bundle_deal_item\\chunks\\chunk_001.png",
+      "filename": "chunk_001.png",
+      "width": 837
+    },
+    "analysis_timestamp": "2025-10-10T05:35:23.791149",
+    "model": "claude-3-5-sonnet-20241022"
+  }
+]

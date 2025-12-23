@@ -1,0 +1,113 @@
+{
+  "chunk_index": 1,
+  "total_chunks": 1,
+  "endpoint": "/product/set/item_process_sequence_read",
+  "method": "GET",
+  "description": "API for retrieving product sequence details",
+  "update_log": [],
+  "hidden_fields": [],
+  "parameters": [
+    {
+      "name": "url",
+      "type": "string",
+      "required": true,
+      "description": "API endpoint URL",
+      "children": []
+    },
+    {
+      "name": "method",
+      "type": "string",
+      "required": true,
+      "description": "HTTP method",
+      "children": []
+    },
+    {
+      "name": "test_url",
+      "type": "string",
+      "required": true,
+      "description": "Test environment URL",
+      "children": []
+    },
+    {
+      "name": "params",
+      "type": "object",
+      "required": true,
+      "description": "Request parameters",
+      "children": [
+        {
+          "name": "size_n",
+          "type": "integer",
+          "required": true,
+          "description": "Parameter ID assigned after registration is successful",
+          "children": []
+        },
+        {
+          "name": "timestamp",
+          "type": "string",
+          "required": true,
+          "description": "Unix timestamp",
+          "children": []
+        },
+        {
+          "name": "sign",
+          "type": "string",
+          "required": true,
+          "description": "The MD5 hash of the above parameters. Used for request validation",
+          "children": []
+        }
+      ]
+    }
+  ],
+  "response_fields": [
+    {
+      "name": "size_n",
+      "type": "mixed",
+      "required": true,
+      "description": "Indicates item size in your Entity line organization",
+      "children": []
+    },
+    {
+      "name": "message",
+      "type": "string",
+      "required": true,
+      "description": "Indicates status/error message",
+      "children": []
+    },
+    {
+      "name": "severity",
+      "type": "string",
+      "required": true,
+      "description": "Severity status (error, warning, etc.)",
+      "children": []
+    },
+    {
+      "name": "sequence",
+      "type": "mixed",
+      "required": true,
+      "description": "The Severity line on IP specified for your training",
+      "children": []
+    },
+    {
+      "name": "error_codes",
+      "type": "object",
+      "required": true,
+      "description": "Various error codes and their meanings",
+      "children": []
+    }
+  ],
+  "notes": "The documentation includes error codes and response examples, but some sections appear to be truncated or partially visible in the image. The API seems to be related to processing product sequences and handling various status responses.",
+  "chunk_metadata": {
+    "index": 1,
+    "total": 1,
+    "y_start": 0,
+    "y_end": 4753,
+    "overlap_top": 0,
+    "overlap_bottom": 0,
+    "height": 4753,
+    "path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\workspaces\\v2.product.get_item_content_diagnosis_result\\chunks\\chunk_001.png",
+    "filename": "chunk_001.png",
+    "width": 837
+  },
+  "analysis_timestamp": "2025-10-10T06:28:08.145268",
+  "model": "claude-3-5-sonnet-20241022"
+}

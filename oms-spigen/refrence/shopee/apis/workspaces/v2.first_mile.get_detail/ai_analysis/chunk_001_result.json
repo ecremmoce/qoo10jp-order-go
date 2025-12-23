@@ -1,0 +1,91 @@
+{
+  "chunk_index": 1,
+  "total_chunks": 1,
+  "endpoint": null,
+  "method": null,
+  "description": null,
+  "update_log": [],
+  "hidden_fields": [],
+  "parameters": [
+    {
+      "name": "method",
+      "type": "string",
+      "required": true,
+      "description": "Payment API signature generation method",
+      "children": []
+    },
+    {
+      "name": "url",
+      "type": "string",
+      "required": true,
+      "description": "API URL",
+      "children": []
+    },
+    {
+      "name": "version",
+      "type": "string",
+      "required": true,
+      "description": "API version",
+      "children": []
+    }
+  ],
+  "response_fields": [
+    {
+      "name": "hs_expire_datetime",
+      "type": "string",
+      "description": "The holding scenario expired time",
+      "children": []
+    },
+    {
+      "name": "status",
+      "type": "string",
+      "description": "Transaction status",
+      "children": []
+    },
+    {
+      "name": "message",
+      "type": "string",
+      "description": "Error message when failure occurs",
+      "children": []
+    },
+    {
+      "name": "service_name",
+      "type": "string",
+      "description": "The name of the API request service",
+      "children": []
+    },
+    {
+      "name": "cs_holding_balance",
+      "type": "string",
+      "description": "The total holding balance amount",
+      "children": []
+    },
+    {
+      "name": "payment_method",
+      "type": "string",
+      "description": "The payment method the brand name, default is empty",
+      "children": []
+    },
+    {
+      "name": "state",
+      "type": "string",
+      "description": "The pay state (true for transaction success)",
+      "children": []
+    }
+  ],
+  "notes": "The image appears to be API documentation showing common parameters and response parameters. The documentation includes detailed field descriptions but does not show the full API endpoint or method. Some response fields may be truncated as the image appears to continue beyond what's visible.",
+  "chunk_metadata": {
+    "index": 1,
+    "total": 1,
+    "y_start": 0,
+    "y_end": 5466,
+    "overlap_top": 0,
+    "overlap_bottom": 0,
+    "height": 5466,
+    "path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\workspaces\\v2.first_mile.get_detail\\chunks\\chunk_001.png",
+    "filename": "chunk_001.png",
+    "width": 837
+  },
+  "analysis_timestamp": "2025-10-10T05:41:42.086994",
+  "model": "claude-3-5-sonnet-20241022"
+}

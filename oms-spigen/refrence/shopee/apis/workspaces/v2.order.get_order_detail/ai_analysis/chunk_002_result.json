@@ -1,0 +1,71 @@
+{
+  "chunk_index": 2,
+  "endpoint": null,
+  "method": null,
+  "description": null,
+  "parameters": [],
+  "response_fields": [
+    {
+      "name": "conversation",
+      "type": "object",
+      "description": "Conversation details",
+      "children": [
+        {
+          "name": "id",
+          "type": "integer",
+          "description": "Conversation ID",
+          "children": []
+        },
+        {
+          "name": "inbox_id",
+          "type": "integer",
+          "description": "ID of associated inbox",
+          "children": []
+        },
+        {
+          "name": "status",
+          "type": "string",
+          "description": "Current conversation status",
+          "children": []
+        },
+        {
+          "name": "timestamp",
+          "type": "string",
+          "description": "Timestamp of conversation",
+          "children": []
+        },
+        {
+          "name": "contact_last_seen_at",
+          "type": "string",
+          "description": "When contact was last active",
+          "children": []
+        },
+        {
+          "name": "agent_last_seen_at",
+          "type": "string",
+          "description": "When agent was last active",
+          "children": []
+        },
+        {
+          "name": "additional_attributes",
+          "type": "object",
+          "description": "Additional conversation attributes",
+          "children": []
+        }
+      ]
+    }
+  ],
+  "chunk_metadata": {
+    "index": 2,
+    "total": 2,
+    "y_start": 7257,
+    "y_end": 14560,
+    "overlap_top": 500,
+    "overlap_bottom": 0,
+    "height": 7303,
+    "path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\workspaces\\v2.order.get_order_detail\\chunks\\chunk_002.png",
+    "filename": "chunk_002.png",
+    "width": 837
+  },
+  "chunk_path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\workspaces\\v2.order.get_order_detail\\chunks\\chunk_002.png"
+}

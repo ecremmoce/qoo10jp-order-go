@@ -1,0 +1,41 @@
+======================================================================
+API SPECIFICATION SUMMARY
+======================================================================
+
+Endpoint: None None
+
+Parameters (5):
+----------------------------------------------------------------------
+* currency (string)
+   Currency code must match currency_pair base
+* side (string)
+   Whether order is buy or sell
+* ord_type (string)
+   Order type - limit or market
+  price (string)
+   Price per unit
+  volume (string)
+   Amount of base asset to trade
+
+Response Fields (3):
+----------------------------------------------------------------------
+  trading.limit_order_min_btc_usd (string)
+   Minimum order size for BTC/USD pair
+  trading.limit_order_min_eth_usd (string)
+   Minimum order size for ETH/USD pair
+  trading.limit_order_min_eth_btc (string)
+   Minimum order size for ETH/BTC pair
+
+Metadata:
+----------------------------------------------------------------------
+  total_chunks: 1
+  chunks_with_errors: 0
+  total_parameters_before_dedup: 5
+  total_parameters_after_dedup: 5
+  update_log_entries: 0
+  hidden_fields_count: 0
+  source_results: workspaces\v2.bundle_deal.update_bundle_deal_item\results\all_chunks_results.json
+
+======================================================================
+Legend: * = required parameter
+======================================================================

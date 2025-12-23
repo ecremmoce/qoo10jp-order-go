@@ -1,0 +1,96 @@
+[
+  {
+    "chunk_index": 1,
+    "total_chunks": 1,
+    "endpoint": "/api/sport/get/bowling_ranking_info",
+    "method": "POST",
+    "description": "API for retrieving bowling ranking information",
+    "update_log": [
+      {
+        "date": "2023-09-19",
+        "change": "Initial release"
+      }
+    ],
+    "parameters": [
+      {
+        "name": "url",
+        "type": "string",
+        "required": true,
+        "description": "HTTP path for request",
+        "children": []
+      },
+      {
+        "name": "access_token",
+        "type": "string",
+        "required": true,
+        "description": "Token to indicate the identities of the request. Required to complete system verification",
+        "children": []
+      },
+      {
+        "name": "shop_id",
+        "type": "string",
+        "required": true,
+        "description": "Shopee's unique identifier for a shop",
+        "children": []
+      },
+      {
+        "name": "partner_id",
+        "type": "integer",
+        "required": true,
+        "description": "Partner's unique identifier provided by Shopee",
+        "children": []
+      },
+      {
+        "name": "timestamp",
+        "type": "integer",
+        "required": true,
+        "description": "Timestamp of the request. Required for authorization",
+        "children": []
+      },
+      {
+        "name": "request_id",
+        "type": "string",
+        "required": false,
+        "description": "The identifier for an API request to avoid duplicate",
+        "children": []
+      },
+      {
+        "name": "sign",
+        "type": "string",
+        "required": true,
+        "description": "Validate sign rule first time Google find error",
+        "children": []
+      },
+      {
+        "name": "version",
+        "type": "object",
+        "required": false,
+        "description": "Version information data for parsing",
+        "children": []
+      },
+      {
+        "name": "bowling_id",
+        "type": "string",
+        "required": true,
+        "description": "Shopee's unique identifier for a bowling event",
+        "children": []
+      }
+    ],
+    "response_fields": [],
+    "notes": "The documentation appears to be for a bowling ranking information API. The image shows Common Parameters, Required Parameters, and Optional Parameters sections. There are also Request and Response example sections visible but partially cut off at the bottom. Error codes section is also visible showing some standard error handling scenarios.",
+    "chunk_metadata": {
+      "index": 1,
+      "total": 1,
+      "y_start": 0,
+      "y_end": 4534,
+      "overlap_top": 0,
+      "overlap_bottom": 0,
+      "height": 4534,
+      "path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\workspaces\\v2.logistics.get_booking_tracking_info\\chunks\\chunk_001.png",
+      "filename": "chunk_001.png",
+      "width": 837
+    },
+    "analysis_timestamp": "2025-10-10T06:03:30.902268",
+    "model": "claude-3-5-sonnet-20241022"
+  }
+]

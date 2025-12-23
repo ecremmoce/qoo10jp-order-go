@@ -1,0 +1,104 @@
+{
+  "endpoint": "/v2/global_product/get_local_adjustment_rate",
+  "method": "GET",
+  "description": "Retrieves the adjustment rate that converts CB stock area into local warehouse price for a specific shop",
+  "parameters": [
+    {
+      "name": "partner_id",
+      "type": "int",
+      "required": true,
+      "description": "Partner ID is assigned upon registration is successful",
+      "children": []
+    },
+    {
+      "name": "timestamp",
+      "type": "timestamp",
+      "required": true,
+      "description": "This is to indicate the timestamp of the request. Required for all requests. Expires in 5 minutes",
+      "children": []
+    },
+    {
+      "name": "access_token",
+      "type": "string",
+      "required": true,
+      "description": "The token for API access, used to identify your permission to the api. Valid for multiple use and expires in 4 hours",
+      "children": []
+    },
+    {
+      "name": "merchant_id",
+      "type": "int",
+      "required": true,
+      "description": "Shopper's unique identifier for a merchant. Required for all merchant level requests(CB ONDC use selling global product related APIs)",
+      "children": []
+    },
+    {
+      "name": "sign",
+      "type": "string",
+      "required": true,
+      "description": "Signature generated to identify your permission by combining access_token, merchant_id and partner_key via HMAC-SHA256 hashing algorithm",
+      "children": []
+    },
+    {
+      "name": "shop_id",
+      "type": "int64",
+      "required": true,
+      "description": "The unique identifier of the shop whose adjustment rate is being queried",
+      "children": []
+    }
+  ],
+  "response_fields": [
+    {
+      "name": "error",
+      "type": "string",
+      "description": "Indicate error type if an error. Empty if no error happened",
+      "children": []
+    },
+    {
+      "name": "message",
+      "type": "string",
+      "description": "Indicate error details if an error. Empty if no error happened",
+      "children": []
+    },
+    {
+      "name": "warning",
+      "type": "string",
+      "description": "Indicate waring details if hit waring. Empty if no waring happened",
+      "children": []
+    },
+    {
+      "name": "request_id",
+      "type": "string",
+      "description": "The identifier for an API request for error tracking",
+      "children": []
+    },
+    {
+      "name": "response",
+      "type": "object",
+      "description": "",
+      "children": [
+        {
+          "name": "local_adjustment_rate",
+          "type": "float",
+          "description": "The multiplier used to adjust the cross-border original price to local price",
+          "children": []
+        }
+      ]
+    }
+  ],
+  "update_log": [
+    {
+      "date": "2025-07-14",
+      "change": "New API"
+    }
+  ],
+  "hidden_fields": [],
+  "metadata": {
+    "total_chunks": 1,
+    "chunks_with_errors": 0,
+    "total_parameters_before_dedup": 6,
+    "total_parameters_after_dedup": 6,
+    "update_log_entries": 1,
+    "hidden_fields_count": 0,
+    "source_results": "workspaces\\v2.global_product.get_local_adjustment_rate\\results\\all_chunks_results.json"
+  }
+}

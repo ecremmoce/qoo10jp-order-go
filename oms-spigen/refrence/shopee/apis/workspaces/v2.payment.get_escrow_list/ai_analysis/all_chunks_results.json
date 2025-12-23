@@ -1,0 +1,81 @@
+[
+  {
+    "chunk_index": 1,
+    "total_chunks": 1,
+    "endpoint": null,
+    "method": null,
+    "description": null,
+    "update_log": [],
+    "hidden_fields": [],
+    "parameters": [
+      {
+        "name": "URL",
+        "type": "string",
+        "required": true,
+        "description": "Authentication server URLs",
+        "children": []
+      },
+      {
+        "name": "sso_url",
+        "type": "string",
+        "required": true,
+        "description": null,
+        "children": []
+      },
+      {
+        "name": "oauth_url",
+        "type": "string",
+        "required": true,
+        "description": null,
+        "children": []
+      },
+      {
+        "name": "settings",
+        "type": "object",
+        "required": false,
+        "description": null,
+        "children": []
+      },
+      {
+        "name": "allow_user_auth",
+        "type": "boolean",
+        "required": false,
+        "description": "Specifies whether users can authenticate",
+        "children": []
+      },
+      {
+        "name": "client_id",
+        "type": "string",
+        "required": true,
+        "description": "The application client ID",
+        "children": []
+      }
+    ],
+    "response_fields": [],
+    "error_codes": [
+      {
+        "code": "401",
+        "description": "Authentication failed"
+      },
+      {
+        "code": "403",
+        "description": "Permission denied"
+      }
+    ],
+    "notes": "The image appears to be an API documentation page showing authentication-related parameters and configuration. There are several error codes visible at the bottom of the image. The documentation appears to be for some kind of SSO/OAuth integration.",
+    "chunk_metadata": {
+      "index": 1,
+      "total": 1,
+      "y_start": 0,
+      "y_end": 5569,
+      "overlap_top": 0,
+      "overlap_bottom": 0,
+      "height": 5569,
+      "path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\workspaces\\v2.payment.get_escrow_list\\chunks\\chunk_001.png",
+      "filename": "chunk_001.png",
+      "width": 837
+    },
+    "analysis_timestamp": "2025-10-10T06:20:10.940640",
+    "model": "claude-3-5-sonnet-20241022"
+  }
+]

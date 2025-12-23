@@ -1,0 +1,60 @@
+{
+  "document_id": "developer-guide.227",
+  "document_type": "guide",
+  "platform": "shopee",
+  "content_ko": "# 반품-환불 관리\n\n## 2 반품 API 호출 흐름\n\n### 2.1 반품 주문 목록 및 상세 정보 가져오기\n\n상점의 반품 주문 목록 및 요청 상세 정보를 가져오려면 각 애플리케이션은 정수 ID인 return_list를 반환합니다. 구매자는 동일한 주문에 대해 여러 개의 return_list를 제출할 수 있습니다. 반품 파라미터에는 이 반품 환불 신청과 관련된 주문 번호인 order_id가 포함됩니다. 또한 API는 상태, update_time_from, update_time_to, page_size 등을 기준으로 다양한 유형의 반품을 필터링하는 것을 지원합니다. 반품 목록에는 관련 취소 상태도 포함됩니다.\n\n**반품에 대해서는 목록 API를 참조하십시오.** return_list를 얻은 후 반품 상세 정보를 얻게 됩니다.\n\n**반품 상세 정보 API:** 사용 가능한 솔루션(AP)과 구매자에게 제공되는 사용 가능한 솔루션을 참조하십시오.\n\n### 2.2 환불만 해당\n\n```\nStart\n↓\nreturns.get_return_list\n↓\nreturns.get_return_detail\n↓\nreturns.get_available_solution\n↓\nreturns.confirm\n↓\nEnd\n```\n\n**returns.confirm API 사용** = 구매자의 반품 신청에 동의하며, 전체 환불 유형에만 해당됩니다. 구매자는 제품을 반품할 필요가 없습니다. 환불에 대한 종료는 수락됨으로 처리됩니다.\n\n### 2.3 반품 & 환불 (분쟁 없음)\n\n```\nStart\n↓\nreturns.get_return_list\n↓\nreturns.get_return_detail\n↓\nreturns.get_available_solution\n↓\nreturns.offer\n↓\n[Decision Diamond: Buyer Accept] → [Yellow: Seller Accept] \n↓                                    ↓\nreturns.get_return_detail ← returns.accept_offer\n↓\nEnd\n```\n\n**returns.offer 사용** - 판매자는 구매자가 선택할 수 있는 반품 계획을 제공합니다.\n\n**returns.accept_offer 사용** - 판매자는 구매자가 제공한 반품 계획을 수락합니다.\n\n### 2.4 반품 & 환불 (분쟁)\n\n```\nStart\n↓\nreturns.get_return_list\n↓\nreturns.get_return_detail\n↓\nreturns.get_available_solution\n↓\nreturns.offer ← [Purple: Seller doesn't accept solution or buyer's offer]\n↓\n[Purple: Buyer raise a dispute]\n↓\nreturns.dispute\n↓\nreturns.convert_image\n↓\nreturns.upload_proof\n↓\nreturns.query_proof\n↓\nreturns.get_return_detail\n↓\nEnd\n```\n\n판매자 측에서는 먼저 **returns.get_available_solution API**를 호출하여 솔루션 또는 반품 주문을 결정한 다음 구매자가 선택할 수 있도록 **returns.offer API**를 호출합니다.\n\n구매자가 판매자가 제공한 제안을 수락하지 않거나 판매자가 거절하는 경우 **returns.query_offer**를 호출하여 제안을 수락합니다.\n\n---\n\n# API 문서 - 반품 프로세스\n\n## 개요\n\n판매자는 `v2.returns.get_available_solutions` API 링크를 호출하여 반품 주문 옵션을 결정한 다음 구매자가 선택할 수 있도록 `v2.returns.offer` API를 호출할 수 있습니다.\n\n구매자도 판매자에게 솔루션을 제공합니다. 판매자가 수락하면 `v2.returns.accept_offer`를 호출하여 제안을 수락할 수 있습니다. 수락할 수 없는 경우 `v2.returns.dispute`를 호출하여 분쟁 센터에 분쟁을 제기할 수 있습니다.\n\n현재 OpenAPI는 REQUESTED 및 PROCESSING의 두 가지 상태만 분쟁을 지원합니다.\n\n## 2.4.1 분쟁\n\n판매자가 구매자의 반품 요청에 이의가 있는 경우 분쟁 센터에 가서 요청을 처리할 수 있습니다. `v2.returns.dispute`는 판매자가 반품 주문을 분쟁 센터로 에스컬레이션하는 데 사용됩니다.\n\n### 2.4.1.1 이미지\n\n분쟁이 제기된 후 판매자는 API를 통해 증거 이미지를 업로드할 수 있지만 현재 비디오 업로드는 지원되지 않습니다.\n- `v2.returns.upload_image` : 이미지 업로드\n- `v2.returns.bind_cancel` : 분쟁이 있는 이미지 연결\n\n---\n\n## 3 데이터 정의\n\n### ReturnStatus\n- REQUESTED\n- ACCEPTED\n- CANCELLED\n- SHIPPED\n- CLOSED\n- PROCESSING\n- SELLER_DISPUTE\n\n### ReturnReason\n- OK\n- NOT_RECEIPT\n- WRONG_ITEM\n- ITEM_DAMAGED\n- INCORRECT_DESCRIPTION\n- MUTUAL_AGREE\n- OTHER\n- SIZE_FIT_UNMATCHING (베트남 전용)\n- CHANGE_MIND\n- ITEM_MISSING\n- ITEM_INCOMPLETE_FAILED\n- ITEM_FAKE\n- PHYSICAL_DMG\n- FUNCTIONAL_DMG\n\n### ReturnDisputeReason\nReason:\n- NOT_RECEIPT: 미수령 주장을 거부하고 싶습니다.\n- OTHER: 요청을 거부하고 싶습니다.\n- NOT_RECEIVED: 반품 요청에 동의하지만 제품을 받지 못했습니다.\n- UNKNOWN\n\n### ReturnSolution\n- RETURN_REFUND\n- REFUND\n\n### NegotiationStatus\n- PENDING_RESPOND\n- PENDING_BUYER_RESPOND\n- RESOLVED\n\n### SellerProofStatus\n- PENDING\n- UPLOADED\n- OVERDUE\n\n### SellerCommunicationStatus\n- COMPENSATION_NOT_APPLICABLE\n- COMPENSATION_INITIAL_STAGE\n- COMPENSATION_PENDING_REQUEST\n- COMPENSATION_NOT_REQUIRED\n- COMPENSATION_WAITING_APPROVAL\n- COMPENSATION_APPROVED\n- COMPENSATION_REJECTED\n- COMPENSATION_PAID_TO_BUYER\n- COMPENSATION_NOT_ELIGIBLE\n\n### Return Refund Request Type\n- 0: Normal RR - RR은 예상 배송 날짜를 기준으로 구매자가 소포를 받은 후에 제기됩니다.\n- 1: In-transit RR\n  - 1: In-transit RR-RR은 품목이 아직 구매자에게 배송 중인 동안 구매자가 제기합니다.\n  - 2: Return-on-the-Spot RR은 구매자가 배송 시 소포를 받은 후 구매자가 제기합니다.\n\n### Validation Type\n- seller_validation - 반품 소포가 있는 반품 및 관련 요청의 경우 판매자에게 배송되어 유효성 검사 및 구매자 환불 여부 또는 분쟁 제기 여부를 결정합니다.\n- seller_auto_decision - 반품 소포가 없는 반품 요청의 경우 판매자 유효성 검사를 통해 결정하고 구매자 환불 여부 또는 분쟁 제기 여부를 결정해야 합니다.\n\n---\n\n## 역물류 상태\n\n### [일반 반품]\n- **LOGISTICS_PENDING_ARRANGE**: 반품은 현재 사용자가 배송 옵션을 선택하기를 기다리고 있습니다. 통합 물류와 비통합 물류 모두 동일합니다.\n- **LOGISTICS_READY**: 사용자가 배송 옵션을 선택했으며 시스템에서 물류 요청을 생성하기를 기다리고 있습니다. 추적 번호는 아직 사용할 수 없습니다. 통합 물류와 비통합 물류 모두 동일합니다.\n- **LOGISTICS_READY_TO_SHIP**: 시스템에서 물류 요청을 생성했습니다. 추적 번호를 사용할 수 있어야 합니다.\n- **LOGISTICS_PICKUP_RETRY**: 타사 물류 제공업체가 구매자로부터 소포를 픽업하기 위해 다시 시도합니다. 타사 물류 제공업체가 Shopee에 다시 업데이트하므로 통합 물류입니다.\n- **LOGISTICS_PICKUP_FAILED**: 타사 물류 제공업체가 구매자로부터 소포를 픽업하지 못했습니다. 타사 물류 제공업체가 Shopee에 다시 업데이트하므로 통합 물류에 사용할 수 있습니다.\n- **LOGISTICS_PICKUP_DONE**: 통합 물류의 경우 이는 소포가 3 PHS 당사자(출발 택배)에 의해 픽업되었음을 의미합니다. 비통합 물류의 경우 이는 사용자가 소포를 드롭오프 지점에 떨어뜨렸음을 의미합니다.\n- **LOGISTICS_LOST**: 소포가 분실된 것으로 표시되었습니다. 타사 물류 제공업체가 Shopee에 다시 업데이트하므로 통합 물류에만 사용할 수 있습니다.\n- **LOGISTICS_DELIVERY_DONE**: 소포가 판매자에게 성공적으로 배송되었습니다. 타사 물류 제공업체가 Shopee에 다시 업데이트하므로 통합 물류에만 사용할 수 있습니다.\n\n### [배송 중 RR]\n- Preparing\n- Delivered\n- Delivery Failed\n- Lost\n\n### [현장 반품]\n- Preparing\n- Delivered\n- Delivery Failed\n- Lost\n\n---\n\n## 반품 후 물류 상태\n\n창고에서 판매자에게 다시 돌아오는 역물류를 나타내는 모든 물류 상태입니다.\n- **POST_RETURN_LOGISTICS_PICKUP_PENDING**: 추적 번호와 함께 물류 요청이 성공적으로 생성되었습니다.\n- **POST_RETURN_LOGISTICS_REQUEST_CANCELLED**: 창고 팀에서 물류 요청을 취소했습니다.\n- **POST_RETURN_LOGISTICS_PICKUP_FAILED**: 창고에서 판매자에게 소포를 픽업하지 못했습니다.\n- **POST_RETURN_LOGISTICS_PICKUP_RETRY**: 타사 물류가 창고에서 소포를 픽업하기 위해 다시 시도합니다.\n- **POST_RETURN_LOGISTICS_PICKUP_DONE**: 목적지로 가는 도중에 성공적으로 픽업되었습니다.\n- **POST_RETURN_LOGISTICS_DELIVERY_FAILED**: 소포 배송에 실패했습니다. 운전자가 창고로 다시 시도합니다.\n- **POST_RETURN_LOGISTICS_DELIVERY_DONE**: 소포가 성공적으로 배송되었습니다.\n- **POST_RETURN_LOGISTICS_LOST**: 물류 제공업체에서 소포를 분실했습니다.",
+  "translated_at": "2025-10-16T08:54:56",
+  "char_count": 5378,
+  "metadata_ko": {
+    "title": "반품-환불 관리",
+    "summary": "본 가이드는 API 호출 흐름 및 데이터 정의를 포함하여 반품 및 환불 프로세스를 관리하는 방법에 대한 정보를 제공합니다. 환불만, 반품 & 환불 (분쟁 없음), 반품 & 환불 (분쟁)과 같은 다양한 반품 시나리오를 다루며 각 시나리오에 대한 API 상호 작용을 자세히 설명합니다.",
+    "keywords": [
+      "반품",
+      "환불",
+      "API",
+      "분쟁",
+      "반품 상태",
+      "역물류",
+      "판매자",
+      "구매자",
+      "제안",
+      "솔루션"
+    ],
+    "category": "Integration",
+    "tags": [
+      "returns",
+      "refunds",
+      "disputes",
+      "API flow",
+      "data definitions"
+    ],
+    "difficulty": "medium",
+    "importance": 4,
+    "use_cases": [
+      "구매자의 반품 요청 관리",
+      "구매자의 환불 처리",
+      "반품 관련 분쟁 처리",
+      "반품 및 환불 프로세스를 플랫폼과 통합",
+      "반품 물류 자동화"
+    ],
+    "related_apis": [
+      "returns.get_return_list",
+      "returns.get_return_detail",
+      "returns.get_available_solution",
+      "returns.confirm",
+      "returns.offer",
+      "returns.accept_offer",
+      "returns.dispute",
+      "returns.convert_image",
+      "returns.upload_proof",
+      "returns.query_proof",
+      "v2.returns.get_available_solutions",
+      "v2.returns.offer",
+      "v2.returns.accept_offer",
+      "v2.returns.dispute",
+      "v2.returns.upload_image",
+      "v2.returns.bind_cancel"
+    ]
+  },
+  "metadata_translated_at": "2025-10-16T08:54:59"
+}

@@ -1,0 +1,92 @@
+{
+  "chunk_index": 1,
+  "total_chunks": 1,
+  "endpoint": null,
+  "method": null,
+  "description": null,
+  "update_log": [],
+  "hidden_fields": [],
+  "parameters": [
+    {
+      "name": "url",
+      "type": "string",
+      "required": true,
+      "description": "Download request parameter url_gen_xxx.text",
+      "children": []
+    },
+    {
+      "name": "url_gen_xxx_text",
+      "type": "string",
+      "required": true,
+      "description": "Download request parameter url_gen_xxx.text",
+      "children": []
+    },
+    {
+      "name": "url_status",
+      "type": "string",
+      "required": true,
+      "description": "Request status code for download",
+      "children": []
+    },
+    {
+      "name": "status_text",
+      "type": "string",
+      "required": true,
+      "description": "Request status text for download",
+      "children": []
+    }
+  ],
+  "response_parameters": [
+    {
+      "name": "result",
+      "type": "string",
+      "description": "The text result of the download",
+      "children": []
+    },
+    {
+      "name": "url_status",
+      "type": "string",
+      "description": "Download status code for url",
+      "children": []
+    },
+    {
+      "name": "status_text",
+      "type": "string",
+      "description": "Download status text for url",
+      "children": []
+    }
+  ],
+  "error_codes": [
+    {
+      "code": "url_status_not_online_error",
+      "description": "The url is not accessible"
+    },
+    {
+      "code": "url_param_error",
+      "description": "Wrong parameter value"
+    },
+    {
+      "code": "empty_result",
+      "description": "Empty download result"
+    },
+    {
+      "code": "url_timeout",
+      "description": "Request timeout"
+    }
+  ],
+  "notes": "This appears to be API documentation for a download service. The image shows common parameters, request parameters, response parameters and error codes. The documentation appears to be complete within this single chunk.",
+  "chunk_metadata": {
+    "index": 1,
+    "total": 1,
+    "y_start": 0,
+    "y_end": 5202,
+    "overlap_top": 0,
+    "overlap_bottom": 0,
+    "height": 5202,
+    "path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\workspaces\\v2.add_on_deal.delete_add_on_deal_sub_item\\chunks\\chunk_001.png",
+    "filename": "chunk_001.png",
+    "width": 837
+  },
+  "analysis_timestamp": "2025-10-10T05:24:47.632950",
+  "model": "claude-3-5-sonnet-20241022"
+}

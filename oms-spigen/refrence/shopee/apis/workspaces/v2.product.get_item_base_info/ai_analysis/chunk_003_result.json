@@ -1,0 +1,50 @@
+{
+  "chunk_index": 3,
+  "endpoint": null,
+  "method": null,
+  "description": "API Permissions and Update Log section",
+  "parameters": [],
+  "response_fields": [
+    {
+      "name": "Date",
+      "type": "string",
+      "description": "Update date",
+      "children": []
+    },
+    {
+      "name": "Update Details",
+      "type": "string",
+      "description": "Description of API updates",
+      "children": [
+        {
+          "name": "2025-06-22",
+          "type": "string",
+          "description": "add new response field \"image_url\" under \"certification_proof\""
+        },
+        {
+          "name": "2025-06-22",
+          "type": "string",
+          "description": "add to new response field \"local_promotion_price and \"local_price\""
+        },
+        {
+          "name": "2025-06-20",
+          "type": "string",
+          "description": "Fix wrong request URL"
+        }
+      ]
+    }
+  ],
+  "chunk_metadata": {
+    "index": 3,
+    "total": 3,
+    "y_start": 14752,
+    "y_end": 17475,
+    "overlap_top": 500,
+    "overlap_bottom": 0,
+    "height": 2723,
+    "path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\workspaces\\v2.product.get_item_base_info\\chunks\\chunk_003.png",
+    "filename": "chunk_003.png",
+    "width": 837
+  },
+  "chunk_path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\workspaces\\v2.product.get_item_base_info\\chunks\\chunk_003.png"
+}

@@ -1,0 +1,47 @@
+{
+  "chunk_index": 3,
+  "endpoint": null,
+  "method": null,
+  "description": null,
+  "parameters": [],
+  "response_fields": [
+    {
+      "name": "error",
+      "type": "string",
+      "description": "Error code",
+      "children": []
+    },
+    {
+      "name": "error_detail_list",
+      "type": "array",
+      "description": "List of error details",
+      "children": [
+        {
+          "name": "error_code",
+          "type": "string",
+          "description": "Specific error code",
+          "children": []
+        },
+        {
+          "name": "message",
+          "type": "string",
+          "description": "Error message",
+          "children": []
+        }
+      ]
+    }
+  ],
+  "chunk_metadata": {
+    "index": 3,
+    "total": 3,
+    "y_start": 15198,
+    "y_end": 18066,
+    "overlap_top": 500,
+    "overlap_bottom": 0,
+    "height": 2868,
+    "path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\workspaces\\v2.payment.get_escrow_detail_batch\\chunks\\chunk_003.png",
+    "filename": "chunk_003.png",
+    "width": 837
+  },
+  "chunk_path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\workspaces\\v2.payment.get_escrow_detail_batch\\chunks\\chunk_003.png"
+}

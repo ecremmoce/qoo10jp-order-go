@@ -1,0 +1,84 @@
+{
+  "chunk_index": 1,
+  "total_chunks": 1,
+  "endpoint": null,
+  "method": null,
+  "description": null,
+  "update_log": [],
+  "hidden_fields": [],
+  "parameters": [
+    {
+      "name": "URL",
+      "type": "string",
+      "required": true,
+      "description": "Appears to be an endpoint URL parameter",
+      "children": []
+    },
+    {
+      "name": "MId",
+      "type": "string",
+      "required": true,
+      "description": null,
+      "children": []
+    },
+    {
+      "name": "SId",
+      "type": "string",
+      "required": true,
+      "description": null,
+      "children": []
+    },
+    {
+      "name": "PId",
+      "type": "string",
+      "required": true,
+      "description": null,
+      "children": []
+    }
+  ],
+  "response_parameters": [
+    {
+      "name": "status",
+      "type": "string",
+      "required": true,
+      "description": "Response status indicator",
+      "children": []
+    },
+    {
+      "name": "message",
+      "type": "string",
+      "required": true,
+      "description": "Response message",
+      "children": []
+    },
+    {
+      "name": "response",
+      "type": "object",
+      "required": true,
+      "description": "Input information you are sending",
+      "children": []
+    },
+    {
+      "name": "error_code",
+      "type": "string",
+      "required": false,
+      "description": null,
+      "children": []
+    }
+  ],
+  "notes": "The image appears to be an API documentation showing common parameters, request parameters, and response parameters. Some sections appear to have additional information in comments or examples that are partially visible. The documentation seems to be for some kind of service or middleware API interface.",
+  "chunk_metadata": {
+    "index": 1,
+    "total": 1,
+    "y_start": 0,
+    "y_end": 5328,
+    "overlap_top": 0,
+    "overlap_bottom": 0,
+    "height": 5328,
+    "path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\workspaces\\v2.sbs.get_expiry_report\\chunks\\chunk_001.png",
+    "filename": "chunk_001.png",
+    "width": 837
+  },
+  "analysis_timestamp": "2025-10-10T06:43:44.472234",
+  "model": "claude-3-5-sonnet-20241022"
+}

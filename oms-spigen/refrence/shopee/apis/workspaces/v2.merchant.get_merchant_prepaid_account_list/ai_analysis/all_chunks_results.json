@@ -1,0 +1,115 @@
+[
+  {
+    "chunk_index": 1,
+    "total_chunks": 1,
+    "endpoint": "/api/merchant_get_merchant_prepaid_account_bill",
+    "method": "POST",
+    "description": "Get merchant prepaid account bill information",
+    "update_log": [
+      {
+        "date": "2023-03-29",
+        "change": "Interface update"
+      }
+    ],
+    "parameters": [
+      {
+        "name": "partner_id",
+        "type": "int",
+        "required": true,
+        "description": "Partner ID (assigned upon registration)",
+        "children": []
+      },
+      {
+        "name": "timestamp",
+        "type": "string",
+        "required": true,
+        "description": "Unix timestamp",
+        "children": []
+      },
+      {
+        "name": "merchant_id",
+        "type": "string",
+        "required": true,
+        "description": "",
+        "children": []
+      },
+      {
+        "name": "sign",
+        "type": "string",
+        "required": true,
+        "description": "API signature string",
+        "children": []
+      }
+    ],
+    "response_fields": [
+      {
+        "name": "message",
+        "type": "string",
+        "description": "Response message"
+      },
+      {
+        "name": "request_id",
+        "type": "string",
+        "description": "Request ID"
+      },
+      {
+        "name": "bill",
+        "type": "int",
+        "description": "Bill information"
+      },
+      {
+        "name": "prepaid_account_id",
+        "type": "int64",
+        "description": "Prepaid account number"
+      },
+      {
+        "name": "prepaid_account_name",
+        "type": "string",
+        "description": "Prepaid account name"
+      },
+      {
+        "name": "prepaid_account_user_id",
+        "type": "string",
+        "description": "Prepaid account user ID"
+      },
+      {
+        "name": "prepaid_account_path",
+        "type": "string",
+        "description": "Prepaid account path"
+      }
+    ],
+    "error_codes": [
+      {
+        "code": "error_data",
+        "description": "Invalid data input"
+      },
+      {
+        "code": "error_system",
+        "description": "System error"
+      },
+      {
+        "code": "error_param",
+        "description": "The parameter you parsed is not found"
+      },
+      {
+        "code": "error_signature",
+        "description": "Wrong parameter value string"
+      }
+    ],
+    "notes": "The documentation includes Chinese characters in some descriptions and parameter names. The API appears to be related to merchant prepaid account billing information retrieval.",
+    "chunk_metadata": {
+      "index": 1,
+      "total": 1,
+      "y_start": 0,
+      "y_end": 4485,
+      "overlap_top": 0,
+      "overlap_bottom": 0,
+      "height": 4485,
+      "path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\workspaces\\v2.merchant.get_merchant_prepaid_account_list\\chunks\\chunk_001.png",
+      "filename": "chunk_001.png",
+      "width": 837
+    },
+    "analysis_timestamp": "2025-10-10T06:11:47.023996",
+    "model": "claude-3-5-sonnet-20241022"
+  }
+]

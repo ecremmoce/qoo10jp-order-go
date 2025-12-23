@@ -1,0 +1,79 @@
+{
+  "endpoint": "/product_get_vip_tel",
+  "method": "GET",
+  "description": "Product VIP Tel Get API",
+  "parameters": [
+    {
+      "name": "access_token",
+      "type": "string",
+      "required": true,
+      "description": "Access token used for authentication and authorization",
+      "children": []
+    },
+    {
+      "name": "shop_id",
+      "type": "integer",
+      "required": true,
+      "description": "Request target shop id. Request for specific shop or shop id.",
+      "children": []
+    },
+    {
+      "name": "sign",
+      "type": "string",
+      "required": true,
+      "description": "Request signature parameter",
+      "children": []
+    },
+    {
+      "name": "url",
+      "type": "string",
+      "required": false,
+      "description": "The URL of the page",
+      "children": []
+    },
+    {
+      "name": "offset",
+      "type": "string",
+      "required": false,
+      "description": "Indicates store type",
+      "children": []
+    },
+    {
+      "name": "warning",
+      "type": "string",
+      "required": false,
+      "description": "Indicates warning status",
+      "children": []
+    },
+    {
+      "name": "request_id",
+      "type": "string",
+      "required": false,
+      "description": "The identifier for an API request for error tracking",
+      "children": []
+    }
+  ],
+  "response_fields": [
+    {
+      "name": "error_code",
+      "type": "integer",
+      "description": "API error code"
+    }
+  ],
+  "update_log": [
+    {
+      "date": "2024-01-23",
+      "change": "New API"
+    }
+  ],
+  "hidden_fields": [],
+  "metadata": {
+    "total_chunks": 1,
+    "chunks_with_errors": 0,
+    "total_parameters_before_dedup": 7,
+    "total_parameters_after_dedup": 7,
+    "update_log_entries": 1,
+    "hidden_fields_count": 0,
+    "source_results": "workspaces\\v2.product.get_ssp_list\\results\\all_chunks_results.json"
+  }
+}

@@ -1,0 +1,157 @@
+{
+  "chunk_index": 1,
+  "total_chunks": 1,
+  "endpoint": "/v2/payment/get_shop_installment_status",
+  "method": "GET",
+  "description": "Check installment status for a shop",
+  "update_log": [],
+  "hidden_fields": [],
+  "parameters": [
+    {
+      "name": "partner_id",
+      "type": "int",
+      "required": true,
+      "description": "Partner ID to proceed your application or successful records of payments",
+      "children": []
+    },
+    {
+      "name": "timestamp",
+      "type": "timestamp",
+      "required": true,
+      "description": "This is a timestamp string of the request. Required to prevent request expiry in 5 minutes",
+      "children": []
+    },
+    {
+      "name": "access_token",
+      "type": "string",
+      "required": true,
+      "description": "Use for API authorization. For api_key, visit for realtime use and expires in 4 hours",
+      "children": []
+    },
+    {
+      "name": "shop_id",
+      "type": "int",
+      "required": true,
+      "description": "Shop ID that identifies the shop. Required parameter for accessing shop data",
+      "children": []
+    },
+    {
+      "name": "sign",
+      "type": "string",
+      "required": true,
+      "description": "Authorization key. Used for request verification.",
+      "children": []
+    }
+  ],
+  "response_fields": [
+    {
+      "name": "error",
+      "type": "string",
+      "description": "Error code",
+      "children": []
+    },
+    {
+      "name": "message",
+      "type": "string",
+      "description": "Error message",
+      "children": []
+    },
+    {
+      "name": "request_id",
+      "type": "string",
+      "description": "The request ID of the response",
+      "children": []
+    },
+    {
+      "name": "installment_status",
+      "type": "int",
+      "description": "The installment status for the shop",
+      "children": []
+    }
+  ],
+  "error_codes": [
+    {
+      "code": "error_param",
+      "description": "There is no param_id"
+    },
+    {
+      "code": "error_auth",
+      "description": "Invalid access_token"
+    },
+    {
+      "code": "error_param",
+      "description": "Invalid partner_id"
+    },
+    {
+      "code": "error_auth",
+      "description": "No permission to access api"
+    },
+    {
+      "code": "error_param",
+      "description": "There is no sign in param"
+    },
+    {
+      "code": "error_sign",
+      "description": "Wrong sign"
+    },
+    {
+      "code": "error_param",
+      "description": "no timestamp"
+    },
+    {
+      "code": "error_param",
+      "description": "Invalid timestamp"
+    },
+    {
+      "code": "error_network",
+      "description": "over http call failed"
+    },
+    {
+      "code": "error_data",
+      "description": "parse data failed"
+    },
+    {
+      "code": "error_data",
+      "description": "data not exist"
+    },
+    {
+      "code": "error_param",
+      "description": "parameter invalid"
+    },
+    {
+      "code": "error_param",
+      "description": "The information you queried is not found"
+    },
+    {
+      "code": "error_param",
+      "description": "Wrong parameter: shop_drop"
+    },
+    {
+      "code": "error_param",
+      "description": "Something wrong. Please try later"
+    },
+    {
+      "code": "error_write",
+      "description": "record is invalid"
+    },
+    {
+      "code": "error_param",
+      "description": "request not from partner"
+    }
+  ],
+  "notes": "The documentation includes multiple URL variants including Chinese and Short versions, as well as test URLs. There's also a comprehensive error code list provided.",
+  "chunk_metadata": {
+    "index": 1,
+    "total": 1,
+    "y_start": 0,
+    "y_end": 3864,
+    "overlap_top": 0,
+    "overlap_bottom": 0,
+    "height": 3864,
+    "path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\workspaces\\v2.payment.get_shop_installment_status\\chunks\\chunk_001.png",
+    "filename": "chunk_001.png",
+    "width": 837
+  },
+  "analysis_timestamp": "2025-10-10T06:22:07.648090",
+  "model": "claude-3-5-sonnet-20241022"
+}

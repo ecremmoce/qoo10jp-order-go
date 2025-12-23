@@ -1,0 +1,119 @@
+[
+  {
+    "chunk_index": 1,
+    "total_chunks": 1,
+    "endpoint": "/OpenAPIDemo/create_session",
+    "method": "POST",
+    "description": "Create session API endpoint",
+    "update_log": [],
+    "hidden_fields": [],
+    "parameters": [
+      {
+        "name": "URL",
+        "type": "string",
+        "required": true,
+        "description": "Chinese Mainland: https://openplatform.mpays.com/mpapi/OpenAPIDemo/create_session",
+        "children": []
+      },
+      {
+        "name": "Test URL",
+        "type": "string",
+        "required": true,
+        "description": "https://openplatform.sandbox.test.mpays.mpays/mpapi/OpenAPIDemo/create_session",
+        "children": []
+      },
+      {
+        "name": "access_token",
+        "type": "string",
+        "required": true,
+        "description": "Credential for all requests",
+        "children": []
+      },
+      {
+        "name": "out_id",
+        "type": "string",
+        "required": true,
+        "description": "Use this for API error check to identify your parameter.",
+        "children": []
+      },
+      {
+        "name": "sid",
+        "type": "string",
+        "required": false,
+        "description": "Session unique identifier to use",
+        "children": []
+      }
+    ],
+    "response_fields": [
+      {
+        "name": "error",
+        "type": "string",
+        "description": "Indicates error type if any error. Empty if no error",
+        "children": []
+      },
+      {
+        "name": "message",
+        "type": "string",
+        "description": "Indicates error detail if error exists. Empty if no error",
+        "children": []
+      },
+      {
+        "name": "session_id",
+        "type": "string",
+        "description": "The session ID of API request for error handling",
+        "children": []
+      },
+      {
+        "name": "redirect",
+        "type": "object",
+        "description": "Global information you are exposing",
+        "children": []
+      }
+    ],
+    "error_codes": [
+      {
+        "code": "error_data",
+        "description": "parameter error"
+      },
+      {
+        "code": "error_system",
+        "description": "The operation cannot access 200 characters"
+      },
+      {
+        "code": "error_parent",
+        "description": "Parameter access"
+      },
+      {
+        "code": "error_data",
+        "description": "You do not have permission to execution"
+      },
+      {
+        "code": "error_auth",
+        "description": "You are not authorised"
+      },
+      {
+        "code": "error_parent",
+        "description": "The API is not supported by current object"
+      },
+      {
+        "code": "error_system",
+        "description": "Force stop error (error_stop)"
+      }
+    ],
+    "notes": "The documentation includes multiple error codes and their descriptions. The API seems to be part of a session management system with both production and test URLs provided.",
+    "chunk_metadata": {
+      "index": 1,
+      "total": 1,
+      "y_start": 0,
+      "y_end": 4436,
+      "overlap_top": 0,
+      "overlap_bottom": 0,
+      "height": 4436,
+      "path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\workspaces\\v2.livestream.create_session\\chunks\\chunk_001.png",
+      "filename": "chunk_001.png",
+      "width": 837
+    },
+    "analysis_timestamp": "2025-10-10T05:53:39.540579",
+    "model": "claude-3-5-sonnet-20241022"
+  }
+]

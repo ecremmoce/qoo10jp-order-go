@@ -1,0 +1,95 @@
+{
+  "chunk_index": 1,
+  "total_chunks": 1,
+  "endpoint": "v2_public_get_token_by_reward_code",
+  "method": "GET",
+  "description": "Use the reward code to get access token and collect token. When you call your access token to refresh token, you can go to authentication, get reward exchange page to check if token code is exchanged. Token code can be redeemed for chain tokens, and NFT support or on-chain permissions.",
+  "update_log": [
+    {
+      "date": "2023-07-13",
+      "change": "New API"
+    }
+  ],
+  "parameters": [
+    {
+      "name": "reward_code",
+      "type": "string",
+      "required": true,
+      "description": "The code to redeem an offer code reward code in on-chain protocol ERC721. This code can only be used one time once, expires in 15minutes",
+      "children": []
+    }
+  ],
+  "response_fields": [
+    {
+      "name": "request_id",
+      "type": "string",
+      "description": "The identifier for an API request for error tracking",
+      "children": []
+    },
+    {
+      "name": "code",
+      "type": "string",
+      "description": "Indicate error type if not zero",
+      "children": []
+    },
+    {
+      "name": "message",
+      "type": "string",
+      "description": "Indicate error details if not zero",
+      "children": []
+    },
+    {
+      "name": "received_id",
+      "type": "int",
+      "description": "Return when reward code is redeemed",
+      "children": []
+    },
+    {
+      "name": "refresh_token",
+      "type": "string",
+      "description": "Use refresh_token to obtain new access_token. The refresh_token lasts forever unless revoked by administrators and the risk system",
+      "children": []
+    },
+    {
+      "name": "access_token",
+      "type": "string",
+      "description": "Access_token expire time is 24000 second from this api. Used for normal api",
+      "children": []
+    },
+    {
+      "name": "expire_in",
+      "type": "int",
+      "description": "Access_token expiration time unit is second",
+      "children": []
+    }
+  ],
+  "error_codes": [
+    {
+      "code": "error_param",
+      "description": "Invalid param in error"
+    },
+    {
+      "code": "error_pattern",
+      "description": "There is no pattern_id to query"
+    },
+    {
+      "code": "error_auth",
+      "description": "No permission to convert api"
+    }
+  ],
+  "notes": "The documentation includes multiple error codes and API permissions sections that are partially visible in the image. The API appears to be related to token redemption and authentication functionality.",
+  "chunk_metadata": {
+    "index": 1,
+    "total": 1,
+    "y_start": 0,
+    "y_end": 4170,
+    "overlap_top": 0,
+    "overlap_bottom": 0,
+    "height": 4170,
+    "path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\workspaces\\v2.public.get_token_by_resend_code\\chunks\\chunk_001.png",
+    "filename": "chunk_001.png",
+    "width": 837
+  },
+  "analysis_timestamp": "2025-10-10T06:37:59.189758",
+  "model": "claude-3-5-sonnet-20241022"
+}

@@ -1,0 +1,67 @@
+{
+  "chunk_index": 1,
+  "endpoint": null,
+  "method": null,
+  "description": null,
+  "parameters": [],
+  "response_fields": [],
+  "error_codes": [
+    {
+      "code": "error_param",
+      "description": "Wrong parameters, detail: {msg}"
+    },
+    {
+      "code": "error_server",
+      "description": "Something wrong. Please try later."
+    },
+    {
+      "code": "error_shop",
+      "description": "shopid is invalid"
+    },
+    {
+      "code": "error_param",
+      "description": "request not from gateway"
+    },
+    {
+      "code": "error_shop_not_found",
+      "description": "Shop is not found."
+    },
+    {
+      "code": "error_item_not_found",
+      "description": "Item_id is not found."
+    },
+    {
+      "code": "error_param_shop_id_not_found",
+      "description": "Shop_id is not found."
+    },
+    {
+      "code": "error_data",
+      "description": "error data"
+    },
+    {
+      "code": "error_inner",
+      "description": "Our system is taking some time to respond, please try later."
+    },
+    {
+      "code": "error_inner",
+      "description": "System error, please try again later or contact the OpenAPI support team."
+    },
+    {
+      "code": "error_auth",
+      "description": "Various authentication errors including location mismatch, stock issues, permissions"
+    }
+  ],
+  "chunk_metadata": {
+    "index": 1,
+    "total": 2,
+    "y_start": 0,
+    "y_end": 8000,
+    "overlap_top": 0,
+    "overlap_bottom": 500,
+    "height": 8000,
+    "path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\workspaces\\v2.product.get_model_list\\chunks\\chunk_001.png",
+    "filename": "chunk_001.png",
+    "width": 837
+  },
+  "chunk_path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\workspaces\\v2.product.get_model_list\\chunks\\chunk_001.png"
+}

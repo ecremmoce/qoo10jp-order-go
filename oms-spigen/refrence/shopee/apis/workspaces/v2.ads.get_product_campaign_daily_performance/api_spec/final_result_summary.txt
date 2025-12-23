@@ -1,0 +1,57 @@
+======================================================================
+API SPECIFICATION SUMMARY
+======================================================================
+
+Endpoint: POST /api/2/product/add_item
+Description: Add new item to product
+
+Parameters (2):
+----------------------------------------------------------------------
+* platform_id (integer)
+   Platform ID
+* item (object)
+   Item details
+  * item_no (string)
+     Item number
+  * title (string)
+     Item title
+  * description (string)
+     Item description
+  * category_id (string)
+     Category ID
+  * brand_id (string)
+     Brand ID
+  * images (array)
+     Image URLs
+  * price (float)
+     Item price
+  * stock (integer)
+     Available stock quantity
+  * weight (float)
+     Item weight in grams
+    attributes (array)
+     Item attributes
+    * name (string)
+       Attribute name
+    * value (string)
+       Attribute value
+    variations (array)
+     Item variations
+    * name (string)
+       Variation name
+    * options (array)
+       Variation options
+
+Metadata:
+----------------------------------------------------------------------
+  total_chunks: 1
+  chunks_with_errors: 0
+  total_parameters_before_dedup: 2
+  total_parameters_after_dedup: 2
+  update_log_entries: 1
+  hidden_fields_count: 0
+  source_results: workspaces\v2.ads.get_product_campaign_daily_performance\results\all_chunks_results.json
+
+======================================================================
+Legend: * = required parameter
+======================================================================

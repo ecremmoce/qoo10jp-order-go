@@ -1,0 +1,95 @@
+[
+  {
+    "chunk_index": 1,
+    "total_chunks": 1,
+    "endpoint": "/ads/ads_get_plan_product_campaign",
+    "method": "GET",
+    "description": "Campaign parameters response",
+    "update_log": [],
+    "hidden_fields": [],
+    "parameters": [
+      {
+        "name": "country_id",
+        "type": "string",
+        "required": true,
+        "description": "Two ISO3 Character ID (Provide if available)",
+        "children": []
+      },
+      {
+        "name": "end_period",
+        "type": "string",
+        "required": true,
+        "description": "Campaign dates filter",
+        "children": []
+      },
+      {
+        "name": "time_budget",
+        "type": "float",
+        "required": false,
+        "description": "Daily budget for Campaign",
+        "children": []
+      },
+      {
+        "name": "end_date",
+        "type": "string",
+        "required": true,
+        "description": "Format in YYYY-MM-DD ( ex. 2017-11-25)",
+        "children": []
+      },
+      {
+        "name": "start_date",
+        "type": "string",
+        "required": true,
+        "description": "Format in YYYY-MM-DD",
+        "children": []
+      }
+    ],
+    "response_fields": [
+      {
+        "name": "good",
+        "type": "string",
+        "description": "Indicate error type first error. Empty if no error",
+        "children": []
+      },
+      {
+        "name": "campaign",
+        "type": "string",
+        "description": "Indicate error details first error. Empty if no error",
+        "children": []
+      },
+      {
+        "name": "training",
+        "type": "string",
+        "description": "An occurred error in training, Empty if training succeed",
+        "children": []
+      },
+      {
+        "name": "response",
+        "type": "mixed",
+        "description": "The identifier for API request for error tracking",
+        "children": []
+      },
+      {
+        "name": "campaign_id",
+        "type": "mixed",
+        "description": "",
+        "children": []
+      }
+    ],
+    "notes": "The documentation includes error codes and API permissions sections at the bottom. There are also request and response examples shown in JSON format.",
+    "chunk_metadata": {
+      "index": 1,
+      "total": 1,
+      "y_start": 0,
+      "y_end": 4447,
+      "overlap_top": 0,
+      "overlap_bottom": 0,
+      "height": 4447,
+      "path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\workspaces\\v2.ads.edit_gms_product_campaign\\chunks\\chunk_001.png",
+      "filename": "chunk_001.png",
+      "width": 837
+    },
+    "analysis_timestamp": "2025-10-10T05:28:41.138703",
+    "model": "claude-3-5-sonnet-20241022"
+  }
+]

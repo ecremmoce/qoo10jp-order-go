@@ -1,0 +1,160 @@
+{
+  "chunk_index": 1,
+  "total_chunks": 1,
+  "endpoint": "/v2/payment/get_income_report",
+  "method": "GET",
+  "description": "To gain income report date and provide file link if the income report is ready to be downloaded",
+  "update_log": [
+    {
+      "date": "2025-06-15",
+      "change": "New API"
+    }
+  ],
+  "parameters": [
+    {
+      "name": "partner_id",
+      "type": "int",
+      "required": true,
+      "description": "Partner ID is assigned upon registration is successful. Required for all requests.",
+      "children": []
+    },
+    {
+      "name": "timestamp",
+      "type": "timestamp",
+      "required": true,
+      "description": "This is to indicate the timestamp of the request. Required for all requests. Expires in 5 minutes",
+      "children": []
+    },
+    {
+      "name": "access_token",
+      "type": "string",
+      "required": true,
+      "description": "The token for API access, used to identify your permission to use api. Visit for multiple use and expires in 4 hours",
+      "children": []
+    },
+    {
+      "name": "shop_id",
+      "type": "int",
+      "required": true,
+      "description": "Shopee's unique identifier for a shop. Required param for most APIs",
+      "children": []
+    },
+    {
+      "name": "sign",
+      "type": "string",
+      "required": true,
+      "description": "Required signature for api access, used to verify merchant account's authenticity",
+      "children": []
+    },
+    {
+      "name": "income_report_id",
+      "type": "int64",
+      "required": true,
+      "description": "The identifier for income report file request",
+      "children": []
+    }
+  ],
+  "response_fields": [
+    {
+      "name": "id",
+      "type": "int64",
+      "description": "The identifier for income statement file request",
+      "children": []
+    },
+    {
+      "name": "file_name",
+      "type": "string",
+      "description": "Income report file name",
+      "children": []
+    },
+    {
+      "name": "status",
+      "type": "int32",
+      "description": "STATUS_INVALID = 0, STATUS_PROCESSING = 1, STATUS_DOWNLOADING = 2, STATUS_DOWNLOADED = 3, STATUS_FAILED = 4",
+      "children": []
+    },
+    {
+      "name": "generate_time",
+      "type": "int64",
+      "description": "File generation time",
+      "children": []
+    },
+    {
+      "name": "file_url",
+      "type": "string",
+      "description": "Link to download income report file",
+      "children": []
+    },
+    {
+      "name": "error",
+      "type": "string",
+      "description": "Error Code",
+      "children": []
+    },
+    {
+      "name": "msg",
+      "type": "string",
+      "description": "Error Message",
+      "children": []
+    },
+    {
+      "name": "request_id",
+      "type": "string",
+      "description": "Request ID",
+      "children": []
+    }
+  ],
+  "error_codes": [
+    {
+      "code": "error_data",
+      "description": "some data failed"
+    },
+    {
+      "code": "error_data",
+      "description": "data not exist"
+    },
+    {
+      "code": "error_param",
+      "description": "parameter invalid"
+    },
+    {
+      "code": "error_param",
+      "description": "Shop is not a mall shop. Please use Mall Shop ID"
+    },
+    {
+      "code": "error_param",
+      "description": "The information you queried is not found"
+    },
+    {
+      "code": "error_param",
+      "description": "Wrong parameters: detail_[msg]"
+    },
+    {
+      "code": "error_server",
+      "description": "Something wrong. Please try later"
+    },
+    {
+      "code": "error_shop",
+      "description": "shopid is invalid"
+    },
+    {
+      "code": "error_param",
+      "description": "request not from gateway"
+    }
+  ],
+  "notes": "The API appears to be part of a payment/income reporting system for an e-commerce platform, likely Shopee based on the documentation style and references.",
+  "chunk_metadata": {
+    "index": 1,
+    "total": 1,
+    "y_start": 0,
+    "y_end": 3134,
+    "overlap_top": 0,
+    "overlap_bottom": 0,
+    "height": 3134,
+    "path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\workspaces\\v2.payment.get_income_report\\chunks\\chunk_001.png",
+    "filename": "chunk_001.png",
+    "width": 837
+  },
+  "analysis_timestamp": "2025-10-10T06:20:32.786305",
+  "model": "claude-3-5-sonnet-20241022"
+}

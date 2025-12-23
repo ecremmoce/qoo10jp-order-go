@@ -1,0 +1,95 @@
+{
+  "chunk_index": 1,
+  "total_chunks": 1,
+  "endpoint": null,
+  "method": null,
+  "description": null,
+  "update_log": [],
+  "hidden_fields": [],
+  "parameters": [
+    {
+      "name": "currency",
+      "type": "string",
+      "required": false,
+      "description": "Default: USD",
+      "children": []
+    },
+    {
+      "name": "period",
+      "type": "string",
+      "required": false,
+      "description": "Time period specification",
+      "children": []
+    },
+    {
+      "name": "version",
+      "type": "string",
+      "required": false,
+      "description": "Version parameter",
+      "children": []
+    },
+    {
+      "name": "prefix",
+      "type": "string",
+      "required": false,
+      "description": "Prefix parameter",
+      "children": []
+    },
+    {
+      "name": "public_price_id",
+      "type": "string",
+      "required": true,
+      "description": "Public price identifier",
+      "children": []
+    },
+    {
+      "name": "price_type",
+      "type": "string",
+      "required": false,
+      "description": "Type of price",
+      "children": []
+    },
+    {
+      "name": "method_id",
+      "type": "string",
+      "required": false,
+      "description": "Method identifier",
+      "children": []
+    }
+  ],
+  "response_fields": [
+    {
+      "name": "Error Codes",
+      "type": "object",
+      "children": [
+        {
+          "name": "err_code_on_auto_switch",
+          "description": "Error code when switching"
+        },
+        {
+          "name": "err_type",
+          "description": "Type of error"
+        },
+        {
+          "name": "err_prm",
+          "description": "Error parameter"
+        }
+      ]
+    }
+  ],
+  "notes": "The image appears to be API documentation showing various parameters, including currency settings, pricing parameters, and error handling configurations. There's a substantial error codes section at the bottom of the image with multiple error-related parameters.",
+  "chunk_metadata": {
+    "index": 1,
+    "total": 1,
+    "y_start": 0,
+    "y_end": 5802,
+    "overlap_top": 0,
+    "overlap_bottom": 0,
+    "height": 5802,
+    "path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\workspaces\\v2.global_product.update_stock\\chunks\\chunk_001.png",
+    "filename": "chunk_001.png",
+    "width": 837
+  },
+  "analysis_timestamp": "2025-10-10T05:52:31.913536",
+  "model": "claude-3-5-sonnet-20241022"
+}

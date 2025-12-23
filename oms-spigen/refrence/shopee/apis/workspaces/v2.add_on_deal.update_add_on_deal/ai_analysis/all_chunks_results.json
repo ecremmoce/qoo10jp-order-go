@@ -1,0 +1,69 @@
+[
+  {
+    "chunk_index": 1,
+    "total_chunks": 1,
+    "endpoint": null,
+    "method": null,
+    "description": null,
+    "update_log": [
+      {
+        "date": "2023-12-07",
+        "change": "Add new api order confirmation"
+      },
+      {
+        "date": "2023-11-27",
+        "change": "Fix update product info"
+      },
+      {
+        "date": "2023-11-23",
+        "change": "Add new api order confirmation"
+      }
+    ],
+    "hidden_fields": [],
+    "parameters": [
+      {
+        "name": "Response Parameters",
+        "type": "object",
+        "required": true,
+        "description": null,
+        "children": [
+          {
+            "name": "code",
+            "type": "integer",
+            "required": true,
+            "description": "Response code"
+          },
+          {
+            "name": "message",
+            "type": "string",
+            "required": true,
+            "description": "Response message"
+          },
+          {
+            "name": "data",
+            "type": "object",
+            "required": false,
+            "description": "Response data object",
+            "children": []
+          }
+        ]
+      }
+    ],
+    "response_fields": [],
+    "notes": "The image appears to be an API documentation page showing response parameters and an update log. The full API endpoint details and request parameters are not visible in this portion of the documentation. The update log shows recent changes related to order confirmation and product info updates.",
+    "chunk_metadata": {
+      "index": 1,
+      "total": 1,
+      "y_start": 0,
+      "y_end": 6688,
+      "overlap_top": 0,
+      "overlap_bottom": 0,
+      "height": 6688,
+      "path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\workspaces\\v2.add_on_deal.update_add_on_deal\\chunks\\chunk_001.png",
+      "filename": "chunk_001.png",
+      "width": 837
+    },
+    "analysis_timestamp": "2025-10-10T05:26:17.978151",
+    "model": "claude-3-5-sonnet-20241022"
+  }
+]

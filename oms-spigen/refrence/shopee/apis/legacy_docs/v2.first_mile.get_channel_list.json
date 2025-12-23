@@ -1,0 +1,88 @@
+{
+  "endpoint": "/_sci_bet/bet/get_credence_list",
+  "method": null,
+  "description": null,
+  "parameters": [
+    {
+      "name": "content_id",
+      "type": "string",
+      "required": true,
+      "description": null,
+      "children": []
+    },
+    {
+      "name": "page_id",
+      "type": "int",
+      "required": true,
+      "description": null,
+      "children": []
+    },
+    {
+      "name": "sign",
+      "type": "string",
+      "required": true,
+      "description": "Required parameter to protect all get-bet, therefore, including when using '/api_get/credence', '/api/get/credence_list', '/api/get/credence_chart', '/api/predict_result'",
+      "children": []
+    }
+  ],
+  "response_fields": [
+    {
+      "name": "content_id",
+      "type": "string",
+      "description": "The identifier for all KOI request for story",
+      "children": []
+    },
+    {
+      "name": "time",
+      "type": "string",
+      "description": "Required parameter for all time. Request in this price",
+      "children": []
+    },
+    {
+      "name": "response",
+      "type": "object",
+      "description": "Indicate error before first query. Check if the error happened",
+      "children": []
+    },
+    {
+      "name": "suggest_credence_list",
+      "type": "object",
+      "description": null,
+      "children": []
+    },
+    {
+      "name": "topics_credence_id",
+      "type": "int",
+      "description": "The identify of topics' credence",
+      "children": []
+    },
+    {
+      "name": "suggest_credence_sum",
+      "type": "float",
+      "description": "The sum of suggest credence",
+      "children": []
+    },
+    {
+      "name": "response_method",
+      "type": "string",
+      "description": null,
+      "children": []
+    }
+  ],
+  "update_log": [
+    {
+      "date": "2023-09-26",
+      "change": "update the request parameter 'region' from required to non-required"
+    }
+  ],
+  "hidden_fields": [],
+  "metadata": {
+    "total_chunks": 1,
+    "chunks_with_errors": 0,
+    "total_parameters_before_dedup": 3,
+    "total_parameters_after_dedup": 3,
+    "update_log_entries": 1,
+    "hidden_fields_count": 0,
+    "source_results": "workspaces\\v2.first_mile.get_channel_list\\results\\all_chunks_results.json"
+  }
+}

@@ -1,0 +1,110 @@
+{
+  "chunk_index": 1,
+  "total_chunks": 1,
+  "endpoint": "/api/benchmark/get_latest_comment_list",
+  "method": "GET",
+  "description": null,
+  "update_log": [],
+  "hidden_fields": [],
+  "parameters": [
+    {
+      "name": "partner_id",
+      "type": "int",
+      "required": true,
+      "description": "Partner ID or project and regulation is provided",
+      "children": []
+    },
+    {
+      "name": "access_token",
+      "type": "string",
+      "required": true,
+      "description": "Access token",
+      "children": []
+    },
+    {
+      "name": "post_id",
+      "type": "int",
+      "required": true,
+      "description": null,
+      "children": []
+    },
+    {
+      "name": "sign",
+      "type": "string",
+      "required": true,
+      "description": "Signature parameter to request in different APIs",
+      "children": []
+    }
+  ],
+  "response_fields": [
+    {
+      "name": "message",
+      "type": "string",
+      "description": "Response message type text. Equals the error response",
+      "children": []
+    },
+    {
+      "name": "request_id",
+      "type": "string",
+      "description": "The identifier for each request",
+      "children": []
+    },
+    {
+      "name": "response",
+      "type": "object",
+      "description": "Detail information you are querying",
+      "children": []
+    },
+    {
+      "name": "ret_offset",
+      "type": "int",
+      "description": "The offset for next page request",
+      "children": []
+    },
+    {
+      "name": "comment_id",
+      "type": "int",
+      "description": "The identifier of comment",
+      "children": []
+    },
+    {
+      "name": "content",
+      "type": "string",
+      "description": "The content of comments",
+      "children": []
+    },
+    {
+      "name": "timestamp",
+      "type": "timestamp",
+      "description": "Timestamp for storing comment info use",
+      "children": []
+    },
+    {
+      "name": "user_id",
+      "type": "int",
+      "description": "The user id of the one who posted the comment",
+      "children": []
+    },
+    {
+      "name": "complete",
+      "type": "bool",
+      "description": "The complete of the one who posted",
+      "children": []
+    }
+  ],
+  "notes": "The documentation appears to be for a comment list retrieval API. There are several error codes listed at the bottom of the image but they were not included in the structured data as they are standard error responses rather than parameters or response fields.",
+  "chunk_metadata": {
+    "index": 1,
+    "total": 1,
+    "y_start": 0,
+    "y_end": 4433,
+    "overlap_top": 0,
+    "overlap_bottom": 0,
+    "height": 4433,
+    "path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\workspaces\\v2.livestream.get_latest_comment_list\\chunks\\chunk_001.png",
+    "filename": "chunk_001.png",
+    "width": 837
+  },
+  "analysis_timestamp": "2025-10-10T05:55:42.114294",
+  "model": "claude-3-5-sonnet-20241022"
+}

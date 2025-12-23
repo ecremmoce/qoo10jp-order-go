@@ -1,0 +1,114 @@
+{
+  "xml_root": "SABANG_GOODS_REGI",
+  "header_fields": [
+    {
+      "name": "SEND_COMPAYNY_ID",
+      "description": "사방넷 로그인아이디",
+      "required": true,
+      "note": "사방넷 어드민 로그인 아이디입력",
+      "section": "header"
+    },
+    {
+      "name": "SEND_AUTH_KEY",
+      "description": "사방넷에서 발급한 인증키",
+      "required": true,
+      "note": "사방넷에서 발급 받은 인증키(만약 받지 않았다면 사방넷에서 인증키 발급 요청)",
+      "section": "header"
+    },
+    {
+      "name": "SEND_DATE",
+      "description": "전송일자",
+      "required": true,
+      "note": "YYYYMMDD",
+      "section": "header"
+    },
+    {
+      "name": "SEND_GOODS_CD_RT",
+      "description": "자체코드 반환여부",
+      "required": false,
+      "note": "상품등록/수정 성공시 결과에서 자체코드를 표시합니다. Y:반환, NULL:없음",
+      "section": "header"
+    },
+    {
+      "name": "RESULT_TYPE",
+      "description": "결과 메시지 타입",
+      "required": false,
+      "note": "미 입력시 기존 HTML형식의 결과값 형태, XML 입력시 XML 형태로 결과값을 출력합니다.",
+      "section": "header"
+    }
+  ],
+  "data_fields": [
+    {
+      "name": "GOODS_NM",
+      "description": "상품명",
+      "required": false,
+      "note": "한글기준 50자리까지 사용가능하며 , HTML 태그 사용은 불가합니다.",
+      "section": "data"
+    },
+    {
+      "name": "COMPAYNY_GOODS_CD",
+      "description": "자체상품코드",
+      "required": true,
+      "note": "자사에서 사용하는 상품코드를 기재합니다. ( 30자리까지 )",
+      "section": "data"
+    },
+    {
+      "name": "STATUS",
+      "description": "상품상태",
+      "required": true,
+      "note": "상품의 공급상태에 대한 구분코드를 기재합니다. 1.대기중 2.공급중 3.일시중지 4.완전품절 5.미사용 6.삭제",
+      "section": "data"
+    },
+    {
+      "name": "GOODS_COST",
+      "description": "원가",
+      "required": false,
+      "note": "입력시 첫글자는 반드시 ( ‘ ) 아포스트로피(ENTER좌측Key)로 시작해야 하며 숫자 사이에 ( , ) 콤마가 들어가면 안됩니다.",
+      "section": "data"
+    },
+    {
+      "name": "GOODS_PRICE",
+      "description": "판매가",
+      "required": false,
+      "note": "입력시 첫글자는 반드시 ( ‘ ) 아포스트로피(ENTER좌측Key)로 시작해야 하며 숫자 사이에 ( , ) 콤마가 들어가면 안됩니다.",
+      "section": "data"
+    },
+    {
+      "name": "GOODS_CONSUMER_PRICE",
+      "description": "TAG가(소비자가)",
+      "required": false,
+      "note": "입력시 첫글자는 반드시 ( ‘ ) 아포스트로피(ENTER좌측Key)로 시작해야 하며 숫자 사이에 ( , ) 콤마가 들어가면 안됩니다.",
+      "section": "data"
+    },
+    {
+      "name": "SKU_INFO",
+      "description": "",
+      "required": false,
+      "note": "",
+      "section": "data"
+    },
+    {
+      "name": "SKU_VALUE",
+      "description": "수정할 옵션내용",
+      "required": false,
+      "note": "옵션상세명칭^^재고수량^^추가금액^^별칭^^EA^^옵션공급상태^^옵션모음전여부^^옵션모음전연결상품코드^^바코드^^안전재고수량\n예) 블루:55^^99^^0\n1.등록되어 있는옵션수만큼 skuvalue를 구성합니다.\n2.옵션상세명칭 : 옵션제목이 아닌 사방넷에 등록된 옵션명이며, 두가지 타입의 옵션일경우 조합된 옵션명칭을 기재합니다.\n3.재고수량 : 옵션을 품절하고자 할때, 수량을 0으로 기재합니다.\n4.옵션추가는 되지않으며, 등록되어 있는 옵션에 대한 수량 및 추가금액만 반영합니다.\n\n옵션공급상태 - 002:공급중, 004:품절, 005:미사용\n옵션모음전여부 - L: 옵션 모음전 사용함, DL:옵션 모음전 연결상품코드 정보 삭제\n옵션모음전연결상품코드 - 품번코드-단품코드 형식 예) 12345-0001",
+      "section": "data"
+    }
+  ],
+  "authentication": {
+    "SEND_COMPAYNY_ID": {
+      "name": "SEND_COMPAYNY_ID",
+      "description": "사방넷 로그인아이디",
+      "required": true,
+      "note": "사방넷 어드민 로그인 아이디입력",
+      "section": "header"
+    },
+    "SEND_AUTH_KEY": {
+      "name": "SEND_AUTH_KEY",
+      "description": "사방넷에서 발급한 인증키",
+      "required": true,
+      "note": "사방넷에서 발급 받은 인증키(만약 받지 않았다면 사방넷에서 인증키 발급 요청)",
+      "section": "header"
+    }
+  }
+}

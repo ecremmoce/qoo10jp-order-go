@@ -1,0 +1,45 @@
+{
+  "document_id": "developer-guide.215",
+  "document_type": "guide",
+  "platform": "shopee",
+  "content_ko": "# 글로벌 상품 게시\n\n## 탐색\n- 공지사항\n- 콘솔\n\n**Breadcrumb:** API 모범 사례 > 글로벌 상품 게시\n\n---\n\n## 1단계: 게시 가능한 상점 목록 가져오기\n\n**API:** `v2.global_product.get_publishable_shop`\n\n이 API를 통해 글로벌 상품에 대해 게시 가능한 상점 목록을 가져올 수 있지만, 다음과 같은 경우에는 해당 상점을 반환하지 않습니다.\n\n- 상점 인증을 완료하지 않은 상점\n- SIP 제휴 상점\n- 게시된 마켓의 상점\n\n---\n\n## 2단계: 상점 채널 가져오기\n\n**API:** `v2.logistics.get_channel_list`\n\n`v2.logistics.get_channel_list` API를 호출하여 enable=true 및 mask_channel_id=0인 채널을 상점 상품에 대해 선택해야 합니다. 상점 채널을 업로드하지 않고 글로벌 상품을 게시하는 경우, 활성화되어 사용 가능한 상점 채널을 기본적으로 선택합니다.\n\n---\n\n## 3단계: 글로벌 상품 게시\n\n**API:** `v2.global_product.create_publish_task`\n\n`v2.global_product.create_publish_task`의 선택적 필드의 경우, 업로드하지 않으면 Shopee에서 일부 처리를 수행하여 상점 상품에 업로드합니다. 업로드하면 사용자 정의 값이 되며 Shopee는 어떠한 처리도 수행하지 않습니다. 구체적인 로직은 다음과 같습니다.\n\n| 필드 이름 | 사용자 정의 값 업로드 |\n|------------|------------------------|\n| item_name | 예: 판매자는 현지 언어로 번역하여 업로드해야 합니다.<br>아니요: Shopee에서 현지 언어로 번역하는 데 도움을 줍니다. |\n| description_info/description | 예: 판매자는 현지 언어로 번역하여 업로드해야 합니다.<br>아니요: Shopee에서 현지 언어로 번역하는 데 도움을 줍니다. |\n| original_price | 예: 판매자는 현지 통화로 가격을 업로드해야 합니다.<br>아니요: Shopee는 글로벌 상품 가격 및 계산 공식을 기반으로 현지 가격을 계산합니다. |\n| tier_variation--name | 예: 판매자는 현지 언어로 번역하여 업로드해야 합니다.<br>아니요: Shopee에서 현지 언어로 번역하는 데 도움을 줍니다. |\n| tier_variation--option_list--option | 예: 판매자는 현지 언어로 번역하여 업로드해야 합니다.<br>아니요: Shopee에서 현지 언어로 번역하는 데 도움을 줍니다. |\n| image | 예: 판매자가 사용자 정의 이미지를 업로드합니다.<br>아니요: Shopee에서 글로벌 상품의 이미지를 복사합니다. |\n\nAPI 호출이 성공하면 publish_task_id를 얻게 됩니다.\n\n**API:** `v2.global_product.get_publish_task_result`\n\n이 API는 게시 작업이 성공했는지 여부를 반환합니다. 성공하면 item_id, shop_id 및 지역 정보를 반환하고, 실패하면 실패에 대한 구체적인 이유를 반환합니다.\n\n참고: 게시된 상점이 SIP 기본 상점인 경우, 성공적으로 게시한 후 Shopee는 SIP 기본 상점 산하의 제휴 상점에 글로벌 상품을 자동으로 게시합니다.\n\n---\n\n## 4단계: 게시된 상점 상품 목록 가져오기\n\n**API:** `v2.global_product.get_published_list`\n\nAPI는 Shopee가 제휴 상점에 자동으로 게시하는 상점 상품을 포함하여 이 글로벌 상품에 대해 성공적으로 게시된 모든 상점의 item_id 및 shop_id를 반환합니다.\n\n참고: 이 API는 게시되었지만 상점 인증을 완료하지 않은 상점 상품은 반환하지 않습니다.",
+  "translated_at": "2025-10-16T08:43:14",
+  "char_count": 1910,
+  "metadata_ko": {
+    "title": "글로벌 상품 게시",
+    "summary": "본 가이드는 게시 가능한 상점 목록 가져오기, 상점 채널, 상품 게시, 게시된 상점 상품 목록 검색을 포함하여 글로벌 상품을 게시하는 단계를 설명합니다. 또한 Shopee가 선택적 필드와 제휴 상점에 대한 자동 게시를 처리하는 방법에 대해서도 자세히 설명합니다.",
+    "keywords": [
+      "글로벌 상품",
+      "게시",
+      "상점 인증",
+      "상점 채널",
+      "SIP",
+      "API",
+      "번역",
+      "가격",
+      "이미지"
+    ],
+    "category": "모범 사례",
+    "tags": [
+      "상품 관리",
+      "API 통합",
+      "글로벌 상거래"
+    ],
+    "difficulty": "중간",
+    "importance": 4,
+    "use_cases": [
+      "여러 지역으로 제품 도달 범위 확장",
+      "여러 상점에서 제품 목록 관리",
+      "제품 게시 워크플로 자동화",
+      "Shopee의 글로벌 상품 기능과 통합"
+    ],
+    "related_apis": [
+      "v2.global_product.get_publishable_shop",
+      "v2.logistics.get_channel_list",
+      "v2.global_product.create_publish_task",
+      "v2.global_product.get_publish_task_result",
+      "v2.global_product.get_published_list"
+    ]
+  },
+  "metadata_translated_at": "2025-10-16T08:43:17"
+}

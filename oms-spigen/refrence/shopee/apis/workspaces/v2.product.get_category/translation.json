@@ -1,0 +1,41 @@
+{
+  "document_id": "v2.product.get_category",
+  "document_type": "api",
+  "platform": "shopee",
+  "content_ko": "요청하신 요구 사항에 따라 API 문서를 추출하고 구조화하는 데 도움을 드리겠습니다.\n\n## 공통 파라미터\n\n| Parameter | Type | Required | Description |\n|-----------|------|----------|-------------|\n| article_id | string | ✓ | - |\n| title_jp | string | - | - |\n| title_en | string | - | - |\n\n## 요청 파라미터\n\n| Parameter | Type | Required | Description |\n|-----------|------|----------|-------------|\n| size | string | - | 샘플 크기 (작은 크기) |\n| message | string | - | 로딩 텍스트 표시 |\n| speed_id | string | - | 실행 속도 레벨 |\n| duration | string | - | 해당 없음 |\n| mode | string | - | 처리 모드 |\n| content_id | string | - | 해당 없음 |\n| parent_content_id | string | - | 해당 없음 |\n| portal_status_text | string | - | 카테고리 기본값 |\n| article_status_text | string | - | 아티클 유형의 상태 값 지정 |\n\n## 요청 예시\n\n```json\n{\n  \"search\": {\n    \"match\": {\n      \"category\": \"id\"\n    }\n  }\n}\n```\n\n## 응답 예시\n\n```json\n{\n  \"sample\": {\n    \"type\": \"text\",\n    \"category\": \"id\"\n  }\n}\n```\n\n## 오류 코드\n\n| Code | Description |\n|------|-------------|\n| error_400 | 데이터를 항목으로 빌드할 수 없음 |\n| error_generic | 오류가 발생했습니다 |\n| error_401 | 접근 오류 |\n| error_404 | 리소스를 찾을 수 없음 |\n| error_500 | API에 접근할 권한이 없습니다 |\n| error_503 | 서비스에 오류가 있습니다 |\n| error_505 | 잘못된 유형 |\n| error_510 | 요청을 완료할 수 없습니다 |\n| error_520 | 시스템 데이터를 찾을 수 없습니다 |\n| error_530 | 작업을 적용할 수 없습니다 |\n| error_540 | 필수 파라미터 누락 |\n| error_550 | 입력한 파라미터를 찾을 수 없습니다 |\n| error_560 | 잘못된 파라미터, 쓸모없는 것 |\n| error_570 | 뭔가 실패했습니다 |\n| error_get | 실패로 변경됨 |\n| error_global | 글로벌 프로세스 실패 |\n| error_global_text | 이것만 실패했습니다 |\n| error_global_mode | 메모리 삭제 크기로 저장 파일을 업로드합니다 |\n| error_text | 변경 실패 |\n| error_global_text_build | 리소스 아티클 텍스트 콘텐츠가 요청되지 않았습니다 |\n| error_text_failed | 이미지 빌드 실패 |\n| error_global_text_load | 콘텐츠 텍스트가 빌드 적용에 표시됩니다 |\n| error_global_text_mode | 시스템 오류입니다. 콘텐츠 전체 빌드 요청 실패를 적용하십시오 |\n| error_global_text_build | 텍스트 API에 접근할 수 없습니다 |\n| error_global_text_data | 내 시스템은 메모리 삭제 유형에만 사용됩니다 |\n\n## API 사양\n\n- 엔드포인트 패턴은 RESTful 규칙을 따릅니다.\n- 대부분의 엔드포인트에 인증이 필요합니다.\n- JSON 응답 형식\n- 속도 제한이 적용됩니다.\n\n## 업데이트 로그\n\n- 2023.04.19: 엔드포인트 설명 업데이트\n- 2023.04.18: 메시지 설명 업데이트\n- 2023.04.17: 엔드포인트 설명 업데이트",
+  "translated_at": "2025-10-16T05:51:51",
+  "char_count": 2025,
+  "metadata_ko": {
+    "title": "콘텐츠 관리 API",
+    "summary": "이 API는 콘텐츠 관리 및 기사 처리를 용이하게 합니다. 기사, 콘텐츠 및 관련 작업을 처리하기 위한 엔드포인트를 제공하며, 여기에는 기사 상태 관리, 콘텐츠 표시 및 처리 모드가 포함됩니다.",
+    "keywords": [
+      "콘텐츠 관리",
+      "기사 처리",
+      "RESTful API",
+      "JSON",
+      "오류 코드",
+      "콘텐츠 상태",
+      "기사 상태",
+      "API 사양"
+    ],
+    "category": "콘텐츠 관리",
+    "tags": [
+      "article",
+      "content",
+      "REST",
+      "JSON",
+      "status",
+      "processing"
+    ],
+    "difficulty": "medium",
+    "importance": 4,
+    "use_cases": [
+      "기사 콘텐츠 및 메타데이터 관리",
+      "기사 상태 및 가시성 업데이트",
+      "다양한 모드 및 속도로 콘텐츠 처리",
+      "카테고리 및 ID를 기반으로 콘텐츠 검색"
+    ],
+    "related_apis": []
+  },
+  "metadata_translated_at": "2025-10-16T05:51:54"
+}

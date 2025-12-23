@@ -1,0 +1,40 @@
+======================================================================
+API SPECIFICATION SUMMARY
+======================================================================
+
+Endpoint: None /openapi/get_geo_coordinate_fake
+Description: Get geo coordinate API for testing
+
+Parameters (2):
+----------------------------------------------------------------------
+* url (string)
+   API URL endpoint
+  body (object)
+   Request body parameters
+  * timestamp (integer)
+     Current timestamp
+  * partner_id (integer)
+     Partner ID as assigned upon registration
+
+Response Fields (3):
+----------------------------------------------------------------------
+  error (string)
+   Error message
+  message (string)
+   Error message
+  response (mixed)
+   The successful content of the response
+
+Metadata:
+----------------------------------------------------------------------
+  total_chunks: 1
+  chunks_with_errors: 0
+  total_parameters_before_dedup: 2
+  total_parameters_after_dedup: 2
+  update_log_entries: 1
+  hidden_fields_count: 0
+  source_results: workspaces\v2.payment.get_item_installment_status\results\all_chunks_results.json
+
+======================================================================
+Legend: * = required parameter
+======================================================================

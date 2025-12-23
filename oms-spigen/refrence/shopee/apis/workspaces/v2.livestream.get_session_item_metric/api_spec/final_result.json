@@ -1,0 +1,96 @@
+{
+  "endpoint": null,
+  "method": null,
+  "description": null,
+  "parameters": [
+    {
+      "name": "URL",
+      "type": "string",
+      "required": true,
+      "description": "HTTP system parameter, contains URL information",
+      "children": []
+    },
+    {
+      "name": "URL_header",
+      "type": "string",
+      "required": true,
+      "description": "Header URL parameter",
+      "children": []
+    },
+    {
+      "name": "No_URL",
+      "type": "boolean",
+      "required": false,
+      "description": "Control parameter",
+      "children": []
+    },
+    {
+      "name": "carrier_id",
+      "type": "string",
+      "required": true,
+      "description": "Identifier for transportation/carrier service",
+      "children": []
+    },
+    {
+      "name": "img",
+      "type": "string",
+      "required": true,
+      "description": "Image data parameter",
+      "children": []
+    },
+    {
+      "name": "message_id",
+      "type": "string",
+      "required": true,
+      "description": "Message identifier",
+      "children": []
+    },
+    {
+      "name": "dir",
+      "type": "string",
+      "required": false,
+      "description": "Directory parameter",
+      "children": []
+    },
+    {
+      "name": "scale_val",
+      "type": "float",
+      "required": false,
+      "description": "Scaling value",
+      "children": []
+    },
+    {
+      "name": "width_val",
+      "type": "integer",
+      "required": false,
+      "description": "Width value parameter",
+      "children": []
+    },
+    {
+      "name": "height_val",
+      "type": "integer",
+      "required": false,
+      "description": "Height value parameter",
+      "children": []
+    },
+    {
+      "name": "config_path",
+      "type": "string",
+      "required": false,
+      "description": "Configuration file path",
+      "children": []
+    }
+  ],
+  "response_fields": [],
+  "update_log": [],
+  "hidden_fields": [],
+  "metadata": {
+    "total_chunks": 1,
+    "chunks_with_errors": 0,
+    "total_parameters_before_dedup": 11,
+    "total_parameters_after_dedup": 11,
+    "update_log_entries": 0,
+    "hidden_fields_count": 0,
+    "source_results": "workspaces\\v2.livestream.get_session_item_metric\\results\\all_chunks_results.json"
+  }
+}

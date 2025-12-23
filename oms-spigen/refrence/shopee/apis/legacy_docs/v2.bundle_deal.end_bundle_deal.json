@@ -1,0 +1,99 @@
+{
+  "endpoint": "/v2/bundle_deal/end/bundle_deal",
+  "method": null,
+  "description": "API endpoint for bundle deal operations",
+  "parameters": [
+    {
+      "name": "partner_id",
+      "type": "string",
+      "required": true,
+      "description": "Partner ID is assigned when registration is successful",
+      "children": []
+    },
+    {
+      "name": "access_token",
+      "type": "string",
+      "required": true,
+      "description": "Token for API verification using to identify your permission to access the system and execute it there",
+      "children": []
+    },
+    {
+      "name": "shop_id",
+      "type": "integer",
+      "required": true,
+      "description": "Shopee's unique identifier for a shop. Required param for partner",
+      "children": []
+    },
+    {
+      "name": "bundle_deal_id",
+      "type": "integer",
+      "required": true,
+      "description": "Shopee's unique identifier for a bundle deal",
+      "children": []
+    }
+  ],
+  "response_fields": [
+    {
+      "name": "msg",
+      "type": "string",
+      "description": "indicate error type if any. Empty if no error",
+      "children": []
+    },
+    {
+      "name": "message",
+      "type": "string",
+      "description": "indicate error details if any. Empty if no error",
+      "children": []
+    },
+    {
+      "name": "request_id",
+      "type": "string",
+      "description": "The identifier of the API request for error tracking",
+      "children": []
+    },
+    {
+      "name": "response",
+      "type": "object",
+      "description": "Detail information you are sending",
+      "children": []
+    },
+    {
+      "name": "bundle_deal_id",
+      "type": "integer",
+      "description": "Shopee's unique identifier for a bundle deal",
+      "children": []
+    }
+  ],
+  "update_log": [
+    {
+      "date": "2020-09-26",
+      "change": "Added help for beta parameters"
+    },
+    {
+      "date": "2020-07-24",
+      "change": "Added the 4.x update schedule"
+    },
+    {
+      "date": "2020-06-30",
+      "change": "Optimized the merged information of Request Parameter and Response Parameter"
+    },
+    {
+      "date": "2017-04-23",
+      "change": "update"
+    },
+    {
+      "date": "2017-03-09",
+      "change": "New API"
+    }
+  ],
+  "hidden_fields": [],
+  "metadata": {
+    "total_chunks": 1,
+    "chunks_with_errors": 0,
+    "total_parameters_before_dedup": 4,
+    "total_parameters_after_dedup": 4,
+    "update_log_entries": 5,
+    "hidden_fields_count": 0,
+    "source_results": "workspaces\\v2.bundle_deal.end_bundle_deal\\results\\all_chunks_results.json"
+  }
+}

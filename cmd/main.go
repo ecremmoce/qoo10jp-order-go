@@ -9,11 +9,11 @@ import (
 	"syscall"
 	"time"
 
-	"qoo10jp-order-go/internal/api"
-	"qoo10jp-order-go/internal/config"
-	"qoo10jp-order-go/internal/services"
-	"qoo10jp-order-go/pkg/redis"
-	"qoo10jp-order-go/pkg/supabase"
+	"shopee-order-go/internal/api"
+	"shopee-order-go/internal/config"
+	"shopee-order-go/internal/services"
+	"shopee-order-go/pkg/redis"
+	"shopee-order-go/pkg/supabase"
 
 	"github.com/gin-gonic/gin"
 	"github.com/joho/godotenv"
@@ -21,8 +21,8 @@ import (
 
 func main() {
 	// Load environment variables
-	if err := godotenv.Load("env"); err != nil {
-		log.Printf("No env file found: %v", err)
+	if err := godotenv.Load(".env"); err != nil {
+		log.Printf("No .env file found: %v", err)
 	}
 
 	// Load configuration
@@ -47,8 +47,9 @@ func main() {
 	// Initialize services
 	orderService := services.NewOrderService(supabaseClient, redisClient)
 	qoo10jpOrderService := services.NewQoo10JPOrderService(cfg, supabaseClient, redisClient)
+	shopeeOrderService := services.NewShopeeOrderService(cfg, supabaseClient)
 	schedulerService := services.NewSchedulerService(redisClient, supabaseClient, orderService)
-	workerService := services.NewWorkerService(cfg, schedulerService, cfg.Worker.Count)
+	workerService := services.NewWorkerService(cfg, schedulerService, shopeeOrderService, cfg.Worker.Count)
 
 	// Auto-start worker service
 	log.Println("Auto-starting worker service...")
@@ -56,15 +57,16 @@ func main() {
 
 	// Initialize API routes
 	router := gin.Default()
-	
+
 	// Serve static files (admin panel)
 	router.Static("/web", "./web")
 	router.GET("/", func(c *gin.Context) {
 		c.File("./web/admin.html")
 	})
-	
+
 	api.SetupRoutes(router, orderService)
 	api.SetupQoo10JPRoutes(router, qoo10jpOrderService)
+	api.SetupShopeeRoutes(router, shopeeOrderService)
 	api.SetupSchedulerRoutes(router, schedulerService, workerService)
 
 	// Create HTTP server
@@ -94,7 +96,7 @@ func main() {
 	// Shutdown server with timeout
 	ctx, cancel := context.WithTimeout(context.Background(), 30*time.Second)
 	defer cancel()
-	
+
 	if err := srv.Shutdown(ctx); err != nil {
 		log.Printf("Server forced to shutdown: %v", err)
 	}

@@ -1,0 +1,91 @@
+[
+  {
+    "chunk_index": 1,
+    "total_chunks": 1,
+    "endpoint": "/open/api/check_price_place_test",
+    "method": "POST",
+    "description": "A test endpoint for checking price placement",
+    "update_log": [
+      {
+        "date": "2023-12-27",
+        "change": "Add new feature statement"
+      },
+      {
+        "date": "2023-09-26",
+        "change": "Complete by feature allowance of Context-Parameter and Response Parameter"
+      },
+      {
+        "date": "2023-09-19",
+        "change": "Add new field in Context parameter"
+      }
+    ],
+    "parameters": [
+      {
+        "name": "symbol",
+        "type": "string",
+        "required": true,
+        "description": "Trading pair, format is [currency]_[base currency]",
+        "children": []
+      },
+      {
+        "name": "symbol_name",
+        "type": "string",
+        "required": false,
+        "description": "Symbol's parameter to symbol_id specific Reference",
+        "children": []
+      },
+      {
+        "name": "cfg_id",
+        "type": "string",
+        "required": false,
+        "description": "This is the cfg id link for checking cfg related parameter",
+        "children": []
+      }
+    ],
+    "response_fields": [
+      {
+        "name": "price_ctr",
+        "type": "string",
+        "required": true,
+        "description": "Describes the relative price grade factor in determining character value size. The more precise the value, the more precise the result.",
+        "children": []
+      },
+      {
+        "name": "price_cfg",
+        "type": "string",
+        "required": true,
+        "description": "If new items are available to define, you can specify a price cfg to check these parameters",
+        "children": []
+      }
+    ],
+    "error_codes": [
+      {
+        "code": "price_placed",
+        "description": "There is no display, there is empty"
+      },
+      {
+        "code": "price_place_failed",
+        "description": "Invalid basic field"
+      },
+      {
+        "code": "price_placed_id",
+        "description": "Missing digit"
+      }
+    ],
+    "notes": "The documentation includes several sections including command parameters, required parameters, and response parameters. There are also request/response examples and error codes listed. The update log shows regular maintenance and feature additions to the API.",
+    "chunk_metadata": {
+      "index": 1,
+      "total": 1,
+      "y_start": 0,
+      "y_end": 4966,
+      "overlap_top": 0,
+      "overlap_bottom": 0,
+      "height": 4966,
+      "path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\workspaces\\v2.shop_category.get_item_list\\chunks\\chunk_001.png",
+      "filename": "chunk_001.png",
+      "width": 837
+    },
+    "analysis_timestamp": "2025-10-10T06:46:49.818261",
+    "model": "claude-3-5-sonnet-20241022"
+  }
+]

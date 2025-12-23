@@ -1,0 +1,109 @@
+{
+  "chunk_index": 1,
+  "total_chunks": 1,
+  "endpoint": null,
+  "method": null,
+  "description": null,
+  "update_log": [],
+  "hidden_fields": [],
+  "parameters": [
+    {
+      "name": "call_type",
+      "type": "string",
+      "required": true,
+      "description": "Call type parameter",
+      "children": []
+    },
+    {
+      "name": "qty",
+      "type": "integer",
+      "required": true,
+      "description": "Quantity",
+      "children": []
+    },
+    {
+      "name": "side_effect_type",
+      "type": "string",
+      "required": true,
+      "description": "Side effect type",
+      "children": []
+    },
+    {
+      "name": "str_call_type",
+      "type": "string",
+      "required": true,
+      "description": "String call type",
+      "children": []
+    },
+    {
+      "name": "str_query",
+      "type": "string",
+      "required": true,
+      "description": "Query string",
+      "children": []
+    },
+    {
+      "name": "str_side_effect_type",
+      "type": "string",
+      "required": true,
+      "description": "String side effect type",
+      "children": []
+    },
+    {
+      "name": "str_status",
+      "type": "string",
+      "required": false,
+      "description": "Status string",
+      "children": []
+    },
+    {
+      "name": "str_time",
+      "type": "string",
+      "required": true,
+      "description": "Time string",
+      "children": []
+    }
+  ],
+  "response_fields": [
+    {
+      "name": "call_type",
+      "type": "string",
+      "description": "Call type"
+    },
+    {
+      "name": "side_effect_type",
+      "type": "string",
+      "description": "Side effect type"
+    },
+    {
+      "name": "sql_text",
+      "type": "string",
+      "description": "SQL text"
+    },
+    {
+      "name": "status",
+      "type": "string",
+      "description": "Status"
+    },
+    {
+      "name": "time",
+      "type": "string",
+      "description": "Time"
+    }
+  ],
+  "notes": "This appears to be API documentation for a database or SQL-related endpoint. The image shows both request parameters and response fields. The documentation seems to be focused on logging or monitoring SQL calls with various attributes like call type, side effects, and timing information.",
+  "chunk_metadata": {
+    "index": 1,
+    "total": 1,
+    "y_start": 0,
+    "y_end": 6806,
+    "overlap_top": 0,
+    "overlap_bottom": 0,
+    "height": 6806,
+    "path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\workspaces\\v2.sbs.get_stock_movement\\chunks\\chunk_001.png",
+    "filename": "chunk_001.png",
+    "width": 837
+  },
+  "analysis_timestamp": "2025-10-10T06:44:08.314878",
+  "model": "claude-3-5-sonnet-20241022"
+}

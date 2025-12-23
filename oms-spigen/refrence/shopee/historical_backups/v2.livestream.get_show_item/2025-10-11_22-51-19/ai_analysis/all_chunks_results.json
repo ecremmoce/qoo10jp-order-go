@@ -1,0 +1,121 @@
+[
+  {
+    "chunk_index": 1,
+    "total_chunks": 1,
+    "endpoint": "/openapi/self_video_scan",
+    "method": "POST",
+    "description": null,
+    "update_log": [],
+    "hidden_fields": [],
+    "parameters": [
+      {
+        "name": "session_id",
+        "type": "string",
+        "required": true,
+        "description": "Partner ID is assigned upon registration is successful",
+        "children": []
+      },
+      {
+        "name": "action_date",
+        "type": "string",
+        "required": true,
+        "description": "The time in AUT system, need to strictly synchronize to prevent record mismatches",
+        "children": []
+      },
+      {
+        "name": "sign",
+        "type": "string",
+        "required": true,
+        "description": "Digital signature (Generated as shown in doc)",
+        "children": []
+      }
+    ],
+    "response_fields": [
+      {
+        "name": "code",
+        "type": "string",
+        "required": true,
+        "description": "Image error test in full step, Empty is no error happened",
+        "children": []
+      },
+      {
+        "name": "message",
+        "type": "string",
+        "required": false,
+        "description": "Image error details if there are step errors",
+        "children": []
+      },
+      {
+        "name": "result_id",
+        "type": "string",
+        "required": true,
+        "description": "The identifier for up API request by each step",
+        "children": []
+      },
+      {
+        "name": "file_paths",
+        "type": "array",
+        "required": false,
+        "description": "Path information can be used for",
+        "children": []
+      },
+      {
+        "name": "step_no",
+        "type": "string",
+        "required": false,
+        "description": "The step of the face in the complete key of control results",
+        "children": []
+      },
+      {
+        "name": "error",
+        "type": "string",
+        "required": false,
+        "description": "Name of the face in your language",
+        "children": []
+      },
+      {
+        "name": "image_id",
+        "type": "string",
+        "required": false,
+        "description": "The image id of this step",
+        "children": []
+      },
+      {
+        "name": "user_data",
+        "type": "object",
+        "required": false,
+        "description": "The image hash code representing the contents",
+        "children": []
+      },
+      {
+        "name": "control_flag",
+        "type": "float",
+        "required": false,
+        "description": "The control end at the face in the being condition",
+        "children": []
+      },
+      {
+        "name": "original_price",
+        "type": "float",
+        "required": false,
+        "description": "The original price of the face in the being",
+        "children": []
+      }
+    ],
+    "notes": "This appears to be an API for video/image scanning with facial analysis capabilities. The documentation includes error codes and response fields related to step-by-step processing of images/video.",
+    "chunk_metadata": {
+      "index": 1,
+      "total": 1,
+      "y_start": 0,
+      "y_end": 4672,
+      "overlap_top": 0,
+      "overlap_bottom": 0,
+      "height": 4672,
+      "path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\platforms\\shopee\\apis\\workspaces\\v2.livestream.get_show_item\\chunks\\chunk_001.png",
+      "filename": "chunk_001.png",
+      "width": 837
+    },
+    "analysis_timestamp": "2025-10-11T22:51:18.555042",
+    "model": "claude-3-5-sonnet-20241022"
+  }
+]

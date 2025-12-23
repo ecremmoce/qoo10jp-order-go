@@ -1,0 +1,52 @@
+{
+  "document_id": "developer-guide.292",
+  "document_type": "guide",
+  "platform": "shopee",
+  "extracted_at": "2025-10-16T09:09:41",
+  "extracted_text": "# Passo a Passo Logística API\n\n## API Best Practices > Brand Coop API Best Prac... > Passo a Passo Logística API\n\n### Flow Diagram\n\n```\nv2.logistics.get_shipping_parameter\n          ↓\n      Drop Off ←→ Pick Up\n          ↓\n   v2.logistics.ship_order\n          ↓\nv2.logistics.get_tracking_number\n          ↓\nv2.logistics.get_airway_document_parameter\n          ↓\nv2.logistics.create_shipping_document\n          ↓\nv2.logistics.get_shipping_document_result\n          ↓\nv2.logistics.download_shipping_document\n          ↓\n         Fim\n```\n\n### Notes and Information Boxes\n\n**ℹ️ Note 1:**\nColete informações para organizar o envio. Endereço dos modes. Dose da ou vendedor que o pedido possa ser local enrico sem fazer verificações.\n\n**ℹ️ Note 2:**\nDepois de chamar essa API, o status do order para atualizará automaticamente para \"READY_TO_SHIP\" (Pós no Shopee). Use \"v2.order.get_order_list\" para chamar a lista de \"PROCESSED\".\n\n**ℹ️ Note 3:**\nPode ser chamado apenas mais cedo num o status o \"PROCESSED\". Se houver uma tentativa mal-sucedida (api terá um erro), não afectará o pedido do vendedor.\n\n**ℹ️ Note 4:**\nPodem ser dos tipos Normal AWB e Thermal AWB. Se a sua empresa de logistica não tiver que receber documento de envio, pode pular a etapa de obtenção documento e ir diretamente para a etapa de download de documento de envio.\n\n**ℹ️ Note 5:**\nA Etiqueta do pode ser criada depois que o TrackingNo for generated.\n\n**ℹ️ Note 6:**\nRetorna quando essa API retornar o status de todos os documentos de envio forem exibidos, você poderá baixar todos os documentos.\n\n**ℹ️ Note 7:**\nSe a etapa 6 não fornecer resultado, continue a chamar \"v2.logistics.get_shipping_document_result\" para obter o CDF para download. Se os TrackingNo,_init não são retornados, pode definir esse valor como nulo.\n\n---\n\n## O fluxo de chamadas na v2 opti relaciona aos canais de envio é conforme:\n\n### 1. A Shopee habilita o canal de envio para o vendedor (ex: Correios, aberto a todos os vendedores, Total Express, etc)\n\n### 2. Para verificar o canal logístico habilitado em sua loja\n\n1. Busca chamar o endpoint: v2.logistics.get_channel_list\n\n### 3. O vendedor deve obter o canal logístico para cada item de acordo a que fez liberado para seller p a prover (shopee logistics)\n\n1. Para habilitar/desabilitar os canais de envio do produto, v2.product.edit, item no v2.product.update_price, você prontado de logistic_info.logistic_id dentro de logistic_info.\n\n### 4. O vendedor recebe o pedido ja com o canal de envio selecionado pelo comprador\n\n### 5. Para saber se é preciso informar a NF-e para o pedido antes de fazer a organização de envio (ship_order), você pode:\n\n1. Use a chamada v2.order.get_order_detail, Cada com o params \"order_status\" \"INVOICE_PENDING\", \"READY_TO_SHIP\"\n2. Para informar a NF-e usa a chamada v2.order.add_invoice_data\n3. Após validar a etapa 5, expromo v2.logistics.get_shipping_parameter, v2.logistics.ship_order com param \"invoice_data\"\n\n### 6. Para fazer o ship e o drop para o nó v2.logistics.ship_order\n\n1. Dependendo do canal de envio selecionado pelo comprador, o vendedor irá postar o pedido ou esperar a coleta\n2. Para saber se o coleta (pickup) ou postagem (dropoff), v2.logistics.get_shipping_parameter\n3. Dropoff: o vendedor precisa enviar para logística. Depois de usar v2.logistics.ship_order\n4. Se for dropoff (mas se formos via Correios como dropoff), caso o info_needed for vazio (\"dropoff\" []), o request do ship_order deverá ser:\n\n```json\n{\n  \"order_sn\": \"12CR12DCXXXXX\",\n  \n  \"dropoff\": []\n}\n```\n\n### 8. Se for pickup (loop todos os outres não pickup, inclusive Coleta Correios) caso o info_needed tenha \"pickup\" (\"address_id\",\"pickup_time_id\"), a request do ship_order deverá ser:\n\n```json\n{\n  \"order_sn\": \"12CR12DCXXXXX\",\n  \n  \"pickup\": []\n}\n```\n\n**Example with parameters:**\n\n```json\n\"address_id\":10,box_address_list.address_id | in_get_address_list.n.ne.id do_self_ship(log_parameter)\n\n\"pickup_time_id\":10,box_address_list.time_slot_list.pickup_time_id do_self_ship(log_parameter)\n```\n\n---\n\n## 9. Depois disso, para obter o código de rastreio basta chamar o endpoint: v2.logistics.get_tracking_number\n\n### 10. Para obter os possíveis params para a etiqueta: v2.logistics.get_shipping_document_parameter\n\n1. Para obter os possíveis params para a etiqueta: v2.logistics.get_shipping_document_parameter (type \"NORMAL_AIR_WAYBILL\") retorna que a etiqueta pode ser gerada respectivamente em formato: pdf ou .zip (contém a etiqueta em .txt, tal em formato .ZPL que é uma linguagem de contexto)\n\n### 11. Para pedir para a Shopee gerar a etiqueta de um ou mais pedidos:\n\n1. Chamar v2.logistics.create_shipping_document\n2. E preciso enviar o parametro \"tracking_number\"\n\n### 12. Para saber se a etiqueta já foi gerada ou ainda está processada\n\n1. v2.logistics.get_shipping_document_resultHolder com response \"status\" \"READY\" ja podendo ter a etiqueta obtida\n\n### 13. Para obter a etiqueta (AIR WAYBILL) para esse processo para Shopee:\n\n1. v2.logistics.download_shipping_document\n\n---\n\n## Mais detalhes sobre o fluxo de chamadas de pedidos pode ser encontrado em nossa documentação da seção Tracking Shipment & Get TrackingNo & Print AirwayBill:\n\n[https://open.shopee.com/developer/public/v2](https://open.shopee.com/developer/public/v2)\n\n---\n\n## FAQ\n\n### Todos os envios são feitos com canais de envio (transportadoras) direto com a Shopee\n\nR: Não, a Shopee é livre e pago pelo vendedor\n\n---\n\n### Todas as etiquetas de envio são geradas pela Shopee, ou vendedor ou Integradora/ERP nunca deve gerar a etiquetai?\n\nR: Se houver uma etiqueta, a etiqueta precisa se obida da Shopee através da v2.logistics.download_shipping_document\n\n---\n\n### Cada vendedor possui um único canal de envio, ou seja, diferentes vendedores podem ter acesso a diferentes canais de envio\n\nR: Sim, cada vendedor é um acesso no Correios, e o vendedor 2 possui acesso somente a Loggi\n\n---\n\n### A Shopee pode habilitar ou desabilitar o acesso de um vendedor a um canal de envio a qualquer momento:\n\nR: Sim\n\n---\n\n### O vendedor pode entrar a NF-e cade limite que deseja pela Shopee Geren Invoice Issue\n\nR: Sim\n\n---\n\n### Quando recebemos os dados da NF-e, avaliamos se:\n\n1. Total do pedido (p.e.item_price * qty) é igual Na nota pedido, caso o minima chave seja informações Falsas em item_price\n2. Os items enviados (apenas sku) estão no pedido (de outro items sera ignorado)\n3. A relacao de numero de NF-e e os dados que o vendedor informou no cadastro da Shopee (CNPJ e UF), ou nos outros campos da NF-e nulos, (apenas tal que numero da NF-e sera validado)\n4. Se a data da NF-e é posterior a data de pagamento do pedido (se completado)\n\n---\n\n### Referencias:\n\n1. V1: https://open.shopee.com/documents?module=63\n2. V2: https://open.shopee.com/documents?version=2",
+  "metadata": {
+    "title": "Passo a Passo Logística API",
+    "summary": "This guide provides a step-by-step walkthrough of the Logistics API, detailing the flow of calls and best practices for integrating with Shopee's logistics services. It covers various scenarios, including shipping document generation, tracking, and handling different shipping channels.",
+    "keywords": [
+      "Logistics API",
+      "Shipping",
+      "Tracking",
+      "Shipping Documents",
+      "Shipping Channels",
+      "Order Management",
+      "Shopee API",
+      "v2 API"
+    ],
+    "category": "Best Practices",
+    "tags": [
+      "logistics",
+      "shipping",
+      "api",
+      "integration",
+      "workflow"
+    ],
+    "difficulty": "medium",
+    "importance": 4,
+    "use_cases": [
+      "Automating shipping processes",
+      "Generating shipping documents",
+      "Tracking order status",
+      "Integrating with different shipping carriers",
+      "Managing shipping channels"
+    ],
+    "related_apis": [
+      "v2.logistics.get_shipping_parameter",
+      "v2.logistics.ship_order",
+      "v2.logistics.get_tracking_number",
+      "v2.logistics.get_airway_document_parameter",
+      "v2.logistics.create_shipping_document",
+      "v2.logistics.get_shipping_document_result",
+      "v2.logistics.download_shipping_document",
+      "v2.logistics.get_channel_list",
+      "v2.product.edit",
+      "v2.product.update_price",
+      "v2.order.get_order_detail",
+      "v2.order.add_invoice_data"
+    ]
+  }
+}

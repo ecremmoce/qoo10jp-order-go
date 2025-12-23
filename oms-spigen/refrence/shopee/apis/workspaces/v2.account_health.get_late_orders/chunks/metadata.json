@@ -1,0 +1,24 @@
+{
+  "source_image": "workspaces\\v2.account_health.get_late_orders\\screenshot.png",
+  "source_dimensions": {
+    "width": 837,
+    "height": 3868
+  },
+  "total_chunks": 1,
+  "max_chunk_height": 8000,
+  "overlap": 500,
+  "chunks": [
+    {
+      "index": 1,
+      "total": 1,
+      "y_start": 0,
+      "y_end": 3868,
+      "overlap_top": 0,
+      "overlap_bottom": 0,
+      "height": 3868,
+      "path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\workspaces\\v2.account_health.get_late_orders\\chunks\\chunk_001.png",
+      "filename": "chunk_001.png",
+      "width": 837
+    }
+  ]
+}

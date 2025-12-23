@@ -1,0 +1,103 @@
+{
+  "chunk_index": 1,
+  "total_chunks": 1,
+  "endpoint": "/blockchain/mining/earning_parameter",
+  "method": "GET",
+  "description": "Used to retrieve mining earnings parameters",
+  "update_log": [
+    {
+      "date": "2023-05-25",
+      "change": "Second parameter update time"
+    }
+  ],
+  "parameters": [
+    {
+      "name": "primary_params",
+      "type": "object",
+      "required": true,
+      "description": "Primary parameters",
+      "children": [
+        {
+          "name": "string_id",
+          "type": "string",
+          "required": true,
+          "description": "Support string identifier for mining"
+        }
+      ]
+    },
+    {
+      "name": "response_params",
+      "type": "object",
+      "required": true,
+      "description": "Response parameters",
+      "children": [
+        {
+          "name": "epoch_h",
+          "type": "string",
+          "required": true,
+          "description": "The height for an epoch begins"
+        },
+        {
+          "name": "interval",
+          "type": "integer",
+          "required": true,
+          "description": "Interval between up and down blocks"
+        },
+        {
+          "name": "ratio",
+          "type": "string",
+          "required": true,
+          "description": "Down difference up and down"
+        },
+        {
+          "name": "mining_params",
+          "type": "object",
+          "required": true,
+          "description": "Mining parameters",
+          "children": [
+            {
+              "name": "total",
+              "type": "string",
+              "required": true,
+              "description": "Total coins mined"
+            },
+            {
+              "name": "mining_tex",
+              "type": "string",
+              "required": true,
+              "description": "The value of mining tex"
+            },
+            {
+              "name": "rate",
+              "type": "float",
+              "required": true,
+              "description": "The value of yearly interest"
+            },
+            {
+              "name": "amount",
+              "type": "string",
+              "required": true,
+              "description": "The value of monthly interest"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "response_fields": [],
+  "notes": "The documentation shows both request and response parameters with nested structures. There appear to be example responses and error codes below but they are partially cut off in the image.",
+  "chunk_metadata": {
+    "index": 1,
+    "total": 1,
+    "y_start": 0,
+    "y_end": 5336,
+    "overlap_top": 0,
+    "overlap_bottom": 0,
+    "height": 5336,
+    "path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\workspaces\\v2.logistics.get_booking_shipping_parameter\\chunks\\chunk_001.png",
+    "filename": "chunk_001.png",
+    "width": 837
+  },
+  "analysis_timestamp": "2025-10-10T06:03:16.867428",
+  "model": "claude-3-5-sonnet-20241022"
+}

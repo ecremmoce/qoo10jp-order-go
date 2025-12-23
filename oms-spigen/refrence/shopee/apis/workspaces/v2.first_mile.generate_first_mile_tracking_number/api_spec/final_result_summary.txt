@@ -1,0 +1,36 @@
+======================================================================
+API SPECIFICATION SUMMARY
+======================================================================
+
+Endpoint: None test/api/parameter/kce_site_tracking_number
+
+Parameters (7):
+----------------------------------------------------------------------
+* URL (string)
+   https://openplatform.crispshop.tech/{environment}/kce_site_tracking_number
+* environment (string)
+   The value must be set according to your requirements
+  request_id (string)
+   The identifier for an API request life cycle
+  lang (string)
+   Language to be used in the response
+  timestamp (string)
+   Request timestamp
+* kce_site_tracking_number (string)
+   The kce site tracking number parameter
+* sign (string)
+   Signature parameter to protect all API data from being tampered with during transmission
+
+Metadata:
+----------------------------------------------------------------------
+  total_chunks: 1
+  chunks_with_errors: 0
+  total_parameters_before_dedup: 7
+  total_parameters_after_dedup: 7
+  update_log_entries: 1
+  hidden_fields_count: 0
+  source_results: workspaces\v2.first_mile.generate_first_mile_tracking_number\results\all_chunks_results.json
+
+======================================================================
+Legend: * = required parameter
+======================================================================

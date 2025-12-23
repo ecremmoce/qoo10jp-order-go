@@ -1,0 +1,103 @@
+{
+  "chunk_index": 1,
+  "total_chunks": 1,
+  "endpoint": "/v2/product/get_main_item_list",
+  "method": "GET",
+  "description": "Get main item list",
+  "update_log": [
+    {
+      "date": "2024-03-27",
+      "change": "New API"
+    }
+  ],
+  "parameters": [
+    {
+      "name": "partner_id",
+      "type": "int",
+      "required": true,
+      "description": "Partner ID is a unique user registration id successful",
+      "children": []
+    },
+    {
+      "name": "timestamp",
+      "type": "timestamp",
+      "required": true,
+      "description": "This is to calculate the timestamp of the request. Required for all requests.",
+      "children": []
+    },
+    {
+      "name": "access_token",
+      "type": "string",
+      "required": true,
+      "description": "The token for API access, used to identify user permissions to call API.",
+      "children": []
+    },
+    {
+      "name": "shop_id",
+      "type": "string",
+      "required": true,
+      "description": "Shopee's unique identifier for a shop. Required",
+      "children": []
+    },
+    {
+      "name": "sign",
+      "type": "string",
+      "required": true,
+      "description": "Unique identifier for partnering system.",
+      "children": []
+    }
+  ],
+  "response_fields": [
+    {
+      "name": "error",
+      "type": "string",
+      "description": "Indicate error type if error occurred",
+      "children": []
+    },
+    {
+      "name": "message",
+      "type": "string",
+      "description": "Indicate error details if error occurred",
+      "children": []
+    },
+    {
+      "name": "warning",
+      "type": "string",
+      "description": "Indicate warning details if warning. Empty if no warning",
+      "children": []
+    },
+    {
+      "name": "request_id",
+      "type": "string",
+      "description": "The identifier for an API request for your reference",
+      "children": []
+    },
+    {
+      "name": "direct_item_id",
+      "type": "int64",
+      "description": "Item ID of direct shop",
+      "children": []
+    },
+    {
+      "name": "main_item_id",
+      "type": "int64",
+      "description": "ID of main shop",
+      "children": []
+    }
+  ],
+  "notes": "The documentation includes Common Parameters, Request Parameters, Response Parameters, Request Example, Response Example, Error Example, Error Codes, and API Permissions sections. Multiple URLs are provided for different regions (Global, Chinese Mainland, Brazil, etc.).",
+  "chunk_metadata": {
+    "index": 1,
+    "total": 1,
+    "y_start": 0,
+    "y_end": 3840,
+    "overlap_top": 0,
+    "overlap_bottom": 0,
+    "height": 3840,
+    "path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\workspaces\\v2.product.get_main_item_list\\chunks\\chunk_001.png",
+    "filename": "chunk_001.png",
+    "width": 837
+  },
+  "analysis_timestamp": "2025-10-10T06:29:57.131790",
+  "model": "claude-3-5-sonnet-20241022"
+}

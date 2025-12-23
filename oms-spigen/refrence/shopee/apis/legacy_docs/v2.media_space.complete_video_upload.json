@@ -1,0 +1,65 @@
+{
+  "endpoint": "/media_space_complete_video_upload",
+  "method": "POST",
+  "description": "API for video upload and save to processing queue when all parts are uploaded successfully",
+  "parameters": [
+    {
+      "name": "partner_id",
+      "type": "int",
+      "required": true,
+      "description": "Partner ID (≥ assigned user registration in hierarchy) Provided by all requests",
+      "children": []
+    },
+    {
+      "name": "media_id",
+      "type": "string",
+      "required": true,
+      "description": "The media identifier by the system. Returned by previous operations",
+      "children": []
+    },
+    {
+      "name": "code_type",
+      "type": "string",
+      "required": true,
+      "description": "Standard parameters provided by platform, ok: all done, something just occurred",
+      "children": []
+    }
+  ],
+  "response_fields": [
+    {
+      "name": "message",
+      "type": "string",
+      "description": "Indicate error details if any error. Empty if no error happened",
+      "children": []
+    },
+    {
+      "name": "request_id",
+      "type": "string",
+      "description": "The identifier of this upload request, used to track system error (internal use) and can be ignored during normal system operation",
+      "children": []
+    },
+    {
+      "name": "error",
+      "type": "string",
+      "description": "Indicate error type if an error. Empty if no error happened",
+      "children": []
+    },
+    {
+      "name": "warning",
+      "type": "string",
+      "description": "Warning message",
+      "children": []
+    }
+  ],
+  "update_log": [],
+  "hidden_fields": [],
+  "metadata": {
+    "total_chunks": 1,
+    "chunks_with_errors": 0,
+    "total_parameters_before_dedup": 3,
+    "total_parameters_after_dedup": 3,
+    "update_log_entries": 0,
+    "hidden_fields_count": 0,
+    "source_results": "workspaces\\v2.media_space.complete_video_upload\\results\\all_chunks_results.json"
+  }
+}

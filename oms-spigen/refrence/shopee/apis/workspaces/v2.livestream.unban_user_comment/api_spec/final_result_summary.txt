@@ -1,0 +1,38 @@
+======================================================================
+API SPECIFICATION SUMMARY
+======================================================================
+
+Endpoint: None /v2/benchmark/obtain_user_comment
+Description: Obtain a user item posting comment
+
+Parameters (2):
+----------------------------------------------------------------------
+* partner_id (int64)
+   The identifier of benchmark session
+* obtain_order_id (int64)
+   The order ID that call be understand from posting comments
+
+Response Fields (4):
+----------------------------------------------------------------------
+  success (boolean)
+   Indicate when type first time. Empty if no error happened
+  message (string)
+   The error text when error happened
+  request_id (string)
+   The identifier for call API request for error tracing
+  response (object)
+   Detail information you are querying
+
+Metadata:
+----------------------------------------------------------------------
+  total_chunks: 1
+  chunks_with_errors: 0
+  total_parameters_before_dedup: 2
+  total_parameters_after_dedup: 2
+  update_log_entries: 1
+  hidden_fields_count: 0
+  source_results: workspaces\v2.livestream.unban_user_comment\results\all_chunks_results.json
+
+======================================================================
+Legend: * = required parameter
+======================================================================

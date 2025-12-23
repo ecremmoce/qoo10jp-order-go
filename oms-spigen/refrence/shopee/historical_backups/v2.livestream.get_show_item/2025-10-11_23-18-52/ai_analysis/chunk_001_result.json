@@ -1,0 +1,127 @@
+{
+  "chunk_index": 1,
+  "total_chunks": 1,
+  "endpoint": "/openapi/get_video_sum",
+  "method": "GET",
+  "description": null,
+  "update_log": [
+    {
+      "date": "2024-01-24",
+      "change": "API created"
+    }
+  ],
+  "parameters": [
+    {
+      "name": "content_id",
+      "type": "string",
+      "required": true,
+      "description": "Format ID is assigned after registration is successful",
+      "children": []
+    },
+    {
+      "name": "access_token",
+      "type": "string",
+      "required": true,
+      "description": "The login API is valid; users is directly sent passwords to OpenAPI.",
+      "children": []
+    },
+    {
+      "name": "sign",
+      "type": "string",
+      "required": true,
+      "description": "signature calculation method",
+      "children": []
+    }
+  ],
+  "response_fields": [
+    {
+      "name": "text",
+      "type": "string",
+      "description": "Original pure text of the text. Empty is no error happened.",
+      "children": []
+    },
+    {
+      "name": "timestamp",
+      "type": "string",
+      "description": "Original pure speech in the text. Empty if no error happened.",
+      "children": []
+    },
+    {
+      "name": "result_id",
+      "type": "string",
+      "description": "The identifier for an ASR request by each speech.",
+      "children": []
+    },
+    {
+      "name": "time_start",
+      "type": "float",
+      "description": "Each time interval can be start tag.",
+      "children": []
+    },
+    {
+      "name": "time_end",
+      "type": "float",
+      "description": "Each time interval can be ending tag.",
+      "children": []
+    },
+    {
+      "name": "status",
+      "type": "string",
+      "description": "Name of the text in your language",
+      "children": []
+    },
+    {
+      "name": "image_url",
+      "type": "string",
+      "description": "The image url of this item",
+      "children": []
+    },
+    {
+      "name": "channel",
+      "type": "float",
+      "description": "The layout code representing the content and data of the text",
+      "children": []
+    },
+    {
+      "name": "content_type",
+      "type": "float",
+      "description": "The content type of the text in the being processed. Content_type=0",
+      "children": []
+    },
+    {
+      "name": "original_type",
+      "type": "float",
+      "description": "The original type of the text in the being processed",
+      "children": []
+    }
+  ],
+  "error_codes": [
+    {
+      "code": "error_404",
+      "description": "Server side failed"
+    },
+    {
+      "code": "error_403",
+      "description": "You are not authorized"
+    },
+    {
+      "code": "error_parent",
+      "description": "These parameters {0} must is not empty in list"
+    }
+  ],
+  "notes": "This appears to be an API for video summarization or text extraction from video content. It includes comprehensive error handling and response fields for timing, content status and metadata.",
+  "chunk_metadata": {
+    "index": 1,
+    "total": 1,
+    "y_start": 0,
+    "y_end": 4672,
+    "overlap_top": 0,
+    "overlap_bottom": 0,
+    "height": 4672,
+    "path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\platforms\\shopee\\apis\\workspaces\\v2.livestream.get_show_item\\chunks\\chunk_001.png",
+    "filename": "chunk_001.png",
+    "width": 837
+  },
+  "analysis_timestamp": "2025-10-11T23:18:52.220922",
+  "model": "claude-3-5-sonnet-20241022"
+}

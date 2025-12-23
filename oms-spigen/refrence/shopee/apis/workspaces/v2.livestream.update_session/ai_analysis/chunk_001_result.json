@@ -1,0 +1,104 @@
+{
+  "chunk_index": 1,
+  "total_chunks": 1,
+  "endpoint": "/headwearsdk/update_session",
+  "method": "POST",
+  "description": "Headwear SDK update session endpoint",
+  "update_log": [
+    {
+      "date": "2020-08-24",
+      "change": "New API"
+    }
+  ],
+  "parameters": [
+    {
+      "name": "session_id",
+      "type": "string",
+      "required": true,
+      "description": "The identifier of headwear session",
+      "children": []
+    },
+    {
+      "name": "member_id",
+      "type": "string",
+      "required": false,
+      "description": "The description of the headwear session current ISD transaction",
+      "children": []
+    },
+    {
+      "name": "cover_photo_url",
+      "type": "string",
+      "required": true,
+      "description": "The cover image url of the headwear session, must be PNG format and upload the session image file and get its cover_photo_url",
+      "children": []
+    },
+    {
+      "name": "is_add",
+      "type": "boolean",
+      "required": true,
+      "description": "Indicate whether the headwear session IDs you received add",
+      "children": []
+    }
+  ],
+  "response_fields": [
+    {
+      "name": "error",
+      "type": "string",
+      "description": "Indicate error type if any error. Empty if no error",
+      "children": []
+    },
+    {
+      "name": "message",
+      "type": "string",
+      "description": "Indicate error details if any error. Empty if no response",
+      "children": []
+    },
+    {
+      "name": "request_id",
+      "type": "string",
+      "description": "The identifier for an API request for error tracking",
+      "children": []
+    }
+  ],
+  "error_codes": [
+    {
+      "code": "error_data",
+      "description": "data not exist"
+    },
+    {
+      "code": "error_data",
+      "description": "incorrect session"
+    },
+    {
+      "code": "error_data",
+      "description": "The description cannot exceed 100 characters"
+    },
+    {
+      "code": "error_param",
+      "description": "Invalid cover_photo_url"
+    },
+    {
+      "code": "error_param",
+      "description": "Invalid session_id"
+    },
+    {
+      "code": "error_auth",
+      "description": "You are not authorized"
+    }
+  ],
+  "notes": "The documentation includes several error codes and their descriptions, as well as request and response examples in multiple programming languages including Python and cURL.",
+  "chunk_metadata": {
+    "index": 1,
+    "total": 1,
+    "y_start": 0,
+    "y_end": 4386,
+    "overlap_top": 0,
+    "overlap_bottom": 0,
+    "height": 4386,
+    "path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\workspaces\\v2.livestream.update_session\\chunks\\chunk_001.png",
+    "filename": "chunk_001.png",
+    "width": 837
+  },
+  "analysis_timestamp": "2025-10-10T05:58:15.803011",
+  "model": "claude-3-5-sonnet-20241022"
+}

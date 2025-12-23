@@ -1,0 +1,68 @@
+{
+  "endpoint": null,
+  "method": null,
+  "description": null,
+  "parameters": [
+    {
+      "name": "url",
+      "type": "string",
+      "required": true,
+      "description": "The image processing origin/base endpoint",
+      "children": []
+    },
+    {
+      "name": "width",
+      "type": "string",
+      "required": false,
+      "description": "Width of the image",
+      "children": []
+    },
+    {
+      "name": "height",
+      "type": "string",
+      "required": false,
+      "description": "Height of the image",
+      "children": []
+    },
+    {
+      "name": "quality",
+      "type": "string",
+      "required": false,
+      "description": "Quality parameter from 0-100",
+      "children": []
+    },
+    {
+      "name": "format",
+      "type": "string",
+      "required": false,
+      "description": "Output format type (jpg, png, etc)",
+      "children": []
+    },
+    {
+      "name": "rotate",
+      "type": "string",
+      "required": false,
+      "description": "Rotation angle in degrees",
+      "children": []
+    },
+    {
+      "name": "delivery_url",
+      "type": "string",
+      "required": false,
+      "description": "A delivery URL to use if the base endpoint is not specified",
+      "children": []
+    }
+  ],
+  "response_fields": [],
+  "update_log": [],
+  "hidden_fields": [],
+  "metadata": {
+    "total_chunks": 1,
+    "chunks_with_errors": 0,
+    "total_parameters_before_dedup": 7,
+    "total_parameters_after_dedup": 7,
+    "update_log_entries": 0,
+    "hidden_fields_count": 0,
+    "source_results": "workspaces\\v2.product.register_brand\\results\\all_chunks_results.json"
+  }
+}

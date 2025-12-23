@@ -11,6 +11,7 @@ type Config struct {
 	Redis    RedisConfig
 	N8N      N8NConfig
 	Qoo10JP  Qoo10JPConfig
+	Shopee   ShopeeConfig
 	Worker   WorkerConfig
 	Webhook  WebhookConfig
 }
@@ -43,6 +44,12 @@ type Qoo10JPConfig struct {
 	APIKey    string
 	APISecret string
 	BaseURL   string
+}
+
+type ShopeeConfig struct {
+	PartnerID  int64
+	PartnerKey string
+	BaseURL    string
 }
 
 type WorkerConfig struct {
@@ -80,6 +87,11 @@ func Load() *Config {
 			APISecret: getEnv("QOO10JP_API_SECRET", ""),
 			BaseURL:   getEnv("QOO10JP_BASE_URL", "https://api.qoo10.jp"),
 		},
+		Shopee: ShopeeConfig{
+			PartnerID:  getEnvInt64("SHOPEE_PARTNER_ID", 0),
+			PartnerKey: getEnv("SHOPEE_PARTNER_KEY", ""),
+			BaseURL:    getEnv("SHOPEE_BASE_URL", "https://partner.shopeemobile.com"),
+		},
 		Worker: WorkerConfig{
 			Count: getEnvInt("WORKER_COUNT", 3),
 		},
@@ -99,6 +111,15 @@ func getEnv(key, defaultValue string) string {
 func getEnvInt(key string, defaultValue int) int {
 	if value := os.Getenv(key); value != "" {
 		if intValue, err := strconv.Atoi(value); err == nil {
+			return intValue
+		}
+	}
+	return defaultValue
+}
+
+func getEnvInt64(key string, defaultValue int64) int64 {
+	if value := os.Getenv(key); value != "" {
+		if intValue, err := strconv.ParseInt(value, 10, 64); err == nil {
 			return intValue
 		}
 	}

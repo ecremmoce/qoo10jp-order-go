@@ -1,0 +1,109 @@
+[
+  {
+    "chunk_index": 1,
+    "total_chunks": 1,
+    "endpoint": null,
+    "method": null,
+    "description": null,
+    "update_log": [],
+    "parameters": [
+      {
+        "name": "URL",
+        "type": "string",
+        "required": true,
+        "description": "Base system endpoints URL",
+        "children": []
+      },
+      {
+        "name": "URL_Global",
+        "type": "string",
+        "required": true,
+        "description": "Global endpoints URL",
+        "children": []
+      },
+      {
+        "name": "appid_x",
+        "type": "string",
+        "required": true,
+        "description": "Required for transaction apps",
+        "children": []
+      },
+      {
+        "name": "timestamp",
+        "type": "timestamp",
+        "required": true,
+        "description": "Request timestamp",
+        "children": []
+      },
+      {
+        "name": "version",
+        "type": "string",
+        "required": true,
+        "description": "API version identifier",
+        "children": []
+      },
+      {
+        "name": "msg",
+        "type": "string",
+        "required": false,
+        "description": "Error message details",
+        "children": []
+      },
+      {
+        "name": "language",
+        "type": "string",
+        "required": false,
+        "description": "Language preference setting",
+        "children": []
+      },
+      {
+        "name": "config_price",
+        "type": "float",
+        "required": false,
+        "description": "Price configuration value",
+        "children": []
+      },
+      {
+        "name": "config_price_x",
+        "type": "float",
+        "required": false,
+        "description": "Extended price configuration",
+        "children": []
+      },
+      {
+        "name": "commodity_info",
+        "type": "string",
+        "required": false,
+        "description": "Commodity information",
+        "children": []
+      }
+    ],
+    "response_fields": [
+      {
+        "name": "error_code",
+        "type": "integer",
+        "description": "Error code value"
+      },
+      {
+        "name": "error_param",
+        "type": "string",
+        "description": "Parameter causing error"
+      }
+    ],
+    "notes": "The documentation appears to be a combination of common parameters, request parameters, and error handling fields. Some sections appear to be truncated or partially visible in the image.",
+    "chunk_metadata": {
+      "index": 1,
+      "total": 1,
+      "y_start": 0,
+      "y_end": 5199,
+      "overlap_top": 0,
+      "overlap_bottom": 0,
+      "height": 5199,
+      "path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\workspaces\\v2.livestream.get_like_item_list\\chunks\\chunk_001.png",
+      "filename": "chunk_001.png",
+      "width": 837
+    },
+    "analysis_timestamp": "2025-10-10T05:55:54.640114",
+    "model": "claude-3-5-sonnet-20241022"
+  }
+]

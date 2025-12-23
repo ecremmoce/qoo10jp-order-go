@@ -1,0 +1,43 @@
+======================================================================
+API SPECIFICATION SUMMARY
+======================================================================
+
+Endpoint: None None
+
+Parameters (6):
+----------------------------------------------------------------------
+* url (string)
+   Base URL parameter
+* url_prepare_download (string)
+   URL for prepare download action
+* url_m3u8 (string)
+   URL for m3u8 resource
+* storage_id (string)
+   The media ID of object
+  progress_callback_interval (string)
+   Time interval to call back
+  progress_callback_method (string)
+   The time interval to call back
+
+Response Fields (3):
+----------------------------------------------------------------------
+  result_id (string)
+   The result is an M3U request for each
+  download (string)
+   The new description
+  media_id (string)
+   The media number of object
+
+Metadata:
+----------------------------------------------------------------------
+  total_chunks: 1
+  chunks_with_errors: 0
+  total_parameters_before_dedup: 6
+  total_parameters_after_dedup: 6
+  update_log_entries: 0
+  hidden_fields_count: 0
+  source_results: workspaces\v2.returns.offer\results\all_chunks_results.json
+
+======================================================================
+Legend: * = required parameter
+======================================================================

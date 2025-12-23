@@ -1,0 +1,43 @@
+{
+  "document_id": "developer-guide.16",
+  "document_type": "guide",
+  "platform": "shopee",
+  "content_ko": "# API 호출\n\n**최종 업데이트: 2025-09-22**\n\n지원 언어: English / 简体中文 / 繁體中文 / Português / ไทย\n\n⚠️ **참고:** 이 가이드는 Shopee Open API v2.0에 대한 API 호출에만 적용됩니다.\n\n## API 도메인\n\n사용 가능한 도메인은 3개입니다.\n\n### 프로덕션 환경\n- https://openplatform.shopee.cn/ — 중국 본토 근처에 서비스를 배포한 개발자용\n- https://openplatform.shopee.com.br/ — 미국 근처에 서비스를 배포한 개발자용\n- https://partner.shopeemobile.com/ — 싱가포르 근처에 서비스를 배포한 개발자용\n\n### 샌드박스 환경\n- https://partner.test-stable.shopeemobile.com/ — 모든 개발자용\n\nOpen API에 액세스하는 서버 위치에 따라 올바른 도메인 이름을 선택하십시오.\n\n## API 요청 메서드\n\n현재 Open API는 GET 및 POST의 두 가지 요청 메서드만 제공합니다.\n\n## API 프로토콜\n\n대부분의 API는 HTTP/JSON을 사용합니다. 파일 업로드를 위한 API와 같이 특정 API의 경우 HTTP/FORM을 사용합니다.\n\n## API 요청 파라미터\n\nAPI 문서에는 다음과 같은 두 가지 유형의 요청 파라미터가 있습니다.\n\n1. 공통 파라미터 (Common parameter)\n2. 요청 파라미터 (Request parameter)\n\nGET 유형 API의 경우 이러한 두 파라미터가 동시에 존재하거나 공통 파라미터만 존재할 수 있습니다.\n\nPOST 유형 API의 경우 이러한 두 파라미터가 동시에 존재합니다.\n\n---\n\n## 탐색 링크 (오른쪽 사이드바)\n\n- API 도메인\n- API 요청 메서드\n- API 프로토콜\n- API 요청 파라미터\n- Open API 유형\n- 서명 계산\n- API 요청 샘플\n- API 응답 파라미터\n- API 기능\n- API 관련 문제\n\n---\n\n## 왼쪽 사이드바 - 목차\n\n### 시작하기\n- 소개\n- 개발자 계정 등록\n- 앱 관리\n- **API 호출** (현재 페이지)\n- 푸시 메커니즘 알림\n- 인증 및 권한 부여\n- 샌드박스 테스트 V2\n- 서비스 파트너 프로그램\n- V2.0 API 호출 흐름\n- CNSC API 통합 가이드\n- KRSC API 통합 가이드\n- V2.0 데이터 정의\n\n### API 모범 사례\n- 제품 생성 지침\n- 제품 생성 준비\n- 제품 생성\n- 글로벌 제품 생성\n- 글로벌 제품 게시\n- 옵션 관리\n- 제품 기본 정보 관리\n- 재고 및 가격 관리\n- 주문 관리\n- First Mile 바인딩",
+  "translated_at": "2025-10-16T08:05:09",
+  "char_count": 1328,
+  "metadata_ko": {
+    "title": "API 호출",
+    "summary": "본 가이드는 Shopee Open API v2.0에 대한 API 호출 방법에 대한 정보를 제공합니다. API 도메인, 요청 메서드, 프로토콜 및 파라미터(GET 및 POST 요청에 대한 공통 및 요청 파라미터 포함)를 다룹니다.",
+    "keywords": [
+      "API 호출",
+      "Shopee Open API",
+      "API 도메인",
+      "요청 메서드",
+      "API 프로토콜",
+      "요청 파라미터",
+      "GET",
+      "POST"
+    ],
+    "category": "시작하기",
+    "tags": [
+      "API",
+      "Open API",
+      "통합",
+      "Request Methods",
+      "Parameters"
+    ],
+    "difficulty": "중간",
+    "importance": 5,
+    "use_cases": [
+      "Shopee의 Open API와 통합",
+      "Shopee에 API 요청하기",
+      "API 요청 메서드 이해하기",
+      "API 파라미터 처리하기",
+      "올바른 API 도메인 선택하기"
+    ],
+    "related_apis": [
+      "Shopee Open API v2.0"
+    ]
+  },
+  "metadata_translated_at": "2025-10-16T08:05:11"
+}

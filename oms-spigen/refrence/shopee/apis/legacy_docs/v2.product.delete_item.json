@@ -1,0 +1,47 @@
+{
+  "endpoint": null,
+  "method": null,
+  "description": null,
+  "parameters": [
+    {
+      "name": "url",
+      "type": "string",
+      "required": true,
+      "description": "The target API URL",
+      "children": []
+    },
+    {
+      "name": "img_client",
+      "type": "string",
+      "required": false,
+      "description": "This is to display the hierarchy of the request. Required to distinguish if client is Chinese",
+      "children": []
+    },
+    {
+      "name": "article_type",
+      "type": "string",
+      "required": false,
+      "description": "The type to tell article using to decide user preference in order to process data",
+      "children": []
+    },
+    {
+      "name": "img_id",
+      "type": "string",
+      "required": false,
+      "description": "Identifies server-side numerical id: pids, file_path",
+      "children": []
+    }
+  ],
+  "response_fields": [],
+  "update_log": [],
+  "hidden_fields": [],
+  "metadata": {
+    "total_chunks": 1,
+    "chunks_with_errors": 0,
+    "total_parameters_before_dedup": 4,
+    "total_parameters_after_dedup": 4,
+    "update_log_entries": 0,
+    "hidden_fields_count": 0,
+    "source_results": "workspaces\\v2.product.delete_item\\results\\all_chunks_results.json"
+  }
+}

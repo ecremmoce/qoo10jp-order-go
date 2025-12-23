@@ -1,0 +1,70 @@
+{
+  "endpoint": null,
+  "method": null,
+  "description": null,
+  "parameters": [
+    {
+      "name": "side",
+      "type": "string",
+      "required": true,
+      "description": "Buy or sell indicator",
+      "children": []
+    },
+    {
+      "name": "symbol",
+      "type": "string",
+      "required": true,
+      "description": "Trading symbol",
+      "children": []
+    },
+    {
+      "name": "type",
+      "type": "string",
+      "required": true,
+      "description": "Order type (market, limit, etc)",
+      "children": []
+    },
+    {
+      "name": "quantity",
+      "type": "integer",
+      "required": true,
+      "description": "Number of shares, minimum 500",
+      "children": []
+    },
+    {
+      "name": "price",
+      "type": "number",
+      "required": false,
+      "description": "Limit price for limit orders",
+      "children": []
+    },
+    {
+      "name": "time_in_force",
+      "type": "string",
+      "required": false,
+      "description": "Time in force policy",
+      "children": []
+    }
+  ],
+  "response_fields": [],
+  "update_log": [
+    {
+      "date": "2021-09-09",
+      "change": "Minimum number of shares increased from 100 to 500"
+    },
+    {
+      "date": "2021-09-06",
+      "change": "API launch"
+    }
+  ],
+  "hidden_fields": [],
+  "metadata": {
+    "total_chunks": 1,
+    "chunks_with_errors": 0,
+    "total_parameters_before_dedup": 6,
+    "total_parameters_after_dedup": 6,
+    "update_log_entries": 2,
+    "hidden_fields_count": 0,
+    "source_results": "workspaces\\v2.global_product.get_global_item_limit\\results\\all_chunks_results.json"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "document_id": "v2.product.get_attribute_tree",
+  "document_type": "api",
+  "url": "https://open.shopee.com/documents/v2/v2.product.get_attribute_tree?module=89&type=1",
+  "platform": "shopee",
+  "crawled_at": "2025-10-16T05:52:01",
+  "screenshot_path": "platforms\\shopee\\apis\\workspaces\\v2.product.get_attribute_tree\\screenshots\\screenshot.png",
+  "html_path": "platforms\\shopee\\apis\\workspaces\\v2.product.get_attribute_tree\\page.html",
+  "workspace_dir": "platforms\\shopee\\apis\\workspaces\\v2.product.get_attribute_tree",
+  "has_changes": true
+}

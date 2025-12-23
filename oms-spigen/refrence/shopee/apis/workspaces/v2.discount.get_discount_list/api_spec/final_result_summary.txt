@@ -1,0 +1,40 @@
+======================================================================
+API SPECIFICATION SUMMARY
+======================================================================
+
+Endpoint: None None
+
+Parameters (7):
+----------------------------------------------------------------------
+* URL (string)
+   API endpoint URLs
+  * release (string)
+     http://partner.example.com/commerces/success_account_set
+  * test (string)
+     http://partner-test.example.com/commerces/success_account_set
+* sign (string)
+   Signature parameter is similar to v1_prods, however, parameters needed to be signed are different from those in v1_prods.
+* partner_id (string)
+   Unique partner identifier provided by the platform
+* timestamp (string)
+   Request timestamp
+* account_id (string)
+   The identifier of the user account for your service
+  user_id (string)
+   User identifier linked to the user
+* version (string)
+   Interface version
+
+Metadata:
+----------------------------------------------------------------------
+  total_chunks: 1
+  chunks_with_errors: 0
+  total_parameters_before_dedup: 7
+  total_parameters_after_dedup: 7
+  update_log_entries: 0
+  hidden_fields_count: 0
+  source_results: workspaces\v2.discount.get_discount_list\results\all_chunks_results.json
+
+======================================================================
+Legend: * = required parameter
+======================================================================

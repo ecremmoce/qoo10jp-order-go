@@ -1,0 +1,69 @@
+{
+  "chunk_index": 1,
+  "total_chunks": 1,
+  "endpoint": null,
+  "method": null,
+  "description": null,
+  "update_log": [],
+  "hidden_fields": [],
+  "parameters": [
+    {
+      "name": "client_id",
+      "type": "string",
+      "required": true,
+      "description": null,
+      "children": []
+    },
+    {
+      "name": "partner_id",
+      "type": "string",
+      "required": true,
+      "description": null,
+      "children": []
+    },
+    {
+      "name": "sign",
+      "type": "string",
+      "required": true,
+      "description": "Signature based on sorted parameters according to rules",
+      "children": []
+    },
+    {
+      "name": "timestamp",
+      "type": "integer",
+      "required": true,
+      "description": "Unix timestamp in milliseconds",
+      "children": []
+    },
+    {
+      "name": "lang",
+      "type": "string",
+      "required": false,
+      "description": "Language preference setting",
+      "children": []
+    },
+    {
+      "name": "version",
+      "type": "string",
+      "required": true,
+      "description": "API version number",
+      "children": []
+    }
+  ],
+  "response_fields": [],
+  "notes": "The image appears to be API documentation showing common parameters that might be required across multiple endpoints. The documentation includes parameter names, types, whether they're required, and some descriptions. The parameters seem to be related to authentication and API versioning (client_id, partner_id, sign, timestamp, etc.).",
+  "chunk_metadata": {
+    "index": 1,
+    "total": 1,
+    "y_start": 0,
+    "y_end": 6760,
+    "overlap_top": 0,
+    "overlap_bottom": 0,
+    "height": 6760,
+    "path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\workspaces\\v2.product.update_price\\chunks\\chunk_001.png",
+    "filename": "chunk_001.png",
+    "width": 837
+  },
+  "analysis_timestamp": "2025-10-10T06:36:06.916912",
+  "model": "claude-3-5-sonnet-20241022"
+}

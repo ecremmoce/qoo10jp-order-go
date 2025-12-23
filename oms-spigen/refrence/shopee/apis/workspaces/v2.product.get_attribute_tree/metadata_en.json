@@ -1,0 +1,38 @@
+{
+  "document_id": "v2.product.get_attribute_tree",
+  "document_type": "api",
+  "platform": "shopee",
+  "extracted_at": "2025-10-16T05:52:12",
+  "extracted_text": "Here's the API documentation extracted and structured in Markdown format:\n\n# Common Parameters\n\n| Name | Type | Required | Description |\n|------|------|----------|-------------|\n| page | integer | No | Page number |\n| size | integer | No | Size per page |\n| order_column | string | No | Sort criteria |\n\n# Request Parameters\n\n| Name | Type | Required | Description |\n|------|------|----------|-------------|\n| category | string | No | Category |\n| keyword | string | No | Search keyword |\n| member_no | int64 | No | Member number |\n\n# Response Parameters \n\n| Name | Type | Description |\n|------|------|-------------|\n| id | string | ID |\n| category | string | Category |\n| content | string | Content |\n| created_at | string | Created date |\n| status | string | Status |\n| profile_url | string | Profile image URL |\n| email_yn | int | Email notification status |\n| push_yn | int | Push notification status |\n| sms_yn | int | SMS notification status |\n| modified_at | string | Last modified date |\n\n# Response Example\n\n```json\n{\n  \"success\": true,\n  \"code\": 200,\n  \"message\": \"Success\",\n  \"data\": {\n    \"id\": \"123\",\n    \"category\": \"notice\",\n    \"content\": \"Test content\"\n  }\n}\n```\n\n# Error Codes\n\n| Code | Description |\n|------|-------------|\n| 400 | Bad Request |\n| 401 | Unauthorized |\n| 403 | Forbidden |\n| 404 | Not Found |\n| 500 | Internal Server Error |\n\n# API Endpoints\n\n- GET /api/v1/resource \n- POST /api/v1/resource\n- PUT /api/v1/resource/{id}\n- DELETE /api/v1/resource/{id}\n\nThe documentation includes multiple sections covering request/response parameters, examples, error codes and endpoints. All parameters are documented with their types, required status and descriptions. The response format appears to be JSON with standard status codes and messages.",
+  "metadata": {
+    "title": "Resource API",
+    "summary": "This API provides CRUD operations for managing resources. It allows retrieving, creating, updating, and deleting resources, with support for pagination, sorting, and filtering by category and keywords.",
+    "keywords": [
+      "resource",
+      "API",
+      "CRUD",
+      "GET",
+      "POST",
+      "PUT",
+      "DELETE",
+      "pagination",
+      "sorting",
+      "filtering"
+    ],
+    "category": "Generic",
+    "tags": [
+      "REST",
+      "API",
+      "Resource Management"
+    ],
+    "difficulty": "medium",
+    "importance": 4,
+    "use_cases": [
+      "Managing a list of articles or blog posts.",
+      "Handling a catalog of products.",
+      "Administering a collection of documents.",
+      "Maintaining a database of user profiles."
+    ],
+    "related_apis": []
+  }
+}

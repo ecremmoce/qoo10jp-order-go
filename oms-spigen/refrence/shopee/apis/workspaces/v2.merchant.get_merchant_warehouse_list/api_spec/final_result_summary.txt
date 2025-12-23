@@ -1,0 +1,56 @@
+======================================================================
+API SPECIFICATION SUMMARY
+======================================================================
+
+Endpoint: None None
+
+Parameters (19):
+----------------------------------------------------------------------
+* client_id (string)
+* url_dl (string)
+   Download URL reference
+  url_st (string)
+* url_ul (string)
+   Upload URL reference
+  message_id (string)
+  source_id (string)
+  confidence_id (integer)
+   Confidence identification number
+  continuous_data (string)
+   Continuous data reference
+  metadata_type (string)
+   Type of metadata reference
+  entity (object)
+   Entity object data
+  address_status (string)
+   Status of address reference
+  source (string)
+   Source identifier reference
+  pid (string)
+   Process identification number
+  uuid (string)
+   Unique identifier reference
+  ts_type (string)
+   Type specification reference
+  metadata_ids (string)
+   Metadata identification references
+  message_status (string)
+   Status of message reference
+  time_sequence_id (string)
+   Sequence identifier for time
+  ts_host_value (string)
+   Host value for timestamp
+
+Metadata:
+----------------------------------------------------------------------
+  total_chunks: 1
+  chunks_with_errors: 0
+  total_parameters_before_dedup: 19
+  total_parameters_after_dedup: 19
+  update_log_entries: 0
+  hidden_fields_count: 0
+  source_results: workspaces\v2.merchant.get_merchant_warehouse_list\results\all_chunks_results.json
+
+======================================================================
+Legend: * = required parameter
+======================================================================

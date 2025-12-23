@@ -1,0 +1,126 @@
+{
+  "endpoint": "v2/investment/get_order_sum",
+  "method": "POST",
+  "description": "Get investment order summary",
+  "parameters": [
+    {
+      "name": "session_id",
+      "type": "string",
+      "required": true,
+      "description": "Partner ID is assigned upon registration is successful",
+      "children": []
+    },
+    {
+      "name": "access_token",
+      "type": "string",
+      "required": true,
+      "description": "The token for API access, which is initially pre-processed to obtain",
+      "children": []
+    },
+    {
+      "name": "sign",
+      "type": "string",
+      "required": true,
+      "description": "Digital signature (Generated as shown in Ex.)",
+      "children": []
+    }
+  ],
+  "response_fields": [
+    {
+      "name": "session_id",
+      "type": "string",
+      "required": true,
+      "description": "The identifier of broadcast session",
+      "children": []
+    },
+    {
+      "name": "store",
+      "type": "string",
+      "description": "Integer price less IVA and VN. Simply it for other business",
+      "children": []
+    },
+    {
+      "name": "username",
+      "type": "string",
+      "description": "Integer price applies IVA and. Simply it for",
+      "children": []
+    },
+    {
+      "name": "channel_id",
+      "type": "string",
+      "description": "The identifier for get UH required by each channel",
+      "children": []
+    },
+    {
+      "name": "title",
+      "type": "string",
+      "description": "Room information can be anything",
+      "children": []
+    },
+    {
+      "name": "link",
+      "type": "object",
+      "description": "Changed into the inverse item",
+      "children": []
+    },
+    {
+      "name": "desc_url",
+      "type": "object",
+      "description": "The inner of the item in the shopping key of unified session. Just like: {\"key name\": [{item field1}, {item field2}]} ex: if the passed session",
+      "children": []
+    },
+    {
+      "name": "desc_h",
+      "type": "float",
+      "description": "Request server identifier for an item",
+      "children": []
+    },
+    {
+      "name": "cover",
+      "type": "string",
+      "description": "The image of the item",
+      "children": []
+    },
+    {
+      "name": "share",
+      "type": "integer",
+      "description": "Name of the item in your language",
+      "children": []
+    },
+    {
+      "name": "image_id",
+      "type": "integer",
+      "description": "The image of this item",
+      "children": []
+    },
+    {
+      "name": "price_info",
+      "type": "object",
+      "description": "The inner price info representing the currency and units of the item",
+      "children": []
+    },
+    {
+      "name": "country_price",
+      "type": "float",
+      "description": "The unified price of the item in the being country. Contains price and currency description",
+      "children": []
+    },
+    {
+      "name": "original_price",
+      "type": "float",
+      "description": "The original price of the item in the being country",
+      "children": []
+    }
+  ],
+  "update_log": [],
+  "hidden_fields": [],
+  "metadata": {
+    "total_chunks": 1,
+    "chunks_with_errors": 0,
+    "total_parameters_before_dedup": 3,
+    "total_parameters_after_dedup": 3,
+    "update_log_entries": 0,
+    "hidden_fields_count": 0,
+    "source_results": "platforms\\shopee\\apis\\workspaces\\v2.livestream.get_show_item\\results\\all_chunks_results.json"
+  }
+}

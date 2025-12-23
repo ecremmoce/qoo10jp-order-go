@@ -1,0 +1,150 @@
+[
+  {
+    "chunk_index": 1,
+    "total_chunks": 1,
+    "endpoint": "/logistics/update_tracking_status",
+    "method": "POST",
+    "description": "This API allows users to update logistics tracking status information",
+    "update_log": [
+      {
+        "date": "2024-08-14",
+        "change": "Add 'city_code' & 'tracking_reason' request parameters and support EH Cross-Delivery channel logistics_channel_id update"
+      },
+      {
+        "date": "2024-06-23",
+        "change": "Update the API description"
+      },
+      {
+        "date": "2024-03-23",
+        "change": "New API"
+      }
+    ],
+    "parameters": [
+      {
+        "name": "url",
+        "type": "string",
+        "required": true,
+        "description": "Request URL based on different logistics channels"
+      },
+      {
+        "name": "partner_id",
+        "type": "integer",
+        "required": true,
+        "description": "Partner ID assigned upon application"
+      },
+      {
+        "name": "timestamp",
+        "type": "string",
+        "required": true,
+        "description": "Unix timestamp used to validate the timeliness of the request (Required to be within 5 minutes)"
+      },
+      {
+        "name": "access_token",
+        "type": "string",
+        "required": true,
+        "description": "Access token with validity period of 30 min"
+      },
+      {
+        "name": "sign",
+        "type": "string",
+        "required": true,
+        "description": "Generated unique identifier for system authentication"
+      },
+      {
+        "name": "order_sn",
+        "type": "string",
+        "required": true,
+        "description": "Order tracking number"
+      },
+      {
+        "name": "tracking_number",
+        "type": "string",
+        "required": true,
+        "description": "Order tracking number, might take place to prefix for seller online tracking info"
+      },
+      {
+        "name": "tracking_id",
+        "type": "string",
+        "required": false,
+        "description": "Tracking ID for cross-border logistics"
+      },
+      {
+        "name": "logistics_status",
+        "type": "string",
+        "required": true,
+        "description": "Logistics tracking status code"
+      },
+      {
+        "name": "city_code",
+        "type": "string",
+        "required": false,
+        "description": "Code for validation when updating logistics_status to 'pickup_done_local'"
+      },
+      {
+        "name": "tracking_reason",
+        "type": "string",
+        "required": false,
+        "description": "Only needed when updating logistics_status to REACH_3PL_PICKUP_POINT"
+      }
+    ],
+    "response_fields": [
+      {
+        "name": "message",
+        "type": "string",
+        "description": "Error message"
+      },
+      {
+        "name": "warning",
+        "type": "string",
+        "description": "Warning message"
+      },
+      {
+        "name": "code",
+        "type": "string",
+        "description": "Response code"
+      },
+      {
+        "name": "code_level",
+        "type": "string",
+        "description": "Success level"
+      }
+    ],
+    "error_codes": [
+      {
+        "code": "logistics_info_not_exist",
+        "description": "The order SN does not exist"
+      },
+      {
+        "code": "logistics_info_invalid_status",
+        "description": "Invalid tracking status"
+      },
+      {
+        "code": "error_404",
+        "description": "The parameter you specified is not found"
+      },
+      {
+        "code": "error_auth",
+        "description": "Wrong permission status check"
+      },
+      {
+        "code": "error_param",
+        "description": "Something wrong, Please try later"
+      }
+    ],
+    "notes": "The API includes both common parameters and request-specific parameters. There are specific error codes and response fields defined. The documentation includes examples of request and response formats, though they are partially visible in the image.",
+    "chunk_metadata": {
+      "index": 1,
+      "total": 1,
+      "y_start": 0,
+      "y_end": 4535,
+      "overlap_top": 0,
+      "overlap_bottom": 0,
+      "height": 4535,
+      "path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\workspaces\\v2.logistics.update_tracking_status\\chunks\\chunk_001.png",
+      "filename": "chunk_001.png",
+      "width": 837
+    },
+    "analysis_timestamp": "2025-10-10T06:09:21.246329",
+    "model": "claude-3-5-sonnet-20241022"
+  }
+]

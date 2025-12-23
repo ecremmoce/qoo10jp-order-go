@@ -1,0 +1,32 @@
+======================================================================
+API SPECIFICATION SUMMARY
+======================================================================
+
+Endpoint: None get_url_on_data_add_cart_on_dest
+
+Parameters (2):
+----------------------------------------------------------------------
+* URL (string)
+   Access Parameter
+* post_data (object)
+   Request parameters
+  * product_id (string)
+     Product unique identifier for filtering
+  * source_type (string)
+     The item on WE server, using to identify user extension in WE by 'source_type' and 'source_id'
+  * qty (string)
+     Product unique identifier for cart
+
+Metadata:
+----------------------------------------------------------------------
+  total_chunks: 1
+  chunks_with_errors: 0
+  total_parameters_before_dedup: 2
+  total_parameters_after_dedup: 2
+  update_log_entries: 0
+  hidden_fields_count: 0
+  source_results: workspaces\v2.add_on_deal.add_add_on_deal\results\all_chunks_results.json
+
+======================================================================
+Legend: * = required parameter
+======================================================================

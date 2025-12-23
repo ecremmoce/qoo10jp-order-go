@@ -1,0 +1,48 @@
+======================================================================
+API SPECIFICATION SUMMARY
+======================================================================
+
+Endpoint: GET v2/product/get_new_chat_list
+Description: Get new chat list for follow step support test (free to use without chat)
+
+Parameters (5):
+----------------------------------------------------------------------
+* partner_id (string)
+   The basic API system using to identify your permission to the api, please ask developer to get it
+* timestamp (string)
+   Timestamp
+* access_token (string)
+   The basic API system using to identify your permission to the api, please ask developer to get it
+* chat_id (integer)
+   The size of one page
+* center (string)
+   Specifies the starting point of data to return in the center of timeline
+
+Response Fields (6):
+----------------------------------------------------------------------
+  error (string)
+   Indicate error type if an error. Empty if no error happened
+  message (string)
+   parameter is invalid
+  warning (string)
+   Warning message
+  request_id (string)
+   The identifier for an API request for error tracking
+  chat_start_id (integer)
+   ID of new chat start
+  test_count (string)
+   Total number of new chat (field name remained integer_id)
+
+Metadata:
+----------------------------------------------------------------------
+  total_chunks: 1
+  chunks_with_errors: 0
+  total_parameters_before_dedup: 5
+  total_parameters_after_dedup: 5
+  update_log_entries: 1
+  hidden_fields_count: 0
+  source_results: platforms\shopee\apis\workspaces\v2.product.get_size_chart_list\results\all_chunks_results.json
+
+======================================================================
+Legend: * = required parameter
+======================================================================

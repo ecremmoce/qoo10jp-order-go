@@ -1,0 +1,112 @@
+[
+  {
+    "chunk_index": 1,
+    "total_chunks": 1,
+    "endpoint": "/crop/new_seller_pics_key_fetch",
+    "method": "POST",
+    "description": "Chinese-based image crop service",
+    "update_log": [
+      {
+        "date": "2024-06-14",
+        "change": "API launch"
+      }
+    ],
+    "parameters": [
+      {
+        "name": "request_id",
+        "type": "string",
+        "required": true,
+        "description": "Request ID to uniquely identify the request, required to be consistent with downstream",
+        "children": []
+      },
+      {
+        "name": "url",
+        "type": "string",
+        "required": true,
+        "description": "Chinese-based image crop service URL",
+        "children": []
+      },
+      {
+        "name": "data_time",
+        "type": "timestamp",
+        "required": true,
+        "description": null,
+        "children": []
+      },
+      {
+        "name": "shop_id",
+        "type": "int",
+        "required": true,
+        "description": null,
+        "children": []
+      }
+    ],
+    "response_fields": [
+      {
+        "name": "request_id",
+        "type": "string",
+        "description": "The identifier for all API requests for error tracking",
+        "children": []
+      },
+      {
+        "name": "shop",
+        "type": "string",
+        "description": null,
+        "children": []
+      },
+      {
+        "name": "data_count",
+        "type": "int",
+        "description": null,
+        "children": []
+      },
+      {
+        "name": "data",
+        "type": "object",
+        "description": null,
+        "children": []
+      }
+    ],
+    "error_codes": [
+      {
+        "code": "error_500",
+        "description": "Server error"
+      },
+      {
+        "code": "error_400",
+        "description": "Parameter error"
+      },
+      {
+        "code": "error_something_wrong_in_process",
+        "description": "Something is wrong in process"
+      },
+      {
+        "code": "error_source",
+        "description": "Source is invalid"
+      },
+      {
+        "code": "error_source_down",
+        "description": "Failed to supply"
+      },
+      {
+        "code": "error_fetch_data_prefix_error",
+        "description": "The fetching parameters invalid [shop]"
+      }
+    ],
+    "notes": "The documentation appears to be for a Chinese-based image cropping service API. Some descriptions are missing or minimal, and there are both Chinese and English elements in the documentation.",
+    "chunk_metadata": {
+      "index": 1,
+      "total": 1,
+      "y_start": 0,
+      "y_end": 4582,
+      "overlap_top": 0,
+      "overlap_bottom": 0,
+      "height": 4582,
+      "path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\workspaces\\v2.shop_flash_sale.get_shop_flash_sale_list\\chunks\\chunk_001.png",
+      "filename": "chunk_001.png",
+      "width": 837
+    },
+    "analysis_timestamp": "2025-10-10T06:49:30.682266",
+    "model": "claude-3-5-sonnet-20241022"
+  }
+]

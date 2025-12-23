@@ -1,0 +1,87 @@
+{
+  "chunk_index": 1,
+  "total_chunks": 1,
+  "endpoint": "v2/logistics/download_booking_shipping_document",
+  "method": "GET",
+  "description": "Get file link to download/create shipping document. You have to call v2.logistics.create_shipping_document to create a new shipping document first.",
+  "update_log": [
+    {
+      "date": "2024-07-02",
+      "change": "New API"
+    }
+  ],
+  "parameters": [
+    {
+      "name": "partner_id",
+      "type": "string",
+      "required": true,
+      "description": "Partner ID is assigned when application is successful. Required for all requests.",
+      "children": []
+    },
+    {
+      "name": "timestamp",
+      "type": "timestamp",
+      "required": true,
+      "description": "This is to indicate the timestamp of the request. Required for all requests. Expires in 5 minutes",
+      "children": []
+    },
+    {
+      "name": "access_token",
+      "type": "string",
+      "required": true,
+      "description": "The token for API usage, using to identify your permission to the api. Valid for multiple use and expire in 4 hours",
+      "children": []
+    },
+    {
+      "name": "shipping_document_type",
+      "type": "string",
+      "required": true,
+      "description": "The type of shipping document. Available values: NORMAL_AIR_WAYBILL, THERMAL_AIR_WAYBILL",
+      "children": []
+    },
+    {
+      "name": "booking_sn",
+      "type": "string",
+      "required": true,
+      "description": "Shipper's unique identifier for a booking",
+      "children": []
+    }
+  ],
+  "error_codes": [
+    {
+      "code": "error_auth",
+      "description": "Authentication failed"
+    },
+    {
+      "code": "error_param",
+      "description": "Wrong parameters"
+    },
+    {
+      "code": "error_download",
+      "description": "Processing please download later"
+    },
+    {
+      "code": "error_config",
+      "description": "Something is wrong, please try again later"
+    },
+    {
+      "code": "error_server",
+      "description": "The information you operated is not found"
+    }
+  ],
+  "notes": "The documentation includes multiple URL variants for different regions (Chinese Mainland, Global, etc). The API requires several authentication parameters (partner_id, timestamp, access_token) for all requests.",
+  "chunk_metadata": {
+    "index": 1,
+    "total": 1,
+    "y_start": 0,
+    "y_end": 3613,
+    "overlap_top": 0,
+    "overlap_bottom": 0,
+    "height": 3613,
+    "path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\workspaces\\v2.logistics.download_booking_shipping_document\\chunks\\chunk_001.png",
+    "filename": "chunk_001.png",
+    "width": 837
+  },
+  "analysis_timestamp": "2025-10-10T06:01:11.955272",
+  "model": "claude-3-5-sonnet-20241022"
+}

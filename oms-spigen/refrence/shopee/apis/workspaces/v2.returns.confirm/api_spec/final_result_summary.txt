@@ -1,0 +1,32 @@
+======================================================================
+API SPECIFICATION SUMMARY
+======================================================================
+
+Endpoint: None None
+
+Parameters (2):
+----------------------------------------------------------------------
+* access_token (string)
+   Authentication token for API access
+* request_parameters (object)
+   Container for request parameters
+    page_size (integer)
+     Number of results per page
+    page_number (integer)
+     Page number for pagination
+    sort_by (string)
+     Field to sort results by
+
+Metadata:
+----------------------------------------------------------------------
+  total_chunks: 1
+  chunks_with_errors: 0
+  total_parameters_before_dedup: 2
+  total_parameters_after_dedup: 2
+  update_log_entries: 5
+  hidden_fields_count: 0
+  source_results: workspaces\v2.returns.confirm\results\all_chunks_results.json
+
+======================================================================
+Legend: * = required parameter
+======================================================================

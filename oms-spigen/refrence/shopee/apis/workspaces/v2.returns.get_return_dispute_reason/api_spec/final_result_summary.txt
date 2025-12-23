@@ -1,0 +1,55 @@
+======================================================================
+API SPECIFICATION SUMMARY
+======================================================================
+
+Endpoint: POST /merchant/changeshop_retail_status_system
+Description: Update shop retail status
+
+Parameters (16):
+----------------------------------------------------------------------
+* key (string)
+   String Constant
+* sign (string)
+   SHA256 encryption
+* request_id (string)
+   Unique identifier to help identify your parameter in our retail inventory system
+* shop_id (integer)
+   Shop id
+* feature_id (string)
+   The unique number of users
+  feature_id_specific (array)
+   The parameter list will trigger for your process
+* auto (string)
+   Default shop type that you might to be use
+* message (string)
+   Other information you are assigned
+* operator (object)
+   The actual name for the switch case like admin
+* enable_platform (boolean)
+   Accept the parameter of operating request
+* enable_backend (boolean)
+   The URL or switch scenario is switch
+* type (string)
+   The type of enable scenario signature
+* timestamp (string)
+   The time of update backend
+* message_switch (string)
+   The associate schema should be for communication
+* enable_time (string)
+   The time of enable backend schema
+  equipment (string)
+   The actual department code is for backend schema
+
+Metadata:
+----------------------------------------------------------------------
+  total_chunks: 1
+  chunks_with_errors: 0
+  total_parameters_before_dedup: 16
+  total_parameters_after_dedup: 16
+  update_log_entries: 1
+  hidden_fields_count: 0
+  source_results: workspaces\v2.returns.get_return_dispute_reason\results\all_chunks_results.json
+
+======================================================================
+Legend: * = required parameter
+======================================================================

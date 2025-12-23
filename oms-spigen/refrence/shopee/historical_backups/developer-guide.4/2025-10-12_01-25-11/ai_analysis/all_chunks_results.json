@@ -1,0 +1,49 @@
+[
+  {
+    "chunk_index": 1,
+    "total_chunks": 1,
+    "endpoint": null,
+    "method": null,
+    "description": "Shopee Open Platform is a go-to source of Open APIs and services for developers serving Shopee sellers with different ecommerce needs.",
+    "update_log": [
+      {
+        "date": "2024-11-11",
+        "change": "Last updated"
+      }
+    ],
+    "hidden_fields": [],
+    "parameters": [],
+    "response_fields": [],
+    "notes": "This appears to be the introduction/overview page of Shopee Open Platform documentation. Key information extracted:\n\n1. Language Support: English/简体中文/繁體中文/Português/ไทย\n\n2. Main sections covered:\n- What is Shopee Open Platform\n- Benefits of using Shopee Open API\n- Who can access Shopee Open Platform\n\n3. Documentation sections visible in sidebar:\n- Getting Started\n- API calls\n- Push Mechanism notifications\n- Authorization and Authentication\n- Sandbox Testing V2\n- Service Partner Program\n- Various API integration guides\n\nThis page contains no specific API endpoint information or parameters as it is an overview page.",
+    "metadata": {
+      "features": [
+        {
+          "category": "Powerful APIs",
+          "description": "Access to APIs for orders, products, marketing with push notification services"
+        },
+        {
+          "category": "Developer Services",
+          "description": "End-to-end developer support including onboarding, testing, release, and maintenance"
+        },
+        {
+          "category": "Access Types",
+          "description": "Two types of developers supported: Software service providers and Sellers with software development capabilities"
+        }
+      ]
+    },
+    "chunk_metadata": {
+      "index": 1,
+      "total": 1,
+      "y_start": 0,
+      "y_end": 1080,
+      "overlap_top": 0,
+      "overlap_bottom": 0,
+      "height": 1080,
+      "path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\platforms\\shopee\\apis\\workspaces\\developer-guide.4\\chunks\\chunk_001.png",
+      "filename": "chunk_001.png",
+      "width": 1920
+    },
+    "analysis_timestamp": "2025-10-12T01:25:11.139934",
+    "model": "claude-3-5-sonnet-20241022"
+  }
+]

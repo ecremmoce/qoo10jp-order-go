@@ -1,0 +1,54 @@
+{
+  "document_id": "developer-guide.383",
+  "document_type": "guide",
+  "platform": "shopee",
+  "content_ko": "# 새 주문 식별\n\n현재 API를 통해 새 주문을 식별하는 방법이 있습니다.\n\n## 단계\n\nPush Marketplace를 사용하려면 OAuth를 위한 경로도 생성해야 합니다. 두 URL은 API에서 제공하는 콜백 URL의 주문을 사용하며, 이 Push는 API 요구 사항에 따라 응답을 구성해야 합니다.\n\n1.  `ORDER` 상태를 호출해야 합니다.\n2.  새로운 `POST1` 메서드를 포함합니다.\n\n현재 Push Marketplace를 얻을 수 있습니다.\n\nAPI `\"v2_post_set_push_ordem\"`은 Push를 알리고, Push는 선택되고 호출자의 상태는 \"'ready_status'\"입니다.\n\n요청에 따라 입력합니다:\n\n```json\n\"seller_url\" : [\n  \"v1/po_orders\"\n]\n\n\"apiback_url\" : \"http://1-38.10\"\n```\n\nOpen Platform에서 Open Platform > Consoles > App Management > Push Marketplace > Set Posts R app > app details에서 지침을 통해 정보를 입력합니다.\n\n## GET 요청 가져오기\n\n`get_order_list`를 얻으려면 특정 기간의 모든 `orders_id`를 추적하는 두 개의 응답이 필요합니다.\n\n선택적 매개변수 `\"response_optional_fields=order_status\"`를 선택하고 주문 데이터를 관리하고 기간 목록을 선택하여 요청합니다.\n\n### API 호출 예시\n\n```http\ncurl --OauthID --request GET\n'https://open.tiktokapis.com/v1/fulfillment/api_order_list?\napp_key=12&access_token=USER_ACCESS_TOKEN&shop_id=12&create_time_from=1609862012&create_time_to=1609862012&update_time_from=1609862012&update_time_to=1609862012&\nresponse_optional_fields=order_status&cursor=ROW%3D1%3BINDEX%3D0&page_size=10'\n```\n\n### 응답\n\n```json\n{\n  \"error\": \"\",\n  \"message\": \"\",\n  \"timestamp\": 0,\n  \"api\": true,\n  \"next\": \"\",\n  \"cargo_line\": [],\n  \"fee_id\": \"INITSTORED\",\n  \"order_status\": \"READY_TO_SHIP\",\n  \"seller_id\": \"INITSTORED\",\n  \"order_id\": \"TEMPLATE_SELLER\",\n  \"related_id\": \"?????????????\"\n}\n```\n\n---\n\n# OpenAPI의 주문 상태\n\n셀러가 액세스할 수 있는 6가지 상태 주문은 다음과 같습니다.\n\n## 1. UNPAID\n생성할 수 있도록 승인된 주문 및 결제 유효성을 검사하기 전:\n일반적으로 신용 카드 주문은 결제보다 유효성 검사가 더 크지 않으므로 이러한 상태를 표시하지 않습니다.\n\n## 2. ON_HOLD\n요청된 주문은 `v1_get_order_list` API 또는 정보가 제공된 orders 네임스페이스에만 표시됩니다.\n\n매개변수:\n- AWAITING_SHIPMENT\n- READY_TO_SHIP\n- 결제 확인을 위해 보류 중이며, 주문 API에서 반환된 데이터 주문 양식 내에서 진행됩니다 (예: 결제가 유효성 검사 중).\n\n## 3. AWAITING_SHIPMENT\n다른 새로운 상태는 조직에서 사용할 수 있도록 허용합니다 (`v2_ship_getlist`). 일반화된 주문을 사용하고 결제 확인 상태를 알리고 사용자가 게시할 수 있도록 허용합니다 (예: 결제 문제가 있는 주문).\n\n## 4. PROCESSED\n`v2_ship_order`에서 이미 배송된 주문 및 `v2_ship_order`의 데이터는 추적 번호로 관리됩니다.\n\n## 5. SHIPPED\n주문은 이미 전체 물류 환자에게 배송되었습니다.\n\n## 6. TO_CONFIRM_RECEIVE\n주문이 접수될 때\n\n## 7. COMPLETED\n이 상태는 항목이 최종적으로 수신된 경우입니다. 구매자 또는 반품, 개혁 또는 새로운 상태의 셀러 목록입니다.\n\n## 8. IN_CANCEL\n구매자 또는 주문 반품 요청을 나타냅니다.\n\n주문이 취소되면 구매자가 주문을 표시할 때, 셀러가 주문을 거부할 때, 시스템이 OpenAPI 및 Seller Center 주문을 비활성화하는 경우 [documentation link] 테이블에 의해 보호됩니다.\n\n---\n\n## 상태 매핑\n\n| OpenAPI | SellerCenter |\n|---------|--------------|\n| UNPAID | - |\n| READY_TO_SHIP | A enviar (a iniciar) |\n\n---\n\n# 9 - CANCELLED\n\n주문이 취소되면 구매자가 주문을 취소하거나, 셀러가 주문을 준비하지 않거나, 배송 중 주문이 손실된 경우 발생할 수 있습니다.\n\nOpenAPI와 Seller Center 간의 상태 비교는 다음과 같습니다 ([Documentação](link)에서 찾을 수도 있습니다).\n\n| OpenAPI | SellerCenter |\n|---------|--------------|\n| UNPAID | Não Pago |\n| READY_TO_SHIP | A enviar (A enviar) |\n| IN_CANCEL | Cancelado (A responder) |\n| CANCELLED | Cancelado (Cancelado) |\n| SHIPPED | A enviar (Processado) |\n| TO_RETURN | Enviado |\n| TO_CONFIRM_RECEIVE | Devolução Reembolso |\n| COMPLETED | Shipping (Shipped) |\n\n## 주문 취소\n\n셀러 측에서 주문을 취소하려면 API [v2 cancel_order](link)를 사용하십시오. 몇 가지 규칙이 있습니다.\n\n1 - 배송 준비 및 `tracking_number` 생성 후에는 주문을 취소할 수 없습니다.\n\n2 - 취소에 사용할 수 있는 4가지 이유가 있습니다.\n   1. OUT_OF_STOCK: 재고가 소진된 경우 (이유가 항상 이 경우 `\"item_list\":[\"item_id\", \"model_id\"]` 배열을 보내야 함);\n   2. CUSTOMER_REQUEST: 구매자가 요청하고 더 이상 귀하의 승인 없이 취소할 수 없는 경우;\n   3. UNDELIVERABLE_AREA: 요청된 주소가 배송 지역 내에 없는 경우;\n   4. COD_NOT_SUPPORTED: 현금 배송은 브라질에서 사용할 수 없습니다.\n\n주문 취소에 대한 요청 본문의 예는 다음과 같습니다.\n\n```java\n{\n  \"order_sn\": \"2012030005ACB\",\n  \n  \"cancel_reason\": \"OUT_OF_STOCK\",\n  \n  \"item_list\": [{\n    \n    \"item_id\": 1680783,\n    \n    \"model_id\": 327890123\n    \n  }]\n  \n}\n```\n\n오류 메시지가 표시되면:\n\n\"`Can not cancel this order.`\"는 주문이 이미 \"`tracking_number`\"가 생성되었거나 주문이 이미 취소되었기 때문에 취소할 수 없기 때문입니다. 이 두 가지 상황과 다른 상황이 발생하면 [Plataforma de Tickets](link)를 통해 문의하십시오.\n\n구매자 측에서 주문 취소 요청을 하려면 API [v2 handle_buyer_cancellation](link)를 사용하여 취소 요청을 수락하거나 거부하십시오.\n\n## 자주 묻는 질문 (FAQ)\n\n1 - 브라질 통합에 사용되지 않는 몇 가지 API는 다음과 같습니다.\n\n```\n\"v2.order.split_order\"\n\"v2.order.unsplit_order\"\n\"v2.order.get_buyer_invoice_info\"\n\"v2.order.get_pending_buyer_invoice_order_list\"\n\"v2.order.upload_invoice_doc\"\n\"v2.order.download_invoice_doc\"\n```\n\n2 - 지난 주에 재고가 0으로 설정되었는데 왜 주문을 생성할 수 있었습니까?\n\n가능한 시나리오는 두 가지가 있습니다. 하나는 셀러가 캠페인을 위해 별도로 예약된 재고를 가지고 있다는 것이고, 다른 하나는 이전 주문이 취소되어 재고가 복원되었다는 것입니다 (취소된 모든 주문은 재고를 복원합니다).",
+  "translated_at": "2025-10-16T09:15:50",
+  "char_count": 4260,
+  "metadata_ko": {
+    "title": "새로운 주문 식별",
+    "summary": "이 가이드는 TikTok Open Platform API를 사용하여 새로운 주문을 식별하고 주문 상태를 관리하는 방법에 대한 정보를 제공합니다. 다양한 주문 상태, 취소 프로세스 및 주문 관리와 관련된 자주 묻는 질문을 다룹니다.",
+    "keywords": [
+      "주문 관리",
+      "주문 상태",
+      "OpenAPI",
+      "Seller Center",
+      "API",
+      "취소",
+      "추적 번호",
+      "Push Marketplace"
+    ],
+    "category": "통합",
+    "tags": [
+      "주문",
+      "주문 처리",
+      "API",
+      "판매자",
+      "구매자"
+    ],
+    "difficulty": "중간",
+    "importance": 4,
+    "use_cases": [
+      "주문 목록 검색",
+      "주문 상태 업데이트",
+      "주문 취소",
+      "판매자 시스템과의 주문 관리 통합",
+      "구매자 취소 요청 처리"
+    ],
+    "related_apis": [
+      "v2_post_set_push_ordem",
+      "v1_get_order_list",
+      "v2_ship_getlist",
+      "v2_ship_order",
+      "v2 cancel_order",
+      "v2 handle_buyer_cancellation",
+      "v2.order.split_order",
+      "v2.order.unsplit_order",
+      "v2.order.get_buyer_invoice_info",
+      "v2.order.get_pending_buyer_invoice_order_list",
+      "v2.order.upload_invoice_doc",
+      "v2.order.download_invoice_doc"
+    ]
+  },
+  "metadata_translated_at": "2025-10-16T09:15:53"
+}

@@ -1,0 +1,60 @@
+======================================================================
+API SPECIFICATION SUMMARY
+======================================================================
+
+Endpoint: None None
+
+Parameters (12):
+----------------------------------------------------------------------
+* model_list (int32)
+   The index of this model
+  model_ids (string)
+   Seller SKU of this model, model_ids length information needs to be no more than 100 characters
+* original_price (float)
+   Original price of this model
+  seller_stock (int64)
+   Seller stock (Please notice that stock(including seller stock and preorder Stock) should be updated with the interface of updating model stock)
+  location_id (string)
+   location id
+  dimension (object)
+   The dimension of this model. If don't set the dimension of this model, will use the dimension of item by default
+* package_length (int32)
+   The length of package for this model, the unit is CM
+* package_width (int32)
+   The width of package for this model, the unit is CM
+* package_height (int32)
+   The height of package for this model, the unit is CM
+  pre_order (object)
+   Pre-order information of this model
+* is_pre_order (boolean)
+   Whether the model is pre order
+  days_to_ship (int32)
+   Days to ship. Please get the days_to_ship range from the get_dts_limit API
+
+Response Fields (6):
+----------------------------------------------------------------------
+  error (string)
+   Indicate error type if hit error. Empty if no error happened
+  message (string)
+   Indicate error details if hit error. Empty if no error happened
+  warning (string)
+   Indicate warning details if hit warning. Empty if no warning happened
+  request_id (string)
+   The identifier for an API request for error tracking
+  response (object)
+  item_id (int64)
+   Shopee's unique identifier for an item
+
+Metadata:
+----------------------------------------------------------------------
+  total_chunks: 2
+  chunks_with_errors: 0
+  total_parameters_before_dedup: 12
+  total_parameters_after_dedup: 12
+  update_log_entries: 0
+  hidden_fields_count: 0
+  source_results: workspaces\v2.product.add_ssp_item\results\all_chunks_results.json
+
+======================================================================
+Legend: * = required parameter
+======================================================================

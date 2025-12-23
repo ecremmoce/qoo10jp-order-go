@@ -1,0 +1,49 @@
+======================================================================
+API SPECIFICATION SUMMARY
+======================================================================
+
+Endpoint: None None
+
+Parameters (10):
+----------------------------------------------------------------------
+* URL (string)
+   Base system endpoints URL
+* URL_Global (string)
+   Global endpoints URL
+* appid_x (string)
+   Required for transaction apps
+* timestamp (timestamp)
+   Request timestamp
+* version (string)
+   API version identifier
+  msg (string)
+   Error message details
+  language (string)
+   Language preference setting
+  config_price (float)
+   Price configuration value
+  config_price_x (float)
+   Extended price configuration
+  commodity_info (string)
+   Commodity information
+
+Response Fields (2):
+----------------------------------------------------------------------
+  error_code (integer)
+   Error code value
+  error_param (string)
+   Parameter causing error
+
+Metadata:
+----------------------------------------------------------------------
+  total_chunks: 1
+  chunks_with_errors: 0
+  total_parameters_before_dedup: 10
+  total_parameters_after_dedup: 10
+  update_log_entries: 0
+  hidden_fields_count: 0
+  source_results: workspaces\v2.livestream.get_like_item_list\results\all_chunks_results.json
+
+======================================================================
+Legend: * = required parameter
+======================================================================

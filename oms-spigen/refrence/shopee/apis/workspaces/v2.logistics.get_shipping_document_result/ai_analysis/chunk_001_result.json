@@ -1,0 +1,81 @@
+{
+  "chunk_index": 1,
+  "total_chunks": 1,
+  "endpoint": "/trades/get_sharing_account_spot",
+  "method": "GET",
+  "description": "API documentation for sharing account spot trading",
+  "update_log": [],
+  "hidden_fields": [],
+  "parameters": [
+    {
+      "name": "trade_id",
+      "type": "string",
+      "required": true,
+      "description": "Trading platform ID",
+      "children": []
+    },
+    {
+      "name": "strategy_name",
+      "type": "string",
+      "required": false,
+      "description": "Strategy name",
+      "children": []
+    },
+    {
+      "name": "symbol",
+      "type": "string",
+      "required": true,
+      "description": "Trading pair name",
+      "children": []
+    },
+    {
+      "name": "platform_account_ids",
+      "type": "array",
+      "required": false,
+      "description": "Platform account IDs to be queried",
+      "children": []
+    }
+  ],
+  "response_fields": [
+    {
+      "name": "code",
+      "type": "integer",
+      "description": "Response code",
+      "children": []
+    },
+    {
+      "name": "message",
+      "type": "string",
+      "description": "Response message",
+      "children": []
+    },
+    {
+      "name": "data",
+      "type": "object",
+      "description": "Response data object",
+      "children": [
+        {
+          "name": "platform_sharing_accounts",
+          "type": "array",
+          "description": "Array of sharing account information",
+          "children": []
+        }
+      ]
+    }
+  ],
+  "notes": "The documentation shows example requests and responses in both cURL and JSON formats. There appear to be multiple code examples and parameter sections shown in the interface.",
+  "chunk_metadata": {
+    "index": 1,
+    "total": 1,
+    "y_start": 0,
+    "y_end": 5767,
+    "overlap_top": 0,
+    "overlap_bottom": 0,
+    "height": 5767,
+    "path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\workspaces\\v2.logistics.get_shipping_document_result\\chunks\\chunk_001.png",
+    "filename": "chunk_001.png",
+    "width": 837
+  },
+  "analysis_timestamp": "2025-10-10T06:06:09.747554",
+  "model": "claude-3-5-sonnet-20241022"
+}

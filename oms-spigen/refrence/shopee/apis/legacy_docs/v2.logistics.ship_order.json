@@ -1,0 +1,67 @@
+{
+  "endpoint": null,
+  "method": null,
+  "description": "API Documentation Update Log",
+  "parameters": [],
+  "response_fields": [
+    {
+      "name": "logistics.shipping_order_needs_tracking_number",
+      "type": "string",
+      "description": "Parameter tracking_number can not be null",
+      "children": []
+    },
+    {
+      "name": "logistics.shipping_order_real_ready_package_number",
+      "type": "string",
+      "description": "Please don't request with package_number for this unpaid order",
+      "children": []
+    },
+    {
+      "name": "logistics.shipping_order_real_ready_to_ship",
+      "type": "string",
+      "description": "The order is not ready to ship",
+      "children": []
+    },
+    {
+      "name": "logistics.error_param",
+      "type": "string",
+      "description": "The address is invalid. Please check the address.",
+      "children": []
+    },
+    {
+      "name": "logistics.error_status",
+      "type": "string",
+      "description": "Logistic status is not supported",
+      "children": []
+    },
+    {
+      "name": "error_param",
+      "type": "string",
+      "description": "Invalid timestamp",
+      "children": []
+    },
+    {
+      "name": "error_network",
+      "type": "string",
+      "description": "Inner http call failed",
+      "children": []
+    },
+    {
+      "name": "error_data",
+      "type": "string",
+      "description": "data not exist",
+      "children": []
+    }
+  ],
+  "update_log": [],
+  "hidden_fields": [],
+  "metadata": {
+    "total_chunks": 3,
+    "chunks_with_errors": 0,
+    "total_parameters_before_dedup": 0,
+    "total_parameters_after_dedup": 0,
+    "update_log_entries": 0,
+    "hidden_fields_count": 0,
+    "source_results": "workspaces\\v2.logistics.ship_order\\results\\all_chunks_results.json"
+  }
+}

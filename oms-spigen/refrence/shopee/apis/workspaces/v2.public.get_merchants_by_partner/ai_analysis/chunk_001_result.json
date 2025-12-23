@@ -1,0 +1,93 @@
+{
+  "chunk_index": 1,
+  "total_chunks": 1,
+  "endpoint": "/openapi/openwelink/api/v2/public_api_parshield_by_partner",
+  "method": "POST",
+  "description": "API to generate one time URL to access some web services in the partner",
+  "update_log": [
+    {
+      "date": "2023-05-26",
+      "change": "update Response Parameters"
+    }
+  ],
+  "parameters": [
+    {
+      "name": "partner_id",
+      "type": "string",
+      "required": true,
+      "description": "Identifier for partner",
+      "children": []
+    },
+    {
+      "name": "service_type",
+      "type": "string",
+      "required": true,
+      "description": "Service type (Chinese Statement, Read, etc.)",
+      "children": []
+    },
+    {
+      "name": "member_id",
+      "type": "string",
+      "required": true,
+      "description": "Request's unique identifier for a merchant",
+      "children": []
+    },
+    {
+      "name": "auto_type",
+      "type": "timestamp",
+      "required": false,
+      "description": "The timestamp when the valid end date will be generated",
+      "children": []
+    },
+    {
+      "name": "expire_time",
+      "type": "timestamp",
+      "required": false,
+      "description": "The deadline to an API request for every sharing",
+      "children": []
+    },
+    {
+      "name": "request_id",
+      "type": "string",
+      "required": true,
+      "description": "Request unique identifier",
+      "children": []
+    },
+    {
+      "name": "type",
+      "type": "boolean",
+      "required": false,
+      "description": "This is to indicate whether the link is once time link or share. If the user's type is once time link then user can only visit the web service when URL is accessed once",
+      "children": []
+    }
+  ],
+  "error_codes": [
+    {
+      "code": "error_parsh",
+      "description": "Invalid parameter"
+    },
+    {
+      "code": "error_parsh",
+      "description": "There is no partner_id in param"
+    },
+    {
+      "code": "error_parsh",
+      "description": "Param data format"
+    }
+  ],
+  "notes": "The documentation includes several error codes and their descriptions, as well as request/response examples. The API appears to be part of an OpenWeLink system for generating one-time access URLs for partner services.",
+  "chunk_metadata": {
+    "index": 1,
+    "total": 1,
+    "y_start": 0,
+    "y_end": 4366,
+    "overlap_top": 0,
+    "overlap_bottom": 0,
+    "height": 4366,
+    "path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\workspaces\\v2.public.get_merchants_by_partner\\chunks\\chunk_001.png",
+    "filename": "chunk_001.png",
+    "width": 837
+  },
+  "analysis_timestamp": "2025-10-10T06:37:12.290134",
+  "model": "claude-3-5-sonnet-20241022"
+}

@@ -1,0 +1,74 @@
+{
+  "endpoint": "DiscountDelete_discount",
+  "method": null,
+  "description": "Discount delete, discount",
+  "parameters": [
+    {
+      "name": "access_token",
+      "type": "string",
+      "required": true,
+      "description": "Use the key to call config to obtain your permission to operate"
+    },
+    {
+      "name": "shop_id",
+      "type": "int",
+      "required": true,
+      "description": "Uniquee id"
+    },
+    {
+      "name": "sign",
+      "type": "string",
+      "required": true,
+      "description": "Signature"
+    },
+    {
+      "name": "discount_id",
+      "type": "int",
+      "required": true,
+      "description": "Discount unique identifier for a discount"
+    },
+    {
+      "name": "error",
+      "type": "string",
+      "required": false,
+      "description": "Indicate error details if any error. Empty if no error occurred"
+    },
+    {
+      "name": "discount_id",
+      "type": "int",
+      "required": false,
+      "description": "Discount unique identifier for a discount"
+    },
+    {
+      "name": "result_type",
+      "type": "string",
+      "required": false,
+      "description": "The results of the API request for error details"
+    }
+  ],
+  "response_fields": [],
+  "update_log": [
+    {
+      "date": "2023-07-19",
+      "change": "Add Error Example Information"
+    },
+    {
+      "date": "2023-06-26",
+      "change": "Optimize the Return Information of Response Parameter"
+    },
+    {
+      "date": "2023-06-13",
+      "change": "Update parameters parameter description"
+    }
+  ],
+  "hidden_fields": [],
+  "metadata": {
+    "total_chunks": 1,
+    "chunks_with_errors": 0,
+    "total_parameters_before_dedup": 7,
+    "total_parameters_after_dedup": 7,
+    "update_log_entries": 3,
+    "hidden_fields_count": 0,
+    "source_results": "workspaces\\v2.discount.delete_discount\\results\\all_chunks_results.json"
+  }
+}

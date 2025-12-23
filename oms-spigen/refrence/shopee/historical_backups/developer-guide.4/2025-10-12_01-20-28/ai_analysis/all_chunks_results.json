@@ -1,0 +1,70 @@
+[
+  {
+    "chunk_index": 1,
+    "total_chunks": 1,
+    "endpoint": null,
+    "method": null,
+    "description": "Shopee Open Platform documentation for developers serving Shopee sellers with ecommerce needs",
+    "update_log": [
+      {
+        "date": "2024-11-11",
+        "change": "Last documented update"
+      }
+    ],
+    "hidden_fields": [],
+    "parameters": [],
+    "response_fields": [],
+    "sections": {
+      "languages_supported": [
+        "English",
+        "简体中文",
+        "繁體中文",
+        "Português",
+        "ไทย"
+      ],
+      "main_features": [
+        {
+          "name": "Powerful APIs",
+          "description": "Access to Open APIs for orders, products, marketing with push notification services for customized software services"
+        },
+        {
+          "name": "Comprehensive developer services",
+          "description": "End-to-end developer support including onboarding, APP development, testing, release, and maintenance"
+        },
+        {
+          "name": "Management Features",
+          "items": [
+            "Manage your APPs",
+            "Access Open API testing tools, test accounts and sandbox environments",
+            "Get important information through Announcement page, Documentation, and Support Center"
+          ]
+        }
+      ],
+      "user_types": [
+        {
+          "type": "Software service providers",
+          "description": "Comprehensive range of Open APIs for software businesses covering shop operations, marketing, and more"
+        },
+        {
+          "type": "Sellers with software development capabilities",
+          "description": "For sellers wanting to develop tailored software and integrate systems for operations optimization and data management"
+        }
+      ]
+    },
+    "notes": "This appears to be the introduction page of Shopee Open Platform documentation. It contains overview information rather than specific API endpoint details. The page includes sections about platform benefits, user types, and main features. Navigation menu on the left shows various documentation sections including API calls, Authentication, and other technical documentation.",
+    "chunk_metadata": {
+      "index": 1,
+      "total": 1,
+      "y_start": 0,
+      "y_end": 1080,
+      "overlap_top": 0,
+      "overlap_bottom": 0,
+      "height": 1080,
+      "path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\platforms\\shopee\\apis\\workspaces\\developer-guide.4\\chunks\\chunk_001.png",
+      "filename": "chunk_001.png",
+      "width": 1920
+    },
+    "analysis_timestamp": "2025-10-12T01:20:27.273275",
+    "model": "claude-3-5-sonnet-20241022"
+  }
+]

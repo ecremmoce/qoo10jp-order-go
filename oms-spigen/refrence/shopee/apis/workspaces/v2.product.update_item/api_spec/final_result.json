@@ -1,0 +1,77 @@
+{
+  "endpoint": null,
+  "method": null,
+  "description": "API Permissions section showing app types that can call this API",
+  "parameters": [],
+  "response_fields": [
+    {
+      "name": "error_in_item_promotion_image_item_lock",
+      "type": "string",
+      "description": "Can't update images when item is under promotion."
+    },
+    {
+      "name": "error_in_item_promotion_name_item_lock",
+      "type": "string",
+      "description": "Can't update item_name when item is under promotion."
+    },
+    {
+      "name": "error_in_item_promotion_unlist_lock",
+      "type": "string",
+      "description": "Can't unlist item when item is under promotion."
+    },
+    {
+      "name": "error_in_item_promotion_description_lock",
+      "type": "string",
+      "description": "Can't update description when item is under promotion."
+    },
+    {
+      "name": "error_flash_sale_days_to_ship_lock",
+      "type": "string",
+      "description": "Days_to_ship cannot be changed when item is under ongoing/upcoming flash sale."
+    },
+    {
+      "name": "error_slash_price_not_lowest",
+      "type": "string",
+      "description": "In slash sale, price should not be lower or same as slash price."
+    },
+    {
+      "name": "error_whole_sale_min_count_incorrect",
+      "type": "string",
+      "description": "Internal error, please contact openapi team."
+    },
+    {
+      "name": "error_whole_sale_price_setting_incorrect",
+      "type": "string",
+      "description": "Wholesale price can't more than original price."
+    },
+    {
+      "name": "error_video_info_not_found",
+      "type": "string",
+      "description": "Video_info not found."
+    }
+  ],
+  "update_log": [
+    {
+      "date": "2025-09-19",
+      "details": "The request field \"certification_type\" has been removed. If this field is still passed in the request, it will be ignored by the system."
+    },
+    {
+      "date": "2025-04-29",
+      "details": "Update certification_info"
+    },
+    {
+      "date": "2025-04-28",
+      "details": "Add permit ID for PH product certification"
+    }
+  ],
+  "hidden_fields": [],
+  "metadata": {
+    "total_chunks": 4,
+    "chunks_with_errors": 0,
+    "total_parameters_before_dedup": 0,
+    "total_parameters_after_dedup": 0,
+    "update_log_entries": 3,
+    "hidden_fields_count": 0,
+    "source_results": "workspaces\\v2.product.update_item\\results\\all_chunks_results.json"
+  }
+}

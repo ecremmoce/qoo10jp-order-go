@@ -1,0 +1,76 @@
+{
+  "chunk_index": 1,
+  "total_chunks": 1,
+  "endpoint": null,
+  "method": null,
+  "description": null,
+  "update_log": [],
+  "hidden_fields": [],
+  "parameters": [
+    {
+      "name": "address",
+      "type": "string",
+      "required": true,
+      "description": "Contract address",
+      "children": []
+    },
+    {
+      "name": "amount",
+      "type": "string",
+      "required": true,
+      "description": "Transfer amount",
+      "children": []
+    },
+    {
+      "name": "decimals",
+      "type": "integer",
+      "required": false,
+      "description": "Token decimals",
+      "children": []
+    },
+    {
+      "name": "chain_id",
+      "type": "string",
+      "required": true,
+      "description": "Chain identifier",
+      "children": []
+    },
+    {
+      "name": "symbol",
+      "type": "string",
+      "required": false,
+      "description": "Token symbol",
+      "children": []
+    },
+    {
+      "name": "gas_price",
+      "type": "string",
+      "required": false,
+      "description": "Gas price for transaction",
+      "children": []
+    },
+    {
+      "name": "gas_limit",
+      "type": "string",
+      "required": false,
+      "description": "Gas limit for transaction",
+      "children": []
+    }
+  ],
+  "response_fields": [],
+  "notes": "This appears to be documentation for a blockchain/cryptocurrency related API, possibly for token transfers. The image shows various parameters related to blockchain transactions including addresses, amounts, gas settings, and chain identifiers. Some parameters appear to be optional while others are marked as required.",
+  "chunk_metadata": {
+    "index": 1,
+    "total": 1,
+    "y_start": 0,
+    "y_end": 6186,
+    "overlap_top": 0,
+    "overlap_bottom": 0,
+    "height": 6186,
+    "path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\workspaces\\v2.global_product.get_attribute_tree\\chunks\\chunk_001.png",
+    "filename": "chunk_001.png",
+    "width": 837
+  },
+  "analysis_timestamp": "2025-10-10T05:45:56.690404",
+  "model": "claude-3-5-sonnet-20241022"
+}

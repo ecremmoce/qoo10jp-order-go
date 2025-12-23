@@ -1,0 +1,61 @@
+{
+  "chunk_index": 2,
+  "endpoint": null,
+  "method": null,
+  "description": null,
+  "parameters": [],
+  "response_fields": [
+    {
+      "name": "API Permissions",
+      "type": "object",
+      "description": "APP types that can call this API",
+      "children": [
+        {
+          "name": "ERP System",
+          "type": "string",
+          "description": null
+        },
+        {
+          "name": "Seller in House System",
+          "type": "string",
+          "description": null
+        },
+        {
+          "name": "Product Management",
+          "type": "string",
+          "description": null
+        }
+      ]
+    },
+    {
+      "name": "Update Log",
+      "type": "array",
+      "description": "Version update history",
+      "children": [
+        {
+          "name": "Date",
+          "type": "string",
+          "description": "Update date"
+        },
+        {
+          "name": "Update Details",
+          "type": "string",
+          "description": "Description of changes"
+        }
+      ]
+    }
+  ],
+  "chunk_metadata": {
+    "index": 2,
+    "total": 2,
+    "y_start": 7250,
+    "y_end": 9219,
+    "overlap_top": 500,
+    "overlap_bottom": 0,
+    "height": 1969,
+    "path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\workspaces\\v2.product.add_model\\chunks\\chunk_002.png",
+    "filename": "chunk_002.png",
+    "width": 837
+  },
+  "chunk_path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\workspaces\\v2.product.add_model\\chunks\\chunk_002.png"
+}

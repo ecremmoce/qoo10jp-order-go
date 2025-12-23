@@ -1,0 +1,84 @@
+{
+  "endpoint": "/openapi/payment/get_close_icon",
+  "method": "GET",
+  "description": "API for payment close icon retrieval",
+  "parameters": [
+    {
+      "name": "session_id",
+      "type": "string",
+      "required": true,
+      "description": "Payment ID is assigned upon registration in successful transactions",
+      "children": []
+    },
+    {
+      "name": "access_token",
+      "type": "string",
+      "required": true,
+      "description": "The token for API system, which is identity pre-processed to determine if it is allowed to access this API",
+      "children": []
+    },
+    {
+      "name": "sign",
+      "type": "string",
+      "required": true,
+      "description": "Digital signature (Generated as shown in Sec. /openapi/payment/get/getSignStr) using all non-null, non-empty parameters in alphabetical order",
+      "children": []
+    }
+  ],
+  "response_fields": [
+    {
+      "name": "ret",
+      "type": "string",
+      "description": "Integer error key 4/5/6/98. Simply 4 for error Response",
+      "children": []
+    },
+    {
+      "name": "timestamp",
+      "type": "string",
+      "description": "Integer error number 4/5/6/98. Simply 4 for error Response",
+      "children": []
+    },
+    {
+      "name": "session_id",
+      "type": "string",
+      "description": "The identifier for an API request/by each session",
+      "children": []
+    },
+    {
+      "name": "data",
+      "type": "object",
+      "description": "",
+      "children": [
+        {
+          "name": "icon_path",
+          "type": "string",
+          "description": "The close icon path of the icon",
+          "children": []
+        },
+        {
+          "name": "side_pic",
+          "type": "string",
+          "description": "The side icon of the site in the detecting key.2 side detail",
+          "children": []
+        },
+        {
+          "name": "other_pic",
+          "type": "string",
+          "description": "Request others clientRep for an icon",
+          "children": []
+        }
+      ]
+    }
+  ],
+  "update_log": [],
+  "hidden_fields": [],
+  "metadata": {
+    "total_chunks": 1,
+    "chunks_with_errors": 0,
+    "total_parameters_before_dedup": 3,
+    "total_parameters_after_dedup": 3,
+    "update_log_entries": 0,
+    "hidden_fields_count": 0,
+    "source_results": "platforms\\shopee\\apis\\workspaces\\v2.livestream.get_show_item\\results\\all_chunks_results.json"
+  }
+}

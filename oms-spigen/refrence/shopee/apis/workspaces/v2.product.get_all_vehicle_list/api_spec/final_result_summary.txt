@@ -1,0 +1,65 @@
+======================================================================
+API SPECIFICATION SUMMARY
+======================================================================
+
+Endpoint: POST /product/ad_service_list
+
+Parameters (7):
+----------------------------------------------------------------------
+* timestamp (string)
+   This is to indicate the timestamp of the request. Required to be in timestamp format in seconds.
+* access_token (string)
+   The base-64 JWT token. Using to identify each permission to the API with the callback service
+* shop_id (integer)
+   Shopee's unique identifier for a shop. Required param for authorization.
+* merchant (string)
+   Specify which states if for error. Every if no error happened
+* offset (integer)
+   Specifies the starting point of data to return in this current call. Default is 0. Max allowed is offset last size return
+* warning (string)
+   Indicate which states if for error. Error if no error happened
+* request_id (string)
+   The identifier for an API request for error handling
+
+Response Fields (13):
+----------------------------------------------------------------------
+  message (string)
+   Indicate which states if for error. Empty if no error happened
+  warning (string)
+   Indicate which states if warning. Empty if no error happened
+  request_id (string)
+   The identifier for an API request for error handling
+  error_code (integer)
+   ID of the error
+  error (string)
+   Name of the error
+  state (integer)
+   ID of the state
+  state_name (string)
+   Name of the state
+  model (integer)
+   ID of the model
+  model_name (string)
+   Name of the model
+  step_state (integer)
+   ID of the state
+  normal_id (string)
+   ID of the normal
+  capture_name (boolean)
+   Name of the capture
+  has_next_page (boolean)
+   This is to indicate whether the data has more data from the API. If true means still has data for next page. If false means have fetch all the data
+
+Metadata:
+----------------------------------------------------------------------
+  total_chunks: 1
+  chunks_with_errors: 0
+  total_parameters_before_dedup: 7
+  total_parameters_after_dedup: 7
+  update_log_entries: 1
+  hidden_fields_count: 0
+  source_results: workspaces\v2.product.get_all_vehicle_list\results\all_chunks_results.json
+
+======================================================================
+Legend: * = required parameter
+======================================================================

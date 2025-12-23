@@ -1,0 +1,39 @@
+{
+  "document_id": "v2.product.get_category",
+  "document_type": "api",
+  "platform": "shopee",
+  "extracted_at": "2025-10-16T05:51:45",
+  "extracted_text": "I'll help extract and structure the API documentation in English, following your requirements.\n\n## Common Parameters\n\n| Parameter | Type | Required | Description |\n|-----------|------|----------|-------------|\n| article_id | string | ✓ | - |\n| title_jp | string | - | - |\n| title_en | string | - | - |\n\n## Request Parameters\n\n| Parameter | Type | Required | Description |\n|-----------|------|----------|-------------|\n| size | string | - | Sample size (small size) |\n| message | string | - | Loading text display |\n| speed_id | string | - | Speed level to run |\n| duration | string | - | n/a |\n| mode | string | - | Process mode |\n| content_id | string | - | n/a |\n| parent_content_id | string | - | n/a |\n| portal_status_text | string | - | Default value for category |\n| article_status_text | string | - | Status value designation of article type |\n\n## Request Example\n\n```json\n{\n  \"search\": {\n    \"match\": {\n      \"category\": \"id\"\n    }\n  }\n}\n```\n\n## Response Example\n\n```json\n{\n  \"sample\": {\n    \"type\": \"text\",\n    \"category\": \"id\"\n  }\n}\n```\n\n## Error Codes\n\n| Code | Description |\n|------|-------------|\n| error_400 | Cannot build data into item |\n| error_generic | There is an error | \n| error_401 | Access error |\n| error_404 | Resource not found |\n| error_500 | No permission to access api |\n| error_503 | Service is in error |\n| error_505 | Wrong type |\n| error_510 | Cannot complete request |\n| error_520 | System data not found |\n| error_530 | Operation cannot be applied |\n| error_540 | Missing parameter |\n| error_550 | The parameter you entered is not found |\n| error_560 | Wrong parameter, dead thing |\n| error_570 | Something failed |\n| error_get | Changed to failed |\n| error_global | Failed global process |\n| error_global_text | Only go this failed |\n| error_global_mode | I'm upload a being save file to memory delete to size |\n| error_text | Change not failed |\n| error_global_text_build | Resource article text content not received requested |\n| error_text_failed | Image not build |\n| error_global_text_load | Content text show to apply build |\n| error_global_text_mode | System error, please to apply content all failed build request failed |\n| error_global_text_build | You shall not not access text api |\n| error_global_text_data | My system is using just this to memory delete to type |\n\n## API Specifications\n\n- Endpoint patterns follow RESTful conventions\n- Authentication required for most endpoints\n- JSON response format\n- Rate limiting applies\n\n## Updated Log\n\n- 2023.04.19: Update endpoint description\n- 2023.04.18: Update message description\n- 2023.04.17: Update endpoint description\n\nThis documentation appears to be for a content management or article processing API with various endpoints for handling articles, content, and related operations.",
+  "metadata": {
+    "title": "Content Management API",
+    "summary": "This API facilitates content management and article processing. It provides endpoints for handling articles, content, and related operations, including managing article status, content display, and processing modes.",
+    "keywords": [
+      "content management",
+      "article processing",
+      "RESTful API",
+      "JSON",
+      "error codes",
+      "content status",
+      "article status",
+      "API specifications"
+    ],
+    "category": "Content Management",
+    "tags": [
+      "article",
+      "content",
+      "REST",
+      "JSON",
+      "status",
+      "processing"
+    ],
+    "difficulty": "medium",
+    "importance": 4,
+    "use_cases": [
+      "Managing article content and metadata",
+      "Updating article status and visibility",
+      "Processing content with different modes and speeds",
+      "Retrieving content based on category and ID"
+    ],
+    "related_apis": []
+  }
+}

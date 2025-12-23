@@ -1,0 +1,47 @@
+{
+  "endpoint": null,
+  "method": null,
+  "description": null,
+  "parameters": [
+    {
+      "name": "URL",
+      "type": "string",
+      "required": true,
+      "description": "Appears to be an endpoint URL parameter",
+      "children": []
+    },
+    {
+      "name": "MId",
+      "type": "string",
+      "required": true,
+      "description": null,
+      "children": []
+    },
+    {
+      "name": "SId",
+      "type": "string",
+      "required": true,
+      "description": null,
+      "children": []
+    },
+    {
+      "name": "PId",
+      "type": "string",
+      "required": true,
+      "description": null,
+      "children": []
+    }
+  ],
+  "response_fields": [],
+  "update_log": [],
+  "hidden_fields": [],
+  "metadata": {
+    "total_chunks": 1,
+    "chunks_with_errors": 0,
+    "total_parameters_before_dedup": 4,
+    "total_parameters_after_dedup": 4,
+    "update_log_entries": 0,
+    "hidden_fields_count": 0,
+    "source_results": "workspaces\\v2.sbs.get_expiry_report\\results\\all_chunks_results.json"
+  }
+}

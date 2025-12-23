@@ -1,0 +1,54 @@
+{
+  "endpoint": null,
+  "method": null,
+  "description": null,
+  "parameters": [
+    {
+      "name": "URL",
+      "type": "string",
+      "required": true,
+      "description": "API endpoint base URLs shown in Common Parameters section",
+      "children": []
+    },
+    {
+      "name": "version_id",
+      "type": "string",
+      "required": true,
+      "description": "Required parameter",
+      "children": []
+    },
+    {
+      "name": "access_id",
+      "type": "string",
+      "required": true,
+      "description": "Required parameter that identifies the API call source",
+      "children": []
+    },
+    {
+      "name": "timestamp",
+      "type": "string",
+      "required": true,
+      "description": "The timestamp when making the request",
+      "children": []
+    },
+    {
+      "name": "msg_id",
+      "type": "string",
+      "required": false,
+      "description": "Parameter to prevent duplicate requests",
+      "children": []
+    }
+  ],
+  "response_fields": [],
+  "update_log": [],
+  "hidden_fields": [],
+  "metadata": {
+    "total_chunks": 1,
+    "chunks_with_errors": 0,
+    "total_parameters_before_dedup": 5,
+    "total_parameters_after_dedup": 5,
+    "update_log_entries": 0,
+    "hidden_fields_count": 0,
+    "source_results": "workspaces\\v2.public.refresh_access_token\\results\\all_chunks_results.json"
+  }
+}

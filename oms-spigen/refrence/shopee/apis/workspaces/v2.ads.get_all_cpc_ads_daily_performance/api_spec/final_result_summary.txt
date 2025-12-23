@@ -1,0 +1,38 @@
+======================================================================
+API SPECIFICATION SUMMARY
+======================================================================
+
+Endpoint: GET /api/get_cart_cal_sub_table_performance
+Description: Performance calculation for sub tables
+
+Parameters (3):
+----------------------------------------------------------------------
+* cart_series (string)
+   Cart series identifier
+  split (string)
+   Split parameter
+  detail_schema (string)
+   Detailed schema information
+
+Response Fields (3):
+----------------------------------------------------------------------
+  code (integer)
+   Response code
+  message (string)
+   Response message
+  data (object)
+   Response data object
+
+Metadata:
+----------------------------------------------------------------------
+  total_chunks: 1
+  chunks_with_errors: 0
+  total_parameters_before_dedup: 3
+  total_parameters_after_dedup: 3
+  update_log_entries: 0
+  hidden_fields_count: 0
+  source_results: workspaces\v2.ads.get_all_cpc_ads_daily_performance\results\all_chunks_results.json
+
+======================================================================
+Legend: * = required parameter
+======================================================================

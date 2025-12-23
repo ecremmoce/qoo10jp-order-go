@@ -1,0 +1,75 @@
+{
+  "endpoint": null,
+  "method": null,
+  "description": null,
+  "parameters": [
+    {
+      "name": "URL",
+      "type": "string",
+      "required": true,
+      "description": "API endpoint URLs",
+      "children": [
+        {
+          "name": "release",
+          "type": "string",
+          "required": true,
+          "description": "http://partner.example.com/commerces/success_account_set"
+        },
+        {
+          "name": "test",
+          "type": "string",
+          "required": true,
+          "description": "http://partner-test.example.com/commerces/success_account_set"
+        }
+      ]
+    },
+    {
+      "name": "sign",
+      "type": "string",
+      "required": true,
+      "description": "Signature parameter is similar to v1_prods, however, parameters needed to be signed are different from those in v1_prods."
+    },
+    {
+      "name": "partner_id",
+      "type": "string",
+      "required": true,
+      "description": "Unique partner identifier provided by the platform"
+    },
+    {
+      "name": "timestamp",
+      "type": "string",
+      "required": true,
+      "description": "Request timestamp"
+    },
+    {
+      "name": "account_id",
+      "type": "string",
+      "required": true,
+      "description": "The identifier of the user account for your service"
+    },
+    {
+      "name": "user_id",
+      "type": "string",
+      "required": false,
+      "description": "User identifier linked to the user"
+    },
+    {
+      "name": "version",
+      "type": "string",
+      "required": true,
+      "description": "Interface version"
+    }
+  ],
+  "response_fields": [],
+  "update_log": [],
+  "hidden_fields": [],
+  "metadata": {
+    "total_chunks": 1,
+    "chunks_with_errors": 0,
+    "total_parameters_before_dedup": 7,
+    "total_parameters_after_dedup": 7,
+    "update_log_entries": 0,
+    "hidden_fields_count": 0,
+    "source_results": "workspaces\\v2.discount.get_discount_list\\results\\all_chunks_results.json"
+  }
+}

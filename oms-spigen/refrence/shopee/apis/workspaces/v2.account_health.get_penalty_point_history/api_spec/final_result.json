@@ -1,0 +1,77 @@
+{
+  "endpoint": null,
+  "method": null,
+  "description": "This appears to be a payment gateway API documentation",
+  "parameters": [
+    {
+      "name": "payment_method",
+      "type": "string",
+      "required": true,
+      "description": "The payment method identifier",
+      "truncated": false,
+      "continued": false,
+      "children": []
+    },
+    {
+      "name": "processor_code",
+      "type": "string",
+      "required": true,
+      "description": "The processor code for the payment",
+      "truncated": false,
+      "continued": false,
+      "children": []
+    },
+    {
+      "name": "card",
+      "type": "object",
+      "required": true,
+      "description": "Card payment details",
+      "truncated": false,
+      "continued": false,
+      "children": [
+        {
+          "name": "cvv",
+          "type": "string",
+          "required": true,
+          "description": "Card verification value",
+          "children": []
+        },
+        {
+          "name": "expiry",
+          "type": "string",
+          "required": true,
+          "description": "Card expiry date",
+          "children": []
+        }
+      ]
+    }
+  ],
+  "response_fields": [],
+  "update_log": [
+    {
+      "date": "2021-08-12",
+      "change": "Initial update entry visible in the log"
+    }
+  ],
+  "hidden_fields": [
+    {
+      "name": "payment_method",
+      "found_in": "parameter list",
+      "extracted_from_description": true
+    },
+    {
+      "name": "processor_code",
+      "found_in": "parameter list",
+      "extracted_from_description": true
+    }
+  ],
+  "metadata": {
+    "total_chunks": 1,
+    "chunks_with_errors": 0,
+    "total_parameters_before_dedup": 3,
+    "total_parameters_after_dedup": 3,
+    "update_log_entries": 1,
+    "hidden_fields_count": 2,
+    "source_results": "workspaces\\v2.account_health.get_penalty_point_history\\results\\all_chunks_results.json"
+  }
+}

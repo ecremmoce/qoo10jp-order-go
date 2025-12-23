@@ -1,0 +1,114 @@
+{
+  "chunk_index": 1,
+  "total_chunks": 1,
+  "endpoint": null,
+  "method": null,
+  "description": null,
+  "update_log": [
+    {
+      "date": "2023-05-19",
+      "change": "Updated fields with required parameters"
+    },
+    {
+      "date": "2023-04-28",
+      "change": "Updated create_time format"
+    }
+  ],
+  "hidden_fields": [],
+  "parameters": [
+    {
+      "name": "id",
+      "type": "string",
+      "required": true,
+      "description": null,
+      "children": []
+    },
+    {
+      "name": "user_id",
+      "type": "string",
+      "required": true,
+      "description": null,
+      "children": []
+    },
+    {
+      "name": "create_time",
+      "type": "integer",
+      "required": true,
+      "description": "Unix timestamp in seconds",
+      "children": []
+    },
+    {
+      "name": "update_time",
+      "type": "integer",
+      "required": true,
+      "description": "Unix timestamp in seconds",
+      "children": []
+    },
+    {
+      "name": "status",
+      "type": "integer",
+      "required": true,
+      "description": "Current status",
+      "children": []
+    },
+    {
+      "name": "type",
+      "type": "integer",
+      "required": true,
+      "description": "Type of record",
+      "children": []
+    },
+    {
+      "name": "amount",
+      "type": "string",
+      "required": true,
+      "description": "Amount value",
+      "children": []
+    },
+    {
+      "name": "currency",
+      "type": "string",
+      "required": true,
+      "description": "Currency code",
+      "children": []
+    },
+    {
+      "name": "details",
+      "type": "object",
+      "required": true,
+      "description": "Additional details",
+      "children": [
+        {
+          "name": "reference_id",
+          "type": "string",
+          "required": false,
+          "description": "Reference identifier",
+          "children": []
+        },
+        {
+          "name": "notes",
+          "type": "string",
+          "required": false,
+          "description": "Additional notes",
+          "children": []
+        }
+      ]
+    }
+  ],
+  "response_fields": [],
+  "notes": "The documentation appears to be for some kind of financial or transaction API based on the fields present (amount, currency, status). Some parameter descriptions are minimal or missing but the structure is clear from the indentation in the image.",
+  "chunk_metadata": {
+    "index": 1,
+    "total": 1,
+    "y_start": 0,
+    "y_end": 7323,
+    "overlap_top": 0,
+    "overlap_bottom": 0,
+    "height": 7323,
+    "path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\workspaces\\v2.logistics.get_shipping_parameter\\chunks\\chunk_001.png",
+    "filename": "chunk_001.png",
+    "width": 837
+  },
+  "analysis_timestamp": "2025-10-10T06:06:22.306101",
+  "model": "claude-3-5-sonnet-20241022"
+}

@@ -1,0 +1,108 @@
+[
+  {
+    "chunk_index": 1,
+    "total_chunks": 1,
+    "endpoint": "/openapi/warehouse/get_warehouse_eligible_shop_list",
+    "method": null,
+    "description": null,
+    "update_log": [
+      {
+        "date": "2023-11-14",
+        "change": "Update"
+      }
+    ],
+    "parameters": [
+      {
+        "name": "timestamp",
+        "type": "string",
+        "required": true,
+        "description": "UTC+8 timezone",
+        "children": []
+      },
+      {
+        "name": "url",
+        "type": "string",
+        "required": true,
+        "description": "Request URL",
+        "children": []
+      },
+      {
+        "name": "access_token",
+        "type": "string",
+        "required": true,
+        "description": "Access token to identify user permission to use API",
+        "children": []
+      },
+      {
+        "name": "merchant_id",
+        "type": "integer",
+        "required": true,
+        "description": "Shopeeid unique identifier for a merchant",
+        "children": []
+      },
+      {
+        "name": "page",
+        "type": "integer",
+        "required": false,
+        "description": "Indicate which page to retrieve",
+        "children": []
+      },
+      {
+        "name": "warehouse_id",
+        "type": "integer",
+        "required": false,
+        "description": "Warehouse address identifier",
+        "children": []
+      },
+      {
+        "name": "operation_type",
+        "type": "integer",
+        "required": false,
+        "description": "Operation type",
+        "children": []
+      }
+    ],
+    "response_fields": [
+      {
+        "name": "request_id",
+        "type": "string",
+        "description": "The identifier of the API request for each attempt"
+      },
+      {
+        "name": "error",
+        "type": "string",
+        "description": "Indicate error type if any error. Empty if no error happened"
+      },
+      {
+        "name": "message",
+        "type": "string",
+        "description": "Indicate error details if any error. Empty if no happened"
+      },
+      {
+        "name": "more",
+        "type": "boolean",
+        "description": "Indicate flag bit of the warehouse"
+      },
+      {
+        "name": "shop_list",
+        "type": "array",
+        "description": "List of eligible shops"
+      }
+    ],
+    "notes": "The documentation shows both request and response parameters, along with example code snippets in multiple programming languages. There's an error codes section at the bottom of the documentation.",
+    "chunk_metadata": {
+      "index": 1,
+      "total": 1,
+      "y_start": 0,
+      "y_end": 4399,
+      "overlap_top": 0,
+      "overlap_bottom": 0,
+      "height": 4399,
+      "path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\workspaces\\v2.merchant.get_warehouse_eligible_shop_list\\chunks\\chunk_001.png",
+      "filename": "chunk_001.png",
+      "width": 837
+    },
+    "analysis_timestamp": "2025-10-10T06:12:56.096447",
+    "model": "claude-3-5-sonnet-20241022"
+  }
+]

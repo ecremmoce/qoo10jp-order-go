@@ -1,0 +1,139 @@
+[
+  {
+    "chunk_index": 1,
+    "total_chunks": 1,
+    "endpoint": "/openplatform/get_voice_json",
+    "method": "GET",
+    "description": "Voice API endpoint",
+    "update_log": [
+      {
+        "date": "2024-01-24",
+        "change": "v1.0"
+      }
+    ],
+    "parameters": [
+      {
+        "name": "session_id",
+        "type": "string",
+        "required": true,
+        "description": "Parent ID is assigned upon registration in successful authentication for all requests",
+        "children": []
+      },
+      {
+        "name": "access_token",
+        "type": "string",
+        "required": true,
+        "description": "The token for API system, which is identity care permission to access openplatform, expires in 2 hours",
+        "children": []
+      },
+      {
+        "name": "sign",
+        "type": "string",
+        "required": true,
+        "description": "Signature generated dynamically as follows:sha1(session_id + access_token + time_stamp + secret_key), if your parameters are incorrect, it will be prompting parameter error",
+        "children": []
+      }
+    ],
+    "response_fields": [
+      {
+        "name": "time",
+        "type": "string",
+        "description": "Server time",
+        "children": []
+      },
+      {
+        "name": "timestamp",
+        "type": "string",
+        "description": "Timestamp",
+        "children": []
+      },
+      {
+        "name": "session_id",
+        "type": "string",
+        "description": "The number for user",
+        "children": []
+      },
+      {
+        "name": "code",
+        "type": "integer",
+        "description": "Error information code got during",
+        "children": []
+      },
+      {
+        "name": "msg",
+        "type": "string",
+        "description": "The state of the item in the receiving",
+        "children": []
+      },
+      {
+        "name": "msg_id",
+        "type": "string",
+        "description": "The serial number of the item",
+        "children": []
+      },
+      {
+        "name": "status",
+        "type": "string",
+        "description": "Name of the item in your language",
+        "children": []
+      },
+      {
+        "name": "price",
+        "type": "integer",
+        "description": "The price of the item",
+        "children": []
+      },
+      {
+        "name": "total_price",
+        "type": "float",
+        "description": "The total price rate representing the currency unit rate of the item",
+        "children": []
+      },
+      {
+        "name": "country_price",
+        "type": "float",
+        "description": "The current price of the item in the listing percentage - shows your price based on percentage",
+        "children": []
+      },
+      {
+        "name": "original_price",
+        "type": "float",
+        "description": "The original price of the item in the listing",
+        "children": []
+      }
+    ],
+    "error_codes": [
+      {
+        "code": "error_204",
+        "description": "Server error failed"
+      },
+      {
+        "code": "error_400",
+        "description": "Parameter format error"
+      },
+      {
+        "code": "error_401",
+        "description": "You are not authorized"
+      },
+      {
+        "code": "error_403",
+        "description": "The session/access_id_[USER] is not belong to you"
+      }
+    ],
+    "notes": "The documentation includes request/response examples and error codes. The API appears to be related to voice or audio processing with pricing information in the response.",
+    "chunk_metadata": {
+      "index": 1,
+      "total": 1,
+      "y_start": 0,
+      "y_end": 4672,
+      "overlap_top": 0,
+      "overlap_bottom": 0,
+      "height": 4672,
+      "path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\platforms\\shopee\\apis\\workspaces\\v2.livestream.get_show_item\\chunks\\chunk_001.png",
+      "filename": "chunk_001.png",
+      "width": 837
+    },
+    "analysis_timestamp": "2025-10-11T23:21:44.904785",
+    "model": "claude-3-5-sonnet-20241022"
+  }
+]

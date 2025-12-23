@@ -1,0 +1,42 @@
+{
+  "chunk_index": 1,
+  "endpoint": null,
+  "method": null,
+  "description": null,
+  "parameters": [],
+  "response_fields": [
+    {
+      "name": "error_in_item_promotion_image_item_lock",
+      "type": "string",
+      "description": "Can't update images when item is under promotion."
+    },
+    {
+      "name": "error_in_item_promotion_name_item_lock",
+      "type": "string",
+      "description": "Can't update item_name when item is under promotion."
+    },
+    {
+      "name": "error_in_item_promotion_unlist_lock",
+      "type": "string",
+      "description": "Can't unlist item when item is under promotion."
+    },
+    {
+      "name": "error_in_item_promotion_description_lock",
+      "type": "string",
+      "description": "Can't update description when item is under promotion."
+    }
+  ],
+  "chunk_metadata": {
+    "index": 1,
+    "total": 4,
+    "y_start": 0,
+    "y_end": 8000,
+    "overlap_top": 0,
+    "overlap_bottom": 500,
+    "height": 8000,
+    "path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\workspaces\\v2.product.update_item\\chunks\\chunk_001.png",
+    "filename": "chunk_001.png",
+    "width": 837
+  },
+  "chunk_path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\workspaces\\v2.product.update_item\\chunks\\chunk_001.png"
+}

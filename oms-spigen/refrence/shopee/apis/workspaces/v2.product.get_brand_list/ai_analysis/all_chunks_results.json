@@ -1,0 +1,90 @@
+[
+  {
+    "chunk_index": 1,
+    "total_chunks": 1,
+    "endpoint": null,
+    "method": null,
+    "description": null,
+    "update_log": [],
+    "hidden_fields": [],
+    "parameters": [
+      {
+        "name": "url",
+        "type": "string",
+        "required": true,
+        "description": null,
+        "children": []
+      },
+      {
+        "name": "method",
+        "type": "string",
+        "required": true,
+        "description": null,
+        "children": []
+      },
+      {
+        "name": "headers",
+        "type": "object",
+        "required": false,
+        "description": null,
+        "children": []
+      },
+      {
+        "name": "post_params",
+        "type": "object",
+        "required": false,
+        "description": null,
+        "children": []
+      }
+    ],
+    "response_fields": [
+      {
+        "name": "code",
+        "type": "integer",
+        "description": "Status code of the response",
+        "children": []
+      },
+      {
+        "name": "error_code",
+        "type": "string",
+        "description": null,
+        "children": []
+      },
+      {
+        "name": "message",
+        "type": "string",
+        "description": "Response message or error description",
+        "children": []
+      }
+    ],
+    "error_codes": [
+      {
+        "code": "post_error",
+        "description": "Failed to submit form"
+      },
+      {
+        "code": "post_param_error",
+        "description": "Invalid post parameters"
+      },
+      {
+        "code": "post_failed",
+        "description": "Submission failed"
+      }
+    ],
+    "notes": "The image appears to be API documentation showing required and optional parameters, response fields, and error codes. Some sections appear to have additional details that are partially visible or cut off in the image.",
+    "chunk_metadata": {
+      "index": 1,
+      "total": 1,
+      "y_start": 0,
+      "y_end": 6090,
+      "overlap_top": 0,
+      "overlap_bottom": 0,
+      "height": 6090,
+      "path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\workspaces\\v2.product.get_brand_list\\chunks\\chunk_001.png",
+      "filename": "chunk_001.png",
+      "width": 837
+    },
+    "analysis_timestamp": "2025-10-10T06:26:38.514768",
+    "model": "claude-3-5-sonnet-20241022"
+  }
+]

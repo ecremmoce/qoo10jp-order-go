@@ -1,0 +1,95 @@
+{
+  "endpoint": "/api/something",
+  "method": "GET",
+  "description": "Get list of items",
+  "parameters": [
+    {
+      "name": "source_identifier",
+      "type": "string",
+      "required": false,
+      "description": "external video identifier",
+      "children": []
+    },
+    {
+      "name": "source",
+      "type": "string",
+      "required": false,
+      "description": "video source (eg YouTube)",
+      "children": []
+    },
+    {
+      "name": "title",
+      "type": "string",
+      "required": false,
+      "description": "video title",
+      "children": []
+    },
+    {
+      "name": "filter",
+      "type": "object",
+      "required": false,
+      "description": "Filter parameters",
+      "children": [
+        {
+          "name": "start_date",
+          "type": "string",
+          "required": false,
+          "description": "Filter by start date",
+          "children": []
+        },
+        {
+          "name": "end_date",
+          "type": "string",
+          "required": false,
+          "description": "Filter by end date",
+          "children": []
+        }
+      ]
+    },
+    {
+      "name": "page",
+      "type": "integer",
+      "required": false,
+      "description": "Page number for pagination",
+      "children": []
+    }
+  ],
+  "response_fields": [
+    {
+      "name": "comments",
+      "type": "array",
+      "description": "Recent comments on this video",
+      "children": [
+        {
+          "name": "id",
+          "type": "integer",
+          "description": "Comment ID",
+          "children": []
+        },
+        {
+          "name": "parent_id",
+          "type": "integer",
+          "description": "Parent comment ID if this is a reply",
+          "children": []
+        },
+        {
+          "name": "text",
+          "type": "string",
+          "description": "Comment text content",
+          "children": []
+        }
+      ]
+    }
+  ],
+  "update_log": [],
+  "hidden_fields": [],
+  "metadata": {
+    "total_chunks": 2,
+    "chunks_with_errors": 0,
+    "total_parameters_before_dedup": 5,
+    "total_parameters_after_dedup": 5,
+    "update_log_entries": 0,
+    "hidden_fields_count": 0,
+    "source_results": "workspaces\\v2.logistics.update_shipping_order\\results\\all_chunks_results.json"
+  }
+}

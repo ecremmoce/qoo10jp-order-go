@@ -1,0 +1,106 @@
+{
+  "endpoint": null,
+  "method": null,
+  "description": null,
+  "parameters": [
+    {
+      "name": "id",
+      "type": "string",
+      "required": true,
+      "description": null,
+      "children": []
+    },
+    {
+      "name": "user_id",
+      "type": "string",
+      "required": true,
+      "description": null,
+      "children": []
+    },
+    {
+      "name": "create_time",
+      "type": "integer",
+      "required": true,
+      "description": "Unix timestamp in seconds",
+      "children": []
+    },
+    {
+      "name": "update_time",
+      "type": "integer",
+      "required": true,
+      "description": "Unix timestamp in seconds",
+      "children": []
+    },
+    {
+      "name": "status",
+      "type": "integer",
+      "required": true,
+      "description": "Current status",
+      "children": []
+    },
+    {
+      "name": "type",
+      "type": "integer",
+      "required": true,
+      "description": "Type of record",
+      "children": []
+    },
+    {
+      "name": "amount",
+      "type": "string",
+      "required": true,
+      "description": "Amount value",
+      "children": []
+    },
+    {
+      "name": "currency",
+      "type": "string",
+      "required": true,
+      "description": "Currency code",
+      "children": []
+    },
+    {
+      "name": "details",
+      "type": "object",
+      "required": true,
+      "description": "Additional details",
+      "children": [
+        {
+          "name": "reference_id",
+          "type": "string",
+          "required": false,
+          "description": "Reference identifier",
+          "children": []
+        },
+        {
+          "name": "notes",
+          "type": "string",
+          "required": false,
+          "description": "Additional notes",
+          "children": []
+        }
+      ]
+    }
+  ],
+  "response_fields": [],
+  "update_log": [
+    {
+      "date": "2023-05-19",
+      "change": "Updated fields with required parameters"
+    },
+    {
+      "date": "2023-04-28",
+      "change": "Updated create_time format"
+    }
+  ],
+  "hidden_fields": [],
+  "metadata": {
+    "total_chunks": 1,
+    "chunks_with_errors": 0,
+    "total_parameters_before_dedup": 9,
+    "total_parameters_after_dedup": 9,
+    "update_log_entries": 2,
+    "hidden_fields_count": 0,
+    "source_results": "workspaces\\v2.logistics.get_shipping_parameter\\results\\all_chunks_results.json"
+  }
+}

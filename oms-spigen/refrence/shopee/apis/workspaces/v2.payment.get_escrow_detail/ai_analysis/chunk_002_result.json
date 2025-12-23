@@ -1,0 +1,79 @@
+{
+  "chunk_index": 2,
+  "endpoint": "/topic",
+  "method": "POST",
+  "description": "Request Example",
+  "parameters": [
+    {
+      "name": "topic_id",
+      "type": "string",
+      "required": true,
+      "description": "ZAEGEQGYJKSTCMSH",
+      "children": []
+    }
+  ],
+  "response_fields": [
+    {
+      "name": "request",
+      "type": "object",
+      "description": "Response object",
+      "children": [
+        {
+          "name": "message",
+          "type": "string",
+          "description": "Success message",
+          "children": []
+        },
+        {
+          "name": "shipping",
+          "type": "array",
+          "description": "Shipping details",
+          "children": []
+        },
+        {
+          "name": "topic_payment_date",
+          "type": "string",
+          "description": "Payment date",
+          "children": []
+        },
+        {
+          "name": "topic_service_key",
+          "type": "string",
+          "description": "Service key",
+          "children": []
+        },
+        {
+          "name": "topic_gift_amount",
+          "type": "float",
+          "description": "Gift amount",
+          "children": []
+        },
+        {
+          "name": "topic_tax_amount",
+          "type": "float",
+          "description": "Tax amount",
+          "children": []
+        },
+        {
+          "name": "topic_fee_amount",
+          "type": "float",
+          "description": "Fee amount",
+          "children": []
+        }
+      ]
+    }
+  ],
+  "chunk_metadata": {
+    "index": 2,
+    "total": 3,
+    "y_start": 7649,
+    "y_end": 15649,
+    "overlap_top": 500,
+    "overlap_bottom": 500,
+    "height": 8000,
+    "path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\workspaces\\v2.payment.get_escrow_detail\\chunks\\chunk_002.png",
+    "filename": "chunk_002.png",
+    "width": 837
+  },
+  "chunk_path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\workspaces\\v2.payment.get_escrow_detail\\chunks\\chunk_002.png"
+}

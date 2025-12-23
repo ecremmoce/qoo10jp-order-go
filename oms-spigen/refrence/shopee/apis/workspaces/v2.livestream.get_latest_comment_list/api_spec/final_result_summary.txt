@@ -1,0 +1,50 @@
+======================================================================
+API SPECIFICATION SUMMARY
+======================================================================
+
+Endpoint: GET /api/benchmark/get_latest_comment_list
+
+Parameters (4):
+----------------------------------------------------------------------
+* partner_id (int)
+   Partner ID or project and regulation is provided
+* access_token (string)
+   Access token
+* post_id (int)
+* sign (string)
+   Signature parameter to request in different APIs
+
+Response Fields (9):
+----------------------------------------------------------------------
+  message (string)
+   Response message type text. Equals the error response
+  request_id (string)
+   The identifier for each request
+  response (object)
+   Detail information you are querying
+  ret_offset (int)
+   The offset for next page request
+  comment_id (int)
+   The identifier of comment
+  content (string)
+   The content of comments
+  timestamp (timestamp)
+   Timestamp for storing comment info use
+  user_id (int)
+   The user id of the one who posted the comment
+  complete (bool)
+   The complete of the one who posted
+
+Metadata:
+----------------------------------------------------------------------
+  total_chunks: 1
+  chunks_with_errors: 0
+  total_parameters_before_dedup: 4
+  total_parameters_after_dedup: 4
+  update_log_entries: 0
+  hidden_fields_count: 0
+  source_results: workspaces\v2.livestream.get_latest_comment_list\results\all_chunks_results.json
+
+======================================================================
+Legend: * = required parameter
+======================================================================

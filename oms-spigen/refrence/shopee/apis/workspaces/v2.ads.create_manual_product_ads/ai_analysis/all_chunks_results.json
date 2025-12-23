@@ -1,0 +1,71 @@
+[
+  {
+    "chunk_index": 1,
+    "total_chunks": 1,
+    "endpoint": null,
+    "method": null,
+    "description": null,
+    "update_log": [],
+    "hidden_fields": [],
+    "parameters": [
+      {
+        "name": "pid",
+        "type": "string",
+        "required": true,
+        "description": null,
+        "children": []
+      },
+      {
+        "name": "val",
+        "type": "string",
+        "required": true,
+        "description": null,
+        "children": []
+      },
+      {
+        "name": "device_id",
+        "type": "string",
+        "required": false,
+        "description": null,
+        "children": []
+      },
+      {
+        "name": "scope",
+        "type": "string",
+        "required": false,
+        "description": null,
+        "children": []
+      },
+      {
+        "name": "mobile_number",
+        "type": "string",
+        "required": false,
+        "description": null,
+        "children": []
+      },
+      {
+        "name": "email_address",
+        "type": "string",
+        "required": false,
+        "description": null,
+        "children": []
+      }
+    ],
+    "response_fields": [],
+    "notes": "The image appears to be an API documentation showing common parameters and request parameters. While the structure is clear, many of the descriptions appear to be cut off or not fully visible in the image. The documentation seems to have multiple sections including 'Common Parameters', 'Request Parameters', 'Response Parameters', and possibly more, but not all content is clearly legible. The parameters listed are primarily string types with some marked as required and others as optional.",
+    "chunk_metadata": {
+      "index": 1,
+      "total": 1,
+      "y_start": 0,
+      "y_end": 5976,
+      "overlap_top": 0,
+      "overlap_bottom": 0,
+      "height": 5976,
+      "path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\workspaces\\v2.ads.create_manual_product_ads\\chunks\\chunk_001.png",
+      "filename": "chunk_001.png",
+      "width": 837
+    },
+    "analysis_timestamp": "2025-10-10T05:27:52.641662",
+    "model": "claude-3-5-sonnet-20241022"
+  }
+]

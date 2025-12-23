@@ -1,0 +1,81 @@
+{
+  "endpoint": "/logistics/get_booking_tracking_number",
+  "method": "GET",
+  "description": "After arranging domestic/air logistics ship_booking for the integrated channel, use this API to get the tracking number, which is displayed separately for printing shipping labels",
+  "parameters": [
+    {
+      "name": "partner_id",
+      "type": "int",
+      "required": true,
+      "description": "Partner ID is assigned upon registration is successful"
+    },
+    {
+      "name": "timestamp",
+      "type": "timestamp",
+      "required": true,
+      "description": "This is to indicate the timestamp of the request. Required for all requests. Expires in 5 minutes"
+    },
+    {
+      "name": "access_token",
+      "type": "string",
+      "required": true,
+      "description": "This token for API access, using to identify your permission to the api, refer to /auth/token use and expires in 4 hours"
+    },
+    {
+      "name": "shop_id",
+      "type": "int",
+      "required": true,
+      "description": "Shopee's unique identifier for a shop. Required param for seller API."
+    },
+    {
+      "name": "sign",
+      "type": "string",
+      "required": true,
+      "description": "Authentication parameter for partner_id, api path, timestamp, access_token, shop_id and partner_key via HMAC-SHA256 algorithm"
+    },
+    {
+      "name": "booking_sn",
+      "type": "string",
+      "required": true,
+      "description": "Shopee's unique identifier for a booking"
+    }
+  ],
+  "response_fields": [
+    {
+      "name": "request_id",
+      "type": "string",
+      "description": "The identifier for an API request for error tracking"
+    },
+    {
+      "name": "error",
+      "type": "string",
+      "description": "Indicate error type if hit error. Empty if no error happened"
+    },
+    {
+      "name": "message",
+      "type": "string",
+      "description": "Indicate error details if hit error. Empty if no error happened"
+    },
+    {
+      "name": "tracking_number",
+      "type": "string",
+      "description": "The tracking number of this booking"
+    }
+  ],
+  "update_log": [
+    {
+      "date": "2024-07-02",
+      "change": "New API"
+    }
+  ],
+  "hidden_fields": [],
+  "metadata": {
+    "total_chunks": 1,
+    "chunks_with_errors": 0,
+    "total_parameters_before_dedup": 6,
+    "total_parameters_after_dedup": 6,
+    "update_log_entries": 1,
+    "hidden_fields_count": 0,
+    "source_results": "workspaces\\v2.logistics.get_booking_tracking_number\\results\\all_chunks_results.json"
+  }
+}

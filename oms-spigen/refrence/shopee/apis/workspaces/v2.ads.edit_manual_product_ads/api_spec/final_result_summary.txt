@@ -1,0 +1,41 @@
+======================================================================
+API SPECIFICATION SUMMARY
+======================================================================
+
+Endpoint: None None
+
+Parameters (3):
+----------------------------------------------------------------------
+* callback_parameters (object)
+  * currency (string)
+     Currency type parameters
+  * amount (string)
+     Amount parameters
+* request_parameters (object)
+  * payment_id (string)
+     Payment ID
+  * currency (string)
+     Currency type
+  * token (string)
+     User token
+* response_parameters (object)
+  * err (string)
+     Error code when error occurs
+  * message (string)
+     Error description
+  * signature (string)
+     Return MD5 verification if it exists
+
+Metadata:
+----------------------------------------------------------------------
+  total_chunks: 1
+  chunks_with_errors: 0
+  total_parameters_before_dedup: 3
+  total_parameters_after_dedup: 3
+  update_log_entries: 0
+  hidden_fields_count: 0
+  source_results: workspaces\v2.ads.edit_manual_product_ads\results\all_chunks_results.json
+
+======================================================================
+Legend: * = required parameter
+======================================================================

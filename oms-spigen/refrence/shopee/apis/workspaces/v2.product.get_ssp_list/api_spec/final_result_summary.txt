@@ -1,0 +1,42 @@
+======================================================================
+API SPECIFICATION SUMMARY
+======================================================================
+
+Endpoint: GET /product_get_vip_tel
+Description: Product VIP Tel Get API
+
+Parameters (7):
+----------------------------------------------------------------------
+* access_token (string)
+   Access token used for authentication and authorization
+* shop_id (integer)
+   Request target shop id. Request for specific shop or shop id.
+* sign (string)
+   Request signature parameter
+  url (string)
+   The URL of the page
+  offset (string)
+   Indicates store type
+  warning (string)
+   Indicates warning status
+  request_id (string)
+   The identifier for an API request for error tracking
+
+Response Fields (1):
+----------------------------------------------------------------------
+  error_code (integer)
+   API error code
+
+Metadata:
+----------------------------------------------------------------------
+  total_chunks: 1
+  chunks_with_errors: 0
+  total_parameters_before_dedup: 7
+  total_parameters_after_dedup: 7
+  update_log_entries: 1
+  hidden_fields_count: 0
+  source_results: workspaces\v2.product.get_ssp_list\results\all_chunks_results.json
+
+======================================================================
+Legend: * = required parameter
+======================================================================

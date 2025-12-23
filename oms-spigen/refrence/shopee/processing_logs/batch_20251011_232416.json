@@ -1,0 +1,43 @@
+{
+  "batch_id": "20251011_232416",
+  "platform": "shopee",
+  "total": 1,
+  "successful": 1,
+  "failed": 0,
+  "workers": 1,
+  "results": [
+    {
+      "url_index": 0,
+      "url": "https://open.shopee.com/documents/v2/v2.livestream.get_show_item?module=89&type=1",
+      "api_name": "v2.livestream.get_show_item",
+      "success": true,
+      "workspace": {
+        "root": "platforms\\shopee\\apis\\workspaces\\v2.livestream.get_show_item",
+        "chunks": "platforms\\shopee\\apis\\workspaces\\v2.livestream.get_show_item\\chunks",
+        "results": "platforms\\shopee\\apis\\workspaces\\v2.livestream.get_show_item\\results",
+        "final": "platforms\\shopee\\apis\\workspaces\\v2.livestream.get_show_item\\final"
+      },
+      "screenshot": "platforms\\shopee\\apis\\workspaces\\v2.livestream.get_show_item\\screenshot.png",
+      "stage": "archive",
+      "split_success": true,
+      "analyze_success": true,
+      "merge_success": true,
+      "archive_success": true,
+      "final_success": true,
+      "archive_path": "platforms\\shopee\\archive\\v2.livestream.get_show_item\\2025-10-11_23-25-29",
+      "content_changes": {
+        "api_endpoints": {
+          "before": 3,
+          "after": 6,
+          "new": 3
+        },
+        "dev_guide_sections": {
+          "before": 11,
+          "after": 0,
+          "new": 0
+        }
+      },
+      "duration": 72.230124
+    }
+  ]
+}

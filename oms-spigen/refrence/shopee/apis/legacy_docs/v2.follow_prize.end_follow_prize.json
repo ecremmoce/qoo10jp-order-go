@@ -1,0 +1,56 @@
+{
+  "endpoint": "/show_prize_and_follow_prize",
+  "method": "GET",
+  "description": "Prize/follow prize information API",
+  "parameters": [
+    {
+      "name": "campaign_id",
+      "type": "string",
+      "required": true,
+      "description": "The unique identifier for the shared follow campaign"
+    },
+    {
+      "name": "prize",
+      "type": "string",
+      "required": false,
+      "description": "Indicate what type of prize. Empty if the prize information is all types"
+    }
+  ],
+  "response_fields": [
+    {
+      "name": "response",
+      "type": "string",
+      "description": "Content information you are learning"
+    },
+    {
+      "name": "campaign_id",
+      "type": "string",
+      "description": "The unique identifier for the shared follow campaign"
+    },
+    {
+      "name": "prize",
+      "type": "string",
+      "description": "Indicate what type of prize. Empty if the prize information is all types"
+    }
+  ],
+  "update_log": [
+    {
+      "date": "2021-09-27",
+      "change": "Add Error Codes information"
+    },
+    {
+      "date": "2020-08-14",
+      "change": "Optimize the shared parameter and required parameter description information"
+    }
+  ],
+  "hidden_fields": [],
+  "metadata": {
+    "total_chunks": 1,
+    "chunks_with_errors": 0,
+    "total_parameters_before_dedup": 2,
+    "total_parameters_after_dedup": 2,
+    "update_log_entries": 2,
+    "hidden_fields_count": 0,
+    "source_results": "workspaces\\v2.follow_prize.end_follow_prize\\results\\all_chunks_results.json"
+  }
+}

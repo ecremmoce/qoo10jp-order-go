@@ -1,0 +1,88 @@
+[
+  {
+    "chunk_index": 1,
+    "total_chunks": 1,
+    "endpoint": "https://openplatform.demo.xxx.cn/api/cross/v1/xxx_handing_number",
+    "method": "POST",
+    "description": "API documentation for xxx_handing_number endpoint",
+    "update_log": [],
+    "hidden_fields": [],
+    "parameters": [
+      {
+        "name": "partner_id",
+        "type": "string",
+        "required": true,
+        "description": "Partner identifier",
+        "children": []
+      },
+      {
+        "name": "service_number",
+        "type": "string",
+        "required": true,
+        "description": "Service number identifier for the package",
+        "children": []
+      },
+      {
+        "name": "request_handling_type",
+        "type": "string",
+        "required": true,
+        "description": "Handle request body can specify get package.number field If no provide parameter,the message will response all package.number's information within the system. If you want to acquire one package.number's information, you can set the txt_xxx_handing_number_get_key_keyinfo",
+        "children": []
+      },
+      {
+        "name": "is_number",
+        "type": "string",
+        "required": false,
+        "description": "The unique identifier for package of API",
+        "children": []
+      }
+    ],
+    "response_fields": [
+      {
+        "name": "message",
+        "type": "string",
+        "description": "The identifier for all API request for send"
+      },
+      {
+        "name": "code",
+        "type": "string",
+        "description": "Response error code if any (Status Error etc)"
+      },
+      {
+        "name": "is_success",
+        "type": "boolean",
+        "description": "Status indication if error occurred"
+      },
+      {
+        "name": "request_id",
+        "type": "string",
+        "description": "Request package list"
+      },
+      {
+        "name": "handing_number",
+        "type": "string",
+        "description": "The unique identifier for package of API"
+      },
+      {
+        "name": "txt_xxx_handing_no",
+        "type": "string",
+        "description": "The txt lines response of API info within the txt lines status"
+      }
+    ],
+    "notes": "The documentation appears to be for a package handling/tracking API system. Some of the descriptions seem to be translated from another language and may not be completely clear.",
+    "chunk_metadata": {
+      "index": 1,
+      "total": 1,
+      "y_start": 0,
+      "y_end": 4880,
+      "overlap_top": 0,
+      "overlap_bottom": 0,
+      "height": 4880,
+      "path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\workspaces\\v2.logistics.get_mass_tracking_number\\chunks\\chunk_001.png",
+      "filename": "chunk_001.png",
+      "width": 837
+    },
+    "analysis_timestamp": "2025-10-10T06:04:49.975988",
+    "model": "claude-3-5-sonnet-20241022"
+  }
+]

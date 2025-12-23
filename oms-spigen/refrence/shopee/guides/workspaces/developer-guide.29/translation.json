@@ -1,0 +1,49 @@
+{
+  "document_id": "developer-guide.29",
+  "document_type": "guide",
+  "platform": "shopee",
+  "content_ko": "# KRSC API 통합 가이드\n\n## 공지 | 콘솔\n\n### 시작하기 > KRSC API 통합 가이드\n\n중요: KRSC 토큰 및 KRSC kbsp 마케팅 KSP 개발자(ISV)는 KRSC 업그레이드에 주의해야 하지만 제품 API는 ubrsc로 마이그레이션해야 합니다. 개발자 중심 KRSC API는 일반적으로 기능 API이지만 탐색할 수 없는 기술 API도 포함됩니다. KRSC 업그레이드는 API 호출 또는 제품 관련 모듈을 사용할 수 없습니다.\n\n#### FAQ:\n\n**Q: 상점이 KRSC로 업그레이드되었는지 어떻게 판단합니까?**\nA: 상점 OS 관리 API를 열 수 있습니다. 매개변수 timezhan_at이 보이면 (응답 timezhan_at을 엽니다. 비어 있지 않은 경우 상점이 KRSC로 업그레이드되지 않았음을 의미합니다.\n\n**Q: 시스템에 제품 관련 기능이 없는 경우 제품 생성 및 제품 업데이트 기능 인터페이스를 포함하여 스크립트 조정을 수행하려면 어떻게 사용해야 합니까?**\nA: KRSC를 업그레이드한 후 제품 API가 비활성화되므로 사용할 수 있습니다.\n\n---\n\n## 2. KRSC API 통합 방법\n\n### 2.1 개발자로 등록 (이미 개발자 계정이 있는 경우 이 단계를 건너뛸 수 있습니다.)\n\na. \"가입\"을 클릭하고 \"계약\"을 읽고 포털에서 Shopee Open Platform 계정을 등록하십시오: https://open.shopee.com\n\n**Shopee Open Platform**\n- 이메일/비밀번호 필드가 있는 가입 페이지\n- 등록 양식 인터페이스\n\nb. 확인 이메일을 받게 됩니다. 이메일을 확인하고 비밀번호를 설정하십시오.\n\n---\n\n### Open Platform\n\n**개발자님께,**\n\nShopee Open Platform 계정을 성공적으로 생성했습니다.\n\n이메일 주소를 확인하려면 버튼을 클릭하십시오.\n\n[이메일 확인]\n\n감사합니다.\nShopee Open Platform\n\n---\n\nc. 계정으로 로그인\n\n**Shopee Open Platform**\n- 로그인\n- 이메일/비밀번호 로그인 양식\n\n---\n\n### 2.2 계정 정보 완료 (이미 승인된 개발자 계정이 있는 경우 이 단계를 건너뛸 수 있습니다.)\n\n프로세스가 완료되면 다음을 통해 개발자 계정 정보를 완료하십시오: Open Platform에 로그인 -> 콘솔 -> 앱 관리 -> [Your App] -> 개발자 프로필 완료\n\n**개발자 유형에 따라 다른 유형의 상점을 사용합니다.** 자세한 내용은 앱 관리 페이지를 참조하십시오.\n\na. 선택한 개발자 계정 유형에 따라 적절한 프로필을 완료하십시오. 정보는 Shopee 플랫폼에서 검토해야 합니다.\n\n---\n\n### 2.3 앱 만들기\n\nShopee OpenAPI를 호출하려면 먼저 앱을 만들어야 합니다. 개발자 프로필이 승인되면 앱을 만들 수 있습니다.\n\n**참고:**\n- Original API Type은 V2.0 api를 지원하지 않습니다. 기존 앱이 Original 유형인 경우 앱 업그레이드를 완료하십시오.\n- 앱을 업그레이드하려면 이 경로를 통해 하나를 만들 수 있습니다.\n- Audit 유형의 앱 페이지의 경우 기사에 따라 SPI 권한을 확인하십시오.\n- 앱을 만든 후 이 경로를 통해 이동할 수 있습니다.\n- 앱 목록에서 Public type V2.0을 클릭하거나 새 앱을 만듭니다. 정보를 완료한 후 제출하십시오.\n\n---\n\n### 2.4 앱 출시\n\n앱 상태가 온라인 상태인지 제출해야 합니다. \"Go Live\"를 클릭하여 Shopee에서 라이브 (상업용) API 사용을 요청하십시오 -> 콘솔 -> 앱 목록 -> [Select Shop] -> Go-live 요청 또는 Go-live 요청 취소 -> Go live.\n\n**Shopee Open Platform 콘솔**\n\n- 앱 관리\n  - 앱 목록 → #1\n  - 아직 URL 주소를 제출하지 않음\n  - URL을 연결해야 합니다.\n  - 사용자를 리디렉션할 수 있는 리디렉션 URL을 추가하십시오...\n\n**도구**\n- 로그\n\n**앱 키**\n- Key ID\n- Test Shops\n- Test Shop\n- Test_URL\n\n---\n\n### 기본 정보\n\n**요청 중**\n- 다음을 추적할 수 있습니다...\n- URI를 실행할 수 있습니다.\n- 테스트 계정 시작 → 싱가포르\n- 앱이 이제...\n\n---\n\n**APP ID는 24시간 후에 자동으로 모듈을 완료하고 APP 상태가 Go Online 상태로 변경되며 API를 프로덕션 및 테스트 목적으로 정상적으로 호출할 수 있습니다.**\n\n---\n\n# 개발자 가이드 - API 테스트 및 환경 설정\n\n## 개요\n\n**App ID:** [ID Number]\n\n**상태 정보:**\n- App ID: [ID]\n- Sandbox: running\n- App in prod: live\n- In prod since: [Date]\n- App Secret Status: [Status]\n- Live Capabilities: [Details]\n\n---\n\n## 2.5 API 테스트 시작\n\n`USE CHNC Sandbox`가 준비되었습니다. KPEC Devs는 KPDC와 기능이 유사하므로 CHNC Sandbox를 사용하여 API를 실행할 수 있습니다.\n\n테스트를 시작하려면 Cpaxide에 `chisa.passportapi.account`가 있어야 합니다.\n\n### 계정 설정 단계\n\n1. **계정 가져오기**\n   - User Name: [Enter Name Here]\n   - Referrer URL: [URL field]\n   - Merchant ID: 100474A\n\n2. **테스트 계정 만들기**\n   - 계정 유형을 선택하십시오:\n     - 옵션 드롭다운 메뉴 표시:\n       - [Account type selection]\n       - Create button\n\n3. **로그인 프로세스**\n   - Login https://sandbox-test.static.example.cn\n   - 앱은 123456입니다.\n   - **Note**: 영어이거나 필요한 경우 병합된 계정 테스트/비밀번호/계정으로 신청하십시오.\n\n---\n\n## 3. 欢迎来到中国服务中心\n## 设置开发者账户并开始测试\n\n[양식 필드와 확인 대화 상자가 있는 서비스 센터 인터페이스를 보여주는 스크린샷]\n\n**Instructions:**\n4. 로그인 후 통화를 가져옵니다.\n   - PC Web CHNC 샌드박스 페이지에서 모든 CNY 통화는 실제 KPEC (라이브 환경)에서 사용할 수 있으며 CNY 단위는 JON입니다.\n\n---\n\n## 4. 连接与数据映射配置中心\n\n[구성 인터페이스 스크린샷]\n\n**Steps:**\n- 시장 정보를 설정합니다. 잘못된 숫자를 설정하면 스크린샷에 표시된 올바른 숫자 범위를 알려드립니다.\n\n---\n\n## 5. 언어 선택\n\n5) 이제 **Merchant's setting page**에서 인터페이스 언어를 영어로 설정할 수 있습니다.\n\n**Language Settings:**\n- Merchant setting\n- MchInfo\n- Interface language: [화살표 표시기가 있는 드롭다운 선택]\n\n---\n\n## 6. 상태 업데이트 페이지\n\n6) \"Status Info\" 페이지를 확인하십시오. 설정을 확인하고 \"Start to upgrade to Global Env\" 버튼을 클릭하십시오.\n\n[업그레이드 버튼이 있는 \"Status Info\" 페이지를 보여주는 스크린샷]\n\n**Details shown:**\n- Trade Commission Payment (USD) 2011 and Shop Info\n- 다양한 구성 필드 및 설정\n- 자세한 약관 텍스트가 있는 확인 대화 상자\n- 업그레이드 프로세스 및 요구 사항을 설명하는 여러 단락\n\n---\n\n## 7. 수수료 지불 정보\n\n[결제 인터페이스를 보여주는 스크린샷]\n\n**Trade Commission Payment (USD) 2011 and Shop Info**\n\n표시되는 필드:\n- Currency\n- CHNC number: [입력 필드]\n- Legal entity: [화살표 표시기가 있는 드롭다운 선택]\n\n---\n\n## 참고 사항 및 경고\n\n- API는 24시간 후에 자동으로 모드를 완료하고 API 상태가 온라인 상태로 변경되므로 개발자는 라이브 결제 API 및 라이브 환경에 대한 추가 도움말을 완료합니다.\n\n- 업그레이드를 진행하기 전에 모든 구성 설정이 올바른지 확인하십시오.\n\n- 프로덕션으로 이동하기 전에 샌드박스 환경에서 철저히 테스트하십시오.\n\n- Merchant ID 및 자격 증명을 안전하게 추적하십시오.\n\n---\n\n*개발자 가이드 발췌 종료*\n\n---\n\n# 글로벌 SKU와 Shop SKU 간의 가격 변환\n\n## 대화 상자에 표시되는 단계\n\n**Merchant/Shop Name:** 여기에 표시되는 제한 없음\n\n**Singapore:**\n- 1 SGD = 0.00000\n\n**Philippines:**\n- 1 PHP = 0.00000\n\n*Successful/UPDATED (중요한 라인 정보)*\n\n**셀 파악:**\n\n---\n\n그런 다음 open api 테스트를 시작할 수 있습니다. 자세한 내용은 [Sandbox Testing](#) 기사를 확인하십시오.\n\n6. 판매자가 KBSC에 로그인하여 각 상점, 제품에 대한 업그레이드를 완료하면 `v2.shop.get_price_info`는 `mslau_upgraded_status:UPGRADED`를 반환합니다.\n\nc. [Global Product API](#) 및 [Merchant API](#)를 테스트하십시오. [여기](#)에서 API 호출 흐름을 확인할 수 있습니다.\n\n---\n\n## 2.6 Merchant & Shop 권한 부여\n\n상점 계정이 KBSC로 업그레이드된 후 여러 상점이 판매자에게 속하므로 이 [FAQ](#)를 통해 Merchant와 상점 간의 관계에 대해 자세히 알아볼 수 있습니다. 따라서 GlobalProduct API를 정상적으로 호출하려면 상점에 권한을 부여하고 권한을 부여할 때 **하위 계정 페이지를 전환**하십시오.\n\n---\n\n# Shopee Openplatform APP에 권한을 부여하기 위해 로그인\n\n**SG ▼** | Email / Phone / Username\n\n**Password**\n\n[비밀번호를 잊으셨습니까?](#)\n\n**[로그인]**\n\n**OR**\n\n**[하위 계정으로 전환]** ← (이것을 가리키는 화살표)\n\n---\n\n**English ▼**\n\n*권한 부여에는 기본 계정을 사용하십시오. 하위 계정은 권한 부여를 완료할 수 없습니다. 기본 계정 형식은 다음과 같습니다. ** main\n\n---\n\n계정이 성공적으로 로그인되면 권한 부여 페이지가 표시됩니다. 먼저 권한을 부여할 상점을 확인한 다음 Auto Auth Merchant를 클릭하십시오. Auto Merchant를 확인하지 않으면 관련 Global Product API를 호출하거나 Merchant 정보를 얻을 수 없습니다. 일부 상점이 선택되지 않은 경우 API를 통해 제품을 관련 상점에 게시할 수 없습니다. 따라서 관리하는 Merchant 및 상점을 완전히 확인하십시오.\n\n[“Auth Merchant” 버튼이 강조 표시되고 “Return all info” 섹션이 표시된 권한 부여 인터페이스를 보여주는 스크린샷]\n\n---\n\n권한 부여가 성공하면 콜백 주소는 shop id 대신 main_account_id를 반환합니다. Main_account_id는 나중에 AccessToken을 얻는 데 사용됩니다.\n\n그런 다음 이 [문서](#)에 따라 토큰을 새로 고치십시오.\n\nGetAccesstoken API를 통해 해당 시점에 성공적으로 권한이 부여된 모든 판매자 ID 및 상점 ID 목록을 얻을 수 있습니다.\n\n**각 판매자 및 각 상점에 대한 토큰은 독립적이며 별도로 저장해야 합니다. Relating-MerchatId 권한 부여를 호출할 때 회사에서 권한을 부여한 판매자 ID 및 shop_id에서 얻은 초기 새로 고침 토큰 및 액세스 토큰을 KnownBy하고 RefreshAccess token API를 호출하면 다른 판매자 ID 또는 다른 상점 ID가 다른 새로 고침 토큰 및 액세스 토큰을 반환하므로 토큰을 별도로 보관하십시오.**\n\n---\n\n판매자 ID와 상점 ID 간의 관계를 얻으려면 `get_shop_list_by_merchant` API를 호출하십시오. `get_merchant_info`를 호출하여 각 판매자 정보를 얻고 `get_shop_info`를 호출하여 각 상점 정보를 얻을 수 있습니다.\n\n---\n\n## 3. 요약\n\n1) 앱을 만들거나 기존 앱을 사용할 때 앱 유형이 v2.0 GlobalProduct API를 호출할 수 있는지 확인하십시오.\n\n2) 상점은 판매자 정보를 제공하기 위해 판매자의 권한이 필요합니다.\n\n3) APP 상태를 호출하기 위한 필수 조건은 판매자 사용자가 프로덕션 환경에서 KBSC/PI를 사용할 수 있다는 것입니다. 상점은 KBSC/PI 판매자 계정 정보를 가질 수 있습니다. APP는 24시간 후에 자동으로 승인됩니다.\n\n4) 판매자는 KBSC에 로그인하여 KBSC 제품 업그레이드가 성공하기 전에 관련 설정을 완료해야 합니다. 제품이 성공적으로 업그레이드된 경우에만 Global Product API를 정상적으로 호출할 수 있습니다.\n\n5) 여기에서 더 많은 GBSC API FAQ를 배울 수 있습니다: [GBSC API FAQ](#)\n\n---\n\n이 문서에서 다루지 않은 기술 연결 문제가 있는 경우 [티켓 시스템](#)을 통해 Shopee Open Platform에 문의하십시오.",
+  "translated_at": "2025-10-16T08:28:17",
+  "char_count": 6701,
+  "metadata_ko": {
+    "title": "KRSC API 통합 가이드",
+    "summary": "본 가이드는 개발자 등록, 앱 생성, API 테스트, 환경 설정을 포함하여 KRSC API와 통합하는 방법에 대한 지침을 제공합니다. KRSC로 업그레이드하고, 상점을 인증하고, GlobalProduct API를 사용하는 데 필요한 단계를 다룹니다.",
+    "keywords": [
+      "KRSC API",
+      "API 통합",
+      "개발자 등록",
+      "앱 생성",
+      "API 테스팅",
+      "Sandbox 환경",
+      "상점 인증",
+      "GlobalProduct API",
+      "Merchant API",
+      "KBSC 업그레이드"
+    ],
+    "category": "통합",
+    "tags": [
+      "API",
+      "KRSC",
+      "Shopee Open Platform",
+      "개발자 가이드",
+      "통합",
+      "테스팅"
+    ],
+    "difficulty": "medium",
+    "importance": 4,
+    "use_cases": [
+      "상품 관리를 위해 Shopee의 KRSC 시스템과 통합.",
+      "Shopee Open Platform에서 개발자 계정 및 애플리케이션 설정.",
+      "라이브 환경으로 전환하기 전에 샌드박스 환경에서 API 호출 테스트.",
+      "GlobalProduct API 액세스를 위한 상점 및 판매자 인증.",
+      "KRSC 기능을 지원하도록 기존 앱 업그레이드."
+    ],
+    "related_apis": [
+      "Shop OS admin API",
+      "Global Product API",
+      "Merchant API",
+      "v2.shop.get_price_info"
+    ]
+  },
+  "metadata_translated_at": "2025-10-16T08:28:20"
+}

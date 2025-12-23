@@ -1,0 +1,109 @@
+{
+  "endpoint": null,
+  "method": null,
+  "description": null,
+  "parameters": [
+    {
+      "name": "url",
+      "type": "string",
+      "required": true,
+      "description": "API endpoint URL",
+      "children": []
+    },
+    {
+      "name": "url_protocol",
+      "type": "string",
+      "required": true,
+      "description": null,
+      "children": []
+    },
+    {
+      "name": "test_url",
+      "type": "string",
+      "required": true,
+      "description": null,
+      "children": []
+    },
+    {
+      "name": "develop_url",
+      "type": "string",
+      "required": true,
+      "description": null,
+      "children": []
+    },
+    {
+      "name": "source",
+      "type": "string",
+      "required": true,
+      "description": null,
+      "children": []
+    },
+    {
+      "name": "marketing",
+      "type": "string",
+      "required": true,
+      "description": "Request ID",
+      "children": []
+    },
+    {
+      "name": "userid_value",
+      "type": "string",
+      "required": true,
+      "description": null,
+      "children": []
+    },
+    {
+      "name": "timestamp",
+      "type": "string",
+      "required": true,
+      "description": "The timestamp of web time",
+      "children": []
+    },
+    {
+      "name": "signature",
+      "type": "string",
+      "required": true,
+      "description": "The security rule will request to sort",
+      "children": []
+    },
+    {
+      "name": "utf_8",
+      "type": "string",
+      "required": true,
+      "description": "The character set should be utf-8",
+      "children": []
+    },
+    {
+      "name": "api_key",
+      "type": "string",
+      "required": true,
+      "description": "Request unique identifier for an api or test",
+      "children": []
+    }
+  ],
+  "response_fields": [],
+  "update_log": [
+    {
+      "date": "2023-01-31",
+      "change": "Updated error codes"
+    },
+    {
+      "date": "2022-05-25",
+      "change": "Fixed a newly detected error"
+    },
+    {
+      "date": "2022-04-28",
+      "change": "Added the latest definition of ProjectNumber and Resource numbers"
+    }
+  ],
+  "hidden_fields": [],
+  "metadata": {
+    "total_chunks": 1,
+    "chunks_with_errors": 0,
+    "total_parameters_before_dedup": 11,
+    "total_parameters_after_dedup": 11,
+    "update_log_entries": 3,
+    "hidden_fields_count": 0,
+    "source_results": "workspaces\\v2.add_on_deal.get_add_on_deal_list\\results\\all_chunks_results.json"
+  }
+}

@@ -1,0 +1,31 @@
+======================================================================
+API SPECIFICATION SUMMARY
+======================================================================
+
+Endpoint: GET https://openplatform.dfocus.net/cattle/movies/recommended/movies_play_list
+Description: Movie recommendation API
+
+Parameters (4):
+----------------------------------------------------------------------
+* player_id (string)
+   Required for all requests
+* access_token (string)
+   This is the token for access to the server. Example: 4n23nk42ln
+  pkg_id (string)
+   Package unique identifier for a play. Required param for some apps
+  cp (string)
+   Required by content provider for special content
+
+Metadata:
+----------------------------------------------------------------------
+  total_chunks: 1
+  chunks_with_errors: 0
+  total_parameters_before_dedup: 4
+  total_parameters_after_dedup: 4
+  update_log_entries: 0
+  hidden_fields_count: 0
+  source_results: workspaces\v2.product.update_sip_item_price\results\all_chunks_results.json
+
+======================================================================
+Legend: * = required parameter
+======================================================================

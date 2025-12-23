@@ -1,0 +1,71 @@
+{
+  "endpoint": "/api/calc_total_add_on_fee",
+  "method": "POST",
+  "description": "Calculate total add-on fee",
+  "parameters": [
+    {
+      "name": "currency",
+      "type": "string",
+      "required": true,
+      "description": "Currency code",
+      "children": []
+    },
+    {
+      "name": "add_on",
+      "type": "array",
+      "required": true,
+      "description": "Array of add-on objects",
+      "children": [
+        {
+          "name": "code",
+          "type": "string",
+          "required": true,
+          "description": "Add-on code",
+          "children": []
+        },
+        {
+          "name": "type",
+          "type": "string",
+          "required": true,
+          "description": "Add-on type",
+          "children": []
+        }
+      ]
+    }
+  ],
+  "response_fields": [
+    {
+      "name": "code",
+      "type": "string",
+      "description": "Response code"
+    },
+    {
+      "name": "message",
+      "type": "string",
+      "description": "Response message"
+    },
+    {
+      "name": "data",
+      "type": "object",
+      "description": "Response data",
+      "children": [
+        {
+          "name": "total_fee",
+          "type": "decimal",
+          "description": "Total add-on fee"
+        }
+      ]
+    }
+  ],
+  "update_log": [],
+  "hidden_fields": [],
+  "metadata": {
+    "total_chunks": 1,
+    "chunks_with_errors": 0,
+    "total_parameters_before_dedup": 2,
+    "total_parameters_after_dedup": 2,
+    "update_log_entries": 0,
+    "hidden_fields_count": 0,
+    "source_results": "workspaces\\v2.add_on_deal.add_add_on_deal_sub_item\\results\\all_chunks_results.json"
+  }
+}

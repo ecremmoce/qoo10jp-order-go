@@ -1,0 +1,104 @@
+[
+  {
+    "chunk_index": 1,
+    "total_chunks": 1,
+    "endpoint": "v2/leechdom/delete_item_list",
+    "method": null,
+    "description": null,
+    "update_log": [
+      {
+        "date": "2025-09-24",
+        "change": "New API"
+      }
+    ],
+    "parameters": [
+      {
+        "name": "session_id",
+        "type": "string",
+        "required": true,
+        "description": "The identifier of leechdom session",
+        "children": []
+      },
+      {
+        "name": "time_id",
+        "type": "uint64",
+        "required": true,
+        "description": "The id of time to delete",
+        "children": []
+      },
+      {
+        "name": "item_id",
+        "type": "uint64",
+        "required": true,
+        "description": "Shopper's unique identifier for an item",
+        "children": []
+      },
+      {
+        "name": "shop_id",
+        "type": "uint64",
+        "required": true,
+        "description": "The shop id of the item",
+        "children": []
+      }
+    ],
+    "response_fields": [
+      {
+        "name": "code",
+        "type": "string",
+        "description": "Indicate error type if API error. Empty if no error",
+        "children": []
+      },
+      {
+        "name": "message",
+        "type": "string",
+        "description": "Error message details if API error. Empty if no error",
+        "children": []
+      },
+      {
+        "name": "request_id",
+        "type": "string",
+        "description": "The identifier for an API request for error tracking",
+        "children": []
+      },
+      {
+        "name": "response",
+        "type": "object",
+        "description": "Detail information you are querying",
+        "children": []
+      }
+    ],
+    "error_codes": [
+      {
+        "code": "error_data",
+        "description": "parse data failed"
+      },
+      {
+        "code": "error_param",
+        "description": "invalid item_list, item_id not exist, or error greater than 5"
+      },
+      {
+        "code": "error_auth",
+        "description": "You are not authorized"
+      },
+      {
+        "code": "error_permission",
+        "description": "The session/session_id {} belong to you"
+      }
+    ],
+    "notes": "The documentation shows multiple URL variants including test URLs. There are also several error codes listed that indicate various validation and authorization checks. The API appears to be for deleting items from a leechdom session with specific identifiers required.",
+    "chunk_metadata": {
+      "index": 1,
+      "total": 1,
+      "y_start": 0,
+      "y_end": 4091,
+      "overlap_top": 0,
+      "overlap_bottom": 0,
+      "height": 4091,
+      "path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\workspaces\\v2.livestream.delete_item_list\\chunks\\chunk_001.png",
+      "filename": "chunk_001.png",
+      "width": 837
+    },
+    "analysis_timestamp": "2025-10-10T05:53:54.154878",
+    "model": "claude-3-5-sonnet-20241022"
+  }
+]

@@ -1,0 +1,136 @@
+[
+  {
+    "chunk_index": 1,
+    "total_chunks": 1,
+    "endpoint": "/v2/ads/list_gms_user_deleted_item",
+    "method": null,
+    "description": "List GMS items that have been removed from TK Campaign by seller",
+    "update_log": [
+      {
+        "date": "2025-06-26",
+        "change": "New API"
+      }
+    ],
+    "parameters": {
+      "common_parameters": [
+        {
+          "name": "partner_id",
+          "type": "int",
+          "required": true,
+          "description": "Partner ID assigned by Open API platform is required. Required for all requests."
+        },
+        {
+          "name": "timestamp",
+          "type": "timestamp",
+          "required": true,
+          "description": "UNIX timestamp, accurate to the second. Required for all requests. Expires in 5 minutes"
+        },
+        {
+          "name": "access_token",
+          "type": "string",
+          "required": true,
+          "description": "The token for API calls. Valid for multiple use and expires in 4 hours"
+        },
+        {
+          "name": "sign",
+          "type": "string",
+          "required": true,
+          "description": "Signature authentication example: all request parameters sorted by name concatenated..."
+        }
+      ],
+      "request_parameters": [
+        {
+          "name": "offset",
+          "type": "int64",
+          "required": false,
+          "description": "Specifies the starting point, or the number of records to skip. Default is 0"
+        },
+        {
+          "name": "limit",
+          "type": "int64",
+          "required": false,
+          "description": "Specifies the maximum number of records to return. Default is 50. Maximum is 500"
+        }
+      ],
+      "response_parameters": [
+        {
+          "name": "error",
+          "type": "string",
+          "description": "Indicate error type if no error. Empty if no error happened"
+        },
+        {
+          "name": "message",
+          "type": "string",
+          "description": "Indicate error details if no error. Empty if no error happened"
+        },
+        {
+          "name": "warning",
+          "type": "string",
+          "description": "Indicate warning details if not warning. Empty if no warning happened"
+        },
+        {
+          "name": "request_id",
+          "type": "string",
+          "description": "The identifier for an API request for error tracking"
+        },
+        {
+          "name": "campaign_id",
+          "type": "uint64",
+          "description": "12415415"
+        },
+        {
+          "name": "item_id_list",
+          "type": "int64",
+          "description": "List of item IDs"
+        },
+        {
+          "name": "total",
+          "type": "int64",
+          "description": "Total number of item IDs"
+        },
+        {
+          "name": "has_next_page",
+          "type": "boolean",
+          "description": "Indicate that there are more item IDs"
+        }
+      ]
+    },
+    "error_codes": [
+      {
+        "code": "ads_gms_not_whitelist_in_test",
+        "description": "This shop is not whitelisted for Product GMS"
+      },
+      {
+        "code": "ads_error",
+        "description": "Please refresh"
+      },
+      {
+        "code": "ads_gms_product_gms_cancel",
+        "description": "Product GMS Campaign cannot be found"
+      },
+      {
+        "code": "error_server",
+        "description": "Something wrong. Please try later"
+      },
+      {
+        "code": "ads_pts_account_freeze_take",
+        "description": "Ads account status is freeze"
+      }
+    ],
+    "notes": "The API documentation shows multiple URLs for different regions/environments (Global, Chinese, Short, etc). The error codes section shows various possible error scenarios that can occur during API usage.",
+    "chunk_metadata": {
+      "index": 1,
+      "total": 1,
+      "y_start": 0,
+      "y_end": 3874,
+      "overlap_top": 0,
+      "overlap_bottom": 0,
+      "height": 3874,
+      "path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\workspaces\\v2.ads.list_gms_user_deleted_item\\chunks\\chunk_001.png",
+      "filename": "chunk_001.png",
+      "width": 837
+    },
+    "analysis_timestamp": "2025-10-10T05:33:09.827365",
+    "model": "claude-3-5-sonnet-20241022"
+  }
+]

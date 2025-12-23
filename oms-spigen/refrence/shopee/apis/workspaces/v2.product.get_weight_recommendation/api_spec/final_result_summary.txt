@@ -1,0 +1,42 @@
+======================================================================
+API SPECIFICATION SUMMARY
+======================================================================
+
+Endpoint: None None
+Description: API documentation parameters
+
+Parameters (9):
+----------------------------------------------------------------------
+* app_id (string)
+   Application identifier
+* URL (object)
+   URL parameters
+  * url (string)
+     The URL to be processed
+* access_token (string)
+   Access token for authentication
+  img_id (string)
+   Unique image identifier
+* category_id (integer)
+   Category unique identifier for a category
+  attribute_status_id (integer)
+   Status identifier of an item attribute
+  description_date (string)
+   Date of description details. See Date format standards
+  description (string)
+   Description text in format
+  text_id (string)
+
+Metadata:
+----------------------------------------------------------------------
+  total_chunks: 1
+  chunks_with_errors: 0
+  total_parameters_before_dedup: 9
+  total_parameters_after_dedup: 9
+  update_log_entries: 0
+  hidden_fields_count: 0
+  source_results: workspaces\v2.product.get_weight_recommendation\results\all_chunks_results.json
+
+======================================================================
+Legend: * = required parameter
+======================================================================

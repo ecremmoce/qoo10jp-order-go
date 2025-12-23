@@ -1,0 +1,69 @@
+{
+  "chunk_index": 1,
+  "total_chunks": 1,
+  "endpoint": "/storage/upload_url",
+  "method": "POST",
+  "description": "Get storage upload url",
+  "update_log": [
+    {
+      "date": "2021-08-17",
+      "change": "Change log report parameters"
+    },
+    {
+      "date": "2021-08-13",
+      "change": "Add doc_type field, allow pattern to match/handle browser auto-append types"
+    }
+  ],
+  "parameters": [
+    {
+      "name": "filename",
+      "type": "string",
+      "required": true,
+      "description": "File name with extension",
+      "children": []
+    },
+    {
+      "name": "directory",
+      "type": "string",
+      "required": true,
+      "description": "Directory path",
+      "children": []
+    },
+    {
+      "name": "doc_type",
+      "type": "string",
+      "required": false,
+      "description": "Document type",
+      "children": []
+    }
+  ],
+  "response_fields": [
+    {
+      "name": "url",
+      "type": "string",
+      "description": "Upload URL",
+      "children": []
+    },
+    {
+      "name": "key",
+      "type": "string",
+      "description": "Storage key",
+      "children": []
+    }
+  ],
+  "notes": "The image appears to be a storage API documentation showing how to get an upload URL. It includes both request parameters and response fields, along with a clear update history. The documentation appears to be complete and not truncated.",
+  "chunk_metadata": {
+    "index": 1,
+    "total": 1,
+    "y_start": 0,
+    "y_end": 6013,
+    "overlap_top": 0,
+    "overlap_bottom": 0,
+    "height": 6013,
+    "path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\workspaces\\v2.order.get_order_list\\chunks\\chunk_001.png",
+    "filename": "chunk_001.png",
+    "width": 837
+  },
+  "analysis_timestamp": "2025-10-10T06:15:33.389269",
+  "model": "claude-3-5-sonnet-20241022"
+}

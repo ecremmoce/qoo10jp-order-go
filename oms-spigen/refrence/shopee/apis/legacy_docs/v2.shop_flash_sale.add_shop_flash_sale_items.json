@@ -1,0 +1,105 @@
+{
+  "endpoint": "/buy_best_rate_and_post",
+  "method": null,
+  "description": null,
+  "parameters": [
+    {
+      "name": "URL",
+      "type": "string",
+      "required": true,
+      "description": "https://openapihk.mixin.dev/webhook_best_rate/buy_best_rate_post",
+      "children": []
+    },
+    {
+      "name": "pay_url",
+      "type": "string",
+      "required": false,
+      "description": "Post price for better rate",
+      "children": []
+    },
+    {
+      "name": "amount",
+      "type": "string",
+      "required": true,
+      "description": "Amount",
+      "children": []
+    },
+    {
+      "name": "trace_id",
+      "type": "string",
+      "required": false,
+      "description": "Trace id",
+      "children": []
+    },
+    {
+      "name": "best_price",
+      "type": "string",
+      "required": false,
+      "description": "Best price",
+      "children": []
+    },
+    {
+      "name": "min_price",
+      "type": "string",
+      "required": false,
+      "description": "Minimum price",
+      "children": []
+    },
+    {
+      "name": "max_post_price",
+      "type": "bool",
+      "required": false,
+      "description": "Maximum post price",
+      "children": []
+    },
+    {
+      "name": "min_post_price",
+      "type": "bool",
+      "required": false,
+      "description": "Minimum post price",
+      "children": []
+    },
+    {
+      "name": "asset_id",
+      "type": "uuid",
+      "required": false,
+      "description": "The asset uuid we'd like to buy/sell",
+      "children": []
+    },
+    {
+      "name": "btc_asset_id",
+      "type": "uuid",
+      "required": false,
+      "description": "The btc asset uuid we'd like to buy/sell",
+      "children": []
+    }
+  ],
+  "response_fields": [
+    {
+      "name": "result",
+      "type": "string",
+      "description": "Response result"
+    },
+    {
+      "name": "message",
+      "type": "string",
+      "description": "Response message"
+    },
+    {
+      "name": "error",
+      "type": "object",
+      "description": "Error details if any"
+    }
+  ],
+  "update_log": [],
+  "hidden_fields": [],
+  "metadata": {
+    "total_chunks": 1,
+    "chunks_with_errors": 0,
+    "total_parameters_before_dedup": 10,
+    "total_parameters_after_dedup": 10,
+    "update_log_entries": 0,
+    "hidden_fields_count": 0,
+    "source_results": "workspaces\\v2.shop_flash_sale.add_shop_flash_sale_items\\results\\all_chunks_results.json"
+  }
+}

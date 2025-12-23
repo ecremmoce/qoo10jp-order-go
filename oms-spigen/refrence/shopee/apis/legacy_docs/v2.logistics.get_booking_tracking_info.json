@@ -1,0 +1,87 @@
+{
+  "endpoint": "/api/sport/get/bowling_ranking_info",
+  "method": "POST",
+  "description": "API for retrieving bowling ranking information",
+  "parameters": [
+    {
+      "name": "url",
+      "type": "string",
+      "required": true,
+      "description": "HTTP path for request",
+      "children": []
+    },
+    {
+      "name": "access_token",
+      "type": "string",
+      "required": true,
+      "description": "Token to indicate the identities of the request. Required to complete system verification",
+      "children": []
+    },
+    {
+      "name": "shop_id",
+      "type": "string",
+      "required": true,
+      "description": "Shopee's unique identifier for a shop",
+      "children": []
+    },
+    {
+      "name": "partner_id",
+      "type": "integer",
+      "required": true,
+      "description": "Partner's unique identifier provided by Shopee",
+      "children": []
+    },
+    {
+      "name": "timestamp",
+      "type": "integer",
+      "required": true,
+      "description": "Timestamp of the request. Required for authorization",
+      "children": []
+    },
+    {
+      "name": "request_id",
+      "type": "string",
+      "required": false,
+      "description": "The identifier for an API request to avoid duplicate",
+      "children": []
+    },
+    {
+      "name": "sign",
+      "type": "string",
+      "required": true,
+      "description": "Validate sign rule first time Google find error",
+      "children": []
+    },
+    {
+      "name": "version",
+      "type": "object",
+      "required": false,
+      "description": "Version information data for parsing",
+      "children": []
+    },
+    {
+      "name": "bowling_id",
+      "type": "string",
+      "required": true,
+      "description": "Shopee's unique identifier for a bowling event",
+      "children": []
+    }
+  ],
+  "response_fields": [],
+  "update_log": [
+    {
+      "date": "2023-09-19",
+      "change": "Initial release"
+    }
+  ],
+  "hidden_fields": [],
+  "metadata": {
+    "total_chunks": 1,
+    "chunks_with_errors": 0,
+    "total_parameters_before_dedup": 9,
+    "total_parameters_after_dedup": 9,
+    "update_log_entries": 1,
+    "hidden_fields_count": 0,
+    "source_results": "workspaces\\v2.logistics.get_booking_tracking_info\\results\\all_chunks_results.json"
+  }
+}

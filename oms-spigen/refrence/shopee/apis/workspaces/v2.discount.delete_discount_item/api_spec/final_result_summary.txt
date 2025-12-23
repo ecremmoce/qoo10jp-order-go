@@ -1,0 +1,38 @@
+======================================================================
+API SPECIFICATION SUMMARY
+======================================================================
+
+Endpoint: None account/announcement_info
+Description: Account announcement information
+
+Parameters (1):
+----------------------------------------------------------------------
+* URL (string)
+   http://sakura-rexueapi.com/api/announcement/account_text
+
+Response Fields (5):
+----------------------------------------------------------------------
+* account_id (string)
+   Account unique identifier
+* text (string)
+   Request unique identifier for a text
+* image_id (string)
+   Request unique identifier for a image/all pictures in wallet
+* created_at (string)
+   Create information about time
+* response_id (string)
+   Please make sure data that you input is correct
+
+Metadata:
+----------------------------------------------------------------------
+  total_chunks: 1
+  chunks_with_errors: 0
+  total_parameters_before_dedup: 2
+  total_parameters_after_dedup: 1
+  update_log_entries: 0
+  hidden_fields_count: 0
+  source_results: workspaces\v2.discount.delete_discount_item\results\all_chunks_results.json
+
+======================================================================
+Legend: * = required parameter
+======================================================================

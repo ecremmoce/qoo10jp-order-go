@@ -1,0 +1,115 @@
+{
+  "chunk_index": 1,
+  "endpoint": "/api/v2/conversations/{CONVERSATION_ID}/messages",
+  "method": "POST",
+  "description": "Send a message in a conversation",
+  "parameters": [
+    {
+      "name": "conversation_id",
+      "type": "string",
+      "required": true,
+      "description": "The ID of the conversation",
+      "children": []
+    },
+    {
+      "name": "body",
+      "type": "object",
+      "required": true,
+      "description": "Message content",
+      "children": [
+        {
+          "name": "type",
+          "type": "string",
+          "required": true,
+          "description": "Message type, can be 'comment' or 'activity'",
+          "children": []
+        },
+        {
+          "name": "content",
+          "type": "string",
+          "required": true,
+          "description": "The message content",
+          "children": []
+        },
+        {
+          "name": "message_type",
+          "type": "string",
+          "required": false,
+          "description": "Type of incoming message",
+          "children": []
+        },
+        {
+          "name": "private",
+          "type": "boolean",
+          "required": false,
+          "description": "If true, message will be private",
+          "children": []
+        },
+        {
+          "name": "attachments",
+          "type": "array",
+          "required": false,
+          "description": "Array of attachments",
+          "children": []
+        }
+      ]
+    }
+  ],
+  "response_fields": [
+    {
+      "name": "id",
+      "type": "integer",
+      "description": "Message ID",
+      "children": []
+    },
+    {
+      "name": "content",
+      "type": "string",
+      "description": "Message content",
+      "children": []
+    },
+    {
+      "name": "message_type",
+      "type": "string",
+      "description": "Type of message",
+      "children": []
+    },
+    {
+      "name": "content_type",
+      "type": "string",
+      "description": "Content type of message",
+      "children": []
+    },
+    {
+      "name": "created_at",
+      "type": "string",
+      "description": "Creation timestamp",
+      "children": []
+    },
+    {
+      "name": "private",
+      "type": "boolean",
+      "description": "Privacy status",
+      "children": []
+    },
+    {
+      "name": "attachments",
+      "type": "array",
+      "description": "Attached files",
+      "children": []
+    }
+  ],
+  "chunk_metadata": {
+    "index": 1,
+    "total": 2,
+    "y_start": 0,
+    "y_end": 8000,
+    "overlap_top": 0,
+    "overlap_bottom": 500,
+    "height": 8000,
+    "path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\workspaces\\v2.order.get_order_detail\\chunks\\chunk_001.png",
+    "filename": "chunk_001.png",
+    "width": 837
+  },
+  "chunk_path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\workspaces\\v2.order.get_order_detail\\chunks\\chunk_001.png"
+}

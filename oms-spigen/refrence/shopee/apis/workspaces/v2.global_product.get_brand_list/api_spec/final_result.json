@@ -1,0 +1,66 @@
+{
+  "endpoint": "/public_purchase_trade_list",
+  "method": "POST",
+  "description": "Public purchase trade list endpoint",
+  "parameters": [
+    {
+      "name": "URL",
+      "type": "string",
+      "required": true,
+      "description": "Base endpoint URL",
+      "children": []
+    },
+    {
+      "name": "prefix_p",
+      "type": "string",
+      "required": true,
+      "description": "",
+      "children": []
+    },
+    {
+      "name": "direction",
+      "type": "integer",
+      "required": false,
+      "description": "Request query direction parameter",
+      "children": []
+    },
+    {
+      "name": "size",
+      "type": "integer",
+      "required": false,
+      "description": "Size of results",
+      "children": []
+    }
+  ],
+  "response_fields": [
+    {
+      "name": "status",
+      "type": "string",
+      "description": "Status result",
+      "children": []
+    },
+    {
+      "name": "message",
+      "type": "string",
+      "description": "Message details",
+      "children": []
+    },
+    {
+      "name": "result",
+      "type": "array",
+      "description": "Array of results",
+      "children": []
+    }
+  ],
+  "update_log": [],
+  "hidden_fields": [],
+  "metadata": {
+    "total_chunks": 1,
+    "chunks_with_errors": 0,
+    "total_parameters_before_dedup": 4,
+    "total_parameters_after_dedup": 4,
+    "update_log_entries": 0,
+    "hidden_fields_count": 0,
+    "source_results": "workspaces\\v2.global_product.get_brand_list\\results\\all_chunks_results.json"
+  }
+}

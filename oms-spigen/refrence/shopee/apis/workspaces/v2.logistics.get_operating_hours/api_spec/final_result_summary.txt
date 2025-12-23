@@ -1,0 +1,39 @@
+======================================================================
+API SPECIFICATION SUMMARY
+======================================================================
+
+Endpoint: None None
+
+Parameters (1):
+----------------------------------------------------------------------
+* order_payment (object)
+   Order payment details
+  * stripe_payment_method_id (string)
+     Stripe payment method ID
+  * stripe_setup_intent_id (string)
+     Stripe setup intent ID
+  * stripe_payment_intent_id (string)
+     Stripe payment intent ID
+  * gateway_order_id (string)
+     Payment gateway order ID
+
+Response Fields (2):
+----------------------------------------------------------------------
+  status (string)
+   Response status
+  message (string)
+   Response message
+
+Metadata:
+----------------------------------------------------------------------
+  total_chunks: 1
+  chunks_with_errors: 0
+  total_parameters_before_dedup: 1
+  total_parameters_after_dedup: 1
+  update_log_entries: 3
+  hidden_fields_count: 0
+  source_results: workspaces\v2.logistics.get_operating_hours\results\all_chunks_results.json
+
+======================================================================
+Legend: * = required parameter
+======================================================================

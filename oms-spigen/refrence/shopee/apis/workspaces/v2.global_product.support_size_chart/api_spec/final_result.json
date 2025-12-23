@@ -1,0 +1,64 @@
+{
+  "endpoint": "/global_product/category_size_chart",
+  "method": "POST",
+  "description": "API for global product category size chart",
+  "parameters": [
+    {
+      "name": "category_id",
+      "type": "string",
+      "required": true,
+      "description": "Product id is assigned when registering a successful category is required for all requests",
+      "children": []
+    },
+    {
+      "name": "locale",
+      "type": "string",
+      "required": false,
+      "description": "The locale for bill return, using in mobile user permission is 'en_GB', Will be unified into local param later",
+      "children": []
+    },
+    {
+      "name": "source_id",
+      "type": "string",
+      "required": false,
+      "description": "Provides a unique identifier for a merchant",
+      "children": []
+    }
+  ],
+  "response_fields": [
+    {
+      "name": "error",
+      "type": "string",
+      "description": "Indicates when type is error, Empty if no error",
+      "children": []
+    },
+    {
+      "name": "message",
+      "type": "string",
+      "description": "Indicates error details if bit.error. Empty if no error",
+      "children": []
+    },
+    {
+      "name": "category_id",
+      "type": "string",
+      "description": "The number of the API request for one minute",
+      "children": []
+    }
+  ],
+  "update_log": [
+    {
+      "date": "2021-08-17",
+      "change": "Added SDK information API description"
+    }
+  ],
+  "hidden_fields": [],
+  "metadata": {
+    "total_chunks": 1,
+    "chunks_with_errors": 0,
+    "total_parameters_before_dedup": 3,
+    "total_parameters_after_dedup": 3,
+    "update_log_entries": 1,
+    "hidden_fields_count": 0,
+    "source_results": "workspaces\\v2.global_product.support_size_chart\\results\\all_chunks_results.json"
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "chunk_index": 4,
+  "endpoint": null,
+  "method": null,
+  "description": "Update Log section",
+  "parameters": [],
+  "response_fields": [],
+  "update_log": [
+    {
+      "date": "2025-09-19",
+      "details": "The request field \"certification_type\" has been removed. If this field is still passed in the request, it will be ignored by the system."
+    },
+    {
+      "date": "2025-04-29",
+      "details": "Update certification_info"
+    },
+    {
+      "date": "2025-04-28",
+      "details": "Add permit ID for PH product certification"
+    }
+  ],
+  "chunk_metadata": {
+    "index": 4,
+    "total": 4,
+    "y_start": 22250,
+    "y_end": 23238,
+    "overlap_top": 500,
+    "overlap_bottom": 0,
+    "height": 988,
+    "path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\workspaces\\v2.product.update_item\\chunks\\chunk_004.png",
+    "filename": "chunk_004.png",
+    "width": 837
+  },
+  "chunk_path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\workspaces\\v2.product.update_item\\chunks\\chunk_004.png"
+}

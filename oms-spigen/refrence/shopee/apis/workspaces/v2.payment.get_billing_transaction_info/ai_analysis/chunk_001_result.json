@@ -1,0 +1,101 @@
+{
+  "chunk_index": 1,
+  "total_chunks": 1,
+  "endpoint": null,
+  "method": null,
+  "description": null,
+  "update_log": [],
+  "hidden_fields": [],
+  "parameters": [
+    {
+      "name": "URL",
+      "type": "string",
+      "required": true,
+      "description": "Request URL",
+      "children": []
+    },
+    {
+      "name": "client_secret",
+      "type": "string",
+      "required": true,
+      "description": null,
+      "children": []
+    },
+    {
+      "name": "site_id",
+      "type": "string",
+      "required": true,
+      "description": null,
+      "children": []
+    },
+    {
+      "name": "testing",
+      "type": "integer",
+      "required": false,
+      "description": null,
+      "children": []
+    },
+    {
+      "name": "language",
+      "type": "string",
+      "required": false,
+      "description": null,
+      "children": []
+    },
+    {
+      "name": "version",
+      "type": "string",
+      "required": false,
+      "description": null,
+      "children": []
+    },
+    {
+      "name": "currency",
+      "type": "string",
+      "required": false,
+      "description": null,
+      "children": []
+    },
+    {
+      "name": "callback",
+      "type": "string",
+      "required": false,
+      "description": null,
+      "children": []
+    },
+    {
+      "name": "notify_url",
+      "type": "string",
+      "required": false,
+      "description": null,
+      "children": []
+    }
+  ],
+  "response_fields": [
+    {
+      "name": "error_code",
+      "type": "string",
+      "description": "Error code when request fails"
+    },
+    {
+      "name": "error_msg",
+      "type": "string",
+      "description": "Error message details"
+    }
+  ],
+  "notes": "The image appears to be API documentation showing common parameters and response fields. Some descriptions are cut off or not fully visible in the image. There's also what appears to be code examples or response examples at the bottom of the image that are partially visible.",
+  "chunk_metadata": {
+    "index": 1,
+    "total": 1,
+    "y_start": 0,
+    "y_end": 5841,
+    "overlap_top": 0,
+    "overlap_bottom": 0,
+    "height": 5841,
+    "path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\workspaces\\v2.payment.get_billing_transaction_info\\chunks\\chunk_001.png",
+    "filename": "chunk_001.png",
+    "width": 837
+  },
+  "analysis_timestamp": "2025-10-10T06:19:20.641911",
+  "model": "claude-3-5-sonnet-20241022"
+}

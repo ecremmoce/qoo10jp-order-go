@@ -1,0 +1,86 @@
+[
+  {
+    "chunk_index": 1,
+    "total_chunks": 1,
+    "endpoint": null,
+    "method": null,
+    "description": null,
+    "update_log": [],
+    "hidden_fields": [],
+    "parameters": [
+      {
+        "name": "status_message",
+        "type": "string",
+        "required": false,
+        "description": "Used to provide specific success/failure message",
+        "children": []
+      },
+      {
+        "name": "body",
+        "type": "object",
+        "required": true,
+        "description": "The request body parameters",
+        "children": [
+          {
+            "name": "page_size",
+            "type": "string",
+            "required": false,
+            "description": "Number of records per page",
+            "children": []
+          },
+          {
+            "name": "catalog_number",
+            "type": "string",
+            "required": false,
+            "description": "Optional catalog number for the product",
+            "children": []
+          },
+          {
+            "name": "message",
+            "type": "string",
+            "required": false,
+            "description": "Optional message displayed to the user",
+            "children": []
+          }
+        ]
+      }
+    ],
+    "response_fields": [
+      {
+        "name": "error_code",
+        "type": "string",
+        "description": "Error code if any"
+      },
+      {
+        "name": "error_message",
+        "type": "string",
+        "description": "Detailed error message if applicable"
+      },
+      {
+        "name": "status",
+        "type": "string",
+        "description": "Status of the request (success/failure)"
+      },
+      {
+        "name": "data",
+        "type": "object",
+        "description": "Response data object"
+      }
+    ],
+    "notes": "The image appears to be an API documentation page showing common parameters, request parameters, response fields and examples. Some sections appear to be cut off or partially visible.",
+    "chunk_metadata": {
+      "index": 1,
+      "total": 1,
+      "y_start": 0,
+      "y_end": 6062,
+      "overlap_top": 0,
+      "overlap_bottom": 0,
+      "height": 6062,
+      "path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\workspaces\\v2.logistics.mass_ship_order\\chunks\\chunk_001.png",
+      "filename": "chunk_001.png",
+      "width": 837
+    },
+    "analysis_timestamp": "2025-10-10T06:06:56.196686",
+    "model": "claude-3-5-sonnet-20241022"
+  }
+]

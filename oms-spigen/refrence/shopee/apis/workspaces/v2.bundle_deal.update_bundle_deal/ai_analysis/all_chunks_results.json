@@ -1,0 +1,140 @@
+[
+  {
+    "chunk_index": 1,
+    "endpoint": null,
+    "method": null,
+    "description": null,
+    "parameters": [],
+    "response_fields": [
+      {
+        "name": "error_network",
+        "type": "string",
+        "description": "Inner http call failed",
+        "children": []
+      },
+      {
+        "name": "error_data",
+        "type": "string",
+        "description": "parse data failed",
+        "children": []
+      },
+      {
+        "name": "error_data",
+        "type": "string",
+        "description": "data not exist",
+        "children": []
+      },
+      {
+        "name": "error_param",
+        "type": "string",
+        "description": "parameter invalid",
+        "children": []
+      },
+      {
+        "name": "error_param",
+        "type": "string",
+        "description": "The information you queried is not found.",
+        "children": []
+      },
+      {
+        "name": "error_param",
+        "type": "string",
+        "description": "Wrong parameters, detail: {msg}.",
+        "children": []
+      },
+      {
+        "name": "error_server",
+        "type": "string",
+        "description": "Something wrong. Please try later.",
+        "children": []
+      },
+      {
+        "name": "error_shop",
+        "type": "string",
+        "description": "shopid is invalid",
+        "children": []
+      },
+      {
+        "name": "error_param",
+        "type": "string",
+        "description": "request not from gateway",
+        "children": []
+      },
+      {
+        "name": "bundle.bundle_deal_start_time_error",
+        "type": "string",
+        "description": "Promotion start time can only be changed to a later timing.",
+        "children": []
+      },
+      {
+        "name": "bundle.bundle_deal_start_time_error",
+        "type": "string",
+        "description": "The start_time of ongoing promotion can't be updated",
+        "children": []
+      }
+    ],
+    "chunk_metadata": {
+      "index": 1,
+      "total": 2,
+      "y_start": 0,
+      "y_end": 8000,
+      "overlap_top": 0,
+      "overlap_bottom": 500,
+      "height": 8000,
+      "path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\workspaces\\v2.bundle_deal.update_bundle_deal\\chunks\\chunk_001.png",
+      "filename": "chunk_001.png",
+      "width": 837
+    },
+    "chunk_path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\workspaces\\v2.bundle_deal.update_bundle_deal\\chunks\\chunk_001.png"
+  },
+  {
+    "chunk_index": 2,
+    "endpoint": null,
+    "method": null,
+    "description": "API Permissions and Update Log information",
+    "parameters": [],
+    "response_fields": [
+      {
+        "name": "API Permissions",
+        "type": "object",
+        "description": "APP types that can call this API: ERP System, Seller In House System, Marketing, Swam ERP",
+        "children": []
+      },
+      {
+        "name": "Update Log",
+        "type": "array",
+        "description": "List of updates",
+        "children": [
+          {
+            "name": "2025-09-08",
+            "type": "string",
+            "description": "select type for some parameters"
+          },
+          {
+            "name": "2022-08-29",
+            "type": "string",
+            "description": "add additional_tiers"
+          },
+          {
+            "name": "2022-07-26",
+            "type": "string",
+            "description": "Add Error Example information"
+          }
+        ]
+      }
+    ],
+    "chunk_metadata": {
+      "index": 2,
+      "total": 2,
+      "y_start": 7251,
+      "y_end": 8248,
+      "overlap_top": 500,
+      "overlap_bottom": 0,
+      "height": 997,
+      "path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\workspaces\\v2.bundle_deal.update_bundle_deal\\chunks\\chunk_002.png",
+      "filename": "chunk_002.png",
+      "width": 837
+    },
+    "chunk_path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\workspaces\\v2.bundle_deal.update_bundle_deal\\chunks\\chunk_002.png"
+  }
+]

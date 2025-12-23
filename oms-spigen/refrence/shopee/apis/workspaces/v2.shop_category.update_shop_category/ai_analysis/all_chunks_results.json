@@ -1,0 +1,83 @@
+[
+  {
+    "chunk_index": 1,
+    "total_chunks": 1,
+    "endpoint": null,
+    "method": null,
+    "description": null,
+    "update_log": [],
+    "hidden_fields": [],
+    "parameters": [
+      {
+        "name": "URL",
+        "type": "string",
+        "required": true,
+        "description": "URL reference format",
+        "children": []
+      },
+      {
+        "name": "content",
+        "type": "string",
+        "required": true,
+        "description": "Request parameters in JSON format",
+        "children": []
+      }
+    ],
+    "response_parameters": [
+      {
+        "name": "error_code",
+        "type": "integer",
+        "required": true,
+        "description": "The identifier of the API request status",
+        "children": []
+      },
+      {
+        "name": "error",
+        "type": "string",
+        "required": true,
+        "description": "The status of the error returned to the browser",
+        "children": []
+      },
+      {
+        "name": "message",
+        "type": "string",
+        "required": true,
+        "description": "The detailed description of the error. The message will be empty if the request succeeds",
+        "children": []
+      }
+    ],
+    "error_codes": [
+      {
+        "code": "error_param",
+        "description": "There's an error, please try again"
+      },
+      {
+        "code": "error_param_empty",
+        "description": "Parameter cannot be empty"
+      },
+      {
+        "code": "error_param_format",
+        "description": "Parameter format is incorrect"
+      },
+      {
+        "code": "error_sign",
+        "description": "Signature verification failed"
+      }
+    ],
+    "notes": "The image shows API documentation with common parameters, required parameters, response parameters, request examples, response examples, and error codes. The documentation appears to be for a general API structure rather than a specific endpoint.",
+    "chunk_metadata": {
+      "index": 1,
+      "total": 1,
+      "y_start": 0,
+      "y_end": 5379,
+      "overlap_top": 0,
+      "overlap_bottom": 0,
+      "height": 5379,
+      "path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\workspaces\\v2.shop_category.update_shop_category\\chunks\\chunk_001.png",
+      "filename": "chunk_001.png",
+      "width": 837
+    },
+    "analysis_timestamp": "2025-10-10T06:47:15.419508",
+    "model": "claude-3-5-sonnet-20241022"
+  }
+]

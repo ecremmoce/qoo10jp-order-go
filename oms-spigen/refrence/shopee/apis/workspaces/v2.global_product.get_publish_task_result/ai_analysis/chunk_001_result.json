@@ -1,0 +1,96 @@
+{
+  "chunk_index": 1,
+  "total_chunks": 1,
+  "endpoint": "https://openapi.shopee.com/v2/product/update_size_chart",
+  "method": "POST",
+  "description": "Update product size chart",
+  "update_log": [],
+  "hidden_fields": [],
+  "parameters": [
+    {
+      "name": "url",
+      "type": "string",
+      "required": true,
+      "description": "The URL link of image host",
+      "children": []
+    },
+    {
+      "name": "partner_id",
+      "type": "integer",
+      "required": true,
+      "description": "Partner ID is assigned upon registration is successful",
+      "children": []
+    },
+    {
+      "name": "shopid",
+      "type": "integer",
+      "required": true,
+      "description": "Shop ID is the seller's unique identifier in Shopee's system",
+      "children": []
+    },
+    {
+      "name": "access_token",
+      "type": "string",
+      "required": true,
+      "description": "Identify user's identity, using refresh_key to get token",
+      "children": []
+    }
+  ],
+  "response_fields": [
+    {
+      "name": "error",
+      "type": "string",
+      "description": "Indicate error type if request failed",
+      "children": []
+    },
+    {
+      "name": "message",
+      "type": "string",
+      "description": "Indicate error details if any (may be empty)",
+      "children": []
+    },
+    {
+      "name": "request_id",
+      "type": "string",
+      "description": "The request id of API",
+      "children": []
+    }
+  ],
+  "error_codes": [
+    {
+      "code": "error_param",
+      "description": "There is an error in input param"
+    },
+    {
+      "code": "error_auth",
+      "description": "Invalid access_token"
+    },
+    {
+      "code": "error_forbidden",
+      "description": "No permission to modify this"
+    },
+    {
+      "code": "error_image_size",
+      "description": "Size too large, should be under 2MB"
+    },
+    {
+      "code": "error_image_validation",
+      "description": "Something wrong happen in real"
+    }
+  ],
+  "notes": "The documentation includes detailed request parameters, response parameters, error codes, and example requests/responses. The API appears to be part of Shopee's product management system, specifically for updating size charts.",
+  "chunk_metadata": {
+    "index": 1,
+    "total": 1,
+    "y_start": 0,
+    "y_end": 5179,
+    "overlap_top": 0,
+    "overlap_bottom": 0,
+    "height": 5179,
+    "path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\workspaces\\v2.global_product.get_publish_task_result\\chunks\\chunk_001.png",
+    "filename": "chunk_001.png",
+    "width": 837
+  },
+  "analysis_timestamp": "2025-10-10T05:48:54.314895",
+  "model": "claude-3-5-sonnet-20241022"
+}

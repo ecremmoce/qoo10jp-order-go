@@ -1,0 +1,40 @@
+======================================================================
+API SPECIFICATION SUMMARY
+======================================================================
+
+Endpoint: POST /chinese_advertisement_video_post
+Description: API used to call the upload of Chinese video advertisement.
+
+Parameters (5):
+----------------------------------------------------------------------
+* postal_id (int)
+   Product ID is generated upon registration is successful.
+* timestamp (string)
+   Signature Generation time, Unix timestamp format. Example: 1613608833
+* video_upload_id (string)
+   Frequency of the current post, starts from 0
+* part_no (int)
+   ID of this part
+* part_content (string)
+   The content of this part of file, Part size should be equals with partition_length
+
+Response Fields (2):
+----------------------------------------------------------------------
+  message (string)
+   Status error details if the error. Empty if no validation errors
+  request_id (string)
+   The identifier for an API request for error tracking
+
+Metadata:
+----------------------------------------------------------------------
+  total_chunks: 1
+  chunks_with_errors: 0
+  total_parameters_before_dedup: 5
+  total_parameters_after_dedup: 5
+  update_log_entries: 0
+  hidden_fields_count: 0
+  source_results: workspaces\v2.media_space.upload_video_part\results\all_chunks_results.json
+
+======================================================================
+Legend: * = required parameter
+======================================================================

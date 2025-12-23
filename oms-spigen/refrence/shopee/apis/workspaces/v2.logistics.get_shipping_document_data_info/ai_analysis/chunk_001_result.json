@@ -1,0 +1,71 @@
+{
+  "chunk_index": 1,
+  "endpoint": null,
+  "method": null,
+  "description": null,
+  "parameters": [
+    {
+      "name": "options",
+      "type": "object",
+      "required": true,
+      "description": "Core options for the API",
+      "children": [
+        {
+          "name": "apiKey",
+          "type": "string",
+          "required": true,
+          "description": "API key for authentication"
+        },
+        {
+          "name": "timeout",
+          "type": "integer",
+          "required": false,
+          "description": "Request timeout in milliseconds"
+        },
+        {
+          "name": "endpoint",
+          "type": "string",
+          "required": false,
+          "description": "Custom API endpoint URL"
+        }
+      ]
+    }
+  ],
+  "response_fields": [
+    {
+      "name": "Response",
+      "type": "object",
+      "description": "Standard API response format",
+      "children": [
+        {
+          "name": "data",
+          "type": "object",
+          "description": "Response payload"
+        },
+        {
+          "name": "error",
+          "type": "object",
+          "description": "Error details if any"
+        },
+        {
+          "name": "status",
+          "type": "integer",
+          "description": "HTTP status code"
+        }
+      ]
+    }
+  ],
+  "chunk_metadata": {
+    "index": 1,
+    "total": 2,
+    "y_start": 0,
+    "y_end": 8000,
+    "overlap_top": 0,
+    "overlap_bottom": 500,
+    "height": 8000,
+    "path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\workspaces\\v2.logistics.get_shipping_document_data_info\\chunks\\chunk_001.png",
+    "filename": "chunk_001.png",
+    "width": 837
+  },
+  "chunk_path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\workspaces\\v2.logistics.get_shipping_document_data_info\\chunks\\chunk_001.png"
+}

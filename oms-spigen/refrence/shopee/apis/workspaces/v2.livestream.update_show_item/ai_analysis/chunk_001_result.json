@@ -1,0 +1,164 @@
+{
+  "chunk_index": 1,
+  "total_chunks": 1,
+  "endpoint": "v2/bookmark/update_show_item",
+  "method": null,
+  "description": null,
+  "update_log": [
+    {
+      "date": "2025-09-24",
+      "change": "New API"
+    }
+  ],
+  "parameters": [
+    {
+      "name": "partner_id",
+      "type": "int64",
+      "required": true,
+      "description": "Partner ID to establish user application is successful",
+      "children": []
+    },
+    {
+      "name": "timestamp",
+      "type": "timestamp",
+      "required": true,
+      "description": "This is to ensure the timeliness of the request. Request to all channels is within 24 minutes",
+      "children": []
+    },
+    {
+      "name": "access_token",
+      "type": "string",
+      "required": true,
+      "description": "The token for API system using to identify user permission to the api, with its creation use and create of 1 hour",
+      "children": []
+    },
+    {
+      "name": "sign",
+      "type": "string",
+      "required": true,
+      "description": "Signature generated for requests at different sites",
+      "children": []
+    },
+    {
+      "name": "request_id",
+      "type": "int64",
+      "required": true,
+      "description": "The identifier of bookmark session",
+      "children": []
+    },
+    {
+      "name": "show_id",
+      "type": "int64",
+      "required": true,
+      "description": "The show ID of the item",
+      "children": []
+    }
+  ],
+  "response_fields": [
+    {
+      "name": "error",
+      "type": "string",
+      "description": "Indicate error type if not exist. Empty if no error happened",
+      "children": []
+    },
+    {
+      "name": "message",
+      "type": "string",
+      "description": "Indicate error details if not error. Empty if no error happened",
+      "children": []
+    },
+    {
+      "name": "request_id",
+      "type": "string",
+      "description": "The identifier for JWT request for error tracking",
+      "children": []
+    },
+    {
+      "name": "response",
+      "type": "object",
+      "description": "Detail information you are returning",
+      "children": []
+    }
+  ],
+  "error_codes": [
+    {
+      "code": "error_data",
+      "description": "some data found"
+    },
+    {
+      "code": "error_data",
+      "description": "data not exist"
+    },
+    {
+      "code": "error_param",
+      "description": "parameter invalid"
+    },
+    {
+      "code": "error_param",
+      "description": "invalid time_id"
+    },
+    {
+      "code": "error_param",
+      "description": "invalid show_id"
+    },
+    {
+      "code": "error_auth",
+      "description": "You are not authorized"
+    },
+    {
+      "code": "error_auth",
+      "description": "The session(access_id) not is not belong to you"
+    },
+    {
+      "code": "error_server",
+      "description": "The API is not supported for current reach"
+    },
+    {
+      "code": "error_param",
+      "description": "Parse data error: json_data"
+    },
+    {
+      "code": "error_server",
+      "description": "Too many requests, please try again later"
+    },
+    {
+      "code": "error_data",
+      "description": "Show change error. Error: data"
+    },
+    {
+      "code": "error_data",
+      "description": "The session(session_id) not is not exist"
+    },
+    {
+      "code": "error_data",
+      "description": "The session(session_id) not is not showing"
+    },
+    {
+      "code": "error_param",
+      "description": "The parameter(show_id) is not found"
+    },
+    {
+      "code": "error_param",
+      "description": "Wrong parameters: start: string"
+    },
+    {
+      "code": "error_param",
+      "description": "Something wrong. Please try later"
+    }
+  ],
+  "notes": "The documentation shows a complete API reference for a bookmark update endpoint with detailed request parameters, response fields, and error codes. The image appears to be from a developer console or documentation system.",
+  "chunk_metadata": {
+    "index": 1,
+    "total": 1,
+    "y_start": 0,
+    "y_end": 4026,
+    "overlap_top": 0,
+    "overlap_bottom": 0,
+    "height": 4026,
+    "path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\workspaces\\v2.livestream.update_show_item\\chunks\\chunk_001.png",
+    "filename": "chunk_001.png",
+    "width": 837
+  },
+  "analysis_timestamp": "2025-10-10T05:58:37.552630",
+  "model": "claude-3-5-sonnet-20241022"
+}

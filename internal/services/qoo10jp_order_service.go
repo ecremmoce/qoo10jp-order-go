@@ -3,11 +3,11 @@ package services
 import (
 	"fmt"
 	"log"
-	"qoo10jp-order-go/internal/config"
-	"qoo10jp-order-go/internal/models"
-	"qoo10jp-order-go/pkg/qoo10jp"
-	"qoo10jp-order-go/pkg/redis"
-	"qoo10jp-order-go/pkg/supabase"
+	"shopee-order-go/internal/config"
+	"shopee-order-go/internal/models"
+	"shopee-order-go/pkg/qoo10jp"
+	"shopee-order-go/pkg/redis"
+	"shopee-order-go/pkg/supabase"
 	"strings"
 	"time"
 
@@ -32,28 +32,28 @@ func NewQoo10JPOrderService(cfg *config.Config, supabaseClient *supabase.Client,
 func (s *Qoo10JPOrderService) createQoo10JPClient(platformAccountID string) (*qoo10jp.Client, error) {
 	// Supabase에서 계정 정보 조회
 	var accounts []struct {
-		ID              string `json:"id"`
-		SellerID        string `json:"seller_id"`
-		APIId           string `json:"api_id"`
+		ID               string `json:"id"`
+		SellerID         string `json:"seller_id"`
+		APIId            string `json:"api_id"`
 		CertificationKey string `json:"certification_key"`
-		IsActive        bool   `json:"is_active"`
+		IsActive         bool   `json:"is_active"`
 	}
-	
+
 	query := fmt.Sprintf("id=eq.%s&is_active=eq.true", platformAccountID)
 	err := s.supabaseClient.Select("sales_platform_accounts_qoo10jp", query, &accounts)
 	if err != nil {
 		return nil, fmt.Errorf("failed to fetch account info: %v", err)
 	}
-	
+
 	if len(accounts) == 0 {
 		return nil, fmt.Errorf("no active account found with ID: %s", platformAccountID)
 	}
-	
+
 	account := accounts[0]
 	if account.APIId == "" || account.CertificationKey == "" {
 		return nil, fmt.Errorf("account %s missing API credentials", platformAccountID)
 	}
-	
+
 	// Qoo10JP 클라이언트 생성 (환경 설정에서 BaseURL 사용)
 	return qoo10jp.NewClient(account.APIId, account.CertificationKey, s.cfg.Qoo10JP.BaseURL), nil
 }
@@ -68,7 +68,7 @@ func (s *Qoo10JPOrderService) CollectOrders(startDate, endDate time.Time, platfo
 
 	page := 1
 	pageSize := 100
-	maxPages := 1000 // 최대 페이지 수 제한 (100,000개 주문)
+	maxPages := 1000            // 최대 페이지 수 제한 (100,000개 주문)
 	consecutiveCachedPages := 0 // 연속으로 캐시된 페이지 수
 
 	for page <= maxPages {
@@ -83,17 +83,17 @@ func (s *Qoo10JPOrderService) CollectOrders(startDate, endDate time.Time, platfo
 		} else if exists {
 			log.Printf("Page %d already processed recently, skipping", page)
 			consecutiveCachedPages++
-			
+
 			// 연속으로 10개 페이지가 캐시되어 있으면 중단 (무한루프 방지)
 			if consecutiveCachedPages >= 10 {
 				log.Printf("Found %d consecutive cached pages, assuming no more new data", consecutiveCachedPages)
 				break
 			}
-			
+
 			page++
 			continue
 		}
-		
+
 		// 캐시되지 않은 페이지를 만나면 카운터 리셋
 		consecutiveCachedPages = 0
 
@@ -114,7 +114,7 @@ func (s *Qoo10JPOrderService) CollectOrders(startDate, endDate time.Time, platfo
 
 		// 배치 처리를 위한 주문 데이터 수집 및 분류
 		err = s.processBatchOrders(orderResp.ResultObject, platformAccountID)
-			if err != nil {
+		if err != nil {
 			log.Printf("Failed to process batch orders: %v", err)
 			// 실패 시 개별 처리로 폴백
 			s.processFallbackOrders(orderResp.ResultObject, platformAccountID)
@@ -132,7 +132,7 @@ func (s *Qoo10JPOrderService) CollectOrders(startDate, endDate time.Time, platfo
 		}
 
 		page++
-		
+
 		// 안전장치: 너무 많은 페이지 처리 방지
 		if page > maxPages {
 			log.Printf("Reached maximum page limit (%d), stopping", maxPages)
@@ -171,22 +171,22 @@ func (s *Qoo10JPOrderService) GetOrders(filter models.Qoo10JPOrderFilter) ([]mod
 // 주문 통계
 func (s *Qoo10JPOrderService) GetOrderStats(platformAccountID string, startDate, endDate *time.Time) (*models.Qoo10JPOrderStats, error) {
 	var conditions []string
-	
+
 	if platformAccountID != "" {
 		conditions = append(conditions, fmt.Sprintf("platform_account_id=eq.%s", platformAccountID))
 	}
-	
+
 	if startDate != nil {
 		conditions = append(conditions, fmt.Sprintf("order_date=gte.%s", startDate.Format("2006-01-02")))
 	}
-	
+
 	if endDate != nil {
 		conditions = append(conditions, fmt.Sprintf("order_date=lte.%s", endDate.Format("2006-01-02")))
 	}
 
 	query := ""
 	if len(conditions) > 0 {
-		query = fmt.Sprintf("select=count(*),total_amount.sum(),order_status&%s", 
+		query = fmt.Sprintf("select=count(*),total_amount.sum(),order_status&%s",
 			fmt.Sprintf("%s", conditions[0]))
 		for i := 1; i < len(conditions); i++ {
 			query += fmt.Sprintf("&%s", conditions[i])
@@ -203,10 +203,10 @@ func (s *Qoo10JPOrderService) GetOrderStats(platformAccountID string, startDate,
 	// 통계 계산
 	stats := &models.Qoo10JPOrderStats{}
 	stats.TotalOrders = len(orders)
-	
+
 	for _, order := range orders {
 		stats.TotalAmount += order.TotalAmount
-		
+
 		switch order.OrderStatus {
 		case "pending", "processing":
 			stats.PendingOrders++
@@ -366,11 +366,11 @@ func (s *Qoo10JPOrderService) processBatchOrders(qooOrders []qoo10jp.Order, plat
 		if existingOrder, exists := existingOrderMap[order.OrderNo]; exists {
 			// 업데이트 필요 여부 확인
 			if s.shouldUpdateOrder(existingOrder, *order) {
-				order.ID = existingOrder.ID // 기존 ID 유지
+				order.ID = existingOrder.ID               // 기존 ID 유지
 				order.CreatedAt = existingOrder.CreatedAt // 생성일 유지
 				updateOrders = append(updateOrders, *order)
 				updateOrderIDs = append(updateOrderIDs, order.ID)
-				
+
 				// 주문 상품도 업데이트 대상에 추가
 				for i := range order.Items {
 					order.Items[i].OrderID = order.ID
@@ -380,7 +380,7 @@ func (s *Qoo10JPOrderService) processBatchOrders(qooOrders []qoo10jp.Order, plat
 		} else {
 			// 신규 주문
 			newOrders = append(newOrders, *order)
-			
+
 			// 주문 상품도 신규 대상에 추가
 			for i := range order.Items {
 				order.Items[i].OrderID = order.ID
@@ -391,7 +391,7 @@ func (s *Qoo10JPOrderService) processBatchOrders(qooOrders []qoo10jp.Order, plat
 
 	// 5. 벌크 처리 실행 (에러 처리 개선)
 	var bulkErrors []string
-	
+
 	// 신규 주문 벌크 삽입
 	if len(newOrders) > 0 {
 		log.Printf("Bulk inserting %d new orders", len(newOrders))
@@ -445,7 +445,7 @@ func (s *Qoo10JPOrderService) processBatchOrders(qooOrders []qoo10jp.Order, plat
 // 개별 처리 폴백 (배치 처리 실패 시)
 func (s *Qoo10JPOrderService) processFallbackOrders(qooOrders []qoo10jp.Order, platformAccountID string) {
 	log.Printf("Using fallback individual processing for %d orders", len(qooOrders))
-	
+
 	for _, qooOrder := range qooOrders {
 		order, err := s.convertQoo10JPOrder(qooOrder, platformAccountID)
 		if err != nil {
@@ -470,12 +470,12 @@ func (s *Qoo10JPOrderService) processFallbackOrders(qooOrders []qoo10jp.Order, p
 				order.CreatedAt = existingOrders[0].CreatedAt
 				updateQuery := fmt.Sprintf("order_no=eq.%s", order.OrderNo)
 				err = s.supabaseClient.Update("orders_qoo10jp", updateQuery, order)
-				
+
 				if err == nil {
 					// 기존 주문 상품 삭제 후 재삽입
 					deleteQuery := fmt.Sprintf("order_id=eq.%s", order.ID)
 					s.supabaseClient.Delete("order_items_qoo10jp", deleteQuery)
-					
+
 					for i := range order.Items {
 						order.Items[i].OrderID = order.ID
 					}
@@ -488,7 +488,7 @@ func (s *Qoo10JPOrderService) processFallbackOrders(qooOrders []qoo10jp.Order, p
 			// 새 주문 삽입
 			log.Printf("Inserting new order %s", order.OrderNo)
 			err = s.supabaseClient.Insert("orders_qoo10jp", order)
-			
+
 			if err == nil && len(order.Items) > 0 {
 				for i := range order.Items {
 					order.Items[i].OrderID = order.ID
@@ -525,22 +525,22 @@ func (s *Qoo10JPOrderService) shouldUpdateOrder(existing, new models.Qoo10JPOrde
 func (s *Qoo10JPOrderService) bulkInsertWithRetry(table string, data interface{}) error {
 	const maxRetries = 3
 	var lastErr error
-	
+
 	for i := 0; i < maxRetries; i++ {
 		err := s.supabaseClient.BulkInsert(table, data)
 		if err == nil {
 			return nil
 		}
-		
+
 		lastErr = err
 		log.Printf("Bulk insert attempt %d/%d failed for table %s: %v", i+1, maxRetries, table, err)
-		
+
 		// 재시도 전 잠시 대기
 		if i < maxRetries-1 {
 			time.Sleep(time.Duration(i+1) * time.Second)
 		}
 	}
-	
+
 	return fmt.Errorf("bulk insert failed after %d retries: %v", maxRetries, lastErr)
 }
 
@@ -548,29 +548,29 @@ func (s *Qoo10JPOrderService) bulkInsertWithRetry(table string, data interface{}
 func (s *Qoo10JPOrderService) bulkUpsertWithRetry(table string, data interface{}, conflictColumns ...string) error {
 	const maxRetries = 3
 	var lastErr error
-	
+
 	for i := 0; i < maxRetries; i++ {
 		err := s.supabaseClient.BulkUpsert(table, data, conflictColumns...)
 		if err == nil {
 			return nil
 		}
-		
+
 		lastErr = err
 		log.Printf("Bulk upsert attempt %d/%d failed for table %s: %v", i+1, maxRetries, table, err)
-		
+
 		// 재시도 전 잠시 대기
 		if i < maxRetries-1 {
 			time.Sleep(time.Duration(i+1) * time.Second)
 		}
 	}
-	
+
 	return fmt.Errorf("bulk upsert failed after %d retries: %v", maxRetries, lastErr)
 }
 
 // 개별 주문 삽입 (벌크 실패 시 폴백)
 func (s *Qoo10JPOrderService) insertOrdersIndividually(orders []models.Qoo10JPOrder) {
 	log.Printf("Falling back to individual insert for %d orders", len(orders))
-	
+
 	for _, order := range orders {
 		err := s.supabaseClient.Insert("orders_qoo10jp", order)
 		if err != nil {
@@ -582,7 +582,7 @@ func (s *Qoo10JPOrderService) insertOrdersIndividually(orders []models.Qoo10JPOr
 // 개별 주문 업데이트 (벌크 실패 시 폴백)
 func (s *Qoo10JPOrderService) updateOrdersIndividually(orders []models.Qoo10JPOrder) {
 	log.Printf("Falling back to individual update for %d orders", len(orders))
-	
+
 	for _, order := range orders {
 		updateQuery := fmt.Sprintf("order_no=eq.%s", order.OrderNo)
 		err := s.supabaseClient.Update("orders_qoo10jp", updateQuery, order)
@@ -595,7 +595,7 @@ func (s *Qoo10JPOrderService) updateOrdersIndividually(orders []models.Qoo10JPOr
 // 개별 주문 상품 삽입 (벌크 실패 시 폴백)
 func (s *Qoo10JPOrderService) insertOrderItemsIndividually(items []models.Qoo10JPOrderItem) {
 	log.Printf("Falling back to individual insert for %d order items", len(items))
-	
+
 	for _, item := range items {
 		err := s.supabaseClient.Insert("order_items_qoo10jp", item)
 		if err != nil {
@@ -603,6 +603,3 @@ func (s *Qoo10JPOrderService) insertOrderItemsIndividually(items []models.Qoo10J
 		}
 	}
 }
-
-
-

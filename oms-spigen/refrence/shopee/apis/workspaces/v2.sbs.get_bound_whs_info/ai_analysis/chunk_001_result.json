@@ -1,0 +1,137 @@
+{
+  "chunk_index": 1,
+  "total_chunks": 1,
+  "endpoint": "v2.abs.get_sound_wtsi_info",
+  "method": "GET",
+  "description": "Get sound expression abs snapshot",
+  "update_log": [
+    {
+      "date": "2019-08-19",
+      "change": "New API"
+    }
+  ],
+  "parameters": [
+    {
+      "name": "partner_id",
+      "type": "int",
+      "required": true,
+      "description": "Partner ID of snapshot",
+      "children": []
+    },
+    {
+      "name": "timestamp",
+      "type": "timestamp",
+      "required": true,
+      "description": "This is to indicate the timestamp of the request. Required for all requests. 6 months is 15552000",
+      "children": []
+    },
+    {
+      "name": "access_token",
+      "type": "string",
+      "required": true,
+      "description": "The token for API access, using to identify your permission to use. Valid for multiple call and expires in 2 hours",
+      "children": []
+    },
+    {
+      "name": "shop_id",
+      "type": "int",
+      "required": true,
+      "description": "Shop/store unique identifier for a shop. Required param for",
+      "children": []
+    },
+    {
+      "name": "sign",
+      "type": "string",
+      "required": true,
+      "description": "Signature generated to protect API call path",
+      "children": []
+    }
+  ],
+  "response_fields": [
+    {
+      "name": "message",
+      "type": "string",
+      "description": "",
+      "children": []
+    },
+    {
+      "name": "response",
+      "type": "object",
+      "description": "",
+      "children": []
+    },
+    {
+      "name": "shop_id",
+      "type": "int",
+      "description": "",
+      "children": []
+    },
+    {
+      "name": "board_info",
+      "type": "object",
+      "description": "",
+      "children": []
+    },
+    {
+      "name": "wtsi_region",
+      "type": "string",
+      "description": "The warehouse region found with the shop",
+      "children": []
+    },
+    {
+      "name": "wtsi_ids",
+      "type": "string",
+      "description": "The warehouse id bound with the shop",
+      "children": []
+    }
+  ],
+  "error_codes": [
+    {
+      "code": "error_data",
+      "description": "some data failed"
+    },
+    {
+      "code": "error_miss",
+      "description": "data not exist"
+    },
+    {
+      "code": "error_param",
+      "description": "Parameters in the request are invalid"
+    },
+    {
+      "code": "invalid_param",
+      "description": "Parameter in the request are invalid. [msg]"
+    },
+    {
+      "code": "invalid_request",
+      "description": "Parse the request failed"
+    },
+    {
+      "code": "error_partner",
+      "description": "The information you applied is not found"
+    },
+    {
+      "code": "error_permission",
+      "description": "[string:parameter, value] [msg]"
+    },
+    {
+      "code": "server_timeout_error",
+      "description": "The server encountered an internal error, please retry or contact the server administrator"
+    }
+  ],
+  "notes": "The documentation includes example requests and responses in multiple formats (PHP, cURL, Python) but they are partially cut off in the image. The URL paths shown indicate this is likely a production API endpoint.",
+  "chunk_metadata": {
+    "index": 1,
+    "total": 1,
+    "y_start": 0,
+    "y_end": 3658,
+    "overlap_top": 0,
+    "overlap_bottom": 0,
+    "height": 3658,
+    "path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\workspaces\\v2.sbs.get_bound_whs_info\\chunks\\chunk_001.png",
+    "filename": "chunk_001.png",
+    "width": 837
+  },
+  "analysis_timestamp": "2025-10-10T06:43:22.528524",
+  "model": "claude-3-5-sonnet-20241022"
+}

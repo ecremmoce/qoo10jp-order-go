@@ -1,0 +1,69 @@
+{
+  "endpoint": "/x2/public_api_check_pic_partner",
+  "method": "POST",
+  "description": "Check image parameters in the partner",
+  "parameters": [
+    {
+      "name": "partner_id",
+      "type": "int",
+      "required": true,
+      "description": "Partner ID (a required user registration or successful Request ID or alipay ID)",
+      "children": []
+    },
+    {
+      "name": "requestId",
+      "type": "timestamp",
+      "required": false,
+      "description": "This is a token for browsing of the report. Required for alipay partner queries",
+      "children": []
+    }
+  ],
+  "response_fields": [
+    {
+      "name": "auth_time",
+      "type": "string",
+      "required": false,
+      "description": "Authorization time",
+      "children": []
+    },
+    {
+      "name": "msg_id",
+      "type": "int",
+      "required": true,
+      "description": "Message ID",
+      "children": []
+    },
+    {
+      "name": "auth_type",
+      "type": "timestamp",
+      "required": false,
+      "description": "The timestamp after the shop was authorized",
+      "children": []
+    },
+    {
+      "name": "expire_time",
+      "type": "timestamp",
+      "required": false,
+      "description": "Use this field to decide the expiration date for other information",
+      "children": []
+    },
+    {
+      "name": "result_id",
+      "type": "string",
+      "required": false,
+      "description": "The ID that will be set for each result",
+      "children": []
+    }
+  ],
+  "update_log": [],
+  "hidden_fields": [],
+  "metadata": {
+    "total_chunks": 1,
+    "chunks_with_errors": 0,
+    "total_parameters_before_dedup": 2,
+    "total_parameters_after_dedup": 2,
+    "update_log_entries": 0,
+    "hidden_fields_count": 0,
+    "source_results": "workspaces\\v2.public.get_shops_by_partner\\results\\all_chunks_results.json"
+  }
+}

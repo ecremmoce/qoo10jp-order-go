@@ -1,0 +1,68 @@
+{
+  "endpoint": "order_upload_invoice_doc",
+  "method": null,
+  "description": "This endpoint is for file upload use cases, cannot be directly executed",
+  "parameters": [
+    {
+      "name": "partner_id",
+      "type": "string",
+      "required": true,
+      "description": "Partner ID or completed user registration is successful",
+      "children": []
+    },
+    {
+      "name": "access_token",
+      "type": "string",
+      "required": true,
+      "description": "This is to ensure the timelines of the request. Required to complete at phase 3 (session)",
+      "children": []
+    },
+    {
+      "name": "sign",
+      "type": "string",
+      "required": true,
+      "description": "Signature generated to confirm API call rate, timestamp, etc. For each multiple use and expires in 5 mins",
+      "children": []
+    }
+  ],
+  "response_fields": [
+    {
+      "name": "partner_id",
+      "type": "string",
+      "description": "No specifics for an VN request by error",
+      "children": []
+    },
+    {
+      "name": "error",
+      "type": "string",
+      "description": "Invalid error auth. Please try error",
+      "children": []
+    },
+    {
+      "name": "message",
+      "type": "string",
+      "description": "Invalid error token. For error. Empty if no message",
+      "children": []
+    }
+  ],
+  "update_log": [
+    {
+      "date": "2021-04-13",
+      "change": "support API error codes list in EN+VN"
+    },
+    {
+      "date": "2021-03-31",
+      "change": "base API"
+    }
+  ],
+  "hidden_fields": [],
+  "metadata": {
+    "total_chunks": 1,
+    "chunks_with_errors": 0,
+    "total_parameters_before_dedup": 3,
+    "total_parameters_after_dedup": 3,
+    "update_log_entries": 2,
+    "hidden_fields_count": 0,
+    "source_results": "workspaces\\v2.order.upload_invoice_doc\\results\\all_chunks_results.json"
+  }
+}

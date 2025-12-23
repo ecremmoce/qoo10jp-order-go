@@ -1,0 +1,52 @@
+======================================================================
+API SPECIFICATION SUMMARY
+======================================================================
+
+Endpoint: None /private_photo/your_photo_pro.dtpd
+
+Parameters (3):
+----------------------------------------------------------------------
+* id (string)
+   Http://domain.example.com/photo/show_private_photo_pro.dtpd
+* length (integer)
+* offset (string)
+   The row number set by the request frame
+
+Response Fields (11):
+----------------------------------------------------------------------
+  created (string)
+   Upload information via url sending
+  create_at (string)
+   The date of latest add by payment
+  img_quality (string)
+   Default value set by request frame
+  url_pro (string)
+   The photo url link provided
+  url_guest (string)
+   The url for guest use
+  total_price (string)
+   Total price that is free for this time
+  guest_amount (string)
+   Your total fee
+  guest_count (integer)
+   View guest count
+  url_pics (string)
+   The url sent of the uploaded store site
+  style (string)
+   Upload style set by frame. Default set to 6
+  group_id (string)
+   picture/biography/life/beauty/life/set
+
+Metadata:
+----------------------------------------------------------------------
+  total_chunks: 1
+  chunks_with_errors: 0
+  total_parameters_before_dedup: 3
+  total_parameters_after_dedup: 3
+  update_log_entries: 0
+  hidden_fields_count: 0
+  source_results: workspaces\v2.follow_prize.get_follow_prize_detail\results\all_chunks_results.json
+
+======================================================================
+Legend: * = required parameter
+======================================================================

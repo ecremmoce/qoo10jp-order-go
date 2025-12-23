@@ -1,0 +1,36 @@
+======================================================================
+API SPECIFICATION SUMMARY
+======================================================================
+
+Endpoint: None None
+
+Parameters (7):
+----------------------------------------------------------------------
+* date_time (string)
+   End time by operating hours on that day
+  error (string)
+   The result of irreplaceable data
+  tvi_message (string)
+   Full reason
+  grid (string)
+   Unique identifier for area
+  message (string)
+   Message text
+  request_id (string)
+   Unique request identifier
+  regular_operating_hour (object)
+   The result of irreplaceable data
+
+Metadata:
+----------------------------------------------------------------------
+  total_chunks: 2
+  chunks_with_errors: 0
+  total_parameters_before_dedup: 8
+  total_parameters_after_dedup: 7
+  update_log_entries: 0
+  hidden_fields_count: 0
+  source_results: workspaces\v2.logistics.update_operating_hours\results\all_chunks_results.json
+
+======================================================================
+Legend: * = required parameter
+======================================================================

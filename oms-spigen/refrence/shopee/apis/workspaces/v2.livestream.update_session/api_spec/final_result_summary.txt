@@ -1,0 +1,40 @@
+======================================================================
+API SPECIFICATION SUMMARY
+======================================================================
+
+Endpoint: POST /headwearsdk/update_session
+Description: Headwear SDK update session endpoint
+
+Parameters (4):
+----------------------------------------------------------------------
+* session_id (string)
+   The identifier of headwear session
+  member_id (string)
+   The description of the headwear session current ISD transaction
+* cover_photo_url (string)
+   The cover image url of the headwear session, must be PNG format and upload the session image file and get its cover_photo_url
+* is_add (boolean)
+   Indicate whether the headwear session IDs you received add
+
+Response Fields (3):
+----------------------------------------------------------------------
+  error (string)
+   Indicate error type if any error. Empty if no error
+  message (string)
+   Indicate error details if any error. Empty if no response
+  request_id (string)
+   The identifier for an API request for error tracking
+
+Metadata:
+----------------------------------------------------------------------
+  total_chunks: 1
+  chunks_with_errors: 0
+  total_parameters_before_dedup: 4
+  total_parameters_after_dedup: 4
+  update_log_entries: 1
+  hidden_fields_count: 0
+  source_results: workspaces\v2.livestream.update_session\results\all_chunks_results.json
+
+======================================================================
+Legend: * = required parameter
+======================================================================

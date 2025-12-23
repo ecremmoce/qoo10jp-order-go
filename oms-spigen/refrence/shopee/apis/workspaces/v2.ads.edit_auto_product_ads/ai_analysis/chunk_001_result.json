@@ -1,0 +1,85 @@
+{
+  "chunk_index": 1,
+  "total_chunks": 1,
+  "endpoint": "/api/user/auth_product_ads",
+  "method": "POST",
+  "description": "Product advertisement authorization",
+  "update_log": [],
+  "hidden_fields": [],
+  "parameters": [
+    {
+      "name": "open_url",
+      "type": "string",
+      "required": true,
+      "description": "The URL for advertisement",
+      "children": []
+    },
+    {
+      "name": "url_title",
+      "type": "string",
+      "required": true,
+      "description": "Advertisement content title",
+      "children": []
+    },
+    {
+      "name": "url_desc",
+      "type": "string",
+      "required": true,
+      "description": "Advertisement content description",
+      "children": []
+    },
+    {
+      "name": "access_token",
+      "type": "string",
+      "required": true,
+      "description": "This is a standard app request parameter",
+      "children": []
+    },
+    {
+      "name": "image_url",
+      "type": "string",
+      "required": false,
+      "description": "The image URL for the icon/header link",
+      "children": []
+    },
+    {
+      "name": "mini_app",
+      "type": "string",
+      "required": false,
+      "description": "Mini app identifier",
+      "children": []
+    }
+  ],
+  "response_fields": [
+    {
+      "name": "message_id",
+      "type": "string",
+      "description": "Unique identifier for a message"
+    }
+  ],
+  "error_codes": [
+    {
+      "code": "ad_access_failed_not_found",
+      "description": "Record does not exist"
+    },
+    {
+      "code": "ad_invalid_open_url",
+      "description": "Invalid open url is invalid"
+    }
+  ],
+  "notes": "The documentation includes error codes and response examples. There appears to be both required and optional parameters for the advertisement authorization endpoint.",
+  "chunk_metadata": {
+    "index": 1,
+    "total": 1,
+    "y_start": 0,
+    "y_end": 4904,
+    "overlap_top": 0,
+    "overlap_bottom": 0,
+    "height": 4904,
+    "path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\workspaces\\v2.ads.edit_auto_product_ads\\chunks\\chunk_001.png",
+    "filename": "chunk_001.png",
+    "width": 837
+  },
+  "analysis_timestamp": "2025-10-10T05:28:04.108051",
+  "model": "claude-3-5-sonnet-20241022"
+}

@@ -1,0 +1,44 @@
+======================================================================
+API SPECIFICATION SUMMARY
+======================================================================
+
+Endpoint: None https://platform.shopee/topping/booking
+Description: V2 toppling shop_booking
+
+Parameters (6):
+----------------------------------------------------------------------
+* access_token (string)
+   The token for API access, used to identify your permission to access the data
+* time_id (integer)
+   Partner ID is accepted when negotiation is successful. Required for all requests.
+  booking_time (string)
+   This is to indicate the timestamp of the request. Required for certain partners.
+  shop_id (string)
+   Shopee's unique identifier for a shop. Required params for shop APIs.
+  address_id (string)
+   The identity of address. Retrieved from to toppling/api_booking/address_params
+  phone_time_id (string)
+   Some booking requires may not detail you time or more proper time limit. In such cases, you need get booking proper time first and get correct time limit to arrange a suitable timing for these situations.
+
+Response Fields (3):
+----------------------------------------------------------------------
+  request_id (string)
+   The identifier for an API request for error tracking
+  error (string)
+   error_code
+  message (string)
+   Invalid access_token
+
+Metadata:
+----------------------------------------------------------------------
+  total_chunks: 1
+  chunks_with_errors: 0
+  total_parameters_before_dedup: 6
+  total_parameters_after_dedup: 6
+  update_log_entries: 1
+  hidden_fields_count: 0
+  source_results: workspaces\v2.logistics.ship_booking\results\all_chunks_results.json
+
+======================================================================
+Legend: * = required parameter
+======================================================================

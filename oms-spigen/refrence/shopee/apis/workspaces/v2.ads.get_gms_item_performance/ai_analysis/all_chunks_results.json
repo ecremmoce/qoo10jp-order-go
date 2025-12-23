@@ -1,0 +1,67 @@
+[
+  {
+    "chunk_index": 1,
+    "total_chunks": 1,
+    "endpoint": null,
+    "method": null,
+    "description": null,
+    "update_log": [],
+    "hidden_fields": [
+      {
+        "name": "error_code",
+        "found_in": "response field",
+        "extracted_from_description": true
+      },
+      {
+        "name": "error_msg",
+        "found_in": "response field",
+        "extracted_from_description": true
+      }
+    ],
+    "parameters": [
+      {
+        "name": "lang",
+        "type": "string",
+        "required": false,
+        "description": "Language type",
+        "children": []
+      },
+      {
+        "name": "v",
+        "type": "string",
+        "required": false,
+        "description": "API version",
+        "children": []
+      }
+    ],
+    "response_fields": [
+      {
+        "name": "code",
+        "type": "integer",
+        "description": "Response code, 0 indicates success",
+        "children": []
+      },
+      {
+        "name": "msg",
+        "type": "string",
+        "description": "Response message",
+        "children": []
+      }
+    ],
+    "notes": "This appears to be a documentation page showing common parameters and response fields. The image shows both request parameters (lang, v) and standard response fields (code, msg). There are also references to error_code and error_msg in the descriptions. The layout suggests this might be a common/shared documentation section rather than a specific endpoint.",
+    "chunk_metadata": {
+      "index": 1,
+      "total": 1,
+      "y_start": 0,
+      "y_end": 6555,
+      "overlap_top": 0,
+      "overlap_bottom": 0,
+      "height": 6555,
+      "path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\workspaces\\v2.ads.get_gms_item_performance\\chunks\\chunk_001.png",
+      "filename": "chunk_001.png",
+      "width": 837
+    },
+    "analysis_timestamp": "2025-10-10T05:30:40.302059",
+    "model": "claude-3-5-sonnet-20241022"
+  }
+]

@@ -1,0 +1,49 @@
+======================================================================
+API SPECIFICATION SUMMARY
+======================================================================
+
+Endpoint: None None
+
+Parameters (3):
+----------------------------------------------------------------------
+* address (string)
+   NFT metadata permanent storage url
+* uri_file (string)
+   NFT metadata url file name
+* owner (string)
+   nft owner metadata url
+
+Response Fields (9):
+----------------------------------------------------------------------
+  api_key (string)
+   Your public blockchain when user login success
+  application_json_get_token (string)
+   The public token before admin verify will be service a timestamp
+  get_token (string)
+   Public metadata url metadata
+  post_token (string)
+   Public metadata url update
+  application_metadata_nft_uri (string)
+   The public system sync contract verify sync will be trigger permanent sync
+  application_metadata_nft_put (string)
+   The public system only verify, then verify trigger external though verify
+  application_metadata_nft_post (string)
+   All contract url external though
+  update_metadata_number_put (string)
+   Please input your contract name sync sync verify
+  trigger_create_verify_put (string)
+   Please sync contract your contract name
+
+Metadata:
+----------------------------------------------------------------------
+  total_chunks: 1
+  chunks_with_errors: 0
+  total_parameters_before_dedup: 3
+  total_parameters_after_dedup: 3
+  update_log_entries: 0
+  hidden_fields_count: 0
+  source_results: workspaces\v2.logistics.create_shipping_document\results\all_chunks_results.json
+
+======================================================================
+Legend: * = required parameter
+======================================================================

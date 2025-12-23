@@ -1,0 +1,107 @@
+[
+  {
+    "chunk_index": 1,
+    "total_chunks": 1,
+    "endpoint": null,
+    "method": null,
+    "description": null,
+    "update_log": [],
+    "hidden_fields": [],
+    "parameters": [
+      {
+        "name": "url",
+        "type": "string",
+        "required": true,
+        "description": "Request parameter URL",
+        "children": []
+      },
+      {
+        "name": "url_preview",
+        "type": "string",
+        "required": true,
+        "description": "Preview URL",
+        "children": []
+      }
+    ],
+    "response_fields": [
+      {
+        "name": "error",
+        "type": "string",
+        "required": true,
+        "description": "Error message when there is an error",
+        "children": []
+      },
+      {
+        "name": "message_id",
+        "type": "string",
+        "required": true,
+        "description": "Message identifier",
+        "children": []
+      },
+      {
+        "name": "preview_id",
+        "type": "string",
+        "required": true,
+        "description": "Preview identifier",
+        "children": []
+      },
+      {
+        "name": "reference_id",
+        "type": "string",
+        "required": true,
+        "description": "Reference address identifier",
+        "children": []
+      },
+      {
+        "name": "timestamp_text",
+        "type": "string",
+        "required": true,
+        "description": "Time reference of the address",
+        "children": []
+      },
+      {
+        "name": "title",
+        "type": "string",
+        "required": true,
+        "description": "Title of your reference address",
+        "children": []
+      },
+      {
+        "name": "description",
+        "type": "string",
+        "required": true,
+        "description": "Description of your reference address",
+        "children": []
+      },
+      {
+        "name": "cover",
+        "type": "string",
+        "required": true,
+        "description": "Cover image of your reference address",
+        "children": []
+      },
+      {
+        "name": "video_cover_data",
+        "type": "object",
+        "required": true,
+        "description": "Video cover data information",
+        "children": []
+      }
+    ],
+    "notes": "This appears to be an API for handling URL previews or references. The documentation shows both request parameters and response fields. Some response fields like video_cover_data appear to have nested structure but the details are not fully visible in the image.",
+    "chunk_metadata": {
+      "index": 1,
+      "total": 1,
+      "y_start": 0,
+      "y_end": 5073,
+      "overlap_top": 0,
+      "overlap_bottom": 0,
+      "height": 5073,
+      "path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\workspaces\\v2.shop.get_warehouse_detail\\chunks\\chunk_001.png",
+      "filename": "chunk_001.png",
+      "width": 837
+    },
+    "analysis_timestamp": "2025-10-10T06:45:27.079892",
+    "model": "claude-3-5-sonnet-20241022"
+  }
+]

@@ -1,0 +1,76 @@
+{
+  "chunk_index": 1,
+  "total_chunks": 1,
+  "endpoint": null,
+  "method": null,
+  "description": null,
+  "update_log": [
+    {
+      "date": "2020-09-26",
+      "change": "Use new API name for WowAccountService"
+    },
+    {
+      "date": "2020-09-03",
+      "change": "Update WowAccount API integration"
+    },
+    {
+      "date": "2020-08-24",
+      "change": "Remove redundant error code"
+    }
+  ],
+  "hidden_fields": [],
+  "parameters": [
+    {
+      "name": "request",
+      "type": "object",
+      "required": true,
+      "description": "Request object containing all parameters",
+      "children": [
+        {
+          "name": "region",
+          "type": "string",
+          "required": true,
+          "description": "Game region",
+          "children": []
+        },
+        {
+          "name": "account_country",
+          "type": "string",
+          "required": true,
+          "description": "Account country",
+          "children": []
+        },
+        {
+          "name": "realm_name",
+          "type": "string",
+          "required": true,
+          "description": "Realm name",
+          "children": []
+        },
+        {
+          "name": "character_name",
+          "type": "string",
+          "required": true,
+          "description": "Character name",
+          "children": []
+        }
+      ]
+    }
+  ],
+  "response_fields": [],
+  "notes": "This appears to be documentation for a World of Warcraft (WoW) related API. The documentation shows a nested request structure and includes an update log with three entries. The actual endpoint and HTTP method are not visible in this image.",
+  "chunk_metadata": {
+    "index": 1,
+    "total": 1,
+    "y_start": 0,
+    "y_end": 7333,
+    "overlap_top": 0,
+    "overlap_bottom": 0,
+    "height": 7333,
+    "path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\workspaces\\v2.discount.add_discount_item\\chunks\\chunk_001.png",
+    "filename": "chunk_001.png",
+    "width": 837
+  },
+  "analysis_timestamp": "2025-10-10T05:35:47.713170",
+  "model": "claude-3-5-sonnet-20241022"
+}

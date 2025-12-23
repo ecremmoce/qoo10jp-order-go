@@ -1,0 +1,53 @@
+======================================================================
+API SPECIFICATION SUMMARY
+======================================================================
+
+Endpoint: POST /cs/bind_sms/bind_course_delivery_first_time_tracking_number
+Description: API for tracking number delivery
+
+Parameters (5):
+----------------------------------------------------------------------
+* payment_method (string)
+   The payment method for payment and cost deduction when delivery
+* binding_id (string)
+   If your usage scenario is to be delivered independently based on the size of the order or based on the actual logistics situation, you need to fill in binding_number
+* order_id (int64)
+   Shopee's unique identifier for an order
+* sms_id (string)
+   Shopee's unique identifier for the package when using mass tools on first package delivery
+* tracking_number (string)
+   Shopee's unique identifier for the package
+
+Response Fields (9):
+----------------------------------------------------------------------
+  error (string)
+   Indicate error type if the error. Empty if no error happened
+  message (string)
+   Indicate error detail if the error. Empty if no error
+  request_id (string)
+   The identifier for api call request
+  response (object)
+  binding_id (string)
+   binding id
+  order_id (int64)
+   Shopee's unique identifier for an order
+  sms_id (string)
+   Shopee's unique identifier for the package when delivered
+  tracking_number (string)
+   Shopee's unique identifier for the package
+  fail_error (string)
+   Indicate error type if the request fail or error
+
+Metadata:
+----------------------------------------------------------------------
+  total_chunks: 1
+  chunks_with_errors: 0
+  total_parameters_before_dedup: 5
+  total_parameters_after_dedup: 5
+  update_log_entries: 0
+  hidden_fields_count: 0
+  source_results: workspaces\v2.first_mile.bind_courier_delivery_first_mile_tracking_number\results\all_chunks_results.json
+
+======================================================================
+Legend: * = required parameter
+======================================================================

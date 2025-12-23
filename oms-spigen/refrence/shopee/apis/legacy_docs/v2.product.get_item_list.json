@@ -1,0 +1,79 @@
+{
+  "endpoint": null,
+  "method": null,
+  "description": null,
+  "parameters": [
+    {
+      "name": "date_str",
+      "type": "string",
+      "required": true,
+      "description": "Format: YYYY-MM-DD HH:mm:ss",
+      "children": []
+    },
+    {
+      "name": "status",
+      "type": "string",
+      "required": false,
+      "description": "Multiple status values can be passed using commas",
+      "children": []
+    },
+    {
+      "name": "user_id",
+      "type": "string",
+      "required": false,
+      "description": "User ID",
+      "children": []
+    }
+  ],
+  "response_fields": [
+    {
+      "name": "code",
+      "type": "integer",
+      "description": "Response code",
+      "children": []
+    },
+    {
+      "name": "message",
+      "type": "string",
+      "description": "Response message",
+      "children": []
+    },
+    {
+      "name": "data",
+      "type": "object",
+      "description": "Response data object",
+      "children": [
+        {
+          "name": "list",
+          "type": "array",
+          "description": "List of data items",
+          "children": []
+        }
+      ]
+    }
+  ],
+  "update_log": [
+    {
+      "date": "2023-07-14",
+      "change": "Changed response parameter"
+    },
+    {
+      "date": "2023-06-16",
+      "change": "Added status values"
+    },
+    {
+      "date": "2023-04-26",
+      "change": "Initial release"
+    }
+  ],
+  "hidden_fields": [],
+  "metadata": {
+    "total_chunks": 1,
+    "chunks_with_errors": 0,
+    "total_parameters_before_dedup": 3,
+    "total_parameters_after_dedup": 3,
+    "update_log_entries": 3,
+    "hidden_fields_count": 0,
+    "source_results": "workspaces\\v2.product.get_item_list\\results\\all_chunks_results.json"
+  }
+}

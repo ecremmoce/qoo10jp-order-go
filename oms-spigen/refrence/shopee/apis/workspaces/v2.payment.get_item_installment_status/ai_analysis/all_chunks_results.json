@@ -1,0 +1,95 @@
+[
+  {
+    "chunk_index": 1,
+    "total_chunks": 1,
+    "endpoint": "/openapi/get_geo_coordinate_fake",
+    "method": null,
+    "description": "Get geo coordinate API for testing",
+    "update_log": [
+      {
+        "date": "2023-11-14",
+        "change": "add http_get_geo_by_parameters"
+      }
+    ],
+    "parameters": [
+      {
+        "name": "url",
+        "type": "string",
+        "required": true,
+        "description": "API URL endpoint",
+        "children": []
+      },
+      {
+        "name": "body",
+        "type": "object",
+        "required": false,
+        "description": "Request body parameters",
+        "children": [
+          {
+            "name": "timestamp",
+            "type": "integer",
+            "required": true,
+            "description": "Current timestamp",
+            "children": []
+          },
+          {
+            "name": "partner_id",
+            "type": "integer",
+            "required": true,
+            "description": "Partner ID as assigned upon registration",
+            "children": []
+          }
+        ]
+      }
+    ],
+    "response_fields": [
+      {
+        "name": "error",
+        "type": "string",
+        "description": "Error message",
+        "children": []
+      },
+      {
+        "name": "message",
+        "type": "string",
+        "description": "Error message",
+        "children": []
+      },
+      {
+        "name": "response",
+        "type": "mixed",
+        "description": "The successful content of the response",
+        "children": []
+      }
+    ],
+    "error_codes": [
+      {
+        "code": "array_parent",
+        "description": "There's no source_array"
+      },
+      {
+        "code": "empty_parent",
+        "description": "Invalid source_id"
+      },
+      {
+        "code": "source_not_found",
+        "description": "Something wrong! Please try later"
+      }
+    ],
+    "notes": "The documentation appears to be for a geo-coordinate testing API. It includes common parameters, response parameters, and error examples. The update log shows this was added relatively recently in November 2023.",
+    "chunk_metadata": {
+      "index": 1,
+      "total": 1,
+      "y_start": 0,
+      "y_end": 4748,
+      "overlap_top": 0,
+      "overlap_bottom": 0,
+      "height": 4748,
+      "path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\workspaces\\v2.payment.get_item_installment_status\\chunks\\chunk_001.png",
+      "filename": "chunk_001.png",
+      "width": 837
+    },
+    "analysis_timestamp": "2025-10-10T06:21:03.787318",
+    "model": "claude-3-5-sonnet-20241022"
+  }
+]

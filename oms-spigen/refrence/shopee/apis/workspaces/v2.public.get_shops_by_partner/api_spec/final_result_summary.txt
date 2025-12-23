@@ -1,0 +1,40 @@
+======================================================================
+API SPECIFICATION SUMMARY
+======================================================================
+
+Endpoint: POST /x2/public_api_check_pic_partner
+Description: Check image parameters in the partner
+
+Parameters (2):
+----------------------------------------------------------------------
+* partner_id (int)
+   Partner ID (a required user registration or successful Request ID or alipay ID)
+  requestId (timestamp)
+   This is a token for browsing of the report. Required for alipay partner queries
+
+Response Fields (5):
+----------------------------------------------------------------------
+  auth_time (string)
+   Authorization time
+* msg_id (int)
+   Message ID
+  auth_type (timestamp)
+   The timestamp after the shop was authorized
+  expire_time (timestamp)
+   Use this field to decide the expiration date for other information
+  result_id (string)
+   The ID that will be set for each result
+
+Metadata:
+----------------------------------------------------------------------
+  total_chunks: 1
+  chunks_with_errors: 0
+  total_parameters_before_dedup: 2
+  total_parameters_after_dedup: 2
+  update_log_entries: 0
+  hidden_fields_count: 0
+  source_results: workspaces\v2.public.get_shops_by_partner\results\all_chunks_results.json
+
+======================================================================
+Legend: * = required parameter
+======================================================================

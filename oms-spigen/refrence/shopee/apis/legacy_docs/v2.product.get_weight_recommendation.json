@@ -1,0 +1,90 @@
+{
+  "endpoint": null,
+  "method": null,
+  "description": "API documentation parameters",
+  "parameters": [
+    {
+      "name": "app_id",
+      "type": "string",
+      "required": true,
+      "description": "Application identifier",
+      "children": []
+    },
+    {
+      "name": "URL",
+      "type": "object",
+      "required": true,
+      "description": "URL parameters",
+      "children": [
+        {
+          "name": "url",
+          "type": "string",
+          "required": true,
+          "description": "The URL to be processed",
+          "children": []
+        }
+      ]
+    },
+    {
+      "name": "access_token",
+      "type": "string",
+      "required": true,
+      "description": "Access token for authentication",
+      "children": []
+    },
+    {
+      "name": "img_id",
+      "type": "string",
+      "required": false,
+      "description": "Unique image identifier",
+      "children": []
+    },
+    {
+      "name": "category_id",
+      "type": "integer",
+      "required": true,
+      "description": "Category unique identifier for a category",
+      "children": []
+    },
+    {
+      "name": "attribute_status_id",
+      "type": "integer",
+      "required": false,
+      "description": "Status identifier of an item attribute",
+      "children": []
+    },
+    {
+      "name": "description_date",
+      "type": "string",
+      "required": false,
+      "description": "Date of description details. See Date format standards",
+      "children": []
+    },
+    {
+      "name": "description",
+      "type": "string",
+      "required": false,
+      "description": "Description text in format",
+      "children": []
+    },
+    {
+      "name": "text_id",
+      "type": "string",
+      "required": false,
+      "description": null,
+      "children": []
+    }
+  ],
+  "response_fields": [],
+  "update_log": [],
+  "hidden_fields": [],
+  "metadata": {
+    "total_chunks": 1,
+    "chunks_with_errors": 0,
+    "total_parameters_before_dedup": 9,
+    "total_parameters_after_dedup": 9,
+    "update_log_entries": 0,
+    "hidden_fields_count": 0,
+    "source_results": "workspaces\\v2.product.get_weight_recommendation\\results\\all_chunks_results.json"
+  }
+}

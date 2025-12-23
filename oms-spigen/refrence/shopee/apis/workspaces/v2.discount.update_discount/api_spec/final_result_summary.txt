@@ -1,0 +1,36 @@
+======================================================================
+API SPECIFICATION SUMMARY
+======================================================================
+
+Endpoint: None None
+
+Parameters (7):
+----------------------------------------------------------------------
+* url (string)
+   Target url template
+* img (string)
+   Replaced url template in this image
+* ext_url (string)
+   The link that you can click and jump to the web page I want
+* request_id (string)
+   Unique identifier for a request
+  creative_id (string)
+   Value indicating the creative_id parameter for html
+  traffic_info (timestamp)
+   Indicates date and time
+  metadata (string)
+   Indicates date and time I'm not allowed
+
+Metadata:
+----------------------------------------------------------------------
+  total_chunks: 1
+  chunks_with_errors: 0
+  total_parameters_before_dedup: 7
+  total_parameters_after_dedup: 7
+  update_log_entries: 1
+  hidden_fields_count: 0
+  source_results: workspaces\v2.discount.update_discount\results\all_chunks_results.json
+
+======================================================================
+Legend: * = required parameter
+======================================================================

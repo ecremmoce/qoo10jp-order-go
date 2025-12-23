@@ -1,0 +1,73 @@
+{
+  "endpoint": "/openapi/openwelink/api/v2/public_api_parshield_by_partner",
+  "method": "POST",
+  "description": "API to generate one time URL to access some web services in the partner",
+  "parameters": [
+    {
+      "name": "partner_id",
+      "type": "string",
+      "required": true,
+      "description": "Identifier for partner",
+      "children": []
+    },
+    {
+      "name": "service_type",
+      "type": "string",
+      "required": true,
+      "description": "Service type (Chinese Statement, Read, etc.)",
+      "children": []
+    },
+    {
+      "name": "member_id",
+      "type": "string",
+      "required": true,
+      "description": "Request's unique identifier for a merchant",
+      "children": []
+    },
+    {
+      "name": "auto_type",
+      "type": "timestamp",
+      "required": false,
+      "description": "The timestamp when the valid end date will be generated",
+      "children": []
+    },
+    {
+      "name": "expire_time",
+      "type": "timestamp",
+      "required": false,
+      "description": "The deadline to an API request for every sharing",
+      "children": []
+    },
+    {
+      "name": "request_id",
+      "type": "string",
+      "required": true,
+      "description": "Request unique identifier",
+      "children": []
+    },
+    {
+      "name": "type",
+      "type": "boolean",
+      "required": false,
+      "description": "This is to indicate whether the link is once time link or share. If the user's type is once time link then user can only visit the web service when URL is accessed once",
+      "children": []
+    }
+  ],
+  "response_fields": [],
+  "update_log": [
+    {
+      "date": "2023-05-26",
+      "change": "update Response Parameters"
+    }
+  ],
+  "hidden_fields": [],
+  "metadata": {
+    "total_chunks": 1,
+    "chunks_with_errors": 0,
+    "total_parameters_before_dedup": 7,
+    "total_parameters_after_dedup": 7,
+    "update_log_entries": 1,
+    "hidden_fields_count": 0,
+    "source_results": "workspaces\\v2.public.get_merchants_by_partner\\results\\all_chunks_results.json"
+  }
+}

@@ -1,0 +1,96 @@
+{
+  "endpoint": "/blockchain/mining/earning_parameter",
+  "method": "GET",
+  "description": "Used to retrieve mining earnings parameters",
+  "parameters": [
+    {
+      "name": "primary_params",
+      "type": "object",
+      "required": true,
+      "description": "Primary parameters",
+      "children": [
+        {
+          "name": "string_id",
+          "type": "string",
+          "required": true,
+          "description": "Support string identifier for mining"
+        }
+      ]
+    },
+    {
+      "name": "response_params",
+      "type": "object",
+      "required": true,
+      "description": "Response parameters",
+      "children": [
+        {
+          "name": "epoch_h",
+          "type": "string",
+          "required": true,
+          "description": "The height for an epoch begins"
+        },
+        {
+          "name": "interval",
+          "type": "integer",
+          "required": true,
+          "description": "Interval between up and down blocks"
+        },
+        {
+          "name": "ratio",
+          "type": "string",
+          "required": true,
+          "description": "Down difference up and down"
+        },
+        {
+          "name": "mining_params",
+          "type": "object",
+          "required": true,
+          "description": "Mining parameters",
+          "children": [
+            {
+              "name": "total",
+              "type": "string",
+              "required": true,
+              "description": "Total coins mined"
+            },
+            {
+              "name": "mining_tex",
+              "type": "string",
+              "required": true,
+              "description": "The value of mining tex"
+            },
+            {
+              "name": "rate",
+              "type": "float",
+              "required": true,
+              "description": "The value of yearly interest"
+            },
+            {
+              "name": "amount",
+              "type": "string",
+              "required": true,
+              "description": "The value of monthly interest"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "response_fields": [],
+  "update_log": [
+    {
+      "date": "2023-05-25",
+      "change": "Second parameter update time"
+    }
+  ],
+  "hidden_fields": [],
+  "metadata": {
+    "total_chunks": 1,
+    "chunks_with_errors": 0,
+    "total_parameters_before_dedup": 2,
+    "total_parameters_after_dedup": 2,
+    "update_log_entries": 1,
+    "hidden_fields_count": 0,
+    "source_results": "workspaces\\v2.logistics.get_booking_shipping_parameter\\results\\all_chunks_results.json"
+  }
+}

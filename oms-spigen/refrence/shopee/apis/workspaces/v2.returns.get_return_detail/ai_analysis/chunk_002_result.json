@@ -1,0 +1,27 @@
+{
+  "chunk_index": 2,
+  "endpoint": "/ping",
+  "method": "GET",
+  "description": "Simple ping endpoint to test API connectivity",
+  "parameters": [],
+  "response_fields": [
+    {
+      "name": "status",
+      "type": "string",
+      "description": "Always returns 'pong'"
+    }
+  ],
+  "chunk_metadata": {
+    "index": 2,
+    "total": 2,
+    "y_start": 7603,
+    "y_end": 13312,
+    "overlap_top": 500,
+    "overlap_bottom": 0,
+    "height": 5709,
+    "path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\workspaces\\v2.returns.get_return_detail\\chunks\\chunk_002.png",
+    "filename": "chunk_002.png",
+    "width": 837
+  },
+  "chunk_path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\workspaces\\v2.returns.get_return_detail\\chunks\\chunk_002.png"
+}

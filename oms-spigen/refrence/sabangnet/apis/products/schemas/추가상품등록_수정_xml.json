@@ -1,0 +1,135 @@
+{
+  "xml_root": "SABANG_PACKAGE_REGI",
+  "header_fields": [
+    {
+      "name": "SEND_COMPAYNY_ID",
+      "description": "사방넷 로그인아이디",
+      "required": true,
+      "note": "사방넷 어드민 로그인 아이디입력",
+      "section": "header"
+    },
+    {
+      "name": "SEND_AUTH_KEY",
+      "description": "사방넷에서 발급한 인증키",
+      "required": true,
+      "note": "사방넷에서 발급 받은 인증키(만약 받지 않았다면 사방넷에서 인증키 발급 요청)",
+      "section": "header"
+    },
+    {
+      "name": "SEND_DATE",
+      "description": "전송일자",
+      "required": true,
+      "note": "YYYYMMDD",
+      "section": "header"
+    }
+  ],
+  "data_fields": [
+    {
+      "name": "PACKAGE_NM",
+      "description": "추가상품그룹명",
+      "required": true,
+      "note": "추가상품의 그룹명을 입력합니다.HTML 태그 사용은 불가합니다.",
+      "section": "data"
+    },
+    {
+      "name": "PACKAGE_CODE",
+      "description": "추가상품그룹코드",
+      "required": true,
+      "note": "자사에서 사용하는 추가상품코드를 기재합니다. 미입력시 신규 등록되며, 입력시에는 수정됩니다.(ex:G002)",
+      "section": "data"
+    },
+    {
+      "name": "PACK_DELIVERY",
+      "description": "배송처",
+      "required": false,
+      "note": "배송처를 숫자로 입력합니다. 1:자사, 2:타사",
+      "section": "data"
+    },
+    {
+      "name": "SALE_TYPE",
+      "description": "판매형태",
+      "required": false,
+      "note": "판매형태를 숫자로 입력합니다. 1:수탁, 2:사입, 3:기타",
+      "section": "data"
+    },
+    {
+      "name": "MALL_ID",
+      "description": "쇼핑몰CODE",
+      "required": false,
+      "note": "쇼핑몰코드를 입력합니다. shop으로 시작해야 합니다. 사방넷 메뉴 [기본정보-쇼핑몰관리(지원)]에서 확인 가능합니다. 미입력시 전체몰로 적용됩니다.",
+      "section": "data"
+    },
+    {
+      "name": "PARTNER_ID",
+      "description": "매입처명",
+      "required": false,
+      "note": "매입처의 ID를 기재합니다.(대/소문자 정확히 구분해야 함)",
+      "section": "data"
+    },
+    {
+      "name": "PACKAGE_GUBUN",
+      "description": "그룹구분",
+      "required": false,
+      "note": "G:ESM/11번가 기본옵션용, M:ESM/11번가 기본옵션 + 다른몰추가옵션, 미입력시는 일반추가상품으로 적용됩니다.",
+      "section": "data"
+    },
+    {
+      "name": "MEMO",
+      "description": "관리자메모",
+      "required": false,
+      "note": "",
+      "section": "data"
+    },
+    {
+      "name": "PACK_INFO",
+      "description": "",
+      "required": false,
+      "note": "",
+      "section": "data"
+    },
+    {
+      "name": "P_NAME",
+      "description": "명세명(사이트 선택명칭)",
+      "required": true,
+      "note": "특수문자 / : , | * < >는 사용불가합니다. 또한 쇼핑몰마다 제한하는 특수문자가 존재하므로 특수문자 이용시 주의바랍니다.",
+      "section": "data"
+    },
+    {
+      "name": "P_SALE_COST",
+      "description": "판매가격",
+      "required": true,
+      "note": "입력시 첫글자는 반드시 ( ‘ ) 아포스트로피(ENTER좌측Key)로 시작해야 하며 숫자 사이에 ( , ) 콤마가 들어가면 안됩니다.",
+      "section": "data"
+    },
+    {
+      "name": "P_SALE_STATUS",
+      "description": "상태",
+      "required": true,
+      "note": "추가상품의 상태를 숫자로 입력합니다. 2:판매, 4:품절, 6:미사용",
+      "section": "data"
+    },
+    {
+      "name": "P_PRODUCT_ID",
+      "description": "연결할 사방넷상품코드",
+      "required": true,
+      "note": "사방넷에 등록된 품번코드와 단품코드를 입력합니다. 품번코드-단품코드 형식, 재고를 사용하는 경우 123456-0001, 재고 관리하지 않을 경우 000000-0000",
+      "section": "data"
+    }
+  ],
+  "authentication": {
+    "SEND_COMPAYNY_ID": {
+      "name": "SEND_COMPAYNY_ID",
+      "description": "사방넷 로그인아이디",
+      "required": true,
+      "note": "사방넷 어드민 로그인 아이디입력",
+      "section": "header"
+    },
+    "SEND_AUTH_KEY": {
+      "name": "SEND_AUTH_KEY",
+      "description": "사방넷에서 발급한 인증키",
+      "required": true,
+      "note": "사방넷에서 발급 받은 인증키(만약 받지 않았다면 사방넷에서 인증키 발급 요청)",
+      "section": "header"
+    }
+  }
+}

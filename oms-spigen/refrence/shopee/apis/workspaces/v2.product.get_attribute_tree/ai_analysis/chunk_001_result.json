@@ -1,0 +1,104 @@
+{
+  "chunk_index": 1,
+  "total_chunks": 1,
+  "endpoint": "/products/get-attribute-tree",
+  "method": "POST",
+  "description": "Get product attribute categories and their values",
+  "update_log": [],
+  "hidden_fields": [],
+  "parameters": [
+    {
+      "name": "language",
+      "type": "string",
+      "required": true,
+      "description": "Language parameters",
+      "children": []
+    }
+  ],
+  "response_fields": [
+    {
+      "name": "code",
+      "type": "string",
+      "description": "Response code",
+      "children": []
+    },
+    {
+      "name": "msg",
+      "type": "string",
+      "description": "Response message",
+      "children": []
+    },
+    {
+      "name": "data",
+      "type": "object",
+      "description": "Response data",
+      "children": [
+        {
+          "name": "category_name",
+          "type": "string",
+          "description": "Category name",
+          "children": []
+        },
+        {
+          "name": "category_id",
+          "type": "integer",
+          "description": "Category ID",
+          "children": []
+        },
+        {
+          "name": "attribute_list",
+          "type": "array",
+          "description": "List of attributes",
+          "children": [
+            {
+              "name": "attribute_id",
+              "type": "integer",
+              "description": "Attribute ID",
+              "children": []
+            },
+            {
+              "name": "attribute_name",
+              "type": "string",
+              "description": "Attribute name",
+              "children": []
+            },
+            {
+              "name": "value_list",
+              "type": "array",
+              "description": "List of attribute values",
+              "children": [
+                {
+                  "name": "value_id",
+                  "type": "integer",
+                  "description": "Value ID",
+                  "children": []
+                },
+                {
+                  "name": "value_name",
+                  "type": "string",
+                  "description": "Value name",
+                  "children": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": "The documentation shows a complete API endpoint for retrieving product attribute hierarchies. The response structure shows a nested hierarchy of categories, attributes, and their values.",
+  "chunk_metadata": {
+    "index": 1,
+    "total": 1,
+    "y_start": 0,
+    "y_end": 5800,
+    "overlap_top": 0,
+    "overlap_bottom": 0,
+    "height": 5800,
+    "path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\workspaces\\v2.product.get_attribute_tree\\chunks\\chunk_001.png",
+    "filename": "chunk_001.png",
+    "width": 837
+  },
+  "analysis_timestamp": "2025-10-10T06:26:05.481714",
+  "model": "claude-3-5-sonnet-20241022"
+}

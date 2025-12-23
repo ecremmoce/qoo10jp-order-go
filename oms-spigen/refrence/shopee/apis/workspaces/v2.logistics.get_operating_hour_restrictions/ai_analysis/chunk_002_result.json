@@ -1,0 +1,47 @@
+{
+  "chunk_index": 2,
+  "endpoint": "/api/path/to/endpoint",
+  "method": "POST",
+  "description": "Example request and response documentation",
+  "parameters": [],
+  "response_fields": [
+    {
+      "name": "error_permission",
+      "type": "string",
+      "description": "Sorry you don't have the permission detail: This shop isn't eligible to set up Regular Operating Hours"
+    },
+    {
+      "name": "error_data",
+      "type": "string",
+      "description": "parse data failed"
+    },
+    {
+      "name": "error_date",
+      "type": "string",
+      "description": "date not exist"
+    },
+    {
+      "name": "error_param",
+      "type": "string",
+      "description": "parameter invalid"
+    },
+    {
+      "name": "error_notfound",
+      "type": "string",
+      "description": "The information you queried is not found"
+    }
+  ],
+  "chunk_metadata": {
+    "index": 2,
+    "total": 3,
+    "y_start": 7623,
+    "y_end": 15623,
+    "overlap_top": 500,
+    "overlap_bottom": 500,
+    "height": 8000,
+    "path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\workspaces\\v2.logistics.get_operating_hour_restrictions\\chunks\\chunk_002.png",
+    "filename": "chunk_002.png",
+    "width": 837
+  },
+  "chunk_path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\workspaces\\v2.logistics.get_operating_hour_restrictions\\chunks\\chunk_002.png"
+}

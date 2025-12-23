@@ -1,0 +1,97 @@
+{
+  "chunk_index": 1,
+  "total_chunks": 1,
+  "endpoint": "order_upload_invoice_doc",
+  "method": null,
+  "description": "This endpoint is for file upload use cases, cannot be directly executed",
+  "update_log": [
+    {
+      "date": "2021-04-13",
+      "change": "support API error codes list in EN+VN"
+    },
+    {
+      "date": "2021-03-31",
+      "change": "base API"
+    }
+  ],
+  "parameters": [
+    {
+      "name": "partner_id",
+      "type": "string",
+      "required": true,
+      "description": "Partner ID or completed user registration is successful",
+      "children": []
+    },
+    {
+      "name": "access_token",
+      "type": "string",
+      "required": true,
+      "description": "This is to ensure the timelines of the request. Required to complete at phase 3 (session)",
+      "children": []
+    },
+    {
+      "name": "sign",
+      "type": "string",
+      "required": true,
+      "description": "Signature generated to confirm API call rate, timestamp, etc. For each multiple use and expires in 5 mins",
+      "children": []
+    }
+  ],
+  "response_fields": [
+    {
+      "name": "partner_id",
+      "type": "string",
+      "description": "No specifics for an VN request by error",
+      "children": []
+    },
+    {
+      "name": "error",
+      "type": "string",
+      "description": "Invalid error auth. Please try error",
+      "children": []
+    },
+    {
+      "name": "message",
+      "type": "string",
+      "description": "Invalid error token. For error. Empty if no message",
+      "children": []
+    }
+  ],
+  "error_codes": [
+    {
+      "code": "error_param",
+      "description": "Invalid access token"
+    },
+    {
+      "code": "error_auth",
+      "description": "Invalid authentication"
+    },
+    {
+      "code": "error_token",
+      "description": "There is no error auth to query"
+    },
+    {
+      "code": "error_sign",
+      "description": "Wrong sign"
+    },
+    {
+      "code": "error_file",
+      "description": "Invalid file"
+    }
+  ],
+  "notes": "This appears to be an API for uploading invoice documents. The documentation includes request parameters, response fields, error codes, and an update log. The API requires authentication via partner_id, access_token, and sign parameters.",
+  "chunk_metadata": {
+    "index": 1,
+    "total": 1,
+    "y_start": 0,
+    "y_end": 4261,
+    "overlap_top": 0,
+    "overlap_bottom": 0,
+    "height": 4261,
+    "path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\workspaces\\v2.order.upload_invoice_doc\\chunks\\chunk_001.png",
+    "filename": "chunk_001.png",
+    "width": 837
+  },
+  "analysis_timestamp": "2025-10-10T06:18:31.460388",
+  "model": "claude-3-5-sonnet-20241022"
+}

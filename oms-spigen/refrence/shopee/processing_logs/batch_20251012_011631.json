@@ -1,0 +1,1667 @@
+{
+  "batch_id": "20251012_011631",
+  "platform": "shopee",
+  "total": 51,
+  "successful": 49,
+  "failed": 2,
+  "workers": 4,
+  "results": [
+    {
+      "url_index": 3,
+      "url": "https://open.shopee.com/developer-guide/4",
+      "api_name": "developer-guide.4",
+      "success": true,
+      "workspace": {
+        "root": "platforms\\shopee\\apis\\workspaces\\developer-guide.4",
+        "chunks": "platforms\\shopee\\apis\\workspaces\\developer-guide.4\\chunks",
+        "results": "platforms\\shopee\\apis\\workspaces\\developer-guide.4\\results",
+        "final": "platforms\\shopee\\apis\\workspaces\\developer-guide.4\\final"
+      },
+      "screenshot": "platforms\\shopee\\apis\\workspaces\\developer-guide.4\\screenshot.png",
+      "stage": "archive",
+      "split_success": true,
+      "analyze_success": true,
+      "merge_success": true,
+      "archive_success": true,
+      "final_success": true,
+      "archive_path": "platforms\\shopee\\archive\\developer-guide.4\\2025-10-12_01-17-13",
+      "content_changes": {
+        "api_endpoints": {
+          "before": 0,
+          "after": 0,
+          "new": 0
+        },
+        "dev_guide_sections": {
+          "before": 0,
+          "after": 0,
+          "new": 0
+        }
+      },
+      "duration": 40.569425
+    },
+    {
+      "url_index": 0,
+      "url": "https://open.shopee.com/developer-guide/4",
+      "api_name": "developer-guide.4",
+      "success": true,
+      "workspace": {
+        "root": "platforms\\shopee\\apis\\workspaces\\developer-guide.4",
+        "chunks": "platforms\\shopee\\apis\\workspaces\\developer-guide.4\\chunks",
+        "results": "platforms\\shopee\\apis\\workspaces\\developer-guide.4\\results",
+        "final": "platforms\\shopee\\apis\\workspaces\\developer-guide.4\\final"
+      },
+      "screenshot": "platforms\\shopee\\apis\\workspaces\\developer-guide.4\\screenshot.png",
+      "stage": "archive",
+      "split_success": true,
+      "analyze_success": true,
+      "merge_success": true,
+      "archive_success": true,
+      "final_success": true,
+      "archive_path": "platforms\\shopee\\archive\\developer-guide.4\\2025-10-12_01-17-13",
+      "content_changes": {
+        "api_endpoints": {
+          "before": 0,
+          "after": 0,
+          "new": 0
+        },
+        "dev_guide_sections": {
+          "before": 0,
+          "after": 0,
+          "new": 0
+        }
+      },
+      "duration": 41.190839
+    },
+    {
+      "url_index": 1,
+      "url": "https://open.shopee.com/developer-guide/4",
+      "api_name": "developer-guide.4",
+      "success": true,
+      "workspace": {
+        "root": "platforms\\shopee\\apis\\workspaces\\developer-guide.4",
+        "chunks": "platforms\\shopee\\apis\\workspaces\\developer-guide.4\\chunks",
+        "results": "platforms\\shopee\\apis\\workspaces\\developer-guide.4\\results",
+        "final": "platforms\\shopee\\apis\\workspaces\\developer-guide.4\\final"
+      },
+      "screenshot": "platforms\\shopee\\apis\\workspaces\\developer-guide.4\\screenshot.png",
+      "stage": "archive",
+      "split_success": true,
+      "analyze_success": true,
+      "merge_success": true,
+      "archive_success": true,
+      "final_success": true,
+      "archive_path": "platforms\\shopee\\archive\\developer-guide.4\\2025-10-12_01-17-14",
+      "content_changes": {
+        "api_endpoints": {
+          "before": 0,
+          "after": 0,
+          "new": 0
+        },
+        "dev_guide_sections": {
+          "before": 0,
+          "after": 0,
+          "new": 0
+        }
+      },
+      "duration": 41.570892
+    },
+    {
+      "url_index": 2,
+      "url": "https://open.shopee.com/developer-guide/4",
+      "api_name": "developer-guide.4",
+      "success": true,
+      "workspace": {
+        "root": "platforms\\shopee\\apis\\workspaces\\developer-guide.4",
+        "chunks": "platforms\\shopee\\apis\\workspaces\\developer-guide.4\\chunks",
+        "results": "platforms\\shopee\\apis\\workspaces\\developer-guide.4\\results",
+        "final": "platforms\\shopee\\apis\\workspaces\\developer-guide.4\\final"
+      },
+      "screenshot": "platforms\\shopee\\apis\\workspaces\\developer-guide.4\\screenshot.png",
+      "stage": "archive",
+      "split_success": true,
+      "analyze_success": true,
+      "merge_success": true,
+      "archive_success": true,
+      "final_success": true,
+      "archive_path": "platforms\\shopee\\archive\\developer-guide.4\\2025-10-12_01-17-15",
+      "content_changes": {
+        "api_endpoints": {
+          "before": 0,
+          "after": 0,
+          "new": 0
+        },
+        "dev_guide_sections": {
+          "before": 0,
+          "after": 0,
+          "new": 0
+        }
+      },
+      "duration": 42.499357
+    },
+    {
+      "url_index": 4,
+      "url": "https://open.shopee.com/developer-guide/4",
+      "api_name": "developer-guide.4",
+      "success": true,
+      "workspace": {
+        "root": "platforms\\shopee\\apis\\workspaces\\developer-guide.4",
+        "chunks": "platforms\\shopee\\apis\\workspaces\\developer-guide.4\\chunks",
+        "results": "platforms\\shopee\\apis\\workspaces\\developer-guide.4\\results",
+        "final": "platforms\\shopee\\apis\\workspaces\\developer-guide.4\\final"
+      },
+      "screenshot": "platforms\\shopee\\apis\\workspaces\\developer-guide.4\\screenshot.png",
+      "stage": "archive",
+      "split_success": true,
+      "analyze_success": true,
+      "merge_success": true,
+      "archive_success": true,
+      "final_success": true,
+      "archive_path": "platforms\\shopee\\archive\\developer-guide.4\\2025-10-12_01-17-54",
+      "content_changes": {
+        "api_endpoints": {
+          "before": 0,
+          "after": 0,
+          "new": 0
+        },
+        "dev_guide_sections": {
+          "before": 0,
+          "after": 0,
+          "new": 0
+        }
+      },
+      "duration": 40.915158
+    },
+    {
+      "url_index": 6,
+      "url": "https://open.shopee.com/developer-guide/4",
+      "api_name": "developer-guide.4",
+      "success": true,
+      "workspace": {
+        "root": "platforms\\shopee\\apis\\workspaces\\developer-guide.4",
+        "chunks": "platforms\\shopee\\apis\\workspaces\\developer-guide.4\\chunks",
+        "results": "platforms\\shopee\\apis\\workspaces\\developer-guide.4\\results",
+        "final": "platforms\\shopee\\apis\\workspaces\\developer-guide.4\\final"
+      },
+      "screenshot": "platforms\\shopee\\apis\\workspaces\\developer-guide.4\\screenshot.png",
+      "stage": "archive",
+      "split_success": true,
+      "analyze_success": true,
+      "merge_success": true,
+      "archive_success": true,
+      "final_success": true,
+      "archive_path": "platforms\\shopee\\archive\\developer-guide.4\\2025-10-12_01-17-55",
+      "content_changes": {
+        "api_endpoints": {
+          "before": 0,
+          "after": 0,
+          "new": 0
+        },
+        "dev_guide_sections": {
+          "before": 0,
+          "after": 0,
+          "new": 0
+        }
+      },
+      "duration": 41.052793
+    },
+    {
+      "url_index": 5,
+      "url": "https://open.shopee.com/developer-guide/4",
+      "api_name": "developer-guide.4",
+      "success": true,
+      "workspace": {
+        "root": "platforms\\shopee\\apis\\workspaces\\developer-guide.4",
+        "chunks": "platforms\\shopee\\apis\\workspaces\\developer-guide.4\\chunks",
+        "results": "platforms\\shopee\\apis\\workspaces\\developer-guide.4\\results",
+        "final": "platforms\\shopee\\apis\\workspaces\\developer-guide.4\\final"
+      },
+      "screenshot": "platforms\\shopee\\apis\\workspaces\\developer-guide.4\\screenshot.png",
+      "stage": "archive",
+      "split_success": true,
+      "analyze_success": true,
+      "merge_success": true,
+      "archive_success": true,
+      "final_success": true,
+      "archive_path": "platforms\\shopee\\archive\\developer-guide.4\\2025-10-12_01-17-55",
+      "content_changes": {
+        "api_endpoints": {
+          "before": 0,
+          "after": 0,
+          "new": 0
+        },
+        "dev_guide_sections": {
+          "before": 0,
+          "after": 0,
+          "new": 0
+        }
+      },
+      "duration": 41.546989
+    },
+    {
+      "url_index": 7,
+      "url": "https://open.shopee.com/developer-guide/4",
+      "api_name": "developer-guide.4",
+      "success": true,
+      "workspace": {
+        "root": "platforms\\shopee\\apis\\workspaces\\developer-guide.4",
+        "chunks": "platforms\\shopee\\apis\\workspaces\\developer-guide.4\\chunks",
+        "results": "platforms\\shopee\\apis\\workspaces\\developer-guide.4\\results",
+        "final": "platforms\\shopee\\apis\\workspaces\\developer-guide.4\\final"
+      },
+      "screenshot": "platforms\\shopee\\apis\\workspaces\\developer-guide.4\\screenshot.png",
+      "stage": "archive",
+      "split_success": true,
+      "analyze_success": true,
+      "merge_success": true,
+      "archive_success": true,
+      "final_success": true,
+      "archive_path": "platforms\\shopee\\archive\\developer-guide.4\\2025-10-12_01-17-58",
+      "content_changes": {
+        "api_endpoints": {
+          "before": 0,
+          "after": 0,
+          "new": 0
+        },
+        "dev_guide_sections": {
+          "before": 0,
+          "after": 0,
+          "new": 0
+        }
+      },
+      "duration": 43.183417
+    },
+    {
+      "url_index": 9,
+      "url": "https://open.shopee.com/developer-guide/4",
+      "api_name": "developer-guide.4",
+      "success": true,
+      "workspace": {
+        "root": "platforms\\shopee\\apis\\workspaces\\developer-guide.4",
+        "chunks": "platforms\\shopee\\apis\\workspaces\\developer-guide.4\\chunks",
+        "results": "platforms\\shopee\\apis\\workspaces\\developer-guide.4\\results",
+        "final": "platforms\\shopee\\apis\\workspaces\\developer-guide.4\\final"
+      },
+      "screenshot": "platforms\\shopee\\apis\\workspaces\\developer-guide.4\\screenshot.png",
+      "stage": "archive",
+      "split_success": true,
+      "analyze_success": true,
+      "merge_success": true,
+      "archive_success": true,
+      "final_success": true,
+      "archive_path": "platforms\\shopee\\archive\\developer-guide.4\\2025-10-12_01-18-35",
+      "content_changes": {
+        "api_endpoints": {
+          "before": 0,
+          "after": 0,
+          "new": 0
+        },
+        "dev_guide_sections": {
+          "before": 0,
+          "after": 0,
+          "new": 0
+        }
+      },
+      "duration": 40.396674
+    },
+    {
+      "url_index": 8,
+      "url": "https://open.shopee.com/developer-guide/4",
+      "api_name": "developer-guide.4",
+      "success": true,
+      "workspace": {
+        "root": "platforms\\shopee\\apis\\workspaces\\developer-guide.4",
+        "chunks": "platforms\\shopee\\apis\\workspaces\\developer-guide.4\\chunks",
+        "results": "platforms\\shopee\\apis\\workspaces\\developer-guide.4\\results",
+        "final": "platforms\\shopee\\apis\\workspaces\\developer-guide.4\\final"
+      },
+      "screenshot": "platforms\\shopee\\apis\\workspaces\\developer-guide.4\\screenshot.png",
+      "stage": "archive",
+      "split_success": true,
+      "analyze_success": true,
+      "merge_success": true,
+      "archive_success": true,
+      "final_success": true,
+      "archive_path": "platforms\\shopee\\archive\\developer-guide.4\\2025-10-12_01-18-36",
+      "content_changes": {
+        "api_endpoints": {
+          "before": 0,
+          "after": 0,
+          "new": 0
+        },
+        "dev_guide_sections": {
+          "before": 0,
+          "after": 0,
+          "new": 0
+        }
+      },
+      "duration": 42.807336
+    },
+    {
+      "url_index": 10,
+      "url": "https://open.shopee.com/developer-guide/4",
+      "api_name": "developer-guide.4",
+      "success": true,
+      "workspace": {
+        "root": "platforms\\shopee\\apis\\workspaces\\developer-guide.4",
+        "chunks": "platforms\\shopee\\apis\\workspaces\\developer-guide.4\\chunks",
+        "results": "platforms\\shopee\\apis\\workspaces\\developer-guide.4\\results",
+        "final": "platforms\\shopee\\apis\\workspaces\\developer-guide.4\\final"
+      },
+      "screenshot": "platforms\\shopee\\apis\\workspaces\\developer-guide.4\\screenshot.png",
+      "stage": "archive",
+      "split_success": true,
+      "analyze_success": true,
+      "merge_success": true,
+      "archive_success": true,
+      "final_success": true,
+      "archive_path": "platforms\\shopee\\archive\\developer-guide.4\\2025-10-12_01-18-38",
+      "content_changes": {
+        "api_endpoints": {
+          "before": 0,
+          "after": 0,
+          "new": 0
+        },
+        "dev_guide_sections": {
+          "before": 0,
+          "after": 0,
+          "new": 0
+        }
+      },
+      "duration": 43.379262
+    },
+    {
+      "url_index": 11,
+      "url": "https://open.shopee.com/developer-guide/4",
+      "api_name": "developer-guide.4",
+      "success": true,
+      "workspace": {
+        "root": "platforms\\shopee\\apis\\workspaces\\developer-guide.4",
+        "chunks": "platforms\\shopee\\apis\\workspaces\\developer-guide.4\\chunks",
+        "results": "platforms\\shopee\\apis\\workspaces\\developer-guide.4\\results",
+        "final": "platforms\\shopee\\apis\\workspaces\\developer-guide.4\\final"
+      },
+      "screenshot": "platforms\\shopee\\apis\\workspaces\\developer-guide.4\\screenshot.png",
+      "stage": "archive",
+      "split_success": true,
+      "analyze_success": true,
+      "merge_success": true,
+      "archive_success": true,
+      "final_success": true,
+      "archive_path": "platforms\\shopee\\archive\\developer-guide.4\\2025-10-12_01-18-41",
+      "content_changes": {
+        "api_endpoints": {
+          "before": 0,
+          "after": 0,
+          "new": 0
+        },
+        "dev_guide_sections": {
+          "before": 0,
+          "after": 0,
+          "new": 0
+        }
+      },
+      "duration": 42.85012
+    },
+    {
+      "url_index": 12,
+      "url": "https://open.shopee.com/developer-guide/4",
+      "api_name": "developer-guide.4",
+      "success": true,
+      "workspace": {
+        "root": "platforms\\shopee\\apis\\workspaces\\developer-guide.4",
+        "chunks": "platforms\\shopee\\apis\\workspaces\\developer-guide.4\\chunks",
+        "results": "platforms\\shopee\\apis\\workspaces\\developer-guide.4\\results",
+        "final": "platforms\\shopee\\apis\\workspaces\\developer-guide.4\\final"
+      },
+      "screenshot": "platforms\\shopee\\apis\\workspaces\\developer-guide.4\\screenshot.png",
+      "stage": "archive",
+      "split_success": true,
+      "analyze_success": false,
+      "merge_success": false,
+      "archive_success": false,
+      "final_success": false,
+      "duration": 29.433216
+    },
+    {
+      "url_index": 13,
+      "url": "https://open.shopee.com/developer-guide/4",
+      "api_name": "developer-guide.4",
+      "success": true,
+      "workspace": {
+        "root": "platforms\\shopee\\apis\\workspaces\\developer-guide.4",
+        "chunks": "platforms\\shopee\\apis\\workspaces\\developer-guide.4\\chunks",
+        "results": "platforms\\shopee\\apis\\workspaces\\developer-guide.4\\results",
+        "final": "platforms\\shopee\\apis\\workspaces\\developer-guide.4\\final"
+      },
+      "screenshot": "platforms\\shopee\\apis\\workspaces\\developer-guide.4\\screenshot.png",
+      "stage": "archive",
+      "split_success": true,
+      "analyze_success": true,
+      "merge_success": true,
+      "archive_success": true,
+      "final_success": true,
+      "archive_path": "platforms\\shopee\\archive\\developer-guide.4\\2025-10-12_01-19-17",
+      "content_changes": {
+        "api_endpoints": {
+          "before": 0,
+          "after": 0,
+          "new": 0
+        },
+        "dev_guide_sections": {
+          "before": 0,
+          "after": 0,
+          "new": 0
+        }
+      },
+      "duration": 40.531194
+    },
+    {
+      "url_index": 14,
+      "url": "https://open.shopee.com/developer-guide/4",
+      "api_name": "developer-guide.4",
+      "success": true,
+      "workspace": {
+        "root": "platforms\\shopee\\apis\\workspaces\\developer-guide.4",
+        "chunks": "platforms\\shopee\\apis\\workspaces\\developer-guide.4\\chunks",
+        "results": "platforms\\shopee\\apis\\workspaces\\developer-guide.4\\results",
+        "final": "platforms\\shopee\\apis\\workspaces\\developer-guide.4\\final"
+      },
+      "screenshot": "platforms\\shopee\\apis\\workspaces\\developer-guide.4\\screenshot.png",
+      "stage": "archive",
+      "split_success": true,
+      "analyze_success": true,
+      "merge_success": true,
+      "archive_success": true,
+      "final_success": true,
+      "archive_path": "platforms\\shopee\\archive\\developer-guide.4\\2025-10-12_01-19-20",
+      "content_changes": {
+        "api_endpoints": {
+          "before": 0,
+          "after": 0,
+          "new": 0
+        },
+        "dev_guide_sections": {
+          "before": 0,
+          "after": 0,
+          "new": 0
+        }
+      },
+      "duration": 41.594159
+    },
+    {
+      "url_index": 15,
+      "url": "https://open.shopee.com/developer-guide/4",
+      "api_name": "developer-guide.4",
+      "success": true,
+      "workspace": {
+        "root": "platforms\\shopee\\apis\\workspaces\\developer-guide.4",
+        "chunks": "platforms\\shopee\\apis\\workspaces\\developer-guide.4\\chunks",
+        "results": "platforms\\shopee\\apis\\workspaces\\developer-guide.4\\results",
+        "final": "platforms\\shopee\\apis\\workspaces\\developer-guide.4\\final"
+      },
+      "screenshot": "platforms\\shopee\\apis\\workspaces\\developer-guide.4\\screenshot.png",
+      "stage": "archive",
+      "split_success": true,
+      "analyze_success": true,
+      "merge_success": true,
+      "archive_success": true,
+      "final_success": true,
+      "archive_path": "platforms\\shopee\\archive\\developer-guide.4\\2025-10-12_01-19-22",
+      "content_changes": {
+        "api_endpoints": {
+          "before": 0,
+          "after": 0,
+          "new": 0
+        },
+        "dev_guide_sections": {
+          "before": 0,
+          "after": 0,
+          "new": 0
+        }
+      },
+      "duration": 40.967038
+    },
+    {
+      "url_index": 16,
+      "url": "https://open.shopee.com/developer-guide/4",
+      "api_name": "developer-guide.4",
+      "success": true,
+      "workspace": {
+        "root": "platforms\\shopee\\apis\\workspaces\\developer-guide.4",
+        "chunks": "platforms\\shopee\\apis\\workspaces\\developer-guide.4\\chunks",
+        "results": "platforms\\shopee\\apis\\workspaces\\developer-guide.4\\results",
+        "final": "platforms\\shopee\\apis\\workspaces\\developer-guide.4\\final"
+      },
+      "screenshot": "platforms\\shopee\\apis\\workspaces\\developer-guide.4\\screenshot.png",
+      "stage": "archive",
+      "split_success": true,
+      "analyze_success": true,
+      "merge_success": true,
+      "archive_success": true,
+      "final_success": true,
+      "archive_path": "platforms\\shopee\\archive\\developer-guide.4\\2025-10-12_01-19-47",
+      "content_changes": {
+        "api_endpoints": {
+          "before": 0,
+          "after": 0,
+          "new": 0
+        },
+        "dev_guide_sections": {
+          "before": 0,
+          "after": 0,
+          "new": 0
+        }
+      },
+      "duration": 42.30875
+    },
+    {
+      "url_index": 17,
+      "url": "https://open.shopee.com/developer-guide/4",
+      "api_name": "developer-guide.4",
+      "success": true,
+      "workspace": {
+        "root": "platforms\\shopee\\apis\\workspaces\\developer-guide.4",
+        "chunks": "platforms\\shopee\\apis\\workspaces\\developer-guide.4\\chunks",
+        "results": "platforms\\shopee\\apis\\workspaces\\developer-guide.4\\results",
+        "final": "platforms\\shopee\\apis\\workspaces\\developer-guide.4\\final"
+      },
+      "screenshot": "platforms\\shopee\\apis\\workspaces\\developer-guide.4\\screenshot.png",
+      "stage": "archive",
+      "split_success": true,
+      "analyze_success": true,
+      "merge_success": true,
+      "archive_success": true,
+      "final_success": true,
+      "archive_path": "platforms\\shopee\\archive\\developer-guide.4\\2025-10-12_01-19-56",
+      "content_changes": {
+        "api_endpoints": {
+          "before": 0,
+          "after": 0,
+          "new": 0
+        },
+        "dev_guide_sections": {
+          "before": 0,
+          "after": 0,
+          "new": 0
+        }
+      },
+      "duration": 38.865844
+    },
+    {
+      "url_index": 18,
+      "url": "https://open.shopee.com/developer-guide/4",
+      "api_name": "developer-guide.4",
+      "success": true,
+      "workspace": {
+        "root": "platforms\\shopee\\apis\\workspaces\\developer-guide.4",
+        "chunks": "platforms\\shopee\\apis\\workspaces\\developer-guide.4\\chunks",
+        "results": "platforms\\shopee\\apis\\workspaces\\developer-guide.4\\results",
+        "final": "platforms\\shopee\\apis\\workspaces\\developer-guide.4\\final"
+      },
+      "screenshot": "platforms\\shopee\\apis\\workspaces\\developer-guide.4\\screenshot.png",
+      "stage": "archive",
+      "split_success": true,
+      "analyze_success": true,
+      "merge_success": true,
+      "archive_success": true,
+      "final_success": true,
+      "archive_path": "platforms\\shopee\\archive\\developer-guide.4\\2025-10-12_01-20-01",
+      "content_changes": {
+        "api_endpoints": {
+          "before": 0,
+          "after": 0,
+          "new": 0
+        },
+        "dev_guide_sections": {
+          "before": 0,
+          "after": 0,
+          "new": 0
+        }
+      },
+      "duration": 41.159816
+    },
+    {
+      "url_index": 19,
+      "url": "https://open.shopee.com/developer-guide/4",
+      "api_name": "developer-guide.4",
+      "success": true,
+      "workspace": {
+        "root": "platforms\\shopee\\apis\\workspaces\\developer-guide.4",
+        "chunks": "platforms\\shopee\\apis\\workspaces\\developer-guide.4\\chunks",
+        "results": "platforms\\shopee\\apis\\workspaces\\developer-guide.4\\results",
+        "final": "platforms\\shopee\\apis\\workspaces\\developer-guide.4\\final"
+      },
+      "screenshot": "platforms\\shopee\\apis\\workspaces\\developer-guide.4\\screenshot.png",
+      "stage": "archive",
+      "split_success": true,
+      "analyze_success": true,
+      "merge_success": true,
+      "archive_success": true,
+      "final_success": true,
+      "archive_path": "platforms\\shopee\\archive\\developer-guide.4\\2025-10-12_01-20-02",
+      "content_changes": {
+        "api_endpoints": {
+          "before": 0,
+          "after": 0,
+          "new": 0
+        },
+        "dev_guide_sections": {
+          "before": 0,
+          "after": 0,
+          "new": 0
+        }
+      },
+      "duration": 40.002391
+    },
+    {
+      "url_index": 20,
+      "url": "https://open.shopee.com/developer-guide/4",
+      "api_name": "developer-guide.4",
+      "success": true,
+      "workspace": {
+        "root": "platforms\\shopee\\apis\\workspaces\\developer-guide.4",
+        "chunks": "platforms\\shopee\\apis\\workspaces\\developer-guide.4\\chunks",
+        "results": "platforms\\shopee\\apis\\workspaces\\developer-guide.4\\results",
+        "final": "platforms\\shopee\\apis\\workspaces\\developer-guide.4\\final"
+      },
+      "screenshot": "platforms\\shopee\\apis\\workspaces\\developer-guide.4\\screenshot.png",
+      "stage": "archive",
+      "split_success": true,
+      "analyze_success": true,
+      "merge_success": true,
+      "archive_success": true,
+      "final_success": true,
+      "archive_path": "platforms\\shopee\\archive\\developer-guide.4\\2025-10-12_01-20-28",
+      "content_changes": {
+        "api_endpoints": {
+          "before": 0,
+          "after": 0,
+          "new": 0
+        },
+        "dev_guide_sections": {
+          "before": 0,
+          "after": 0,
+          "new": 0
+        }
+      },
+      "duration": 40.717467
+    },
+    {
+      "url_index": 21,
+      "url": "https://open.shopee.com/developer-guide/4",
+      "api_name": "developer-guide.4",
+      "success": true,
+      "workspace": {
+        "root": "platforms\\shopee\\apis\\workspaces\\developer-guide.4",
+        "chunks": "platforms\\shopee\\apis\\workspaces\\developer-guide.4\\chunks",
+        "results": "platforms\\shopee\\apis\\workspaces\\developer-guide.4\\results",
+        "final": "platforms\\shopee\\apis\\workspaces\\developer-guide.4\\final"
+      },
+      "screenshot": "platforms\\shopee\\apis\\workspaces\\developer-guide.4\\screenshot.png",
+      "stage": "archive",
+      "split_success": true,
+      "analyze_success": true,
+      "merge_success": true,
+      "archive_success": true,
+      "final_success": true,
+      "archive_path": "platforms\\shopee\\archive\\developer-guide.4\\2025-10-12_01-20-33",
+      "content_changes": {
+        "api_endpoints": {
+          "before": 0,
+          "after": 0,
+          "new": 0
+        },
+        "dev_guide_sections": {
+          "before": 0,
+          "after": 0,
+          "new": 0
+        }
+      },
+      "duration": 37.252892
+    },
+    {
+      "url_index": 23,
+      "url": "https://open.shopee.com/developer-guide/4",
+      "api_name": "developer-guide.4",
+      "success": true,
+      "workspace": {
+        "root": "platforms\\shopee\\apis\\workspaces\\developer-guide.4",
+        "chunks": "platforms\\shopee\\apis\\workspaces\\developer-guide.4\\chunks",
+        "results": "platforms\\shopee\\apis\\workspaces\\developer-guide.4\\results",
+        "final": "platforms\\shopee\\apis\\workspaces\\developer-guide.4\\final"
+      },
+      "screenshot": "platforms\\shopee\\apis\\workspaces\\developer-guide.4\\screenshot.png",
+      "stage": "archive",
+      "split_success": true,
+      "analyze_success": true,
+      "merge_success": true,
+      "archive_success": true,
+      "final_success": true,
+      "archive_path": "platforms\\shopee\\archive\\developer-guide.4\\2025-10-12_01-20-40",
+      "content_changes": {
+        "api_endpoints": {
+          "before": 0,
+          "after": 0,
+          "new": 0
+        },
+        "dev_guide_sections": {
+          "before": 0,
+          "after": 0,
+          "new": 0
+        }
+      },
+      "duration": 38.661211
+    },
+    {
+      "url_index": 22,
+      "url": "https://open.shopee.com/developer-guide/4",
+      "api_name": "developer-guide.4",
+      "success": true,
+      "workspace": {
+        "root": "platforms\\shopee\\apis\\workspaces\\developer-guide.4",
+        "chunks": "platforms\\shopee\\apis\\workspaces\\developer-guide.4\\chunks",
+        "results": "platforms\\shopee\\apis\\workspaces\\developer-guide.4\\results",
+        "final": "platforms\\shopee\\apis\\workspaces\\developer-guide.4\\final"
+      },
+      "screenshot": "platforms\\shopee\\apis\\workspaces\\developer-guide.4\\screenshot.png",
+      "stage": "archive",
+      "split_success": true,
+      "analyze_success": true,
+      "merge_success": true,
+      "archive_success": true,
+      "final_success": true,
+      "archive_path": "platforms\\shopee\\archive\\developer-guide.4\\2025-10-12_01-20-43",
+      "content_changes": {
+        "api_endpoints": {
+          "before": 0,
+          "after": 0,
+          "new": 0
+        },
+        "dev_guide_sections": {
+          "before": 0,
+          "after": 0,
+          "new": 0
+        }
+      },
+      "duration": 41.779738
+    },
+    {
+      "url_index": 24,
+      "url": "https://open.shopee.com/developer-guide/4",
+      "api_name": "developer-guide.4",
+      "success": true,
+      "workspace": {
+        "root": "platforms\\shopee\\apis\\workspaces\\developer-guide.4",
+        "chunks": "platforms\\shopee\\apis\\workspaces\\developer-guide.4\\chunks",
+        "results": "platforms\\shopee\\apis\\workspaces\\developer-guide.4\\results",
+        "final": "platforms\\shopee\\apis\\workspaces\\developer-guide.4\\final"
+      },
+      "screenshot": "platforms\\shopee\\apis\\workspaces\\developer-guide.4\\screenshot.png",
+      "stage": "archive",
+      "split_success": true,
+      "analyze_success": true,
+      "merge_success": true,
+      "archive_success": true,
+      "final_success": true,
+      "archive_path": "platforms\\shopee\\archive\\developer-guide.4\\2025-10-12_01-21-08",
+      "content_changes": {
+        "api_endpoints": {
+          "before": 0,
+          "after": 0,
+          "new": 0
+        },
+        "dev_guide_sections": {
+          "before": 0,
+          "after": 0,
+          "new": 0
+        }
+      },
+      "duration": 40.149656
+    },
+    {
+      "url_index": 25,
+      "url": "https://open.shopee.com/developer-guide/4",
+      "api_name": "developer-guide.4",
+      "success": true,
+      "workspace": {
+        "root": "platforms\\shopee\\apis\\workspaces\\developer-guide.4",
+        "chunks": "platforms\\shopee\\apis\\workspaces\\developer-guide.4\\chunks",
+        "results": "platforms\\shopee\\apis\\workspaces\\developer-guide.4\\results",
+        "final": "platforms\\shopee\\apis\\workspaces\\developer-guide.4\\final"
+      },
+      "screenshot": "platforms\\shopee\\apis\\workspaces\\developer-guide.4\\screenshot.png",
+      "stage": "archive",
+      "split_success": true,
+      "analyze_success": true,
+      "merge_success": true,
+      "archive_success": true,
+      "final_success": true,
+      "archive_path": "platforms\\shopee\\archive\\developer-guide.4\\2025-10-12_01-21-12",
+      "content_changes": {
+        "api_endpoints": {
+          "before": 0,
+          "after": 0,
+          "new": 0
+        },
+        "dev_guide_sections": {
+          "before": 0,
+          "after": 0,
+          "new": 0
+        }
+      },
+      "duration": 39.371529
+    },
+    {
+      "url_index": 26,
+      "url": "https://open.shopee.com/developer-guide/4",
+      "api_name": "developer-guide.4",
+      "success": true,
+      "workspace": {
+        "root": "platforms\\shopee\\apis\\workspaces\\developer-guide.4",
+        "chunks": "platforms\\shopee\\apis\\workspaces\\developer-guide.4\\chunks",
+        "results": "platforms\\shopee\\apis\\workspaces\\developer-guide.4\\results",
+        "final": "platforms\\shopee\\apis\\workspaces\\developer-guide.4\\final"
+      },
+      "screenshot": "platforms\\shopee\\apis\\workspaces\\developer-guide.4\\screenshot.png",
+      "stage": "archive",
+      "split_success": true,
+      "analyze_success": true,
+      "merge_success": true,
+      "archive_success": true,
+      "final_success": true,
+      "archive_path": "platforms\\shopee\\archive\\developer-guide.4\\2025-10-12_01-21-21",
+      "content_changes": {
+        "api_endpoints": {
+          "before": 0,
+          "after": 0,
+          "new": 0
+        },
+        "dev_guide_sections": {
+          "before": 0,
+          "after": 0,
+          "new": 0
+        }
+      },
+      "duration": 40.587612
+    },
+    {
+      "url_index": 27,
+      "url": "https://open.shopee.com/developer-guide/4",
+      "api_name": "developer-guide.4",
+      "success": true,
+      "workspace": {
+        "root": "platforms\\shopee\\apis\\workspaces\\developer-guide.4",
+        "chunks": "platforms\\shopee\\apis\\workspaces\\developer-guide.4\\chunks",
+        "results": "platforms\\shopee\\apis\\workspaces\\developer-guide.4\\results",
+        "final": "platforms\\shopee\\apis\\workspaces\\developer-guide.4\\final"
+      },
+      "screenshot": "platforms\\shopee\\apis\\workspaces\\developer-guide.4\\screenshot.png",
+      "stage": "archive",
+      "split_success": true,
+      "analyze_success": true,
+      "merge_success": true,
+      "archive_success": true,
+      "final_success": true,
+      "archive_path": "platforms\\shopee\\archive\\developer-guide.4\\2025-10-12_01-21-24",
+      "content_changes": {
+        "api_endpoints": {
+          "before": 0,
+          "after": 0,
+          "new": 0
+        },
+        "dev_guide_sections": {
+          "before": 0,
+          "after": 0,
+          "new": 0
+        }
+      },
+      "duration": 41.13053
+    },
+    {
+      "url_index": 28,
+      "url": "https://open.shopee.com/developer-guide/4",
+      "api_name": "developer-guide.4",
+      "success": true,
+      "workspace": {
+        "root": "platforms\\shopee\\apis\\workspaces\\developer-guide.4",
+        "chunks": "platforms\\shopee\\apis\\workspaces\\developer-guide.4\\chunks",
+        "results": "platforms\\shopee\\apis\\workspaces\\developer-guide.4\\results",
+        "final": "platforms\\shopee\\apis\\workspaces\\developer-guide.4\\final"
+      },
+      "screenshot": "platforms\\shopee\\apis\\workspaces\\developer-guide.4\\screenshot.png",
+      "stage": "archive",
+      "split_success": true,
+      "analyze_success": true,
+      "merge_success": true,
+      "archive_success": true,
+      "final_success": true,
+      "archive_path": "platforms\\shopee\\archive\\developer-guide.4\\2025-10-12_01-21-46",
+      "content_changes": {
+        "api_endpoints": {
+          "before": 0,
+          "after": 0,
+          "new": 0
+        },
+        "dev_guide_sections": {
+          "before": 0,
+          "after": 0,
+          "new": 0
+        }
+      },
+      "duration": 38.695064
+    },
+    {
+      "url_index": 29,
+      "url": "https://open.shopee.com/developer-guide/4",
+      "api_name": "developer-guide.4",
+      "success": true,
+      "workspace": {
+        "root": "platforms\\shopee\\apis\\workspaces\\developer-guide.4",
+        "chunks": "platforms\\shopee\\apis\\workspaces\\developer-guide.4\\chunks",
+        "results": "platforms\\shopee\\apis\\workspaces\\developer-guide.4\\results",
+        "final": "platforms\\shopee\\apis\\workspaces\\developer-guide.4\\final"
+      },
+      "screenshot": "platforms\\shopee\\apis\\workspaces\\developer-guide.4\\screenshot.png",
+      "stage": "archive",
+      "split_success": true,
+      "analyze_success": true,
+      "merge_success": true,
+      "archive_success": true,
+      "final_success": true,
+      "archive_path": "platforms\\shopee\\archive\\developer-guide.4\\2025-10-12_01-21-52",
+      "content_changes": {
+        "api_endpoints": {
+          "before": 0,
+          "after": 0,
+          "new": 0
+        },
+        "dev_guide_sections": {
+          "before": 0,
+          "after": 0,
+          "new": 0
+        }
+      },
+      "duration": 39.15858
+    },
+    {
+      "url_index": 30,
+      "url": "https://open.shopee.com/developer-guide/4",
+      "api_name": "developer-guide.4",
+      "success": true,
+      "workspace": {
+        "root": "platforms\\shopee\\apis\\workspaces\\developer-guide.4",
+        "chunks": "platforms\\shopee\\apis\\workspaces\\developer-guide.4\\chunks",
+        "results": "platforms\\shopee\\apis\\workspaces\\developer-guide.4\\results",
+        "final": "platforms\\shopee\\apis\\workspaces\\developer-guide.4\\final"
+      },
+      "screenshot": "platforms\\shopee\\apis\\workspaces\\developer-guide.4\\screenshot.png",
+      "stage": "archive",
+      "split_success": true,
+      "analyze_success": true,
+      "merge_success": true,
+      "archive_success": true,
+      "final_success": true,
+      "archive_path": "platforms\\shopee\\archive\\developer-guide.4\\2025-10-12_01-22-00",
+      "content_changes": {
+        "api_endpoints": {
+          "before": 0,
+          "after": 0,
+          "new": 0
+        },
+        "dev_guide_sections": {
+          "before": 0,
+          "after": 0,
+          "new": 0
+        }
+      },
+      "duration": 39.309744
+    },
+    {
+      "url_index": 31,
+      "url": "https://open.shopee.com/developer-guide/4",
+      "api_name": "developer-guide.4",
+      "success": true,
+      "workspace": {
+        "root": "platforms\\shopee\\apis\\workspaces\\developer-guide.4",
+        "chunks": "platforms\\shopee\\apis\\workspaces\\developer-guide.4\\chunks",
+        "results": "platforms\\shopee\\apis\\workspaces\\developer-guide.4\\results",
+        "final": "platforms\\shopee\\apis\\workspaces\\developer-guide.4\\final"
+      },
+      "screenshot": "platforms\\shopee\\apis\\workspaces\\developer-guide.4\\screenshot.png",
+      "stage": "archive",
+      "split_success": true,
+      "analyze_success": true,
+      "merge_success": true,
+      "archive_success": true,
+      "final_success": true,
+      "archive_path": "platforms\\shopee\\archive\\developer-guide.4\\2025-10-12_01-22-02",
+      "content_changes": {
+        "api_endpoints": {
+          "before": 0,
+          "after": 0,
+          "new": 0
+        },
+        "dev_guide_sections": {
+          "before": 0,
+          "after": 0,
+          "new": 0
+        }
+      },
+      "duration": 38.141016
+    },
+    {
+      "url_index": 32,
+      "url": "https://open.shopee.com/developer-guide/4",
+      "api_name": "developer-guide.4",
+      "success": true,
+      "workspace": {
+        "root": "platforms\\shopee\\apis\\workspaces\\developer-guide.4",
+        "chunks": "platforms\\shopee\\apis\\workspaces\\developer-guide.4\\chunks",
+        "results": "platforms\\shopee\\apis\\workspaces\\developer-guide.4\\results",
+        "final": "platforms\\shopee\\apis\\workspaces\\developer-guide.4\\final"
+      },
+      "screenshot": "platforms\\shopee\\apis\\workspaces\\developer-guide.4\\screenshot.png",
+      "stage": "archive",
+      "split_success": true,
+      "analyze_success": true,
+      "merge_success": true,
+      "archive_success": true,
+      "final_success": true,
+      "archive_path": "platforms\\shopee\\archive\\developer-guide.4\\2025-10-12_01-22-26",
+      "content_changes": {
+        "api_endpoints": {
+          "before": 0,
+          "after": 0,
+          "new": 0
+        },
+        "dev_guide_sections": {
+          "before": 0,
+          "after": 0,
+          "new": 0
+        }
+      },
+      "duration": 40.019959
+    },
+    {
+      "url_index": 33,
+      "url": "https://open.shopee.com/developer-guide/4",
+      "api_name": "developer-guide.4",
+      "success": true,
+      "workspace": {
+        "root": "platforms\\shopee\\apis\\workspaces\\developer-guide.4",
+        "chunks": "platforms\\shopee\\apis\\workspaces\\developer-guide.4\\chunks",
+        "results": "platforms\\shopee\\apis\\workspaces\\developer-guide.4\\results",
+        "final": "platforms\\shopee\\apis\\workspaces\\developer-guide.4\\final"
+      },
+      "screenshot": "platforms\\shopee\\apis\\workspaces\\developer-guide.4\\screenshot.png",
+      "stage": "archive",
+      "split_success": true,
+      "analyze_success": true,
+      "merge_success": true,
+      "archive_success": true,
+      "final_success": true,
+      "archive_path": "platforms\\shopee\\archive\\developer-guide.4\\2025-10-12_01-22-32",
+      "content_changes": {
+        "api_endpoints": {
+          "before": 0,
+          "after": 0,
+          "new": 0
+        },
+        "dev_guide_sections": {
+          "before": 0,
+          "after": 0,
+          "new": 0
+        }
+      },
+      "duration": 40.302469
+    },
+    {
+      "url_index": 34,
+      "url": "https://open.shopee.com/developer-guide/4",
+      "api_name": "developer-guide.4",
+      "success": true,
+      "workspace": {
+        "root": "platforms\\shopee\\apis\\workspaces\\developer-guide.4",
+        "chunks": "platforms\\shopee\\apis\\workspaces\\developer-guide.4\\chunks",
+        "results": "platforms\\shopee\\apis\\workspaces\\developer-guide.4\\results",
+        "final": "platforms\\shopee\\apis\\workspaces\\developer-guide.4\\final"
+      },
+      "screenshot": "platforms\\shopee\\apis\\workspaces\\developer-guide.4\\screenshot.png",
+      "stage": "archive",
+      "split_success": true,
+      "analyze_success": true,
+      "merge_success": true,
+      "archive_success": true,
+      "final_success": true,
+      "archive_path": "platforms\\shopee\\archive\\developer-guide.4\\2025-10-12_01-22-41",
+      "content_changes": {
+        "api_endpoints": {
+          "before": 0,
+          "after": 0,
+          "new": 0
+        },
+        "dev_guide_sections": {
+          "before": 0,
+          "after": 0,
+          "new": 0
+        }
+      },
+      "duration": 41.109202
+    },
+    {
+      "url_index": 35,
+      "url": "https://open.shopee.com/developer-guide/4",
+      "api_name": "developer-guide.4",
+      "success": true,
+      "workspace": {
+        "root": "platforms\\shopee\\apis\\workspaces\\developer-guide.4",
+        "chunks": "platforms\\shopee\\apis\\workspaces\\developer-guide.4\\chunks",
+        "results": "platforms\\shopee\\apis\\workspaces\\developer-guide.4\\results",
+        "final": "platforms\\shopee\\apis\\workspaces\\developer-guide.4\\final"
+      },
+      "screenshot": "platforms\\shopee\\apis\\workspaces\\developer-guide.4\\screenshot.png",
+      "stage": "archive",
+      "split_success": true,
+      "analyze_success": true,
+      "merge_success": true,
+      "archive_success": true,
+      "final_success": true,
+      "archive_path": "platforms\\shopee\\archive\\developer-guide.4\\2025-10-12_01-22-42",
+      "content_changes": {
+        "api_endpoints": {
+          "before": 0,
+          "after": 0,
+          "new": 0
+        },
+        "dev_guide_sections": {
+          "before": 0,
+          "after": 0,
+          "new": 0
+        }
+      },
+      "duration": 39.988215
+    },
+    {
+      "url_index": 36,
+      "url": "https://open.shopee.com/developer-guide/4",
+      "api_name": "developer-guide.4",
+      "success": true,
+      "workspace": {
+        "root": "platforms\\shopee\\apis\\workspaces\\developer-guide.4",
+        "chunks": "platforms\\shopee\\apis\\workspaces\\developer-guide.4\\chunks",
+        "results": "platforms\\shopee\\apis\\workspaces\\developer-guide.4\\results",
+        "final": "platforms\\shopee\\apis\\workspaces\\developer-guide.4\\final"
+      },
+      "screenshot": "platforms\\shopee\\apis\\workspaces\\developer-guide.4\\screenshot.png",
+      "stage": "archive",
+      "split_success": true,
+      "analyze_success": true,
+      "merge_success": true,
+      "archive_success": true,
+      "final_success": true,
+      "archive_path": "platforms\\shopee\\archive\\developer-guide.4\\2025-10-12_01-23-05",
+      "content_changes": {
+        "api_endpoints": {
+          "before": 0,
+          "after": 0,
+          "new": 0
+        },
+        "dev_guide_sections": {
+          "before": 0,
+          "after": 0,
+          "new": 0
+        }
+      },
+      "duration": 38.414675
+    },
+    {
+      "url_index": 37,
+      "url": "https://open.shopee.com/developer-guide/4",
+      "api_name": "developer-guide.4",
+      "success": true,
+      "workspace": {
+        "root": "platforms\\shopee\\apis\\workspaces\\developer-guide.4",
+        "chunks": "platforms\\shopee\\apis\\workspaces\\developer-guide.4\\chunks",
+        "results": "platforms\\shopee\\apis\\workspaces\\developer-guide.4\\results",
+        "final": "platforms\\shopee\\apis\\workspaces\\developer-guide.4\\final"
+      },
+      "screenshot": "platforms\\shopee\\apis\\workspaces\\developer-guide.4\\screenshot.png",
+      "stage": "archive",
+      "split_success": true,
+      "analyze_success": true,
+      "merge_success": true,
+      "archive_success": true,
+      "final_success": true,
+      "archive_path": "platforms\\shopee\\archive\\developer-guide.4\\2025-10-12_01-23-10",
+      "content_changes": {
+        "api_endpoints": {
+          "before": 0,
+          "after": 0,
+          "new": 0
+        },
+        "dev_guide_sections": {
+          "before": 0,
+          "after": 0,
+          "new": 0
+        }
+      },
+      "duration": 38.302015
+    },
+    {
+      "url_index": 38,
+      "url": "https://open.shopee.com/developer-guide/4",
+      "api_name": "developer-guide.4",
+      "success": true,
+      "workspace": {
+        "root": "platforms\\shopee\\apis\\workspaces\\developer-guide.4",
+        "chunks": "platforms\\shopee\\apis\\workspaces\\developer-guide.4\\chunks",
+        "results": "platforms\\shopee\\apis\\workspaces\\developer-guide.4\\results",
+        "final": "platforms\\shopee\\apis\\workspaces\\developer-guide.4\\final"
+      },
+      "screenshot": "platforms\\shopee\\apis\\workspaces\\developer-guide.4\\screenshot.png",
+      "stage": "archive",
+      "split_success": true,
+      "analyze_success": true,
+      "merge_success": true,
+      "archive_success": true,
+      "final_success": true,
+      "archive_path": "platforms\\shopee\\archive\\developer-guide.4\\2025-10-12_01-23-22",
+      "content_changes": {
+        "api_endpoints": {
+          "before": 0,
+          "after": 0,
+          "new": 0
+        },
+        "dev_guide_sections": {
+          "before": 0,
+          "after": 0,
+          "new": 0
+        }
+      },
+      "duration": 41.088676
+    },
+    {
+      "url_index": 40,
+      "url": "https://open.shopee.com/developer-guide/4",
+      "api_name": "developer-guide.4",
+      "success": true,
+      "workspace": {
+        "root": "platforms\\shopee\\apis\\workspaces\\developer-guide.4",
+        "chunks": "platforms\\shopee\\apis\\workspaces\\developer-guide.4\\chunks",
+        "results": "platforms\\shopee\\apis\\workspaces\\developer-guide.4\\results",
+        "final": "platforms\\shopee\\apis\\workspaces\\developer-guide.4\\final"
+      },
+      "screenshot": "platforms\\shopee\\apis\\workspaces\\developer-guide.4\\screenshot.png",
+      "stage": "archive",
+      "split_success": true,
+      "analyze_success": true,
+      "merge_success": true,
+      "archive_success": true,
+      "final_success": true,
+      "archive_path": "platforms\\shopee\\archive\\developer-guide.4\\2025-10-12_01-23-45",
+      "content_changes": {
+        "api_endpoints": {
+          "before": 0,
+          "after": 0,
+          "new": 0
+        },
+        "dev_guide_sections": {
+          "before": 0,
+          "after": 0,
+          "new": 0
+        }
+      },
+      "duration": 39.759269
+    },
+    {
+      "url_index": 41,
+      "url": "https://open.shopee.com/developer-guide/4",
+      "api_name": "developer-guide.4",
+      "success": true,
+      "workspace": {
+        "root": "platforms\\shopee\\apis\\workspaces\\developer-guide.4",
+        "chunks": "platforms\\shopee\\apis\\workspaces\\developer-guide.4\\chunks",
+        "results": "platforms\\shopee\\apis\\workspaces\\developer-guide.4\\results",
+        "final": "platforms\\shopee\\apis\\workspaces\\developer-guide.4\\final"
+      },
+      "screenshot": "platforms\\shopee\\apis\\workspaces\\developer-guide.4\\screenshot.png",
+      "stage": "archive",
+      "split_success": true,
+      "analyze_success": true,
+      "merge_success": true,
+      "archive_success": true,
+      "final_success": true,
+      "archive_path": "platforms\\shopee\\archive\\developer-guide.4\\2025-10-12_01-23-48",
+      "content_changes": {
+        "api_endpoints": {
+          "before": 0,
+          "after": 0,
+          "new": 0
+        },
+        "dev_guide_sections": {
+          "before": 0,
+          "after": 0,
+          "new": 0
+        }
+      },
+      "duration": 37.940381
+    },
+    {
+      "url_index": 42,
+      "url": "https://open.shopee.com/developer-guide/4",
+      "api_name": "developer-guide.4",
+      "success": true,
+      "workspace": {
+        "root": "platforms\\shopee\\apis\\workspaces\\developer-guide.4",
+        "chunks": "platforms\\shopee\\apis\\workspaces\\developer-guide.4\\chunks",
+        "results": "platforms\\shopee\\apis\\workspaces\\developer-guide.4\\results",
+        "final": "platforms\\shopee\\apis\\workspaces\\developer-guide.4\\final"
+      },
+      "screenshot": "platforms\\shopee\\apis\\workspaces\\developer-guide.4\\screenshot.png",
+      "stage": "archive",
+      "split_success": true,
+      "analyze_success": true,
+      "merge_success": true,
+      "archive_success": true,
+      "final_success": true,
+      "archive_path": "platforms\\shopee\\archive\\developer-guide.4\\2025-10-12_01-24-03",
+      "content_changes": {
+        "api_endpoints": {
+          "before": 0,
+          "after": 0,
+          "new": 0
+        },
+        "dev_guide_sections": {
+          "before": 0,
+          "after": 0,
+          "new": 0
+        }
+      },
+      "duration": 40.987414
+    },
+    {
+      "url_index": 39,
+      "url": "https://open.shopee.com/developer-guide/4",
+      "api_name": "developer-guide.4",
+      "success": true,
+      "workspace": {
+        "root": "platforms\\shopee\\apis\\workspaces\\developer-guide.4",
+        "chunks": "platforms\\shopee\\apis\\workspaces\\developer-guide.4\\chunks",
+        "results": "platforms\\shopee\\apis\\workspaces\\developer-guide.4\\results",
+        "final": "platforms\\shopee\\apis\\workspaces\\developer-guide.4\\final"
+      },
+      "screenshot": "platforms\\shopee\\apis\\workspaces\\developer-guide.4\\screenshot.png",
+      "stage": "archive",
+      "split_success": true,
+      "analyze_success": true,
+      "merge_success": true,
+      "archive_success": true,
+      "final_success": true,
+      "archive_path": "platforms\\shopee\\archive\\developer-guide.4\\2025-10-12_01-24-20",
+      "content_changes": {
+        "api_endpoints": {
+          "before": 0,
+          "after": 0,
+          "new": 0
+        },
+        "dev_guide_sections": {
+          "before": 0,
+          "after": 0,
+          "new": 0
+        }
+      },
+      "duration": 98.420068
+    },
+    {
+      "url_index": 43,
+      "url": "https://open.shopee.com/developer-guide/4",
+      "api_name": "developer-guide.4",
+      "success": true,
+      "workspace": {
+        "root": "platforms\\shopee\\apis\\workspaces\\developer-guide.4",
+        "chunks": "platforms\\shopee\\apis\\workspaces\\developer-guide.4\\chunks",
+        "results": "platforms\\shopee\\apis\\workspaces\\developer-guide.4\\results",
+        "final": "platforms\\shopee\\apis\\workspaces\\developer-guide.4\\final"
+      },
+      "screenshot": "platforms\\shopee\\apis\\workspaces\\developer-guide.4\\screenshot.png",
+      "stage": "archive",
+      "split_success": true,
+      "analyze_success": true,
+      "merge_success": true,
+      "archive_success": true,
+      "final_success": true,
+      "archive_path": "platforms\\shopee\\archive\\developer-guide.4\\2025-10-12_01-24-24",
+      "content_changes": {
+        "api_endpoints": {
+          "before": 0,
+          "after": 0,
+          "new": 0
+        },
+        "dev_guide_sections": {
+          "before": 0,
+          "after": 0,
+          "new": 0
+        }
+      },
+      "duration": 39.067304
+    },
+    {
+      "url_index": 44,
+      "url": "https://open.shopee.com/developer-guide/4",
+      "api_name": "developer-guide.4",
+      "success": true,
+      "workspace": {
+        "root": "platforms\\shopee\\apis\\workspaces\\developer-guide.4",
+        "chunks": "platforms\\shopee\\apis\\workspaces\\developer-guide.4\\chunks",
+        "results": "platforms\\shopee\\apis\\workspaces\\developer-guide.4\\results",
+        "final": "platforms\\shopee\\apis\\workspaces\\developer-guide.4\\final"
+      },
+      "screenshot": "platforms\\shopee\\apis\\workspaces\\developer-guide.4\\screenshot.png",
+      "stage": "archive",
+      "split_success": true,
+      "analyze_success": true,
+      "merge_success": true,
+      "archive_success": true,
+      "final_success": true,
+      "archive_path": "platforms\\shopee\\archive\\developer-guide.4\\2025-10-12_01-24-28",
+      "content_changes": {
+        "api_endpoints": {
+          "before": 0,
+          "after": 0,
+          "new": 0
+        },
+        "dev_guide_sections": {
+          "before": 0,
+          "after": 0,
+          "new": 0
+        }
+      },
+      "duration": 39.646061
+    },
+    {
+      "url_index": 45,
+      "url": "https://open.shopee.com/developer-guide/4",
+      "api_name": "developer-guide.4",
+      "success": true,
+      "workspace": {
+        "root": "platforms\\shopee\\apis\\workspaces\\developer-guide.4",
+        "chunks": "platforms\\shopee\\apis\\workspaces\\developer-guide.4\\chunks",
+        "results": "platforms\\shopee\\apis\\workspaces\\developer-guide.4\\results",
+        "final": "platforms\\shopee\\apis\\workspaces\\developer-guide.4\\final"
+      },
+      "screenshot": "platforms\\shopee\\apis\\workspaces\\developer-guide.4\\screenshot.png",
+      "stage": "archive",
+      "split_success": true,
+      "analyze_success": true,
+      "merge_success": true,
+      "archive_success": true,
+      "final_success": true,
+      "archive_path": "platforms\\shopee\\archive\\developer-guide.4\\2025-10-12_01-24-42",
+      "content_changes": {
+        "api_endpoints": {
+          "before": 0,
+          "after": 0,
+          "new": 0
+        },
+        "dev_guide_sections": {
+          "before": 0,
+          "after": 0,
+          "new": 0
+        }
+      },
+      "duration": 38.969317
+    },
+    {
+      "url_index": 46,
+      "url": "https://open.shopee.com/developer-guide/4",
+      "api_name": "developer-guide.4",
+      "success": true,
+      "workspace": {
+        "root": "platforms\\shopee\\apis\\workspaces\\developer-guide.4",
+        "chunks": "platforms\\shopee\\apis\\workspaces\\developer-guide.4\\chunks",
+        "results": "platforms\\shopee\\apis\\workspaces\\developer-guide.4\\results",
+        "final": "platforms\\shopee\\apis\\workspaces\\developer-guide.4\\final"
+      },
+      "screenshot": "platforms\\shopee\\apis\\workspaces\\developer-guide.4\\screenshot.png",
+      "stage": "archive",
+      "split_success": true,
+      "analyze_success": false,
+      "merge_success": false,
+      "archive_success": false,
+      "final_success": false,
+      "duration": 30.080166
+    },
+    {
+      "url_index": 47,
+      "url": "https://open.shopee.com/developer-guide/4",
+      "api_name": "developer-guide.4",
+      "success": true,
+      "workspace": {
+        "root": "platforms\\shopee\\apis\\workspaces\\developer-guide.4",
+        "chunks": "platforms\\shopee\\apis\\workspaces\\developer-guide.4\\chunks",
+        "results": "platforms\\shopee\\apis\\workspaces\\developer-guide.4\\results",
+        "final": "platforms\\shopee\\apis\\workspaces\\developer-guide.4\\final"
+      },
+      "screenshot": "platforms\\shopee\\apis\\workspaces\\developer-guide.4\\screenshot.png",
+      "stage": "archive",
+      "split_success": true,
+      "analyze_success": true,
+      "merge_success": true,
+      "archive_success": true,
+      "final_success": true,
+      "archive_path": "platforms\\shopee\\archive\\developer-guide.4\\2025-10-12_01-25-04",
+      "content_changes": {
+        "api_endpoints": {
+          "before": 0,
+          "after": 0,
+          "new": 0
+        },
+        "dev_guide_sections": {
+          "before": 0,
+          "after": 0,
+          "new": 0
+        }
+      },
+      "duration": 40.660828
+    },
+    {
+      "url_index": 48,
+      "url": "https://open.shopee.com/developer-guide/4",
+      "api_name": "developer-guide.4",
+      "success": true,
+      "workspace": {
+        "root": "platforms\\shopee\\apis\\workspaces\\developer-guide.4",
+        "chunks": "platforms\\shopee\\apis\\workspaces\\developer-guide.4\\chunks",
+        "results": "platforms\\shopee\\apis\\workspaces\\developer-guide.4\\results",
+        "final": "platforms\\shopee\\apis\\workspaces\\developer-guide.4\\final"
+      },
+      "screenshot": "platforms\\shopee\\apis\\workspaces\\developer-guide.4\\screenshot.png",
+      "stage": "archive",
+      "split_success": true,
+      "analyze_success": true,
+      "merge_success": true,
+      "archive_success": true,
+      "final_success": true,
+      "archive_path": "platforms\\shopee\\archive\\developer-guide.4\\2025-10-12_01-25-11",
+      "content_changes": {
+        "api_endpoints": {
+          "before": 0,
+          "after": 0,
+          "new": 0
+        },
+        "dev_guide_sections": {
+          "before": 0,
+          "after": 0,
+          "new": 0
+        }
+      },
+      "duration": 43.498329
+    },
+    {
+      "url_index": 49,
+      "url": "https://open.shopee.com/developer-guide/4",
+      "api_name": "developer-guide.4",
+      "success": true,
+      "workspace": {
+        "root": "platforms\\shopee\\apis\\workspaces\\developer-guide.4",
+        "chunks": "platforms\\shopee\\apis\\workspaces\\developer-guide.4\\chunks",
+        "results": "platforms\\shopee\\apis\\workspaces\\developer-guide.4\\results",
+        "final": "platforms\\shopee\\apis\\workspaces\\developer-guide.4\\final"
+      },
+      "screenshot": "platforms\\shopee\\apis\\workspaces\\developer-guide.4\\screenshot.png",
+      "stage": "archive",
+      "split_success": true,
+      "analyze_success": true,
+      "merge_success": true,
+      "archive_success": true,
+      "final_success": true,
+      "archive_path": "platforms\\shopee\\archive\\developer-guide.4\\2025-10-12_01-25-21",
+      "content_changes": {
+        "api_endpoints": {
+          "before": 0,
+          "after": 0,
+          "new": 0
+        },
+        "dev_guide_sections": {
+          "before": 0,
+          "after": 0,
+          "new": 0
+        }
+      },
+      "duration": 39.121606
+    },
+    {
+      "url_index": 50,
+      "url": "https://open.shopee.com/developer-guide/4",
+      "api_name": "developer-guide.4",
+      "success": true,
+      "workspace": {
+        "root": "platforms\\shopee\\apis\\workspaces\\developer-guide.4",
+        "chunks": "platforms\\shopee\\apis\\workspaces\\developer-guide.4\\chunks",
+        "results": "platforms\\shopee\\apis\\workspaces\\developer-guide.4\\results",
+        "final": "platforms\\shopee\\apis\\workspaces\\developer-guide.4\\final"
+      },
+      "screenshot": "platforms\\shopee\\apis\\workspaces\\developer-guide.4\\screenshot.png",
+      "stage": "archive",
+      "split_success": true,
+      "analyze_success": true,
+      "merge_success": true,
+      "archive_success": true,
+      "final_success": true,
+      "archive_path": "platforms\\shopee\\archive\\developer-guide.4\\2025-10-12_01-25-29",
+      "content_changes": {
+        "api_endpoints": {
+          "before": 0,
+          "after": 0,
+          "new": 0
+        },
+        "dev_guide_sections": {
+          "before": 0,
+          "after": 0,
+          "new": 0
+        }
+      },
+      "duration": 38.132035
+    }
+  ]
+}

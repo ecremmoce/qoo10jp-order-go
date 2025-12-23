@@ -1,0 +1,67 @@
+{
+  "endpoint": "bg_pics_delete_{bg_pics}",
+  "method": "DELETE",
+  "description": null,
+  "parameters": [
+    {
+      "name": "partner_id",
+      "type": "string",
+      "required": true,
+      "description": "For example, partner ID, unique merchant or user identifier",
+      "children": []
+    },
+    {
+      "name": "bg_pics",
+      "type": "string",
+      "required": true,
+      "description": "The name of the picture using to identify one parameter to be set",
+      "children": []
+    },
+    {
+      "name": "sign",
+      "type": "string",
+      "required": true,
+      "description": "Stringified request identifier for a shop. Request param for signature.",
+      "children": []
+    },
+    {
+      "name": "request_id",
+      "type": "string",
+      "required": true,
+      "description": "The identifier for all POI request for each third party.",
+      "children": []
+    },
+    {
+      "name": "rid",
+      "type": "string",
+      "required": false,
+      "description": "Request identifier for shop ID every request happened",
+      "children": []
+    }
+  ],
+  "response_fields": [],
+  "update_log": [
+    {
+      "date": "2023-08-16",
+      "change": "New SDK for batch publishing"
+    },
+    {
+      "date": "2023-07-27",
+      "change": "Add Error Coding Information"
+    },
+    {
+      "date": "2023-07-26",
+      "change": "Interface Parameter and Response Parameter"
+    }
+  ],
+  "hidden_fields": [],
+  "metadata": {
+    "total_chunks": 1,
+    "chunks_with_errors": 0,
+    "total_parameters_before_dedup": 5,
+    "total_parameters_after_dedup": 5,
+    "update_log_entries": 3,
+    "hidden_fields_count": 0,
+    "source_results": "workspaces\\v2.top_picks.delete_top_picks\\results\\all_chunks_results.json"
+  }
+}

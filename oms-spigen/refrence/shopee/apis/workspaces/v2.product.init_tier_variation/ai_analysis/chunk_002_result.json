@@ -1,0 +1,57 @@
+{
+  "chunk_index": 2,
+  "endpoint": null,
+  "method": null,
+  "description": null,
+  "parameters": [
+    {
+      "name": "error_product_id_not_found",
+      "type": "string",
+      "required": false,
+      "description": "Item_id's not found",
+      "children": []
+    },
+    {
+      "name": "error_param_time_is_not_found",
+      "type": "string",
+      "required": false,
+      "description": "time_id's not found",
+      "children": []
+    },
+    {
+      "name": "error_param",
+      "type": "string",
+      "required": false,
+      "description": "Permission is not match for contents {error_field}",
+      "children": []
+    },
+    {
+      "name": "error_permission",
+      "type": "string",
+      "required": false,
+      "description": "Count of the variation should be under 50. Count of nested variations combinations should be under 3000",
+      "children": []
+    },
+    {
+      "name": "error_exist",
+      "type": "string",
+      "required": false,
+      "description": "Our system is being some time to respond, please try later",
+      "children": []
+    }
+  ],
+  "response_fields": [],
+  "chunk_metadata": {
+    "index": 2,
+    "total": 2,
+    "y_start": 7250,
+    "y_end": 11424,
+    "overlap_top": 500,
+    "overlap_bottom": 0,
+    "height": 4174,
+    "path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\workspaces\\v2.product.init_tier_variation\\chunks\\chunk_002.png",
+    "filename": "chunk_002.png",
+    "width": 837
+  },
+  "chunk_path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\workspaces\\v2.product.init_tier_variation\\chunks\\chunk_002.png"
+}

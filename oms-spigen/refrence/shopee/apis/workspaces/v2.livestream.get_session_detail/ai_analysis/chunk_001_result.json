@@ -1,0 +1,78 @@
+{
+  "chunk_index": 1,
+  "total_chunks": 1,
+  "endpoint": null,
+  "method": null,
+  "description": null,
+  "update_log": [],
+  "hidden_fields": [],
+  "parameters": [
+    {
+      "name": "url",
+      "type": "string",
+      "required": true,
+      "description": "Request endpoint",
+      "children": []
+    },
+    {
+      "name": "method",
+      "type": "string",
+      "required": true,
+      "description": "Request method (GET/POST/PUT/DELETE)",
+      "children": []
+    },
+    {
+      "name": "data",
+      "type": "object",
+      "required": false,
+      "description": "The data to be transmitted in the request",
+      "children": []
+    },
+    {
+      "name": "params",
+      "type": "object",
+      "required": false,
+      "description": "URL parameters",
+      "children": []
+    },
+    {
+      "name": "headers",
+      "type": "object",
+      "required": false,
+      "description": "Request headers",
+      "children": []
+    }
+  ],
+  "response_fields": [
+    {
+      "name": "status",
+      "type": "integer",
+      "description": "Status code of the response"
+    },
+    {
+      "name": "ok",
+      "type": "boolean",
+      "description": "Whether the request was successful"
+    },
+    {
+      "name": "data",
+      "type": "object",
+      "description": "The response data"
+    }
+  ],
+  "notes": "This appears to be API client documentation showing common request and response parameters. The image shows parameter definitions, response properties, and code examples for making API requests.",
+  "chunk_metadata": {
+    "index": 1,
+    "total": 1,
+    "y_start": 0,
+    "y_end": 5295,
+    "overlap_top": 0,
+    "overlap_bottom": 0,
+    "height": 5295,
+    "path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\workspaces\\v2.livestream.get_session_detail\\chunks\\chunk_001.png",
+    "filename": "chunk_001.png",
+    "width": 837
+  },
+  "analysis_timestamp": "2025-10-10T05:56:15.105235",
+  "model": "claude-3-5-sonnet-20241022"
+}

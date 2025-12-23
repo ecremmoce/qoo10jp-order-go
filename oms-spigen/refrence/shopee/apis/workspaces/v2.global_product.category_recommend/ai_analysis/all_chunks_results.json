@@ -1,0 +1,107 @@
+[
+  {
+    "chunk_index": 1,
+    "total_chunks": 1,
+    "endpoint": "http://easemob/mobile-dev/debo/main/oapi/global_product/category_recommended",
+    "method": "POST",
+    "description": "Global product category recommended",
+    "update_log": [
+      {
+        "date": "2023-06-17",
+        "change": "add default value"
+      },
+      {
+        "date": "2023-06-09",
+        "change": "create financial product"
+      },
+      {
+        "date": "2022-04-17",
+        "change": "add global_product_server charge related parameter"
+      }
+    ],
+    "parameters": [
+      {
+        "name": "global_id",
+        "type": "string",
+        "required": true,
+        "description": null,
+        "children": []
+      },
+      {
+        "name": "global_proc_code",
+        "type": "string",
+        "required": true,
+        "description": "trade or item",
+        "children": []
+      },
+      {
+        "name": "activity_token",
+        "type": "string",
+        "required": false,
+        "description": null,
+        "children": []
+      },
+      {
+        "name": "age",
+        "type": "string",
+        "required": false,
+        "description": "Statistics parameters system id: pc,app parameter",
+        "children": []
+      }
+    ],
+    "response_fields": [
+      {
+        "name": "msg",
+        "type": "string",
+        "description": "Initialize your book first time. finalize the year initialized"
+      },
+      {
+        "name": "received",
+        "type": "string",
+        "description": "Initialize your server first time finalize the year initialized"
+      },
+      {
+        "name": "received_at",
+        "type": "string",
+        "description": "Initialize money first time finalize the year initialized"
+      }
+    ],
+    "error_codes": [
+      {
+        "code": "error_param",
+        "description": "There is an action_token in query"
+      },
+      {
+        "code": "error_proc",
+        "description": "Invalid global_token"
+      },
+      {
+        "code": "error_received",
+        "description": "No permission to accept api"
+      },
+      {
+        "code": "error_global",
+        "description": "There is no global id in query"
+      },
+      {
+        "code": "error_token",
+        "description": "Invalid token"
+      }
+    ],
+    "notes": "The documentation includes request parameters, response parameters, and error codes with detailed descriptions. The endpoint appears to be related to product category recommendations in a global context.",
+    "chunk_metadata": {
+      "index": 1,
+      "total": 1,
+      "y_start": 0,
+      "y_end": 4881,
+      "overlap_top": 0,
+      "overlap_bottom": 0,
+      "height": 4881,
+      "path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\workspaces\\v2.global_product.category_recommend\\chunks\\chunk_001.png",
+      "filename": "chunk_001.png",
+      "width": 837
+    },
+    "analysis_timestamp": "2025-10-10T05:45:04.968818",
+    "model": "claude-3-5-sonnet-20241022"
+  }
+]

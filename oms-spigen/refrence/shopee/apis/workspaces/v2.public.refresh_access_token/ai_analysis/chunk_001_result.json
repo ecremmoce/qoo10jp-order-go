@@ -1,0 +1,80 @@
+{
+  "chunk_index": 1,
+  "total_chunks": 1,
+  "endpoint": null,
+  "method": null,
+  "description": null,
+  "update_log": [],
+  "hidden_fields": [],
+  "parameters": [
+    {
+      "name": "URL",
+      "type": "string",
+      "required": true,
+      "description": "API endpoint base URLs shown in Common Parameters section",
+      "children": []
+    },
+    {
+      "name": "version_id",
+      "type": "string",
+      "required": true,
+      "description": "Required parameter",
+      "children": []
+    },
+    {
+      "name": "access_id",
+      "type": "string",
+      "required": true,
+      "description": "Required parameter that identifies the API call source",
+      "children": []
+    },
+    {
+      "name": "timestamp",
+      "type": "string",
+      "required": true,
+      "description": "The timestamp when making the request",
+      "children": []
+    },
+    {
+      "name": "msg_id",
+      "type": "string",
+      "required": false,
+      "description": "Parameter to prevent duplicate requests",
+      "children": []
+    }
+  ],
+  "response_fields": [],
+  "error_codes": [
+    {
+      "code": "error_system",
+      "description": "System error"
+    },
+    {
+      "code": "error_param",
+      "description": "Parameter error"
+    },
+    {
+      "code": "error_sign",
+      "description": "Signature error"
+    },
+    {
+      "code": "error_internal",
+      "description": "Internal error"
+    }
+  ],
+  "notes": "This appears to be an API documentation showing common parameters and error codes. The documentation includes request parameter examples and response examples, though they are partially cut off in the image. The documentation seems to be for some kind of service API with authentication and request signing requirements.",
+  "chunk_metadata": {
+    "index": 1,
+    "total": 1,
+    "y_start": 0,
+    "y_end": 5336,
+    "overlap_top": 0,
+    "overlap_bottom": 0,
+    "height": 5336,
+    "path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\workspaces\\v2.public.refresh_access_token\\chunks\\chunk_001.png",
+    "filename": "chunk_001.png",
+    "width": 837
+  },
+  "analysis_timestamp": "2025-10-10T06:38:10.791943",
+  "model": "claude-3-5-sonnet-20241022"
+}

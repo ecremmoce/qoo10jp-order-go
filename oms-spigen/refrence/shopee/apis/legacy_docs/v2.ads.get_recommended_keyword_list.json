@@ -1,0 +1,76 @@
+{
+  "endpoint": "ads_get_recommended_keyword_list",
+  "method": "GET",
+  "description": "API endpoint for retrieving recommended keywords",
+  "parameters": [
+    {
+      "name": "access_token",
+      "type": "string",
+      "required": true,
+      "description": "Required authorization token",
+      "children": []
+    },
+    {
+      "name": "prog_id",
+      "type": "string",
+      "required": false,
+      "description": null,
+      "children": []
+    },
+    {
+      "name": "opt",
+      "type": "string",
+      "required": false,
+      "description": "Suggests unique identifier for a prog. Required params to start PNS",
+      "children": []
+    }
+  ],
+  "response_fields": [
+    {
+      "name": "error",
+      "type": "string",
+      "description": "Error code details when an error returned",
+      "children": []
+    },
+    {
+      "name": "message",
+      "type": "string",
+      "description": "Error description",
+      "children": []
+    },
+    {
+      "name": "request_id",
+      "type": "string",
+      "description": "Request ID unique to each request",
+      "children": []
+    },
+    {
+      "name": "suggested_keywords",
+      "type": "array",
+      "description": "Suggested keywords recommended from program",
+      "children": []
+    },
+    {
+      "name": "sample_size",
+      "type": "integer",
+      "description": "Size of sample dataset used",
+      "children": []
+    }
+  ],
+  "update_log": [
+    {
+      "date": "2025-08-18",
+      "change": "Search logs for more parameters"
+    }
+  ],
+  "hidden_fields": [],
+  "metadata": {
+    "total_chunks": 1,
+    "chunks_with_errors": 0,
+    "total_parameters_before_dedup": 3,
+    "total_parameters_after_dedup": 3,
+    "update_log_entries": 1,
+    "hidden_fields_count": 0,
+    "source_results": "workspaces\\v2.ads.get_recommended_keyword_list\\results\\all_chunks_results.json"
+  }
+}

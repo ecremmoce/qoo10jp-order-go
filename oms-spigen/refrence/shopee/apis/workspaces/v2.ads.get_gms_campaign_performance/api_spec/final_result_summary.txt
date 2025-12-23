@@ -1,0 +1,42 @@
+======================================================================
+API SPECIFICATION SUMMARY
+======================================================================
+
+Endpoint: None None
+
+Parameters (4):
+----------------------------------------------------------------------
+* url_type (string)
+   URL type
+* file_name (string)
+* content_type (string)
+* unique_id (string)
+
+Response Fields (1):
+----------------------------------------------------------------------
+  get_presigned_url (object)
+   Pre-signed URL response object
+    url (string)
+     The pre-signed URL
+    fields (object)
+     Fields required for the upload
+      key (string)
+      x-amz-credential (string)
+      x-amz-algorithm (string)
+      x-amz-date (string)
+      policy (string)
+      x-amz-signature (string)
+
+Metadata:
+----------------------------------------------------------------------
+  total_chunks: 1
+  chunks_with_errors: 0
+  total_parameters_before_dedup: 4
+  total_parameters_after_dedup: 4
+  update_log_entries: 0
+  hidden_fields_count: 0
+  source_results: workspaces\v2.ads.get_gms_campaign_performance\results\all_chunks_results.json
+
+======================================================================
+Legend: * = required parameter
+======================================================================

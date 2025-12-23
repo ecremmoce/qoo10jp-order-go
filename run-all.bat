@@ -1,11 +1,11 @@
 @echo off
 chcp 65001 > nul
 echo =================================
-echo   Qoo10JP Order Collector
+echo   Shopee Order Collector
 echo =================================
 
 echo 1. Building Application...
-go build -o qoo10jp-order.exe cmd/main.go
+go build -o shopee-order-go.exe cmd/main.go
 
 if %ERRORLEVEL% NEQ 0 (
     echo ERROR: Build Failed!
@@ -20,7 +20,7 @@ echo    - Worker will start automatically
 echo    - Check: http://localhost:8080/api/v1/health
 echo.
 
-start "Qoo10JP Order Collector" qoo10jp-order.exe
+start "Shopee Order Collector" shopee-order-go.exe
 
 echo 3. Waiting 5 seconds for startup...
 timeout /t 5 /nobreak > nul

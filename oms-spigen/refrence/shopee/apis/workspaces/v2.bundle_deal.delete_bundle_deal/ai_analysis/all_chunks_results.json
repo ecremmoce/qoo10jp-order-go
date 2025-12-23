@@ -1,0 +1,110 @@
+[
+  {
+    "chunk_index": 1,
+    "total_chunks": 1,
+    "endpoint": "/locale/add_locale_locale_del",
+    "method": null,
+    "description": null,
+    "update_log": [
+      {
+        "date": "2020-08-04",
+        "change": "Add log for locale parameters"
+      },
+      {
+        "date": "2020-07-24",
+        "change": "Add link parameter description"
+      },
+      {
+        "date": "2020-06-24",
+        "change": "Optimize the change information of Request Parameter and Response Parameter"
+      },
+      {
+        "date": "2017-04-21",
+        "change": "Update"
+      },
+      {
+        "date": "2017-03-01",
+        "change": "New API"
+      }
+    ],
+    "parameters": [
+      {
+        "name": "partner_id",
+        "type": "string",
+        "required": true,
+        "description": "Partner ID, a required open repository is successful",
+        "children": []
+      },
+      {
+        "name": "access_token",
+        "type": "string",
+        "required": true,
+        "description": "This is the access key token, using to identify your permission to use our. Need the method can access service in here.",
+        "children": []
+      },
+      {
+        "name": "shop_id",
+        "type": "string",
+        "required": false,
+        "description": "Shopid's unique identifier for a shop. Required please for merchants",
+        "children": []
+      },
+      {
+        "name": "locale_desc_id",
+        "type": "string",
+        "required": true,
+        "description": "Shopid's unique identifier for a locale deal",
+        "children": []
+      }
+    ],
+    "response_fields": [
+      {
+        "name": "error",
+        "type": "string",
+        "description": "Include error type if not empty. Empty if no error",
+        "children": []
+      },
+      {
+        "name": "message",
+        "type": "string",
+        "description": "Include error details if not error. Empty if no message",
+        "children": []
+      },
+      {
+        "name": "request_id",
+        "type": "string",
+        "description": "The identifier of this API request for error",
+        "children": []
+      }
+    ],
+    "error_codes": [
+      {
+        "code": "error_locale_not_exist",
+        "description": "The locale cannot be found"
+      },
+      {
+        "code": "error_partner",
+        "description": "There is no access, token is yours"
+      },
+      {
+        "code": "error_param",
+        "description": "Missing parameter"
+      }
+    ],
+    "notes": "The documentation shows both request/response parameters and error codes. Some URLs are shown but partially truncated. The API appears to be related to locale management functionality.",
+    "chunk_metadata": {
+      "index": 1,
+      "total": 1,
+      "y_start": 0,
+      "y_end": 4533,
+      "overlap_top": 0,
+      "overlap_bottom": 0,
+      "height": 4533,
+      "path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\workspaces\\v2.bundle_deal.delete_bundle_deal\\chunks\\chunk_001.png",
+      "filename": "chunk_001.png",
+      "width": 837
+    },
+    "analysis_timestamp": "2025-10-10T05:33:47.576414",
+    "model": "claude-3-5-sonnet-20241022"
+  }
+]

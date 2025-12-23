@@ -1,0 +1,60 @@
+{
+  "chunk_index": 1,
+  "endpoint": null,
+  "method": null,
+  "description": null,
+  "parameters": [
+    {
+      "name": "saturday",
+      "type": "object",
+      "required": true,
+      "description": "The restrictions specific for Saturday",
+      "children": [
+        {
+          "name": "mandatory",
+          "type": "boolean",
+          "required": true,
+          "description": "If this value is true, they must be marked as open"
+        },
+        {
+          "name": "minimum_special_reg_hour",
+          "type": "int64",
+          "required": true,
+          "description": "Minimum number of hours required for the seller to operate on that day"
+        },
+        {
+          "name": "minimum_start_time",
+          "type": "string",
+          "required": true,
+          "description": "The start hour for that day should not be set earlier than this time"
+        },
+        {
+          "name": "minimum_end_time",
+          "type": "string",
+          "required": true,
+          "description": "The end hour for that day should not be set earlier than this time"
+        },
+        {
+          "name": "operating_24_hr",
+          "type": "boolean",
+          "required": true,
+          "description": "If the toggle value is true, the user can set the start_time to 00:00 and the end_time to 23:59 to indicate that the shop is operating 24 hours a day"
+        }
+      ]
+    }
+  ],
+  "response_fields": [],
+  "chunk_metadata": {
+    "index": 1,
+    "total": 3,
+    "y_start": 0,
+    "y_end": 8000,
+    "overlap_top": 0,
+    "overlap_bottom": 500,
+    "height": 8000,
+    "path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\workspaces\\v2.logistics.get_operating_hour_restrictions\\chunks\\chunk_001.png",
+    "filename": "chunk_001.png",
+    "width": 837
+  },
+  "chunk_path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\workspaces\\v2.logistics.get_operating_hour_restrictions\\chunks\\chunk_001.png"
+}

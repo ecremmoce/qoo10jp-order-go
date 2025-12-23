@@ -1,0 +1,80 @@
+[
+  {
+    "chunk_index": 1,
+    "total_chunks": 1,
+    "endpoint": null,
+    "method": null,
+    "description": null,
+    "update_log": [],
+    "hidden_fields": [],
+    "parameters": [
+      {
+        "name": "time_stamp",
+        "type": "string",
+        "required": true,
+        "description": "Request timestamp",
+        "children": []
+      },
+      {
+        "name": "sign",
+        "type": "string",
+        "required": true,
+        "description": "Request signature",
+        "children": []
+      },
+      {
+        "name": "fields",
+        "type": "string",
+        "required": false,
+        "description": "Fields to be returned in response",
+        "children": []
+      },
+      {
+        "name": "locale",
+        "type": "string",
+        "required": false,
+        "description": "Language code",
+        "children": []
+      },
+      {
+        "name": "currency",
+        "type": "string",
+        "required": false,
+        "description": "Currency code",
+        "children": []
+      }
+    ],
+    "response_fields": [
+      {
+        "name": "error_code",
+        "type": "integer",
+        "description": "Error code"
+      },
+      {
+        "name": "error_msg",
+        "type": "string",
+        "description": "Error message"
+      },
+      {
+        "name": "request_id",
+        "type": "string",
+        "description": "Request ID"
+      }
+    ],
+    "notes": "The image shows a standard API documentation page with common parameters and response fields. There appears to be more content below but it's cut off. The documentation includes request examples and response examples sections that are partially visible but not fully readable.",
+    "chunk_metadata": {
+      "index": 1,
+      "total": 1,
+      "y_start": 0,
+      "y_end": 5985,
+      "overlap_top": 0,
+      "overlap_bottom": 0,
+      "height": 5985,
+      "path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\workspaces\\v2.bundle_deal.get_bundle_deal_list\\chunks\\chunk_001.png",
+      "filename": "chunk_001.png",
+      "width": 837
+    },
+    "analysis_timestamp": "2025-10-10T05:34:55.328234",
+    "model": "claude-3-5-sonnet-20241022"
+  }
+]

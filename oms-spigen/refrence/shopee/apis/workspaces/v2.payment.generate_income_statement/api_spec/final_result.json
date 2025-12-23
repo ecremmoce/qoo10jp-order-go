@@ -1,0 +1,82 @@
+{
+  "endpoint": "v2/payment/generate_income_statement",
+  "method": "POST",
+  "description": "Generate income statement request",
+  "parameters": [
+    {
+      "name": "partner_id",
+      "type": "int",
+      "required": true,
+      "description": "Platform id, must match with registered id in merchant side.",
+      "children": []
+    },
+    {
+      "name": "timestamp",
+      "type": "timestamp",
+      "required": true,
+      "description": "API request timestamp in milliseconds",
+      "children": []
+    },
+    {
+      "name": "income_token",
+      "type": "string",
+      "required": true,
+      "description": "The age. Valid for multiple use and expires in 4 hours",
+      "children": []
+    },
+    {
+      "name": "time_id",
+      "type": "int",
+      "required": true,
+      "description": "Statement time identifier for a week",
+      "children": []
+    },
+    {
+      "name": "sign",
+      "type": "string",
+      "required": true,
+      "description": "Request signing parameter",
+      "children": []
+    }
+  ],
+  "response_fields": [
+    {
+      "name": "response",
+      "type": "object",
+      "description": "Response object",
+      "children": [
+        {
+          "name": "id",
+          "type": "int",
+          "description": "identifier of income statement file"
+        },
+        {
+          "name": "error",
+          "type": "string",
+          "description": "error code"
+        },
+        {
+          "name": "message",
+          "type": "string",
+          "description": "error message"
+        }
+      ]
+    }
+  ],
+  "update_log": [
+    {
+      "date": "2024-01-12",
+      "change": "Update the description of the time"
+    }
+  ],
+  "hidden_fields": [],
+  "metadata": {
+    "total_chunks": 1,
+    "chunks_with_errors": 0,
+    "total_parameters_before_dedup": 5,
+    "total_parameters_after_dedup": 5,
+    "update_log_entries": 1,
+    "hidden_fields_count": 0,
+    "source_results": "workspaces\\v2.payment.generate_income_statement\\results\\all_chunks_results.json"
+  }
+}

@@ -1,0 +1,118 @@
+[
+  {
+    "chunk_index": 1,
+    "total_chunks": 1,
+    "endpoint": null,
+    "method": null,
+    "description": null,
+    "update_log": [
+      {
+        "date": "2023-01-31",
+        "change": "Updated error codes"
+      },
+      {
+        "date": "2022-05-25",
+        "change": "Fixed a newly detected error"
+      },
+      {
+        "date": "2022-04-28",
+        "change": "Added the latest definition of ProjectNumber and Resource numbers"
+      }
+    ],
+    "parameters": [
+      {
+        "name": "url",
+        "type": "string",
+        "required": true,
+        "description": "API endpoint URL",
+        "children": []
+      },
+      {
+        "name": "url_protocol",
+        "type": "string",
+        "required": true,
+        "description": null,
+        "children": []
+      },
+      {
+        "name": "test_url",
+        "type": "string",
+        "required": true,
+        "description": null,
+        "children": []
+      },
+      {
+        "name": "develop_url",
+        "type": "string",
+        "required": true,
+        "description": null,
+        "children": []
+      },
+      {
+        "name": "source",
+        "type": "string",
+        "required": true,
+        "description": null,
+        "children": []
+      },
+      {
+        "name": "marketing",
+        "type": "string",
+        "required": true,
+        "description": "Request ID",
+        "children": []
+      },
+      {
+        "name": "userid_value",
+        "type": "string",
+        "required": true,
+        "description": null,
+        "children": []
+      },
+      {
+        "name": "timestamp",
+        "type": "string",
+        "required": true,
+        "description": "The timestamp of web time",
+        "children": []
+      },
+      {
+        "name": "signature",
+        "type": "string",
+        "required": true,
+        "description": "The security rule will request to sort",
+        "children": []
+      },
+      {
+        "name": "utf_8",
+        "type": "string",
+        "required": true,
+        "description": "The character set should be utf-8",
+        "children": []
+      },
+      {
+        "name": "api_key",
+        "type": "string",
+        "required": true,
+        "description": "Request unique identifier for an api or test",
+        "children": []
+      }
+    ],
+    "response_fields": [],
+    "notes": "The documentation appears to be for an API authentication/configuration setup, with various URL endpoints and security parameters. Some parameter descriptions are missing or incomplete. The image shows both required parameters and example responses, though the response structure is not fully visible.",
+    "chunk_metadata": {
+      "index": 1,
+      "total": 1,
+      "y_start": 0,
+      "y_end": 5089,
+      "overlap_top": 0,
+      "overlap_bottom": 0,
+      "height": 5089,
+      "path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\workspaces\\v2.add_on_deal.get_add_on_deal_list\\chunks\\chunk_001.png",
+      "filename": "chunk_001.png",
+      "width": 837
+    },
+    "analysis_timestamp": "2025-10-10T05:25:31.898429",
+    "model": "claude-3-5-sonnet-20241022"
+  }
+]

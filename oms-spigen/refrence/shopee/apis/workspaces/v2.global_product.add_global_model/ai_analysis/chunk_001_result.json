@@ -1,0 +1,71 @@
+{
+  "chunk_index": 1,
+  "total_chunks": 1,
+  "endpoint": null,
+  "method": null,
+  "description": null,
+  "update_log": [
+    {
+      "date": "2023-06-16",
+      "change": "Added get_sign API"
+    },
+    {
+      "date": "2023-05-22",
+      "change": "Added get_token API"
+    }
+  ],
+  "hidden_fields": [],
+  "parameters": [
+    {
+      "name": "sign_version",
+      "type": "string",
+      "required": true,
+      "description": "Sign version, value is v1",
+      "children": []
+    },
+    {
+      "name": "app_key",
+      "type": "string",
+      "required": true,
+      "description": "App key",
+      "children": []
+    },
+    {
+      "name": "access_token",
+      "type": "string",
+      "required": true,
+      "description": "Access token",
+      "children": []
+    },
+    {
+      "name": "timestamp",
+      "type": "integer",
+      "required": true,
+      "description": "Current timestamp in milliseconds",
+      "children": []
+    },
+    {
+      "name": "sign",
+      "type": "string",
+      "required": true,
+      "description": "Request signature",
+      "children": []
+    }
+  ],
+  "response_fields": [],
+  "notes": "The image appears to be API documentation showing common parameters and an update log. There are code samples and additional details that appear to be implementation-related, but they're not structured as formal parameters. The documentation seems to be for authentication/authorization related endpoints based on the parameter names (sign, app_key, access_token, etc.).",
+  "chunk_metadata": {
+    "index": 1,
+    "total": 1,
+    "y_start": 0,
+    "y_end": 6731,
+    "overlap_top": 0,
+    "overlap_bottom": 0,
+    "height": 6731,
+    "path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\workspaces\\v2.global_product.add_global_model\\chunks\\chunk_001.png",
+    "filename": "chunk_001.png",
+    "width": 837
+  },
+  "analysis_timestamp": "2025-10-10T05:44:50.208978",
+  "model": "claude-3-5-sonnet-20241022"
+}

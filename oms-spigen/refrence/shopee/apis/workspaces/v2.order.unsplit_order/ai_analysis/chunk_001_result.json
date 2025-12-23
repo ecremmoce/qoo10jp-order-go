@@ -1,0 +1,142 @@
+{
+  "chunk_index": 1,
+  "total_chunks": 1,
+  "endpoint": "/order/cancel_order",
+  "method": null,
+  "description": "Order cancellation API",
+  "update_log": [
+    {
+      "date": "2023-09-15",
+      "change": "update the API description"
+    }
+  ],
+  "parameters": [
+    {
+      "name": "request_id",
+      "type": "string",
+      "required": true,
+      "description": "Request unique identifier for a order",
+      "children": []
+    }
+  ],
+  "response_fields": [
+    {
+      "name": "error",
+      "type": "string",
+      "required": false,
+      "description": "Indicate error first if error. Empty if no error happened",
+      "children": []
+    },
+    {
+      "name": "message",
+      "type": "string",
+      "required": false,
+      "description": "Indicate error message if an error. Empty if no error happened",
+      "children": []
+    },
+    {
+      "name": "request_id",
+      "type": "string",
+      "required": false,
+      "description": "The identifier of the API request for error tracing",
+      "children": []
+    }
+  ],
+  "error_codes": [
+    {
+      "code": "error_not_found",
+      "description": "Wrong parameter: detail {msg}"
+    },
+    {
+      "code": "error_parent",
+      "description": "Wrong parameter: detail {msg}"
+    },
+    {
+      "code": "error_permission",
+      "description": "Does not permitted"
+    },
+    {
+      "code": "error_token",
+      "description": "System error: Please try again later"
+    },
+    {
+      "code": "error_common_valid_path",
+      "description": "Cannot valid path this order"
+    },
+    {
+      "code": "error_order_point_limit",
+      "description": "Order limit exceed or again later"
+    },
+    {
+      "code": "error_parent",
+      "description": "Invalid public_token"
+    },
+    {
+      "code": "error_parent",
+      "description": "Invalid point_id"
+    },
+    {
+      "code": "error_parent",
+      "description": "There is no active_token in param"
+    },
+    {
+      "code": "error_parent",
+      "description": "No permission to cancel api"
+    },
+    {
+      "code": "error_parent",
+      "description": "There is no gift order"
+    },
+    {
+      "code": "error_sign",
+      "description": "Wrong sign"
+    },
+    {
+      "code": "error_parent",
+      "description": "No permission"
+    },
+    {
+      "code": "error_timeout",
+      "description": "Invalid timestamp"
+    },
+    {
+      "code": "error_request",
+      "description": "Invalid http url token"
+    },
+    {
+      "code": "error_des",
+      "description": "Invalid desc verify"
+    },
+    {
+      "code": "error_parent",
+      "description": "Parameter invalid"
+    },
+    {
+      "code": "error_parent",
+      "description": "The parameters put update is not found"
+    },
+    {
+      "code": "error_parent",
+      "description": "Something wrong. Please try later"
+    },
+    {
+      "code": "error_parent",
+      "description": "Cannot not find pictures"
+    }
+  ],
+  "notes": "The documentation shows a complete API specification for order cancellation with extensive error codes. Multiple HTTP endpoints are shown but the primary one appears to be for order cancellation. The API requires authentication based on the error codes related to tokens and permissions.",
+  "chunk_metadata": {
+    "index": 1,
+    "total": 1,
+    "y_start": 0,
+    "y_end": 4259,
+    "overlap_top": 0,
+    "overlap_bottom": 0,
+    "height": 4259,
+    "path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\workspaces\\v2.order.unsplit_order\\chunks\\chunk_001.png",
+    "filename": "chunk_001.png",
+    "width": 837
+  },
+  "analysis_timestamp": "2025-10-10T06:18:14.757447",
+  "model": "claude-3-5-sonnet-20241022"
+}

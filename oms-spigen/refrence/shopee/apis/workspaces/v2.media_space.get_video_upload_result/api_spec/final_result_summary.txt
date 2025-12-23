@@ -1,0 +1,57 @@
+======================================================================
+API SPECIFICATION SUMMARY
+======================================================================
+
+Endpoint: None /checkin/special/offer
+
+Parameters (6):
+----------------------------------------------------------------------
+* url (string)
+   Third parties' checkin service check/checkin_special_offer_upload_result
+  pic (string)
+  Url_pic (string)
+   Image url
+  pic_url (string)
+* detail (object)
+   Request data details
+  upload (string)
+   Upload url
+
+Response Fields (11):
+----------------------------------------------------------------------
+  error_code (integer)
+   There is an error, please try again
+  error_msg (string)
+   Invalid access_token
+  error_message (string)
+   There is no other_id in event
+  error_present (string)
+   The parameter is must have
+  error_right (string)
+   There is no right to pass
+  error_expired (string)
+   It's overdue
+  error_parameter (string)
+   Invalid Parameter
+  error_fail (string)
+   Until this one failed
+  error_file (string)
+   Store failed
+  error_exist (string)
+   Parameter exist
+  error_product (string)
+   The product has passed or fail trust
+
+Metadata:
+----------------------------------------------------------------------
+  total_chunks: 1
+  chunks_with_errors: 0
+  total_parameters_before_dedup: 6
+  total_parameters_after_dedup: 6
+  update_log_entries: 0
+  hidden_fields_count: 0
+  source_results: workspaces\v2.media_space.get_video_upload_result\results\all_chunks_results.json
+
+======================================================================
+Legend: * = required parameter
+======================================================================

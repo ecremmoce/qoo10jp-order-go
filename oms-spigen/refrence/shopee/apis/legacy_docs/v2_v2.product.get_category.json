@@ -1,0 +1,10 @@
+{
+  "document_id": "v2/v2.product.get_category",
+  "document_type": "api",
+  "url": "https://open.shopee.com/documents/v2/v2.product.get_category?module=89&type=1",
+  "platform": "shopee",
+  "crawled_at": "2025-10-13T06:10:55",
+  "content": "",
+  "html_path": "phase1_poc\\output\\page.html",
+  "screenshot_path": "phase1_poc\\output\\screenshot.png"
+}

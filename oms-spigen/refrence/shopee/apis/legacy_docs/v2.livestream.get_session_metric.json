@@ -1,0 +1,105 @@
+{
+  "endpoint": "/v1/federation/get_session_stats",
+  "method": "GET",
+  "description": "Get federation session statistics data",
+  "parameters": [
+    {
+      "name": "domain_id",
+      "type": "string",
+      "required": true,
+      "description": "The identifier of stream session",
+      "children": []
+    }
+  ],
+  "response_fields": [
+    {
+      "name": "time",
+      "type": "string",
+      "description": "Sample time line time Array (in min)",
+      "children": []
+    },
+    {
+      "name": "timeline",
+      "type": "string",
+      "description": "Sample time stats timeline (in min)",
+      "children": []
+    },
+    {
+      "name": "audience",
+      "type": "object",
+      "description": "The number of end users during live streaming",
+      "children": []
+    },
+    {
+      "name": "rtc",
+      "type": "float",
+      "description": "Digital dimensions you are serving",
+      "children": []
+    },
+    {
+      "name": "pn",
+      "type": "float",
+      "description": "Value of output video card and sound card by system",
+      "children": []
+    },
+    {
+      "name": "dt",
+      "type": "float",
+      "description": "Number of dropped video frames by system",
+      "children": []
+    },
+    {
+      "name": "dr",
+      "type": "float",
+      "description": "Number of product cards display by number of products",
+      "children": []
+    },
+    {
+      "name": "views",
+      "type": "float",
+      "description": "Number of views during the timeline",
+      "children": []
+    },
+    {
+      "name": "unique_user_cnt",
+      "type": "float",
+      "description": "Number of unique users",
+      "children": []
+    },
+    {
+      "name": "new_cnt",
+      "type": "float",
+      "description": "Number of new added follow members",
+      "children": []
+    },
+    {
+      "name": "comments",
+      "type": "float",
+      "description": "Number of comments sent during live streaming",
+      "children": []
+    },
+    {
+      "name": "shares",
+      "type": "float",
+      "description": "Number of times shared during the stream",
+      "children": []
+    },
+    {
+      "name": "avg_watching_duration",
+      "type": "float",
+      "description": "Average of linear duration watching a live stream",
+      "children": []
+    }
+  ],
+  "update_log": [],
+  "hidden_fields": [],
+  "metadata": {
+    "total_chunks": 1,
+    "chunks_with_errors": 0,
+    "total_parameters_before_dedup": 1,
+    "total_parameters_after_dedup": 1,
+    "update_log_entries": 0,
+    "hidden_fields_count": 0,
+    "source_results": "workspaces\\v2.livestream.get_session_metric\\results\\all_chunks_results.json"
+  }
+}

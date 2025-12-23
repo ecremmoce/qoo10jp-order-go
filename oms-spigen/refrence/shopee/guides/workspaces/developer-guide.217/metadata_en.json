@@ -1,0 +1,64 @@
+{
+  "document_id": "developer-guide.217",
+  "document_type": "guide",
+  "platform": "shopee",
+  "extracted_at": "2025-10-16T08:33:05",
+  "extracted_text": "# API Call Flow Overview\n\n*Bold text is a required process, General text is not required process*\n\n## 1. Creating Product\n\n**Start**\n↓\n**initial_user_webhook_user**\n↓\n**selling_price.list.user_selling_currency** (Optional)\n↓\n**master_attributes.product_type** (Optional)\n↓\n**selling_location.user_selling_location** (Optional)\n↓\n**channel_product.get.linked.product_field** (Optional)\n↓\n**product.get.category**\n↓\n**product.get.reference**\n↓\n**product_search_by.id**\n↓\n**product.create.V2**\n↓\n**product.image.push**\n↓\n**product.create.qc.approval** ← **push.product.qc.result**\n↓\n**End**\n\n---\n\n## 2. Creating Global Product\n\n**Start**\n↓\n**initial_user.webhook_user**\n↓\n**selling_price.list.user_selling_currency** (Optional)\n↓\n**Temp.logistics.detail.product.Type** (Optional)\n↓\n**selling_location.user_selling_location** (Optional)\n↓\n**master_attributes.get.global_category_id** (Optional)\n↓\n**global_product.get.global_item.list**\n↓\n**global_product.get.reference**\n↓\n**Global_product.get.product.id**\n↓\n**global.V2.create.product**\n↓\n**global.V2.product.image.push**\n↓\n**global.product.qc.result.check**\n↓\n**global.product.qc.approval** ← **push.product.qc.result**\n↓\n**End**\n\n---\n\n## 3. Publishing Global Product\n\n**Start**\n↓\n**global_product.get_publishable_shop**\n↓\n**logistics.get_channel_list**\n↓\n**global_product.create_publish_task**\n↓\n**global_product.get_publish_task_result**\n↓\n**global_product.get_published_list**\n↓\n**End**\n\n---\n\n# Data Definition\n\n## Attribute value data type\n(input_validation_type)\n- INT_TYPE\n- STRING_TYPE\n- ENUM_TYPE\n- FLOAT_TYPE\n- TIMESTAMP_TYPE\n- DATE_TYPE\n\n## Attribute input type\n(input_type)\n- DROP_DOWN\n- TEXT_FILED\n- COMBO_BOX\n- MULTIPLE_SELECT\n- MULTIPLE_SELECT_COMBO_BOX\n\n## Logistics type\n(fee_type)\n- SIZE_SELECTION\n- SIZE_INPUT\n- FIXED_DEFAULT_PRICE\n- CUSTOM_PRICE\n\n## Item status type\n(item_status)\n- NORMAL\n- DELETED\n- BANNED\n- UNLIST\n\n## Translation language\n(language)\n- zh-hans: Simplified Chinese\n- zh-hant: Traditional Chinese\n- ms-my: Malay\n- en-my: English (Malaysia)\n- en: English\n- id: Indonesian\n- vi: Vietnamese\n- th: Thai\n- pt-br: Portuguese\n- es-mx: Spanish (Mexican)\n- pl: Polish\n- es-CO: Spanish (Colombia)\n- es-CL: Spanish (Chile)\n\n## Stock type\n(stock_type)\n- 1: Shopee Warehouse stock\n- 2: Seller stock\n\n## Product promotion type\n(promotion_type)\n- Campaign\n- Discount Promotions\n- Flash Sale\n- Whole Sale\n- Group Buy\n- Bundle Deal\n- Welcome Package\n- Add-on Discount\n- Brand Sale\n- In ShopFlash Sale\n- Gift with purchase\n- Exclusive Price\n\n## Market Code\n- SG: Singapore\n- MY: Malaysia\n- TW: Taiwan\n- ID: Indonesia\n- VN: Vietnam\n- TH: Thailand\n- BR: Brazil\n- PH: Philippines\n- MX: Mexico\n- CO: Colombia\n- CL: Chile\n- PL: Poland",
+  "metadata": {
+    "title": "API Call Flow Overview",
+    "summary": "This guide provides an overview of the API call flows for creating products, creating global products, and publishing global products. It outlines the required and optional processes involved in each flow, offering a structured approach to API integration.",
+    "keywords": [
+      "API call flow",
+      "product creation",
+      "global product",
+      "publishing",
+      "workflow",
+      "API integration"
+    ],
+    "category": "Integration",
+    "tags": [
+      "API",
+      "workflow",
+      "product",
+      "global product",
+      "publishing"
+    ],
+    "difficulty": "medium",
+    "importance": 4,
+    "use_cases": [
+      "Integrating with a product creation API",
+      "Automating global product listing",
+      "Orchestrating product publishing workflows",
+      "Understanding API dependencies for product management"
+    ],
+    "related_apis": [
+      "initial_user_webhook_user",
+      "selling_price.list.user_selling_currency",
+      "master_attributes.product_type",
+      "selling_location.user_selling_location",
+      "channel_product.get.linked.product_field",
+      "product.get.category",
+      "product.get.reference",
+      "product_search_by.id",
+      "product.create.V2",
+      "product.image.push",
+      "product.create.qc.approval",
+      "push.product.qc.result",
+      "initial_user.webhook_user",
+      "Temp.logistics.detail.product.Type",
+      "master_attributes.get.global_category_id",
+      "global_product.get.global_item.list",
+      "global_product.get.reference",
+      "Global_product.get.product.id",
+      "global.V2.create.product",
+      "global.V2.product.image.push",
+      "global.product.qc.result.check",
+      "global.product.qc.approval",
+      "global_product.get_publishable_shop",
+      "logistics.get_channel_list",
+      "global_product.create_publish_task",
+      "global_product.get_publish_task_result",
+      "global_product.get_published_list"
+    ]
+  }
+}

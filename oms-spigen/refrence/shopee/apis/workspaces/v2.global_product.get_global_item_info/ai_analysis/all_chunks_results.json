@@ -1,0 +1,134 @@
+[
+  {
+    "chunk_index": 1,
+    "endpoint": null,
+    "method": null,
+    "description": null,
+    "parameters": [],
+    "response_fields": [
+      {
+        "name": "error_param",
+        "type": "string",
+        "description": "no timestamp",
+        "children": []
+      },
+      {
+        "name": "error_param",
+        "type": "string",
+        "description": "Invalid timestamp",
+        "children": []
+      },
+      {
+        "name": "error_network",
+        "type": "string",
+        "description": "Inner http call failed",
+        "children": []
+      },
+      {
+        "name": "error_data",
+        "type": "string",
+        "description": "parse data failed",
+        "children": []
+      },
+      {
+        "name": "error_data",
+        "type": "string",
+        "description": "data not exist",
+        "children": []
+      },
+      {
+        "name": "error_param",
+        "type": "string",
+        "description": "parameter invalid",
+        "children": []
+      },
+      {
+        "name": "error_param",
+        "type": "string",
+        "description": "The information you queried is not found.",
+        "children": []
+      },
+      {
+        "name": "error_param",
+        "type": "string",
+        "description": "Wrong parameters, detail: {msg}",
+        "children": []
+      },
+      {
+        "name": "error_server",
+        "type": "string",
+        "description": "Something wrong. Please try later.",
+        "children": []
+      },
+      {
+        "name": "error_param",
+        "type": "string",
+        "description": "request not from gateway",
+        "children": []
+      }
+    ],
+    "chunk_metadata": {
+      "index": 1,
+      "total": 2,
+      "y_start": 0,
+      "y_end": 8000,
+      "overlap_top": 0,
+      "overlap_bottom": 500,
+      "height": 8000,
+      "path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\workspaces\\v2.global_product.get_global_item_info\\chunks\\chunk_001.png",
+      "filename": "chunk_001.png",
+      "width": 837
+    },
+    "chunk_path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\workspaces\\v2.global_product.get_global_item_info\\chunks\\chunk_001.png"
+  },
+  {
+    "chunk_index": 2,
+    "endpoint": null,
+    "method": null,
+    "description": "API Permissions and Update Log information",
+    "parameters": [],
+    "response_fields": [
+      {
+        "name": "API Permissions",
+        "type": "array",
+        "description": "APP types that can call this API: ERP System, Seller In House System, Product Management, Swarm ERP",
+        "children": []
+      },
+      {
+        "name": "Update Log",
+        "type": "array",
+        "description": "Log of updates",
+        "children": [
+          {
+            "name": "2025-02-18",
+            "type": "string",
+            "description": "add size_chart_id"
+          },
+          {
+            "name": "2025-02-17",
+            "type": "string",
+            "description": "add is_fulfillment_by_shopee"
+          },
+          {
+            "name": "2024-06-21",
+            "type": "string",
+            "description": "update the description of DTS"
+          }
+        ]
+      }
+    ],
+    "chunk_metadata": {
+      "index": 2,
+      "total": 2,
+      "y_start": 7250,
+      "y_end": 9230,
+      "overlap_top": 500,
+      "overlap_bottom": 0,
+      "height": 1980,
+      "path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\workspaces\\v2.global_product.get_global_item_info\\chunks\\chunk_002.png",
+      "filename": "chunk_002.png",
+      "width": 837
+    },
+    "chunk_path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\workspaces\\v2.global_product.get_global_item_info\\chunks\\chunk_002.png"
+  }
+]

@@ -1,0 +1,117 @@
+{
+  "chunk_index": 1,
+  "total_chunks": 1,
+  "endpoint": "/_sci_bet/bet/get_credence_list",
+  "method": null,
+  "description": null,
+  "update_log": [
+    {
+      "date": "2023-09-26",
+      "change": "update the request parameter 'region' from required to non-required"
+    }
+  ],
+  "parameters": [
+    {
+      "name": "content_id",
+      "type": "string",
+      "required": true,
+      "description": null,
+      "children": []
+    },
+    {
+      "name": "page_id",
+      "type": "int",
+      "required": true,
+      "description": null,
+      "children": []
+    },
+    {
+      "name": "sign",
+      "type": "string",
+      "required": true,
+      "description": "Required parameter to protect all get-bet, therefore, including when using '/api_get/credence', '/api/get/credence_list', '/api/get/credence_chart', '/api/predict_result'",
+      "children": []
+    }
+  ],
+  "response_fields": [
+    {
+      "name": "content_id",
+      "type": "string",
+      "description": "The identifier for all KOI request for story",
+      "children": []
+    },
+    {
+      "name": "time",
+      "type": "string",
+      "description": "Required parameter for all time. Request in this price",
+      "children": []
+    },
+    {
+      "name": "response",
+      "type": "object",
+      "description": "Indicate error before first query. Check if the error happened",
+      "children": []
+    },
+    {
+      "name": "suggest_credence_list",
+      "type": "object",
+      "description": null,
+      "children": []
+    },
+    {
+      "name": "topics_credence_id",
+      "type": "int",
+      "description": "The identify of topics' credence",
+      "children": []
+    },
+    {
+      "name": "suggest_credence_sum",
+      "type": "float",
+      "description": "The sum of suggest credence",
+      "children": []
+    },
+    {
+      "name": "response_method",
+      "type": "string",
+      "description": null,
+      "children": []
+    }
+  ],
+  "error_codes": [
+    {
+      "code": "error_no_found",
+      "description": "string parameter, when string"
+    },
+    {
+      "code": "error_permission",
+      "description": "sorry you don't have the permission. error string"
+    },
+    {
+      "code": "error_null",
+      "description": "There is no query, when is query"
+    },
+    {
+      "code": "error_param",
+      "description": "Invalid parameter_id"
+    },
+    {
+      "code": "error_network",
+      "description": "check http url failed"
+    }
+  ],
+  "notes": "The documentation shows multiple URL variants for Chinese Mainland, Chinese Simplified, and Direct access. There are extensive error codes listed beyond what I've captured, but I focused on the main ones clearly visible.",
+  "chunk_metadata": {
+    "index": 1,
+    "total": 1,
+    "y_start": 0,
+    "y_end": 4353,
+    "overlap_top": 0,
+    "overlap_bottom": 0,
+    "height": 4353,
+    "path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\workspaces\\v2.first_mile.get_channel_list\\chunks\\chunk_001.png",
+    "filename": "chunk_001.png",
+    "width": 837
+  },
+  "analysis_timestamp": "2025-10-10T05:40:12.791429",
+  "model": "claude-3-5-sonnet-20241022"
+}

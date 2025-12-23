@@ -1,0 +1,69 @@
+{
+  "chunk_index": 1,
+  "endpoint": null,
+  "method": null,
+  "description": null,
+  "parameters": [
+    {
+      "name": "source_identifier",
+      "type": "string",
+      "required": false,
+      "description": "external video identifier",
+      "children": []
+    },
+    {
+      "name": "source",
+      "type": "string",
+      "required": false,
+      "description": "video source (eg YouTube)",
+      "children": []
+    },
+    {
+      "name": "title",
+      "type": "string",
+      "required": false,
+      "description": "video title",
+      "children": []
+    }
+  ],
+  "response_fields": [
+    {
+      "name": "comments",
+      "type": "array",
+      "description": "Recent comments on this video",
+      "children": [
+        {
+          "name": "id",
+          "type": "integer",
+          "description": "Comment ID",
+          "children": []
+        },
+        {
+          "name": "parent_id",
+          "type": "integer",
+          "description": "Parent comment ID if this is a reply",
+          "children": []
+        },
+        {
+          "name": "text",
+          "type": "string",
+          "description": "Comment text content",
+          "children": []
+        }
+      ]
+    }
+  ],
+  "chunk_metadata": {
+    "index": 1,
+    "total": 2,
+    "y_start": 0,
+    "y_end": 8000,
+    "overlap_top": 0,
+    "overlap_bottom": 500,
+    "height": 8000,
+    "path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\workspaces\\v2.logistics.update_shipping_order\\chunks\\chunk_001.png",
+    "filename": "chunk_001.png",
+    "width": 837
+  },
+  "chunk_path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\workspaces\\v2.logistics.update_shipping_order\\chunks\\chunk_001.png"
+}

@@ -1,0 +1,87 @@
+{
+  "chunk_index": 1,
+  "total_chunks": 1,
+  "endpoint": null,
+  "method": null,
+  "description": null,
+  "update_log": [
+    {
+      "date": "2023-09-26",
+      "change": "API interface update"
+    },
+    {
+      "date": "2023-09-19",
+      "change": "Added new field"
+    },
+    {
+      "date": "2023-09-14",
+      "change": "Added new field"
+    }
+  ],
+  "hidden_fields": [],
+  "parameters": [
+    {
+      "name": "login_name",
+      "type": "string",
+      "required": true,
+      "description": "Login name",
+      "children": []
+    },
+    {
+      "name": "password",
+      "type": "string",
+      "required": true,
+      "description": "Password",
+      "children": []
+    },
+    {
+      "name": "captcha",
+      "type": "string",
+      "required": true,
+      "description": "Verification code",
+      "children": []
+    },
+    {
+      "name": "captcha_id",
+      "type": "string",
+      "required": true,
+      "description": "Verification code ID",
+      "children": []
+    }
+  ],
+  "response_fields": [
+    {
+      "name": "access_token",
+      "type": "string",
+      "description": "Access token",
+      "children": []
+    },
+    {
+      "name": "refresh_token",
+      "type": "string",
+      "description": "Refresh token",
+      "children": []
+    },
+    {
+      "name": "expires_in",
+      "type": "integer",
+      "description": "Token expiration time in seconds",
+      "children": []
+    }
+  ],
+  "notes": "This appears to be an authentication API endpoint documentation. The image shows both request parameters and response fields, with a recent update history. The documentation appears to be in a two-column layout with parameters and descriptions.",
+  "chunk_metadata": {
+    "index": 1,
+    "total": 1,
+    "y_start": 0,
+    "y_end": 7315,
+    "overlap_top": 0,
+    "overlap_bottom": 0,
+    "height": 7315,
+    "path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\workspaces\\v2.product.get_item_limit\\chunks\\chunk_001.png",
+    "filename": "chunk_001.png",
+    "width": 837
+  },
+  "analysis_timestamp": "2025-10-10T06:28:29.687763",
+  "model": "claude-3-5-sonnet-20241022"
+}

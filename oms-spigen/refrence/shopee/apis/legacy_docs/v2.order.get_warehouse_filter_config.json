@@ -1,0 +1,108 @@
+{
+  "endpoint": "v2/order/get_warehouse_filter_config",
+  "method": "GET",
+  "description": "For draft warehouse shops, obtain all parameters with privilege that have not been SWAPPED to pickup product, whether_id and address_id. Corresponding to 2 order/get_warehouse_deliver_config states (more logic about warehouse draft has been optimized that do not need product_number_id and time) (time has been SWAPPED), gets data that have same status like default warehouse with default product_whether_id and EDITED time",
+  "parameters": [
+    {
+      "name": "partner_id",
+      "type": "int",
+      "required": true,
+      "description": "Partner ID is assigned when registration is successful. Required for all requests.",
+      "children": []
+    },
+    {
+      "name": "timestamp",
+      "type": "timestamp",
+      "required": true,
+      "description": "This is to indicate the timestamp of the request. Required for all requests. Expires in 5 minutes.",
+      "children": []
+    },
+    {
+      "name": "access_token",
+      "type": "string",
+      "required": true,
+      "description": "The token for API access, using to identify your permission to the api. Used for multi-use and expires in 4 hours.",
+      "children": []
+    },
+    {
+      "name": "shop_id",
+      "type": "int",
+      "required": true,
+      "description": "Shopper's unique identifier for a shop. Required param for shop APIs.",
+      "children": []
+    },
+    {
+      "name": "warehouse_filter",
+      "type": "object",
+      "required": true,
+      "description": "",
+      "children": [
+        {
+          "name": "warehouse_name",
+          "type": "string",
+          "required": true,
+          "description": "The warehouse name field in when creating the warehouse address",
+          "children": []
+        },
+        {
+          "name": "warehouse_type",
+          "type": "int32",
+          "required": true,
+          "description": "Type of warehouse. Applicable values:\n1. Local Warehouse\n2. OS Warehouse",
+          "children": []
+        },
+        {
+          "name": "product_location_id",
+          "type": "string",
+          "required": true,
+          "description": "Location identifier for pickup. Different location_ids represent that your addresses are at different time status.",
+          "children": []
+        },
+        {
+          "name": "address_id",
+          "type": "int64",
+          "required": true,
+          "description": "Identify address",
+          "children": []
+        },
+        {
+          "name": "address",
+          "type": "string",
+          "required": true,
+          "description": "Detail address of your warehouse",
+          "children": []
+        }
+      ]
+    }
+  ],
+  "response_fields": [
+    {
+      "name": "error",
+      "type": "string",
+      "description": "Error code",
+      "children": []
+    },
+    {
+      "name": "message",
+      "type": "string",
+      "description": "Error message",
+      "children": []
+    }
+  ],
+  "update_log": [
+    {
+      "date": "2024-03-14",
+      "change": "New API"
+    }
+  ],
+  "hidden_fields": [],
+  "metadata": {
+    "total_chunks": 1,
+    "chunks_with_errors": 0,
+    "total_parameters_before_dedup": 5,
+    "total_parameters_after_dedup": 5,
+    "update_log_entries": 1,
+    "hidden_fields_count": 0,
+    "source_results": "workspaces\\v2.order.get_warehouse_filter_config\\results\\all_chunks_results.json"
+  }
+}

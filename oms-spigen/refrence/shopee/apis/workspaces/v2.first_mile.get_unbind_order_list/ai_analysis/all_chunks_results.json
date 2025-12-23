@@ -1,0 +1,99 @@
+[
+  {
+    "chunk_index": 1,
+    "total_chunks": 1,
+    "endpoint": null,
+    "method": null,
+    "description": null,
+    "update_log": [],
+    "hidden_fields": [],
+    "parameters": [
+      {
+        "name": "url",
+        "type": "string",
+        "required": true,
+        "description": "API endpoint URL",
+        "children": []
+      },
+      {
+        "name": "method",
+        "type": "string",
+        "required": true,
+        "description": "HTTP request method",
+        "children": []
+      },
+      {
+        "name": "timestamp",
+        "type": "integer",
+        "required": true,
+        "description": "Request timestamp",
+        "children": []
+      },
+      {
+        "name": "broker_name",
+        "type": "string",
+        "required": true,
+        "description": null,
+        "children": []
+      },
+      {
+        "name": "data_json",
+        "type": "string",
+        "required": true,
+        "description": "Request parameters as JSON string",
+        "children": []
+      },
+      {
+        "name": "signature",
+        "type": "string",
+        "required": true,
+        "description": "Request signature based on parameters",
+        "children": []
+      },
+      {
+        "name": "request_external_token",
+        "type": "string",
+        "required": false,
+        "description": "Optional external token",
+        "children": []
+      },
+      {
+        "name": "request_id",
+        "type": "string",
+        "required": true,
+        "description": null,
+        "children": []
+      },
+      {
+        "name": "lang",
+        "type": "string",
+        "required": false,
+        "description": "Language parameter",
+        "children": []
+      },
+      {
+        "name": "version",
+        "type": "string",
+        "required": false,
+        "description": null,
+        "children": []
+      }
+    ],
+    "response_fields": [],
+    "notes": "The image appears to be an API documentation page showing common parameters. Some parameter descriptions are cut off or not fully visible. There are several collapsible sections marked with '+ Collapse' that might contain additional information not currently visible.",
+    "chunk_metadata": {
+      "index": 1,
+      "total": 1,
+      "y_start": 0,
+      "y_end": 5066,
+      "overlap_top": 0,
+      "overlap_bottom": 0,
+      "height": 5066,
+      "path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\workspaces\\v2.first_mile.get_unbind_order_list\\chunks\\chunk_001.png",
+      "filename": "chunk_001.png",
+      "width": 837
+    },
+    "analysis_timestamp": "2025-10-10T05:42:26.227909",
+    "model": "claude-3-5-sonnet-20241022"
+  }
+]

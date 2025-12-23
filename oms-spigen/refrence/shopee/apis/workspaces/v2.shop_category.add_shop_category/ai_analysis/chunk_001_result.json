@@ -1,0 +1,90 @@
+{
+  "chunk_index": 1,
+  "total_chunks": 1,
+  "endpoint": "not_specified",
+  "method": "not_specified",
+  "description": "Category related API endpoint",
+  "update_log": [
+    {
+      "date": "2024-01-17",
+      "change": "Add beta label"
+    }
+  ],
+  "parameters": [
+    {
+      "name": "partner_id",
+      "type": "string",
+      "required": true,
+      "description": "Partner ID is required user credential",
+      "children": []
+    },
+    {
+      "name": "category_json",
+      "type": "string",
+      "required": true,
+      "description": "This is a payload in the format of the Request Parameter",
+      "children": []
+    }
+  ],
+  "response_fields": [
+    {
+      "name": "request_id",
+      "type": "string",
+      "description": "The request id for API record",
+      "children": []
+    },
+    {
+      "name": "error",
+      "type": "string",
+      "description": "The error of this API request if it occurs",
+      "children": []
+    },
+    {
+      "name": "message",
+      "type": "string",
+      "description": "The detailed description of the error. The message will be empty if no error",
+      "children": []
+    }
+  ],
+  "error_codes": [
+    {
+      "code": "error_generic",
+      "description": "There is an error_generic error"
+    },
+    {
+      "code": "error_param",
+      "description": "Invalid parameter or param type"
+    },
+    {
+      "code": "error_server",
+      "description": "There is an error at server side"
+    },
+    {
+      "code": "error_permission",
+      "description": "No permission to current api"
+    },
+    {
+      "code": "error_sign",
+      "description": "There is an sign or token"
+    },
+    {
+      "code": "error_login",
+      "description": "User drop"
+    }
+  ],
+  "notes": "This appears to be API documentation for a category-related endpoint. The documentation shows common parameters, response parameters, example requests/responses, and error codes. The actual endpoint URL is not visible in the image.",
+  "chunk_metadata": {
+    "index": 1,
+    "total": 1,
+    "y_start": 0,
+    "y_end": 4916,
+    "overlap_top": 0,
+    "overlap_bottom": 0,
+    "height": 4916,
+    "path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\workspaces\\v2.shop_category.add_shop_category\\chunks\\chunk_001.png",
+    "filename": "chunk_001.png",
+    "width": 837
+  },
+  "analysis_timestamp": "2025-10-10T06:46:05.033945",
+  "model": "claude-3-5-sonnet-20241022"
+}

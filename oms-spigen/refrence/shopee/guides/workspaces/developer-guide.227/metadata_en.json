@@ -1,0 +1,58 @@
+{
+  "document_id": "developer-guide.227",
+  "document_type": "guide",
+  "platform": "shopee",
+  "extracted_at": "2025-10-16T08:54:44",
+  "extracted_text": "# Return-Refund Management\n\n## 2 Return API Call Flow\n\n### 2.1 Getting the list of return orders and details\n\nTo get list of return orders and request details for a shop, Each application will return a return_list. as an integer ID. Buyers may submit multiple return_list for the same order. The return parameter contains order_id where is the order number associated with this return refund application. In addition, the API supports filtering different types of returns based on status, update_time_from, update_time_to, page_size etc. The return list also contains the related Cancellation status.\n\n**For returns, see listing API.** After return_list, we will get return details.\n\n**For return detail API:** See the available solutions (AP) and the available solutions offered to buyers.\n\n### 2.2 Refund Only\n\n```\nStart\n↓\nreturns.get_return_list\n↓\nreturns.get_return_detail\n↓\nreturns.get_available_solution\n↓\nreturns.confirm\n↓\nEnd\n```\n\n**By returns.confirm API** = Agree to the buyer's return application, only for the Full Refund type. the buyer does not need to return the product. Close against the refund will be credited to Accepted.\n\n### 2.3 Return & Refund (No Dispute)\n\n```\nStart\n↓\nreturns.get_return_list\n↓\nreturns.get_return_detail\n↓\nreturns.get_available_solution\n↓\nreturns.offer\n↓\n[Decision Diamond: Buyer Accept] → [Yellow: Seller Accept] \n↓                                    ↓\nreturns.get_return_detail ← returns.accept_offer\n↓\nEnd\n```\n\n**By returns.offer** - The seller provides a return plan for the Buyer to choose.\n\n**By returns.accept_offer** - The seller accepts the return plan provided by the Buyer\n\n### 2.4 Return & Refund (Dispute)\n\n```\nStart\n↓\nreturns.get_return_list\n↓\nreturns.get_return_detail\n↓\nreturns.get_available_solution\n↓\nreturns.offer ← [Purple: Seller doesn't accept solution or buyer's offer]\n↓\n[Purple: Buyer raise a dispute]\n↓\nreturns.dispute\n↓\nreturns.convert_image\n↓\nreturns.upload_proof\n↓\nreturns.query_proof\n↓\nreturns.get_return_detail\n↓\nEnd\n```\n\nThe seller side call **returns.get_available_solution API** first, to determine the solution or the return order, and then call **returns.offer API** for the buyer to choose.\n\nIf the buyer doesn't accept the offer provided by the seller or the seller declines, then call **returns.query_offer** to accept the offer.\n\n---\n\n# API Documentation - Return Process\n\n## Overview\n\nThe seller can call `v2.returns.get_available_solutions` API link to determine the options of the return order, and then call `v2.returns.offer` API for the buyer to choose.\n\nBuyers will also provide solutions to sellers. If the seller accepts, they can call `v2.returns.accept_offer` to accept the offer. If you cannot accept it, then you can call `v2.returns.dispute` to file a dispute with the Dispute Center.\n\nAt present, OpenAPI only supports two statuses of REQUESTED and PROCESSING to dispute.\n\n## 2.4.1 Dispute\n\nIf the seller has a dispute with the buyer's return request, he can go to the Dispute Center to handle the request. `v2.returns.dispute` Used by sellers to escalate return orders to the dispute center.\n\n### 2.4.1.1 Image\n\nAfter a dispute is raised, the seller can upload evidence images through API, but uploading videos is not currently supported\n- `v2.returns.upload_image` : Upload images\n- `v2.returns.bind_cancel` : Obtlr.y disputed images\n\n---\n\n## 3 Data Definition\n\n### ReturnStatus\n- REQUESTED\n- ACCEPTED\n- CANCELLED\n- SHIPPED\n- CLOSED\n- PROCESSING\n- SELLER_DISPUTE\n\n### ReturnReason\n- OK\n- NOT_RECEIPT\n- WRONG_ITEM\n- ITEM_DAMAGED\n- INCORRECT_DESCRIPTION\n- MUTUAL_AGREE\n- OTHER\n- SIZE_FIT_UNMATCHING (Private for Vietnam)\n- CHANGE_MIND\n- ITEM_MISSING\n- ITEM_INCOMPLETE_FAILED\n- ITEM_FAKE\n- PHYSICAL_DMG\n- FUNCTIONAL_DMG\n\n### ReturnDisputeReason\nReason:\n- NOT_RECEIPT: I would like to reject the non-receipt claim\n- OTHER: I would like to reject the request\n- NOT_RECEIVED: I agree with the return request, but I did not receive product(s)\n- UNKNOWN\n\n### ReturnSolution\n- RETURN_REFUND\n- REFUND\n\n### NegotiationStatus\n- PENDING_RESPOND\n- PENDING_BUYER_RESPOND\n- RESOLVED\n\n### SellerProofStatus\n- PENDING\n- UPLOADED\n- OVERDUE\n\n### SellerCommunicationStatus\n- COMPENSATION_NOT_APPLICABLE\n- COMPENSATION_INITIAL_STAGE\n- COMPENSATION_PENDING_REQUEST\n- COMPENSATION_NOT_REQUIRED\n- COMPENSATION_WAITING_APPROVAL\n- COMPENSATION_APPROVED\n- COMPENSATION_REJECTED\n- COMPENSATION_PAID_TO_BUYER\n- COMPENSATION_NOT_ELIGIBLE\n\n### Return Refund Request Type\n- 0: Normal RR - RR is raised by the buyer after they have received the parcel, based on estimated delivery date\n- 1: In-transit RR\n  - 1: In-transit RR-RR is raised by the buyer while item is still in-transit to buyer)\n  - 2: Return-on-the-Spot RR is raised by the buyer after buyer received parcel at delivery)\n\n### Validation Type\n- seller_validation - For Return & Related requests with return parcel that will be delivered to the seller for validation and decision whether to refund buyer or to raise dispute\n- seller_auto_decision - For return request where there will be no return parcel and seller will need to decide via seller validation and decision whether to refund buyer or to raise Dispute\n\n---\n\n## Reverse Logistics Status\n\n### [Normal Return]\n- **LOGISTICS_PENDING_ARRANGE**: Return is now pending user to select shipping option. Same for both integrated logistics and non-integrated logistics.\n- **LOGISTICS_READY**: User has selected shipping option, and pending system to create logistics request. Tracking number is not yet available. Same for both integrated logistics and non-integrated logistics.\n- **LOGISTICS_READY_TO_SHIP**: System has created logistics request. Tracking number should be available.\n- **LOGISTICS_PICKUP_RETRY**: Third party logistics provider will make another attempt to pick up parcel from buyer. Integrated logistics since this is updated by third party logistics provider back to Shopee.\n- **LOGISTICS_PICKUP_FAILED**: Third party logistics provider has failed to pickup parcel from buyer. Available for integrated logistics since this is updated by third party logistics provider back to Shopee.\n- **LOGISTICS_PICKUP_DONE**: For integrated logistics, this implies the parcel has been picked up by a 3 PHS party (origin courier). For non-integrated logistics, this means the user has dropped the parcel at dropoff point.\n- **LOGISTICS_LOST**: Parcel has been marked as lost. Only available for integrated logistics since this is updated by third party logistics provider back to Shopee.\n- **LOGISTICS_DELIVERY_DONE**: Parcel has been successfully delivered to seller. Only available for integrated logistics since this is updated by third party logistics provider back to Shopee.\n\n### [In-transit RR]\n- Preparing\n- Delivered\n- Delivery Failed\n- Lost\n\n### [Return-on-the-Spot]\n- Preparing\n- Delivered\n- Delivery Failed\n- Lost\n\n---\n\n## Post Return Logistics Status\n\nAll logistics status that represent reverse logistics from warehouse back to seller.\n- **POST_RETURN_LOGISTICS_PICKUP_PENDING**: Logistics request created successfully with tracking number.\n- **POST_RETURN_LOGISTICS_REQUEST_CANCELLED**: Logistics request cancelled by warehouse team.\n- **POST_RETURN_LOGISTICS_PICKUP_FAILED**: Failed to pickup parcel from warehouse back to seller.\n- **POST_RETURN_LOGISTICS_PICKUP_RETRY**: Third party logistics will retry to pickup the parcel from warehouse.\n- **POST_RETURN_LOGISTICS_PICKUP_DONE**: Successful pickup on the way to destination.\n- **POST_RETURN_LOGISTICS_DELIVERY_FAILED**: Failed delivery of parcel. Driver will make another attempt back to warehouse.\n- **POST_RETURN_LOGISTICS_DELIVERY_DONE**: Successful delivery of parcel.\n- **POST_RETURN_LOGISTICS_LOST**: Parcel lost by logistics provider.",
+  "metadata": {
+    "title": "Return-Refund Management",
+    "summary": "This guide provides information on how to manage return and refund processes, including API call flows and data definitions. It covers different return scenarios like refund only, return & refund (no dispute), and return & refund (dispute), detailing the API interactions for each.",
+    "keywords": [
+      "return",
+      "refund",
+      "API",
+      "dispute",
+      "return status",
+      "reverse logistics",
+      "seller",
+      "buyer",
+      "offer",
+      "solution"
+    ],
+    "category": "Integration",
+    "tags": [
+      "returns",
+      "refunds",
+      "disputes",
+      "API flow",
+      "data definitions"
+    ],
+    "difficulty": "medium",
+    "importance": 4,
+    "use_cases": [
+      "Managing return requests from buyers",
+      "Processing refunds for buyers",
+      "Handling disputes related to returns",
+      "Integrating return and refund processes with a platform",
+      "Automating return logistics"
+    ],
+    "related_apis": [
+      "returns.get_return_list",
+      "returns.get_return_detail",
+      "returns.get_available_solution",
+      "returns.confirm",
+      "returns.offer",
+      "returns.accept_offer",
+      "returns.dispute",
+      "returns.convert_image",
+      "returns.upload_proof",
+      "returns.query_proof",
+      "v2.returns.get_available_solutions",
+      "v2.returns.offer",
+      "v2.returns.accept_offer",
+      "v2.returns.dispute",
+      "v2.returns.upload_image",
+      "v2.returns.bind_cancel"
+    ]
+  }
+}

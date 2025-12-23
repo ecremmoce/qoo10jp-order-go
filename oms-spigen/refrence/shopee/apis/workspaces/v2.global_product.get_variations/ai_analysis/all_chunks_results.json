@@ -1,0 +1,79 @@
+[
+  {
+    "chunk_index": 1,
+    "total_chunks": 1,
+    "endpoint": "/api/v2/global_product/get_variations",
+    "method": "GET",
+    "description": "Get the standardized tier variation defined by Shopee, which consists of three layers. The first layer is tiers, the second is groups, groups are used to divide options, and the third layer is options.",
+    "update_log": [],
+    "hidden_fields": [],
+    "parameters": [
+      {
+        "name": "URL",
+        "type": "string",
+        "required": true,
+        "description": "Production endpoint",
+        "value": "https://partner.shopeemobile.com",
+        "truncated": false,
+        "continued": false,
+        "children": []
+      },
+      {
+        "name": "URL (Chinese Mainland)",
+        "type": "string",
+        "required": true,
+        "description": "Production endpoint for Chinese Mainland",
+        "value": "https://openplatform.shopee.cn",
+        "truncated": false,
+        "continued": false,
+        "children": []
+      },
+      {
+        "name": "URL (Brazil)",
+        "type": "string",
+        "required": true,
+        "description": "Production endpoint for Brazil",
+        "value": "https://openplatform.shopee.com.br",
+        "truncated": true,
+        "continued": false,
+        "children": []
+      },
+      {
+        "name": "Test URL",
+        "type": "string",
+        "required": true,
+        "description": "Test/Sandbox endpoint",
+        "value": "https://openplatform.sandbox.shopeemobile.com",
+        "truncated": true,
+        "continued": false,
+        "children": []
+      },
+      {
+        "name": "Test URL (Chinese Mainland)",
+        "type": "string",
+        "required": true,
+        "description": "Test/Sandbox endpoint for Chinese Mainland",
+        "value": "https://openplatform.sandbox.shopee.cn",
+        "truncated": true,
+        "continued": false,
+        "children": []
+      }
+    ],
+    "response_fields": [],
+    "notes": "This appears to be from the Shopee Open Platform API documentation V2.0. The left sidebar shows various Product-related endpoints. The image shows the Common Parameters section with various regional endpoint URLs. Some URLs appear to be cut off at the bottom of the image.",
+    "chunk_metadata": {
+      "index": 1,
+      "total": 1,
+      "y_start": 0,
+      "y_end": 1080,
+      "overlap_top": 0,
+      "overlap_bottom": 0,
+      "height": 1080,
+      "path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\workspaces\\v2.global_product.get_variations\\chunks\\chunk_001.png",
+      "filename": "chunk_001.png",
+      "width": 1920
+    },
+    "analysis_timestamp": "2025-10-10T05:50:15.644307",
+    "model": "claude-3-5-sonnet-20241022"
+  }
+]

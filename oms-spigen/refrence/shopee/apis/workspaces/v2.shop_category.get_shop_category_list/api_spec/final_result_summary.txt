@@ -1,0 +1,43 @@
+======================================================================
+API SPECIFICATION SUMMARY
+======================================================================
+
+Endpoint: POST /category/get_shop_category_id
+Description: Get shop category information
+
+Parameters (5):
+----------------------------------------------------------------------
+* url (string)
+   API endpoint URL
+* timestamp (string)
+   Request timestamp
+* shop_id (string)
+   Specifies the unique ID of shop to obtain its category info
+* language (string)
+   Specifies the shop category language. Default: zh_CN
+* shop_category_list (array)
+   The shop category list
+    shop_category_id (integer)
+     Shop category's unique identifier
+    parent_shop_category_id (integer)
+     Parent shop category's unique identifier
+    name (string)
+     Category name
+    sort_weight (integer)
+     Sort weight for display order
+    has_children (boolean)
+     Whether the category has child categories
+
+Metadata:
+----------------------------------------------------------------------
+  total_chunks: 1
+  chunks_with_errors: 0
+  total_parameters_before_dedup: 5
+  total_parameters_after_dedup: 5
+  update_log_entries: 3
+  hidden_fields_count: 0
+  source_results: workspaces\v2.shop_category.get_shop_category_list\results\all_chunks_results.json
+
+======================================================================
+Legend: * = required parameter
+======================================================================

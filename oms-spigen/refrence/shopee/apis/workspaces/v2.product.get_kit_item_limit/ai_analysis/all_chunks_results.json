@@ -1,0 +1,85 @@
+[
+  {
+    "chunk_index": 1,
+    "total_chunks": 1,
+    "endpoint": null,
+    "method": null,
+    "description": null,
+    "update_log": [],
+    "hidden_fields": [],
+    "parameters": [
+      {
+        "name": "gid",
+        "type": "string",
+        "required": true,
+        "description": null,
+        "children": []
+      },
+      {
+        "name": "lng",
+        "type": "string",
+        "required": false,
+        "description": "Set language",
+        "children": []
+      },
+      {
+        "name": "sorting",
+        "type": "integer",
+        "required": false,
+        "description": "Set sorting order",
+        "children": []
+      },
+      {
+        "name": "priority",
+        "type": "integer",
+        "required": false,
+        "description": null,
+        "children": []
+      },
+      {
+        "name": "get_line",
+        "type": "boolean",
+        "required": false,
+        "description": "Get line data flag",
+        "children": []
+      }
+    ],
+    "response_fields": [
+      {
+        "name": "automatic_match_min",
+        "type": "integer",
+        "description": "Min range length max line"
+      },
+      {
+        "name": "automatic_match_max",
+        "type": "integer",
+        "description": "Max range length max line"
+      },
+      {
+        "name": "automatic_match_shift",
+        "type": "integer",
+        "description": "Range shift length max line"
+      },
+      {
+        "name": "min_price",
+        "type": "float",
+        "description": "Min price"
+      }
+    ],
+    "notes": "The image appears to be showing API documentation with request parameters and response fields. The documentation seems to be from some kind of matching or pricing system. Some descriptions are missing or partially visible. The image shows more response fields than I've included but many are cut off or unclear in the image.",
+    "chunk_metadata": {
+      "index": 1,
+      "total": 1,
+      "y_start": 0,
+      "y_end": 6034,
+      "overlap_top": 0,
+      "overlap_bottom": 0,
+      "height": 6034,
+      "path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\workspaces\\v2.product.get_kit_item_limit\\chunks\\chunk_001.png",
+      "filename": "chunk_001.png",
+      "width": 837
+    },
+    "analysis_timestamp": "2025-10-10T06:29:42.427299",
+    "model": "claude-3-5-sonnet-20241022"
+  }
+]

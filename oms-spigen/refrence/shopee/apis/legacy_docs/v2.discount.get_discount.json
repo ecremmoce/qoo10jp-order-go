@@ -1,0 +1,76 @@
+{
+  "endpoint": "/api/v2/marketing_trading",
+  "method": "GET",
+  "description": "Marketing trading data query",
+  "parameters": [
+    {
+      "name": "startTime",
+      "type": "string",
+      "required": true,
+      "description": "Start time of data query",
+      "children": []
+    },
+    {
+      "name": "endTime",
+      "type": "string",
+      "required": true,
+      "description": "End time of data query",
+      "children": []
+    },
+    {
+      "name": "symbol",
+      "type": "string",
+      "required": false,
+      "description": "Trading pair",
+      "children": []
+    }
+  ],
+  "response_fields": [
+    {
+      "name": "symbol",
+      "type": "string",
+      "description": "Trading pair",
+      "children": []
+    },
+    {
+      "name": "price",
+      "type": "string",
+      "description": "Last traded price",
+      "children": []
+    },
+    {
+      "name": "quantity",
+      "type": "string",
+      "description": "Last traded quantity",
+      "children": []
+    },
+    {
+      "name": "side",
+      "type": "string",
+      "description": "Trade direction (buy/sell)",
+      "children": []
+    },
+    {
+      "name": "timestamp",
+      "type": "integer",
+      "description": "Trade timestamp (milliseconds)",
+      "children": []
+    }
+  ],
+  "update_log": [
+    {
+      "date": "2023-05-12",
+      "change": "First release"
+    }
+  ],
+  "hidden_fields": [],
+  "metadata": {
+    "total_chunks": 1,
+    "chunks_with_errors": 0,
+    "total_parameters_before_dedup": 3,
+    "total_parameters_after_dedup": 3,
+    "update_log_entries": 1,
+    "hidden_fields_count": 0,
+    "source_results": "workspaces\\v2.discount.get_discount\\results\\all_chunks_results.json"
+  }
+}

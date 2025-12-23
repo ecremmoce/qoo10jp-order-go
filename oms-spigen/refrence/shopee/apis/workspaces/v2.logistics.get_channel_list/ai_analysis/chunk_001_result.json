@@ -1,0 +1,85 @@
+{
+  "chunk_index": 1,
+  "total_chunks": 1,
+  "endpoint": null,
+  "method": null,
+  "description": null,
+  "update_log": [],
+  "hidden_fields": [],
+  "parameters": [
+    {
+      "name": "contract",
+      "type": "string",
+      "required": true,
+      "description": "The contract address",
+      "children": []
+    },
+    {
+      "name": "user_addr",
+      "type": "string",
+      "required": true,
+      "description": "The user address",
+      "children": []
+    },
+    {
+      "name": "last_time",
+      "type": "integer",
+      "required": true,
+      "description": "Last updated timestamp",
+      "children": []
+    },
+    {
+      "name": "caller_addr",
+      "type": "string",
+      "required": true,
+      "description": "The caller's address",
+      "children": []
+    },
+    {
+      "name": "gas_limit",
+      "type": "integer",
+      "required": false,
+      "description": "Gas limit for the transaction",
+      "children": []
+    },
+    {
+      "name": "gas_price",
+      "type": "integer",
+      "required": false,
+      "description": "Gas price for the transaction",
+      "children": []
+    }
+  ],
+  "response_fields": [
+    {
+      "name": "last_time",
+      "type": "integer",
+      "description": "Last updated timestamp"
+    },
+    {
+      "name": "user_addr",
+      "type": "string",
+      "description": "User address"
+    },
+    {
+      "name": "caller_addr",
+      "type": "string",
+      "description": "Caller's address"
+    }
+  ],
+  "notes": "This appears to be documentation for a blockchain-related API, possibly for contract interaction. The image shows both request parameters and response fields. The layout suggests this is part of a larger API documentation system.",
+  "chunk_metadata": {
+    "index": 1,
+    "total": 1,
+    "y_start": 0,
+    "y_end": 6686,
+    "overlap_top": 0,
+    "overlap_bottom": 0,
+    "height": 6686,
+    "path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\workspaces\\v2.logistics.get_channel_list\\chunks\\chunk_001.png",
+    "filename": "chunk_001.png",
+    "width": 837
+  },
+  "analysis_timestamp": "2025-10-10T06:04:02.492594",
+  "model": "claude-3-5-sonnet-20241022"
+}

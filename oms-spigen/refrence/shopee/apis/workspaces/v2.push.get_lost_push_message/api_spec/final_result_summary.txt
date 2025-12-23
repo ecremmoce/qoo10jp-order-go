@@ -1,0 +1,45 @@
+======================================================================
+API SPECIFICATION SUMMARY
+======================================================================
+
+Endpoint: GET /v2/push/get_lost_push_message
+Description: Get the lost push messages that were not within 3 days of the current time and not confirmed to have been consumed
+
+Parameters (9):
+----------------------------------------------------------------------
+* partner_id (int)
+   Partner ID in assigned user registration is successful, required for all requests
+* timestamp (timestamp)
+   This is to indicate the timestamp of the request. Required for all requests. Format: in Eulixspace
+* request_id (string)
+   The identifier for an API request for error tracking
+  error (string)
+   Indicates error type if/it error. Empty if no error occurred
+  message (string)
+   Indicates error details if/it error. Empty if no error happened
+  warning (string)
+   Indicates warning details if/it warning. Empty if no warning happened
+  push_message_list (object[])
+   Returns the pushed OSS get push messages list once lost within 3 days of the current time
+  * chop_id (int)
+     Request's unique identifier for a chop
+  * timestamp (timestamp)
+     Timestamp that indicates the message sent date
+  last_chop_page (boolean)
+   This is to indicate if there are more push messages to be consumed in more than 100. If 0 indicate in one day need to confirm the messages to be consumed
+  last_message_id (int)
+   Specifies the end entry of data returned in the current call
+
+Metadata:
+----------------------------------------------------------------------
+  total_chunks: 1
+  chunks_with_errors: 0
+  total_parameters_before_dedup: 9
+  total_parameters_after_dedup: 9
+  update_log_entries: 1
+  hidden_fields_count: 0
+  source_results: workspaces\v2.push.get_lost_push_message\results\all_chunks_results.json
+
+======================================================================
+Legend: * = required parameter
+======================================================================

@@ -1,0 +1,86 @@
+[
+  {
+    "chunk_index": 1,
+    "total_chunks": 1,
+    "endpoint": null,
+    "method": null,
+    "description": null,
+    "update_log": [
+      {
+        "date": "2024-01-12",
+        "change": "Updated product search criteria"
+      },
+      {
+        "date": "2024-01-08",
+        "change": "Added new access token restrictions"
+      },
+      {
+        "date": "2023-12-29",
+        "change": "Updated API rate limits"
+      },
+      {
+        "date": "2023-12-22",
+        "change": "Changed authentication method"
+      },
+      {
+        "date": "2023-12-15",
+        "change": "Added pagination support"
+      }
+    ],
+    "hidden_fields": [],
+    "parameters": [
+      {
+        "name": "access_token",
+        "type": "string",
+        "required": true,
+        "description": "Authentication token for API access",
+        "children": []
+      },
+      {
+        "name": "request_parameters",
+        "type": "object",
+        "required": true,
+        "description": "Container for request parameters",
+        "children": [
+          {
+            "name": "page_size",
+            "type": "integer",
+            "required": false,
+            "description": "Number of results per page",
+            "children": []
+          },
+          {
+            "name": "page_number",
+            "type": "integer",
+            "required": false,
+            "description": "Page number for pagination",
+            "children": []
+          },
+          {
+            "name": "sort_by",
+            "type": "string",
+            "required": false,
+            "description": "Field to sort results by",
+            "children": []
+          }
+        ]
+      }
+    ],
+    "response_fields": [],
+    "notes": "The image appears to be a partial API documentation showing update logs and some basic request parameters. The full endpoint details and response fields may be in other sections not visible in this chunk.",
+    "chunk_metadata": {
+      "index": 1,
+      "total": 1,
+      "y_start": 0,
+      "y_end": 7193,
+      "overlap_top": 0,
+      "overlap_bottom": 0,
+      "height": 7193,
+      "path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\workspaces\\v2.returns.confirm\\chunks\\chunk_001.png",
+      "filename": "chunk_001.png",
+      "width": 837
+    },
+    "analysis_timestamp": "2025-10-10T06:40:07.654462",
+    "model": "claude-3-5-sonnet-20241022"
+  }
+]

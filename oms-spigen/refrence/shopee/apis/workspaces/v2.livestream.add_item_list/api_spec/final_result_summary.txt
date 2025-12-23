@@ -1,0 +1,28 @@
+======================================================================
+API SPECIFICATION SUMMARY
+======================================================================
+
+Endpoint: None /openweexsdk/add_item_lot
+
+Parameters (3):
+----------------------------------------------------------------------
+* session_id (string)
+   The identifier of developer session
+* time_lot (string)
+   The lot of item to sell
+* shop_id (string)
+   The shop of this item
+
+Metadata:
+----------------------------------------------------------------------
+  total_chunks: 1
+  chunks_with_errors: 0
+  total_parameters_before_dedup: 3
+  total_parameters_after_dedup: 3
+  update_log_entries: 1
+  hidden_fields_count: 0
+  source_results: workspaces\v2.livestream.add_item_list\results\all_chunks_results.json
+
+======================================================================
+Legend: * = required parameter
+======================================================================

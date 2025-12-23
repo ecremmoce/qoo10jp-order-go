@@ -1,0 +1,118 @@
+{
+  "chunk_index": 1,
+  "total_chunks": 1,
+  "endpoint": null,
+  "method": null,
+  "description": "External order interface for global model",
+  "update_log": [],
+  "hidden_fields": [],
+  "parameters": [
+    {
+      "name": "URL",
+      "type": "string",
+      "required": true,
+      "description": "API endpoint URLs",
+      "children": []
+    },
+    {
+      "name": "URLS",
+      "type": "object",
+      "required": true,
+      "description": "Collection of API endpoints",
+      "children": [
+        {
+          "name": "http://external.shopee/order/v2/order",
+          "type": "string",
+          "required": true,
+          "description": "Production environment endpoint",
+          "children": []
+        },
+        {
+          "name": "http://external.shopee/order/v2/order/staging",
+          "type": "string",
+          "required": true,
+          "description": "Staging environment endpoint",
+          "children": []
+        }
+      ]
+    },
+    {
+      "name": "global_auth_id",
+      "type": "string",
+      "required": true,
+      "description": "Global auth ID",
+      "children": []
+    },
+    {
+      "name": "phone_number_id",
+      "type": "string",
+      "required": true,
+      "description": "Phone number ID",
+      "children": []
+    },
+    {
+      "name": "message",
+      "type": "string",
+      "required": true,
+      "description": "Message content",
+      "children": []
+    },
+    {
+      "name": "country",
+      "type": "string",
+      "required": true,
+      "description": "Country code",
+      "children": []
+    }
+  ],
+  "response_fields": [],
+  "error_codes": [
+    {
+      "code": "not_in_our_use_system",
+      "description": "The phone will not be sent via sms"
+    },
+    {
+      "code": "send_error",
+      "description": "Send error"
+    },
+    {
+      "code": "phone_not_found",
+      "description": "There is no phone to be used"
+    },
+    {
+      "code": "message_too_long",
+      "description": "Message too long"
+    },
+    {
+      "code": "invalid_parameter",
+      "description": "Invalid parameter"
+    },
+    {
+      "code": "global_auth_get_failed",
+      "description": "Global auth get failed"
+    },
+    {
+      "code": "invalid_phone_format",
+      "description": "Invalid phone format"
+    },
+    {
+      "code": "internal_error",
+      "description": "Internal error"
+    }
+  ],
+  "notes": "This appears to be API documentation for a global SMS/messaging system. The documentation shows common parameters, request parameters, and error codes. The URLs shown appear to be placeholder/example URLs rather than actual production endpoints.",
+  "chunk_metadata": {
+    "index": 1,
+    "total": 1,
+    "y_start": 0,
+    "y_end": 5173,
+    "overlap_top": 0,
+    "overlap_bottom": 0,
+    "height": 5173,
+    "path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\workspaces\\v2.global_product.delete_global_model\\chunks\\chunk_001.png",
+    "filename": "chunk_001.png",
+    "width": 837
+  },
+  "analysis_timestamp": "2025-10-10T05:45:46.959562",
+  "model": "claude-3-5-sonnet-20241022"
+}

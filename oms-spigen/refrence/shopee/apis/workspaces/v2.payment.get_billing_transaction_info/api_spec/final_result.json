@@ -1,0 +1,93 @@
+{
+  "endpoint": null,
+  "method": null,
+  "description": null,
+  "parameters": [
+    {
+      "name": "URL",
+      "type": "string",
+      "required": true,
+      "description": "Request URL",
+      "children": []
+    },
+    {
+      "name": "client_secret",
+      "type": "string",
+      "required": true,
+      "description": null,
+      "children": []
+    },
+    {
+      "name": "site_id",
+      "type": "string",
+      "required": true,
+      "description": null,
+      "children": []
+    },
+    {
+      "name": "testing",
+      "type": "integer",
+      "required": false,
+      "description": null,
+      "children": []
+    },
+    {
+      "name": "language",
+      "type": "string",
+      "required": false,
+      "description": null,
+      "children": []
+    },
+    {
+      "name": "version",
+      "type": "string",
+      "required": false,
+      "description": null,
+      "children": []
+    },
+    {
+      "name": "currency",
+      "type": "string",
+      "required": false,
+      "description": null,
+      "children": []
+    },
+    {
+      "name": "callback",
+      "type": "string",
+      "required": false,
+      "description": null,
+      "children": []
+    },
+    {
+      "name": "notify_url",
+      "type": "string",
+      "required": false,
+      "description": null,
+      "children": []
+    }
+  ],
+  "response_fields": [
+    {
+      "name": "error_code",
+      "type": "string",
+      "description": "Error code when request fails"
+    },
+    {
+      "name": "error_msg",
+      "type": "string",
+      "description": "Error message details"
+    }
+  ],
+  "update_log": [],
+  "hidden_fields": [],
+  "metadata": {
+    "total_chunks": 1,
+    "chunks_with_errors": 0,
+    "total_parameters_before_dedup": 9,
+    "total_parameters_after_dedup": 9,
+    "update_log_entries": 0,
+    "hidden_fields_count": 0,
+    "source_results": "workspaces\\v2.payment.get_billing_transaction_info\\results\\all_chunks_results.json"
+  }
+}

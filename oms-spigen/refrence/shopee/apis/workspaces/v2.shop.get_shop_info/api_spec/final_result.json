@@ -1,0 +1,74 @@
+{
+  "endpoint": "/api/v2/login",
+  "method": "POST",
+  "description": "Login authentication API",
+  "parameters": [
+    {
+      "name": "username",
+      "type": "string",
+      "required": true,
+      "description": "Login username/email",
+      "children": []
+    },
+    {
+      "name": "password",
+      "type": "string",
+      "required": true,
+      "description": "Login password",
+      "children": []
+    }
+  ],
+  "response_fields": [
+    {
+      "name": "code",
+      "type": "integer",
+      "description": "Response status code",
+      "children": []
+    },
+    {
+      "name": "message",
+      "type": "string",
+      "description": "Response message",
+      "children": []
+    },
+    {
+      "name": "data",
+      "type": "object",
+      "description": "Response data object",
+      "children": [
+        {
+          "name": "token",
+          "type": "string",
+          "description": "Authentication token",
+          "children": []
+        },
+        {
+          "name": "expires_in",
+          "type": "integer",
+          "description": "Token expiration time in seconds",
+          "children": []
+        }
+      ]
+    }
+  ],
+  "update_log": [
+    {
+      "date": "2021-07-16",
+      "change": "Added new error codes for account verification"
+    },
+    {
+      "date": "2021-04-09",
+      "change": "Added password change requirement warning"
+    }
+  ],
+  "hidden_fields": [],
+  "metadata": {
+    "total_chunks": 1,
+    "chunks_with_errors": 0,
+    "total_parameters_before_dedup": 2,
+    "total_parameters_after_dedup": 2,
+    "update_log_entries": 2,
+    "hidden_fields_count": 0,
+    "source_results": "workspaces\\v2.shop.get_shop_info\\results\\all_chunks_results.json"
+  }
+}

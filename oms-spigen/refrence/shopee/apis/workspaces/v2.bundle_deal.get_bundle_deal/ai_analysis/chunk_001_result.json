@@ -1,0 +1,87 @@
+{
+  "chunk_index": 1,
+  "total_chunks": 1,
+  "endpoint": null,
+  "method": null,
+  "description": null,
+  "update_log": [],
+  "hidden_fields": [],
+  "parameters": [
+    {
+      "name": "shipping_provider",
+      "type": "string",
+      "required": true,
+      "description": "Shipping provider credentials profile, default: acme_std",
+      "children": []
+    },
+    {
+      "name": "order_address",
+      "type": "object",
+      "required": true,
+      "description": "Order address object containing delivery details",
+      "children": []
+    },
+    {
+      "name": "carrier",
+      "type": "string",
+      "required": true,
+      "description": "The shipping carrier to use",
+      "children": []
+    },
+    {
+      "name": "delivery_time",
+      "type": "string",
+      "required": false,
+      "description": "Delivery time of the shipment",
+      "children": []
+    },
+    {
+      "name": "request_id",
+      "type": "string",
+      "required": true,
+      "description": "A request identifier for a specific order",
+      "children": []
+    },
+    {
+      "name": "seller_sku_id",
+      "type": "string",
+      "required": true,
+      "description": "The SKU code that should be used",
+      "children": []
+    },
+    {
+      "name": "tracking_id",
+      "type": "string",
+      "required": true,
+      "description": "The tracking code that matches the carrier",
+      "children": []
+    }
+  ],
+  "response_fields": [
+    {
+      "name": "error_code",
+      "type": "integer",
+      "description": "Error code indicating success or failure"
+    },
+    {
+      "name": "error_message",
+      "type": "string",
+      "description": "Descriptive error message"
+    }
+  ],
+  "notes": "The image appears to be an API documentation page showing request and response parameters for what seems to be a shipping-related API endpoint. While the endpoint and method are not visible in this portion of the documentation, the parameters suggest it's related to shipping order processing.",
+  "chunk_metadata": {
+    "index": 1,
+    "total": 1,
+    "y_start": 0,
+    "y_end": 5777,
+    "overlap_top": 0,
+    "overlap_bottom": 0,
+    "height": 5777,
+    "path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\workspaces\\v2.bundle_deal.get_bundle_deal\\chunks\\chunk_001.png",
+    "filename": "chunk_001.png",
+    "width": 837
+  },
+  "analysis_timestamp": "2025-10-10T05:34:30.790889",
+  "model": "claude-3-5-sonnet-20241022"
+}

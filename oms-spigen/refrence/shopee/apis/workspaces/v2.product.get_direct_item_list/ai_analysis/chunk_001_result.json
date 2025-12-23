@@ -1,0 +1,150 @@
+{
+  "chunk_index": 1,
+  "total_chunks": 1,
+  "endpoint": "v2/product/get_direct_item_list",
+  "method": "POST",
+  "description": "Get direct item list",
+  "update_log": [
+    {
+      "date": "2025-02-27",
+      "change": "New API"
+    }
+  ],
+  "parameters": [
+    {
+      "name": "partner_id",
+      "type": "int",
+      "required": true,
+      "description": "Partner ID for all requests",
+      "children": []
+    },
+    {
+      "name": "timestamp",
+      "type": "timestamp",
+      "required": true,
+      "description": "Timestamp for request verification and request expiry. Required for all requests. Expires in 5 minutes",
+      "children": []
+    },
+    {
+      "name": "access_token",
+      "type": "string",
+      "required": true,
+      "description": "This token for API access verification. API access returns 0 if token expires within 3 hours",
+      "children": []
+    },
+    {
+      "name": "shop_id",
+      "type": "uint64",
+      "required": true,
+      "description": "Shop ID",
+      "children": []
+    },
+    {
+      "name": "sign",
+      "type": "string",
+      "required": true,
+      "description": "Signature generated from a sorted concatenation of all request parameters",
+      "children": []
+    },
+    {
+      "name": "mall_item_id",
+      "type": "string",
+      "required": true,
+      "description": "Item id of mall shop",
+      "children": []
+    }
+  ],
+  "response_fields": [
+    {
+      "name": "error",
+      "type": "string",
+      "description": "Error description if there was an error. Empty if no error occurred",
+      "children": []
+    },
+    {
+      "name": "message",
+      "type": "string",
+      "description": "Error description if there was an error. Empty if no error occurred",
+      "children": []
+    },
+    {
+      "name": "warning",
+      "type": "string",
+      "description": "Warning message",
+      "children": []
+    },
+    {
+      "name": "request_id",
+      "type": "string",
+      "description": "An identifier for API request for error tracking",
+      "children": []
+    },
+    {
+      "name": "mall_item_id",
+      "type": "uint64",
+      "description": "Item id of mall shop",
+      "children": []
+    },
+    {
+      "name": "direct_item_id",
+      "type": "uint64",
+      "description": "Id of direct shop",
+      "children": []
+    },
+    {
+      "name": "direct_item_id",
+      "type": "uint64",
+      "description": "Item id of direct shop",
+      "children": []
+    }
+  ],
+  "error_codes": [
+    {
+      "code": "error_data",
+      "description": "error data exist"
+    },
+    {
+      "code": "error_data",
+      "description": "data not exist"
+    },
+    {
+      "code": "error_param",
+      "description": "parameter invalid"
+    },
+    {
+      "code": "error_param",
+      "description": "The information you wanted is not found"
+    },
+    {
+      "code": "error_param",
+      "description": "Wrong parameter: direct_shop"
+    },
+    {
+      "code": "error_param",
+      "description": "Something wrong. Please try later"
+    },
+    {
+      "code": "error_msg",
+      "description": "illegal is invalid"
+    },
+    {
+      "code": "error_param",
+      "description": "resultnum not been getted"
+    }
+  ],
+  "notes": "The API appears to be for retrieving direct item information from a marketplace/ecommerce platform. It has comprehensive error handling and response validation.",
+  "chunk_metadata": {
+    "index": 1,
+    "total": 1,
+    "y_start": 0,
+    "y_end": 3873,
+    "overlap_top": 0,
+    "overlap_bottom": 0,
+    "height": 3873,
+    "path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\workspaces\\v2.product.get_direct_item_list\\chunks\\chunk_001.png",
+    "filename": "chunk_001.png",
+    "width": 837
+  },
+  "analysis_timestamp": "2025-10-10T06:27:21.836100",
+  "model": "claude-3-5-sonnet-20241022"
+}

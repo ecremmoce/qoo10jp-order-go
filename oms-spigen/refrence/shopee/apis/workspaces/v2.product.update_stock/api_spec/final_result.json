@@ -1,0 +1,73 @@
+{
+  "endpoint": null,
+  "method": null,
+  "description": null,
+  "parameters": [
+    {
+      "name": "get_balance_details",
+      "type": "object",
+      "required": true,
+      "description": "Balance details information",
+      "children": [
+        {
+          "name": "balance",
+          "type": "integer",
+          "required": true,
+          "description": "Current balance",
+          "children": []
+        },
+        {
+          "name": "frozen_balance",
+          "type": "integer",
+          "required": true,
+          "description": "Frozen balance amount",
+          "children": []
+        },
+        {
+          "name": "available_balance",
+          "type": "integer",
+          "required": true,
+          "description": "Available balance",
+          "children": []
+        }
+      ]
+    }
+  ],
+  "response_fields": [],
+  "update_log": [
+    {
+      "date": "2023-07-27",
+      "change": "Added get_balance_details"
+    },
+    {
+      "date": "2023-07-26",
+      "change": "Updated get_balance_details"
+    },
+    {
+      "date": "2023-07-25",
+      "change": "Updated error message"
+    },
+    {
+      "date": "2023-07-24",
+      "change": "Updated error message"
+    },
+    {
+      "date": "2023-07-21",
+      "change": "Added get_balance_details api"
+    },
+    {
+      "date": "2023-07-20",
+      "change": "Added get_balance_detail"
+    }
+  ],
+  "hidden_fields": [],
+  "metadata": {
+    "total_chunks": 1,
+    "chunks_with_errors": 0,
+    "total_parameters_before_dedup": 1,
+    "total_parameters_after_dedup": 1,
+    "update_log_entries": 6,
+    "hidden_fields_count": 0,
+    "source_results": "workspaces\\v2.product.update_stock\\results\\all_chunks_results.json"
+  }
+}

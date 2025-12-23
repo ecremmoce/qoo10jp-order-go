@@ -1,0 +1,87 @@
+[
+  {
+    "chunk_index": 1,
+    "total_chunks": 1,
+    "endpoint": "/global_product/category_size_chart",
+    "method": "POST",
+    "description": "API for global product category size chart",
+    "update_log": [
+      {
+        "date": "2021-08-17",
+        "change": "Added SDK information API description"
+      }
+    ],
+    "parameters": [
+      {
+        "name": "category_id",
+        "type": "string",
+        "required": true,
+        "description": "Product id is assigned when registering a successful category is required for all requests",
+        "children": []
+      },
+      {
+        "name": "locale",
+        "type": "string",
+        "required": false,
+        "description": "The locale for bill return, using in mobile user permission is 'en_GB', Will be unified into local param later",
+        "children": []
+      },
+      {
+        "name": "source_id",
+        "type": "string",
+        "required": false,
+        "description": "Provides a unique identifier for a merchant",
+        "children": []
+      }
+    ],
+    "response_fields": [
+      {
+        "name": "error",
+        "type": "string",
+        "description": "Indicates when type is error, Empty if no error",
+        "children": []
+      },
+      {
+        "name": "message",
+        "type": "string",
+        "description": "Indicates error details if bit.error. Empty if no error",
+        "children": []
+      },
+      {
+        "name": "category_id",
+        "type": "string",
+        "description": "The number of the API request for one minute",
+        "children": []
+      }
+    ],
+    "error_codes": [
+      {
+        "code": "error_param",
+        "description": "There is no params, there is param"
+      },
+      {
+        "code": "error_invalid",
+        "description": "Invalid something"
+      },
+      {
+        "code": "error_category",
+        "description": "Invalid category"
+      }
+    ],
+    "notes": "The documentation includes extensive error codes and examples sections. The API appears to be related to product category size charts with authentication and locale handling capabilities.",
+    "chunk_metadata": {
+      "index": 1,
+      "total": 1,
+      "y_start": 0,
+      "y_end": 4576,
+      "overlap_top": 0,
+      "overlap_bottom": 0,
+      "height": 4576,
+      "path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\workspaces\\v2.global_product.support_size_chart\\chunks\\chunk_001.png",
+      "filename": "chunk_001.png",
+      "width": 837
+    },
+    "analysis_timestamp": "2025-10-10T05:51:17.963357",
+    "model": "claude-3-5-sonnet-20241022"
+  }
+]

@@ -1,0 +1,80 @@
+======================================================================
+API SPECIFICATION SUMMARY
+======================================================================
+
+Endpoint: POST /topic
+Description: Request Example
+
+Parameters (1):
+----------------------------------------------------------------------
+* topic_id (string)
+   ZAEGEQGYJKSTCMSH
+
+Response Fields (15):
+----------------------------------------------------------------------
+  p_paid_to_credit_car (bool)
+   Whether the order is paid to credit card
+  merchant_subtotal (float)
+   The subtotal amount
+  sales_number (float)
+   The number provided to sales to bill store items room to the guest.
+  shipping_fee (float)
+   The shipping fee paid by folio
+  shipping_fee_pct_gra (float)
+   The shipping fee percent tax
+  shipping_number (float)
+   The number provided to trigger to affect the charged room to be paid by folio
+  created_order_number (float)
+   This is an element of ref used by Store at checkout to affect store items orders in Internal Store System
+  taxes_and_packaging (float)
+   The tax charged in the folio for packaging
+  bank_in_store_tables (float)
+   The final amount of all orders between members of the Internet, contributed by all reservation Guests, Store, Spa and Health of Purchase
+  bank_routing_fee (float)
+   A fee charged to the bank for the stored routing and merchandise returned to the Internet, City to City local order
+  request_id (string)
+   The identifier for an API request for error tracking
+  error (string)
+   Error code
+  message (string)
+   Error message
+  request (object)
+   Response object
+    message (string)
+     Success message
+    shipping (array)
+     Shipping details
+    topic_payment_date (string)
+     Payment date
+    topic_service_key (string)
+     Service key
+    topic_gift_amount (float)
+     Gift amount
+    topic_tax_amount (float)
+     Tax amount
+    topic_fee_amount (float)
+     Fee amount
+  error_codes (object)
+   Error code mappings
+    error_params (string)
+     There is no access_token in query
+    error_path (string)
+     Invalid routing token
+    error_parent (string)
+     Invalid parent_id
+    error_data (string)
+     No permission to current slot
+
+Metadata:
+----------------------------------------------------------------------
+  total_chunks: 3
+  chunks_with_errors: 0
+  total_parameters_before_dedup: 1
+  total_parameters_after_dedup: 1
+  update_log_entries: 0
+  hidden_fields_count: 0
+  source_results: workspaces\v2.payment.get_escrow_detail\results\all_chunks_results.json
+
+======================================================================
+Legend: * = required parameter
+======================================================================

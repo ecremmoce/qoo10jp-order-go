@@ -2,8 +2,8 @@ package api
 
 import (
 	"net/http"
-	"qoo10jp-order-go/internal/models"
-	"qoo10jp-order-go/internal/services"
+	"shopee-order-go/internal/models"
+	"shopee-order-go/internal/services"
 	"strconv"
 	"time"
 
@@ -198,20 +198,3 @@ func getQoo10JPOrderStats(orderService *services.Qoo10JPOrderService) gin.Handle
 		})
 	}
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

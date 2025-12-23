@@ -1,0 +1,54 @@
+{
+  "endpoint": null,
+  "method": null,
+  "description": null,
+  "parameters": [
+    {
+      "name": "url",
+      "type": "string",
+      "required": true,
+      "description": "The API endpoint URL",
+      "children": []
+    },
+    {
+      "name": "method",
+      "type": "string",
+      "required": true,
+      "description": "HTTP method",
+      "children": []
+    },
+    {
+      "name": "text",
+      "type": "string",
+      "required": false,
+      "description": "Request text",
+      "children": []
+    },
+    {
+      "name": "required",
+      "type": "boolean",
+      "required": false,
+      "description": "Whether the field is required",
+      "children": []
+    },
+    {
+      "name": "example_value",
+      "type": "string",
+      "required": false,
+      "description": "Example value for the field",
+      "children": []
+    }
+  ],
+  "response_fields": [],
+  "update_log": [],
+  "hidden_fields": [],
+  "metadata": {
+    "total_chunks": 1,
+    "chunks_with_errors": 0,
+    "total_parameters_before_dedup": 5,
+    "total_parameters_after_dedup": 5,
+    "update_log_entries": 0,
+    "hidden_fields_count": 0,
+    "source_results": "workspaces\\v2.livestream.get_recent_item_list\\results\\all_chunks_results.json"
+  }
+}

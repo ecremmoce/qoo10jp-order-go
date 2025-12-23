@@ -1,0 +1,90 @@
+{
+  "endpoint": "cc_dkl_sm_dedl_plt_mt_lock_put_del",
+  "method": null,
+  "description": null,
+  "parameters": [
+    {
+      "name": "url",
+      "type": "string",
+      "required": true,
+      "description": "HTTP request",
+      "children": []
+    },
+    {
+      "name": "headers",
+      "type": "object",
+      "required": true,
+      "description": "HTTP request header",
+      "children": []
+    },
+    {
+      "name": "Test",
+      "type": "string",
+      "required": true,
+      "description": "Test url",
+      "children": []
+    },
+    {
+      "name": "url_pre",
+      "type": "string",
+      "required": false,
+      "description": "The url pre added to the call on test",
+      "children": []
+    },
+    {
+      "name": "proc_id",
+      "type": "string",
+      "required": true,
+      "description": "Dragon's process identifier for an info",
+      "children": []
+    },
+    {
+      "name": "result_id",
+      "type": "string",
+      "required": true,
+      "description": "The identifier of the DA request for each checking",
+      "children": []
+    },
+    {
+      "name": "lock_info_del",
+      "type": "string",
+      "required": true,
+      "description": "The pre processed result of each call date. Gets the pre processed result of an info if no need to process it or if job info was applied.",
+      "children": []
+    }
+  ],
+  "response_fields": [
+    {
+      "name": "message",
+      "type": "string",
+      "description": "The description of error code",
+      "children": []
+    },
+    {
+      "name": "result_id",
+      "type": "string",
+      "description": "The identifier of the DA request for each checking",
+      "children": []
+    }
+  ],
+  "update_log": [
+    {
+      "date": "2021-07-16",
+      "change": "Updates the change information of Request Parameter and Response Parameter"
+    },
+    {
+      "date": "2021-04-26",
+      "change": "API first time information"
+    }
+  ],
+  "hidden_fields": [],
+  "metadata": {
+    "total_chunks": 1,
+    "chunks_with_errors": 0,
+    "total_parameters_before_dedup": 7,
+    "total_parameters_after_dedup": 7,
+    "update_log_entries": 2,
+    "hidden_fields_count": 0,
+    "source_results": "workspaces\\v2.add_on_deal.get_add_on_deal_sub_item\\results\\all_chunks_results.json"
+  }
+}

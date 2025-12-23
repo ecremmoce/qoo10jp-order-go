@@ -1,0 +1,79 @@
+{
+  "endpoint": "/choose.chouse.com/api/follow_prize/delete_prize",
+  "method": "POST",
+  "description": null,
+  "parameters": [
+    {
+      "name": "prize_id",
+      "type": "string",
+      "required": true,
+      "description": "Prize ID is grouped when registration is successful",
+      "children": []
+    },
+    {
+      "name": "group_token",
+      "type": "string",
+      "required": true,
+      "description": "The token for DY Users, using to identify prize permission to group, need to refresh one time every 30 days",
+      "children": []
+    },
+    {
+      "name": "shop_id",
+      "type": "integer",
+      "required": true,
+      "description": "Standard unique identifier for a shop. Required param for shopwise.",
+      "children": []
+    }
+  ],
+  "response_fields": [
+    {
+      "name": "campaign_id",
+      "type": "int32",
+      "required": false,
+      "description": "The unique identifier for the coupled token",
+      "children": []
+    },
+    {
+      "name": "message",
+      "type": "string",
+      "required": false,
+      "description": "Message error text in group: Every the shop response",
+      "children": []
+    },
+    {
+      "name": "request_id",
+      "type": "string",
+      "required": false,
+      "description": "The identifier of the API request for you",
+      "children": []
+    }
+  ],
+  "update_log": [
+    {
+      "date": "2020-08-04",
+      "change": "reset logs for beta parameters"
+    },
+    {
+      "date": "2020-07-14",
+      "change": "add the full path information"
+    },
+    {
+      "date": "2020-06-14",
+      "change": "Optimize the nested parameter and response parameter description information"
+    },
+    {
+      "date": "2017-11-28",
+      "change": "updated the challenge_id"
+    }
+  ],
+  "hidden_fields": [],
+  "metadata": {
+    "total_chunks": 1,
+    "chunks_with_errors": 0,
+    "total_parameters_before_dedup": 3,
+    "total_parameters_after_dedup": 3,
+    "update_log_entries": 4,
+    "hidden_fields_count": 0,
+    "source_results": "workspaces\\v2.follow_prize.delete_follow_prize\\results\\all_chunks_results.json"
+  }
+}

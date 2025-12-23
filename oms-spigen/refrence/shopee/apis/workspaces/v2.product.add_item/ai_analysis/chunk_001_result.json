@@ -1,0 +1,42 @@
+{
+  "chunk_index": 1,
+  "endpoint": null,
+  "method": null,
+  "description": null,
+  "parameters": [],
+  "response_fields": [
+    {
+      "name": "error_nil_name_new_item",
+      "type": "string",
+      "description": "Item_name cannot be empty"
+    },
+    {
+      "name": "error_item_name_is_too_short",
+      "type": "string",
+      "description": "Item_name length is less than min limit"
+    },
+    {
+      "name": "error_title_exceeds_max_length",
+      "type": "string",
+      "description": "The length of item_name is bigger than max limit"
+    },
+    {
+      "name": "error_title_character_forbidden",
+      "type": "string",
+      "description": "Item_name contains forbidden characters"
+    }
+  ],
+  "chunk_metadata": {
+    "index": 1,
+    "total": 4,
+    "y_start": 0,
+    "y_end": 8000,
+    "overlap_top": 0,
+    "overlap_bottom": 500,
+    "height": 8000,
+    "path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\workspaces\\v2.product.add_item\\chunks\\chunk_001.png",
+    "filename": "chunk_001.png",
+    "width": 837
+  },
+  "chunk_path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\workspaces\\v2.product.add_item\\chunks\\chunk_001.png"
+}

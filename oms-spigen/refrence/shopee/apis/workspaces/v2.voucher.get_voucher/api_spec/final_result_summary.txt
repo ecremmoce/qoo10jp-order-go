@@ -1,0 +1,45 @@
+======================================================================
+API SPECIFICATION SUMMARY
+======================================================================
+
+Endpoint: None None
+
+Parameters (5):
+----------------------------------------------------------------------
+* category_id (integer)
+   The unique identifier for a category
+  image (string)
+   Image URL
+  label (string)
+   Label text
+  value (string)
+   Value identifier
+  metadata (object)
+   Additional metadata information
+    brand_name (string)
+     Name of the brand
+    model_name (string)
+     Name of the model
+
+Response Fields (3):
+----------------------------------------------------------------------
+  error_code (integer)
+   Error code if request fails
+  msg (string)
+   Error message or success confirmation
+  data (object)
+   Response data object
+
+Metadata:
+----------------------------------------------------------------------
+  total_chunks: 1
+  chunks_with_errors: 0
+  total_parameters_before_dedup: 5
+  total_parameters_after_dedup: 5
+  update_log_entries: 0
+  hidden_fields_count: 0
+  source_results: workspaces\v2.voucher.get_voucher\results\all_chunks_results.json
+
+======================================================================
+Legend: * = required parameter
+======================================================================

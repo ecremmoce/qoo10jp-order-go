@@ -1,0 +1,96 @@
+{
+  "chunk_index": 1,
+  "total_chunks": 1,
+  "endpoint": "/openapi/mex/swap/order/v4_delete_ws_deal_or_deal",
+  "method": "DELETE",
+  "description": "Delete order API endpoint",
+  "update_log": [
+    {
+      "date": "2021-08-24",
+      "change": "Add first complete information"
+    },
+    {
+      "date": "2021-08-24",
+      "change": "Optimize the Details Generation of Required Parameter and Response Parameter"
+    },
+    {
+      "date": "2021-05-25",
+      "change": "Update the details"
+    },
+    {
+      "date": "2021-04-27",
+      "change": "New API"
+    }
+  ],
+  "parameters": {
+    "common_parameters": [
+      {
+        "name": "access_token",
+        "type": "string",
+        "required": true,
+        "description": "Request for all requests"
+      },
+      {
+        "name": "type",
+        "type": "string",
+        "required": true,
+        "description": "Signature generator to verify user permission"
+      }
+    ],
+    "required_parameters": [
+      {
+        "name": "deal_or_deal_or",
+        "type": "string",
+        "required": true,
+        "description": "The identifier of the API request for error tracking"
+      }
+    ],
+    "response_parameters": [
+      {
+        "name": "message",
+        "type": "string",
+        "required": true,
+        "description": "The description of error code"
+      },
+      {
+        "name": "result_id",
+        "type": "string",
+        "required": true,
+        "description": "The identifier of the API request for error tracking"
+      }
+    ]
+  },
+  "error_codes": [
+    {
+      "code": "deal_or_deal_or_deal_already_deleted",
+      "description": "The order has been deleted"
+    },
+    {
+      "code": "error_system",
+      "description": "System error"
+    },
+    {
+      "code": "error_param",
+      "description": "Invalid parameter"
+    },
+    {
+      "code": "error_sign",
+      "description": "Signature error"
+    }
+  ],
+  "notes": "The documentation includes request examples, response examples, and error examples with their corresponding codes and descriptions. The API appears to be related to deleting orders in a trading system.",
+  "chunk_metadata": {
+    "index": 1,
+    "total": 1,
+    "y_start": 0,
+    "y_end": 4411,
+    "overlap_top": 0,
+    "overlap_bottom": 0,
+    "height": 4411,
+    "path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\workspaces\\v2.add_on_deal.end_add_on_deal\\chunks\\chunk_001.png",
+    "filename": "chunk_001.png",
+    "width": 837
+  },
+  "analysis_timestamp": "2025-10-10T05:25:01.111688",
+  "model": "claude-3-5-sonnet-20241022"
+}

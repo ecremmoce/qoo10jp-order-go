@@ -1,0 +1,31 @@
+======================================================================
+API SPECIFICATION SUMMARY
+======================================================================
+
+Endpoint: None None
+
+Parameters (6):
+----------------------------------------------------------------------
+* URL (string)
+   Authentication server URLs
+* sso_url (string)
+* oauth_url (string)
+  settings (object)
+  allow_user_auth (boolean)
+   Specifies whether users can authenticate
+* client_id (string)
+   The application client ID
+
+Metadata:
+----------------------------------------------------------------------
+  total_chunks: 1
+  chunks_with_errors: 0
+  total_parameters_before_dedup: 6
+  total_parameters_after_dedup: 6
+  update_log_entries: 0
+  hidden_fields_count: 0
+  source_results: workspaces\v2.payment.get_escrow_list\results\all_chunks_results.json
+
+======================================================================
+Legend: * = required parameter
+======================================================================

@@ -1,0 +1,73 @@
+{
+  "endpoint": "/trades/get_sharing_account_spot",
+  "method": "GET",
+  "description": "API documentation for sharing account spot trading",
+  "parameters": [
+    {
+      "name": "trade_id",
+      "type": "string",
+      "required": true,
+      "description": "Trading platform ID",
+      "children": []
+    },
+    {
+      "name": "strategy_name",
+      "type": "string",
+      "required": false,
+      "description": "Strategy name",
+      "children": []
+    },
+    {
+      "name": "symbol",
+      "type": "string",
+      "required": true,
+      "description": "Trading pair name",
+      "children": []
+    },
+    {
+      "name": "platform_account_ids",
+      "type": "array",
+      "required": false,
+      "description": "Platform account IDs to be queried",
+      "children": []
+    }
+  ],
+  "response_fields": [
+    {
+      "name": "code",
+      "type": "integer",
+      "description": "Response code",
+      "children": []
+    },
+    {
+      "name": "message",
+      "type": "string",
+      "description": "Response message",
+      "children": []
+    },
+    {
+      "name": "data",
+      "type": "object",
+      "description": "Response data object",
+      "children": [
+        {
+          "name": "platform_sharing_accounts",
+          "type": "array",
+          "description": "Array of sharing account information",
+          "children": []
+        }
+      ]
+    }
+  ],
+  "update_log": [],
+  "hidden_fields": [],
+  "metadata": {
+    "total_chunks": 1,
+    "chunks_with_errors": 0,
+    "total_parameters_before_dedup": 4,
+    "total_parameters_after_dedup": 4,
+    "update_log_entries": 0,
+    "hidden_fields_count": 0,
+    "source_results": "workspaces\\v2.logistics.get_shipping_document_result\\results\\all_chunks_results.json"
+  }
+}

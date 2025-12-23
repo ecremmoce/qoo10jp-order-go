@@ -1,0 +1,47 @@
+{
+  "endpoint": null,
+  "method": null,
+  "description": null,
+  "parameters": [
+    {
+      "name": "url",
+      "type": "string",
+      "required": true,
+      "description": "Download request parameter url_gen_xxx.text",
+      "children": []
+    },
+    {
+      "name": "url_gen_xxx_text",
+      "type": "string",
+      "required": true,
+      "description": "Download request parameter url_gen_xxx.text",
+      "children": []
+    },
+    {
+      "name": "url_status",
+      "type": "string",
+      "required": true,
+      "description": "Request status code for download",
+      "children": []
+    },
+    {
+      "name": "status_text",
+      "type": "string",
+      "required": true,
+      "description": "Request status text for download",
+      "children": []
+    }
+  ],
+  "response_fields": [],
+  "update_log": [],
+  "hidden_fields": [],
+  "metadata": {
+    "total_chunks": 1,
+    "chunks_with_errors": 0,
+    "total_parameters_before_dedup": 4,
+    "total_parameters_after_dedup": 4,
+    "update_log_entries": 0,
+    "hidden_fields_count": 0,
+    "source_results": "workspaces\\v2.add_on_deal.delete_add_on_deal_sub_item\\results\\all_chunks_results.json"
+  }
+}

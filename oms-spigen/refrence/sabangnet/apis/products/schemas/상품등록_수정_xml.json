@@ -1,0 +1,870 @@
+{
+  "xml_root": "SABANG_GOODS_REGI",
+  "header_fields": [
+    {
+      "name": "SEND_COMPAYNY_ID",
+      "description": "사방넷 로그인아이디",
+      "required": true,
+      "note": "사방넷 어드민 로그인 아이디입력",
+      "section": "header"
+    },
+    {
+      "name": "SEND_AUTH_KEY",
+      "description": "사방넷에서 발급한 인증키",
+      "required": true,
+      "note": "사방넷에서 발급 받은 인증키(만약 받지 않았다면 사방넷에서 인증키 발급 요청)",
+      "section": "header"
+    },
+    {
+      "name": "SEND_DATE",
+      "description": "전송일자",
+      "required": true,
+      "note": "YYYYMMDD",
+      "section": "header"
+    },
+    {
+      "name": "SEND_GOODS_CD_RT",
+      "description": "자체코드 반환여부",
+      "required": false,
+      "note": "상품등록/수정 성공시 결과에서 자체코드를 표시합니다. Y:반환, NULL:없음",
+      "section": "header"
+    },
+    {
+      "name": "RESULT_TYPE",
+      "description": "결과 메시지 타입",
+      "required": false,
+      "note": "미 입력시 기존 HTML형식의 결과값 형태, XML 입력시 XML 형태로 결과값을 출력합니다.",
+      "section": "header"
+    }
+  ],
+  "data_fields": [
+    {
+      "name": "GOODS_NM",
+      "description": "상품명",
+      "required": true,
+      "note": "한글기준 50자리까지 사용가능하며 , HTML 태그 사용은 불가합니다.",
+      "section": "data"
+    },
+    {
+      "name": "GOODS_KEYWORD",
+      "description": "상품약어",
+      "required": false,
+      "note": "간략한 상품명으로써 택배송장 출력과 물류 담당자의 빠른 인식을 위하여 사용할 수 있습니다. ( 단, \"NULL\"이면 수정안함)",
+      "section": "data"
+    },
+    {
+      "name": "MODEL_NM",
+      "description": "모델명",
+      "required": false,
+      "note": "상품의 모델명을 정확히 기재합니다. (30자리까지)",
+      "section": "data"
+    },
+    {
+      "name": "MODEL_NO",
+      "description": "모델No",
+      "required": false,
+      "note": "상품의 모델No.를 정확히 기재합니다. ( 30자리까지 )",
+      "section": "data"
+    },
+    {
+      "name": "BRAND_NM",
+      "description": "브랜드명",
+      "required": false,
+      "note": "브랜드명을 기재합니다.",
+      "section": "data"
+    },
+    {
+      "name": "COMPAYNY_GOODS_CD",
+      "description": "자체상품코드",
+      "required": true,
+      "note": "자사에서 사용하는 상품코드를 기재합니다. ( 30자리까지 )",
+      "section": "data"
+    },
+    {
+      "name": "GOODS_SEARCH",
+      "description": "사이트검색어",
+      "required": false,
+      "note": "쇼핑몰로 상품정보 전송시 사용될 사이트검색어를 콤마(,)로 구분하여 입력합니다.( 단, \"NULL\"이면 수정안함)",
+      "section": "data"
+    },
+    {
+      "name": "GOODS_GUBUN",
+      "description": "상품구분",
+      "required": true,
+      "note": "상품의 구분을 숫자로 입력합니다. 1.위탁상품 2.제조상품 3.사입상품 4.직영상품",
+      "section": "data"
+    },
+    {
+      "name": "CLASS_CD1",
+      "description": "대분류코드",
+      "required": true,
+      "note": "사방넷에 등록된 대분류코드를 입력합니다.( 단, \"NULL\"이면 수정안함)",
+      "section": "data"
+    },
+    {
+      "name": "CLASS_CD2",
+      "description": "중분류코드",
+      "required": true,
+      "note": "사방넷에 등록된 중분류코드를 입력합니다.( 단, \"NULL\"이면 수정안함)",
+      "section": "data"
+    },
+    {
+      "name": "CLASS_CD3",
+      "description": "소분류코드",
+      "required": true,
+      "note": "사방넷에 등록된 소분류코드를 입력합니다.( 단, \"NULL\"이면 수정안함)",
+      "section": "data"
+    },
+    {
+      "name": "CLASS_CD4",
+      "description": "세분류코드",
+      "required": false,
+      "note": "사방넷에 등록된 세분류코드를 입력합니다.( 단, \"NULL\"이면 수정안함)",
+      "section": "data"
+    },
+    {
+      "name": "PARTNER_ID",
+      "description": "매입처ID",
+      "required": false,
+      "note": "매입처의 ID를 기재합니다.(대/소문자 정확히 구분해야 함)",
+      "section": "data"
+    },
+    {
+      "name": "DPARTNER_ID",
+      "description": "물류처ID",
+      "required": false,
+      "note": "물류처의 ID를 기재합니다.(대/소문자 정확히 구분해야 함)",
+      "section": "data"
+    },
+    {
+      "name": "MAKER",
+      "description": "제조사",
+      "required": false,
+      "note": "제조회사의 명칭을 정확히 기재합니다. ( 30자리까지 )",
+      "section": "data"
+    },
+    {
+      "name": "ORIGIN",
+      "description": "원산지(제조국)",
+      "required": true,
+      "note": "예:중국,사방넷 원산지 표를 참고하시어 표에 기재되어 있는 원산지 명으로 기입해주세요.\n원산지가 등록되어 있지 않는 경우 온라인 문의로 요청하시기 바랍니다 ( \"NULL\" 이거나 \"없는값\" 인 경우 \"기타\" 로 입력됨)",
+      "section": "data"
+    },
+    {
+      "name": "MAKE_YEAR",
+      "description": "생산연도",
+      "required": false,
+      "note": "상품이 생산된 년도를 숫자 4자리로 입력합니다. 예 : 2019",
+      "section": "data"
+    },
+    {
+      "name": "MAKE_DM",
+      "description": "제조일자",
+      "required": false,
+      "note": "상품이 제조된 일자를 숫자 8자리로 입력합니다. 예 : 20190820",
+      "section": "data"
+    },
+    {
+      "name": "GOODS_SEASON",
+      "description": "시즌",
+      "required": true,
+      "note": "계절의 구분을 숫자로 입력합니다. 1.봄 2.여름 3.가을 4.겨울 5.FW 6.SS 7.해당없음 ( 단, \"NULL\"이면 수정안함)",
+      "section": "data"
+    },
+    {
+      "name": "SEX",
+      "description": "남녀구분",
+      "required": true,
+      "note": "남여구분을 숫자로 입력합니다. 1.남성용 2.여성용 3.공용 4.해당없음 ( 단, \"NULL\"이면 수정안함)",
+      "section": "data"
+    },
+    {
+      "name": "STATUS",
+      "description": "상품상태",
+      "required": true,
+      "note": "상품의 공급상태에 대한 구분코드를 기재합니다. 1.대기중 2.공급중 3.일시중지 4.완전품절 5.미사용 6.삭제",
+      "section": "data"
+    },
+    {
+      "name": "DELIV_ABLE_REGION",
+      "description": "판매지역",
+      "required": false,
+      "note": "판매가능지역을 숫자로 입력합니다. 1.전국 2.전국(도서제외) 3.수도권 4.기타",
+      "section": "data"
+    },
+    {
+      "name": "TAX_YN",
+      "description": "세금구분",
+      "required": true,
+      "note": "과세여부를 숫자로 입력합니다. 1.과세 2.면세 3.자료없음 4.비과세",
+      "section": "data"
+    },
+    {
+      "name": "DELV_TYPE",
+      "description": "배송비구분",
+      "required": true,
+      "note": "배송비 구분을 숫자로 입력합니다. 1.무료 2.착불 3.선결제 4.착불/선결제",
+      "section": "data"
+    },
+    {
+      "name": "DELV_COST",
+      "description": "배송비",
+      "required": false,
+      "note": "배송비를 숫자로 입력합니다. 첫글자는 반드시 '(ENTER좌측Key)로 시작해야하며 숫자사이에 콤마(,)가 들어가면 안됩니다.",
+      "section": "data"
+    },
+    {
+      "name": "BANPUM_AREA",
+      "description": "반품지구분",
+      "required": false,
+      "note": "매입처의 복수의 반품지중 해당하는 순서를 기재합니다. 예 : 1, 공백일경우 기본주소가 적용됩니다.",
+      "section": "data"
+    },
+    {
+      "name": "GOODS_COST",
+      "description": "원가",
+      "required": true,
+      "note": "입력시 첫글자는 반드시 ( ‘ ) 아포스트로피(ENTER좌측Key)로 시작해야 하며 숫자 사이에 ( , ) 콤마가 들어가면 안됩니다.",
+      "section": "data"
+    },
+    {
+      "name": "GOODS_PRICE",
+      "description": "판매가",
+      "required": true,
+      "note": "입력시 첫글자는 반드시 ( ‘ ) 아포스트로피(ENTER좌측Key)로 시작해야 하며 숫자 사이에 ( , ) 콤마가 들어가면 안됩니다.",
+      "section": "data"
+    },
+    {
+      "name": "GOODS_CONSUMER_PRICE",
+      "description": "TAG가(소비자가)",
+      "required": true,
+      "note": "입력시 첫글자는 반드시 ( ‘ ) 아포스트로피(ENTER좌측Key)로 시작해야 하며 숫자 사이에 ( , ) 콤마가 들어가면 안됩니다.",
+      "section": "data"
+    },
+    {
+      "name": "CHAR_1_NM",
+      "description": "옵션제목(1)",
+      "required": false,
+      "note": "예 : 색상 / 옵션이 없을경우엔는 단품 이라고 입력합니다.",
+      "section": "data"
+    },
+    {
+      "name": "CHAR_1_VAL",
+      "description": "옵션상세명칭(1)",
+      "required": false,
+      "note": "옵션항목명1^^재고수량^^추가금액^^별칭^^EA^^옵션공급상태^^옵션모음전여부^^옵션모음전연결상품코드^^안전재고수량\n예) 블루^^재고수량^^추가금액^^별칭^^EA,옐로우^^재고수량^^추가금액^^별칭^^EA,블랙^^재고수량^^추가금액^^별칭^^EA\n각 항목은 반드시 콤마로 구분함,기술된 순서대로 일련된 코드 부여됨\n재고수량과 추가금액을 적용하지 않은 고객사는 항목들만 콤마구분하여 입력합니다.(예:블루,옐로우,블랙)\n추가금액과 재고수량는 옵션항목1에만 적용가능하고 옵션항목2에는 적용하실수 없습니다.\n\n옵션이 없을경우에는 단품^^재고수량 ( 예 : 단품^^999 ) 라고 입력합니다.\n\n옵션공급상태 - 002:공급중, 004:품절, 005:미사용\n옵션모음전여부 - L: 옵션 모음전 사용함, DL:옵션 모음전 연결상품코드 정보 삭제\n옵션모음전연결상품코드 - 품번코드-단품코드 형식 예) 12345-0001",
+      "section": "data"
+    },
+    {
+      "name": "CHAR_2_NM",
+      "description": "옵션제목(2)",
+      "required": false,
+      "note": "예 : 사이즈",
+      "section": "data"
+    },
+    {
+      "name": "CHAR_2_VAL",
+      "description": "옵션상세명칭(2)",
+      "required": false,
+      "note": "예 : 44,55,66,77 (각 항목은 반드시 콤마로 구분함,기술된 순서대로 일련된 코드 부여됨)",
+      "section": "data"
+    },
+    {
+      "name": "IMG_PATH",
+      "description": "대표이미지",
+      "required": true,
+      "note": "예 : http://gs4333.CO.KR/product_image/a0000769/200907/image20_700.jpg",
+      "section": "data"
+    },
+    {
+      "name": "IMG_PATH1",
+      "description": "종합몰(JPG)이미지",
+      "required": true,
+      "note": "예 : http://gs4333.CO.KR/product_image/a0000769/200907/image20_700.jpg (종합몰(JPG)이미지 (500x500 ~ 700x700))",
+      "section": "data"
+    },
+    {
+      "name": "IMG_PATH2",
+      "description": "부가이미지2",
+      "required": false,
+      "note": "예 : http://gs4333.CO.KR/product_image/a0000769/200907/image20_700.jpg (이미지2)",
+      "section": "data"
+    },
+    {
+      "name": "IMG_PATH3",
+      "description": "부가이미지3",
+      "required": true,
+      "note": "예 : http://gs4333.CO.KR/product_image/a0000769/200907/image20_700.jpg (11번가목록이미지 (300*300))",
+      "section": "data"
+    },
+    {
+      "name": "IMG_PATH4",
+      "description": "부가이미지4",
+      "required": false,
+      "note": "예 : http://gs4333.CO.KR/product_image/a0000769/200907/image20_700.jpg (이미지4)",
+      "section": "data"
+    },
+    {
+      "name": "IMG_PATH5",
+      "description": "부가이미지5",
+      "required": false,
+      "note": "예 : http://gs4333.CO.KR/product_image/a0000769/200907/image20_700.jpg (이미지5)",
+      "section": "data"
+    },
+    {
+      "name": "IMG_PATH6",
+      "description": "부가이미지6",
+      "required": false,
+      "note": "예 : http://gs4333.CO.KR/product_image/a0000769/200907/image20_700.jpg (쇼핑몰 추가이미지1)",
+      "section": "data"
+    },
+    {
+      "name": "IMG_PATH7",
+      "description": "부가이미지7",
+      "required": false,
+      "note": "예 : http://gs4333.CO.KR/product_image/a0000769/200907/image20_700.jpg (쇼핑몰 추가이미지2)",
+      "section": "data"
+    },
+    {
+      "name": "IMG_PATH8",
+      "description": "부가이미지8",
+      "required": false,
+      "note": "예 : http://gs4333.CO.KR/product_image/a0000769/200907/image20_700.jpg (쇼핑몰 추가이미지3)",
+      "section": "data"
+    },
+    {
+      "name": "IMG_PATH9",
+      "description": "부가이미지9",
+      "required": false,
+      "note": "예 : http://gs4333.CO.KR/product_image/a0000769/200907/image20_700.jpg (쇼핑몰 추가이미지4)",
+      "section": "data"
+    },
+    {
+      "name": "IMG_PATH10",
+      "description": "부가이미지10",
+      "required": false,
+      "note": "예 : http://gs4333.CO.KR/product_image/a0000769/200907/image20_700.jpg (쇼핑몰 추가이미지5)",
+      "section": "data"
+    },
+    {
+      "name": "IMG_PATH11",
+      "description": "부가이미지11",
+      "required": false,
+      "note": "예 : http://gs4333.CO.KR/product_image/a0000769/200907/image20_701.jpg (카페24,메이크샵,고도몰,패플등 리스트이미지)",
+      "section": "data"
+    },
+    {
+      "name": "IMG_PATH12",
+      "description": "부가이미지12",
+      "required": false,
+      "note": "예 : http://gs4333.CO.KR/product_image/a0000769/200907/image20_702.jpg (이미지12)",
+      "section": "data"
+    },
+    {
+      "name": "IMG_PATH13",
+      "description": "부가이미지13",
+      "required": false,
+      "note": "예 : http://gs4333.CO.KR/product_image/a0000769/200907/image20_703.jpg (이미지13)",
+      "section": "data"
+    },
+    {
+      "name": "IMG_PATH14",
+      "description": "부가이미지14",
+      "required": false,
+      "note": "예 : http://gs4333.CO.KR/product_image/a0000769/200907/image20_703.jpg (쇼핑몰 추가이미지6)",
+      "section": "data"
+    },
+    {
+      "name": "IMG_PATH15",
+      "description": "부가이미지15",
+      "required": false,
+      "note": "예 : http://gs4333.CO.KR/product_image/a0000769/200907/image20_703.jpg (쇼핑몰 추가이미지7)",
+      "section": "data"
+    },
+    {
+      "name": "IMG_PATH16",
+      "description": "부가이미지16",
+      "required": false,
+      "note": "예 : http://gs4333.CO.KR/product_image/a0000769/200907/image20_703.jpg (쇼핑몰 추가이미지8)",
+      "section": "data"
+    },
+    {
+      "name": "IMG_PATH17",
+      "description": "부가이미지17",
+      "required": false,
+      "note": "예 : http://gs4333.CO.KR/product_image/a0000769/200907/image20_703.jpg (쇼핑몰 추가이미지9)",
+      "section": "data"
+    },
+    {
+      "name": "IMG_PATH18",
+      "description": "부가이미지18",
+      "required": false,
+      "note": "예 : http://gs4333.CO.KR/product_image/a0000769/200907/image20_703.jpg (쇼핑몰 추가이미지10)",
+      "section": "data"
+    },
+    {
+      "name": "IMG_PATH19",
+      "description": "부가이미지19",
+      "required": false,
+      "note": "예 : http://gs4333.CO.KR/product_image/a0000769/200907/image20_703.jpg (쇼핑몰 추가이미지11)",
+      "section": "data"
+    },
+    {
+      "name": "IMG_PATH20",
+      "description": "부가이미지20",
+      "required": false,
+      "note": "예 : http://gs4333.CO.KR/product_image/a0000769/200907/image20_703.jpg (쇼핑몰 추가이미지12)",
+      "section": "data"
+    },
+    {
+      "name": "IMG_PATH21",
+      "description": "부가이미지21",
+      "required": false,
+      "note": "예 : http://gs4333.CO.KR/product_image/a0000769/200907/image20_703.jpg (쇼핑몰 추가이미지13)",
+      "section": "data"
+    },
+    {
+      "name": "IMG_PATH22",
+      "description": "부가이미지22",
+      "required": false,
+      "note": "예 : http://gs4333.CO.KR/product_image/a0000769/200907/image20_703.jpg (쇼핑몰 추가이미지14)",
+      "section": "data"
+    },
+    {
+      "name": "IMG_PATH23",
+      "description": "인증서이미지",
+      "required": false,
+      "note": "예 : http://gs4333.CO.KR/product_image/a0000769/200907/image20_703.jpg (인증서이미지)",
+      "section": "data"
+    },
+    {
+      "name": "IMG_PATH24",
+      "description": "수입면장이미지",
+      "required": false,
+      "note": "예 : http://gs4333.CO.KR/product_image/a0000769/200907/image20_703.jpg (수입면장이미지)",
+      "section": "data"
+    },
+    {
+      "name": "GOODS_REMARKS",
+      "description": "상품상세설명",
+      "required": false,
+      "note": "상품상세(HTML)을 기재합니다.",
+      "section": "data"
+    },
+    {
+      "name": "CERTNO",
+      "description": "인증번호",
+      "required": false,
+      "note": "전기용품, 유아 안전용품 등 안전검사를 거쳐야 하는 상품의 경우 해당기관에서 부여한 인증번호를 입력합니다",
+      "section": "data"
+    },
+    {
+      "name": "AVLST_DM",
+      "description": "인증유효 시작일",
+      "required": false,
+      "note": "숫자8자리 입력하세요 예:20190820",
+      "section": "data"
+    },
+    {
+      "name": "AVLED_DM",
+      "description": "인증유효 마지막일",
+      "required": false,
+      "note": "숫자8자리 입력하세요 예:20190820",
+      "section": "data"
+    },
+    {
+      "name": "ISSUEDATE",
+      "description": "발급일자",
+      "required": false,
+      "note": "숫자8자리 입력하세요 예:20190820",
+      "section": "data"
+    },
+    {
+      "name": "CERTDATE",
+      "description": "인증일자",
+      "required": false,
+      "note": "숫자8자리 입력하세요 예:20190820",
+      "section": "data"
+    },
+    {
+      "name": "CERT_AGENCY",
+      "description": "인증기관",
+      "required": false,
+      "note": "예 : 한국기업인증연구원",
+      "section": "data"
+    },
+    {
+      "name": "CERTFIELD",
+      "description": "인증분야",
+      "required": false,
+      "note": "예 : 규격인증",
+      "section": "data"
+    },
+    {
+      "name": "MATERIAL",
+      "description": "식품재료/원산지",
+      "required": false,
+      "note": "※식품의 재료와 원산지 구분은 /(슬러시)로 표기하며 추가 입력 시 ,(콤마)로 구분하여 추가할 재료와 원산지를 입력합니다.\n판매식품 돼지갈비 예: 갈비/호수산,양념/국내산",
+      "section": "data"
+    },
+    {
+      "name": "STOCK_USE_YN",
+      "description": "재고관리사용여부",
+      "required": false,
+      "note": "재고관리 사용여부를 Y or N로 입력합니다.\nY입력시 [재고관리] 메뉴에서 해당상품에 대한 입/출고가 가능하며, 쇼핑몰에 상품연동시 재고수량으로 연동됩니다.\nN입력시 [재고관리] 메뉴에서 [출고관리(주문)] 메뉴만 사용가능하며, 쇼핑몰에 상품연동시 가상재고로 연동됩니다.\n단품별 가상재고 입력은 [상품관리] >> [단품대량수정] 에서 입력가능합니다.",
+      "section": "data"
+    },
+    {
+      "name": "OPT_TYPE",
+      "description": "옵션수정여부",
+      "required": false,
+      "note": "상품수정시 등록된 옵션의 내용을 모두 지우고 새로 등록하는 옵션입니다.\n9: 옵션의 내용을 지우지 않는다. 사방넷 재고관리를 이용하는 업체인경우 옵션의 내용을 지우게 되면 기존에 가지고 있던 옵션코드값을 잃어버리기 때문에\n재고관리에 큰문제가 발생하므로 재고관리와 연결되어 있는 업체라면 옵션지우지 않음을 선택하셔야 합니다.\n한번 9로 선택된 상품은 다른 값선택이 불가능합니다.\n2: 등록된 옵션의 내용을 모두 지우고 새로 옵션을 구성한다.\n값을 2로 보내게 되면 그 상품에 적용되어 있는 옵션의 내용을 모두 삭제하고 보내신 내용으로 옵션을 재구성합니다.\n이때, 이전에 옵션의 수정가능여부에 대해서 9로 선택하셨다면, 2로 변경은 불가능합니다.\n단, 이전에 옵션의 수정가능여부에 2를 선택하셨다가 9로 선택은 가능합니다.",
+      "section": "data"
+    },
+    {
+      "name": "PROP_EDIT_YN",
+      "description": "속성수정여부",
+      "required": false,
+      "note": "속성정보 수정여부를 Y or N로 입력합니다.\nY입력시 속성정보(속성분류코드, 속성값)를 수정 처리합니다.",
+      "section": "data"
+    },
+    {
+      "name": "PROP1_CD",
+      "description": "속성분류코드",
+      "required": false,
+      "note": "속성분류코드를 숫자 3자리 형식으로 입력합니다.\n속성분류코드는 상품속성코드 조회 API나 사방넷 상품관리화면의 속성분류표를 참고하시기 바랍니다.\n예: 의류는 001을 입력합니다.",
+      "section": "data"
+    },
+    {
+      "name": "PROP_VAL1",
+      "description": "속성값1",
+      "required": false,
+      "note": "속성분류코드에 따른 속성순번1인 속성명에 해당하는 속성값을 입력합니다.\n속성값(1 ~ 20)은 입력순서대로 처리되므로, 속성순번에 주의하시기 바랍니다.(속성값이 없을 경우, 공란으로 처리하시기 바랍니다.)\n예 : 의류 001의 속성명1은 제품 소재이며, 속성값1에 면,나일론 등을 입력합니다.",
+      "section": "data"
+    },
+    {
+      "name": "PROP_VAL2",
+      "description": "속성값2",
+      "required": false,
+      "note": "속성분류코드에 따른 속성순번2인 속성명에 해당하는 속성값을 입력합니다.\n예 : 의류 001의 속성명2은 색상이며, 속성값2에 레드,블루 등을 입력합니다.",
+      "section": "data"
+    },
+    {
+      "name": "PROP_VAL3",
+      "description": "속성값3",
+      "required": false,
+      "note": "속성분류코드에 따른 속성순번3인 속성명에 해당하는 속성값을 입력합니다.\n예 : 의류 001의 속성명3은 치수이며, 속성값3에 S,M,L 등을 입력합니다.",
+      "section": "data"
+    },
+    {
+      "name": "PROP_VAL4",
+      "description": "속성값4",
+      "required": false,
+      "note": "속성분류코드에 따른 속성순번4인 속성명에 해당하는 속성값을 입력합니다.\n예 : 의류 001의 속성명4은 제조사(수입자/병행수입)이며, 속성값4에 나이키 등을 입력합니다.",
+      "section": "data"
+    },
+    {
+      "name": "PROP_VAL5",
+      "description": "속성값5",
+      "required": false,
+      "note": "속성분류코드에 따른 속성순번5인 속성명에 해당하는 속성값을 입력합니다.\n예 : 의류 001의 속성명5은 제조국이며, 속성값5에 베트남 등을 입력합니다.",
+      "section": "data"
+    },
+    {
+      "name": "PROP_VAL6",
+      "description": "속성값6",
+      "required": false,
+      "note": "속성분류코드에 따른 속성순번6인 속성명에 해당하는 속성값을 입력합니다.",
+      "section": "data"
+    },
+    {
+      "name": "PROP_VAL7",
+      "description": "속성값7",
+      "required": false,
+      "note": "속성분류코드에 따른 속성순번7인 속성명에 해당하는 속성값을 입력합니다.",
+      "section": "data"
+    },
+    {
+      "name": "PROP_VAL8",
+      "description": "속성값8",
+      "required": false,
+      "note": "속성분류코드에 따른 속성순번8인 속성명에 해당하는 속성값을 입력합니다.",
+      "section": "data"
+    },
+    {
+      "name": "PROP_VAL9",
+      "description": "속성값9",
+      "required": false,
+      "note": "속성분류코드에 따른 속성순번9인 속성명에 해당하는 속성값을 입력합니다.",
+      "section": "data"
+    },
+    {
+      "name": "PROP_VAL10",
+      "description": "속성값10",
+      "required": false,
+      "note": "속성분류코드에 따른 속성순번10인 속성명에 해당하는 속성값을 입력합니다.",
+      "section": "data"
+    },
+    {
+      "name": "PROP_VAL11",
+      "description": "속성값11",
+      "required": false,
+      "note": "속성분류코드에 따른 속성순번11인 속성명에 해당하는 속성값을 입력합니다.",
+      "section": "data"
+    },
+    {
+      "name": "PROP_VAL12",
+      "description": "속성값12",
+      "required": false,
+      "note": "속성분류코드에 따른 속성순번12인 속성명에 해당하는 속성값을 입력합니다.",
+      "section": "data"
+    },
+    {
+      "name": "PROP_VAL13",
+      "description": "속성값13",
+      "required": false,
+      "note": "속성분류코드에 따른 속성순번13인 속성명에 해당하는 속성값을 입력합니다.",
+      "section": "data"
+    },
+    {
+      "name": "PROP_VAL14",
+      "description": "속성값14",
+      "required": false,
+      "note": "속성분류코드에 따른 속성순번14인 속성명에 해당하는 속성값을 입력합니다.",
+      "section": "data"
+    },
+    {
+      "name": "PROP_VAL15",
+      "description": "속성값15",
+      "required": false,
+      "note": "속성분류코드에 따른 속성순번15인 속성명에 해당하는 속성값을 입력합니다.",
+      "section": "data"
+    },
+    {
+      "name": "PROP_VAL16",
+      "description": "속성값16",
+      "required": false,
+      "note": "속성분류코드에 따른 속성순번16인 속성명에 해당하는 속성값을 입력합니다.",
+      "section": "data"
+    },
+    {
+      "name": "PROP_VAL17",
+      "description": "속성값17",
+      "required": false,
+      "note": "속성분류코드에 따른 속성순번17인 속성명에 해당하는 속성값을 입력합니다.",
+      "section": "data"
+    },
+    {
+      "name": "PROP_VAL18",
+      "description": "속성값18",
+      "required": false,
+      "note": "속성분류코드에 따른 속성순번18인 속성명에 해당하는 속성값을 입력합니다.",
+      "section": "data"
+    },
+    {
+      "name": "PROP_VAL19",
+      "description": "속성값19",
+      "required": false,
+      "note": "속성분류코드에 따른 속성순번19인 속성명에 해당하는 속성값을 입력합니다.",
+      "section": "data"
+    },
+    {
+      "name": "PROP_VAL20",
+      "description": "속성값20",
+      "required": false,
+      "note": "속성분류코드에 따른 속성순번20인 속성명에 해당하는 속성값을 입력합니다.",
+      "section": "data"
+    },
+    {
+      "name": "PROP_VAL21",
+      "description": "속성값21",
+      "required": false,
+      "note": "속성분류코드에 따른 속성순번21인 속성명에 해당하는 속성값을 입력합니다.",
+      "section": "data"
+    },
+    {
+      "name": "PROP_VAL22",
+      "description": "속성값22",
+      "required": false,
+      "note": "속성분류코드에 따른 속성순번22인 속성명에 해당하는 속성값을 입력합니다.",
+      "section": "data"
+    },
+    {
+      "name": "PROP_VAL23",
+      "description": "속성값23",
+      "required": false,
+      "note": "속성분류코드에 따른 속성순번23인 속성명에 해당하는 속성값을 입력합니다.",
+      "section": "data"
+    },
+    {
+      "name": "PROP_VAL24",
+      "description": "속성값24",
+      "required": false,
+      "note": "속성분류코드에 따른 속성순번24인 속성명에 해당하는 속성값을 입력합니다.",
+      "section": "data"
+    },
+    {
+      "name": "PROP_VAL25",
+      "description": "속성값25",
+      "required": false,
+      "note": "속성분류코드에 따른 속성순번25인 속성명에 해당하는 속성값을 입력합니다.",
+      "section": "data"
+    },
+    {
+      "name": "PROP_VAL26",
+      "description": "속성값26",
+      "required": false,
+      "note": "속성분류코드에 따른 속성순번26인 속성명에 해당하는 속성값을 입력합니다.",
+      "section": "data"
+    },
+    {
+      "name": "PROP_VAL27",
+      "description": "속성값27",
+      "required": false,
+      "note": "속성분류코드에 따른 속성순번27인 속성명에 해당하는 속성값을 입력합니다.",
+      "section": "data"
+    },
+    {
+      "name": "PROP_VAL28",
+      "description": "속성값28",
+      "required": false,
+      "note": "속성분류코드에 따른 속성순번28인 속성명에 해당하는 속성값을 입력합니다.",
+      "section": "data"
+    },
+    {
+      "name": "PROP_VAL29",
+      "description": "속성값29",
+      "required": false,
+      "note": "속성분류코드에 따른 속성순번29인 속성명에 해당하는 속성값을 입력합니다.",
+      "section": "data"
+    },
+    {
+      "name": "PROP_VAL30",
+      "description": "속성값30",
+      "required": false,
+      "note": "속성분류코드에 따른 속성순번30인 속성명에 해당하는 속성값을 입력합니다.",
+      "section": "data"
+    },
+    {
+      "name": "PROP_VAL31",
+      "description": "속성값31",
+      "required": false,
+      "note": "속성분류코드에 따른 속성순번31인 속성명에 해당하는 속성값을 입력합니다.",
+      "section": "data"
+    },
+    {
+      "name": "PROP_VAL32",
+      "description": "속성값32",
+      "required": false,
+      "note": "속성분류코드에 따른 속성순번32인 속성명에 해당하는 속성값을 입력합니다.",
+      "section": "data"
+    },
+    {
+      "name": "PROP_VAL33",
+      "description": "속성값33",
+      "required": false,
+      "note": "속성분류코드에 따른 속성순번33인 속성명에 해당하는 속성값을 입력합니다.",
+      "section": "data"
+    },
+    {
+      "name": "PACK_CODE_STR",
+      "description": "추가상품그룹코드",
+      "required": false,
+      "note": "사방넷에 입력되어 구성된 추가상품의 그룹을 기재합니다. 예 : G001,G004,G201 (7개의 그룹이 입력 가능함)",
+      "section": "data"
+    },
+    {
+      "name": "GOODS_NM_EN",
+      "description": "영문 상품명",
+      "required": false,
+      "note": "영문 100자리까지 사용가능하며 , HTML 태그 사용은 불가합니다.",
+      "section": "data"
+    },
+    {
+      "name": "GOODS_NM_PR",
+      "description": "출력 상품명",
+      "required": false,
+      "note": "한글기준 50자리까지 사용가능하며 , HTML 태그 사용은 불가합니다.",
+      "section": "data"
+    },
+    {
+      "name": "GOODS_REMARKS2",
+      "description": "추가 상품상세설명_1",
+      "required": false,
+      "note": "상품 추가상세(HTML)을 기재합니다. (단, \"DEL\" 입력시 저장된 추가상세설명1을 삭제합니다.)",
+      "section": "data"
+    },
+    {
+      "name": "GOODS_REMARKS3",
+      "description": "추가 상품상세설명_2",
+      "required": false,
+      "note": "상품 추가상세(HTML)을 기재합니다. (단, \"DEL\" 입력시 저장된 추가상세설명2를 삭제합니다.)",
+      "section": "data"
+    },
+    {
+      "name": "GOODS_REMARKS4",
+      "description": "추가 상품상세설명_3",
+      "required": false,
+      "note": "상품 추가상세(HTML)을 기재합니다. (단, \"DEL\" 입력시 저장된 추가상세설명3을 삭제합니다.)",
+      "section": "data"
+    },
+    {
+      "name": "IMPORTNO",
+      "description": "수입신고번호",
+      "required": false,
+      "note": "상품 수입신고번호를 기재합니다. (12345-12-123456U)",
+      "section": "data"
+    },
+    {
+      "name": "GOODS_COST2",
+      "description": "원가2",
+      "required": false,
+      "note": "원가2는 상품송신,주문매핑,매출집계,정산등에 이용되지 않으며, 관리상 참고를 위한 가격입니다.",
+      "section": "data"
+    },
+    {
+      "name": "ORIGIN2",
+      "description": "원산지 상세지역",
+      "required": false,
+      "note": "원산지 상세 정보를 입력하세요.",
+      "section": "data"
+    },
+    {
+      "name": "EXPIRE_DM",
+      "description": "유효일자",
+      "required": false,
+      "note": "숫자8자리 입력하세요 예:20190820",
+      "section": "data"
+    },
+    {
+      "name": "SUPPLY_SAVE_YN",
+      "description": "합포제외여부",
+      "required": false,
+      "note": "합포장 제외 여부를 Y or N로 입력하세요. \"Y\" 입력시 합포장 제외 항목에 체크됩니다.",
+      "section": "data"
+    },
+    {
+      "name": "DESCRITION",
+      "description": "관리자메모",
+      "required": false,
+      "note": "관리자 메모 내용을 입력하세요",
+      "section": "data"
+    }
+  ],
+  "authentication": {
+    "SEND_COMPAYNY_ID": {
+      "name": "SEND_COMPAYNY_ID",
+      "description": "사방넷 로그인아이디",
+      "required": true,
+      "note": "사방넷 어드민 로그인 아이디입력",
+      "section": "header"
+    },
+    "SEND_AUTH_KEY": {
+      "name": "SEND_AUTH_KEY",
+      "description": "사방넷에서 발급한 인증키",
+      "required": true,
+      "note": "사방넷에서 발급 받은 인증키(만약 받지 않았다면 사방넷에서 인증키 발급 요청)",
+      "section": "header"
+    }
+  }
+}

@@ -1,0 +1,99 @@
+[
+  {
+    "chunk_index": 1,
+    "total_chunks": 1,
+    "endpoint": null,
+    "method": null,
+    "description": null,
+    "update_log": [
+      {
+        "date": "2023-11-29",
+        "change": "Added support for new fields: shipping_fee_vat_amount"
+      },
+      {
+        "date": "2023-08-28",
+        "change": "New API launched"
+      },
+      {
+        "date": "2023-07-03",
+        "change": "Updated description of sku field"
+      },
+      {
+        "date": "2023-06-30",
+        "change": "Added support for new fields: shipping_fee_original"
+      },
+      {
+        "date": "2023-05-24",
+        "change": "Added support for new fields: shipping_provider_id"
+      }
+    ],
+    "parameters": [
+      {
+        "name": "product_id",
+        "type": "string",
+        "required": true,
+        "description": "Product ID",
+        "children": []
+      },
+      {
+        "name": "sku",
+        "type": "string",
+        "required": true,
+        "description": "Product SKU",
+        "children": []
+      },
+      {
+        "name": "amount",
+        "type": "integer",
+        "required": true,
+        "description": "Product amount/quantity",
+        "children": []
+      },
+      {
+        "name": "shipping_provider_id",
+        "type": "string",
+        "required": false,
+        "description": "Shipping provider ID",
+        "children": []
+      },
+      {
+        "name": "shipping_fee",
+        "type": "float",
+        "required": false,
+        "description": "Shipping fee",
+        "children": []
+      },
+      {
+        "name": "shipping_fee_original",
+        "type": "float",
+        "required": false,
+        "description": "Original shipping fee before any adjustments",
+        "children": []
+      },
+      {
+        "name": "shipping_fee_vat_amount",
+        "type": "float",
+        "required": false,
+        "description": "VAT amount for shipping fee",
+        "children": []
+      }
+    ],
+    "hidden_fields": [],
+    "response_fields": [],
+    "notes": "The image appears to be showing API documentation with parameter definitions and an update log. All parameters and their properties are clearly visible. The update log shows a chronological history of changes to the API from May 2023 to November 2023.",
+    "chunk_metadata": {
+      "index": 1,
+      "total": 1,
+      "y_start": 0,
+      "y_end": 6735,
+      "overlap_top": 0,
+      "overlap_bottom": 0,
+      "height": 6735,
+      "path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\workspaces\\v2.voucher.update_voucher\\chunks\\chunk_001.png",
+      "filename": "chunk_001.png",
+      "width": 837
+    },
+    "analysis_timestamp": "2025-10-10T06:52:42.653663",
+    "model": "claude-3-5-sonnet-20241022"
+  }
+]

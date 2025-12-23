@@ -1,0 +1,96 @@
+[
+  {
+    "chunk_index": 1,
+    "total_chunks": 1,
+    "endpoint": "/payment/ad_fees_experience_select",
+    "method": "GET",
+    "description": "Advertisement fee payment experience selection",
+    "update_log": [
+      {
+        "date": "2023-11-16",
+        "change": "Added mode and ad_fees_prices pre-time fees parameters"
+      }
+    ],
+    "parameters": [
+      {
+        "name": "token",
+        "type": "string",
+        "required": true,
+        "description": "Partner ID assigned post registration (provided by administrator)",
+        "children": []
+      },
+      {
+        "name": "timestamp",
+        "type": "integer",
+        "required": true,
+        "description": "This is a datetime by timestamp of the request. Required for signature authentication",
+        "children": []
+      },
+      {
+        "name": "sign",
+        "type": "string",
+        "required": true,
+        "description": "The MD5 hash of all query parameters, sorted by ASCII code. Can only be called one time and expires in 5 mins",
+        "children": []
+      },
+      {
+        "name": "ctp",
+        "type": "string",
+        "required": false,
+        "description": "Channel trace analysis parameter",
+        "children": []
+      }
+    ],
+    "response_fields": [
+      {
+        "name": "error_code",
+        "type": "integer",
+        "description": "Error code"
+      },
+      {
+        "name": "message",
+        "type": "string",
+        "description": "Error message"
+      },
+      {
+        "name": "amount_in",
+        "type": "string",
+        "description": "Amount input"
+      },
+      {
+        "name": "wechat_id",
+        "type": "string",
+        "description": "WeChat ID"
+      }
+    ],
+    "error_codes": [
+      {
+        "code": "empty_phone",
+        "description": "There's no access, failed to login"
+      },
+      {
+        "code": "empty_captcha_js",
+        "description": "Invalid captcha_js"
+      },
+      {
+        "code": "empty_phone",
+        "description": "There's no register_id in entry"
+      }
+    ],
+    "notes": "The documentation includes Common Parameters, Required Parameters, Response Parameters, Request Examples, Response Examples and Error Codes sections. There are also API permission details and an update log at the bottom of the page.",
+    "chunk_metadata": {
+      "index": 1,
+      "total": 1,
+      "y_start": 0,
+      "y_end": 4752,
+      "overlap_top": 0,
+      "overlap_bottom": 0,
+      "height": 4752,
+      "path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\workspaces\\v2.payment.set_item_installment_status\\chunks\\chunk_001.png",
+      "filename": "chunk_001.png",
+      "width": 837
+    },
+    "analysis_timestamp": "2025-10-10T06:22:33.036797",
+    "model": "claude-3-5-sonnet-20241022"
+  }
+]

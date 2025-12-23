@@ -1,0 +1,71 @@
+{
+  "endpoint": null,
+  "method": null,
+  "description": null,
+  "parameters": [
+    {
+      "name": "file",
+      "type": "string",
+      "required": true,
+      "description": "Base64-encoded file content",
+      "truncated": false,
+      "continued": false,
+      "children": []
+    },
+    {
+      "name": "file_url",
+      "type": "string",
+      "required": false,
+      "description": "Remote file URL",
+      "truncated": false,
+      "continued": false,
+      "children": []
+    },
+    {
+      "name": "content",
+      "type": "string",
+      "required": false,
+      "description": "Content text",
+      "truncated": false,
+      "continued": false,
+      "children": []
+    },
+    {
+      "name": "access_token",
+      "type": "string",
+      "required": true,
+      "description": "API access token",
+      "truncated": false,
+      "continued": false,
+      "children": []
+    }
+  ],
+  "response_fields": [
+    {
+      "name": "error",
+      "type": "string",
+      "description": "Indicates error type if any. Empty if no error occurred"
+    },
+    {
+      "name": "message",
+      "type": "string",
+      "description": "Error message"
+    },
+    {
+      "name": "result_id",
+      "type": "string",
+      "description": "Task ID"
+    }
+  ],
+  "update_log": [],
+  "hidden_fields": [],
+  "metadata": {
+    "total_chunks": 1,
+    "chunks_with_errors": 0,
+    "total_parameters_before_dedup": 4,
+    "total_parameters_after_dedup": 4,
+    "update_log_entries": 0,
+    "hidden_fields_count": 0,
+    "source_results": "workspaces\\v2.product.delete_model\\results\\all_chunks_results.json"
+  }
+}

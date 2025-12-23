@@ -1,0 +1,96 @@
+[
+  {
+    "chunk_index": 1,
+    "total_chunks": 1,
+    "endpoint": null,
+    "method": null,
+    "description": null,
+    "update_log": [
+      {
+        "date": "2023-05-31",
+        "change": "Updated API specification format"
+      },
+      {
+        "date": "2023-03-28",
+        "change": "Added new fields and updated documentation"
+      },
+      {
+        "date": "2023-01-17",
+        "change": "Initial API documentation release"
+      }
+    ],
+    "hidden_fields": [
+      {
+        "name": "order_processing_fee",
+        "found_in": "description text",
+        "extracted_from_description": true
+      },
+      {
+        "name": "commission_fee",
+        "found_in": "description text",
+        "extracted_from_description": true
+      }
+    ],
+    "parameters": [
+      {
+        "name": "currency",
+        "type": "string",
+        "required": true,
+        "description": "Currency code for the transaction",
+        "children": []
+      },
+      {
+        "name": "amount",
+        "type": "decimal",
+        "required": true,
+        "description": "Transaction amount",
+        "children": []
+      },
+      {
+        "name": "status",
+        "type": "string",
+        "required": true,
+        "description": "Current status of the transaction",
+        "children": []
+      },
+      {
+        "name": "metadata",
+        "type": "object",
+        "required": false,
+        "description": "Additional transaction metadata",
+        "children": [
+          {
+            "name": "reference_id",
+            "type": "string",
+            "required": false,
+            "description": "External reference identifier",
+            "children": []
+          },
+          {
+            "name": "notes",
+            "type": "string",
+            "required": false,
+            "description": "Additional transaction notes",
+            "children": []
+          }
+        ]
+      }
+    ],
+    "response_fields": [],
+    "notes": "The documentation appears to be for a financial transaction API. Some sections of the image contain code snippets and examples that are partially visible. The update log shows regular maintenance and feature additions over time.",
+    "chunk_metadata": {
+      "index": 1,
+      "total": 1,
+      "y_start": 0,
+      "y_end": 7661,
+      "overlap_top": 0,
+      "overlap_bottom": 0,
+      "height": 7661,
+      "path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\workspaces\\v2.first_mile.bind_first_mile_tracking_number\\chunks\\chunk_001.png",
+      "filename": "chunk_001.png",
+      "width": 837
+    },
+    "analysis_timestamp": "2025-10-10T05:39:24.423799",
+    "model": "claude-3-5-sonnet-20241022"
+  }
+]

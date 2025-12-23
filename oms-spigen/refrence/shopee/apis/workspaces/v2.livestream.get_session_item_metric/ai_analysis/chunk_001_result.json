@@ -1,0 +1,104 @@
+{
+  "chunk_index": 1,
+  "total_chunks": 1,
+  "endpoint": null,
+  "method": null,
+  "description": null,
+  "update_log": [],
+  "hidden_fields": [],
+  "parameters": [
+    {
+      "name": "URL",
+      "type": "string",
+      "required": true,
+      "description": "HTTP system parameter, contains URL information",
+      "children": []
+    },
+    {
+      "name": "URL_header",
+      "type": "string",
+      "required": true,
+      "description": "Header URL parameter",
+      "children": []
+    },
+    {
+      "name": "No_URL",
+      "type": "boolean",
+      "required": false,
+      "description": "Control parameter",
+      "children": []
+    },
+    {
+      "name": "carrier_id",
+      "type": "string",
+      "required": true,
+      "description": "Identifier for transportation/carrier service",
+      "children": []
+    },
+    {
+      "name": "img",
+      "type": "string",
+      "required": true,
+      "description": "Image data parameter",
+      "children": []
+    },
+    {
+      "name": "message_id",
+      "type": "string",
+      "required": true,
+      "description": "Message identifier",
+      "children": []
+    },
+    {
+      "name": "dir",
+      "type": "string",
+      "required": false,
+      "description": "Directory parameter",
+      "children": []
+    },
+    {
+      "name": "scale_val",
+      "type": "float",
+      "required": false,
+      "description": "Scaling value",
+      "children": []
+    },
+    {
+      "name": "width_val",
+      "type": "integer",
+      "required": false,
+      "description": "Width value parameter",
+      "children": []
+    },
+    {
+      "name": "height_val",
+      "type": "integer",
+      "required": false,
+      "description": "Height value parameter",
+      "children": []
+    },
+    {
+      "name": "config_path",
+      "type": "string",
+      "required": false,
+      "description": "Configuration file path",
+      "children": []
+    }
+  ],
+  "response_fields": [],
+  "notes": "The image shows an API documentation page with various parameters, mostly related to image and URL handling. There appear to be some error codes at the bottom of the image that are partially visible but not fully readable. The documentation appears to be for some kind of image processing or URL handling service.",
+  "chunk_metadata": {
+    "index": 1,
+    "total": 1,
+    "y_start": 0,
+    "y_end": 5209,
+    "overlap_top": 0,
+    "overlap_bottom": 0,
+    "height": 5209,
+    "path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\workspaces\\v2.livestream.get_session_item_metric\\chunks\\chunk_001.png",
+    "filename": "chunk_001.png",
+    "width": 837
+  },
+  "analysis_timestamp": "2025-10-10T05:56:28.269871",
+  "model": "claude-3-5-sonnet-20241022"
+}

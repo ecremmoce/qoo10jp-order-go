@@ -1,0 +1,66 @@
+{
+  "endpoint": "/v2/deposit/upload_shipping_proof",
+  "method": "HTTP request",
+  "description": "API documentation for uploading shipping proof",
+  "parameters": [
+    {
+      "name": "URL",
+      "type": "string",
+      "required": true,
+      "description": "Chinese traditional images (https://test/manifest_shipping_proof)",
+      "children": []
+    },
+    {
+      "name": "owner_id",
+      "type": "string",
+      "required": true,
+      "description": "The wallet address of token",
+      "children": []
+    },
+    {
+      "name": "shipping_number",
+      "type": "string",
+      "required": false,
+      "description": "Express tracking number",
+      "children": []
+    },
+    {
+      "name": "image_id_list",
+      "type": "array",
+      "required": true,
+      "description": "List of image_id of shipping proof images",
+      "children": []
+    },
+    {
+      "name": "request_id",
+      "type": "string",
+      "required": true,
+      "description": "Top identifier for an API request for error tracking",
+      "children": []
+    },
+    {
+      "name": "message",
+      "type": "string",
+      "required": false,
+      "description": "Success error status (1:success, 0:failed)",
+      "children": []
+    }
+  ],
+  "response_fields": [],
+  "update_log": [
+    {
+      "date": "2023-08-19",
+      "change": "System launch"
+    }
+  ],
+  "hidden_fields": [],
+  "metadata": {
+    "total_chunks": 1,
+    "chunks_with_errors": 0,
+    "total_parameters_before_dedup": 6,
+    "total_parameters_after_dedup": 6,
+    "update_log_entries": 1,
+    "hidden_fields_count": 0,
+    "source_results": "workspaces\\v2.returns.upload_shipping_proof\\results\\all_chunks_results.json"
+  }
+}

@@ -1,0 +1,141 @@
+{
+  "chunk_index": 1,
+  "total_chunks": 1,
+  "endpoint": "/v2/global_product/get_local_adjustment_rate",
+  "method": "GET",
+  "description": "Retrieves the adjustment rate that converts CB stock area into local warehouse price for a specific shop",
+  "update_log": [
+    {
+      "date": "2025-07-14",
+      "change": "New API"
+    }
+  ],
+  "parameters": [
+    {
+      "name": "partner_id",
+      "type": "int",
+      "required": true,
+      "description": "Partner ID is assigned upon registration is successful",
+      "children": []
+    },
+    {
+      "name": "timestamp",
+      "type": "timestamp",
+      "required": true,
+      "description": "This is to indicate the timestamp of the request. Required for all requests. Expires in 5 minutes",
+      "children": []
+    },
+    {
+      "name": "access_token",
+      "type": "string",
+      "required": true,
+      "description": "The token for API access, used to identify your permission to the api. Valid for multiple use and expires in 4 hours",
+      "children": []
+    },
+    {
+      "name": "merchant_id",
+      "type": "int",
+      "required": true,
+      "description": "Shopper's unique identifier for a merchant. Required for all merchant level requests(CB ONDC use selling global product related APIs)",
+      "children": []
+    },
+    {
+      "name": "sign",
+      "type": "string",
+      "required": true,
+      "description": "Signature generated to identify your permission by combining access_token, merchant_id and partner_key via HMAC-SHA256 hashing algorithm",
+      "children": []
+    },
+    {
+      "name": "shop_id",
+      "type": "int64",
+      "required": true,
+      "description": "The unique identifier of the shop whose adjustment rate is being queried",
+      "children": []
+    }
+  ],
+  "response_fields": [
+    {
+      "name": "error",
+      "type": "string",
+      "description": "Indicate error type if an error. Empty if no error happened",
+      "children": []
+    },
+    {
+      "name": "message",
+      "type": "string",
+      "description": "Indicate error details if an error. Empty if no error happened",
+      "children": []
+    },
+    {
+      "name": "warning",
+      "type": "string",
+      "description": "Indicate waring details if hit waring. Empty if no waring happened",
+      "children": []
+    },
+    {
+      "name": "request_id",
+      "type": "string",
+      "description": "The identifier for an API request for error tracking",
+      "children": []
+    },
+    {
+      "name": "response",
+      "type": "object",
+      "description": "",
+      "children": [
+        {
+          "name": "local_adjustment_rate",
+          "type": "float",
+          "description": "The multiplier used to adjust the cross-border original price to local price",
+          "children": []
+        }
+      ]
+    }
+  ],
+  "error_codes": [
+    {
+      "code": "error_data",
+      "description": "parse data failed"
+    },
+    {
+      "code": "error_data",
+      "description": "data not exist"
+    },
+    {
+      "code": "error_param",
+      "description": "parameter invalid"
+    },
+    {
+      "code": "error_param",
+      "description": "The information you queried is not found"
+    },
+    {
+      "code": "error_param",
+      "description": "Wrong parameters, detail: [msg]"
+    },
+    {
+      "code": "error_server",
+      "description": "Something wrong. Please try later"
+    },
+    {
+      "code": "error_param",
+      "description": "request not from gateway"
+    }
+  ],
+  "notes": "The API has multiple URL endpoints for different regions (Chinese Mainland, Brazil) and test environments. The documentation includes comprehensive error handling and authentication requirements.",
+  "chunk_metadata": {
+    "index": 1,
+    "total": 1,
+    "y_start": 0,
+    "y_end": 2845,
+    "overlap_top": 0,
+    "overlap_bottom": 0,
+    "height": 2845,
+    "path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\workspaces\\v2.global_product.get_local_adjustment_rate\\chunks\\chunk_001.png",
+    "filename": "chunk_001.png",
+    "width": 837
+  },
+  "analysis_timestamp": "2025-10-10T05:47:43.632447",
+  "model": "claude-3-5-sonnet-20241022"
+}

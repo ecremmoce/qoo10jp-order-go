@@ -1,0 +1,96 @@
+{
+  "endpoint": "v2/product/get_new_chat_list",
+  "method": "GET",
+  "description": "Get new chat list for follow step support test (free to use without chat)",
+  "parameters": [
+    {
+      "name": "partner_id",
+      "type": "string",
+      "required": true,
+      "description": "The basic API system using to identify your permission to the api, please ask developer to get it",
+      "children": []
+    },
+    {
+      "name": "timestamp",
+      "type": "string",
+      "required": true,
+      "description": "Timestamp",
+      "children": []
+    },
+    {
+      "name": "access_token",
+      "type": "string",
+      "required": true,
+      "description": "The basic API system using to identify your permission to the api, please ask developer to get it",
+      "children": []
+    },
+    {
+      "name": "chat_id",
+      "type": "integer",
+      "required": true,
+      "description": "The size of one page",
+      "children": []
+    },
+    {
+      "name": "center",
+      "type": "string",
+      "required": true,
+      "description": "Specifies the starting point of data to return in the center of timeline",
+      "children": []
+    }
+  ],
+  "response_fields": [
+    {
+      "name": "error",
+      "type": "string",
+      "description": "Indicate error type if an error. Empty if no error happened",
+      "children": []
+    },
+    {
+      "name": "message",
+      "type": "string",
+      "description": "parameter is invalid",
+      "children": []
+    },
+    {
+      "name": "warning",
+      "type": "string",
+      "description": "Warning message",
+      "children": []
+    },
+    {
+      "name": "request_id",
+      "type": "string",
+      "description": "The identifier for an API request for error tracking",
+      "children": []
+    },
+    {
+      "name": "chat_start_id",
+      "type": "integer",
+      "description": "ID of new chat start",
+      "children": []
+    },
+    {
+      "name": "test_count",
+      "type": "string",
+      "description": "Total number of new chat (field name remained integer_id)",
+      "children": []
+    }
+  ],
+  "update_log": [
+    {
+      "date": "2023-06-26",
+      "change": "New API"
+    }
+  ],
+  "hidden_fields": [],
+  "metadata": {
+    "total_chunks": 1,
+    "chunks_with_errors": 0,
+    "total_parameters_before_dedup": 5,
+    "total_parameters_after_dedup": 5,
+    "update_log_entries": 1,
+    "hidden_fields_count": 0,
+    "source_results": "platforms\\shopee\\apis\\workspaces\\v2.product.get_size_chart_list\\results\\all_chunks_results.json"
+  }
+}

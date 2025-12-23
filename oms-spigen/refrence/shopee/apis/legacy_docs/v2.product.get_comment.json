@@ -1,0 +1,76 @@
+{
+  "endpoint": null,
+  "method": null,
+  "description": null,
+  "parameters": [
+    {
+      "name": "string",
+      "type": "string",
+      "required": true,
+      "description": "You need to obtain from API",
+      "children": []
+    },
+    {
+      "name": "grant_type",
+      "type": "string",
+      "required": true,
+      "description": "The grant type",
+      "children": []
+    },
+    {
+      "name": "expires_in",
+      "type": "integer",
+      "required": false,
+      "description": "Token expiration time in seconds",
+      "children": []
+    },
+    {
+      "name": "scope",
+      "type": "string",
+      "required": false,
+      "description": "The scope requested",
+      "children": []
+    },
+    {
+      "name": "success",
+      "type": "boolean",
+      "required": false,
+      "description": "The operation status",
+      "children": []
+    }
+  ],
+  "response_fields": [
+    {
+      "name": "error_code",
+      "type": "string",
+      "description": "Error code like 'invalid_client'"
+    },
+    {
+      "name": "error_description",
+      "type": "string",
+      "description": "Human readable error message"
+    }
+  ],
+  "update_log": [],
+  "hidden_fields": [
+    {
+      "name": "access_token",
+      "found_in": "parameters list",
+      "extracted_from_description": true
+    },
+    {
+      "name": "grant_type",
+      "found_in": "parameters list",
+      "extracted_from_description": true
+    }
+  ],
+  "metadata": {
+    "total_chunks": 1,
+    "chunks_with_errors": 0,
+    "total_parameters_before_dedup": 5,
+    "total_parameters_after_dedup": 5,
+    "update_log_entries": 0,
+    "hidden_fields_count": 2,
+    "source_results": "workspaces\\v2.product.get_comment\\results\\all_chunks_results.json"
+  }
+}

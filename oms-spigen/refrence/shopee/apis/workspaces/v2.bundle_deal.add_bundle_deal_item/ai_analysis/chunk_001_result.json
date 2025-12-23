@@ -1,0 +1,97 @@
+{
+  "chunk_index": 1,
+  "total_chunks": 1,
+  "endpoint": null,
+  "method": null,
+  "description": null,
+  "update_log": [
+    {
+      "date": "2023-09-26",
+      "change": "Basic API"
+    }
+  ],
+  "parameters": [
+    {
+      "name": "currency",
+      "type": "object",
+      "required": true,
+      "description": "Currency parameters",
+      "children": [
+        {
+          "name": "id",
+          "type": "string",
+          "required": true,
+          "description": "Currency identifier"
+        },
+        {
+          "name": "symbol",
+          "type": "string",
+          "required": true,
+          "description": "Currency symbol"
+        }
+      ]
+    },
+    {
+      "name": "required",
+      "type": "object",
+      "required": true,
+      "description": "Required parameters",
+      "children": [
+        {
+          "name": "api_id",
+          "type": "string",
+          "required": true,
+          "description": "API identifier"
+        },
+        {
+          "name": "key",
+          "type": "string",
+          "required": true,
+          "description": "Authentication key"
+        }
+      ]
+    },
+    {
+      "name": "endpoint",
+      "type": "object",
+      "required": true,
+      "description": "Endpoint parameters",
+      "children": [
+        {
+          "name": "url",
+          "type": "string",
+          "required": true,
+          "description": "Endpoint URL"
+        },
+        {
+          "name": "command",
+          "type": "string",
+          "required": true,
+          "description": "API command"
+        }
+      ]
+    }
+  ],
+  "response_fields": [
+    {
+      "name": "verify_result",
+      "type": "string",
+      "description": "Various status messages related to verification results"
+    }
+  ],
+  "notes": "The documentation appears to be a combination of API configuration parameters and response fields. There's a significant section of what appears to be error codes or status messages in the response fields section. The layout suggests this might be a configuration or setup documentation rather than a specific endpoint documentation.",
+  "chunk_metadata": {
+    "index": 1,
+    "total": 1,
+    "y_start": 0,
+    "y_end": 5816,
+    "overlap_top": 0,
+    "overlap_bottom": 0,
+    "height": 5816,
+    "path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\workspaces\\v2.bundle_deal.add_bundle_deal_item\\chunks\\chunk_001.png",
+    "filename": "chunk_001.png",
+    "width": 837
+  },
+  "analysis_timestamp": "2025-10-10T05:33:31.571338",
+  "model": "claude-3-5-sonnet-20241022"
+}

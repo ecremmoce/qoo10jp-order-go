@@ -1,0 +1,89 @@
+[
+  {
+    "chunk_index": 1,
+    "total_chunks": 1,
+    "endpoint": "/charging/get_credit_balance",
+    "method": "POST",
+    "description": "Get credit balance information",
+    "update_log": [],
+    "hidden_fields": [],
+    "parameters": [
+      {
+        "name": "request_id",
+        "type": "string",
+        "required": true,
+        "description": "Unique request ID, length should not exceed 36 characters",
+        "children": []
+      },
+      {
+        "name": "merchant_id",
+        "type": "string",
+        "required": true,
+        "description": "Merchant ID",
+        "children": []
+      },
+      {
+        "name": "credit_class",
+        "type": "string",
+        "required": false,
+        "description": "Credit class type",
+        "children": []
+      }
+    ],
+    "response_fields": [
+      {
+        "name": "result",
+        "type": "object",
+        "description": "Response result object",
+        "children": [
+          {
+            "name": "request_id",
+            "type": "string",
+            "description": "Request ID from the original request",
+            "children": []
+          },
+          {
+            "name": "merchant_id",
+            "type": "string",
+            "description": "Merchant ID",
+            "children": []
+          },
+          {
+            "name": "credit_balance_list",
+            "type": "array",
+            "description": "List of credit balance information",
+            "children": [
+              {
+                "name": "credit_class",
+                "type": "string",
+                "description": "Credit class type",
+                "children": []
+              },
+              {
+                "name": "balance",
+                "type": "string",
+                "description": "Credit balance",
+                "children": []
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "notes": "The image shows both request parameters and response fields for a credit balance API endpoint. The response structure includes a nested array under credit_balance_list containing credit class and balance information.",
+    "chunk_metadata": {
+      "index": 1,
+      "total": 1,
+      "y_start": 0,
+      "y_end": 6784,
+      "overlap_top": 0,
+      "overlap_bottom": 0,
+      "height": 6784,
+      "path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\platforms\\shopee\\apis\\workspaces\\v2.returns.get_reverse_tracking_info\\chunks\\chunk_001.png",
+      "filename": "chunk_001.png",
+      "width": 837
+    },
+    "analysis_timestamp": "2025-10-11T23:41:18.683055",
+    "model": "claude-3-5-sonnet-20241022"
+  }
+]

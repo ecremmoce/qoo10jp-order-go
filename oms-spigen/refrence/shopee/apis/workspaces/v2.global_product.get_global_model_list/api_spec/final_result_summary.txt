@@ -1,0 +1,42 @@
+======================================================================
+API SPECIFICATION SUMMARY
+======================================================================
+
+Endpoint: GET /api/v2/user/get_user_info
+Description: Get user information
+
+Parameters (1):
+----------------------------------------------------------------------
+* user_id (string)
+   User ID
+
+Response Fields (7):
+----------------------------------------------------------------------
+  user_id (string)
+   User ID
+  username (string)
+   Username
+  email (string)
+   Email address
+  phone (string)
+   Phone number
+  status (string)
+   Account status
+  created_at (string)
+   Account creation timestamp
+  last_login (string)
+   Last login timestamp
+
+Metadata:
+----------------------------------------------------------------------
+  total_chunks: 1
+  chunks_with_errors: 0
+  total_parameters_before_dedup: 1
+  total_parameters_after_dedup: 1
+  update_log_entries: 1
+  hidden_fields_count: 0
+  source_results: workspaces\v2.global_product.get_global_model_list\results\all_chunks_results.json
+
+======================================================================
+Legend: * = required parameter
+======================================================================

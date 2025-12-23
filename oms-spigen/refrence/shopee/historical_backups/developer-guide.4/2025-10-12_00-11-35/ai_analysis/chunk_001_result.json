@@ -1,0 +1,60 @@
+{
+  "chunk_index": 1,
+  "total_chunks": 1,
+  "endpoint": null,
+  "method": null,
+  "description": "Shopee Open Platform is a go-to source of Open APIs and services for developers serving Shopee sellers with different ecommerce needs",
+  "update_log": [
+    {
+      "date": "2024-11-11",
+      "change": "Last updated"
+    }
+  ],
+  "hidden_fields": [],
+  "parameters": [],
+  "response_fields": [],
+  "notes": "This appears to be the introduction/overview page of Shopee Open Platform documentation. Key information extracted:\n\n1. Languages supported: English, 简体中文, 繁體中文, Português, ไทย\n\n2. Main sections covered:\n- What is Shopee Open Platform\n- Benefits of using Shopee Open API\n- Who can access Shopee Open Platform\n\n3. Navigation sections visible:\n- Getting Started\n- Developer account registration\n- App management\n- API calls\n- Push Mechanism notifications\n- Authorization and Authentication\n- Various API integration guides\n\nThis page doesn't contain specific API endpoint documentation, but rather provides an overview of the platform's capabilities and features.",
+  "platform_features": {
+    "powerful_apis": {
+      "description": "Access to APIs for orders, products, marketing with push notification services",
+      "capabilities": [
+        "order fulfillment",
+        "product optimization",
+        "shop promotion"
+      ]
+    },
+    "developer_services": {
+      "description": "End-to-end developer support for onboarding, APP development, testing, release, and maintenance",
+      "tools": [
+        "APP management",
+        "Open API testing tools",
+        "test accounts",
+        "sandbox testing environments"
+      ]
+    },
+    "user_types": [
+      {
+        "type": "Software service providers",
+        "description": "Access to comprehensive range of Open APIs for Shopee's key ecommerce processes"
+      },
+      {
+        "type": "Sellers with software development capabilities",
+        "description": "Can develop software tailored to business needs and integrate systems with Shopee"
+      }
+    ]
+  },
+  "chunk_metadata": {
+    "index": 1,
+    "total": 1,
+    "y_start": 0,
+    "y_end": 1080,
+    "overlap_top": 0,
+    "overlap_bottom": 0,
+    "height": 1080,
+    "path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\platforms\\shopee\\apis\\workspaces\\developer-guide.4\\chunks\\chunk_001.png",
+    "filename": "chunk_001.png",
+    "width": 1920
+  },
+  "analysis_timestamp": "2025-10-12T00:11:34.812630",
+  "model": "claude-3-5-sonnet-20241022"
+}

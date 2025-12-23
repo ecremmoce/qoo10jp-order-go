@@ -1,0 +1,39 @@
+======================================================================
+API SPECIFICATION SUMMARY
+======================================================================
+
+Endpoint: None None
+
+Parameters (11):
+----------------------------------------------------------------------
+* url (string)
+   API endpoint URL
+* url_protocol (string)
+* test_url (string)
+* develop_url (string)
+* source (string)
+* marketing (string)
+   Request ID
+* userid_value (string)
+* timestamp (string)
+   The timestamp of web time
+* signature (string)
+   The security rule will request to sort
+* utf_8 (string)
+   The character set should be utf-8
+* api_key (string)
+   Request unique identifier for an api or test
+
+Metadata:
+----------------------------------------------------------------------
+  total_chunks: 1
+  chunks_with_errors: 0
+  total_parameters_before_dedup: 11
+  total_parameters_after_dedup: 11
+  update_log_entries: 3
+  hidden_fields_count: 0
+  source_results: workspaces\v2.add_on_deal.get_add_on_deal_list\results\all_chunks_results.json
+
+======================================================================
+Legend: * = required parameter
+======================================================================

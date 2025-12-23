@@ -1,0 +1,96 @@
+[
+  {
+    "chunk_index": 1,
+    "total_chunks": 1,
+    "endpoint": null,
+    "method": null,
+    "description": null,
+    "update_log": [],
+    "parameters": [
+      {
+        "name": "URL",
+        "type": "string",
+        "required": true,
+        "description": "API endpoint URL",
+        "children": []
+      },
+      {
+        "name": "client_id",
+        "type": "string",
+        "required": true,
+        "description": "Client identifier",
+        "children": []
+      },
+      {
+        "name": "sign",
+        "type": "string",
+        "required": true,
+        "description": "This is to verify the legitimacy of the request. Required for every request.",
+        "children": []
+      },
+      {
+        "name": "timestamp",
+        "type": "integer",
+        "required": true,
+        "description": "Unix timestamp when the request is made",
+        "children": []
+      }
+    ],
+    "response_parameters": [
+      {
+        "name": "code",
+        "type": "string",
+        "required": true,
+        "description": "The identifier of error code",
+        "children": []
+      },
+      {
+        "name": "message",
+        "type": "string",
+        "required": true,
+        "description": "The description of the error",
+        "children": []
+      },
+      {
+        "name": "timestamp",
+        "type": "integer",
+        "required": true,
+        "description": "Unix timestamp",
+        "children": []
+      }
+    ],
+    "error_codes": [
+      {
+        "code": "200",
+        "description": "The call was successful"
+      },
+      {
+        "code": "400",
+        "description": "The request is invalid or calls made too frequently"
+      },
+      {
+        "code": "401",
+        "description": "The request is made to call non-existent resources"
+      },
+      {
+        "code": "500",
+        "description": "Internal server error"
+      }
+    ],
+    "notes": "The documentation appears to be showing common parameters, response parameters, and error codes for an API. There are also request and response examples shown in the image but they appear to be truncated or partially visible.",
+    "chunk_metadata": {
+      "index": 1,
+      "total": 1,
+      "y_start": 0,
+      "y_end": 5543,
+      "overlap_top": 0,
+      "overlap_bottom": 0,
+      "height": 5543,
+      "path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\workspaces\\v2.add_on_deal.update_add_on_deal_main_item\\chunks\\chunk_001.png",
+      "filename": "chunk_001.png",
+      "width": 837
+    },
+    "analysis_timestamp": "2025-10-10T05:26:29.689330",
+    "model": "claude-3-5-sonnet-20241022"
+  }
+]

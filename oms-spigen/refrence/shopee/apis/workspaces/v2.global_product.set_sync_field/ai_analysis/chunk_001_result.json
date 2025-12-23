@@ -1,0 +1,99 @@
+{
+  "chunk_index": 1,
+  "total_chunks": 1,
+  "endpoint": null,
+  "method": "POST",
+  "description": null,
+  "update_log": [],
+  "hidden_fields": [],
+  "parameters": [
+    {
+      "name": "cmd",
+      "type": "string",
+      "required": true,
+      "description": "API command name",
+      "children": []
+    },
+    {
+      "name": "timestamp",
+      "type": "string",
+      "required": true,
+      "description": "Request timestamp",
+      "children": []
+    },
+    {
+      "name": "sign",
+      "type": "string",
+      "required": true,
+      "description": "The string to be signed, using a specific key parameter in the API. Sign is required for requests.",
+      "children": []
+    },
+    {
+      "name": "sign_key",
+      "type": "string",
+      "required": true,
+      "description": "Key used to sign",
+      "children": []
+    },
+    {
+      "name": "msg_id",
+      "type": "string",
+      "required": false,
+      "description": "Message ID",
+      "children": []
+    },
+    {
+      "name": "body",
+      "type": "object",
+      "required": true,
+      "description": "Request parameters, must include",
+      "children": []
+    }
+  ],
+  "response_fields": [],
+  "error_codes": [
+    {
+      "code": "error_param",
+      "description": "There is an error, please try again"
+    },
+    {
+      "code": "error_sign",
+      "description": "Invalid signature"
+    },
+    {
+      "code": "error_system",
+      "description": "System error"
+    },
+    {
+      "code": "error_quota",
+      "description": "There is no API quota"
+    },
+    {
+      "code": "error_permission",
+      "description": "No permission to access"
+    },
+    {
+      "code": "error_request",
+      "description": "Invalid Parameter"
+    },
+    {
+      "code": "error_rate_limit",
+      "description": "Rate limit reached"
+    }
+  ],
+  "notes": "The image appears to be an API documentation page showing common parameters, some request examples, and error codes. The documentation includes both required and optional parameters, with detailed descriptions for error handling.",
+  "chunk_metadata": {
+    "index": 1,
+    "total": 1,
+    "y_start": 0,
+    "y_end": 5024,
+    "overlap_top": 0,
+    "overlap_bottom": 0,
+    "height": 5024,
+    "path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\workspaces\\v2.global_product.set_sync_field\\chunks\\chunk_001.png",
+    "filename": "chunk_001.png",
+    "width": 837
+  },
+  "analysis_timestamp": "2025-10-10T05:51:03.868616",
+  "model": "claude-3-5-sonnet-20241022"
+}

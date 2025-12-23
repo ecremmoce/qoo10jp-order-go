@@ -1,0 +1,86 @@
+{
+  "endpoint": null,
+  "method": null,
+  "description": null,
+  "parameters": [
+    {
+      "name": "category_id",
+      "type": "integer",
+      "required": true,
+      "description": "The unique identifier for a category",
+      "children": []
+    },
+    {
+      "name": "image",
+      "type": "string",
+      "required": false,
+      "description": "Image URL",
+      "children": []
+    },
+    {
+      "name": "label",
+      "type": "string",
+      "required": false,
+      "description": "Label text",
+      "children": []
+    },
+    {
+      "name": "value",
+      "type": "string",
+      "required": false,
+      "description": "Value identifier",
+      "children": []
+    },
+    {
+      "name": "metadata",
+      "type": "object",
+      "required": false,
+      "description": "Additional metadata information",
+      "children": [
+        {
+          "name": "brand_name",
+          "type": "string",
+          "required": false,
+          "description": "Name of the brand",
+          "children": []
+        },
+        {
+          "name": "model_name",
+          "type": "string",
+          "required": false,
+          "description": "Name of the model",
+          "children": []
+        }
+      ]
+    }
+  ],
+  "response_fields": [
+    {
+      "name": "error_code",
+      "type": "integer",
+      "description": "Error code if request fails"
+    },
+    {
+      "name": "msg",
+      "type": "string",
+      "description": "Error message or success confirmation"
+    },
+    {
+      "name": "data",
+      "type": "object",
+      "description": "Response data object",
+      "children": []
+    }
+  ],
+  "update_log": [],
+  "hidden_fields": [],
+  "metadata": {
+    "total_chunks": 1,
+    "chunks_with_errors": 0,
+    "total_parameters_before_dedup": 5,
+    "total_parameters_after_dedup": 5,
+    "update_log_entries": 0,
+    "hidden_fields_count": 0,
+    "source_results": "workspaces\\v2.voucher.get_voucher\\results\\all_chunks_results.json"
+  }
+}

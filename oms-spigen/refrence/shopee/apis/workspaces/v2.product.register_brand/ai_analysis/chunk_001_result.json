@@ -1,0 +1,76 @@
+{
+  "chunk_index": 1,
+  "total_chunks": 1,
+  "endpoint": null,
+  "method": null,
+  "description": null,
+  "update_log": [],
+  "hidden_fields": [],
+  "parameters": [
+    {
+      "name": "url",
+      "type": "string",
+      "required": true,
+      "description": "The image processing origin/base endpoint",
+      "children": []
+    },
+    {
+      "name": "width",
+      "type": "string",
+      "required": false,
+      "description": "Width of the image",
+      "children": []
+    },
+    {
+      "name": "height",
+      "type": "string",
+      "required": false,
+      "description": "Height of the image",
+      "children": []
+    },
+    {
+      "name": "quality",
+      "type": "string",
+      "required": false,
+      "description": "Quality parameter from 0-100",
+      "children": []
+    },
+    {
+      "name": "format",
+      "type": "string",
+      "required": false,
+      "description": "Output format type (jpg, png, etc)",
+      "children": []
+    },
+    {
+      "name": "rotate",
+      "type": "string",
+      "required": false,
+      "description": "Rotation angle in degrees",
+      "children": []
+    },
+    {
+      "name": "delivery_url",
+      "type": "string",
+      "required": false,
+      "description": "A delivery URL to use if the base endpoint is not specified",
+      "children": []
+    }
+  ],
+  "response_fields": [],
+  "notes": "This appears to be documentation for an image processing API with various parameters for manipulating images. The documentation shows both required and optional parameters for controlling image dimensions, quality, format, rotation and delivery options.",
+  "chunk_metadata": {
+    "index": 1,
+    "total": 1,
+    "y_start": 0,
+    "y_end": 5978,
+    "overlap_top": 0,
+    "overlap_bottom": 0,
+    "height": 5978,
+    "path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\workspaces\\v2.product.register_brand\\chunks\\chunk_001.png",
+    "filename": "chunk_001.png",
+    "width": 837
+  },
+  "analysis_timestamp": "2025-10-10T06:33:38.344932",
+  "model": "claude-3-5-sonnet-20241022"
+}

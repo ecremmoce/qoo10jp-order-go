@@ -1,0 +1,42 @@
+======================================================================
+API SPECIFICATION SUMMARY
+======================================================================
+
+Endpoint: None bundle_bundle_buy
+
+Parameters (5):
+----------------------------------------------------------------------
+* id (string)
+   http://platform2.mywebsite.com/m/Bundle_business_bundle_buy.html
+* ver (string)
+   Version number
+* sign (string)
+* bundle_info_id (string)
+   Request unique identifier for a shop
+* size_id (string)
+   Request unique identifier for an item
+
+Response Fields (4):
+----------------------------------------------------------------------
+  error_code (string)
+   The API is not in use
+  bundle_bundle_buy_size (string)
+   Connect error occurred
+  price_server (string)
+   No permission to connect api
+  price (string)
+   Invalid parameters
+
+Metadata:
+----------------------------------------------------------------------
+  total_chunks: 1
+  chunks_with_errors: 0
+  total_parameters_before_dedup: 5
+  total_parameters_after_dedup: 5
+  update_log_entries: 0
+  hidden_fields_count: 0
+  source_results: workspaces\v2.bundle_deal.delete_bundle_deal_item\results\all_chunks_results.json
+
+======================================================================
+Legend: * = required parameter
+======================================================================

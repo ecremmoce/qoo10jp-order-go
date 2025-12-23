@@ -1,0 +1,105 @@
+{
+  "endpoint": "/product/set/item_process_sequence_read",
+  "method": "GET",
+  "description": "API for retrieving product sequence details",
+  "parameters": [
+    {
+      "name": "url",
+      "type": "string",
+      "required": true,
+      "description": "API endpoint URL",
+      "children": []
+    },
+    {
+      "name": "method",
+      "type": "string",
+      "required": true,
+      "description": "HTTP method",
+      "children": []
+    },
+    {
+      "name": "test_url",
+      "type": "string",
+      "required": true,
+      "description": "Test environment URL",
+      "children": []
+    },
+    {
+      "name": "params",
+      "type": "object",
+      "required": true,
+      "description": "Request parameters",
+      "children": [
+        {
+          "name": "size_n",
+          "type": "integer",
+          "required": true,
+          "description": "Parameter ID assigned after registration is successful",
+          "children": []
+        },
+        {
+          "name": "timestamp",
+          "type": "string",
+          "required": true,
+          "description": "Unix timestamp",
+          "children": []
+        },
+        {
+          "name": "sign",
+          "type": "string",
+          "required": true,
+          "description": "The MD5 hash of the above parameters. Used for request validation",
+          "children": []
+        }
+      ]
+    }
+  ],
+  "response_fields": [
+    {
+      "name": "size_n",
+      "type": "mixed",
+      "required": true,
+      "description": "Indicates item size in your Entity line organization",
+      "children": []
+    },
+    {
+      "name": "message",
+      "type": "string",
+      "required": true,
+      "description": "Indicates status/error message",
+      "children": []
+    },
+    {
+      "name": "severity",
+      "type": "string",
+      "required": true,
+      "description": "Severity status (error, warning, etc.)",
+      "children": []
+    },
+    {
+      "name": "sequence",
+      "type": "mixed",
+      "required": true,
+      "description": "The Severity line on IP specified for your training",
+      "children": []
+    },
+    {
+      "name": "error_codes",
+      "type": "object",
+      "required": true,
+      "description": "Various error codes and their meanings",
+      "children": []
+    }
+  ],
+  "update_log": [],
+  "hidden_fields": [],
+  "metadata": {
+    "total_chunks": 1,
+    "chunks_with_errors": 0,
+    "total_parameters_before_dedup": 4,
+    "total_parameters_after_dedup": 4,
+    "update_log_entries": 0,
+    "hidden_fields_count": 0,
+    "source_results": "workspaces\\v2.product.get_item_content_diagnosis_result\\results\\all_chunks_results.json"
+  }
+}

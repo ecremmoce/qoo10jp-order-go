@@ -1,0 +1,78 @@
+[
+  {
+    "chunk_index": 1,
+    "total_chunks": 1,
+    "endpoint": "/_d/{org_key}/{app_key}/{site_code}.json",
+    "method": "GET",
+    "description": "Appears to be an API endpoint for retrieving data with organization, application and site parameters",
+    "update_log": [],
+    "hidden_fields": [],
+    "parameters": [
+      {
+        "name": "org_key",
+        "type": "string",
+        "required": true,
+        "description": "Organization key identifier",
+        "children": []
+      },
+      {
+        "name": "app_key",
+        "type": "string",
+        "required": true,
+        "description": "Application key identifier",
+        "children": []
+      },
+      {
+        "name": "site_code",
+        "type": "string",
+        "required": true,
+        "description": "Site code identifier",
+        "children": []
+      },
+      {
+        "name": "show_id",
+        "type": "string",
+        "required": false,
+        "description": "Show identifier",
+        "children": []
+      },
+      {
+        "name": "category",
+        "type": "string",
+        "required": false,
+        "description": "Category filter",
+        "children": []
+      },
+      {
+        "name": "start",
+        "type": "integer",
+        "required": false,
+        "description": "Starting index",
+        "children": []
+      },
+      {
+        "name": "limit",
+        "type": "integer",
+        "required": false,
+        "description": "Number of results to return",
+        "children": []
+      }
+    ],
+    "response_fields": [],
+    "notes": "The image shows a detailed API parameter documentation with required path parameters and optional query parameters. The endpoint appears to be for retrieving data based on organization, application and site identifiers. Some parameter descriptions may be truncated in the view but all visible parameters have been captured.",
+    "chunk_metadata": {
+      "index": 1,
+      "total": 1,
+      "y_start": 0,
+      "y_end": 6067,
+      "overlap_top": 0,
+      "overlap_bottom": 0,
+      "height": 6067,
+      "path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\workspaces\\v2.shop_flash_sale.get_shop_flash_sale_items\\chunks\\chunk_001.png",
+      "filename": "chunk_001.png",
+      "width": 837
+    },
+    "analysis_timestamp": "2025-10-10T06:49:16.718366",
+    "model": "claude-3-5-sonnet-20241022"
+  }
+]

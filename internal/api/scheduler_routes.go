@@ -2,7 +2,7 @@ package api
 
 import (
 	"net/http"
-	"qoo10jp-order-go/internal/services"
+	"shopee-order-go/internal/services"
 	"time"
 
 	"github.com/gin-gonic/gin"
@@ -18,7 +18,7 @@ func SetupSchedulerRoutes(router *gin.Engine, schedulerService *services.Schedul
 		api.POST("/worker/count", setWorkerCount(workerService))
 		api.POST("/schedule-next", scheduleNext(schedulerService))
 	}
-	
+
 	// Test endpoint for Redis queue
 	router.POST("/api/test-redis-push", testRedisPush(schedulerService))
 }
@@ -96,7 +96,7 @@ func setWorkerCount(workerService *services.WorkerService) gin.HandlerFunc {
 		var req struct {
 			Count int `json:"count" binding:"required,min=1,max=20"`
 		}
-		
+
 		if err := c.ShouldBindJSON(&req); err != nil {
 			c.JSON(http.StatusBadRequest, gin.H{"error": err.Error()})
 			return
@@ -130,14 +130,14 @@ func testRedisPush(schedulerService *services.SchedulerService) gin.HandlerFunc 
 		var req struct {
 			Message string `json:"message" binding:"required"`
 		}
-		
+
 		if err := c.ShouldBindJSON(&req); err != nil {
 			c.JSON(http.StatusBadRequest, gin.H{"error": err.Error()})
 			return
 		}
 
 		// Push message to the worker queue
-		queueName := "qoo10jp_order_queue"
+		queueName := "shopee_order_queue"
 		if err := schedulerService.GetRedisClient().PushToQueue(queueName, req.Message); err != nil {
 			c.JSON(http.StatusInternalServerError, gin.H{"error": err.Error()})
 			return
@@ -149,4 +149,3 @@ func testRedisPush(schedulerService *services.SchedulerService) gin.HandlerFunc 
 		})
 	}
 }
-

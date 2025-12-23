@@ -1,0 +1,117 @@
+[
+  {
+    "chunk_index": 1,
+    "total_chunks": 1,
+    "endpoint": "/category/get_shop_category_id",
+    "method": "POST",
+    "description": "Get shop category information",
+    "update_log": [
+      {
+        "date": "2023-07-27",
+        "change": "Add fields formally abandoned"
+      },
+      {
+        "date": "2023-05-15",
+        "change": "Update fields info and description"
+      },
+      {
+        "date": "2023-05-11",
+        "change": "Initial API operation parameters and interface provided"
+      }
+    ],
+    "parameters": {
+      "common_parameters": [
+        {
+          "name": "url",
+          "type": "string",
+          "required": true,
+          "description": "API endpoint URL"
+        },
+        {
+          "name": "timestamp",
+          "type": "string",
+          "required": true,
+          "description": "Request timestamp"
+        }
+      ],
+      "required_parameters": [
+        {
+          "name": "shop_id",
+          "type": "string",
+          "required": true,
+          "description": "Specifies the unique ID of shop to obtain its category info"
+        },
+        {
+          "name": "language",
+          "type": "string",
+          "required": true,
+          "description": "Specifies the shop category language. Default: zh_CN"
+        }
+      ],
+      "response_parameters": [
+        {
+          "name": "shop_category_list",
+          "type": "array",
+          "required": true,
+          "description": "The shop category list",
+          "children": [
+            {
+              "name": "shop_category_id",
+              "type": "integer",
+              "description": "Shop category's unique identifier"
+            },
+            {
+              "name": "parent_shop_category_id",
+              "type": "integer",
+              "description": "Parent shop category's unique identifier"
+            },
+            {
+              "name": "name",
+              "type": "string",
+              "description": "Category name"
+            },
+            {
+              "name": "sort_weight",
+              "type": "integer",
+              "description": "Sort weight for display order"
+            },
+            {
+              "name": "has_children",
+              "type": "boolean",
+              "description": "Whether the category has child categories"
+            }
+          ]
+        }
+      ]
+    },
+    "error_codes": [
+      {
+        "code": "error_param",
+        "description": "There is no match_failed error"
+      },
+      {
+        "code": "error_permission",
+        "description": "Permission denied"
+      },
+      {
+        "code": "error_server",
+        "description": "Server error"
+      }
+    ],
+    "notes": "The documentation shows a complete API specification with common parameters, required parameters, response structure, and error codes. The hierarchy and relationships between parameters are clearly defined.",
+    "chunk_metadata": {
+      "index": 1,
+      "total": 1,
+      "y_start": 0,
+      "y_end": 5155,
+      "overlap_top": 0,
+      "overlap_bottom": 0,
+      "height": 5155,
+      "path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\workspaces\\v2.shop_category.get_shop_category_list\\chunks\\chunk_001.png",
+      "filename": "chunk_001.png",
+      "width": 837
+    },
+    "analysis_timestamp": "2025-10-10T06:47:04.071462",
+    "model": "claude-3-5-sonnet-20241022"
+  }
+]

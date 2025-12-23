@@ -1,0 +1,82 @@
+{
+  "endpoint": null,
+  "method": null,
+  "description": null,
+  "parameters": [
+    {
+      "name": "url",
+      "type": "string",
+      "required": true,
+      "description": "HTTP request URL",
+      "children": []
+    },
+    {
+      "name": "method",
+      "type": "string",
+      "required": true,
+      "description": "HTTP request method",
+      "children": []
+    },
+    {
+      "name": "headers",
+      "type": "object",
+      "required": false,
+      "description": "HTTP request headers",
+      "children": []
+    },
+    {
+      "name": "content_type",
+      "type": "string",
+      "required": false,
+      "description": "Request content type",
+      "children": []
+    },
+    {
+      "name": "msg_type",
+      "type": "string",
+      "required": true,
+      "description": "Message type value",
+      "children": []
+    },
+    {
+      "name": "timestamp",
+      "type": "integer",
+      "required": true,
+      "description": "Current timestamp value",
+      "children": []
+    },
+    {
+      "name": "version",
+      "type": "string",
+      "required": false,
+      "description": "API version",
+      "children": []
+    },
+    {
+      "name": "message_id",
+      "type": "string",
+      "required": false,
+      "description": "Unique message identifier",
+      "children": []
+    },
+    {
+      "name": "callback_url",
+      "type": "string",
+      "required": false,
+      "description": "Callback URL for responses",
+      "children": []
+    }
+  ],
+  "response_fields": [],
+  "update_log": [],
+  "hidden_fields": [],
+  "metadata": {
+    "total_chunks": 1,
+    "chunks_with_errors": 0,
+    "total_parameters_before_dedup": 9,
+    "total_parameters_after_dedup": 9,
+    "update_log_entries": 0,
+    "hidden_fields_count": 0,
+    "source_results": "workspaces\\v2.ads.get_product_level_campaign_setting_info\\results\\all_chunks_results.json"
+  }
+}

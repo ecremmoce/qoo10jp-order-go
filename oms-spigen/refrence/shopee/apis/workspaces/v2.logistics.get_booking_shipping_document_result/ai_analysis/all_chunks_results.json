@@ -1,0 +1,119 @@
+[
+  {
+    "chunk_index": 1,
+    "total_chunks": 1,
+    "endpoint": "/logistics/get_shipping_document_result",
+    "method": "POST",
+    "description": "Use this API to retrieve the status of the shipping document task.",
+    "update_log": [],
+    "hidden_fields": [],
+    "parameters": [
+      {
+        "name": "url",
+        "type": "string",
+        "required": true,
+        "description": "URL path",
+        "children": []
+      },
+      {
+        "name": "url_chinese",
+        "type": "string",
+        "required": false,
+        "description": "Chinese localized URL path",
+        "children": []
+      },
+      {
+        "name": "test",
+        "type": "string",
+        "required": true,
+        "description": "Test parameter",
+        "children": []
+      },
+      {
+        "name": "shipping_id",
+        "type": "string",
+        "required": true,
+        "description": "Shopeepay transaction identifier for a shipping",
+        "children": []
+      },
+      {
+        "name": "shipping_document_task",
+        "type": "string",
+        "required": true,
+        "description": "The task of shipping document manifest",
+        "children": []
+      }
+    ],
+    "response_fields": [
+      {
+        "name": "request_id",
+        "type": "string",
+        "description": "The identifier for an API request (for error tracking)",
+        "children": []
+      },
+      {
+        "name": "message",
+        "type": "string",
+        "description": "Error message if any occurred",
+        "children": []
+      },
+      {
+        "name": "warning",
+        "type": "string",
+        "description": "Simple warning message (no actual task error)",
+        "children": []
+      },
+      {
+        "name": "booking_id",
+        "type": "string",
+        "description": "Shopeepay identifier for a booking",
+        "children": []
+      },
+      {
+        "name": "result_id",
+        "type": "string",
+        "description": "The ID of the result task",
+        "children": []
+      },
+      {
+        "name": "booking_sn",
+        "type": "string",
+        "description": "Shopeepay identifier for a booking",
+        "children": []
+      },
+      {
+        "name": "status",
+        "type": "string",
+        "description": "The status of the shipping document task (no shipping task exists)",
+        "children": []
+      },
+      {
+        "name": "file_error",
+        "type": "string",
+        "description": "Indicate error type if any occurred for error",
+        "children": []
+      },
+      {
+        "name": "file_message",
+        "type": "string",
+        "description": "Indicate error details if any occurred to error",
+        "children": []
+      }
+    ],
+    "notes": "The documentation includes Common Parameters, Request Parameters, Response Parameters, Request Examples, Response Examples, Error Examples, Error Codes, API Permissions, and API Tools sections. The image shows a complete API documentation page with detailed parameter specifications and examples in multiple formats including JSON, PHP, CURL, and Python.",
+    "chunk_metadata": {
+      "index": 1,
+      "total": 1,
+      "y_start": 0,
+      "y_end": 4256,
+      "overlap_top": 0,
+      "overlap_bottom": 0,
+      "height": 4256,
+      "path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\workspaces\\v2.logistics.get_booking_shipping_document_result\\chunks\\chunk_001.png",
+      "filename": "chunk_001.png",
+      "width": 837
+    },
+    "analysis_timestamp": "2025-10-10T06:03:03.062113",
+    "model": "claude-3-5-sonnet-20241022"
+  }
+]

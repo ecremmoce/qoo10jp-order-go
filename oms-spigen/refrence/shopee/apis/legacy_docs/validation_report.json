@@ -1,0 +1,55 @@
+{
+  "valid": false,
+  "meets_accuracy_threshold": false,
+  "estimated_accuracy": 0.0,
+  "accuracy_threshold": 0.95,
+  "checks": {
+    "has_required_fields": false,
+    "endpoint_valid": false,
+    "method_valid": false,
+    "parameters_valid": true,
+    "hierarchy_valid": true
+  },
+  "errors": [
+    {
+      "severity": "error",
+      "field": "endpoint",
+      "message": "Required field 'endpoint' is missing or empty"
+    },
+    {
+      "severity": "error",
+      "field": "method",
+      "message": "Required field 'method' is missing or empty"
+    },
+    {
+      "severity": "error",
+      "field": "parameters",
+      "message": "Required field 'parameters' is missing or empty"
+    },
+    {
+      "severity": "error",
+      "field": "endpoint",
+      "message": "Endpoint is empty"
+    },
+    {
+      "severity": "error",
+      "field": "method",
+      "message": "Method is empty"
+    }
+  ],
+  "warnings": [
+    {
+      "severity": "warning",
+      "field": "parameters",
+      "message": "No parameters defined"
+    }
+  ],
+  "info": [],
+  "statistics": {
+    "total_parameters": 0,
+    "complete_parameters": 0,
+    "error_count": 5,
+    "warning_count": 1
+  },
+  "timestamp": "2025-10-11T02:31:17.398418"
+}

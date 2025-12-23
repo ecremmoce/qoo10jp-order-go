@@ -1,0 +1,50 @@
+======================================================================
+API SPECIFICATION SUMMARY
+======================================================================
+
+Endpoint: None None
+
+Parameters (0):
+----------------------------------------------------------------------
+
+Response Fields (9):
+----------------------------------------------------------------------
+  error_param_validate (string)
+   This is not a valid GTIN. Please, inform a valid number.
+  error_busi_cannot_edit_ysku (string)
+   Can not use OpenAPI to edit/create YSKU, please connect with your manager
+  error_auth (string)
+   Multiple auth errors including location mismatch, missing location_id, holiday mode, stock validation
+  error_param (string)
+   Various parameter errors related to stock updates and product validation
+  error_inner (string)
+   Invalid stock location ID
+  error_busi (string)
+   The merchant/shop has multi warehouse, please input location id
+  error_system_busy (string)
+   Our system is taking some time to respond, please try later.
+  API Permissions (object)
+   APP types that can call this API
+    ERP System (string)
+    Seller in House System (string)
+    Product Management (string)
+  Update Log (array)
+   Version update history
+    Date (string)
+     Update date
+    Update Details (string)
+     Description of changes
+
+Metadata:
+----------------------------------------------------------------------
+  total_chunks: 2
+  chunks_with_errors: 0
+  total_parameters_before_dedup: 0
+  total_parameters_after_dedup: 0
+  update_log_entries: 0
+  hidden_fields_count: 0
+  source_results: workspaces\v2.product.add_model\results\all_chunks_results.json
+
+======================================================================
+Legend: * = required parameter
+======================================================================

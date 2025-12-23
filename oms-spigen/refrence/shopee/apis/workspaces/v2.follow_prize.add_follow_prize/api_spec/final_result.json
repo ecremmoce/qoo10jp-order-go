@@ -1,0 +1,83 @@
+{
+  "endpoint": null,
+  "method": null,
+  "description": null,
+  "parameters": [
+    {
+      "name": "common_parameters",
+      "type": "object",
+      "required": true,
+      "description": null,
+      "children": [
+        {
+          "name": "time",
+          "type": "integer",
+          "required": true,
+          "description": "Current timestamp in seconds"
+        },
+        {
+          "name": "nonce",
+          "type": "string",
+          "required": true,
+          "description": "Random string"
+        },
+        {
+          "name": "access_key",
+          "type": "string",
+          "required": true,
+          "description": "Your access key"
+        }
+      ]
+    },
+    {
+      "name": "optional_parameters",
+      "type": "object",
+      "required": false,
+      "description": null,
+      "children": [
+        {
+          "name": "order_type",
+          "type": "string",
+          "required": false,
+          "description": "Default is 'limit'"
+        },
+        {
+          "name": "price",
+          "type": "string",
+          "required": false,
+          "description": "Price per unit"
+        },
+        {
+          "name": "volume",
+          "type": "string",
+          "required": false,
+          "description": "Trade volume"
+        },
+        {
+          "name": "visible",
+          "type": "boolean",
+          "required": false,
+          "description": "Visibility in order book"
+        },
+        {
+          "name": "strategy_type",
+          "type": "string",
+          "required": false,
+          "description": null
+        }
+      ]
+    }
+  ],
+  "response_fields": [],
+  "update_log": [],
+  "hidden_fields": [],
+  "metadata": {
+    "total_chunks": 1,
+    "chunks_with_errors": 0,
+    "total_parameters_before_dedup": 2,
+    "total_parameters_after_dedup": 2,
+    "update_log_entries": 0,
+    "hidden_fields_count": 0,
+    "source_results": "workspaces\\v2.follow_prize.add_follow_prize\\results\\all_chunks_results.json"
+  }
+}

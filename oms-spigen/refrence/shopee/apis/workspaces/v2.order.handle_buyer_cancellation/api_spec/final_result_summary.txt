@@ -1,0 +1,39 @@
+======================================================================
+API SPECIFICATION SUMMARY
+======================================================================
+
+Endpoint: POST /handle_buyer_cancellation
+Description: API for order buyer cancellation processing
+
+Parameters (8):
+----------------------------------------------------------------------
+* partner_id (string)
+   Partner unique identifier for all requests
+* msg_id (string)
+   Request unique identifier for all requests. Express unique orders by year
+* type (string)
+   Business unique identifier for partner_id
+* order_id (string)
+   The order identification used to handle business
+* message_id (string)
+   The identifier for an API request for once
+* error (string)
+   Indicate error type if the error. Empty if no error
+* message (string)
+   Indicate error details if the error. Empty if no message
+* status_time (timestamp)
+   The time when the order is updated
+
+Metadata:
+----------------------------------------------------------------------
+  total_chunks: 1
+  chunks_with_errors: 0
+  total_parameters_before_dedup: 8
+  total_parameters_after_dedup: 8
+  update_log_entries: 0
+  hidden_fields_count: 0
+  source_results: workspaces\v2.order.handle_buyer_cancellation\results\all_chunks_results.json
+
+======================================================================
+Legend: * = required parameter
+======================================================================

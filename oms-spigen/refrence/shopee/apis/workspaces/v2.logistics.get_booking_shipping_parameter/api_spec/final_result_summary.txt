@@ -1,0 +1,45 @@
+======================================================================
+API SPECIFICATION SUMMARY
+======================================================================
+
+Endpoint: GET /blockchain/mining/earning_parameter
+Description: Used to retrieve mining earnings parameters
+
+Parameters (2):
+----------------------------------------------------------------------
+* primary_params (object)
+   Primary parameters
+  * string_id (string)
+     Support string identifier for mining
+* response_params (object)
+   Response parameters
+  * epoch_h (string)
+     The height for an epoch begins
+  * interval (integer)
+     Interval between up and down blocks
+  * ratio (string)
+     Down difference up and down
+  * mining_params (object)
+     Mining parameters
+    * total (string)
+       Total coins mined
+    * mining_tex (string)
+       The value of mining tex
+    * rate (float)
+       The value of yearly interest
+    * amount (string)
+       The value of monthly interest
+
+Metadata:
+----------------------------------------------------------------------
+  total_chunks: 1
+  chunks_with_errors: 0
+  total_parameters_before_dedup: 2
+  total_parameters_after_dedup: 2
+  update_log_entries: 1
+  hidden_fields_count: 0
+  source_results: workspaces\v2.logistics.get_booking_shipping_parameter\results\all_chunks_results.json
+
+======================================================================
+Legend: * = required parameter
+======================================================================

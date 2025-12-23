@@ -1,0 +1,100 @@
+[
+  {
+    "chunk_index": 1,
+    "total_chunks": 1,
+    "endpoint": null,
+    "method": null,
+    "description": "API documentation parameters",
+    "update_log": [],
+    "hidden_fields": [],
+    "parameters": [
+      {
+        "name": "app_id",
+        "type": "string",
+        "required": true,
+        "description": "Application identifier",
+        "children": []
+      },
+      {
+        "name": "URL",
+        "type": "object",
+        "required": true,
+        "description": "URL parameters",
+        "children": [
+          {
+            "name": "url",
+            "type": "string",
+            "required": true,
+            "description": "The URL to be processed",
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "access_token",
+        "type": "string",
+        "required": true,
+        "description": "Access token for authentication",
+        "children": []
+      },
+      {
+        "name": "img_id",
+        "type": "string",
+        "required": false,
+        "description": "Unique image identifier",
+        "children": []
+      },
+      {
+        "name": "category_id",
+        "type": "integer",
+        "required": true,
+        "description": "Category unique identifier for a category",
+        "children": []
+      },
+      {
+        "name": "attribute_status_id",
+        "type": "integer",
+        "required": false,
+        "description": "Status identifier of an item attribute",
+        "children": []
+      },
+      {
+        "name": "description_date",
+        "type": "string",
+        "required": false,
+        "description": "Date of description details. See Date format standards",
+        "children": []
+      },
+      {
+        "name": "description",
+        "type": "string",
+        "required": false,
+        "description": "Description text in format",
+        "children": []
+      },
+      {
+        "name": "text_id",
+        "type": "string",
+        "required": false,
+        "description": null,
+        "children": []
+      }
+    ],
+    "response_fields": [],
+    "notes": "The image appears to show an API documentation page with various parameters. Some descriptions are partially cut off or not fully visible. The documentation includes both required and optional parameters with different data types including strings and integers. There are examples and error codes sections visible at the bottom of the image but they are not fully shown.",
+    "chunk_metadata": {
+      "index": 1,
+      "total": 1,
+      "y_start": 0,
+      "y_end": 4893,
+      "overlap_top": 0,
+      "overlap_bottom": 0,
+      "height": 4893,
+      "path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\workspaces\\v2.product.get_weight_recommendation\\chunks\\chunk_001.png",
+      "filename": "chunk_001.png",
+      "width": 837
+    },
+    "analysis_timestamp": "2025-10-10T06:32:53.389621",
+    "model": "claude-3-5-sonnet-20241022"
+  }
+]

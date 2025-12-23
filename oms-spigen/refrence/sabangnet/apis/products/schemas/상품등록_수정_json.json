@@ -1,0 +1,607 @@
+{
+  "type": "object",
+  "title": "상품등록&수정",
+  "description": "- 상품등록 & 수정을 하기 위한 API로 자체상품코드 기준으로 Insert 또는 Update 가 실행됩니다. - 사방넷 메뉴 상품관리 >사방넷 상품조회수정 메뉴에서 해당 데이터 확인이 가능합니다. - 자체상품코드 (COMPAYNY_GOODS_CD) 기준 값으로 등록 또는 수정 진행합니다.",
+  "required": [
+    "goodsNm",
+    "compaynyGoodsCd",
+    "goodsGubun",
+    "classCd1",
+    "classCd2",
+    "classCd3",
+    "origin",
+    "goodsSeason",
+    "sex",
+    "status",
+    "taxYn",
+    "delvType",
+    "goodsCost",
+    "goodsPrice",
+    "goodsConsumerPrice",
+    "imgPath",
+    "imgPath1",
+    "imgPath3"
+  ],
+  "properties": {
+    "goodsNm": {
+      "type": "string",
+      "description": "상품명",
+      "xml_name": "GOODS_NM"
+    },
+    "goodsKeyword": {
+      "type": "string",
+      "description": "상품약어",
+      "xml_name": "GOODS_KEYWORD"
+    },
+    "modelNm": {
+      "type": "string",
+      "description": "모델명",
+      "xml_name": "MODEL_NM"
+    },
+    "modelNo": {
+      "type": "string",
+      "description": "모델No",
+      "xml_name": "MODEL_NO"
+    },
+    "brandNm": {
+      "type": "string",
+      "description": "브랜드명",
+      "xml_name": "BRAND_NM"
+    },
+    "compaynyGoodsCd": {
+      "type": "string",
+      "description": "자체상품코드",
+      "xml_name": "COMPAYNY_GOODS_CD"
+    },
+    "goodsSearch": {
+      "type": "string",
+      "description": "사이트검색어",
+      "xml_name": "GOODS_SEARCH"
+    },
+    "goodsGubun": {
+      "type": "string",
+      "description": "상품구분",
+      "xml_name": "GOODS_GUBUN"
+    },
+    "classCd1": {
+      "type": "string",
+      "description": "대분류코드",
+      "xml_name": "CLASS_CD1"
+    },
+    "classCd2": {
+      "type": "string",
+      "description": "중분류코드",
+      "xml_name": "CLASS_CD2"
+    },
+    "classCd3": {
+      "type": "string",
+      "description": "소분류코드",
+      "xml_name": "CLASS_CD3"
+    },
+    "classCd4": {
+      "type": "string",
+      "description": "세분류코드",
+      "xml_name": "CLASS_CD4"
+    },
+    "partnerId": {
+      "type": "string",
+      "description": "매입처ID",
+      "xml_name": "PARTNER_ID"
+    },
+    "dpartnerId": {
+      "type": "string",
+      "description": "물류처ID",
+      "xml_name": "DPARTNER_ID"
+    },
+    "maker": {
+      "type": "string",
+      "description": "제조사",
+      "xml_name": "MAKER"
+    },
+    "origin": {
+      "type": "string",
+      "description": "원산지(제조국)",
+      "xml_name": "ORIGIN"
+    },
+    "makeYear": {
+      "type": "string",
+      "description": "생산연도",
+      "xml_name": "MAKE_YEAR"
+    },
+    "makeDm": {
+      "type": "string",
+      "description": "제조일자",
+      "xml_name": "MAKE_DM"
+    },
+    "goodsSeason": {
+      "type": "string",
+      "description": "시즌",
+      "xml_name": "GOODS_SEASON"
+    },
+    "sex": {
+      "type": "string",
+      "description": "남녀구분",
+      "xml_name": "SEX"
+    },
+    "status": {
+      "type": "string",
+      "description": "상품상태",
+      "xml_name": "STATUS"
+    },
+    "delivAbleRegion": {
+      "type": "string",
+      "description": "판매지역",
+      "xml_name": "DELIV_ABLE_REGION"
+    },
+    "taxYn": {
+      "type": "string",
+      "description": "세금구분",
+      "xml_name": "TAX_YN"
+    },
+    "delvType": {
+      "type": "string",
+      "description": "배송비구분",
+      "xml_name": "DELV_TYPE"
+    },
+    "delvCost": {
+      "type": "string",
+      "description": "배송비",
+      "xml_name": "DELV_COST"
+    },
+    "banpumArea": {
+      "type": "string",
+      "description": "반품지구분",
+      "xml_name": "BANPUM_AREA"
+    },
+    "goodsCost": {
+      "type": "string",
+      "description": "원가",
+      "xml_name": "GOODS_COST"
+    },
+    "goodsPrice": {
+      "type": "string",
+      "description": "판매가",
+      "xml_name": "GOODS_PRICE"
+    },
+    "goodsConsumerPrice": {
+      "type": "string",
+      "description": "TAG가(소비자가)",
+      "xml_name": "GOODS_CONSUMER_PRICE"
+    },
+    "char1Nm": {
+      "type": "string",
+      "description": "옵션제목(1)",
+      "xml_name": "CHAR_1_NM"
+    },
+    "char1Val": {
+      "type": "string",
+      "description": "옵션상세명칭(1)",
+      "xml_name": "CHAR_1_VAL"
+    },
+    "char2Nm": {
+      "type": "string",
+      "description": "옵션제목(2)",
+      "xml_name": "CHAR_2_NM"
+    },
+    "char2Val": {
+      "type": "string",
+      "description": "옵션상세명칭(2)",
+      "xml_name": "CHAR_2_VAL"
+    },
+    "imgPath": {
+      "type": "string",
+      "description": "대표이미지",
+      "xml_name": "IMG_PATH"
+    },
+    "imgPath1": {
+      "type": "string",
+      "description": "종합몰(JPG)이미지",
+      "xml_name": "IMG_PATH1"
+    },
+    "imgPath2": {
+      "type": "string",
+      "description": "부가이미지2",
+      "xml_name": "IMG_PATH2"
+    },
+    "imgPath3": {
+      "type": "string",
+      "description": "부가이미지3",
+      "xml_name": "IMG_PATH3"
+    },
+    "imgPath4": {
+      "type": "string",
+      "description": "부가이미지4",
+      "xml_name": "IMG_PATH4"
+    },
+    "imgPath5": {
+      "type": "string",
+      "description": "부가이미지5",
+      "xml_name": "IMG_PATH5"
+    },
+    "imgPath6": {
+      "type": "string",
+      "description": "부가이미지6",
+      "xml_name": "IMG_PATH6"
+    },
+    "imgPath7": {
+      "type": "string",
+      "description": "부가이미지7",
+      "xml_name": "IMG_PATH7"
+    },
+    "imgPath8": {
+      "type": "string",
+      "description": "부가이미지8",
+      "xml_name": "IMG_PATH8"
+    },
+    "imgPath9": {
+      "type": "string",
+      "description": "부가이미지9",
+      "xml_name": "IMG_PATH9"
+    },
+    "imgPath10": {
+      "type": "string",
+      "description": "부가이미지10",
+      "xml_name": "IMG_PATH10"
+    },
+    "imgPath11": {
+      "type": "string",
+      "description": "부가이미지11",
+      "xml_name": "IMG_PATH11"
+    },
+    "imgPath12": {
+      "type": "string",
+      "description": "부가이미지12",
+      "xml_name": "IMG_PATH12"
+    },
+    "imgPath13": {
+      "type": "string",
+      "description": "부가이미지13",
+      "xml_name": "IMG_PATH13"
+    },
+    "imgPath14": {
+      "type": "string",
+      "description": "부가이미지14",
+      "xml_name": "IMG_PATH14"
+    },
+    "imgPath15": {
+      "type": "string",
+      "description": "부가이미지15",
+      "xml_name": "IMG_PATH15"
+    },
+    "imgPath16": {
+      "type": "string",
+      "description": "부가이미지16",
+      "xml_name": "IMG_PATH16"
+    },
+    "imgPath17": {
+      "type": "string",
+      "description": "부가이미지17",
+      "xml_name": "IMG_PATH17"
+    },
+    "imgPath18": {
+      "type": "string",
+      "description": "부가이미지18",
+      "xml_name": "IMG_PATH18"
+    },
+    "imgPath19": {
+      "type": "string",
+      "description": "부가이미지19",
+      "xml_name": "IMG_PATH19"
+    },
+    "imgPath20": {
+      "type": "string",
+      "description": "부가이미지20",
+      "xml_name": "IMG_PATH20"
+    },
+    "imgPath21": {
+      "type": "string",
+      "description": "부가이미지21",
+      "xml_name": "IMG_PATH21"
+    },
+    "imgPath22": {
+      "type": "string",
+      "description": "부가이미지22",
+      "xml_name": "IMG_PATH22"
+    },
+    "imgPath23": {
+      "type": "string",
+      "description": "인증서이미지",
+      "xml_name": "IMG_PATH23"
+    },
+    "imgPath24": {
+      "type": "string",
+      "description": "수입면장이미지",
+      "xml_name": "IMG_PATH24"
+    },
+    "goodsRemarks": {
+      "type": "string",
+      "description": "상품상세설명",
+      "xml_name": "GOODS_REMARKS"
+    },
+    "certno": {
+      "type": "string",
+      "description": "인증번호",
+      "xml_name": "CERTNO"
+    },
+    "avlstDm": {
+      "type": "string",
+      "description": "인증유효 시작일",
+      "xml_name": "AVLST_DM"
+    },
+    "avledDm": {
+      "type": "string",
+      "description": "인증유효 마지막일",
+      "xml_name": "AVLED_DM"
+    },
+    "issuedate": {
+      "type": "string",
+      "description": "발급일자",
+      "xml_name": "ISSUEDATE"
+    },
+    "certdate": {
+      "type": "string",
+      "description": "인증일자",
+      "xml_name": "CERTDATE"
+    },
+    "certAgency": {
+      "type": "string",
+      "description": "인증기관",
+      "xml_name": "CERT_AGENCY"
+    },
+    "certfield": {
+      "type": "string",
+      "description": "인증분야",
+      "xml_name": "CERTFIELD"
+    },
+    "material": {
+      "type": "string",
+      "description": "식품재료/원산지",
+      "xml_name": "MATERIAL"
+    },
+    "stockUseYn": {
+      "type": "string",
+      "description": "재고관리사용여부",
+      "xml_name": "STOCK_USE_YN"
+    },
+    "optType": {
+      "type": "string",
+      "description": "옵션수정여부",
+      "xml_name": "OPT_TYPE"
+    },
+    "propEditYn": {
+      "type": "string",
+      "description": "속성수정여부",
+      "xml_name": "PROP_EDIT_YN"
+    },
+    "prop1Cd": {
+      "type": "string",
+      "description": "속성분류코드",
+      "xml_name": "PROP1_CD"
+    },
+    "propVal1": {
+      "type": "string",
+      "description": "속성값1",
+      "xml_name": "PROP_VAL1"
+    },
+    "propVal2": {
+      "type": "string",
+      "description": "속성값2",
+      "xml_name": "PROP_VAL2"
+    },
+    "propVal3": {
+      "type": "string",
+      "description": "속성값3",
+      "xml_name": "PROP_VAL3"
+    },
+    "propVal4": {
+      "type": "string",
+      "description": "속성값4",
+      "xml_name": "PROP_VAL4"
+    },
+    "propVal5": {
+      "type": "string",
+      "description": "속성값5",
+      "xml_name": "PROP_VAL5"
+    },
+    "propVal6": {
+      "type": "string",
+      "description": "속성값6",
+      "xml_name": "PROP_VAL6"
+    },
+    "propVal7": {
+      "type": "string",
+      "description": "속성값7",
+      "xml_name": "PROP_VAL7"
+    },
+    "propVal8": {
+      "type": "string",
+      "description": "속성값8",
+      "xml_name": "PROP_VAL8"
+    },
+    "propVal9": {
+      "type": "string",
+      "description": "속성값9",
+      "xml_name": "PROP_VAL9"
+    },
+    "propVal10": {
+      "type": "string",
+      "description": "속성값10",
+      "xml_name": "PROP_VAL10"
+    },
+    "propVal11": {
+      "type": "string",
+      "description": "속성값11",
+      "xml_name": "PROP_VAL11"
+    },
+    "propVal12": {
+      "type": "string",
+      "description": "속성값12",
+      "xml_name": "PROP_VAL12"
+    },
+    "propVal13": {
+      "type": "string",
+      "description": "속성값13",
+      "xml_name": "PROP_VAL13"
+    },
+    "propVal14": {
+      "type": "string",
+      "description": "속성값14",
+      "xml_name": "PROP_VAL14"
+    },
+    "propVal15": {
+      "type": "string",
+      "description": "속성값15",
+      "xml_name": "PROP_VAL15"
+    },
+    "propVal16": {
+      "type": "string",
+      "description": "속성값16",
+      "xml_name": "PROP_VAL16"
+    },
+    "propVal17": {
+      "type": "string",
+      "description": "속성값17",
+      "xml_name": "PROP_VAL17"
+    },
+    "propVal18": {
+      "type": "string",
+      "description": "속성값18",
+      "xml_name": "PROP_VAL18"
+    },
+    "propVal19": {
+      "type": "string",
+      "description": "속성값19",
+      "xml_name": "PROP_VAL19"
+    },
+    "propVal20": {
+      "type": "string",
+      "description": "속성값20",
+      "xml_name": "PROP_VAL20"
+    },
+    "propVal21": {
+      "type": "string",
+      "description": "속성값21",
+      "xml_name": "PROP_VAL21"
+    },
+    "propVal22": {
+      "type": "string",
+      "description": "속성값22",
+      "xml_name": "PROP_VAL22"
+    },
+    "propVal23": {
+      "type": "string",
+      "description": "속성값23",
+      "xml_name": "PROP_VAL23"
+    },
+    "propVal24": {
+      "type": "string",
+      "description": "속성값24",
+      "xml_name": "PROP_VAL24"
+    },
+    "propVal25": {
+      "type": "string",
+      "description": "속성값25",
+      "xml_name": "PROP_VAL25"
+    },
+    "propVal26": {
+      "type": "string",
+      "description": "속성값26",
+      "xml_name": "PROP_VAL26"
+    },
+    "propVal27": {
+      "type": "string",
+      "description": "속성값27",
+      "xml_name": "PROP_VAL27"
+    },
+    "propVal28": {
+      "type": "string",
+      "description": "속성값28",
+      "xml_name": "PROP_VAL28"
+    },
+    "propVal29": {
+      "type": "string",
+      "description": "속성값29",
+      "xml_name": "PROP_VAL29"
+    },
+    "propVal30": {
+      "type": "string",
+      "description": "속성값30",
+      "xml_name": "PROP_VAL30"
+    },
+    "propVal31": {
+      "type": "string",
+      "description": "속성값31",
+      "xml_name": "PROP_VAL31"
+    },
+    "propVal32": {
+      "type": "string",
+      "description": "속성값32",
+      "xml_name": "PROP_VAL32"
+    },
+    "propVal33": {
+      "type": "string",
+      "description": "속성값33",
+      "xml_name": "PROP_VAL33"
+    },
+    "packCodeStr": {
+      "type": "string",
+      "description": "추가상품그룹코드",
+      "xml_name": "PACK_CODE_STR"
+    },
+    "goodsNmEn": {
+      "type": "string",
+      "description": "영문 상품명",
+      "xml_name": "GOODS_NM_EN"
+    },
+    "goodsNmPr": {
+      "type": "string",
+      "description": "출력 상품명",
+      "xml_name": "GOODS_NM_PR"
+    },
+    "goodsRemarks2": {
+      "type": "string",
+      "description": "추가 상품상세설명_1",
+      "xml_name": "GOODS_REMARKS2"
+    },
+    "goodsRemarks3": {
+      "type": "string",
+      "description": "추가 상품상세설명_2",
+      "xml_name": "GOODS_REMARKS3"
+    },
+    "goodsRemarks4": {
+      "type": "string",
+      "description": "추가 상품상세설명_3",
+      "xml_name": "GOODS_REMARKS4"
+    },
+    "importno": {
+      "type": "string",
+      "description": "수입신고번호",
+      "xml_name": "IMPORTNO"
+    },
+    "goodsCost2": {
+      "type": "string",
+      "description": "원가2",
+      "xml_name": "GOODS_COST2"
+    },
+    "origin2": {
+      "type": "string",
+      "description": "원산지 상세지역",
+      "xml_name": "ORIGIN2"
+    },
+    "expireDm": {
+      "type": "string",
+      "description": "유효일자",
+      "xml_name": "EXPIRE_DM"
+    },
+    "supplySaveYn": {
+      "type": "string",
+      "description": "합포제외여부",
+      "xml_name": "SUPPLY_SAVE_YN"
+    },
+    "descrition": {
+      "type": "string",
+      "description": "관리자메모",
+      "xml_name": "DESCRITION"
+    }
+  }
+}

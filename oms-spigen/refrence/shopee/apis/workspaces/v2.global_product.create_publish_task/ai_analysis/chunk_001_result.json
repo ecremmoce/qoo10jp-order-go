@@ -1,0 +1,62 @@
+{
+  "chunk_index": 1,
+  "endpoint": null,
+  "method": null,
+  "description": null,
+  "parameters": [],
+  "response_fields": [
+    {
+      "name": "error_check_luc_fail",
+      "type": "string",
+      "description": "{{error_info}}"
+    },
+    {
+      "name": "error_category_is_block",
+      "type": "string",
+      "description": "Category is restricted"
+    },
+    {
+      "name": "error_inner",
+      "type": "string",
+      "description": "Update item failed {{error_info}}"
+    },
+    {
+      "name": "error_param",
+      "type": "string",
+      "description": "Attribute format is invalid. NCC field only allows Eng Alphanumeric input"
+    },
+    {
+      "name": "error_inner",
+      "type": "string",
+      "description": "System error, please try again later or contact the OpenAPI support team."
+    },
+    {
+      "name": "error_desc_image_no_pass",
+      "type": "string",
+      "description": "{{error_info}}"
+    },
+    {
+      "name": "error_auth",
+      "type": "string",
+      "description": "Your shop can not use model level dts"
+    },
+    {
+      "name": "error_system_busy",
+      "type": "string",
+      "description": "Our system is taking some time to respond, please try later."
+    }
+  ],
+  "chunk_metadata": {
+    "index": 1,
+    "total": 2,
+    "y_start": 0,
+    "y_end": 8000,
+    "overlap_top": 0,
+    "overlap_bottom": 500,
+    "height": 8000,
+    "path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\workspaces\\v2.global_product.create_publish_task\\chunks\\chunk_001.png",
+    "filename": "chunk_001.png",
+    "width": 837
+  },
+  "chunk_path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\workspaces\\v2.global_product.create_publish_task\\chunks\\chunk_001.png"
+}

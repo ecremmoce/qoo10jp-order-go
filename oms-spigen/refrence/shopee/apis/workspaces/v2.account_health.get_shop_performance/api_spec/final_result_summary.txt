@@ -1,0 +1,42 @@
+======================================================================
+API SPECIFICATION SUMMARY
+======================================================================
+
+Endpoint: POST /system/merchant/project/settings/post/modify_site_performance
+Description: Settings related to site performance
+
+Parameters (4):
+----------------------------------------------------------------------
+* url (string)
+   URL system of project settings post
+* site_id (string)
+   Site ID
+* ver (string)
+   This is a version for requested parameter submitted between the browser's client and frontend system
+* req_id (string)
+   Request identifier to track request/response across system
+
+Response Fields (4):
+----------------------------------------------------------------------
+  error (string)
+   Error message if any
+  message (string)
+   Response message from server
+  status_id (integer)
+   Status code of the response
+  overall_performance (object)
+   Performance metrics
+
+Metadata:
+----------------------------------------------------------------------
+  total_chunks: 1
+  chunks_with_errors: 0
+  total_parameters_before_dedup: 4
+  total_parameters_after_dedup: 4
+  update_log_entries: 0
+  hidden_fields_count: 0
+  source_results: workspaces\v2.account_health.get_shop_performance\results\all_chunks_results.json
+
+======================================================================
+Legend: * = required parameter
+======================================================================

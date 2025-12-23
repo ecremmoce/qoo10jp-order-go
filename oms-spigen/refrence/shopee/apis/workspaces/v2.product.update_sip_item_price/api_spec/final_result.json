@@ -1,0 +1,47 @@
+{
+  "endpoint": "https://openplatform.dfocus.net/cattle/movies/recommended/movies_play_list",
+  "method": "GET",
+  "description": "Movie recommendation API",
+  "parameters": [
+    {
+      "name": "player_id",
+      "type": "string",
+      "required": true,
+      "description": "Required for all requests",
+      "children": []
+    },
+    {
+      "name": "access_token",
+      "type": "string",
+      "required": true,
+      "description": "This is the token for access to the server. Example: 4n23nk42ln",
+      "children": []
+    },
+    {
+      "name": "pkg_id",
+      "type": "string",
+      "required": false,
+      "description": "Package unique identifier for a play. Required param for some apps",
+      "children": []
+    },
+    {
+      "name": "cp",
+      "type": "string",
+      "required": false,
+      "description": "Required by content provider for special content",
+      "children": []
+    }
+  ],
+  "response_fields": [],
+  "update_log": [],
+  "hidden_fields": [],
+  "metadata": {
+    "total_chunks": 1,
+    "chunks_with_errors": 0,
+    "total_parameters_before_dedup": 4,
+    "total_parameters_after_dedup": 4,
+    "update_log_entries": 0,
+    "hidden_fields_count": 0,
+    "source_results": "workspaces\\v2.product.update_sip_item_price\\results\\all_chunks_results.json"
+  }
+}

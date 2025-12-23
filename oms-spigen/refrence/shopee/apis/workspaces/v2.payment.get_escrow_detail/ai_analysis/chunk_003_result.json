@@ -1,0 +1,54 @@
+{
+  "chunk_index": 3,
+  "endpoint": null,
+  "method": null,
+  "description": "Error codes reference",
+  "parameters": [],
+  "response_fields": [
+    {
+      "name": "error_codes",
+      "type": "object",
+      "description": "Error code mappings",
+      "children": [
+        {
+          "name": "error_params",
+          "type": "string",
+          "description": "There is no access_token in query"
+        },
+        {
+          "name": "error_path",
+          "type": "string",
+          "description": "Invalid routing token"
+        },
+        {
+          "name": "error_parent",
+          "type": "string",
+          "description": "Invalid parent_id"
+        },
+        {
+          "name": "error_parent",
+          "type": "string",
+          "description": "There is no parent_id in query"
+        },
+        {
+          "name": "error_data",
+          "type": "string",
+          "description": "No permission to current slot"
+        }
+      ]
+    }
+  ],
+  "chunk_metadata": {
+    "index": 3,
+    "total": 3,
+    "y_start": 14750,
+    "y_end": 18828,
+    "overlap_top": 500,
+    "overlap_bottom": 0,
+    "height": 4078,
+    "path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\workspaces\\v2.payment.get_escrow_detail\\chunks\\chunk_003.png",
+    "filename": "chunk_003.png",
+    "width": 837
+  },
+  "chunk_path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\workspaces\\v2.payment.get_escrow_detail\\chunks\\chunk_003.png"
+}

@@ -1,0 +1,84 @@
+[
+  {
+    "chunk_index": 1,
+    "total_chunks": 1,
+    "endpoint": "/api/v2/user/get_user_info",
+    "method": "GET",
+    "description": "Get user information",
+    "update_log": [
+      {
+        "date": "2021-12-14",
+        "change": "API Released"
+      }
+    ],
+    "parameters": [
+      {
+        "name": "user_id",
+        "type": "string",
+        "required": true,
+        "description": "User ID",
+        "children": []
+      }
+    ],
+    "response_fields": [
+      {
+        "name": "user_id",
+        "type": "string",
+        "description": "User ID",
+        "children": []
+      },
+      {
+        "name": "username",
+        "type": "string",
+        "description": "Username",
+        "children": []
+      },
+      {
+        "name": "email",
+        "type": "string",
+        "description": "Email address",
+        "children": []
+      },
+      {
+        "name": "phone",
+        "type": "string",
+        "description": "Phone number",
+        "children": []
+      },
+      {
+        "name": "status",
+        "type": "string",
+        "description": "Account status",
+        "children": []
+      },
+      {
+        "name": "created_at",
+        "type": "string",
+        "description": "Account creation timestamp",
+        "children": []
+      },
+      {
+        "name": "last_login",
+        "type": "string",
+        "description": "Last login timestamp",
+        "children": []
+      }
+    ],
+    "hidden_fields": [],
+    "notes": "The image shows a comprehensive API documentation page with clear request parameters and response fields. All fields are well-documented with their types and descriptions.",
+    "chunk_metadata": {
+      "index": 1,
+      "total": 1,
+      "y_start": 0,
+      "y_end": 6944,
+      "overlap_top": 0,
+      "overlap_bottom": 0,
+      "height": 6944,
+      "path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\workspaces\\v2.global_product.get_global_model_list\\chunks\\chunk_001.png",
+      "filename": "chunk_001.png",
+      "width": 837
+    },
+    "analysis_timestamp": "2025-10-10T05:47:23.146926",
+    "model": "claude-3-5-sonnet-20241022"
+  }
+]

@@ -1,0 +1,97 @@
+[
+  {
+    "chunk_index": 1,
+    "total_chunks": 1,
+    "endpoint": null,
+    "method": "POST",
+    "description": "Publish related params detail",
+    "update_log": [],
+    "hidden_fields": [],
+    "parameters": [
+      {
+        "name": "url",
+        "type": "string",
+        "required": true,
+        "description": "External URL",
+        "children": []
+      },
+      {
+        "name": "title",
+        "type": "string",
+        "required": false,
+        "description": "Title",
+        "children": []
+      },
+      {
+        "name": "text",
+        "type": "string",
+        "required": false,
+        "description": "Text content",
+        "children": []
+      }
+    ],
+    "response_fields": [
+      {
+        "name": "status",
+        "type": "string",
+        "description": "Status code (e.g. success/failed)",
+        "children": []
+      },
+      {
+        "name": "message",
+        "type": "string",
+        "description": "Response message",
+        "children": []
+      },
+      {
+        "name": "velocity",
+        "type": "string",
+        "description": "Velocity message",
+        "children": []
+      },
+      {
+        "name": "requestId",
+        "type": "object",
+        "description": "Request ID of the request in case",
+        "children": []
+      }
+    ],
+    "error_codes": [
+      {
+        "code": "err_invalid_xxx_param",
+        "description": "The parameter you marked in xxx does not match requirements"
+      },
+      {
+        "code": "err_invalid_content_type",
+        "description": "Invalid or empty content type"
+      },
+      {
+        "code": "err_parse",
+        "description": "There is an error when parsing"
+      },
+      {
+        "code": "err_text",
+        "description": "Empty text"
+      },
+      {
+        "code": "err_url",
+        "description": "The url does not exist"
+      }
+    ],
+    "notes": "The documentation shows a publishing-related API with custom parameters, response fields, and detailed error codes. The API appears to handle external URL content publishing with optional title and text fields.",
+    "chunk_metadata": {
+      "index": 1,
+      "total": 1,
+      "y_start": 0,
+      "y_end": 5093,
+      "overlap_top": 0,
+      "overlap_bottom": 0,
+      "height": 5093,
+      "path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\workspaces\\v2.global_product.delete_global_item\\chunks\\chunk_001.png",
+      "filename": "chunk_001.png",
+      "width": 837
+    },
+    "analysis_timestamp": "2025-10-10T05:45:32.843308",
+    "model": "claude-3-5-sonnet-20241022"
+  }
+]

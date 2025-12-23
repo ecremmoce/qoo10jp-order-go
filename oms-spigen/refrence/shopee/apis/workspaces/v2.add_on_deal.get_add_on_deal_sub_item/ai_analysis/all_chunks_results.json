@@ -1,0 +1,113 @@
+[
+  {
+    "chunk_index": 1,
+    "total_chunks": 1,
+    "endpoint": "cc_dkl_sm_dedl_plt_mt_lock_put_del",
+    "method": null,
+    "description": null,
+    "update_log": [
+      {
+        "date": "2021-07-16",
+        "change": "Updates the change information of Request Parameter and Response Parameter"
+      },
+      {
+        "date": "2021-04-26",
+        "change": "API first time information"
+      }
+    ],
+    "parameters": [
+      {
+        "name": "url",
+        "type": "string",
+        "required": true,
+        "description": "HTTP request",
+        "children": []
+      },
+      {
+        "name": "headers",
+        "type": "object",
+        "required": true,
+        "description": "HTTP request header",
+        "children": []
+      },
+      {
+        "name": "Test",
+        "type": "string",
+        "required": true,
+        "description": "Test url",
+        "children": []
+      },
+      {
+        "name": "url_pre",
+        "type": "string",
+        "required": false,
+        "description": "The url pre added to the call on test",
+        "children": []
+      },
+      {
+        "name": "proc_id",
+        "type": "string",
+        "required": true,
+        "description": "Dragon's process identifier for an info",
+        "children": []
+      },
+      {
+        "name": "result_id",
+        "type": "string",
+        "required": true,
+        "description": "The identifier of the DA request for each checking",
+        "children": []
+      },
+      {
+        "name": "lock_info_del",
+        "type": "string",
+        "required": true,
+        "description": "The pre processed result of each call date. Gets the pre processed result of an info if no need to process it or if job info was applied.",
+        "children": []
+      }
+    ],
+    "response_fields": [
+      {
+        "name": "message",
+        "type": "string",
+        "description": "The description of error code",
+        "children": []
+      },
+      {
+        "name": "result_id",
+        "type": "string",
+        "description": "The identifier of the DA request for each checking",
+        "children": []
+      }
+    ],
+    "error_codes": [
+      {
+        "code": "error_param",
+        "description": "Invalid parameter format"
+      },
+      {
+        "code": "error_process",
+        "description": "No permission to correct job"
+      },
+      {
+        "code": "error_url",
+        "description": "Wrong parameters check string"
+      }
+    ],
+    "notes": "The documentation appears to be for an internal API related to process locking and deletion operations. Some sections like the complete method type are not clearly visible in the image.",
+    "chunk_metadata": {
+      "index": 1,
+      "total": 1,
+      "y_start": 0,
+      "y_end": 4698,
+      "overlap_top": 0,
+      "overlap_bottom": 0,
+      "height": 4698,
+      "path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\workspaces\\v2.add_on_deal.get_add_on_deal_sub_item\\chunks\\chunk_001.png",
+      "filename": "chunk_001.png",
+      "width": 837
+    },
+    "analysis_timestamp": "2025-10-10T05:26:08.056103",
+    "model": "claude-3-5-sonnet-20241022"
+  }
+]

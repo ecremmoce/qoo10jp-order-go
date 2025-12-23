@@ -1,0 +1,87 @@
+[
+  {
+    "chunk_index": 1,
+    "total_chunks": 1,
+    "endpoint": null,
+    "method": null,
+    "description": "This appears to be a payment gateway API documentation",
+    "update_log": [
+      {
+        "date": "2021-08-12",
+        "change": "Initial update entry visible in the log"
+      }
+    ],
+    "hidden_fields": [
+      {
+        "name": "payment_method",
+        "found_in": "parameter list",
+        "extracted_from_description": true
+      },
+      {
+        "name": "processor_code",
+        "found_in": "parameter list",
+        "extracted_from_description": true
+      }
+    ],
+    "parameters": [
+      {
+        "name": "payment_method",
+        "type": "string",
+        "required": true,
+        "description": "The payment method identifier",
+        "truncated": false,
+        "continued": false,
+        "children": []
+      },
+      {
+        "name": "processor_code",
+        "type": "string",
+        "required": true,
+        "description": "The processor code for the payment",
+        "truncated": false,
+        "continued": false,
+        "children": []
+      },
+      {
+        "name": "card",
+        "type": "object",
+        "required": true,
+        "description": "Card payment details",
+        "truncated": false,
+        "continued": false,
+        "children": [
+          {
+            "name": "cvv",
+            "type": "string",
+            "required": true,
+            "description": "Card verification value",
+            "children": []
+          },
+          {
+            "name": "expiry",
+            "type": "string",
+            "required": true,
+            "description": "Card expiry date",
+            "children": []
+          }
+        ]
+      }
+    ],
+    "response_fields": [],
+    "notes": "The documentation appears to be for a payment processing API. Some sections are partially visible or cut off. The image shows a form-like structure with nested parameters, particularly for card payment details. The update log section is visible but partially truncated.",
+    "chunk_metadata": {
+      "index": 1,
+      "total": 1,
+      "y_start": 0,
+      "y_end": 6933,
+      "overlap_top": 0,
+      "overlap_bottom": 0,
+      "height": 6933,
+      "path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\workspaces\\v2.account_health.get_penalty_point_history\\chunks\\chunk_001.png",
+      "filename": "chunk_001.png",
+      "width": 837
+    },
+    "analysis_timestamp": "2025-10-10T05:23:08.574138",
+    "model": "claude-3-5-sonnet-20241022"
+  }
+]

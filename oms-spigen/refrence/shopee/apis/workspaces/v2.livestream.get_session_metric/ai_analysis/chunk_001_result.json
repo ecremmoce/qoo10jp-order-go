@@ -1,0 +1,123 @@
+{
+  "chunk_index": 1,
+  "total_chunks": 1,
+  "endpoint": "/v1/federation/get_session_stats",
+  "method": "GET",
+  "description": "Get federation session statistics data",
+  "update_log": [],
+  "hidden_fields": [],
+  "parameters": [
+    {
+      "name": "domain_id",
+      "type": "string",
+      "required": true,
+      "description": "The identifier of stream session",
+      "children": []
+    }
+  ],
+  "response_fields": [
+    {
+      "name": "time",
+      "type": "string",
+      "description": "Sample time line time Array (in min)",
+      "children": []
+    },
+    {
+      "name": "timeline",
+      "type": "string",
+      "description": "Sample time stats timeline (in min)",
+      "children": []
+    },
+    {
+      "name": "audience",
+      "type": "object",
+      "description": "The number of end users during live streaming",
+      "children": []
+    },
+    {
+      "name": "rtc",
+      "type": "float",
+      "description": "Digital dimensions you are serving",
+      "children": []
+    },
+    {
+      "name": "pn",
+      "type": "float",
+      "description": "Value of output video card and sound card by system",
+      "children": []
+    },
+    {
+      "name": "dt",
+      "type": "float",
+      "description": "Number of dropped video frames by system",
+      "children": []
+    },
+    {
+      "name": "dr",
+      "type": "float",
+      "description": "Number of product cards display by number of products",
+      "children": []
+    },
+    {
+      "name": "views",
+      "type": "float",
+      "description": "Number of views during the timeline",
+      "children": []
+    },
+    {
+      "name": "unique_user_cnt",
+      "type": "float",
+      "description": "Number of unique users",
+      "children": []
+    },
+    {
+      "name": "new_cnt",
+      "type": "float",
+      "description": "Number of new added follow members",
+      "children": []
+    },
+    {
+      "name": "comments",
+      "type": "float",
+      "description": "Number of comments sent during live streaming",
+      "children": []
+    },
+    {
+      "name": "shares",
+      "type": "float",
+      "description": "Number of times shared during the stream",
+      "children": []
+    },
+    {
+      "name": "avg_watching_duration",
+      "type": "float",
+      "description": "Average of linear duration watching a live stream",
+      "children": []
+    }
+  ],
+  "error_codes": [
+    {
+      "code": "error_404",
+      "description": "parameter invalid"
+    },
+    {
+      "code": "error_parent",
+      "description": "The information you submit is not found"
+    }
+  ],
+  "notes": "The documentation shows a complete API endpoint for getting federation session statistics with various metrics related to streaming performance, user engagement, and viewer behavior. All parameters and response fields are clearly defined.",
+  "chunk_metadata": {
+    "index": 1,
+    "total": 1,
+    "y_start": 0,
+    "y_end": 4742,
+    "overlap_top": 0,
+    "overlap_bottom": 0,
+    "height": 4742,
+    "path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\workspaces\\v2.livestream.get_session_metric\\chunks\\chunk_001.png",
+    "filename": "chunk_001.png",
+    "width": 837
+  },
+  "analysis_timestamp": "2025-10-10T05:56:44.858859",
+  "model": "claude-3-5-sonnet-20241022"
+}

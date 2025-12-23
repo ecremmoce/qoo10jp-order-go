@@ -1,0 +1,85 @@
+{
+  "endpoint": "/ads/ads_get_plan_product_campaign",
+  "method": "GET",
+  "description": "Campaign parameters response",
+  "parameters": [
+    {
+      "name": "country_id",
+      "type": "string",
+      "required": true,
+      "description": "Two ISO3 Character ID (Provide if available)",
+      "children": []
+    },
+    {
+      "name": "end_period",
+      "type": "string",
+      "required": true,
+      "description": "Campaign dates filter",
+      "children": []
+    },
+    {
+      "name": "time_budget",
+      "type": "float",
+      "required": false,
+      "description": "Daily budget for Campaign",
+      "children": []
+    },
+    {
+      "name": "end_date",
+      "type": "string",
+      "required": true,
+      "description": "Format in YYYY-MM-DD ( ex. 2017-11-25)",
+      "children": []
+    },
+    {
+      "name": "start_date",
+      "type": "string",
+      "required": true,
+      "description": "Format in YYYY-MM-DD",
+      "children": []
+    }
+  ],
+  "response_fields": [
+    {
+      "name": "good",
+      "type": "string",
+      "description": "Indicate error type first error. Empty if no error",
+      "children": []
+    },
+    {
+      "name": "campaign",
+      "type": "string",
+      "description": "Indicate error details first error. Empty if no error",
+      "children": []
+    },
+    {
+      "name": "training",
+      "type": "string",
+      "description": "An occurred error in training, Empty if training succeed",
+      "children": []
+    },
+    {
+      "name": "response",
+      "type": "mixed",
+      "description": "The identifier for API request for error tracking",
+      "children": []
+    },
+    {
+      "name": "campaign_id",
+      "type": "mixed",
+      "description": "",
+      "children": []
+    }
+  ],
+  "update_log": [],
+  "hidden_fields": [],
+  "metadata": {
+    "total_chunks": 1,
+    "chunks_with_errors": 0,
+    "total_parameters_before_dedup": 5,
+    "total_parameters_after_dedup": 5,
+    "update_log_entries": 0,
+    "hidden_fields_count": 0,
+    "source_results": "workspaces\\v2.ads.edit_gms_product_campaign\\results\\all_chunks_results.json"
+  }
+}

@@ -1,0 +1,59 @@
+{
+  "endpoint": "v2/logistics/download_booking_shipping_document",
+  "method": "GET",
+  "description": "Get file link to download/create shipping document. You have to call v2.logistics.create_shipping_document to create a new shipping document first.",
+  "parameters": [
+    {
+      "name": "partner_id",
+      "type": "string",
+      "required": true,
+      "description": "Partner ID is assigned when application is successful. Required for all requests.",
+      "children": []
+    },
+    {
+      "name": "timestamp",
+      "type": "timestamp",
+      "required": true,
+      "description": "This is to indicate the timestamp of the request. Required for all requests. Expires in 5 minutes",
+      "children": []
+    },
+    {
+      "name": "access_token",
+      "type": "string",
+      "required": true,
+      "description": "The token for API usage, using to identify your permission to the api. Valid for multiple use and expire in 4 hours",
+      "children": []
+    },
+    {
+      "name": "shipping_document_type",
+      "type": "string",
+      "required": true,
+      "description": "The type of shipping document. Available values: NORMAL_AIR_WAYBILL, THERMAL_AIR_WAYBILL",
+      "children": []
+    },
+    {
+      "name": "booking_sn",
+      "type": "string",
+      "required": true,
+      "description": "Shipper's unique identifier for a booking",
+      "children": []
+    }
+  ],
+  "response_fields": [],
+  "update_log": [
+    {
+      "date": "2024-07-02",
+      "change": "New API"
+    }
+  ],
+  "hidden_fields": [],
+  "metadata": {
+    "total_chunks": 1,
+    "chunks_with_errors": 0,
+    "total_parameters_before_dedup": 5,
+    "total_parameters_after_dedup": 5,
+    "update_log_entries": 1,
+    "hidden_fields_count": 0,
+    "source_results": "workspaces\\v2.logistics.download_booking_shipping_document\\results\\all_chunks_results.json"
+  }
+}

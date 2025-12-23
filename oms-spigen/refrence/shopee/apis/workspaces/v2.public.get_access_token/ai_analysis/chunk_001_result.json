@@ -1,0 +1,109 @@
+{
+  "chunk_index": 1,
+  "total_chunks": 1,
+  "endpoint": null,
+  "method": null,
+  "description": null,
+  "update_log": [],
+  "hidden_fields": [],
+  "parameters": [
+    {
+      "name": "url",
+      "type": "string",
+      "required": true,
+      "description": "HTTPS request URL",
+      "children": []
+    },
+    {
+      "name": "URL",
+      "type": "string",
+      "required": true,
+      "description": "Chinese Mainland",
+      "children": []
+    },
+    {
+      "name": "Test URL",
+      "type": "string",
+      "required": true,
+      "description": null,
+      "children": []
+    },
+    {
+      "name": "partner_id",
+      "type": "integer",
+      "required": true,
+      "description": "This is a unique business identifier or auth_id. Requires for tracking usage. Supply to you when signing up.",
+      "children": []
+    },
+    {
+      "name": "timestamp",
+      "type": "string",
+      "required": true,
+      "description": "Unix timestamp",
+      "children": []
+    },
+    {
+      "name": "sign",
+      "type": "string",
+      "required": true,
+      "description": "Authentication signature string",
+      "children": []
+    }
+  ],
+  "response_fields": [
+    {
+      "name": "status_code",
+      "type": "string",
+      "description": "Response code field, all business codes"
+    },
+    {
+      "name": "access_token",
+      "type": "string",
+      "description": "Response code field, all success codes refer to access_token after it expires"
+    },
+    {
+      "name": "msg_id",
+      "type": "string",
+      "description": "Response code field, all error codes refer to msg_id"
+    },
+    {
+      "name": "message_id",
+      "type": "string",
+      "description": "Response code field"
+    },
+    {
+      "name": "error",
+      "type": "string",
+      "description": "Response code field"
+    }
+  ],
+  "error_codes": [
+    {
+      "code": "error_parent",
+      "description": "There is no partner_id in query"
+    },
+    {
+      "code": "error_token",
+      "description": "Invalid timestamp or signature"
+    },
+    {
+      "code": "error_server",
+      "description": "Failed to sign in admin"
+    }
+  ],
+  "notes": "The image shows API documentation with common parameters, request parameters, response parameters, request examples, response examples, error examples, and error codes. The documentation appears to be for an authentication or authorization-related API endpoint.",
+  "chunk_metadata": {
+    "index": 1,
+    "total": 1,
+    "y_start": 0,
+    "y_end": 4840,
+    "overlap_top": 0,
+    "overlap_bottom": 0,
+    "height": 4840,
+    "path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\workspaces\\v2.public.get_access_token\\chunks\\chunk_001.png",
+    "filename": "chunk_001.png",
+    "width": 837
+  },
+  "analysis_timestamp": "2025-10-10T06:36:57.710823",
+  "model": "claude-3-5-sonnet-20241022"
+}

@@ -1,0 +1,74 @@
+{
+  "endpoint": "/users/get_joined_list",
+  "method": "POST",
+  "description": null,
+  "parameters": [
+    {
+      "name": "partner_id",
+      "type": "string",
+      "required": true,
+      "description": "Partner ID is provided upon registration in merchant's management system",
+      "truncated": false,
+      "continued": false,
+      "children": []
+    },
+    {
+      "name": "access_token",
+      "type": "string",
+      "required": true,
+      "description": "The access token will be issued after registration in merchant's management system. Expires in 24 hours.",
+      "truncated": false,
+      "continued": false,
+      "children": []
+    },
+    {
+      "name": "lang",
+      "type": "string",
+      "required": false,
+      "description": "The result will be returned in the specified language. Currently supported languages: en",
+      "truncated": false,
+      "continued": false,
+      "children": []
+    },
+    {
+      "name": "page_size",
+      "type": "string",
+      "required": false,
+      "description": "Each page can be specified as a number of records. Used for data pagination.",
+      "truncated": false,
+      "continued": false,
+      "children": []
+    }
+  ],
+  "response_fields": [
+    {
+      "name": "event",
+      "type": "string",
+      "description": "Usually event first time event in your time zone",
+      "children": []
+    },
+    {
+      "name": "message",
+      "type": "string",
+      "description": "Usually error when first your time in your time zone",
+      "children": []
+    },
+    {
+      "name": "code",
+      "type": "integer",
+      "description": "Error codes should be zero to success",
+      "children": []
+    }
+  ],
+  "update_log": [],
+  "hidden_fields": [],
+  "metadata": {
+    "total_chunks": 1,
+    "chunks_with_errors": 0,
+    "total_parameters_before_dedup": 4,
+    "total_parameters_after_dedup": 4,
+    "update_log_entries": 0,
+    "hidden_fields_count": 0,
+    "source_results": "workspaces\\v2.order.get_shipment_list\\results\\all_chunks_results.json"
+  }
+}

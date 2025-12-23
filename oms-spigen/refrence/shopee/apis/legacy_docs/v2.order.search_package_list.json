@@ -1,0 +1,74 @@
+{
+  "endpoint": "/order/match/presale_package_list",
+  "method": "GET",
+  "description": "Retrieves presale package information",
+  "parameters": [
+    {
+      "name": "url",
+      "type": "string",
+      "required": true,
+      "description": "Request URL",
+      "truncated": false,
+      "continued": false,
+      "children": []
+    },
+    {
+      "name": "cms_template",
+      "type": "string",
+      "required": false,
+      "description": "CMS template parameter",
+      "truncated": false,
+      "continued": false,
+      "children": []
+    },
+    {
+      "name": "status",
+      "type": "string",
+      "required": false,
+      "description": "Status filter parameter",
+      "truncated": false,
+      "continued": false,
+      "children": []
+    },
+    {
+      "name": "seller_type",
+      "type": "integer",
+      "required": false,
+      "description": "Seller type identifier",
+      "truncated": false,
+      "continued": false,
+      "children": []
+    }
+  ],
+  "response_fields": [
+    {
+      "name": "status",
+      "type": "string",
+      "description": "Response status",
+      "children": []
+    },
+    {
+      "name": "message",
+      "type": "string",
+      "description": "Response message",
+      "children": []
+    },
+    {
+      "name": "data",
+      "type": "object",
+      "description": "Response data object",
+      "children": []
+    }
+  ],
+  "update_log": [],
+  "hidden_fields": [],
+  "metadata": {
+    "total_chunks": 1,
+    "chunks_with_errors": 0,
+    "total_parameters_before_dedup": 4,
+    "total_parameters_after_dedup": 4,
+    "update_log_entries": 0,
+    "hidden_fields_count": 0,
+    "source_results": "workspaces\\v2.order.search_package_list\\results\\all_chunks_results.json"
+  }
+}

@@ -1,0 +1,40 @@
+======================================================================
+API SPECIFICATION SUMMARY
+======================================================================
+
+Endpoint: POST /gateway/api/xxxxxxxxx/{appKey}/merchant_update_statistics
+
+Parameters (9):
+----------------------------------------------------------------------
+* URL (string)
+   Request URL endpoint
+* URL_Method (string)
+   HTTP request method
+* URL_Return (string)
+   Return URL
+* status_id (string)
+   Status ID for the request
+* message (string)
+   Response message
+* created (string)
+   Creation timestamp
+* min_alpha_period (float)
+   Minimum alpha period value
+* max_alpha_period (float)
+   Maximum alpha period value
+* min_alpha (float)
+   Minimum alpha value
+
+Metadata:
+----------------------------------------------------------------------
+  total_chunks: 1
+  chunks_with_errors: 0
+  total_parameters_before_dedup: 9
+  total_parameters_after_dedup: 9
+  update_log_entries: 0
+  hidden_fields_count: 0
+  source_results: workspaces\v2.returns.get_available_solutions\results\all_chunks_results.json
+
+======================================================================
+Legend: * = required parameter
+======================================================================

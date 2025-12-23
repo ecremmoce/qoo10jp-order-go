@@ -1,0 +1,84 @@
+{
+  "chunk_index": 1,
+  "total_chunks": 1,
+  "endpoint": null,
+  "method": null,
+  "description": null,
+  "update_log": [
+    {
+      "date": "2023-04-14",
+      "change": "新增 new_sale_svc_fee_type 字段"
+    },
+    {
+      "date": "2023-03-06",
+      "change": "新增 price_currency_id 字段"
+    }
+  ],
+  "parameters": [
+    {
+      "name": "seller_email",
+      "type": "string",
+      "required": true,
+      "description": "卖家邮箱",
+      "children": []
+    },
+    {
+      "name": "seller_pwd",
+      "type": "string",
+      "required": true,
+      "description": "卖家密码",
+      "children": []
+    },
+    {
+      "name": "api_key",
+      "type": "string",
+      "required": true,
+      "description": "API密钥",
+      "children": []
+    },
+    {
+      "name": "sign_type",
+      "type": "string",
+      "required": true,
+      "description": "签名类型",
+      "children": []
+    },
+    {
+      "name": "sign",
+      "type": "string",
+      "required": true,
+      "description": "签名",
+      "children": []
+    },
+    {
+      "name": "price_currency_id",
+      "type": "integer",
+      "required": false,
+      "description": "价格货币ID",
+      "children": []
+    },
+    {
+      "name": "new_sale_svc_fee_type",
+      "type": "string",
+      "required": false,
+      "description": "新销售服务费类型",
+      "children": []
+    }
+  ],
+  "response_fields": [],
+  "notes": "This appears to be an API documentation in Chinese. The image shows several common authentication parameters and some specific business parameters. There may be more parameters not visible in this chunk.",
+  "chunk_metadata": {
+    "index": 1,
+    "total": 1,
+    "y_start": 0,
+    "y_end": 7469,
+    "overlap_top": 0,
+    "overlap_bottom": 0,
+    "height": 7469,
+    "path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\workspaces\\v2.order.get_buyer_invoice_info\\chunks\\chunk_001.png",
+    "filename": "chunk_001.png",
+    "width": 837
+  },
+  "analysis_timestamp": "2025-10-10T06:14:48.072586",
+  "model": "claude-3-5-sonnet-20241022"
+}

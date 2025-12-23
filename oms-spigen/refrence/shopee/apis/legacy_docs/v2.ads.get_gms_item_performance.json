@@ -1,0 +1,57 @@
+{
+  "endpoint": null,
+  "method": null,
+  "description": null,
+  "parameters": [
+    {
+      "name": "lang",
+      "type": "string",
+      "required": false,
+      "description": "Language type",
+      "children": []
+    },
+    {
+      "name": "v",
+      "type": "string",
+      "required": false,
+      "description": "API version",
+      "children": []
+    }
+  ],
+  "response_fields": [
+    {
+      "name": "code",
+      "type": "integer",
+      "description": "Response code, 0 indicates success",
+      "children": []
+    },
+    {
+      "name": "msg",
+      "type": "string",
+      "description": "Response message",
+      "children": []
+    }
+  ],
+  "update_log": [],
+  "hidden_fields": [
+    {
+      "name": "error_code",
+      "found_in": "response field",
+      "extracted_from_description": true
+    },
+    {
+      "name": "error_msg",
+      "found_in": "response field",
+      "extracted_from_description": true
+    }
+  ],
+  "metadata": {
+    "total_chunks": 1,
+    "chunks_with_errors": 0,
+    "total_parameters_before_dedup": 2,
+    "total_parameters_after_dedup": 2,
+    "update_log_entries": 0,
+    "hidden_fields_count": 2,
+    "source_results": "workspaces\\v2.ads.get_gms_item_performance\\results\\all_chunks_results.json"
+  }
+}

@@ -1,0 +1,108 @@
+[
+  {
+    "chunk_index": 1,
+    "total_chunks": 1,
+    "endpoint": "/openapi/get_video_info",
+    "method": "GET",
+    "description": "Get video metadata information",
+    "update_log": [],
+    "hidden_fields": [],
+    "parameters": [
+      {
+        "name": "feed_token",
+        "type": "string",
+        "required": true,
+        "description": "Access key",
+        "truncated": false,
+        "continued": false,
+        "children": []
+      },
+      {
+        "name": "url",
+        "type": "string",
+        "required": true,
+        "description": "Video URL (Chinese Standard)",
+        "truncated": false,
+        "continued": false,
+        "children": []
+      },
+      {
+        "name": "hd_url",
+        "type": "string",
+        "required": false,
+        "description": "Video URL (Chinese Standard) - high definition",
+        "truncated": false,
+        "continued": false,
+        "children": []
+      },
+      {
+        "name": "session_id",
+        "type": "string",
+        "required": true,
+        "description": "Format id is assigned upon registration is successful",
+        "truncated": false,
+        "continued": false,
+        "children": []
+      }
+    ],
+    "response_fields": [
+      {
+        "name": "session_id",
+        "type": "string",
+        "description": "The identifier of broadcast session",
+        "children": []
+      },
+      {
+        "name": "title",
+        "type": "string",
+        "description": "Title of the video",
+        "children": []
+      },
+      {
+        "name": "status",
+        "type": "string",
+        "description": "Video status identifier",
+        "children": []
+      },
+      {
+        "name": "play_time",
+        "type": "integer",
+        "description": "The time of the video in the completed key or current session",
+        "children": []
+      },
+      {
+        "name": "size",
+        "type": "integer",
+        "description": "Size of the file",
+        "children": []
+      },
+      {
+        "name": "start_time",
+        "type": "float",
+        "description": "The time point at the start of the being processed session",
+        "children": []
+      },
+      {
+        "name": "original_path",
+        "type": "float",
+        "description": "The original size of the item in the being processed",
+        "children": []
+      }
+    ],
+    "notes": "The documentation includes error codes and examples sections which were visible in the image but not included in the structured parameters as they represent different aspects of the API documentation.",
+    "chunk_metadata": {
+      "index": 1,
+      "total": 1,
+      "y_start": 0,
+      "y_end": 4672,
+      "overlap_top": 0,
+      "overlap_bottom": 0,
+      "height": 4672,
+      "path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\platforms\\shopee\\apis\\workspaces\\v2.livestream.get_show_item\\chunks\\chunk_001.png",
+      "filename": "chunk_001.png",
+      "width": 837
+    },
+    "analysis_timestamp": "2025-10-11T22:39:01.937196",
+    "model": "claude-3-5-sonnet-20241022"
+  }
+]

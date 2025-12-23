@@ -1,0 +1,137 @@
+{
+  "chunk_index": 1,
+  "total_chunks": 1,
+  "endpoint": "v2_first_mile_get_transit_warehouse_list",
+  "method": "GET",
+  "description": "Use this api to get transit warehouse list which is specific first mile tracking number generation for carrier delivery method",
+  "update_log": [
+    {
+      "date": "2024-10-29",
+      "change": "New API"
+    }
+  ],
+  "parameters": [
+    {
+      "name": "timestamp",
+      "type": "timestamp",
+      "required": true,
+      "description": "This is to indicate the timestamp of the request. Required for all requests. Expires in 5 minutes.",
+      "children": []
+    },
+    {
+      "name": "access_token",
+      "type": "string",
+      "required": true,
+      "description": "The token for API access, valid in one day - obtain value for multiple use and expires in 4 hours",
+      "children": []
+    },
+    {
+      "name": "shop_id",
+      "type": "int",
+      "required": true,
+      "description": "Shopee's unique identifier for a shop. Required param for most APIs",
+      "children": []
+    },
+    {
+      "name": "sign",
+      "type": "string",
+      "required": true,
+      "description": "Signature generated to prevent API call from being tampered",
+      "children": []
+    },
+    {
+      "name": "region",
+      "type": "string",
+      "required": true,
+      "description": "Two-character country code indicating the region you want to ship panel. Available value: CN",
+      "children": []
+    }
+  ],
+  "response_fields": [
+    {
+      "name": "error",
+      "type": "string",
+      "description": "Error error type if error happens",
+      "children": []
+    },
+    {
+      "name": "message",
+      "type": "string",
+      "description": "Indicate error type if error happens",
+      "children": []
+    },
+    {
+      "name": "request_id",
+      "type": "string",
+      "description": "The identifier for an API request for error tracking",
+      "children": []
+    },
+    {
+      "name": "warehouse_id",
+      "type": "string",
+      "description": "The identity of transit warehouse",
+      "children": []
+    },
+    {
+      "name": "warehouse_name_en",
+      "type": "string",
+      "description": "The name of transit warehouse in English",
+      "children": []
+    },
+    {
+      "name": "warehouse_name_cn",
+      "type": "string",
+      "description": "The name of transit warehouse in Chinese",
+      "children": []
+    }
+  ],
+  "error_codes": [
+    {
+      "code": "error_data",
+      "description": "parse data failed"
+    },
+    {
+      "code": "error_data",
+      "description": "data not exist"
+    },
+    {
+      "code": "error_param",
+      "description": "parameter invalid"
+    },
+    {
+      "code": "error_param",
+      "description": "The information you specified is not found"
+    },
+    {
+      "code": "error_param",
+      "description": "Wrong parameters, check error"
+    },
+    {
+      "code": "error_param",
+      "description": "Something wrong. Please try later"
+    },
+    {
+      "code": "error_msg",
+      "description": "Object is invalid"
+    },
+    {
+      "code": "error_param",
+      "description": "request not from gateway"
+    }
+  ],
+  "notes": "The documentation includes both Chinese and English endpoints, test URLs, and examples of request/response formats. The API appears to be related to Shopee's warehouse management system.",
+  "chunk_metadata": {
+    "index": 1,
+    "total": 1,
+    "y_start": 0,
+    "y_end": 3550,
+    "overlap_top": 0,
+    "overlap_bottom": 0,
+    "height": 3550,
+    "path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\workspaces\\v2.first_mile.get_transit_warehouse_list\\chunks\\chunk_001.png",
+    "filename": "chunk_001.png",
+    "width": 837
+  },
+  "analysis_timestamp": "2025-10-10T05:42:14.835947",
+  "model": "claude-3-5-sonnet-20241022"
+}

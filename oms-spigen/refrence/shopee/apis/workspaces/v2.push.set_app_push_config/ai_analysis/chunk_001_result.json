@@ -1,0 +1,83 @@
+{
+  "chunk_index": 1,
+  "total_chunks": 1,
+  "endpoint": "api_pref/ads_pref_config",
+  "method": "GET",
+  "description": "API for language and regionwide settings",
+  "update_log": [],
+  "hidden_fields": [],
+  "parameters": [
+    {
+      "name": "url",
+      "type": "string",
+      "required": true,
+      "description": "URL of current page",
+      "children": []
+    },
+    {
+      "name": "test_url",
+      "type": "string",
+      "required": false,
+      "description": "Test URL for Chinese language",
+      "children": []
+    },
+    {
+      "name": "session_id",
+      "type": "string",
+      "required": false,
+      "description": "Session identifier",
+      "children": []
+    },
+    {
+      "name": "ads_pref_config_id",
+      "type": "integer",
+      "required": true,
+      "description": "Full or part config. Global ads unit ids field values can be updated as requested in app_config, but they are not live until ads_pref_config_id changes.",
+      "children": []
+    },
+    {
+      "name": "request_id",
+      "type": "string",
+      "required": false,
+      "description": "Unique request identifier for tracking",
+      "children": []
+    },
+    {
+      "name": "message",
+      "type": "string",
+      "required": false,
+      "description": "Status message",
+      "children": []
+    },
+    {
+      "name": "exception",
+      "type": "object",
+      "required": false,
+      "description": "Error information",
+      "children": []
+    },
+    {
+      "name": "result",
+      "type": "object",
+      "required": false,
+      "description": "Result data",
+      "children": []
+    }
+  ],
+  "response_fields": [],
+  "notes": "The documentation includes request parameters, response parameters, and error examples. There appears to be a section for response examples and error codes as well. The API seems to be related to advertising preferences and configuration settings.",
+  "chunk_metadata": {
+    "index": 1,
+    "total": 1,
+    "y_start": 0,
+    "y_end": 4685,
+    "overlap_top": 0,
+    "overlap_bottom": 0,
+    "height": 4685,
+    "path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\workspaces\\v2.push.set_app_push_config\\chunks\\chunk_001.png",
+    "filename": "chunk_001.png",
+    "width": 837
+  },
+  "analysis_timestamp": "2025-10-10T06:39:16.949334",
+  "model": "claude-3-5-sonnet-20241022"
+}

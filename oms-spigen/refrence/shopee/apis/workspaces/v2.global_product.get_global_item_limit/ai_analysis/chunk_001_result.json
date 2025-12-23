@@ -1,0 +1,78 @@
+{
+  "chunk_index": 1,
+  "total_chunks": 1,
+  "endpoint": null,
+  "method": null,
+  "description": null,
+  "update_log": [
+    {
+      "date": "2021-09-09",
+      "change": "Minimum number of shares increased from 100 to 500"
+    },
+    {
+      "date": "2021-09-06",
+      "change": "API launch"
+    }
+  ],
+  "hidden_fields": [],
+  "parameters": [
+    {
+      "name": "side",
+      "type": "string",
+      "required": true,
+      "description": "Buy or sell indicator",
+      "children": []
+    },
+    {
+      "name": "symbol",
+      "type": "string",
+      "required": true,
+      "description": "Trading symbol",
+      "children": []
+    },
+    {
+      "name": "type",
+      "type": "string",
+      "required": true,
+      "description": "Order type (market, limit, etc)",
+      "children": []
+    },
+    {
+      "name": "quantity",
+      "type": "integer",
+      "required": true,
+      "description": "Number of shares, minimum 500",
+      "children": []
+    },
+    {
+      "name": "price",
+      "type": "number",
+      "required": false,
+      "description": "Limit price for limit orders",
+      "children": []
+    },
+    {
+      "name": "time_in_force",
+      "type": "string",
+      "required": false,
+      "description": "Time in force policy",
+      "children": []
+    }
+  ],
+  "response_fields": [],
+  "notes": "This appears to be trading API documentation showing order placement parameters. The image shows multiple parameters with their types and requirements, as well as an update log indicating a change in minimum share quantity from 100 to 500. Some portions of the documentation may extend beyond what's visible in the image.",
+  "chunk_metadata": {
+    "index": 1,
+    "total": 1,
+    "y_start": 0,
+    "y_end": 6782,
+    "overlap_top": 0,
+    "overlap_bottom": 0,
+    "height": 6782,
+    "path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\workspaces\\v2.global_product.get_global_item_limit\\chunks\\chunk_001.png",
+    "filename": "chunk_001.png",
+    "width": 837
+  },
+  "analysis_timestamp": "2025-10-10T05:47:02.485452",
+  "model": "claude-3-5-sonnet-20241022"
+}

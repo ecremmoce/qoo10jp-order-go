@@ -1,0 +1,81 @@
+{
+  "chunk_index": 1,
+  "total_chunks": 1,
+  "endpoint": "/api/v2/login",
+  "method": "POST",
+  "description": "Login authentication API",
+  "update_log": [
+    {
+      "date": "2021-07-16",
+      "change": "Added new error codes for account verification"
+    },
+    {
+      "date": "2021-04-09",
+      "change": "Added password change requirement warning"
+    }
+  ],
+  "parameters": [
+    {
+      "name": "username",
+      "type": "string",
+      "required": true,
+      "description": "Login username/email",
+      "children": []
+    },
+    {
+      "name": "password",
+      "type": "string",
+      "required": true,
+      "description": "Login password",
+      "children": []
+    }
+  ],
+  "response_fields": [
+    {
+      "name": "code",
+      "type": "integer",
+      "description": "Response status code",
+      "children": []
+    },
+    {
+      "name": "message",
+      "type": "string",
+      "description": "Response message",
+      "children": []
+    },
+    {
+      "name": "data",
+      "type": "object",
+      "description": "Response data object",
+      "children": [
+        {
+          "name": "token",
+          "type": "string",
+          "description": "Authentication token",
+          "children": []
+        },
+        {
+          "name": "expires_in",
+          "type": "integer",
+          "description": "Token expiration time in seconds",
+          "children": []
+        }
+      ]
+    }
+  ],
+  "notes": "The image shows a login API documentation with error codes and responses. Several error scenarios are documented including invalid credentials, account verification required, and password change required cases.",
+  "chunk_metadata": {
+    "index": 1,
+    "total": 1,
+    "y_start": 0,
+    "y_end": 6721,
+    "overlap_top": 0,
+    "overlap_bottom": 0,
+    "height": 6721,
+    "path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\workspaces\\v2.shop.get_shop_info\\chunks\\chunk_001.png",
+    "filename": "chunk_001.png",
+    "width": 837
+  },
+  "analysis_timestamp": "2025-10-10T06:44:54.278200",
+  "model": "claude-3-5-sonnet-20241022"
+}

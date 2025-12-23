@@ -1,0 +1,43 @@
+======================================================================
+API SPECIFICATION SUMMARY
+======================================================================
+
+Endpoint: GET http://api.external.market/market/api/selling_system
+Description: Market selling system API documentation
+
+Parameters (3):
+----------------------------------------------------------------------
+* Content Parameters (object)
+   Content parameters section
+  * url_id (string)
+     The URL identifier
+* Request Parameters (object)
+   Request parameters section
+  * seller_id (string)
+     Request seller ID number for query
+    market_serial_id (string)
+     Market serial identifier
+* Response Parameters (object)
+   Response parameters section
+  * serial_id (string)
+     The identifier for staff report for each building
+  * area (string)
+     Geographic area
+  * building_number (string)
+     Building identifier number
+  * selling_system (string)
+     The building number in the case
+
+Metadata:
+----------------------------------------------------------------------
+  total_chunks: 1
+  chunks_with_errors: 0
+  total_parameters_before_dedup: 3
+  total_parameters_after_dedup: 3
+  update_log_entries: 0
+  hidden_fields_count: 0
+  source_results: workspaces\v2.logistics.get_tracking_number\results\all_chunks_results.json
+
+======================================================================
+Legend: * = required parameter
+======================================================================

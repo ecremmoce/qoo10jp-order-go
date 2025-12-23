@@ -1,0 +1,101 @@
+[
+  {
+    "chunk_index": 1,
+    "total_chunks": 1,
+    "endpoint": null,
+    "method": null,
+    "description": null,
+    "update_log": [],
+    "hidden_fields": [],
+    "parameters": [
+      {
+        "name": "callback_parameters",
+        "type": "object",
+        "required": true,
+        "description": null,
+        "children": [
+          {
+            "name": "currency",
+            "type": "string",
+            "required": true,
+            "description": "Currency type parameters"
+          },
+          {
+            "name": "amount",
+            "type": "string",
+            "required": true,
+            "description": "Amount parameters"
+          }
+        ]
+      },
+      {
+        "name": "request_parameters",
+        "type": "object",
+        "required": true,
+        "description": null,
+        "children": [
+          {
+            "name": "payment_id",
+            "type": "string",
+            "required": true,
+            "description": "Payment ID"
+          },
+          {
+            "name": "currency",
+            "type": "string",
+            "required": true,
+            "description": "Currency type"
+          },
+          {
+            "name": "token",
+            "type": "string",
+            "required": true,
+            "description": "User token"
+          }
+        ]
+      },
+      {
+        "name": "response_parameters",
+        "type": "object",
+        "required": true,
+        "description": null,
+        "children": [
+          {
+            "name": "err",
+            "type": "string",
+            "required": true,
+            "description": "Error code when error occurs"
+          },
+          {
+            "name": "message",
+            "type": "string",
+            "required": true,
+            "description": "Error description"
+          },
+          {
+            "name": "signature",
+            "type": "string",
+            "required": true,
+            "description": "Return MD5 verification if it exists"
+          }
+        ]
+      }
+    ],
+    "response_fields": [],
+    "notes": "The image appears to be API documentation with three main parameter sections: callback_parameters, request_parameters, and response_parameters. Each section contains several fields with their types and descriptions. There are also some error codes and examples shown at the bottom of the image but they are partially cut off.",
+    "chunk_metadata": {
+      "index": 1,
+      "total": 1,
+      "y_start": 0,
+      "y_end": 5777,
+      "overlap_top": 0,
+      "overlap_bottom": 0,
+      "height": 5777,
+      "path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\workspaces\\v2.ads.edit_manual_product_ads\\chunks\\chunk_001.png",
+      "filename": "chunk_001.png",
+      "width": 837
+    },
+    "analysis_timestamp": "2025-10-10T05:28:53.475416",
+    "model": "claude-3-5-sonnet-20241022"
+  }
+]

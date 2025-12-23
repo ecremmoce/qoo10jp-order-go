@@ -1,0 +1,79 @@
+[
+  {
+    "chunk_index": 1,
+    "total_chunks": 1,
+    "endpoint": "account/announcement_info",
+    "method": null,
+    "description": "Account announcement information",
+    "update_log": [],
+    "hidden_fields": [],
+    "parameters": [
+      {
+        "name": "URL",
+        "type": "string",
+        "required": true,
+        "description": "http://sakura-rexueapi.com/api/announcement/account_text",
+        "children": []
+      },
+      {
+        "name": "URL",
+        "type": "string",
+        "required": true,
+        "description": "http://sakura-rexueapi.com/api/announcement/account_img",
+        "children": []
+      }
+    ],
+    "response_fields": [
+      {
+        "name": "account_id",
+        "type": "string",
+        "required": true,
+        "description": "Account unique identifier",
+        "children": []
+      },
+      {
+        "name": "text",
+        "type": "string",
+        "required": true,
+        "description": "Request unique identifier for a text",
+        "children": []
+      },
+      {
+        "name": "image_id",
+        "type": "string",
+        "required": true,
+        "description": "Request unique identifier for a image/all pictures in wallet",
+        "children": []
+      },
+      {
+        "name": "created_at",
+        "type": "string",
+        "required": true,
+        "description": "Create information about time",
+        "children": []
+      },
+      {
+        "name": "response_id",
+        "type": "string",
+        "required": true,
+        "description": "Please make sure data that you input is correct",
+        "children": []
+      }
+    ],
+    "notes": "The documentation appears to be for an account announcement API endpoint. It includes both text and image announcement URLs and related response parameters. The parameters section shows both required request URLs and detailed response fields.",
+    "chunk_metadata": {
+      "index": 1,
+      "total": 1,
+      "y_start": 0,
+      "y_end": 5008,
+      "overlap_top": 0,
+      "overlap_bottom": 0,
+      "height": 5008,
+      "path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\workspaces\\v2.discount.delete_discount_item\\chunks\\chunk_001.png",
+      "filename": "chunk_001.png",
+      "width": 837
+    },
+    "analysis_timestamp": "2025-10-10T05:36:14.583914",
+    "model": "claude-3-5-sonnet-20241022"
+  }
+]

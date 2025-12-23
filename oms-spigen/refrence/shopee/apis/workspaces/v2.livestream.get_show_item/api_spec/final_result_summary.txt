@@ -1,0 +1,60 @@
+======================================================================
+API SPECIFICATION SUMMARY
+======================================================================
+
+Endpoint: POST v2/investment/get_order_sum
+Description: Get investment order summary
+
+Parameters (3):
+----------------------------------------------------------------------
+* session_id (string)
+   Partner ID is assigned upon registration is successful
+* access_token (string)
+   The token for API access, which is initially pre-processed to obtain
+* sign (string)
+   Digital signature (Generated as shown in Ex.)
+
+Response Fields (14):
+----------------------------------------------------------------------
+* session_id (string)
+   The identifier of broadcast session
+  store (string)
+   Integer price less IVA and VN. Simply it for other business
+  username (string)
+   Integer price applies IVA and. Simply it for
+  channel_id (string)
+   The identifier for get UH required by each channel
+  title (string)
+   Room information can be anything
+  link (object)
+   Changed into the inverse item
+  desc_url (object)
+   The inner of the item in the shopping key of unified session. Just like: {"key name": [{item field1}, {item field2}]} ex: if the passed session
+  desc_h (float)
+   Request server identifier for an item
+  cover (string)
+   The image of the item
+  share (integer)
+   Name of the item in your language
+  image_id (integer)
+   The image of this item
+  price_info (object)
+   The inner price info representing the currency and units of the item
+  country_price (float)
+   The unified price of the item in the being country. Contains price and currency description
+  original_price (float)
+   The original price of the item in the being country
+
+Metadata:
+----------------------------------------------------------------------
+  total_chunks: 1
+  chunks_with_errors: 0
+  total_parameters_before_dedup: 3
+  total_parameters_after_dedup: 3
+  update_log_entries: 0
+  hidden_fields_count: 0
+  source_results: platforms\shopee\apis\workspaces\v2.livestream.get_show_item\results\all_chunks_results.json
+
+======================================================================
+Legend: * = required parameter
+======================================================================

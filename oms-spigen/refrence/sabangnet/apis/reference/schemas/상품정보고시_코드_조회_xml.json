@@ -1,0 +1,14 @@
+{
+  "xml_root": "SEND_COMPAYNY_ID",
+  "header_fields": [],
+  "data_fields": [
+    {
+      "name": "PROP1_CD",
+      "description": "속성분류코드",
+      "required": true,
+      "note": "상품 속성분류코드를 입력합니다. 예 : 의류는 001을 입력합니다.",
+      "section": "data"
+    }
+  ],
+  "authentication": {}
+}

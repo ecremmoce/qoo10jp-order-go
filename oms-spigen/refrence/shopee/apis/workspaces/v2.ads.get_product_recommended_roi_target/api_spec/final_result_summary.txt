@@ -1,0 +1,46 @@
+======================================================================
+API SPECIFICATION SUMMARY
+======================================================================
+
+Endpoint: GET v1.ads.get_product_recommended_cn_target
+Description: Product recommendation API
+
+Parameters (2):
+----------------------------------------------------------------------
+* access_token (string)
+   Authentication token
+* shop_id (integer)
+   Shop identifier
+
+Response Fields (5):
+----------------------------------------------------------------------
+  error (string)
+   Error code when rate or error returned
+  message (string)
+   Error description
+  request_id (string)
+   Unique identifier for each request
+  meta (object)
+    rate (float)
+     The RCU target value
+    same_second (integer)
+     Current concurrent rate
+  user_second (object)
+    rate (float)
+     The RCU target value
+    same_second (integer)
+     Current concurrent rate
+
+Metadata:
+----------------------------------------------------------------------
+  total_chunks: 1
+  chunks_with_errors: 0
+  total_parameters_before_dedup: 2
+  total_parameters_after_dedup: 2
+  update_log_entries: 1
+  hidden_fields_count: 0
+  source_results: workspaces\v2.ads.get_product_recommended_roi_target\results\all_chunks_results.json
+
+======================================================================
+Legend: * = required parameter
+======================================================================

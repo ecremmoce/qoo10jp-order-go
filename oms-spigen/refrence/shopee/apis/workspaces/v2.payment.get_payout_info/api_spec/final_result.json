@@ -1,0 +1,75 @@
+{
+  "endpoint": null,
+  "method": null,
+  "description": null,
+  "parameters": [
+    {
+      "name": "url",
+      "type": "string",
+      "required": true,
+      "description": "Image upload endpoint URL",
+      "children": []
+    },
+    {
+      "name": "url_ssl",
+      "type": "string",
+      "required": true,
+      "description": "HTTPS version of upload endpoint URL",
+      "children": []
+    },
+    {
+      "name": "url_ssl_standard",
+      "type": "string",
+      "required": true,
+      "description": "Standard HTTPS upload endpoint URL",
+      "children": []
+    },
+    {
+      "name": "check_test_type",
+      "type": "string",
+      "required": false,
+      "description": "Specifies approach used to check if in test",
+      "children": []
+    },
+    {
+      "name": "offline_msg",
+      "type": "string",
+      "required": false,
+      "description": "Message shown when offline",
+      "children": []
+    },
+    {
+      "name": "start_pos",
+      "type": "integer",
+      "required": false,
+      "description": "The start position",
+      "children": []
+    },
+    {
+      "name": "from_pos",
+      "type": "integer",
+      "required": false,
+      "description": "The from position",
+      "children": []
+    },
+    {
+      "name": "end_pos",
+      "type": "integer",
+      "required": false,
+      "description": "The end position",
+      "children": []
+    }
+  ],
+  "response_fields": [],
+  "update_log": [],
+  "hidden_fields": [],
+  "metadata": {
+    "total_chunks": 1,
+    "chunks_with_errors": 0,
+    "total_parameters_before_dedup": 8,
+    "total_parameters_after_dedup": 8,
+    "update_log_entries": 0,
+    "hidden_fields_count": 0,
+    "source_results": "workspaces\\v2.payment.get_payout_info\\results\\all_chunks_results.json"
+  }
+}

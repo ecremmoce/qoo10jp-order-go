@@ -1,0 +1,90 @@
+{
+  "chunk_index": 1,
+  "total_chunks": 1,
+  "endpoint": null,
+  "method": null,
+  "description": null,
+  "update_log": [],
+  "hidden_fields": [],
+  "parameters": [
+    {
+      "name": "url",
+      "type": "string",
+      "required": true,
+      "description": "HTTP request URL",
+      "children": []
+    },
+    {
+      "name": "method",
+      "type": "string",
+      "required": true,
+      "description": "HTTP request method",
+      "children": []
+    },
+    {
+      "name": "headers",
+      "type": "object",
+      "required": false,
+      "description": "HTTP request headers",
+      "children": []
+    },
+    {
+      "name": "content_type",
+      "type": "string",
+      "required": false,
+      "description": "Request content type",
+      "children": []
+    },
+    {
+      "name": "msg_type",
+      "type": "string",
+      "required": true,
+      "description": "Message type value",
+      "children": []
+    },
+    {
+      "name": "timestamp",
+      "type": "integer",
+      "required": true,
+      "description": "Current timestamp value",
+      "children": []
+    },
+    {
+      "name": "version",
+      "type": "string",
+      "required": false,
+      "description": "API version",
+      "children": []
+    },
+    {
+      "name": "message_id",
+      "type": "string",
+      "required": false,
+      "description": "Unique message identifier",
+      "children": []
+    },
+    {
+      "name": "callback_url",
+      "type": "string",
+      "required": false,
+      "description": "Callback URL for responses",
+      "children": []
+    }
+  ],
+  "response_fields": [],
+  "notes": "This appears to be API documentation showing common parameters used across multiple endpoints. The documentation shows both required and optional parameters with their types and descriptions. Some parameters appear to be related to HTTP requests while others are specific to the API's message handling system.",
+  "chunk_metadata": {
+    "index": 1,
+    "total": 1,
+    "y_start": 0,
+    "y_end": 5887,
+    "overlap_top": 0,
+    "overlap_bottom": 0,
+    "height": 5887,
+    "path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\workspaces\\v2.ads.get_product_level_campaign_setting_info\\chunks\\chunk_001.png",
+    "filename": "chunk_001.png",
+    "width": 837
+  },
+  "analysis_timestamp": "2025-10-10T05:31:32.510921",
+  "model": "claude-3-5-sonnet-20241022"
+}

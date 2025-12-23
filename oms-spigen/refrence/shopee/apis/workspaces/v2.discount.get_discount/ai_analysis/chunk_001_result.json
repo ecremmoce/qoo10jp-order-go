@@ -1,0 +1,84 @@
+{
+  "chunk_index": 1,
+  "total_chunks": 1,
+  "endpoint": "/api/v2/marketing_trading",
+  "method": "GET",
+  "description": "Marketing trading data query",
+  "update_log": [
+    {
+      "date": "2023-05-12",
+      "change": "First release"
+    }
+  ],
+  "hidden_fields": [],
+  "parameters": [
+    {
+      "name": "startTime",
+      "type": "string",
+      "required": true,
+      "description": "Start time of data query",
+      "children": []
+    },
+    {
+      "name": "endTime",
+      "type": "string",
+      "required": true,
+      "description": "End time of data query",
+      "children": []
+    },
+    {
+      "name": "symbol",
+      "type": "string",
+      "required": false,
+      "description": "Trading pair",
+      "children": []
+    }
+  ],
+  "response_fields": [
+    {
+      "name": "symbol",
+      "type": "string",
+      "description": "Trading pair",
+      "children": []
+    },
+    {
+      "name": "price",
+      "type": "string",
+      "description": "Last traded price",
+      "children": []
+    },
+    {
+      "name": "quantity",
+      "type": "string",
+      "description": "Last traded quantity",
+      "children": []
+    },
+    {
+      "name": "side",
+      "type": "string",
+      "description": "Trade direction (buy/sell)",
+      "children": []
+    },
+    {
+      "name": "timestamp",
+      "type": "integer",
+      "description": "Trade timestamp (milliseconds)",
+      "children": []
+    }
+  ],
+  "notes": "The documentation appears to be for a market data query endpoint that returns trading information. The response includes basic trade data like price, quantity, and timestamp. The API supports filtering by time range and optionally by trading pair.",
+  "chunk_metadata": {
+    "index": 1,
+    "total": 1,
+    "y_start": 0,
+    "y_end": 7170,
+    "overlap_top": 0,
+    "overlap_bottom": 0,
+    "height": 7170,
+    "path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\workspaces\\v2.discount.get_discount\\chunks\\chunk_001.png",
+    "filename": "chunk_001.png",
+    "width": 837
+  },
+  "analysis_timestamp": "2025-10-10T05:36:40.549664",
+  "model": "claude-3-5-sonnet-20241022"
+}

@@ -1,0 +1,111 @@
+{
+  "chunk_index": 1,
+  "total_chunks": 1,
+  "endpoint": "/v2/benchmark/get_video_item",
+  "method": "GET",
+  "description": "Get video benchmark data",
+  "update_log": [
+    {
+      "date": "2023-04-24",
+      "change": "Version 1.0"
+    }
+  ],
+  "parameters": [
+    {
+      "name": "session_id",
+      "type": "string",
+      "required": true,
+      "description": "Partner ID is assigned upon registration to successfully identify API requests",
+      "children": []
+    },
+    {
+      "name": "access_token",
+      "type": "string",
+      "required": true,
+      "description": "The token for API access, which is initially pre-provisioned to partners. Contact the BD team to obtain.",
+      "children": []
+    },
+    {
+      "name": "sign",
+      "type": "string",
+      "required": true,
+      "description": "API signature generated dynamically on request",
+      "children": []
+    }
+  ],
+  "response_fields": [
+    {
+      "name": "code",
+      "type": "integer",
+      "description": "Error code",
+      "children": []
+    },
+    {
+      "name": "msg",
+      "type": "string",
+      "description": "The error message",
+      "children": []
+    },
+    {
+      "name": "video_title",
+      "type": "string",
+      "description": "Title of the video",
+      "children": []
+    },
+    {
+      "name": "like_ids",
+      "type": "array",
+      "description": "The array of like likes in the completing key of current content",
+      "children": []
+    },
+    {
+      "name": "share_url",
+      "type": "string",
+      "description": "The sharing url",
+      "children": []
+    },
+    {
+      "name": "content",
+      "type": "string",
+      "description": "The image/video text accompanying the content",
+      "children": []
+    },
+    {
+      "name": "country_prod",
+      "type": "float",
+      "description": "The output area of the feed in the being operation",
+      "children": []
+    },
+    {
+      "name": "original_prod",
+      "type": "float",
+      "description": "The original area of the feed in the being",
+      "children": []
+    }
+  ],
+  "error_codes": [
+    {
+      "code": "error_404",
+      "description": "Service does not exist"
+    },
+    {
+      "code": "error_500",
+      "description": "System error occurred"
+    }
+  ],
+  "notes": "The documentation includes error codes and examples sections. The response parameters appear to be related to video/content sharing functionality.",
+  "chunk_metadata": {
+    "index": 1,
+    "total": 1,
+    "y_start": 0,
+    "y_end": 4672,
+    "overlap_top": 0,
+    "overlap_bottom": 0,
+    "height": 4672,
+    "path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\platforms\\shopee\\apis\\workspaces\\v2.livestream.get_show_item\\chunks\\chunk_001.png",
+    "filename": "chunk_001.png",
+    "width": 837
+  },
+  "analysis_timestamp": "2025-10-11T22:58:53.612344",
+  "model": "claude-3-5-sonnet-20241022"
+}

@@ -1,0 +1,92 @@
+[
+  {
+    "chunk_index": 1,
+    "total_chunks": 1,
+    "endpoint": null,
+    "method": null,
+    "description": null,
+    "update_log": [],
+    "hidden_fields": [],
+    "parameters": [
+      {
+        "name": "url",
+        "type": "string",
+        "required": true,
+        "description": "API server URL reference",
+        "children": []
+      },
+      {
+        "name": "client_id",
+        "type": "string",
+        "required": true,
+        "description": "Client identifier",
+        "children": []
+      },
+      {
+        "name": "url_client",
+        "type": "string",
+        "required": true,
+        "description": "Client URL parameter",
+        "children": []
+      },
+      {
+        "name": "message",
+        "type": "string",
+        "required": true,
+        "description": "Request message content",
+        "children": []
+      },
+      {
+        "name": "time",
+        "type": "string",
+        "required": true,
+        "description": "Timestamp",
+        "children": []
+      },
+      {
+        "name": "service_number",
+        "type": "string",
+        "required": true,
+        "description": "Service identifier number",
+        "children": []
+      },
+      {
+        "name": "locale_id",
+        "type": "integer",
+        "required": false,
+        "description": "The locale/language identifier",
+        "children": []
+      },
+      {
+        "name": "message_number",
+        "type": "string",
+        "required": true,
+        "description": "Message sequence identifier",
+        "children": []
+      },
+      {
+        "name": "content_matching_info",
+        "type": "string",
+        "required": true,
+        "description": "Content matching information",
+        "children": []
+      }
+    ],
+    "response_fields": [],
+    "notes": "The documentation appears to be for an API that handles messaging or content management. There are code examples shown at the bottom of the image but they are partially truncated. The parameters section shows both common and required parameters with their respective types and descriptions.",
+    "chunk_metadata": {
+      "index": 1,
+      "total": 1,
+      "y_start": 0,
+      "y_end": 5258,
+      "overlap_top": 0,
+      "overlap_bottom": 0,
+      "height": 5258,
+      "path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\workspaces\\v2.logistics.get_shipping_document_parameter\\chunks\\chunk_001.png",
+      "filename": "chunk_001.png",
+      "width": 837
+    },
+    "analysis_timestamp": "2025-10-10T06:05:56.939892",
+    "model": "claude-3-5-sonnet-20241022"
+  }
+]

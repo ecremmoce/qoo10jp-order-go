@@ -1,0 +1,41 @@
+======================================================================
+API SPECIFICATION SUMMARY
+======================================================================
+
+Endpoint: None None
+Description: NewsStream end session API
+
+Parameters (9):
+----------------------------------------------------------------------
+* partner_id (int)
+   Partner id. Required for all requests
+* timestamp (timestamp)
+   Request timestamp in seconds from epoch. Required for all requests. Expires in 5 minutes
+* expire_token (string)
+   This token for only works under 6 hours from generation, for api. Valid for multiple use and expires in 6 hours
+* sign (string)
+   Signature generated from timestamp
+* session_id (int64)
+   The identifier for newsstream session
+  error (string)
+   Indicate error type if hit error. Empty if no error
+  message (string)
+   Indicate error detail if hit error. Empty if no error
+  request_id (string)
+   The identifier for an API request (for error tracking)
+  response (object)
+   Detail information you are querying
+
+Metadata:
+----------------------------------------------------------------------
+  total_chunks: 1
+  chunks_with_errors: 0
+  total_parameters_before_dedup: 9
+  total_parameters_after_dedup: 9
+  update_log_entries: 1
+  hidden_fields_count: 0
+  source_results: workspaces\v2.livestream.end_session\results\all_chunks_results.json
+
+======================================================================
+Legend: * = required parameter
+======================================================================

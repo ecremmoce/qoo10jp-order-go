@@ -1,0 +1,98 @@
+{
+  "endpoint": null,
+  "method": null,
+  "description": null,
+  "parameters": [
+    {
+      "name": "locale",
+      "type": "string",
+      "required": false,
+      "description": null,
+      "children": []
+    },
+    {
+      "name": "url",
+      "type": "string",
+      "required": false,
+      "description": null,
+      "children": []
+    },
+    {
+      "name": "currency",
+      "type": "string",
+      "required": false,
+      "description": null,
+      "children": []
+    },
+    {
+      "name": "amount",
+      "type": "string",
+      "required": false,
+      "description": null,
+      "children": []
+    },
+    {
+      "name": "message",
+      "type": "string",
+      "required": false,
+      "description": null,
+      "children": []
+    },
+    {
+      "name": "error_id",
+      "type": "string",
+      "required": false,
+      "description": null,
+      "children": []
+    },
+    {
+      "name": "error_name",
+      "type": "string",
+      "required": false,
+      "description": null,
+      "children": []
+    },
+    {
+      "name": "disable_transfer",
+      "type": "boolean",
+      "required": false,
+      "description": null,
+      "children": []
+    }
+  ],
+  "response_fields": [
+    {
+      "name": "Error Codes",
+      "type": "object",
+      "children": [
+        {
+          "name": "price_greater",
+          "description": "Sending system should log and return error"
+        },
+        {
+          "name": "price_too_small",
+          "description": "Price parameter must be greater than 0"
+        },
+        {
+          "name": "price_too_many_decimals",
+          "description": "Price has too many decimal places"
+        },
+        {
+          "name": "invalid_param",
+          "description": "Required parameters not provided"
+        }
+      ]
+    }
+  ],
+  "update_log": [],
+  "hidden_fields": [],
+  "metadata": {
+    "total_chunks": 1,
+    "chunks_with_errors": 0,
+    "total_parameters_before_dedup": 8,
+    "total_parameters_after_dedup": 8,
+    "update_log_entries": 0,
+    "hidden_fields_count": 0,
+    "source_results": "workspaces\\v2.logistics.update_channel\\results\\all_chunks_results.json"
+  }
+}

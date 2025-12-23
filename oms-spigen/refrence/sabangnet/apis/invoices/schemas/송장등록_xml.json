@@ -1,0 +1,86 @@
+{
+  "xml_root": "SABANG_INV_REGI",
+  "header_fields": [
+    {
+      "name": "SEND_COMPAYNY_ID",
+      "description": "사방넷 로그인아이디",
+      "required": true,
+      "note": "사방넷 어드민 로그인 아이디입력",
+      "section": "header"
+    },
+    {
+      "name": "SEND_AUTH_KEY",
+      "description": "사방넷에서 발급한 인증키",
+      "required": true,
+      "note": "사방넷에서 발급 받은 인증키(만약 받지 않았다면 사방넷에서 인증키 발급 요청)",
+      "section": "header"
+    },
+    {
+      "name": "SEND_DATE",
+      "description": "전송일자",
+      "required": true,
+      "note": "YYYYMMDD",
+      "section": "header"
+    },
+    {
+      "name": "SEND_INV_EDIT_YN",
+      "description": "송장정보 수정여부",
+      "required": false,
+      "note": "주문확인 or 교환발송준비 주문인 경우에만, 송장등록 처리가 가능합니다.\n출고대기 주문의 송장정보(택배사코드/운송장번호)를 강제 수정하고 싶은 경우에, Y를 입력합니다. (Y:수정함, N/NULL:수정안함)\n(단, 출고대기 주문상태이고, 쇼핑몰 송장전송여부가 전송대기 or 전송실패 주문인 경우에만, 송장정보 수정이 가능합니다.)",
+      "section": "header"
+    },
+    {
+      "name": "RESULT_TYPE",
+      "description": "결과 메시지 타입",
+      "required": false,
+      "note": "미 입력시 기존 HTML형식의 결과값 형태, XML 입력시 XML 형태로 결과값을 출력합니다.",
+      "section": "header"
+    }
+  ],
+  "data_fields": [
+    {
+      "name": "SABANGNET_IDX",
+      "description": "주문번호(사방넷)",
+      "required": true,
+      "note": "",
+      "section": "data"
+    },
+    {
+      "name": "TAK_CODE",
+      "description": "택배사코드",
+      "required": true,
+      "note": "택배사 코드를 조회 하여 입력합니다.",
+      "section": "data"
+    },
+    {
+      "name": "TAK_INVOICE",
+      "description": "송장번호",
+      "required": true,
+      "note": "",
+      "section": "data"
+    },
+    {
+      "name": "DELV_HOPE_DATE",
+      "description": "배송희망일자",
+      "required": false,
+      "note": "배송예정일을 입력합니다.(공백허용)",
+      "section": "data"
+    }
+  ],
+  "authentication": {
+    "SEND_COMPAYNY_ID": {
+      "name": "SEND_COMPAYNY_ID",
+      "description": "사방넷 로그인아이디",
+      "required": true,
+      "note": "사방넷 어드민 로그인 아이디입력",
+      "section": "header"
+    },
+    "SEND_AUTH_KEY": {
+      "name": "SEND_AUTH_KEY",
+      "description": "사방넷에서 발급한 인증키",
+      "required": true,
+      "note": "사방넷에서 발급 받은 인증키(만약 받지 않았다면 사방넷에서 인증키 발급 요청)",
+      "section": "header"
+    }
+  }
+}

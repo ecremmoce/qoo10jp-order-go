@@ -1,0 +1,87 @@
+{
+  "endpoint": null,
+  "method": null,
+  "description": null,
+  "parameters": [
+    {
+      "name": "request_id",
+      "type": "string",
+      "required": true,
+      "description": "Request ID, max length 50",
+      "children": []
+    },
+    {
+      "name": "version",
+      "type": "string",
+      "required": true,
+      "description": "API version number",
+      "children": []
+    },
+    {
+      "name": "biz_product",
+      "type": "string",
+      "required": true,
+      "description": "Business product type",
+      "children": []
+    },
+    {
+      "name": "biz_data",
+      "type": "object",
+      "required": true,
+      "description": "Business data",
+      "children": [
+        {
+          "name": "user_id",
+          "type": "string",
+          "required": true,
+          "description": "User ID",
+          "children": []
+        },
+        {
+          "name": "order_id",
+          "type": "string",
+          "required": true,
+          "description": "Order ID",
+          "children": []
+        }
+      ]
+    }
+  ],
+  "response_fields": [],
+  "update_log": [
+    {
+      "date": "2022-09-26",
+      "change": "Add new field"
+    },
+    {
+      "date": "2022-09-23",
+      "change": "Release 2.0"
+    },
+    {
+      "date": "2022-08-24",
+      "change": "Add new fields"
+    },
+    {
+      "date": "2022-08-18",
+      "change": "Support new currency codes"
+    },
+    {
+      "date": "2022-07-26",
+      "change": "Add new field"
+    },
+    {
+      "date": "2022-07-21",
+      "change": "Release 1.0"
+    }
+  ],
+  "hidden_fields": [],
+  "metadata": {
+    "total_chunks": 1,
+    "chunks_with_errors": 0,
+    "total_parameters_before_dedup": 4,
+    "total_parameters_after_dedup": 4,
+    "update_log_entries": 6,
+    "hidden_fields_count": 0,
+    "source_results": "workspaces\\v2.product.update_tier_variation\\results\\all_chunks_results.json"
+  }
+}

@@ -8,12 +8,16 @@ import (
 	"log"
 	"net/http"
 	"net/url"
+	"sync"
 	"time"
 )
 
 type Client struct {
-	httpClient *http.Client
-	timeout    time.Duration
+	httpClient       *http.Client
+	timeout          time.Duration
+	rateLimiter      map[string]time.Time // 메시지 타입별 마지막 호출 시간
+	rateLimiterMutex sync.Mutex
+	minInterval      time.Duration // 최소 호출 간격 (기본: 5초)
 }
 
 type WebhookMessage struct {
@@ -31,8 +35,35 @@ func NewClient(timeout time.Duration) *Client {
 		httpClient: &http.Client{
 			Timeout: timeout,
 		},
-		timeout: timeout,
+		timeout:     timeout,
+		rateLimiter: make(map[string]time.Time),
+		minInterval: 5 * time.Second, // 최소 5초 간격
 	}
+}
+
+// shouldSkipWebhook checks if the webhook should be skipped due to rate limiting
+func (c *Client) shouldSkipWebhook(messageType string) bool {
+	c.rateLimiterMutex.Lock()
+	defer c.rateLimiterMutex.Unlock()
+	
+	lastCall, exists := c.rateLimiter[messageType]
+	if !exists {
+		// 첫 호출인 경우
+		c.rateLimiter[messageType] = time.Now()
+		return false
+	}
+	
+	// 마지막 호출 이후 경과 시간 확인
+	elapsed := time.Since(lastCall)
+	if elapsed < c.minInterval {
+		log.Printf("⏭️  웹훅 스킵 (Rate Limit): '%s' - 마지막 호출 후 %.1f초 경과 (최소: %.0f초)", 
+			messageType, elapsed.Seconds(), c.minInterval.Seconds())
+		return true
+	}
+	
+	// 충분한 시간이 지났으면 호출 허용
+	c.rateLimiter[messageType] = time.Now()
+	return false
 }
 
 // SendWebhook sends a webhook message to the specified URL
@@ -40,6 +71,22 @@ func (c *Client) SendWebhook(webhookURL, message string, data map[string]interfa
 	if webhookURL == "" {
 		log.Println("웹훅 URL이 설정되지 않아 웹훅을 건너뜁니다")
 		return nil
+	}
+	
+	// Rate limiting 체크 (data에서 action 추출)
+	messageType := "default"
+	if data != nil {
+		if action, ok := data["action"].(string); ok {
+			messageType = action
+		}
+		if status, ok := data["status"].(string); ok {
+			messageType = messageType + "_" + status
+		}
+	}
+	
+	// Rate limit 체크
+	if c.shouldSkipWebhook(messageType) {
+		return nil // 스킵하지만 에러는 아님
 	}
 
 	// URL 파싱 및 검증

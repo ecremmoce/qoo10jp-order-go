@@ -1,0 +1,44 @@
+======================================================================
+API SPECIFICATION SUMMARY
+======================================================================
+
+Endpoint: POST /charging/get_credit_balance
+Description: Get credit balance information
+
+Parameters (3):
+----------------------------------------------------------------------
+* request_id (string)
+   Unique request ID, length should not exceed 36 characters
+* merchant_id (string)
+   Merchant ID
+  credit_class (string)
+   Credit class type
+
+Response Fields (1):
+----------------------------------------------------------------------
+  result (object)
+   Response result object
+    request_id (string)
+     Request ID from the original request
+    merchant_id (string)
+     Merchant ID
+    credit_balance_list (array)
+     List of credit balance information
+      credit_class (string)
+       Credit class type
+      balance (string)
+       Credit balance
+
+Metadata:
+----------------------------------------------------------------------
+  total_chunks: 1
+  chunks_with_errors: 0
+  total_parameters_before_dedup: 3
+  total_parameters_after_dedup: 3
+  update_log_entries: 0
+  hidden_fields_count: 0
+  source_results: platforms\shopee\apis\workspaces\v2.returns.get_reverse_tracking_info\results\all_chunks_results.json
+
+======================================================================
+Legend: * = required parameter
+======================================================================

@@ -1,0 +1,97 @@
+{
+  "endpoint": null,
+  "method": null,
+  "description": null,
+  "parameters": [
+    {
+      "name": "url",
+      "type": "string",
+      "required": true,
+      "description": "Request parameter URL",
+      "children": []
+    },
+    {
+      "name": "url_preview",
+      "type": "string",
+      "required": true,
+      "description": "Preview URL",
+      "children": []
+    }
+  ],
+  "response_fields": [
+    {
+      "name": "error",
+      "type": "string",
+      "required": true,
+      "description": "Error message when there is an error",
+      "children": []
+    },
+    {
+      "name": "message_id",
+      "type": "string",
+      "required": true,
+      "description": "Message identifier",
+      "children": []
+    },
+    {
+      "name": "preview_id",
+      "type": "string",
+      "required": true,
+      "description": "Preview identifier",
+      "children": []
+    },
+    {
+      "name": "reference_id",
+      "type": "string",
+      "required": true,
+      "description": "Reference address identifier",
+      "children": []
+    },
+    {
+      "name": "timestamp_text",
+      "type": "string",
+      "required": true,
+      "description": "Time reference of the address",
+      "children": []
+    },
+    {
+      "name": "title",
+      "type": "string",
+      "required": true,
+      "description": "Title of your reference address",
+      "children": []
+    },
+    {
+      "name": "description",
+      "type": "string",
+      "required": true,
+      "description": "Description of your reference address",
+      "children": []
+    },
+    {
+      "name": "cover",
+      "type": "string",
+      "required": true,
+      "description": "Cover image of your reference address",
+      "children": []
+    },
+    {
+      "name": "video_cover_data",
+      "type": "object",
+      "required": true,
+      "description": "Video cover data information",
+      "children": []
+    }
+  ],
+  "update_log": [],
+  "hidden_fields": [],
+  "metadata": {
+    "total_chunks": 1,
+    "chunks_with_errors": 0,
+    "total_parameters_before_dedup": 2,
+    "total_parameters_after_dedup": 2,
+    "update_log_entries": 0,
+    "hidden_fields_count": 0,
+    "source_results": "workspaces\\v2.shop.get_warehouse_detail\\results\\all_chunks_results.json"
+  }
+}

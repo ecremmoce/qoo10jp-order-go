@@ -1,0 +1,77 @@
+{
+  "chunk_index": 1,
+  "total_chunks": 1,
+  "endpoint": null,
+  "method": null,
+  "description": null,
+  "update_log": [],
+  "hidden_fields": [],
+  "parameters": [
+    {
+      "name": "URL",
+      "type": "string",
+      "required": true,
+      "description": "HTTP callback request URL",
+      "children": []
+    },
+    {
+      "name": "content_id",
+      "type": "string",
+      "required": true,
+      "description": "The content ID that needs to be updated",
+      "children": []
+    },
+    {
+      "name": "page",
+      "type": "string",
+      "required": false,
+      "description": "Indicates parameter to change. e.g. pp_edit, translated",
+      "children": []
+    }
+  ],
+  "response_fields": [
+    {
+      "name": "request_id",
+      "type": "string",
+      "description": "The identifier of an API request to an",
+      "children": []
+    },
+    {
+      "name": "error",
+      "type": "string",
+      "description": "Indicates error code if there is an error",
+      "children": []
+    },
+    {
+      "name": "response",
+      "type": "text",
+      "description": "Raw response data before parsing",
+      "children": []
+    }
+  ],
+  "error_codes": [
+    {
+      "code": "others.feature.reason",
+      "description": "No key loaded for unlocked answers"
+    },
+    {
+      "code": "others.post_edit.notfound",
+      "description": "Wrong backend key, error code"
+    }
+  ],
+  "notes": "The image appears to be an API documentation page showing common parameters, request parameters, response parameters, and error codes. There are also some code examples shown at the bottom of the image. The documentation appears to be related to some content management or editing functionality.",
+  "chunk_metadata": {
+    "index": 1,
+    "total": 1,
+    "y_start": 0,
+    "y_end": 5372,
+    "overlap_top": 0,
+    "overlap_bottom": 0,
+    "height": 5372,
+    "path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\workspaces\\v2.product.reply_comment\\chunks\\chunk_001.png",
+    "filename": "chunk_001.png",
+    "width": 837
+  },
+  "analysis_timestamp": "2025-10-10T06:33:50.393968",
+  "model": "claude-3-5-sonnet-20241022"
+}

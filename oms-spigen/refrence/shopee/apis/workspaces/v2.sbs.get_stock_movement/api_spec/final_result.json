@@ -1,0 +1,101 @@
+{
+  "endpoint": null,
+  "method": null,
+  "description": null,
+  "parameters": [
+    {
+      "name": "call_type",
+      "type": "string",
+      "required": true,
+      "description": "Call type parameter",
+      "children": []
+    },
+    {
+      "name": "qty",
+      "type": "integer",
+      "required": true,
+      "description": "Quantity",
+      "children": []
+    },
+    {
+      "name": "side_effect_type",
+      "type": "string",
+      "required": true,
+      "description": "Side effect type",
+      "children": []
+    },
+    {
+      "name": "str_call_type",
+      "type": "string",
+      "required": true,
+      "description": "String call type",
+      "children": []
+    },
+    {
+      "name": "str_query",
+      "type": "string",
+      "required": true,
+      "description": "Query string",
+      "children": []
+    },
+    {
+      "name": "str_side_effect_type",
+      "type": "string",
+      "required": true,
+      "description": "String side effect type",
+      "children": []
+    },
+    {
+      "name": "str_status",
+      "type": "string",
+      "required": false,
+      "description": "Status string",
+      "children": []
+    },
+    {
+      "name": "str_time",
+      "type": "string",
+      "required": true,
+      "description": "Time string",
+      "children": []
+    }
+  ],
+  "response_fields": [
+    {
+      "name": "call_type",
+      "type": "string",
+      "description": "Call type"
+    },
+    {
+      "name": "side_effect_type",
+      "type": "string",
+      "description": "Side effect type"
+    },
+    {
+      "name": "sql_text",
+      "type": "string",
+      "description": "SQL text"
+    },
+    {
+      "name": "status",
+      "type": "string",
+      "description": "Status"
+    },
+    {
+      "name": "time",
+      "type": "string",
+      "description": "Time"
+    }
+  ],
+  "update_log": [],
+  "hidden_fields": [],
+  "metadata": {
+    "total_chunks": 1,
+    "chunks_with_errors": 0,
+    "total_parameters_before_dedup": 8,
+    "total_parameters_after_dedup": 8,
+    "update_log_entries": 0,
+    "hidden_fields_count": 0,
+    "source_results": "workspaces\\v2.sbs.get_stock_movement\\results\\all_chunks_results.json"
+  }
+}

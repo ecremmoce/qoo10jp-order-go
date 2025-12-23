@@ -1,0 +1,38 @@
+======================================================================
+API SPECIFICATION SUMMARY
+======================================================================
+
+Endpoint: None None
+Description: Product external API category parameters documentation
+
+Parameters (3):
+----------------------------------------------------------------------
+* URL (string)
+   API endpoint URL structure
+* base_url (string)
+   Base URL for the API
+* category_id (string)
+   Category identifier
+
+Response Fields (3):
+----------------------------------------------------------------------
+  error (string)
+   Error code and error text
+  message (string)
+   Error message for failed API calls
+  request_id (string)
+   The identifier for API request
+
+Metadata:
+----------------------------------------------------------------------
+  total_chunks: 1
+  chunks_with_errors: 0
+  total_parameters_before_dedup: 3
+  total_parameters_after_dedup: 3
+  update_log_entries: 0
+  hidden_fields_count: 0
+  source_results: platforms\shopee\apis\workspaces\v2.product.get_category\results\all_chunks_results.json
+
+======================================================================
+Legend: * = required parameter
+======================================================================

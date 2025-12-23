@@ -1,0 +1,78 @@
+[
+  {
+    "chunk_index": 1,
+    "total_chunks": 1,
+    "endpoint": null,
+    "method": null,
+    "description": null,
+    "update_log": [],
+    "hidden_fields": [],
+    "parameters": [
+      {
+        "name": "URL",
+        "type": "string",
+        "required": true,
+        "description": "https://extension.crowdin.com/groups/{group_pattern_title}.md",
+        "children": []
+      },
+      {
+        "name": "group_pattern",
+        "type": "string",
+        "required": true,
+        "description": "If 0 global match",
+        "children": []
+      },
+      {
+        "name": "group_name_id",
+        "type": "string",
+        "required": true,
+        "description": "Returns only groups with specified name",
+        "children": []
+      },
+      {
+        "name": "string_match",
+        "type": "string",
+        "required": false,
+        "description": "You may set string to be groups mode",
+        "children": []
+      }
+    ],
+    "response_fields": [
+      {
+        "name": "type",
+        "type": "string",
+        "description": "Groups with type by string"
+      },
+      {
+        "name": "message",
+        "type": "string",
+        "description": "Message about groups"
+      }
+    ],
+    "error_codes": [
+      {
+        "code": "404",
+        "description": "Not found"
+      },
+      {
+        "code": "400",
+        "description": "Bad Request"
+      }
+    ],
+    "notes": "The image appears to be API documentation for some kind of group management system, possibly related to Crowdin extensions. The documentation includes common parameters, required parameters, response parameters, and error codes. Some sections appear to be collapsed/expandable in the interface.",
+    "chunk_metadata": {
+      "index": 1,
+      "total": 1,
+      "y_start": 0,
+      "y_end": 5558,
+      "overlap_top": 0,
+      "overlap_bottom": 0,
+      "height": 5558,
+      "path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\workspaces\\v2.global_product.update_global_model\\chunks\\chunk_001.png",
+      "filename": "chunk_001.png",
+      "width": 837
+    },
+    "analysis_timestamp": "2025-10-10T05:51:40.767416",
+    "model": "claude-3-5-sonnet-20241022"
+  }
+]

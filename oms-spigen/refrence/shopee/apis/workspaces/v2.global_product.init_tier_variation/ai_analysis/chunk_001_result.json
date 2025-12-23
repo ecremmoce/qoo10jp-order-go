@@ -1,0 +1,89 @@
+{
+  "chunk_index": 1,
+  "total_chunks": 1,
+  "endpoint": null,
+  "method": null,
+  "description": null,
+  "update_log": [
+    {
+      "date": "2023-11-21",
+      "change": "已优化了 pre_order 变量名"
+    },
+    {
+      "date": "2023-11-08",
+      "change": "新增了 pre_order"
+    },
+    {
+      "date": "2023-10-31",
+      "change": "更新了文档样式"
+    }
+  ],
+  "hidden_fields": [
+    {
+      "name": "pre_order",
+      "found_in": "update log entries",
+      "extracted_from_description": true
+    }
+  ],
+  "parameters": [
+    {
+      "name": "params",
+      "type": "object",
+      "required": true,
+      "description": "请求参数",
+      "children": [
+        {
+          "name": "start_time",
+          "type": "string",
+          "required": false,
+          "description": "开始时间戳（默认当前时间起前15天）",
+          "children": []
+        },
+        {
+          "name": "end_time",
+          "type": "string",
+          "required": false,
+          "description": "结束时间戳（默认当前时间）",
+          "children": []
+        },
+        {
+          "name": "status",
+          "type": "string",
+          "required": false,
+          "description": "订单状态",
+          "children": []
+        },
+        {
+          "name": "page_no",
+          "type": "integer",
+          "required": false,
+          "description": "页码，默认1",
+          "children": []
+        },
+        {
+          "name": "page_size",
+          "type": "integer",
+          "required": false,
+          "description": "每页条数，默认20",
+          "children": []
+        }
+      ]
+    }
+  ],
+  "response_fields": [],
+  "notes": "This appears to be API documentation in Chinese. The documentation shows pagination parameters and time range filters that are typical for a listing or search endpoint. The update log indicates recent changes related to a 'pre_order' feature and documentation style updates.",
+  "chunk_metadata": {
+    "index": 1,
+    "total": 1,
+    "y_start": 0,
+    "y_end": 7871,
+    "overlap_top": 0,
+    "overlap_bottom": 0,
+    "height": 7871,
+    "path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\workspaces\\v2.global_product.init_tier_variation\\chunks\\chunk_001.png",
+    "filename": "chunk_001.png",
+    "width": 837
+  },
+  "analysis_timestamp": "2025-10-10T05:50:27.889769",
+  "model": "claude-3-5-sonnet-20241022"
+}

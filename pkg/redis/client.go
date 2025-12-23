@@ -2,7 +2,7 @@ package redis
 
 import (
 	"context"
-	"qoo10jp-order-go/internal/config"
+	"shopee-order-go/internal/config"
 	"time"
 
 	"github.com/go-redis/redis/v8"
@@ -98,8 +98,3 @@ func (c *Client) Incr(key string) (int64, error) {
 func (c *Client) GetMultiple(keys []string) ([]interface{}, error) {
 	return c.rdb.MGet(c.ctx, keys...).Result()
 }
-
-
-
-
-

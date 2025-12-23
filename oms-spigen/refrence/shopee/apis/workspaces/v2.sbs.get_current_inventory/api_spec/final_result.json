@@ -1,0 +1,78 @@
+{
+  "endpoint": null,
+  "method": null,
+  "description": null,
+  "parameters": [
+    {
+      "name": "qty",
+      "type": "string",
+      "required": true,
+      "description": "Quantity of items",
+      "children": []
+    },
+    {
+      "name": "hs_code",
+      "type": "string",
+      "required": false,
+      "description": "Product HS code",
+      "children": []
+    },
+    {
+      "name": "sku",
+      "type": "string",
+      "required": false,
+      "description": "Product SKU",
+      "children": []
+    },
+    {
+      "name": "lang",
+      "type": "string",
+      "required": false,
+      "description": "Language code",
+      "children": []
+    },
+    {
+      "name": "current_location",
+      "type": "string",
+      "required": false,
+      "description": "Current location of product",
+      "children": []
+    }
+  ],
+  "response_fields": [],
+  "update_log": [
+    {
+      "date": "2023-10-24",
+      "change": "New parameter: current_location"
+    },
+    {
+      "date": "2023-06-16",
+      "change": "Added optional parameters"
+    },
+    {
+      "date": "2023-06-15",
+      "change": "New optional parameters added"
+    }
+  ],
+  "hidden_fields": [
+    {
+      "name": "shipping_date",
+      "found_in": "parameter description",
+      "extracted_from_description": true
+    },
+    {
+      "name": "product_img",
+      "found_in": "parameter description",
+      "extracted_from_description": true
+    }
+  ],
+  "metadata": {
+    "total_chunks": 1,
+    "chunks_with_errors": 0,
+    "total_parameters_before_dedup": 5,
+    "total_parameters_after_dedup": 5,
+    "update_log_entries": 3,
+    "hidden_fields_count": 2,
+    "source_results": "workspaces\\v2.sbs.get_current_inventory\\results\\all_chunks_results.json"
+  }
+}

@@ -1,0 +1,62 @@
+{
+  "endpoint": "/v1/shop_category/delete_item_api_id",
+  "method": null,
+  "description": null,
+  "parameters": [
+    {
+      "name": "url",
+      "type": "string",
+      "required": true,
+      "description": "Base request URL",
+      "children": []
+    },
+    {
+      "name": "pong_category_id",
+      "type": "integer",
+      "required": true,
+      "description": "The id of shop partner",
+      "children": []
+    },
+    {
+      "name": "shop_id",
+      "type": "string",
+      "required": true,
+      "description": null,
+      "children": []
+    },
+    {
+      "name": "error",
+      "type": "string",
+      "required": false,
+      "description": "Error message details",
+      "children": []
+    }
+  ],
+  "response_fields": [
+    {
+      "name": "error_code",
+      "type": "integer",
+      "description": null
+    }
+  ],
+  "update_log": [
+    {
+      "date": "2023-07-27",
+      "change": "API flow changes advanced"
+    },
+    {
+      "date": "2023-06-16",
+      "change": "Update shared parameter structure and translation reference"
+    }
+  ],
+  "hidden_fields": [],
+  "metadata": {
+    "total_chunks": 1,
+    "chunks_with_errors": 0,
+    "total_parameters_before_dedup": 4,
+    "total_parameters_after_dedup": 4,
+    "update_log_entries": 2,
+    "hidden_fields_count": 0,
+    "source_results": "workspaces\\v2.shop_category.delete_item_list\\results\\all_chunks_results.json"
+  }
+}

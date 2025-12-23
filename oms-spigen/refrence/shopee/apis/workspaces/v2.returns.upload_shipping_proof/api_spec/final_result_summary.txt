@@ -1,0 +1,35 @@
+======================================================================
+API SPECIFICATION SUMMARY
+======================================================================
+
+Endpoint: HTTP request /v2/deposit/upload_shipping_proof
+Description: API documentation for uploading shipping proof
+
+Parameters (6):
+----------------------------------------------------------------------
+* URL (string)
+   Chinese traditional images (https://test/manifest_shipping_proof)
+* owner_id (string)
+   The wallet address of token
+  shipping_number (string)
+   Express tracking number
+* image_id_list (array)
+   List of image_id of shipping proof images
+* request_id (string)
+   Top identifier for an API request for error tracking
+  message (string)
+   Success error status (1:success, 0:failed)
+
+Metadata:
+----------------------------------------------------------------------
+  total_chunks: 1
+  chunks_with_errors: 0
+  total_parameters_before_dedup: 6
+  total_parameters_after_dedup: 6
+  update_log_entries: 1
+  hidden_fields_count: 0
+  source_results: workspaces\v2.returns.upload_shipping_proof\results\all_chunks_results.json
+
+======================================================================
+Legend: * = required parameter
+======================================================================

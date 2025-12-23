@@ -1,0 +1,72 @@
+{
+  "type": "object",
+  "title": "주문수집",
+  "description": "- 사방넷에 이미 수집되 있는 주문 데이터를 가져가기 위해 사용합니다. - 주문관리 > 주문서수집(자동) 메뉴를 통하여 주문을 수집 후 주문관리 > 주문서확정관리 메뉴에서 확정처리 한 데이터에 한하여 데이터를 받아갈 수 있습니다. - API 요청 시 조건에 해당하는 신규주문 을 주문확인 상태로 변경됩니다.",
+  "required": [
+    "ordStDate",
+    "ordEdDate",
+    "ordField"
+  ],
+  "properties": {
+    "ordStDate": {
+      "type": "string",
+      "description": "검색 시작일자",
+      "xml_name": "ORD_ST_DATE"
+    },
+    "ordEdDate": {
+      "type": "string",
+      "description": "검색 마지막일자",
+      "xml_name": "ORD_ED_DATE"
+    },
+    "ordField": {
+      "type": "string",
+      "description": "출력필드 리스트",
+      "xml_name": "ORD_FIELD"
+    },
+    "jungChkYn2": {
+      "type": "string",
+      "description": "정산대조확인여부",
+      "xml_name": "JUNG_CHK_YN2"
+    },
+    "orderId": {
+      "type": "string",
+      "description": "주문번호(쇼핑몰)",
+      "xml_name": "ORDER_ID"
+    },
+    "mallId": {
+      "type": "string",
+      "description": "쇼핑몰CODE",
+      "xml_name": "MALL_ID"
+    },
+    "orderStatus": {
+      "type": "string",
+      "description": "주문상태",
+      "xml_name": "ORDER_STATUS"
+    },
+    "lang": {
+      "type": "string",
+      "description": "encoding타입 선택",
+      "xml_name": "LANG"
+    },
+    "partnerId": {
+      "type": "string",
+      "description": "매입처ID",
+      "xml_name": "PARTNER_ID"
+    },
+    "mallUserId": {
+      "type": "string",
+      "description": "쇼핑몰ID",
+      "xml_name": "MALL_USER_ID"
+    },
+    "dpartnerId": {
+      "type": "string",
+      "description": "물류처ID",
+      "xml_name": "DPARTNER_ID"
+    },
+    "acntRegsSrno": {
+      "type": "string",
+      "description": "계정등록순번",
+      "xml_name": "ACNT_REGS_SRNO"
+    }
+  }
+}

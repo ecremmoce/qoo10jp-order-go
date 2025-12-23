@@ -4,16 +4,16 @@ import (
 	"encoding/json"
 	"fmt"
 	"log"
-	"qoo10jp-order-go/internal/models"
-	"qoo10jp-order-go/pkg/redis"
-	"qoo10jp-order-go/pkg/supabase"
+	"shopee-order-go/internal/models"
+	"shopee-order-go/pkg/redis"
+	"shopee-order-go/pkg/supabase"
 	"time"
 
 	"github.com/google/uuid"
 )
 
 const (
-	OrderJobQueue     = "qoo10jp_order_queue"
+	OrderJobQueue     = "shopee_order_queue"
 	SchedulerStateKey = "scheduler_state"
 )
 
@@ -55,9 +55,9 @@ func (s *SchedulerService) CreateOrderJob(startDate, endDate time.Time) error {
 		return fmt.Errorf("failed to push job to queue: %v", err)
 	}
 
-	log.Printf("Created order job %s for period %s to %s", 
+	log.Printf("Created order job %s for period %s to %s",
 		job.ID, startDate.Format("2006-01-02"), endDate.Format("2006-01-02"))
-	
+
 	return nil
 }
 
@@ -83,19 +83,19 @@ func (s *SchedulerService) ProcessNextJob() error {
 // executeJob executes a single order collection job
 func (s *SchedulerService) executeJob(job *models.OrderJob) error {
 	startTime := time.Now()
-	
+
 	result := &models.JobResult{
 		JobID:     job.ID,
 		StartTime: startTime,
 		CreatedAt: time.Now(),
 	}
 
-	log.Printf("Starting job %s: collecting orders from %s to %s", 
+	log.Printf("Starting job %s: collecting orders from %s to %s",
 		job.ID, job.StartDate.Format("2006-01-02"), job.EndDate.Format("2006-01-02"))
 
 	// Execute the order collection
 	err := s.orderService.CollectOrders(job.StartDate, job.EndDate)
-	
+
 	endTime := time.Now()
 	result.EndTime = endTime
 	result.Duration = endTime.Sub(startTime).Milliseconds()

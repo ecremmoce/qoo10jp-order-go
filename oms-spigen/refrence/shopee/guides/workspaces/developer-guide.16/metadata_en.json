@@ -1,0 +1,41 @@
+{
+  "document_id": "developer-guide.16",
+  "document_type": "guide",
+  "platform": "shopee",
+  "extracted_at": "2025-10-16T08:05:05",
+  "extracted_text": "# API calls\n\n**Last Updated: 2025-09-22**\n\nLanguage Supported: English / 简体中文 / 繁體中文 / Português / ไทย\n\n⚠️ **Note:** This guide only applies to making API calls for Shopee Open API v2.0.\n\n## API domains\n\nThere are 3 domains available:\n\n### Production environment\n- https://openplatform.shopee.cn/ — for developers who deployed their services near Chinese Mainland.\n- https://openplatform.shopee.com.br/ — for developers who deployed their services near US.\n- https://partner.shopeemobile.com/ — for developer who deployed their services near SG.\n\n### Sandbox environment\n- https://partner.test-stable.shopeemobile.com/ — for All developers\n\nSelect the correct domain name, based on the server location you're accessing the Open API from.\n\n## API request methods\n\nCurrently, Open API only provides two request methods: GET and POST.\n\n## API Protocol\n\nHTTP/JSON for most APIs. HTTP/FORM for some certain APIs, for example, the API for uploading files.\n\n## API request parameters\n\nIn the API document, you will see two types of request parameters:\n\n1. Common parameter\n2. Request parameter\n\nFor GET-type APIs, these two parameters may exist at the same time, or only the common parameter will exist.\n\nFor POST-type APIs, these two parameters will exist at the same time.\n\n---\n\n## Navigation Links (Right Sidebar)\n\n- API domains\n- API request methods\n- API Protocol\n- API request parameters\n- Types of Open API\n- Signature calculation\n- API request sample\n- API response parameters\n- API functions\n- Problems with API\n\n---\n\n## Left Sidebar - Tables of Content\n\n### Getting Started\n- Introduction\n- Developer account registration\n- App management\n- **API calls** (current page)\n- Push Mechanism notifications\n- Authorization and Authentication\n- Sandbox Testing V2\n- Service Partner Program\n- V2.0 API Call Flow\n- CNSC API Integration Guide\n- KRSC API Integration Guide\n- V2.0 Data Definition\n\n### API Best Practices\n- Guidelines for Creating Product\n- Product creation preparation\n- Creating product\n- Creating global product\n- Publishing global product\n- Variant management\n- Product base info management\n- Stock & Price Management\n- Order Management\n- First Mile Binding",
+  "metadata": {
+    "title": "API calls",
+    "summary": "This guide provides information on making API calls for Shopee Open API v2.0. It covers API domains, request methods, protocols, and parameters, including common and request parameters for GET and POST requests.",
+    "keywords": [
+      "API calls",
+      "Shopee Open API",
+      "API domains",
+      "request methods",
+      "API protocol",
+      "request parameters",
+      "GET",
+      "POST"
+    ],
+    "category": "Getting Started",
+    "tags": [
+      "API",
+      "Open API",
+      "Integration",
+      "Request Methods",
+      "Parameters"
+    ],
+    "difficulty": "medium",
+    "importance": 5,
+    "use_cases": [
+      "Integrating with Shopee's Open API",
+      "Making API requests to Shopee",
+      "Understanding API request methods",
+      "Handling API parameters",
+      "Selecting the correct API domain"
+    ],
+    "related_apis": [
+      "Shopee Open API v2.0"
+    ]
+  }
+}

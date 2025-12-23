@@ -1,0 +1,83 @@
+[
+  {
+    "chunk_index": 1,
+    "total_chunks": 1,
+    "endpoint": "get_url_on_data_add_cart_on_dest",
+    "method": null,
+    "description": null,
+    "update_log": [],
+    "hidden_fields": [],
+    "parameters": [
+      {
+        "name": "URL",
+        "type": "string",
+        "required": true,
+        "description": "Access Parameter",
+        "children": []
+      },
+      {
+        "name": "post_data",
+        "type": "object",
+        "required": true,
+        "description": "Request parameters",
+        "children": [
+          {
+            "name": "product_id",
+            "type": "string",
+            "required": true,
+            "description": "Product unique identifier for filtering",
+            "children": []
+          },
+          {
+            "name": "source_type",
+            "type": "string",
+            "required": true,
+            "description": "The item on WE server, using to identify user extension in WE by 'source_type' and 'source_id'",
+            "children": []
+          },
+          {
+            "name": "qty",
+            "type": "string",
+            "required": true,
+            "description": "Product unique identifier for cart",
+            "children": []
+          }
+        ]
+      }
+    ],
+    "response_fields": [],
+    "error_codes": [
+      {
+        "code": "qty_less",
+        "description": "Invalid quantity_less"
+      },
+      {
+        "code": "qty_zero",
+        "description": "Invalid qty zero"
+      },
+      {
+        "code": "qty_type",
+        "description": "Something wrong"
+      },
+      {
+        "code": "price_null",
+        "description": "Invalid price null"
+      }
+    ],
+    "notes": "The documentation appears to be for a cart addition API. There are several error codes listed but some descriptions are truncated or unclear. The API seems to require product identification, source type, and quantity parameters.",
+    "chunk_metadata": {
+      "index": 1,
+      "total": 1,
+      "y_start": 0,
+      "y_end": 4971,
+      "overlap_top": 0,
+      "overlap_bottom": 0,
+      "height": 4971,
+      "path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\workspaces\\v2.add_on_deal.add_add_on_deal\\chunks\\chunk_001.png",
+      "filename": "chunk_001.png",
+      "width": 837
+    },
+    "analysis_timestamp": "2025-10-10T05:23:46.085426",
+    "model": "claude-3-5-sonnet-20241022"
+  }
+]

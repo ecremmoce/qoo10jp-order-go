@@ -1,0 +1,28 @@
+======================================================================
+API SPECIFICATION SUMMARY
+======================================================================
+
+Endpoint: None None
+
+Parameters (6):
+----------------------------------------------------------------------
+* pid (string)
+* val (string)
+  device_id (string)
+  scope (string)
+  mobile_number (string)
+  email_address (string)
+
+Metadata:
+----------------------------------------------------------------------
+  total_chunks: 1
+  chunks_with_errors: 0
+  total_parameters_before_dedup: 6
+  total_parameters_after_dedup: 6
+  update_log_entries: 0
+  hidden_fields_count: 0
+  source_results: workspaces\v2.ads.create_manual_product_ads\results\all_chunks_results.json
+
+======================================================================
+Legend: * = required parameter
+======================================================================

@@ -1,0 +1,109 @@
+[
+  {
+    "chunk_index": 1,
+    "total_chunks": 1,
+    "endpoint": "game/price_paid_get",
+    "method": null,
+    "description": null,
+    "update_log": [
+      {
+        "date": "2023-04-28",
+        "change": "code table fixed"
+      },
+      {
+        "date": "2022-08-24",
+        "change": "Created Request Parameters_v1_p1 review Successful"
+      }
+    ],
+    "parameters": [
+      {
+        "name": "URL",
+        "type": "string",
+        "required": true,
+        "description": "API endpoint URL",
+        "children": []
+      },
+      {
+        "name": "URL",
+        "type": "string",
+        "required": true,
+        "description": "API endpoint URL for test environment",
+        "children": []
+      },
+      {
+        "name": "URL",
+        "type": "string",
+        "required": true,
+        "description": "API endpoint URL for production environment",
+        "children": []
+      }
+    ],
+    "response_parameters": [
+      {
+        "name": "error",
+        "type": "string",
+        "required": null,
+        "description": "Default error type if any error occurs",
+        "children": []
+      },
+      {
+        "name": "message",
+        "type": "string",
+        "required": null,
+        "description": "Default error message if any error occurs",
+        "children": []
+      },
+      {
+        "name": "price_paid",
+        "type": "integer",
+        "required": null,
+        "description": "The payment to all will biggest the error",
+        "children": []
+      },
+      {
+        "name": "price_paid_id",
+        "type": "string",
+        "required": null,
+        "description": "ID of price paid",
+        "children": []
+      }
+    ],
+    "error_codes": [
+      {
+        "code": "error_game",
+        "description": "There is no game, please try again"
+      },
+      {
+        "code": "error_permission",
+        "description": "You permission is invalid now"
+      },
+      {
+        "code": "error_price_paid",
+        "description": "There is no price paid"
+      },
+      {
+        "code": "error_price_paid_invalid",
+        "description": "Invalid Price paid"
+      },
+      {
+        "code": "error_price_paid_other",
+        "description": "Other error"
+      }
+    ],
+    "notes": "The documentation appears to be for a game payment API endpoint. The image shows common parameters, response parameters, error codes and an update log. Some sections like request syntax and examples are also visible but partially cut off.",
+    "chunk_metadata": {
+      "index": 1,
+      "total": 1,
+      "y_start": 0,
+      "y_end": 5007,
+      "overlap_top": 0,
+      "overlap_bottom": 0,
+      "height": 5007,
+      "path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\workspaces\\v2.global_product.get_global_item_id\\chunks\\chunk_001.png",
+      "filename": "chunk_001.png",
+      "width": 837
+    },
+    "analysis_timestamp": "2025-10-10T05:46:36.718655",
+    "model": "claude-3-5-sonnet-20241022"
+  }
+]

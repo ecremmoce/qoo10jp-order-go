@@ -1,0 +1,51 @@
+======================================================================
+API SPECIFICATION SUMMARY
+======================================================================
+
+Endpoint: None None
+
+Parameters (8):
+----------------------------------------------------------------------
+* call_type (string)
+   Call type parameter
+* qty (integer)
+   Quantity
+* side_effect_type (string)
+   Side effect type
+* str_call_type (string)
+   String call type
+* str_query (string)
+   Query string
+* str_side_effect_type (string)
+   String side effect type
+  str_status (string)
+   Status string
+* str_time (string)
+   Time string
+
+Response Fields (5):
+----------------------------------------------------------------------
+  call_type (string)
+   Call type
+  side_effect_type (string)
+   Side effect type
+  sql_text (string)
+   SQL text
+  status (string)
+   Status
+  time (string)
+   Time
+
+Metadata:
+----------------------------------------------------------------------
+  total_chunks: 1
+  chunks_with_errors: 0
+  total_parameters_before_dedup: 8
+  total_parameters_after_dedup: 8
+  update_log_entries: 0
+  hidden_fields_count: 0
+  source_results: workspaces\v2.sbs.get_stock_movement\results\all_chunks_results.json
+
+======================================================================
+Legend: * = required parameter
+======================================================================

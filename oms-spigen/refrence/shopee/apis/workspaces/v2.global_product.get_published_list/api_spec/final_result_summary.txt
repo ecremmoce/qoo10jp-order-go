@@ -1,0 +1,40 @@
+======================================================================
+API SPECIFICATION SUMMARY
+======================================================================
+
+Endpoint: GET /public_protocol.get_protocol.json
+Description: Protocol-related API endpoint
+
+Parameters (2):
+----------------------------------------------------------------------
+* URL (string)
+   Base protocol URL
+* protocol_id (string)
+   The protocol ID parameter
+
+Response Fields (5):
+----------------------------------------------------------------------
+  error (string)
+   Error message if any
+  protocol_api (object)
+   Protocol API details
+  protocol_name (string)
+   Name of protocol
+  file_region (string)
+   Region of files
+  protocols_type (string)
+   Type of protocols data
+
+Metadata:
+----------------------------------------------------------------------
+  total_chunks: 1
+  chunks_with_errors: 0
+  total_parameters_before_dedup: 2
+  total_parameters_after_dedup: 2
+  update_log_entries: 0
+  hidden_fields_count: 0
+  source_results: workspaces\v2.global_product.get_published_list\results\all_chunks_results.json
+
+======================================================================
+Legend: * = required parameter
+======================================================================

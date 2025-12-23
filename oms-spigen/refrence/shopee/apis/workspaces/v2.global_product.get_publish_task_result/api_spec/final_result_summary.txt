@@ -1,0 +1,40 @@
+======================================================================
+API SPECIFICATION SUMMARY
+======================================================================
+
+Endpoint: POST https://openapi.shopee.com/v2/product/update_size_chart
+Description: Update product size chart
+
+Parameters (4):
+----------------------------------------------------------------------
+* url (string)
+   The URL link of image host
+* partner_id (integer)
+   Partner ID is assigned upon registration is successful
+* shopid (integer)
+   Shop ID is the seller's unique identifier in Shopee's system
+* access_token (string)
+   Identify user's identity, using refresh_key to get token
+
+Response Fields (3):
+----------------------------------------------------------------------
+  error (string)
+   Indicate error type if request failed
+  message (string)
+   Indicate error details if any (may be empty)
+  request_id (string)
+   The request id of API
+
+Metadata:
+----------------------------------------------------------------------
+  total_chunks: 1
+  chunks_with_errors: 0
+  total_parameters_before_dedup: 4
+  total_parameters_after_dedup: 4
+  update_log_entries: 0
+  hidden_fields_count: 0
+  source_results: workspaces\v2.global_product.get_publish_task_result\results\all_chunks_results.json
+
+======================================================================
+Legend: * = required parameter
+======================================================================

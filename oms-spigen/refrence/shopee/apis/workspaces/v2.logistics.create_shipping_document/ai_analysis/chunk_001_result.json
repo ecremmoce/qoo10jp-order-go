@@ -1,0 +1,94 @@
+{
+  "chunk_index": 1,
+  "total_chunks": 1,
+  "endpoint": null,
+  "method": null,
+  "description": null,
+  "update_log": [],
+  "hidden_fields": [],
+  "parameters": [
+    {
+      "name": "address",
+      "type": "string",
+      "required": true,
+      "description": "NFT metadata permanent storage url",
+      "children": []
+    },
+    {
+      "name": "uri_file",
+      "type": "string",
+      "required": true,
+      "description": "NFT metadata url file name",
+      "children": []
+    },
+    {
+      "name": "owner",
+      "type": "string",
+      "required": true,
+      "description": "nft owner metadata url",
+      "children": []
+    }
+  ],
+  "response_fields": [
+    {
+      "name": "api_key",
+      "type": "string",
+      "description": "Your public blockchain when user login success"
+    },
+    {
+      "name": "application_json_get_token",
+      "type": "string",
+      "description": "The public token before admin verify will be service a timestamp"
+    },
+    {
+      "name": "get_token",
+      "type": "string",
+      "description": "Public metadata url metadata"
+    },
+    {
+      "name": "post_token",
+      "type": "string",
+      "description": "Public metadata url update"
+    },
+    {
+      "name": "application_metadata_nft_uri",
+      "type": "string",
+      "description": "The public system sync contract verify sync will be trigger permanent sync"
+    },
+    {
+      "name": "application_metadata_nft_put",
+      "type": "string",
+      "description": "The public system only verify, then verify trigger external though verify"
+    },
+    {
+      "name": "application_metadata_nft_post",
+      "type": "string",
+      "description": "All contract url external though"
+    },
+    {
+      "name": "update_metadata_number_put",
+      "type": "string",
+      "description": "Please input your contract name sync sync verify"
+    },
+    {
+      "name": "trigger_create_verify_put",
+      "type": "string",
+      "description": "Please sync contract your contract name"
+    }
+  ],
+  "notes": "The documentation appears to be for an NFT metadata API. The image shows both required parameters and response fields related to NFT metadata management, token handling, and contract verification. Some technical terms and descriptions suggest this is related to blockchain/NFT infrastructure.",
+  "chunk_metadata": {
+    "index": 1,
+    "total": 1,
+    "y_start": 0,
+    "y_end": 6116,
+    "overlap_top": 0,
+    "overlap_bottom": 0,
+    "height": 6116,
+    "path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\workspaces\\v2.logistics.create_shipping_document\\chunks\\chunk_001.png",
+    "filename": "chunk_001.png",
+    "width": 837
+  },
+  "analysis_timestamp": "2025-10-10T06:00:01.216797",
+  "model": "claude-3-5-sonnet-20241022"
+}

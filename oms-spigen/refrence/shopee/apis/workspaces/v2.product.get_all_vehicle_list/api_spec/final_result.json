@@ -1,0 +1,139 @@
+{
+  "endpoint": "/product/ad_service_list",
+  "method": "POST",
+  "description": null,
+  "parameters": [
+    {
+      "name": "timestamp",
+      "type": "string",
+      "required": true,
+      "description": "This is to indicate the timestamp of the request. Required to be in timestamp format in seconds.",
+      "children": []
+    },
+    {
+      "name": "access_token",
+      "type": "string",
+      "required": true,
+      "description": "The base-64 JWT token. Using to identify each permission to the API with the callback service",
+      "children": []
+    },
+    {
+      "name": "shop_id",
+      "type": "integer",
+      "required": true,
+      "description": "Shopee's unique identifier for a shop. Required param for authorization.",
+      "children": []
+    },
+    {
+      "name": "merchant",
+      "type": "string",
+      "required": true,
+      "description": "Specify which states if for error. Every if no error happened",
+      "children": []
+    },
+    {
+      "name": "offset",
+      "type": "integer",
+      "required": true,
+      "description": "Specifies the starting point of data to return in this current call. Default is 0. Max allowed is offset last size return",
+      "children": []
+    },
+    {
+      "name": "warning",
+      "type": "string",
+      "required": true,
+      "description": "Indicate which states if for error. Error if no error happened",
+      "children": []
+    },
+    {
+      "name": "request_id",
+      "type": "string",
+      "required": true,
+      "description": "The identifier for an API request for error handling",
+      "children": []
+    }
+  ],
+  "response_fields": [
+    {
+      "name": "message",
+      "type": "string",
+      "description": "Indicate which states if for error. Empty if no error happened"
+    },
+    {
+      "name": "warning",
+      "type": "string",
+      "description": "Indicate which states if warning. Empty if no error happened"
+    },
+    {
+      "name": "request_id",
+      "type": "string",
+      "description": "The identifier for an API request for error handling"
+    },
+    {
+      "name": "error_code",
+      "type": "integer",
+      "description": "ID of the error"
+    },
+    {
+      "name": "error",
+      "type": "string",
+      "description": "Name of the error"
+    },
+    {
+      "name": "state",
+      "type": "integer",
+      "description": "ID of the state"
+    },
+    {
+      "name": "state_name",
+      "type": "string",
+      "description": "Name of the state"
+    },
+    {
+      "name": "model",
+      "type": "integer",
+      "description": "ID of the model"
+    },
+    {
+      "name": "model_name",
+      "type": "string",
+      "description": "Name of the model"
+    },
+    {
+      "name": "step_state",
+      "type": "integer",
+      "description": "ID of the state"
+    },
+    {
+      "name": "normal_id",
+      "type": "string",
+      "description": "ID of the normal"
+    },
+    {
+      "name": "capture_name",
+      "type": "boolean",
+      "description": "Name of the capture"
+    },
+    {
+      "name": "has_next_page",
+      "type": "boolean",
+      "description": "This is to indicate whether the data has more data from the API. If true means still has data for next page. If false means have fetch all the data"
+    }
+  ],
+  "update_log": [
+    {
+      "date": "2024-06-24",
+      "change": "API tool help"
+    }
+  ],
+  "hidden_fields": [],
+  "metadata": {
+    "total_chunks": 1,
+    "chunks_with_errors": 0,
+    "total_parameters_before_dedup": 7,
+    "total_parameters_after_dedup": 7,
+    "update_log_entries": 1,
+    "hidden_fields_count": 0,
+    "source_results": "workspaces\\v2.product.get_all_vehicle_list\\results\\all_chunks_results.json"
+  }
+}

@@ -1,0 +1,41 @@
+======================================================================
+API SPECIFICATION SUMMARY
+======================================================================
+
+Endpoint: POST /api/sport/get/bowling_ranking_info
+Description: API for retrieving bowling ranking information
+
+Parameters (9):
+----------------------------------------------------------------------
+* url (string)
+   HTTP path for request
+* access_token (string)
+   Token to indicate the identities of the request. Required to complete system verification
+* shop_id (string)
+   Shopee's unique identifier for a shop
+* partner_id (integer)
+   Partner's unique identifier provided by Shopee
+* timestamp (integer)
+   Timestamp of the request. Required for authorization
+  request_id (string)
+   The identifier for an API request to avoid duplicate
+* sign (string)
+   Validate sign rule first time Google find error
+  version (object)
+   Version information data for parsing
+* bowling_id (string)
+   Shopee's unique identifier for a bowling event
+
+Metadata:
+----------------------------------------------------------------------
+  total_chunks: 1
+  chunks_with_errors: 0
+  total_parameters_before_dedup: 9
+  total_parameters_after_dedup: 9
+  update_log_entries: 1
+  hidden_fields_count: 0
+  source_results: workspaces\v2.logistics.get_booking_tracking_info\results\all_chunks_results.json
+
+======================================================================
+Legend: * = required parameter
+======================================================================

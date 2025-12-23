@@ -1,0 +1,123 @@
+{
+  "chunk_index": 1,
+  "total_chunks": 1,
+  "endpoint": "/openplatform/get_video_auth",
+  "method": "GET",
+  "description": "Video authentication endpoint",
+  "update_log": [],
+  "hidden_fields": [],
+  "parameters": [
+    {
+      "name": "secret_id",
+      "type": "integer",
+      "required": true,
+      "description": "Partner ID is assigned upon registration to successful application for API access",
+      "children": []
+    },
+    {
+      "name": "access_token",
+      "type": "string",
+      "required": true,
+      "description": "The token for API system, which is slightly more prominent in the interface due to the access_token",
+      "children": []
+    },
+    {
+      "name": "sign",
+      "type": "string",
+      "required": true,
+      "description": "Digital signature (Generated as shown in pic)",
+      "children": []
+    }
+  ],
+  "response_fields": [
+    {
+      "name": "code",
+      "type": "string",
+      "description": "Error code",
+      "children": []
+    },
+    {
+      "name": "message",
+      "type": "string",
+      "description": "Error message",
+      "children": []
+    },
+    {
+      "name": "result_id",
+      "type": "string",
+      "description": "The identifier for url GET request by each sharing",
+      "children": []
+    },
+    {
+      "name": "sign",
+      "type": "string",
+      "description": "Share retrieval sign for url sharing",
+      "children": []
+    },
+    {
+      "name": "file_urls",
+      "type": "object",
+      "description": "The snapshot link",
+      "children": []
+    },
+    {
+      "name": "urls",
+      "type": "array",
+      "description": "Request access interface for all links",
+      "children": []
+    },
+    {
+      "name": "expire",
+      "type": "integer",
+      "description": "Time of the live in local language",
+      "children": []
+    },
+    {
+      "name": "create_time",
+      "type": "integer",
+      "description": "Creation time of the link",
+      "children": []
+    },
+    {
+      "name": "country",
+      "type": "float",
+      "description": "The three digit code representing the country and state of the live",
+      "children": []
+    },
+    {
+      "name": "country_pos",
+      "type": "float",
+      "description": "The original area of the live in the being position_country_pos",
+      "children": []
+    }
+  ],
+  "error_codes": [
+    {
+      "code": "error_404",
+      "description": "Share does not exist"
+    },
+    {
+      "code": "error_param",
+      "description": "Parameter invalid"
+    },
+    {
+      "code": "error_token",
+      "description": "The token/secret_id not match"
+    }
+  ],
+  "notes": "The documentation includes request examples, response examples, and error examples in JSON format. There's also an error codes section detailing various error scenarios.",
+  "chunk_metadata": {
+    "index": 1,
+    "total": 1,
+    "y_start": 0,
+    "y_end": 4672,
+    "overlap_top": 0,
+    "overlap_bottom": 0,
+    "height": 4672,
+    "path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\platforms\\shopee\\apis\\workspaces\\v2.livestream.get_show_item\\chunks\\chunk_001.png",
+    "filename": "chunk_001.png",
+    "width": 837
+  },
+  "analysis_timestamp": "2025-10-11T22:43:31.745009",
+  "model": "claude-3-5-sonnet-20241022"
+}

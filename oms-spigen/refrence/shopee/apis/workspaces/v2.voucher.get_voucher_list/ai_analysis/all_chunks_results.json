@@ -1,0 +1,107 @@
+[
+  {
+    "chunk_index": 1,
+    "total_chunks": 1,
+    "endpoint": null,
+    "method": null,
+    "description": null,
+    "update_log": [],
+    "hidden_fields": [],
+    "parameters": [
+      {
+        "name": "order_id",
+        "type": "string",
+        "required": true,
+        "description": "Order identifier",
+        "children": []
+      },
+      {
+        "name": "platform_reference",
+        "type": "string",
+        "required": true,
+        "description": "Platform reference number",
+        "children": []
+      },
+      {
+        "name": "item_detail",
+        "type": "object",
+        "required": true,
+        "description": null,
+        "children": [
+          {
+            "name": "item_id",
+            "type": "string",
+            "required": true,
+            "description": "Item identifier",
+            "children": []
+          },
+          {
+            "name": "quantity",
+            "type": "integer",
+            "required": true,
+            "description": "Quantity of items",
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "payment_id",
+        "type": "string",
+        "required": true,
+        "description": "Payment identifier",
+        "children": []
+      },
+      {
+        "name": "buyer_details",
+        "type": "object",
+        "required": true,
+        "description": null,
+        "children": [
+          {
+            "name": "buyer_id",
+            "type": "string",
+            "required": true,
+            "description": "Buyer identifier",
+            "children": []
+          },
+          {
+            "name": "buyer_name",
+            "type": "string",
+            "required": true,
+            "description": "Name of the buyer",
+            "children": []
+          }
+        ]
+      }
+    ],
+    "response_fields": [
+      {
+        "name": "error_code",
+        "type": "string",
+        "description": "Error code if request fails",
+        "children": []
+      },
+      {
+        "name": "error_message",
+        "type": "string",
+        "description": "Detailed error message",
+        "children": []
+      }
+    ],
+    "notes": "The image appears to be an API documentation showing both request parameters and response fields. Some sections might be truncated as the image shows a scrolled view.",
+    "chunk_metadata": {
+      "index": 1,
+      "total": 1,
+      "y_start": 0,
+      "y_end": 5894,
+      "overlap_top": 0,
+      "overlap_bottom": 0,
+      "height": 5894,
+      "path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\workspaces\\v2.voucher.get_voucher_list\\chunks\\chunk_001.png",
+      "filename": "chunk_001.png",
+      "width": 837
+    },
+    "analysis_timestamp": "2025-10-10T06:52:29.900627",
+    "model": "claude-3-5-sonnet-20241022"
+  }
+]

@@ -1,0 +1,115 @@
+[
+  {
+    "chunk_index": 1,
+    "total_chunks": 1,
+    "endpoint": "v1.ads.get_product_recommended_cn_target",
+    "method": "GET",
+    "description": "Product recommendation API",
+    "update_log": [
+      {
+        "date": "2024-11-20",
+        "change": "New API"
+      }
+    ],
+    "parameters": [
+      {
+        "name": "access_token",
+        "type": "string",
+        "required": true,
+        "description": "Authentication token"
+      },
+      {
+        "name": "shop_id",
+        "type": "integer",
+        "required": true,
+        "description": "Shop identifier"
+      }
+    ],
+    "response_fields": [
+      {
+        "name": "error",
+        "type": "string",
+        "description": "Error code when rate or error returned"
+      },
+      {
+        "name": "message",
+        "type": "string",
+        "description": "Error description"
+      },
+      {
+        "name": "request_id",
+        "type": "string",
+        "description": "Unique identifier for each request"
+      },
+      {
+        "name": "meta",
+        "type": "object",
+        "children": [
+          {
+            "name": "rate",
+            "type": "float",
+            "description": "The RCU target value"
+          },
+          {
+            "name": "same_second",
+            "type": "integer",
+            "description": "Current concurrent rate"
+          }
+        ]
+      },
+      {
+        "name": "user_second",
+        "type": "object",
+        "children": [
+          {
+            "name": "rate",
+            "type": "float",
+            "description": "The RCU target value"
+          },
+          {
+            "name": "same_second",
+            "type": "integer",
+            "description": "Current concurrent rate"
+          }
+        ]
+      }
+    ],
+    "error_codes": [
+      {
+        "code": "error_data",
+        "description": "parse data failed"
+      },
+      {
+        "code": "error_param",
+        "description": "parameter invalid"
+      },
+      {
+        "code": "error_server",
+        "description": "Something wrong. Please try later"
+      },
+      {
+        "code": "error_not",
+        "description": "Invalid or invalid"
+      },
+      {
+        "code": "error_full",
+        "description": "reach limit but blocked"
+      }
+    ],
+    "notes": "The documentation includes Python and cURL request examples, and shows both Common Parameters and Request Parameters sections. The API appears to be related to product recommendations with rate limiting functionality.",
+    "chunk_metadata": {
+      "index": 1,
+      "total": 1,
+      "y_start": 0,
+      "y_end": 4384,
+      "overlap_top": 0,
+      "overlap_bottom": 0,
+      "height": 4384,
+      "path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\workspaces\\v2.ads.get_product_recommended_roi_target\\chunks\\chunk_001.png",
+      "filename": "chunk_001.png",
+      "width": 837
+    },
+    "analysis_timestamp": "2025-10-10T05:31:46.145260",
+    "model": "claude-3-5-sonnet-20241022"
+  }
+]

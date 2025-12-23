@@ -1,0 +1,47 @@
+{
+  "chunk_index": 2,
+  "endpoint": null,
+  "method": null,
+  "description": null,
+  "parameters": [],
+  "response_fields": [
+    {
+      "name": "error_flash_sale_days_to_ship_lock",
+      "type": "string",
+      "description": "Days_to_ship cannot be changed when item is under ongoing/upcoming flash sale."
+    },
+    {
+      "name": "error_slash_price_not_lowest",
+      "type": "string",
+      "description": "In slash sale, price should not be lower or same as slash price."
+    },
+    {
+      "name": "error_whole_sale_min_count_incorrect",
+      "type": "string",
+      "description": "Internal error, please contact openapi team."
+    },
+    {
+      "name": "error_whole_sale_price_setting_incorrect",
+      "type": "string",
+      "description": "Wholesale price can't more than original price."
+    },
+    {
+      "name": "error_video_info_not_found",
+      "type": "string",
+      "description": "Video_info not found."
+    }
+  ],
+  "chunk_metadata": {
+    "index": 2,
+    "total": 4,
+    "y_start": 7258,
+    "y_end": 15258,
+    "overlap_top": 500,
+    "overlap_bottom": 500,
+    "height": 8000,
+    "path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\workspaces\\v2.product.update_item\\chunks\\chunk_002.png",
+    "filename": "chunk_002.png",
+    "width": 837
+  },
+  "chunk_path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\workspaces\\v2.product.update_item\\chunks\\chunk_002.png"
+}

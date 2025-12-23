@@ -1,0 +1,75 @@
+{
+  "endpoint": "/handle_buyer_cancellation",
+  "method": "POST",
+  "description": "API for order buyer cancellation processing",
+  "parameters": [
+    {
+      "name": "partner_id",
+      "type": "string",
+      "required": true,
+      "description": "Partner unique identifier for all requests",
+      "children": []
+    },
+    {
+      "name": "msg_id",
+      "type": "string",
+      "required": true,
+      "description": "Request unique identifier for all requests. Express unique orders by year",
+      "children": []
+    },
+    {
+      "name": "type",
+      "type": "string",
+      "required": true,
+      "description": "Business unique identifier for partner_id",
+      "children": []
+    },
+    {
+      "name": "order_id",
+      "type": "string",
+      "required": true,
+      "description": "The order identification used to handle business",
+      "children": []
+    },
+    {
+      "name": "message_id",
+      "type": "string",
+      "required": true,
+      "description": "The identifier for an API request for once",
+      "children": []
+    },
+    {
+      "name": "error",
+      "type": "string",
+      "required": true,
+      "description": "Indicate error type if the error. Empty if no error",
+      "children": []
+    },
+    {
+      "name": "message",
+      "type": "string",
+      "required": true,
+      "description": "Indicate error details if the error. Empty if no message",
+      "children": []
+    },
+    {
+      "name": "status_time",
+      "type": "timestamp",
+      "required": true,
+      "description": "The time when the order is updated",
+      "children": []
+    }
+  ],
+  "response_fields": [],
+  "update_log": [],
+  "hidden_fields": [],
+  "metadata": {
+    "total_chunks": 1,
+    "chunks_with_errors": 0,
+    "total_parameters_before_dedup": 8,
+    "total_parameters_after_dedup": 8,
+    "update_log_entries": 0,
+    "hidden_fields_count": 0,
+    "source_results": "workspaces\\v2.order.handle_buyer_cancellation\\results\\all_chunks_results.json"
+  }
+}

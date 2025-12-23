@@ -1,0 +1,97 @@
+[
+  {
+    "chunk_index": 1,
+    "total_chunks": 1,
+    "endpoint": "/openweexsdk/add_item_lot",
+    "method": null,
+    "description": null,
+    "update_log": [
+      {
+        "date": "2024-09-24",
+        "change": "New API"
+      }
+    ],
+    "parameters": [
+      {
+        "name": "session_id",
+        "type": "string",
+        "required": true,
+        "description": "The identifier of developer session",
+        "children": []
+      },
+      {
+        "name": "time_lot",
+        "type": "string",
+        "required": true,
+        "description": "The lot of item to sell",
+        "children": []
+      },
+      {
+        "name": "shop_id",
+        "type": "string",
+        "required": true,
+        "description": "The shop of this item",
+        "children": []
+      }
+    ],
+    "response_parameters": [
+      {
+        "name": "message",
+        "type": "string",
+        "required": true,
+        "description": "Indicate error type if any error. Empty if no error happened",
+        "children": []
+      },
+      {
+        "name": "result",
+        "type": "string",
+        "required": true,
+        "description": "Indicate error message if any error. Empty if no error happened",
+        "children": []
+      },
+      {
+        "name": "request_id",
+        "type": "string",
+        "required": true,
+        "description": "The identifier for API request for error correlation",
+        "children": []
+      },
+      {
+        "name": "response",
+        "type": "object",
+        "required": true,
+        "description": "Order information you are querying",
+        "children": []
+      }
+    ],
+    "error_codes": [
+      {
+        "code": "error_data",
+        "description": "please input item id"
+      },
+      {
+        "code": "error_param",
+        "description": "wrong parameter usage"
+      },
+      {
+        "code": "error_service",
+        "description": "service error"
+      }
+    ],
+    "notes": "The documentation shows multiple URLs for different contexts (UK, China Mainland, Brazil, etc). There are also several error codes listed that indicate various validation and service errors. The API appears to be related to adding items in some kind of lot or batch system.",
+    "chunk_metadata": {
+      "index": 1,
+      "total": 1,
+      "y_start": 0,
+      "y_end": 4291,
+      "overlap_top": 0,
+      "overlap_bottom": 0,
+      "height": 4291,
+      "path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\workspaces\\v2.livestream.add_item_list\\chunks\\chunk_001.png",
+      "filename": "chunk_001.png",
+      "width": 837
+    },
+    "analysis_timestamp": "2025-10-10T05:52:51.380556",
+    "model": "claude-3-5-sonnet-20241022"
+  }
+]

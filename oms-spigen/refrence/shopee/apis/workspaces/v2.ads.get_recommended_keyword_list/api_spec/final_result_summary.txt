@@ -1,0 +1,41 @@
+======================================================================
+API SPECIFICATION SUMMARY
+======================================================================
+
+Endpoint: GET ads_get_recommended_keyword_list
+Description: API endpoint for retrieving recommended keywords
+
+Parameters (3):
+----------------------------------------------------------------------
+* access_token (string)
+   Required authorization token
+  prog_id (string)
+  opt (string)
+   Suggests unique identifier for a prog. Required params to start PNS
+
+Response Fields (5):
+----------------------------------------------------------------------
+  error (string)
+   Error code details when an error returned
+  message (string)
+   Error description
+  request_id (string)
+   Request ID unique to each request
+  suggested_keywords (array)
+   Suggested keywords recommended from program
+  sample_size (integer)
+   Size of sample dataset used
+
+Metadata:
+----------------------------------------------------------------------
+  total_chunks: 1
+  chunks_with_errors: 0
+  total_parameters_before_dedup: 3
+  total_parameters_after_dedup: 3
+  update_log_entries: 1
+  hidden_fields_count: 0
+  source_results: workspaces\v2.ads.get_recommended_keyword_list\results\all_chunks_results.json
+
+======================================================================
+Legend: * = required parameter
+======================================================================

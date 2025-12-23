@@ -1,0 +1,98 @@
+{
+  "endpoint": "/openapi/get_video_info",
+  "method": "GET",
+  "description": "Get video metadata information",
+  "parameters": [
+    {
+      "name": "feed_token",
+      "type": "string",
+      "required": true,
+      "description": "Access key",
+      "truncated": false,
+      "continued": false,
+      "children": []
+    },
+    {
+      "name": "url",
+      "type": "string",
+      "required": true,
+      "description": "Video URL (Chinese Standard)",
+      "truncated": false,
+      "continued": false,
+      "children": []
+    },
+    {
+      "name": "hd_url",
+      "type": "string",
+      "required": false,
+      "description": "Video URL (Chinese Standard) - high definition",
+      "truncated": false,
+      "continued": false,
+      "children": []
+    },
+    {
+      "name": "session_id",
+      "type": "string",
+      "required": true,
+      "description": "Format id is assigned upon registration is successful",
+      "truncated": false,
+      "continued": false,
+      "children": []
+    }
+  ],
+  "response_fields": [
+    {
+      "name": "session_id",
+      "type": "string",
+      "description": "The identifier of broadcast session",
+      "children": []
+    },
+    {
+      "name": "title",
+      "type": "string",
+      "description": "Title of the video",
+      "children": []
+    },
+    {
+      "name": "status",
+      "type": "string",
+      "description": "Video status identifier",
+      "children": []
+    },
+    {
+      "name": "play_time",
+      "type": "integer",
+      "description": "The time of the video in the completed key or current session",
+      "children": []
+    },
+    {
+      "name": "size",
+      "type": "integer",
+      "description": "Size of the file",
+      "children": []
+    },
+    {
+      "name": "start_time",
+      "type": "float",
+      "description": "The time point at the start of the being processed session",
+      "children": []
+    },
+    {
+      "name": "original_path",
+      "type": "float",
+      "description": "The original size of the item in the being processed",
+      "children": []
+    }
+  ],
+  "update_log": [],
+  "hidden_fields": [],
+  "metadata": {
+    "total_chunks": 1,
+    "chunks_with_errors": 0,
+    "total_parameters_before_dedup": 4,
+    "total_parameters_after_dedup": 4,
+    "update_log_entries": 0,
+    "hidden_fields_count": 0,
+    "source_results": "platforms\\shopee\\apis\\workspaces\\v2.livestream.get_show_item\\results\\all_chunks_results.json"
+  }
+}

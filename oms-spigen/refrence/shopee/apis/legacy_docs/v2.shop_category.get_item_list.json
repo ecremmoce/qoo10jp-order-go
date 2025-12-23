@@ -1,0 +1,68 @@
+{
+  "endpoint": "/open/api/check_price_place_test",
+  "method": "POST",
+  "description": "A test endpoint for checking price placement",
+  "parameters": [
+    {
+      "name": "symbol",
+      "type": "string",
+      "required": true,
+      "description": "Trading pair, format is [currency]_[base currency]",
+      "children": []
+    },
+    {
+      "name": "symbol_name",
+      "type": "string",
+      "required": false,
+      "description": "Symbol's parameter to symbol_id specific Reference",
+      "children": []
+    },
+    {
+      "name": "cfg_id",
+      "type": "string",
+      "required": false,
+      "description": "This is the cfg id link for checking cfg related parameter",
+      "children": []
+    }
+  ],
+  "response_fields": [
+    {
+      "name": "price_ctr",
+      "type": "string",
+      "required": true,
+      "description": "Describes the relative price grade factor in determining character value size. The more precise the value, the more precise the result.",
+      "children": []
+    },
+    {
+      "name": "price_cfg",
+      "type": "string",
+      "required": true,
+      "description": "If new items are available to define, you can specify a price cfg to check these parameters",
+      "children": []
+    }
+  ],
+  "update_log": [
+    {
+      "date": "2023-12-27",
+      "change": "Add new feature statement"
+    },
+    {
+      "date": "2023-09-26",
+      "change": "Complete by feature allowance of Context-Parameter and Response Parameter"
+    },
+    {
+      "date": "2023-09-19",
+      "change": "Add new field in Context parameter"
+    }
+  ],
+  "hidden_fields": [],
+  "metadata": {
+    "total_chunks": 1,
+    "chunks_with_errors": 0,
+    "total_parameters_before_dedup": 3,
+    "total_parameters_after_dedup": 3,
+    "update_log_entries": 3,
+    "hidden_fields_count": 0,
+    "source_results": "workspaces\\v2.shop_category.get_item_list\\results\\all_chunks_results.json"
+  }
+}

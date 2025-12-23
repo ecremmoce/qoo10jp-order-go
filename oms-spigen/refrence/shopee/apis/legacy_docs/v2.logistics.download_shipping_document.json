@@ -1,0 +1,73 @@
+{
+  "endpoint": "/shipping/document",
+  "method": "POST",
+  "description": "Cross-border shipping document API",
+  "parameters": [
+    {
+      "name": "order_id",
+      "type": "string",
+      "required": true,
+      "description": "The unique order ID"
+    },
+    {
+      "name": "type",
+      "type": "string",
+      "required": true,
+      "description": "Document type to be shipped"
+    },
+    {
+      "name": "shipping_document_type",
+      "type": "string",
+      "required": false,
+      "description": "Shipping document metadata"
+    },
+    {
+      "name": "var_url",
+      "type": "string",
+      "required": false,
+      "description": "Document unique variable for var type"
+    },
+    {
+      "name": "partner_number",
+      "type": "string",
+      "required": false,
+      "description": "Logistic partner order number, only needed if var_type = PARTNER_NUMBER"
+    }
+  ],
+  "response_fields": [
+    {
+      "name": "error_codes",
+      "type": "object",
+      "children": [
+        {
+          "name": "shipping_order_not_exist",
+          "description": "Input order id doesn't exist"
+        },
+        {
+          "name": "error_partner_number",
+          "description": "Input partner number is incorrect or invalid"
+        },
+        {
+          "name": "shipping_document_download",
+          "description": "Document error when download from server"
+        }
+      ]
+    }
+  ],
+  "update_log": [
+    {
+      "date": "2024-02-07",
+      "change": "Add THAILAND_SHIPPER_LABEL_TYPE for shipping documents type"
+    }
+  ],
+  "hidden_fields": [],
+  "metadata": {
+    "total_chunks": 1,
+    "chunks_with_errors": 0,
+    "total_parameters_before_dedup": 5,
+    "total_parameters_after_dedup": 5,
+    "update_log_entries": 1,
+    "hidden_fields_count": 0,
+    "source_results": "workspaces\\v2.logistics.download_shipping_document\\results\\all_chunks_results.json"
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "document_id": "developer-guide.14",
+  "document_type": "guide",
+  "platform": "shopee",
+  "extracted_at": "2025-10-16T08:04:33",
+  "extracted_text": "# App management\n\nLast Updated: 2025-04-24\n\n**Language Supported:** English / 简体中文 / 繁體中文 / Português / ไทย\n\nOnce your developer account is approved, you can create new Apps in the Shopee Open Platform Console Create App page.\n\n## App types\n\nThere are several types of Apps on Shopee Open Platform, each designed for different purposes.\n\n- **ERP System**: Such Apps are for managing key business processes. This App type is suitable if you provide software services to Shopee sellers.\n- **Product Management**: Such Apps are for managing product-related processes.\n- **Order Management**: Such Apps are for managing processes related to order and fulfillment.\n- **Accounting and Finance**: Such Apps are for managing processes related to finance and order reconciliation processes.\n- **Marketing**: Such Apps are for managing processes related to marketing.\n- **Seller In-house System**: Use this App type if you are a Shopee seller managing your own Apps.\n- **Customer Service**: Such Apps are for managing processes related to customer service.\n\nDifferent types of developer accounts can create different types of Apps.\n\n### Developer account types\n\n| App Types | Third-party Partner Platform (ISV) | Registered Business Seller | Individual Seller | Individual Third Party* |\n|-----------|-----------------------------------|---------------------------|-------------------|------------------------|\n| ERP System | ✓ | | | |\n| Product Management | ✓ | | | ✓ |\n| Order Management | ✓ | | | ✓ |",
+  "metadata": {
+    "title": "App management",
+    "summary": "This guide provides an overview of app management within the Shopee Open Platform. It describes the different app types available and which developer account types can create them.",
+    "keywords": [
+      "Shopee Open Platform",
+      "App management",
+      "App types",
+      "Developer account",
+      "ERP System",
+      "Product Management",
+      "Order Management"
+    ],
+    "category": "App Management",
+    "tags": [
+      "App",
+      "Shopee",
+      "Open Platform",
+      "Developer"
+    ],
+    "difficulty": "easy",
+    "importance": 5,
+    "use_cases": [
+      "Creating a new app on the Shopee Open Platform",
+      "Understanding the different app types available",
+      "Determining which app type is suitable for a specific purpose",
+      "Checking which developer account type is needed for a specific app type"
+    ],
+    "related_apis": []
+  }
+}

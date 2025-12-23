@@ -1,0 +1,40 @@
+{
+  "chunk_index": 3,
+  "endpoint": null,
+  "method": null,
+  "description": "API Documentation Update Log",
+  "parameters": [],
+  "response_fields": [
+    {
+      "name": "error_param",
+      "type": "string",
+      "description": "Please do not request with tracking_no for this channel which does not require tracking_no",
+      "children": []
+    },
+    {
+      "name": "error_param",
+      "type": "string",
+      "description": "Slug not allowed empty",
+      "children": []
+    },
+    {
+      "name": "error_param",
+      "type": "string",
+      "description": "Slug not required",
+      "children": []
+    }
+  ],
+  "chunk_metadata": {
+    "index": 3,
+    "total": 3,
+    "y_start": 14750,
+    "y_end": 17713,
+    "overlap_top": 500,
+    "overlap_bottom": 0,
+    "height": 2963,
+    "path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\workspaces\\v2.logistics.ship_order\\chunks\\chunk_003.png",
+    "filename": "chunk_003.png",
+    "width": 837
+  },
+  "chunk_path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\workspaces\\v2.logistics.ship_order\\chunks\\chunk_003.png"
+}

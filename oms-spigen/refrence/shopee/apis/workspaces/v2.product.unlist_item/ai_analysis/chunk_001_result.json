@@ -1,0 +1,94 @@
+{
+  "chunk_index": 1,
+  "total_chunks": 1,
+  "endpoint": null,
+  "method": null,
+  "description": null,
+  "update_log": [],
+  "hidden_fields": [],
+  "parameters": [
+    {
+      "name": "url",
+      "type": "string",
+      "required": true,
+      "description": "Payment URL from the bank",
+      "children": []
+    },
+    {
+      "name": "amount",
+      "type": "string",
+      "required": true,
+      "description": "Transaction amount",
+      "children": []
+    }
+  ],
+  "response_fields": [
+    {
+      "name": "error_code",
+      "type": "string",
+      "description": "Error code values",
+      "children": []
+    }
+  ],
+  "error_codes": [
+    {
+      "code": "error_failed_bank_login",
+      "description": "Failed to log into bank"
+    },
+    {
+      "code": "error_payment_failed",
+      "description": "Payment has failed"
+    },
+    {
+      "code": "error_wrong_credentials",
+      "description": "Wrong credentials"
+    },
+    {
+      "code": "error_bank_maintenance",
+      "description": "Bank is under maintenance"
+    },
+    {
+      "code": "error_invalid_amount",
+      "description": "Invalid amount"
+    },
+    {
+      "code": "error_timeout",
+      "description": "Transaction timeout"
+    },
+    {
+      "code": "error_insufficient_funds",
+      "description": "Insufficient funds"
+    },
+    {
+      "code": "error_card_blocked",
+      "description": "Card has been blocked"
+    },
+    {
+      "code": "error_invalid_card",
+      "description": "Invalid card information"
+    },
+    {
+      "code": "error_max_attempts",
+      "description": "Maximum attempts reached"
+    },
+    {
+      "code": "error_system",
+      "description": "System error"
+    }
+  ],
+  "notes": "The image appears to be showing API documentation for a payment-related endpoint. It includes common parameters, response parameters, and a comprehensive list of error codes. The documentation seems to be focused on bank payment processing functionality.",
+  "chunk_metadata": {
+    "index": 1,
+    "total": 1,
+    "y_start": 0,
+    "y_end": 5849,
+    "overlap_top": 0,
+    "overlap_bottom": 0,
+    "height": 5849,
+    "path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\workspaces\\v2.product.unlist_item\\chunks\\chunk_001.png",
+    "filename": "chunk_001.png",
+    "width": 837
+  },
+  "analysis_timestamp": "2025-10-10T06:35:13.957649",
+  "model": "claude-3-5-sonnet-20241022"
+}

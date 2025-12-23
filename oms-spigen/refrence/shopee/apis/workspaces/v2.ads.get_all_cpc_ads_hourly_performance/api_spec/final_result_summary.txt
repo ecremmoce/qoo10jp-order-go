@@ -1,0 +1,41 @@
+======================================================================
+API SPECIFICATION SUMMARY
+======================================================================
+
+Endpoint: None at_job_ad_csv_ads_batch_performance
+
+Parameters (4):
+----------------------------------------------------------------------
+* url (string)
+   API request URL
+* method (string)
+   HTTP request method
+* params_p (object)
+   Parameters to be passed
+  debug_p (string)
+   Debug parameter
+
+Response Fields (4):
+----------------------------------------------------------------------
+  error (string)
+   Error message when system error occurs
+  message (string)
+   Error description text
+  request_id (string)
+   Request ID for troubleshooting
+  data (object)
+   Response data object
+
+Metadata:
+----------------------------------------------------------------------
+  total_chunks: 1
+  chunks_with_errors: 0
+  total_parameters_before_dedup: 4
+  total_parameters_after_dedup: 4
+  update_log_entries: 0
+  hidden_fields_count: 0
+  source_results: workspaces\v2.ads.get_all_cpc_ads_hourly_performance\results\all_chunks_results.json
+
+======================================================================
+Legend: * = required parameter
+======================================================================

@@ -1,0 +1,342 @@
+{
+  "developer-guide.4": {
+    "content_hash": "635e6c855aeca405cb2531b60a7068d4f309b6c6c7b04c26a06cb52485adf0bd",
+    "last_checked": "2025-10-16T08:02:00.586490",
+    "url": "https://open.shopee.com/developer-guide/4",
+    "title": "Introduction",
+    "last_changed": "2025-10-16T08:02:00.586503",
+    "preview": "What is Shopee Open Platform? Created to support developers serving Shopee sellers with different ec"
+  },
+  "developer-guide.12": {
+    "content_hash": "635e6c855aeca405cb2531b60a7068d4f309b6c6c7b04c26a06cb52485adf0bd",
+    "last_checked": "2025-10-16T08:04:19.713401",
+    "url": "https://open.shopee.com/developer-guide/12",
+    "title": "Developer account registration",
+    "last_changed": "2025-10-16T06:35:43.244326",
+    "preview": "There are 2 key stages to creating a Shopee Open Platform account: (A) Signing up (B) Submitting pro"
+  },
+  "developer-guide.14": {
+    "content_hash": "635e6c855aeca405cb2531b60a7068d4f309b6c6c7b04c26a06cb52485adf0bd",
+    "last_checked": "2025-10-16T08:04:44.735237",
+    "url": "https://open.shopee.com/developer-guide/14",
+    "title": "App management"
+  },
+  "developer-guide.16": {
+    "content_hash": "635e6c855aeca405cb2531b60a7068d4f309b6c6c7b04c26a06cb52485adf0bd",
+    "last_checked": "2025-10-16T08:05:20.541798",
+    "url": "https://open.shopee.com/developer-guide/16",
+    "title": "API calls"
+  },
+  "developer-guide.18": {
+    "content_hash": "635e6c855aeca405cb2531b60a7068d4f309b6c6c7b04c26a06cb52485adf0bd",
+    "last_checked": "2025-10-16T08:07:51.436272",
+    "url": "https://open.shopee.com/developer-guide/18",
+    "title": "Push Mechanism notifications",
+    "last_changed": "2025-10-16T08:07:51.436283",
+    "preview": "Push Mechanism notifications Subscribing to Shopee Open Platform Push Mechanism helps you get immedi"
+  },
+  "developer-guide.20": {
+    "content_hash": "635e6c855aeca405cb2531b60a7068d4f309b6c6c7b04c26a06cb52485adf0bd",
+    "last_checked": "2025-10-16T08:14:44.515897",
+    "url": "https://open.shopee.com/developer-guide/20",
+    "title": "Authorization and Authentication",
+    "last_changed": "2025-10-16T08:14:44.515906",
+    "preview": "Authorization is an important step to using Open API. You need to be authorized by the seller in ord"
+  },
+  "developer-guide.644": {
+    "content_hash": "635e6c855aeca405cb2531b60a7068d4f309b6c6c7b04c26a06cb52485adf0bd",
+    "last_checked": "2025-10-16T08:18:58.233083",
+    "url": "https://open.shopee.com/developer-guide/644",
+    "title": "Sandbox Testing V2",
+    "last_changed": "2025-10-16T08:18:58.233094",
+    "preview": "Overall Introduction （ Notice: After logging into the Open Console, check the Test Account function "
+  },
+  "developer-guide.24": {
+    "content_hash": "635e6c855aeca405cb2531b60a7068d4f309b6c6c7b04c26a06cb52485adf0bd",
+    "last_checked": "2025-10-16T08:21:19.057512",
+    "url": "https://open.shopee.com/developer-guide/24",
+    "title": "Service Partner Program",
+    "last_changed": "2025-10-16T08:21:19.057518",
+    "preview": "About Service Partner Program The Service Partner Program applies to all Independent Software Vendor"
+  },
+  "developer-guide.27": {
+    "content_hash": "635e6c855aeca405cb2531b60a7068d4f309b6c6c7b04c26a06cb52485adf0bd",
+    "last_checked": "2025-10-16T08:23:36.193457",
+    "url": "https://open.shopee.com/developer-guide/27",
+    "title": "V2.0 API Call Flow",
+    "last_changed": "2025-10-16T08:23:36.193471",
+    "preview": "Create item Note: Dotted line is optional flow. Order Status Flow Note: Dotted line is optional flow"
+  },
+  "developer-guide.28": {
+    "content_hash": "635e6c855aeca405cb2531b60a7068d4f309b6c6c7b04c26a06cb52485adf0bd",
+    "last_checked": "2025-10-16T08:25:59.194849",
+    "url": "https://open.shopee.com/developer-guide/28",
+    "title": "CNSC API Integration Guide",
+    "last_changed": "2025-10-16T08:25:59.194856",
+    "preview": "1. What is CNSC The full name of CNSC is the China Seller Center, is a customized seller backend for"
+  },
+  "developer-guide.29": {
+    "content_hash": "635e6c855aeca405cb2531b60a7068d4f309b6c6c7b04c26a06cb52485adf0bd",
+    "last_checked": "2025-10-16T08:28:27.724301",
+    "url": "https://open.shopee.com/developer-guide/29",
+    "title": "KRSC API Integration Guide",
+    "last_changed": "2025-10-16T08:28:27.724314",
+    "preview": "1. What is KRSC The full name of KRSC is the Korean Seller Center. It is a seller center for Korean "
+  },
+  "developer-guide.31": {
+    "content_hash": "635e6c855aeca405cb2531b60a7068d4f309b6c6c7b04c26a06cb52485adf0bd",
+    "last_checked": "2025-10-16T08:32:16.788927",
+    "url": "https://open.shopee.com/developer-guide/31",
+    "title": "V2.0 Data Definition",
+    "last_changed": "2025-10-16T08:32:16.788933",
+    "preview": "Basic Data Type uint8: 8 bit unsigned integer uint16: 16 bit unsigned integer int32: 32 bit signed i"
+  },
+  "developer-guide.217": {
+    "content_hash": "635e6c855aeca405cb2531b60a7068d4f309b6c6c7b04c26a06cb52485adf0bd",
+    "last_checked": "2025-10-16T08:33:23.830190",
+    "url": "https://open.shopee.com/developer-guide/217",
+    "title": "Guidelines for Creating Product",
+    "last_changed": "2025-10-16T08:33:23.830202",
+    "preview": "1) We recommend cross-border sellers who have upgraded CNSC/KRSC to read the following articles to c"
+  },
+  "developer-guide.209": {
+    "content_hash": "635e6c855aeca405cb2531b60a7068d4f309b6c6c7b04c26a06cb52485adf0bd",
+    "last_checked": "2025-10-16T08:36:03.498028",
+    "url": "https://open.shopee.com/developer-guide/209",
+    "title": "Product creation preparation",
+    "last_changed": "2025-10-16T08:36:03.498035",
+    "preview": "Before creating a product, you need to get the category, attributes, brand,days to ship, whether the"
+  },
+  "developer-guide.211": {
+    "content_hash": "635e6c855aeca405cb2531b60a7068d4f309b6c6c7b04c26a06cb52485adf0bd",
+    "last_checked": "2025-10-16T08:38:48.940161",
+    "url": "https://open.shopee.com/developer-guide/211",
+    "title": "Creating product",
+    "last_changed": "2025-10-16T08:38:48.940173",
+    "preview": "Once you have obtained the product base data, you can start creating products. 1. Uploading media fi"
+  },
+  "developer-guide.213": {
+    "content_hash": "635e6c855aeca405cb2531b60a7068d4f309b6c6c7b04c26a06cb52485adf0bd",
+    "last_checked": "2025-10-16T08:42:27.403225",
+    "url": "https://open.shopee.com/developer-guide/213",
+    "title": "Creating global product",
+    "last_changed": "2025-10-16T08:42:27.403231",
+    "preview": "*This article applies to cross-border sellers who have upgraded CNSC/KRSC What is the global product"
+  },
+  "developer-guide.215": {
+    "content_hash": "635e6c855aeca405cb2531b60a7068d4f309b6c6c7b04c26a06cb52485adf0bd",
+    "last_checked": "2025-10-16T08:43:24.475685",
+    "url": "https://open.shopee.com/developer-guide/215",
+    "title": "Publishing global product",
+    "last_changed": "2025-10-16T08:43:24.475697",
+    "preview": "*This article applies to cross-border sellers who have upgraded CNSC/KRSC After creating a global pr"
+  },
+  "developer-guide.219": {
+    "content_hash": "635e6c855aeca405cb2531b60a7068d4f309b6c6c7b04c26a06cb52485adf0bd",
+    "last_checked": "2025-10-16T08:45:31.292204",
+    "url": "https://open.shopee.com/developer-guide/219",
+    "title": "Variant management",
+    "last_changed": "2025-10-16T08:45:31.292212",
+    "preview": "Shopee supports defining variant structures with up to two levels of specifications. The total numbe"
+  },
+  "developer-guide.221": {
+    "content_hash": "635e6c855aeca405cb2531b60a7068d4f309b6c6c7b04c26a06cb52485adf0bd",
+    "last_checked": "2025-10-16T08:46:51.570627",
+    "url": "https://open.shopee.com/developer-guide/221",
+    "title": "Product base info management",
+    "last_changed": "2025-10-16T08:46:51.570644",
+    "preview": "1. Getting product list 1.1 Getting all shop products API: v2.product.get_item_list This API allows "
+  },
+  "developer-guide.223": {
+    "content_hash": "635e6c855aeca405cb2531b60a7068d4f309b6c6c7b04c26a06cb52485adf0bd",
+    "last_checked": "2025-10-16T08:48:10.154370",
+    "url": "https://open.shopee.com/developer-guide/223",
+    "title": "Stock & Price Management",
+    "last_changed": "2025-10-16T08:48:10.154381",
+    "preview": "1. Getting product price If a product has no variants, please use v2.product.get_item_base_info API "
+  },
+  "developer-guide.229": {
+    "content_hash": "635e6c855aeca405cb2531b60a7068d4f309b6c6c7b04c26a06cb52485adf0bd",
+    "last_checked": "2025-10-16T08:52:13.092096",
+    "url": "https://open.shopee.com/developer-guide/229",
+    "title": "Order Management",
+    "last_changed": "2025-10-16T08:52:13.092105",
+    "preview": "1. Entity Order: Created after checkout. 1 order can contain multiple items. Package: Created after "
+  },
+  "developer-guide.225": {
+    "content_hash": "635e6c855aeca405cb2531b60a7068d4f309b6c6c7b04c26a06cb52485adf0bd",
+    "last_checked": "2025-10-16T08:53:26.292017",
+    "url": "https://open.shopee.com/developer-guide/225",
+    "title": "First Mile Binding",
+    "last_changed": "2025-10-16T08:53:26.292028",
+    "preview": "*This article only applies to cross-border sellers. Currently, for cross-border sellers in Mainland "
+  },
+  "developer-guide.227": {
+    "content_hash": "635e6c855aeca405cb2531b60a7068d4f309b6c6c7b04c26a06cb52485adf0bd",
+    "last_checked": "2025-10-16T08:55:06.562555",
+    "url": "https://open.shopee.com/developer-guide/227",
+    "title": "Return Refund Management",
+    "last_changed": "2025-10-16T08:55:06.562568",
+    "preview": "1.Return Status Flow 2.Return API Call Flow 2.1 Getting the list of return orders and details v2.ret"
+  },
+  "developer-guide.261": {
+    "content_hash": "635e6c855aeca405cb2531b60a7068d4f309b6c6c7b04c26a06cb52485adf0bd",
+    "last_checked": "2025-10-16T08:57:42.331361",
+    "url": "https://open.shopee.com/developer-guide/261",
+    "title": "SIP best practices",
+    "last_changed": "2025-10-16T08:57:42.331369",
+    "preview": "What is SIP? The full name of SIP is Shopee International Platform (Shopee International Platform). "
+  },
+  "developer-guide.277": {
+    "content_hash": "635e6c855aeca405cb2531b60a7068d4f309b6c6c7b04c26a06cb52485adf0bd",
+    "last_checked": "2025-10-16T08:59:19.255915",
+    "url": "https://open.shopee.com/developer-guide/277",
+    "title": "Shopee On-Platform Ads API Guide",
+    "last_changed": "2025-10-16T08:59:19.255927",
+    "preview": "What is Shopee Ads Shopee Ads allow you to create ads within Shopee’s platform to increase exposure "
+  },
+  "developer-guide.677": {
+    "content_hash": "635e6c855aeca405cb2531b60a7068d4f309b6c6c7b04c26a06cb52485adf0bd",
+    "last_checked": "2025-10-16T09:00:56.991685",
+    "url": "https://open.shopee.com/developer-guide/677",
+    "title": "Shopee Xpress - Package-free Integration Guide",
+    "last_changed": "2025-10-16T09:00:56.991691",
+    "preview": "1.Terminology Shopee Xpress - Package-free: logistics channel ID 30029 Unpackage sku id: Unique item"
+  },
+  "developer-guide.286": {
+    "content_hash": "635e6c855aeca405cb2531b60a7068d4f309b6c6c7b04c26a06cb52485adf0bd",
+    "last_checked": "2025-10-16T09:05:31.143312",
+    "url": "https://open.shopee.com/developer-guide/286",
+    "title": "API de Cotação (Logística do Vendedor)",
+    "last_changed": "2025-10-16T09:05:31.143324",
+    "preview": "O que é o canal Logística do vendedor Este canal permite que o vendedor utilize sua própria logístic"
+  },
+  "developer-guide.290": {
+    "content_hash": "635e6c855aeca405cb2531b60a7068d4f309b6c6c7b04c26a06cb52485adf0bd",
+    "last_checked": "2025-10-16T09:06:45.576436",
+    "url": "https://open.shopee.com/developer-guide/290",
+    "title": "Shopee Entrega Direta",
+    "last_changed": "2025-10-16T09:06:45.576443",
+    "preview": "What is the Shopee Direct Delivery channel? This channel allows (and requires) the seller to make fa"
+  },
+  "developer-guide.378": {
+    "content_hash": "635e6c855aeca405cb2531b60a7068d4f309b6c6c7b04c26a06cb52485adf0bd",
+    "last_checked": "2025-10-16T09:08:21.190024",
+    "url": "https://open.shopee.com/developer-guide/378",
+    "title": "AUTO PARTS: COMPATIBILIDADE DE AUTOPEÇAS",
+    "last_changed": "2025-10-16T09:08:21.190034",
+    "preview": "A partir do dia 24 de junho de 2024 está disponível na Shopee a feature que permite adicionar compat"
+  },
+  "developer-guide.292": {
+    "content_hash": "635e6c855aeca405cb2531b60a7068d4f309b6c6c7b04c26a06cb52485adf0bd",
+    "last_checked": "2025-10-16T09:10:07.655746",
+    "url": "https://open.shopee.com/developer-guide/292",
+    "title": "Passo a Passo Logistica API",
+    "last_changed": "2025-10-16T09:10:07.655758",
+    "preview": "Fluxo de Chamadas na v2 O fluxo de chamadas na v2 que relaciona aos canais de envio é conforme: 1. A"
+  },
+  "developer-guide.381": {
+    "content_hash": "635e6c855aeca405cb2531b60a7068d4f309b6c6c7b04c26a06cb52485adf0bd",
+    "last_checked": "2025-10-16T09:11:13.657180",
+    "url": "https://open.shopee.com/developer-guide/381",
+    "title": "Ferramenta de Log da Open Platform",
+    "last_changed": "2025-10-16T09:11:13.657188",
+    "preview": "A Shopee Open Platform possui uma ferramenta de log, que disponibiliza para o desenvolvedor o acesso"
+  },
+  "developer-guide.382": {
+    "content_hash": "635e6c855aeca405cb2531b60a7068d4f309b6c6c7b04c26a06cb52485adf0bd",
+    "last_checked": "2025-10-16T09:14:05.985502",
+    "url": "https://open.shopee.com/developer-guide/382",
+    "title": "Passo a passo para subir a NF-e através da OpenAPI",
+    "last_changed": "2025-10-16T09:14:05.985515",
+    "preview": "Na Shopee, para vendedores CNPJ é necessário que seja adicionado a Nota Fiscal no pedido, exceto par"
+  },
+  "developer-guide.383": {
+    "content_hash": "635e6c855aeca405cb2531b60a7068d4f309b6c6c7b04c26a06cb52485adf0bd",
+    "last_checked": "2025-10-16T09:16:00.469324",
+    "url": "https://open.shopee.com/developer-guide/383",
+    "title": "APIs de orders",
+    "last_changed": "2025-10-16T09:16:00.469335",
+    "preview": "Fluxo de order Identificando uma nova order Atualmente existem duas formas de identificarmos uma nov"
+  },
+  "developer-guide.384": {
+    "content_hash": "635e6c855aeca405cb2531b60a7068d4f309b6c6c7b04c26a06cb52485adf0bd",
+    "last_checked": "2025-10-16T09:21:09.966096",
+    "url": "https://open.shopee.com/developer-guide/384",
+    "title": "Shopee Open API Platform | Passo a Passo de Solicitação",
+    "last_changed": "2025-10-16T09:21:09.966102",
+    "preview": "Acesse nosso Guia do Desenvolvedor para conferir todos os passos de cadastro, critérios e informaçõe"
+  },
+  "developer-guide.385": {
+    "content_hash": "635e6c855aeca405cb2531b60a7068d4f309b6c6c7b04c26a06cb52485adf0bd",
+    "last_checked": "2025-10-16T09:24:03.928166",
+    "url": "https://open.shopee.com/developer-guide/385",
+    "title": "Open API auth call | Fluxo autorização ",
+    "last_changed": "2025-10-16T09:24:03.928177",
+    "preview": "Autorização de loja Na Shopee, para que um App (criado no Open Platform Console ) possa ter acesso a"
+  },
+  "developer-guide.568": {
+    "content_hash": "635e6c855aeca405cb2531b60a7068d4f309b6c6c7b04c26a06cb52485adf0bd",
+    "last_checked": "2025-10-16T09:25:12.803957",
+    "url": "https://open.shopee.com/developer-guide/568",
+    "title": "Fulfilled by Shopee (BR)",
+    "last_changed": "2025-10-16T09:25:12.803967",
+    "preview": "Changes to OpenAPI for Sellers with \"Fulfilled by Shopee\" Workflows through Seller Center Workflows "
+  },
+  "developer-guide.697": {
+    "content_hash": "635e6c855aeca405cb2531b60a7068d4f309b6c6c7b04c26a06cb52485adf0bd",
+    "last_checked": "2025-10-16T09:28:39.790311",
+    "url": "https://open.shopee.com/developer-guide/697",
+    "title": "Quotation API (Entrega Expressa) Developer Guide",
+    "last_changed": "2025-10-16T09:28:39.790319",
+    "preview": "What is the Entrega Expressa Channel? This channel allows the seller to use their own logistics for "
+  },
+  "developer-guide.643": {
+    "content_hash": "635e6c855aeca405cb2531b60a7068d4f309b6c6c7b04c26a06cb52485adf0bd",
+    "last_checked": "2025-10-16T09:32:21.758982",
+    "url": "https://open.shopee.com/developer-guide/643",
+    "title": "Instant Mart Integration Guide",
+    "last_changed": "2025-10-16T09:32:21.758992",
+    "preview": "This document introduces the process for product listing, order management, income reporting, and Op"
+  },
+  "developer-guide.669": {
+    "content_hash": "635e6c855aeca405cb2531b60a7068d4f309b6c6c7b04c26a06cb52485adf0bd",
+    "last_checked": "2025-10-16T09:35:12.937205",
+    "url": "https://open.shopee.com/developer-guide/669",
+    "title": "Livestream API Integration Guide",
+    "last_changed": "2025-10-16T09:35:12.937219",
+    "preview": "1. Introduction to Shopee Livestream Shopee Livestream is a real-time marketing tool provided by the"
+  },
+  "developer-guide.36": {
+    "content_hash": "635e6c855aeca405cb2531b60a7068d4f309b6c6c7b04c26a06cb52485adf0bd",
+    "last_checked": "2025-10-16T09:41:15.443381",
+    "url": "https://open.shopee.com/developer-guide/36",
+    "title": "Terms of Service",
+    "last_changed": "2025-10-16T09:41:15.443387",
+    "preview": "1. INTRODUCTION Welcome to the Shopee Open Platform (“Platform”). Please read the following Terms of"
+  },
+  "developer-guide.32": {
+    "content_hash": "635e6c855aeca405cb2531b60a7068d4f309b6c6c7b04c26a06cb52485adf0bd",
+    "last_checked": "2025-10-16T09:47:08.706092",
+    "url": "https://open.shopee.com/developer-guide/32",
+    "title": "Data Protection Policy",
+    "last_changed": "2025-10-16T09:47:08.706098",
+    "preview": "Protecting our users’ privacy is extremely important to us. With this in mind, we’re providing this "
+  },
+  "developer-guide.34": {
+    "content_hash": "635e6c855aeca405cb2531b60a7068d4f309b6c6c7b04c26a06cb52485adf0bd",
+    "last_checked": "2025-10-16T09:49:15.178212",
+    "url": "https://open.shopee.com/developer-guide/34",
+    "title": "Platform Partner Rules",
+    "last_changed": "2025-10-16T09:49:15.178227",
+    "preview": "1. Platform Partner Rules The Platform Partner Rules documentation highlights the expected behavior "
+  },
+  "developer-guide.646": {
+    "content_hash": "635e6c855aeca405cb2531b60a7068d4f309b6c6c7b04c26a06cb52485adf0bd",
+    "last_checked": "2025-10-16T09:51:20.221263",
+    "url": "https://open.shopee.com/developer-guide/646",
+    "title": "TW Developer Screening",
+    "last_changed": "2025-10-16T09:51:20.221278",
+    "preview": "1. 有關 TW Developer Screening 依據數位發展部在2023年10月12日公告的 《數位經濟相關產業個人資料檔案安全維護管理辦法》 ，數位經濟相關產業業者應規劃、訂定及執行個人資"
+  }
+}

@@ -1,0 +1,89 @@
+{
+  "chunk_index": 1,
+  "total_chunks": 1,
+  "endpoint": "merchant_bnt_role_tracking_number_af",
+  "method": null,
+  "description": "Success parameter for order tracking number",
+  "update_log": [
+    {
+      "date": "2024-01-26",
+      "change": "API creation"
+    }
+  ],
+  "parameters": [
+    {
+      "name": "carrier_id",
+      "type": "string",
+      "required": true,
+      "description": "Partner ID is required upon application is successful",
+      "children": []
+    },
+    {
+      "name": "order_id",
+      "type": "string",
+      "required": true,
+      "description": "The identifier for an order",
+      "children": []
+    },
+    {
+      "name": "package_number",
+      "type": "string",
+      "required": true,
+      "description": "Request unique identifier for the package used for tracking and returns",
+      "children": []
+    },
+    {
+      "name": "pid",
+      "type": "string",
+      "required": false,
+      "description": "Indicate which type it for error. Empty if no error",
+      "children": []
+    },
+    {
+      "name": "response",
+      "type": "object",
+      "required": false,
+      "description": "Response type",
+      "children": []
+    },
+    {
+      "name": "tracking_id",
+      "type": "string",
+      "required": true,
+      "description": "The parameter that links tracking number, used for tracking",
+      "children": []
+    }
+  ],
+  "response_fields": [
+    {
+      "name": "order_id",
+      "type": "string",
+      "description": "Request unique identifier for an order"
+    },
+    {
+      "name": "package_number",
+      "type": "string",
+      "description": "Request unique identifier for the package"
+    },
+    {
+      "name": "tracking_id",
+      "type": "string",
+      "description": "Used for tracking"
+    }
+  ],
+  "notes": "The documentation includes error codes and example responses in PHP, cURL, and Python formats. The error codes section shows various error scenarios and their descriptions. The API appears to be related to tracking numbers and package management functionality.",
+  "chunk_metadata": {
+    "index": 1,
+    "total": 1,
+    "y_start": 0,
+    "y_end": 4344,
+    "overlap_top": 0,
+    "overlap_bottom": 0,
+    "height": 4344,
+    "path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\workspaces\\v2.first_mile.unbind_first_mile_tracking_number_all\\chunks\\chunk_001.png",
+    "filename": "chunk_001.png",
+    "width": 837
+  },
+  "analysis_timestamp": "2025-10-10T05:43:06.031440",
+  "model": "claude-3-5-sonnet-20241022"
+}

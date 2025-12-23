@@ -1,0 +1,72 @@
+{
+  "endpoint": "/openapi/get_geo_coordinate_fake",
+  "method": null,
+  "description": "Get geo coordinate API for testing",
+  "parameters": [
+    {
+      "name": "url",
+      "type": "string",
+      "required": true,
+      "description": "API URL endpoint",
+      "children": []
+    },
+    {
+      "name": "body",
+      "type": "object",
+      "required": false,
+      "description": "Request body parameters",
+      "children": [
+        {
+          "name": "timestamp",
+          "type": "integer",
+          "required": true,
+          "description": "Current timestamp",
+          "children": []
+        },
+        {
+          "name": "partner_id",
+          "type": "integer",
+          "required": true,
+          "description": "Partner ID as assigned upon registration",
+          "children": []
+        }
+      ]
+    }
+  ],
+  "response_fields": [
+    {
+      "name": "error",
+      "type": "string",
+      "description": "Error message",
+      "children": []
+    },
+    {
+      "name": "message",
+      "type": "string",
+      "description": "Error message",
+      "children": []
+    },
+    {
+      "name": "response",
+      "type": "mixed",
+      "description": "The successful content of the response",
+      "children": []
+    }
+  ],
+  "update_log": [
+    {
+      "date": "2023-11-14",
+      "change": "add http_get_geo_by_parameters"
+    }
+  ],
+  "hidden_fields": [],
+  "metadata": {
+    "total_chunks": 1,
+    "chunks_with_errors": 0,
+    "total_parameters_before_dedup": 2,
+    "total_parameters_after_dedup": 2,
+    "update_log_entries": 1,
+    "hidden_fields_count": 0,
+    "source_results": "workspaces\\v2.payment.get_item_installment_status\\results\\all_chunks_results.json"
+  }
+}

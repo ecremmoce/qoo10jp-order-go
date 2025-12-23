@@ -1,0 +1,123 @@
+[
+  {
+    "chunk_index": 1,
+    "total_chunks": 1,
+    "endpoint": "/buy_best_rate_and_post",
+    "method": null,
+    "description": null,
+    "update_log": [],
+    "hidden_fields": [],
+    "parameters": [
+      {
+        "name": "URL",
+        "type": "string",
+        "required": true,
+        "description": "https://openapihk.mixin.dev/webhook_best_rate/buy_best_rate_post",
+        "children": []
+      },
+      {
+        "name": "pay_url",
+        "type": "string",
+        "required": false,
+        "description": "Post price for better rate",
+        "children": []
+      },
+      {
+        "name": "amount",
+        "type": "string",
+        "required": true,
+        "description": "Amount",
+        "children": []
+      },
+      {
+        "name": "trace_id",
+        "type": "string",
+        "required": false,
+        "description": "Trace id",
+        "children": []
+      },
+      {
+        "name": "best_price",
+        "type": "string",
+        "required": false,
+        "description": "Best price",
+        "children": []
+      },
+      {
+        "name": "min_price",
+        "type": "string",
+        "required": false,
+        "description": "Minimum price",
+        "children": []
+      },
+      {
+        "name": "max_post_price",
+        "type": "bool",
+        "required": false,
+        "description": "Maximum post price",
+        "children": []
+      },
+      {
+        "name": "min_post_price",
+        "type": "bool",
+        "required": false,
+        "description": "Minimum post price",
+        "children": []
+      },
+      {
+        "name": "asset_id",
+        "type": "uuid",
+        "required": false,
+        "description": "The asset uuid we'd like to buy/sell",
+        "children": []
+      },
+      {
+        "name": "btc_asset_id",
+        "type": "uuid",
+        "required": false,
+        "description": "The btc asset uuid we'd like to buy/sell",
+        "children": []
+      }
+    ],
+    "response_fields": [
+      {
+        "name": "result",
+        "type": "string",
+        "description": "Response result"
+      },
+      {
+        "name": "message",
+        "type": "string",
+        "description": "Response message"
+      },
+      {
+        "name": "error",
+        "type": "object",
+        "description": "Error details if any"
+      }
+    ],
+    "error_codes": {
+      "error_403": "parse error failed",
+      "error_404": "bad track id",
+      "error_500": "something wrong",
+      "error_1000": "something wrong: Please try late",
+      "error_1001": "Record is invalid",
+      "error_2001": "something wrong"
+    },
+    "notes": "The documentation shows a webhook API for handling best rate and post operations related to cryptocurrency trading. It includes both required and optional parameters for handling pricing, asset IDs, and transaction traces.",
+    "chunk_metadata": {
+      "index": 1,
+      "total": 1,
+      "y_start": 0,
+      "y_end": 4965,
+      "overlap_top": 0,
+      "overlap_bottom": 0,
+      "height": 4965,
+      "path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\workspaces\\v2.shop_flash_sale.add_shop_flash_sale_items\\chunks\\chunk_001.png",
+      "filename": "chunk_001.png",
+      "width": 837
+    },
+    "analysis_timestamp": "2025-10-10T06:47:30.637748",
+    "model": "claude-3-5-sonnet-20241022"
+  }
+]

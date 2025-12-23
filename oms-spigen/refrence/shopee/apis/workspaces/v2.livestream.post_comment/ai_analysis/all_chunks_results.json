@@ -1,0 +1,144 @@
+[
+  {
+    "chunk_index": 1,
+    "total_chunks": 1,
+    "endpoint": "v2/bestdream/post_comment",
+    "method": "POST",
+    "description": "Post comment to hot draw on bestdream",
+    "update_log": [
+      {
+        "date": "2025-09-24",
+        "change": "New API"
+      }
+    ],
+    "parameters": [
+      {
+        "name": "session_id",
+        "type": "string",
+        "required": true,
+        "description": "The identifier of bestdream session"
+      },
+      {
+        "name": "content",
+        "type": "string",
+        "required": true,
+        "description": "The comment content, cannot exceed 150 characters"
+      }
+    ],
+    "response_fields": [
+      {
+        "name": "error",
+        "type": "string",
+        "description": "Indicate error type if not null. Empty if no error happened"
+      },
+      {
+        "name": "message",
+        "type": "string",
+        "description": "Indicate error details if hit error. Empty if no error happened"
+      },
+      {
+        "name": "request_id",
+        "type": "string",
+        "description": "The identifier of an API request for error tracking"
+      },
+      {
+        "name": "comment_id",
+        "type": "string",
+        "description": "The identifier of the comment"
+      }
+    ],
+    "error_codes": [
+      {
+        "code": "error_data",
+        "description": "general data failed"
+      },
+      {
+        "code": "error_data",
+        "description": "data not exist"
+      },
+      {
+        "code": "error_param",
+        "description": "parameter invalid"
+      },
+      {
+        "code": "error_data",
+        "description": "The content cannot exceed 150 characters"
+      },
+      {
+        "code": "error_param",
+        "description": "Content sent empty comment"
+      },
+      {
+        "code": "error_param",
+        "description": "Invalid session_id"
+      },
+      {
+        "code": "error_data",
+        "description": "The session expired"
+      },
+      {
+        "code": "error_param",
+        "description": "You are not authorized"
+      },
+      {
+        "code": "error_data",
+        "description": "The system{version_id} of USER_id is not belong to you"
+      },
+      {
+        "code": "error_param",
+        "description": "The API is not supported by current layer"
+      },
+      {
+        "code": "error_param",
+        "description": "Plane data error: {err_data}"
+      },
+      {
+        "code": "error_param",
+        "description": "Too many requests, please try again later"
+      },
+      {
+        "code": "error_data",
+        "description": "The content contains sensitive content"
+      },
+      {
+        "code": "error_data",
+        "description": "Store validate failed"
+      },
+      {
+        "code": "error_data",
+        "description": "The session{version_id} of {ID} is not exist"
+      },
+      {
+        "code": "error_data",
+        "description": "The session{version_id} of {ID} is not sharing"
+      },
+      {
+        "code": "error_param",
+        "description": "The system{version} you upload is not found"
+      },
+      {
+        "code": "error_param",
+        "description": "The system{version}, status error"
+      },
+      {
+        "code": "error_param",
+        "description": "Something wrong. Please try later"
+      }
+    ],
+    "notes": "The API documentation includes extensive error handling codes and examples for both successful and error responses. The endpoint appears to be for posting comments on a 'bestdream' platform with session-based authentication.",
+    "chunk_metadata": {
+      "index": 1,
+      "total": 1,
+      "y_start": 0,
+      "y_end": 4094,
+      "overlap_top": 0,
+      "overlap_bottom": 0,
+      "height": 4094,
+      "path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\workspaces\\v2.livestream.post_comment\\chunks\\chunk_001.png",
+      "filename": "chunk_001.png",
+      "width": 837
+    },
+    "analysis_timestamp": "2025-10-10T05:57:19.807769",
+    "model": "claude-3-5-sonnet-20241022"
+  }
+]

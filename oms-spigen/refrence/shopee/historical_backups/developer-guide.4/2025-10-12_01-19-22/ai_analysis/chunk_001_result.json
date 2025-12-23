@@ -1,0 +1,48 @@
+{
+  "chunk_index": 1,
+  "total_chunks": 1,
+  "endpoint": null,
+  "method": null,
+  "description": "Created to support developers serving Shopee sellers with different ecommerce needs, Shopee Open Platform is your go-to source of Open APIs and services.",
+  "update_log": [
+    {
+      "date": "2024-11-11",
+      "change": "Last updated"
+    }
+  ],
+  "hidden_fields": [],
+  "parameters": [],
+  "response_fields": [],
+  "notes": "This appears to be an introduction/overview page of Shopee Open Platform documentation rather than a specific API endpoint. Key information extracted includes:\n\n1. Language Support: English/简体中文/繁體中文/Português/ไทย\n\n2. Main features:\n- Powerful APIs for orders, products, marketing\n- Push notification services\n- Developer services including onboarding, testing, and maintenance\n- API testing tools\n- Sandbox testing environments\n\n3. Platform access is available to:\n- Software service providers\n- Sellers with software development capabilities\n\nNo specific API endpoints or parameters are shown on this overview page.",
+  "metadata": {
+    "page_title": "Introduction",
+    "documentation_sections": [
+      "Getting Started",
+      "API Best Practices",
+      "Guidelines for Creating Product",
+      "Product creation preparation",
+      "Creating product",
+      "Creating global product",
+      "Publishing global product",
+      "Variant management",
+      "Product base info management",
+      "Stock & Price Management",
+      "Order Management",
+      "First Mile Binding"
+    ]
+  },
+  "chunk_metadata": {
+    "index": 1,
+    "total": 1,
+    "y_start": 0,
+    "y_end": 1080,
+    "overlap_top": 0,
+    "overlap_bottom": 0,
+    "height": 1080,
+    "path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\platforms\\shopee\\apis\\workspaces\\developer-guide.4\\chunks\\chunk_001.png",
+    "filename": "chunk_001.png",
+    "width": 1920
+  },
+  "analysis_timestamp": "2025-10-12T01:19:21.197142",
+  "model": "claude-3-5-sonnet-20241022"
+}

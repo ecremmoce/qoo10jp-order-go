@@ -1,0 +1,93 @@
+[
+  {
+    "chunk_index": 1,
+    "total_chunks": 1,
+    "endpoint": "/v1/shop/get_profile",
+    "method": "POST",
+    "description": "Get shop profile information",
+    "update_log": [
+      {
+        "date": "2023-09-17",
+        "change": "get shop test ,done"
+      }
+    ],
+    "parameters": [
+      {
+        "name": "partner_id",
+        "type": "string",
+        "required": true,
+        "description": "Partner ID is a required user registration parameter",
+        "children": []
+      },
+      {
+        "name": "access_token",
+        "type": "string",
+        "required": true,
+        "description": "Use token for API validation using a mobile user permission to access the shop details and just query it if token existed",
+        "children": []
+      },
+      {
+        "name": "shop_id",
+        "type": "string",
+        "required": true,
+        "description": "Shopee's unique identifier for a shop. Required param for APIs",
+        "children": []
+      }
+    ],
+    "response_fields": [
+      {
+        "name": "msg",
+        "type": "string",
+        "description": "The content for an API request for error description",
+        "children": []
+      },
+      {
+        "name": "shop_name",
+        "type": "string",
+        "description": "The content of the shop name",
+        "children": []
+      },
+      {
+        "name": "description",
+        "type": "string",
+        "description": "The content of the shop description",
+        "children": []
+      },
+      {
+        "name": "device_number",
+        "type": "string",
+        "description": "The device-bound information for this shop. It must be unique. Max length: 80 chars",
+        "children": []
+      }
+    ],
+    "error_codes": [
+      {
+        "code": "error_param",
+        "description": "There is an invalid_param or spam"
+      },
+      {
+        "code": "error_auth",
+        "description": "Invalid access_token"
+      },
+      {
+        "code": "error_system",
+        "description": "System error"
+      }
+    ],
+    "notes": "The documentation shows common parameters, required parameters, response parameters, and error codes for the shop profile API endpoint. There are also request and error examples provided in the documentation.",
+    "chunk_metadata": {
+      "index": 1,
+      "total": 1,
+      "y_start": 0,
+      "y_end": 4487,
+      "overlap_top": 0,
+      "overlap_bottom": 0,
+      "height": 4487,
+      "path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\workspaces\\v2.shop.get_profile\\chunks\\chunk_001.png",
+      "filename": "chunk_001.png",
+      "width": 837
+    },
+    "analysis_timestamp": "2025-10-10T06:44:40.923710",
+    "model": "claude-3-5-sonnet-20241022"
+  }
+]

@@ -1,0 +1,64 @@
+{
+  "chunk_index": 1,
+  "total_chunks": 1,
+  "endpoint": null,
+  "method": null,
+  "description": null,
+  "update_log": [],
+  "hidden_fields": [],
+  "parameters": [
+    {
+      "name": "url",
+      "type": "string",
+      "required": true,
+      "description": "The request URL",
+      "children": []
+    },
+    {
+      "name": "url_id",
+      "type": "string",
+      "required": false,
+      "description": "The unique identifier for the URL",
+      "children": []
+    },
+    {
+      "name": "token",
+      "type": "string",
+      "required": true,
+      "description": "Authentication token",
+      "children": []
+    }
+  ],
+  "response_fields": [
+    {
+      "name": "ret",
+      "type": "string",
+      "description": "Response status code"
+    },
+    {
+      "name": "msg",
+      "type": "string",
+      "description": "Response message"
+    },
+    {
+      "name": "ret_url_id",
+      "type": "string",
+      "description": "The identifier of the processed URL"
+    }
+  ],
+  "notes": "The image shows an API documentation with common parameters, required parameters and response parameters sections. There are also request and response examples shown but they are partially cut off. The documentation appears to be for some kind of URL processing API endpoint but the full endpoint path is not visible in this chunk.",
+  "chunk_metadata": {
+    "index": 1,
+    "total": 1,
+    "y_start": 0,
+    "y_end": 5575,
+    "overlap_top": 0,
+    "overlap_bottom": 0,
+    "height": 5575,
+    "path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\workspaces\\v2.add_on_deal.add_add_on_deal_main_item\\chunks\\chunk_001.png",
+    "filename": "chunk_001.png",
+    "width": 837
+  },
+  "analysis_timestamp": "2025-10-10T05:23:56.043344",
+  "model": "claude-3-5-sonnet-20241022"
+}

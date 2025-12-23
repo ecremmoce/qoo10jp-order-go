@@ -1,0 +1,80 @@
+[
+  {
+    "chunk_index": 1,
+    "total_chunks": 1,
+    "endpoint": null,
+    "method": null,
+    "description": null,
+    "update_log": [],
+    "hidden_fields": [],
+    "parameters": [
+      {
+        "name": "client_id",
+        "type": "string",
+        "required": true,
+        "description": null,
+        "children": []
+      },
+      {
+        "name": "uid",
+        "type": "string",
+        "required": true,
+        "description": null,
+        "children": []
+      },
+      {
+        "name": "bid",
+        "type": "string",
+        "required": true,
+        "description": null,
+        "children": []
+      },
+      {
+        "name": "shop_id",
+        "type": "string",
+        "required": true,
+        "description": null,
+        "children": []
+      },
+      {
+        "name": "product_id",
+        "type": "string",
+        "required": true,
+        "description": null,
+        "children": []
+      }
+    ],
+    "response_fields": [
+      {
+        "name": "code",
+        "type": "string",
+        "description": "Response code"
+      },
+      {
+        "name": "msg",
+        "type": "string",
+        "description": "Response message"
+      },
+      {
+        "name": "success",
+        "type": "boolean",
+        "description": "Success status"
+      }
+    ],
+    "notes": "The image shows an API documentation page with common parameters, response parameters, and error examples. The exact endpoint and method are not visible in this portion of the documentation. Parameters appear to be primarily authentication and identification related fields.",
+    "chunk_metadata": {
+      "index": 1,
+      "total": 1,
+      "y_start": 0,
+      "y_end": 5712,
+      "overlap_top": 0,
+      "overlap_bottom": 0,
+      "height": 5712,
+      "path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\workspaces\\v2.logistics.get_tracking_info\\chunks\\chunk_001.png",
+      "filename": "chunk_001.png",
+      "width": 837
+    },
+    "analysis_timestamp": "2025-10-10T06:06:32.839043",
+    "model": "claude-3-5-sonnet-20241022"
+  }
+]

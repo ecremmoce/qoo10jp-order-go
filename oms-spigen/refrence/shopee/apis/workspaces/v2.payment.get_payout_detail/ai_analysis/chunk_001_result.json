@@ -1,0 +1,113 @@
+{
+  "chunk_index": 1,
+  "total_chunks": 1,
+  "endpoint": "/openapi/trade/v1/payment/payment_detail",
+  "method": "POST",
+  "description": "API for getting payment details and transaction information",
+  "update_log": [],
+  "hidden_fields": [],
+  "parameters": [
+    {
+      "name": "common",
+      "type": "object",
+      "required": true,
+      "description": "Common parameters",
+      "children": [
+        {
+          "name": "app_id",
+          "type": "string",
+          "required": true,
+          "description": "Application identifier"
+        },
+        {
+          "name": "timestamp",
+          "type": "string",
+          "required": true,
+          "description": "Request timestamp"
+        }
+      ]
+    },
+    {
+      "name": "order_id",
+      "type": "string",
+      "required": true,
+      "description": "Order id"
+    },
+    {
+      "name": "amount",
+      "type": "integer",
+      "required": true,
+      "description": "The payment amount"
+    },
+    {
+      "name": "currency",
+      "type": "string",
+      "required": true,
+      "description": "The payment currency"
+    },
+    {
+      "name": "sign",
+      "type": "string",
+      "required": true,
+      "description": "The signature of request"
+    },
+    {
+      "name": "sign_type",
+      "type": "string",
+      "required": true,
+      "description": "The signature method"
+    },
+    {
+      "name": "trade_amount",
+      "type": "integer",
+      "required": true,
+      "description": "The actual trade amount"
+    },
+    {
+      "name": "status",
+      "type": "string",
+      "required": true,
+      "description": "The payment status"
+    },
+    {
+      "name": "transaction_id",
+      "type": "string",
+      "required": true,
+      "description": "The transaction ID"
+    }
+  ],
+  "response_fields": [],
+  "error_codes": [
+    {
+      "code": "INVALID_SIGN",
+      "description": "There is an illegal digital signature"
+    },
+    {
+      "code": "INVALID_PARAM",
+      "description": "Invalid parameters"
+    },
+    {
+      "code": "SYSTEM_ERROR",
+      "description": "System error occurred"
+    },
+    {
+      "code": "ORDER_NOT_FOUND",
+      "description": "Order not found"
+    }
+  ],
+  "notes": "The documentation includes several sections including common parameters, required parameters, and error codes. There are also examples shown but they are partially cut off in the image.",
+  "chunk_metadata": {
+    "index": 1,
+    "total": 1,
+    "y_start": 0,
+    "y_end": 5750,
+    "overlap_top": 0,
+    "overlap_bottom": 0,
+    "height": 5750,
+    "path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\workspaces\\v2.payment.get_payout_detail\\chunks\\chunk_001.png",
+    "filename": "chunk_001.png",
+    "width": 837
+  },
+  "analysis_timestamp": "2025-10-10T06:21:36.645949",
+  "model": "claude-3-5-sonnet-20241022"
+}

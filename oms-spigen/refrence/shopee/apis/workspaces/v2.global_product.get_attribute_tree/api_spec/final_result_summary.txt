@@ -1,0 +1,36 @@
+======================================================================
+API SPECIFICATION SUMMARY
+======================================================================
+
+Endpoint: None None
+
+Parameters (7):
+----------------------------------------------------------------------
+* address (string)
+   Contract address
+* amount (string)
+   Transfer amount
+  decimals (integer)
+   Token decimals
+* chain_id (string)
+   Chain identifier
+  symbol (string)
+   Token symbol
+  gas_price (string)
+   Gas price for transaction
+  gas_limit (string)
+   Gas limit for transaction
+
+Metadata:
+----------------------------------------------------------------------
+  total_chunks: 1
+  chunks_with_errors: 0
+  total_parameters_before_dedup: 7
+  total_parameters_after_dedup: 7
+  update_log_entries: 0
+  hidden_fields_count: 0
+  source_results: workspaces\v2.global_product.get_attribute_tree\results\all_chunks_results.json
+
+======================================================================
+Legend: * = required parameter
+======================================================================

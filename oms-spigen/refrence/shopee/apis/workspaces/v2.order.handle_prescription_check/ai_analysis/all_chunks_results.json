@@ -1,0 +1,105 @@
+[
+  {
+    "chunk_index": 1,
+    "total_chunks": 1,
+    "endpoint": "/api/checkin_handle_prescription_check",
+    "method": null,
+    "description": "Check prescription rules",
+    "update_log": [
+      {
+        "date": "2023-09-26",
+        "change": "New field for pharmacist name for Rfs app"
+      },
+      {
+        "date": "2023-02-14",
+        "change": "Update the order_create_code description"
+      },
+      {
+        "date": "2023-02-14",
+        "change": "New GUI"
+      }
+    ],
+    "parameters": [
+      {
+        "name": "action_type",
+        "type": "string",
+        "required": true,
+        "description": "Whether it is accepted and registration is successful",
+        "children": []
+      },
+      {
+        "name": "order_create_code",
+        "type": "string",
+        "required": true,
+        "description": "Use base64 AES encode, check to identify your permissions to write data for model and add variable to excel",
+        "children": []
+      },
+      {
+        "name": "price_id",
+        "type": "integer",
+        "required": false,
+        "description": "Student's unique identifier for a clinic",
+        "children": []
+      },
+      {
+        "name": "is_approved",
+        "type": "integer",
+        "required": false,
+        "description": "The validity of product activation. For items in pharmacy/clinic service, if they cannot view and modify their own records in the app, they should check to see if their activation code is properly activated. Product users must have an active code.",
+        "children": []
+      }
+    ],
+    "response_fields": [
+      {
+        "name": "success",
+        "type": "string",
+        "required": true,
+        "description": "Status information you are scanning",
+        "children": []
+      },
+      {
+        "name": "message",
+        "type": "string",
+        "required": true,
+        "description": "This message is a null API request or error",
+        "children": []
+      },
+      {
+        "name": "error",
+        "type": "string",
+        "required": true,
+        "description": "Indicate error type if not error, Empty if no error occurred",
+        "children": []
+      }
+    ],
+    "error_codes": [
+      {
+        "code": "error_prescription_price_status_1",
+        "description": "Prescription rules is already completed or canceled"
+      },
+      {
+        "code": "error_patient",
+        "description": "There is no active_type or given"
+      },
+      {
+        "code": "error_prescription_rule",
+        "description": "Prescription name is required. Please enter a valid name."
+      }
+    ],
+    "notes": "The documentation shows common parameters, request parameters, response parameters, error codes and an update log. The API seems to be related to prescription handling and validation. Multiple URLs are shown for different environments but the base endpoint remains consistent.",
+    "chunk_metadata": {
+      "index": 1,
+      "total": 1,
+      "y_start": 0,
+      "y_end": 4433,
+      "overlap_top": 0,
+      "overlap_bottom": 0,
+      "height": 4433,
+      "path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\workspaces\\v2.order.handle_prescription_check\\chunks\\chunk_001.png",
+      "filename": "chunk_001.png",
+      "width": 837
+    },
+    "analysis_timestamp": "2025-10-10T06:17:17.153823",
+    "model": "claude-3-5-sonnet-20241022"
+  }
+]

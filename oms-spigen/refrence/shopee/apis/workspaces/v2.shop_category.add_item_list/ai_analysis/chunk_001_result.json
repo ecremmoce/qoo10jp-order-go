@@ -1,0 +1,83 @@
+{
+  "chunk_index": 1,
+  "total_chunks": 1,
+  "endpoint": null,
+  "method": null,
+  "description": null,
+  "update_log": [],
+  "hidden_fields": [],
+  "parameters": [
+    {
+      "name": "url",
+      "type": "string",
+      "required": true,
+      "description": "Base authentication URL",
+      "children": []
+    },
+    {
+      "name": "domain_id",
+      "type": "string",
+      "required": true,
+      "description": null,
+      "children": []
+    },
+    {
+      "name": "ticket",
+      "type": "string",
+      "required": true,
+      "description": null,
+      "children": []
+    },
+    {
+      "name": "client_id",
+      "type": "string",
+      "required": true,
+      "description": "Request ID for request",
+      "children": []
+    },
+    {
+      "name": "msg_params_x",
+      "type": "string",
+      "required": true,
+      "description": "OmniFinCloud's request identifier",
+      "children": []
+    },
+    {
+      "name": "app_id",
+      "type": "string",
+      "required": true,
+      "description": null,
+      "children": []
+    }
+  ],
+  "response_fields": [],
+  "error_codes": [
+    {
+      "code": "error_params",
+      "description": "There is an error in the input parameters"
+    },
+    {
+      "code": "error_ticket",
+      "description": "Ticket has expired or is empty"
+    },
+    {
+      "code": "error_general",
+      "description": "General errors"
+    }
+  ],
+  "notes": "The image appears to be an API documentation page showing common parameters, required parameters, background parameters, suggested controls, and error codes. Some parameter descriptions are missing or not visible in the image. There appear to be code examples at the bottom but they are partially cut off.",
+  "chunk_metadata": {
+    "index": 1,
+    "total": 1,
+    "y_start": 0,
+    "y_end": 5058,
+    "overlap_top": 0,
+    "overlap_bottom": 0,
+    "height": 5058,
+    "path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\workspaces\\v2.shop_category.add_item_list\\chunks\\chunk_001.png",
+    "filename": "chunk_001.png",
+    "width": 837
+  },
+  "analysis_timestamp": "2025-10-10T06:45:51.642497",
+  "model": "claude-3-5-sonnet-20241022"
+}

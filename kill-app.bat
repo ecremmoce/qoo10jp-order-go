@@ -1,9 +1,9 @@
 @echo off
 chcp 65001 > nul
-echo Force Stopping Qoo10JP Application...
+echo Force Stopping Shopee Application...
 
 REM Kill process by name
-taskkill /f /im qoo10jp-order.exe 2>nul
+taskkill /f /im shopee-order-go.exe 2>nul
 if %ERRORLEVEL% EQU 0 (
     echo SUCCESS: Application terminated
 ) else (

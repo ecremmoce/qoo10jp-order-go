@@ -1,0 +1,136 @@
+[
+  {
+    "chunk_index": 1,
+    "total_chunks": 1,
+    "endpoint": "/global_protect/get_crop_publishable_status",
+    "method": null,
+    "description": "Get crop publishable status",
+    "update_log": [
+      {
+        "date": "2024-02-02",
+        "change": "Launch"
+      }
+    ],
+    "parameters": [
+      {
+        "name": "partner_id",
+        "type": "string",
+        "required": true,
+        "description": "Partner ID of Merchant. Required to to request.",
+        "children": []
+      },
+      {
+        "name": "source_token",
+        "type": "string",
+        "required": true,
+        "description": "The source URL public string identity certificate. Required to to request.",
+        "children": []
+      },
+      {
+        "name": "nonce",
+        "type": "string",
+        "required": true,
+        "description": "Request unique identifier for a partner. Required to to request.",
+        "children": []
+      },
+      {
+        "name": "sign",
+        "type": "string",
+        "required": true,
+        "description": "Signature parameter to certify all to other requests.",
+        "children": []
+      },
+      {
+        "name": "event_time_id",
+        "type": "int",
+        "required": true,
+        "description": "id of global store",
+        "children": []
+      },
+      {
+        "name": "pfid",
+        "type": "int",
+        "required": true,
+        "description": "specific the selling pfid id data in feed-in platform",
+        "children": []
+      }
+    ],
+    "response_fields": [
+      {
+        "name": "code",
+        "type": "string",
+        "description": "status code like 0 for error 0 okay 1 no event",
+        "children": []
+      },
+      {
+        "name": "message",
+        "type": "string",
+        "description": "identify error analyze if no error Empty if no error",
+        "children": []
+      },
+      {
+        "name": "warning",
+        "type": "string",
+        "description": "Warning message",
+        "children": []
+      },
+      {
+        "name": "crop_publishable_status",
+        "type": "string",
+        "description": "Value if publishable status",
+        "children": []
+      },
+      {
+        "name": "pfid_id",
+        "type": "int",
+        "description": "id of publishable crop",
+        "children": []
+      },
+      {
+        "name": "token",
+        "type": "string",
+        "description": "Return for publishable status",
+        "children": []
+      },
+      {
+        "name": "crop_permission_url",
+        "type": "boolean",
+        "description": "If the crop is publishable crop, true return pfid is publishable. We have crop is publishable",
+        "children": []
+      },
+      {
+        "name": "unpublishable_reason",
+        "type": "string",
+        "description": "Return for unpublishable reason. If the pfid is not publishable will return the reason.",
+        "children": []
+      },
+      {
+        "name": "out_pfid",
+        "type": "int",
+        "description": "Crop and_page is fake, the crop wont will be feed import data",
+        "children": []
+      }
+    ],
+    "error_codes": [
+      {
+        "code": "error_param",
+        "description": "There is no access, token in-pairs"
+      }
+    ],
+    "notes": "The documentation includes Common Parameters, Required Parameters, Response Parameters, Request Example, Response Example, Error Example and Error Codes sections. Some parameters have detailed validation rules and constraints mentioned in their descriptions.",
+    "chunk_metadata": {
+      "index": 1,
+      "total": 1,
+      "y_start": 0,
+      "y_end": 4610,
+      "overlap_top": 0,
+      "overlap_bottom": 0,
+      "height": 4610,
+      "path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\workspaces\\v2.global_product.get_shop_publishable_status\\chunks\\chunk_001.png",
+      "filename": "chunk_001.png",
+      "width": 837
+    },
+    "analysis_timestamp": "2025-10-10T05:49:27.686417",
+    "model": "claude-3-5-sonnet-20241022"
+  }
+]

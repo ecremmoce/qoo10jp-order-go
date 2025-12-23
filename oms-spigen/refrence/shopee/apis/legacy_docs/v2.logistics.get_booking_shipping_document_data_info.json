@@ -1,0 +1,106 @@
+{
+  "endpoint": null,
+  "method": null,
+  "description": null,
+  "parameters": [
+    {
+      "name": "created_before",
+      "type": "string",
+      "required": false,
+      "description": "Filter listings created before timestamp",
+      "children": []
+    },
+    {
+      "name": "created_after",
+      "type": "string",
+      "required": false,
+      "description": "Filter listings created after timestamp",
+      "children": []
+    },
+    {
+      "name": "nft_ids",
+      "type": "array",
+      "required": false,
+      "description": "Filter by NFT IDs",
+      "children": []
+    },
+    {
+      "name": "price_min",
+      "type": "string",
+      "required": false,
+      "description": "Minimum price filter",
+      "children": []
+    },
+    {
+      "name": "price_max",
+      "type": "string",
+      "required": false,
+      "description": "Maximum price filter",
+      "children": []
+    },
+    {
+      "name": "status",
+      "type": "string",
+      "required": false,
+      "description": "Filter by listing status",
+      "children": []
+    },
+    {
+      "name": "offset",
+      "type": "integer",
+      "required": false,
+      "description": "Pagination offset",
+      "children": []
+    },
+    {
+      "name": "limit",
+      "type": "integer",
+      "required": false,
+      "description": "Pagination limit",
+      "children": []
+    }
+  ],
+  "response_fields": [
+    {
+      "name": "listing_id",
+      "type": "string",
+      "description": "Unique identifier for the listing"
+    },
+    {
+      "name": "created_at",
+      "type": "string",
+      "description": "Timestamp when listing was created"
+    },
+    {
+      "name": "updated_at",
+      "type": "string",
+      "description": "Timestamp when listing was last updated"
+    },
+    {
+      "name": "status",
+      "type": "string",
+      "description": "Current status of the listing"
+    },
+    {
+      "name": "price",
+      "type": "string",
+      "description": "Listed price"
+    },
+    {
+      "name": "nft_id",
+      "type": "string",
+      "description": "NFT identifier"
+    }
+  ],
+  "update_log": [],
+  "hidden_fields": [],
+  "metadata": {
+    "total_chunks": 1,
+    "chunks_with_errors": 0,
+    "total_parameters_before_dedup": 8,
+    "total_parameters_after_dedup": 8,
+    "update_log_entries": 0,
+    "hidden_fields_count": 0,
+    "source_results": "workspaces\\v2.logistics.get_booking_shipping_document_data_info\\results\\all_chunks_results.json"
+  }
+}

@@ -1,0 +1,36 @@
+======================================================================
+API SPECIFICATION SUMMARY
+======================================================================
+
+Endpoint: None None
+
+Parameters (1):
+----------------------------------------------------------------------
+  custom_fields (array)
+   Array of custom field definitions
+  * id (string)
+     Unique identifier for the custom field
+  * type (string)
+     Type of the custom field
+  * name (string)
+     Name of the custom field
+    description (string)
+     Description of the custom field
+    options (array)
+     List of options for select/multiselect fields
+    validation (object)
+     Validation rules for the custom field
+
+Metadata:
+----------------------------------------------------------------------
+  total_chunks: 1
+  chunks_with_errors: 0
+  total_parameters_before_dedup: 1
+  total_parameters_after_dedup: 1
+  update_log_entries: 0
+  hidden_fields_count: 2
+  source_results: platforms\shopee\apis\workspaces\v2.returns.get_reverse_tracking_info\results\all_chunks_results.json
+
+======================================================================
+Legend: * = required parameter
+======================================================================

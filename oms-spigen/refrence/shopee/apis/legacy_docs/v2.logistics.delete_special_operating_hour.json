@@ -1,0 +1,85 @@
+{
+  "endpoint": "/v2/logistics/delete_special_operating_hour",
+  "method": "GET",
+  "description": "API to delete a specific service operating hour for a shop",
+  "parameters": [
+    {
+      "name": "partner_id",
+      "type": "int",
+      "required": true,
+      "description": "Partner ID is assigned when registration is successful",
+      "children": []
+    },
+    {
+      "name": "timestamp",
+      "type": "timestamp",
+      "required": true,
+      "description": "This is to indicate the timestamp of the request. Request to be expired in 3 mins",
+      "children": []
+    },
+    {
+      "name": "access_token",
+      "type": "string",
+      "required": true,
+      "description": "The token for API access, using to identify your permission in the api. Sign-in images will get it from your sign-in",
+      "children": []
+    },
+    {
+      "name": "shop_id",
+      "type": "int",
+      "required": true,
+      "description": "Shopee's unique identifier for a shop. Required param for logistics APIs",
+      "children": []
+    },
+    {
+      "name": "sign",
+      "type": "string",
+      "required": true,
+      "description": "Signature generated in partner_id and salt, timestamp, token_basic_sign_of_other_info parameter sorting",
+      "children": []
+    },
+    {
+      "name": "name",
+      "type": "string",
+      "required": true,
+      "description": "Name of the special operating hour which you wish to be removed from",
+      "children": []
+    }
+  ],
+  "response_fields": [
+    {
+      "name": "error",
+      "type": "string",
+      "description": "Indicate error type if hit error. Empty if no error happened",
+      "children": []
+    },
+    {
+      "name": "message",
+      "type": "string",
+      "description": "Indicate error details if hit error. Empty if no error happened",
+      "children": []
+    },
+    {
+      "name": "request_id",
+      "type": "string",
+      "description": "The identifier for an API request for error tracking",
+      "children": []
+    }
+  ],
+  "update_log": [
+    {
+      "date": "2019-04-06",
+      "change": "New API"
+    }
+  ],
+  "hidden_fields": [],
+  "metadata": {
+    "total_chunks": 1,
+    "chunks_with_errors": 0,
+    "total_parameters_before_dedup": 6,
+    "total_parameters_after_dedup": 6,
+    "update_log_entries": 1,
+    "hidden_fields_count": 0,
+    "source_results": "workspaces\\v2.logistics.delete_special_operating_hour\\results\\all_chunks_results.json"
+  }
+}

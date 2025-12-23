@@ -1,0 +1,36 @@
+{
+  "last_check": "2025-10-12T00:23:05.783610",
+  "file_hashes": {
+    "v2.global_product.get_size_chart_list.json": {
+      "hash": "13ada1b98b3a7ac2addc14b5c142cc97",
+      "type": "api_ref",
+      "size": 2566,
+      "modified": "2025-10-11T23:40:18.335355"
+    },
+    "v2.livestream.get_show_item.json": {
+      "hash": "7034606e10d98ee5422204547e9754a2",
+      "type": "api_ref",
+      "size": 2402,
+      "modified": "2025-10-11T23:41:49.340310"
+    },
+    "v2.product.get_category.json": {
+      "hash": "791272c42f1dbfddba670ba79d2b177d",
+      "type": "api_ref",
+      "size": 1370,
+      "modified": "2025-10-11T23:40:11.595182"
+    },
+    "v2.product.get_size_chart_list.json": {
+      "hash": "6df6d72b209f28130c8a450a84d89b92",
+      "type": "api_ref",
+      "size": 3079,
+      "modified": "2025-10-11T23:40:22.087430"
+    },
+    "v2.returns.get_reverse_tracking_info.json": {
+      "hash": "7d2c1ee8ce0b0b0a04a9f7657783e981",
+      "type": "api_ref",
+      "size": 2036,
+      "modified": "2025-10-11T23:41:19.243770"
+    }
+  },
+  "total_files": 5
+}

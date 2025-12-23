@@ -1,0 +1,68 @@
+{
+  "endpoint": null,
+  "method": null,
+  "description": null,
+  "parameters": [],
+  "response_fields": [
+    {
+      "name": "error",
+      "type": "string",
+      "description": "Error code if any"
+    },
+    {
+      "name": "message",
+      "type": "string",
+      "description": "Error message if any"
+    },
+    {
+      "name": "request_id",
+      "type": "string",
+      "description": "Unique request identifier"
+    },
+    {
+      "name": "response",
+      "type": "object",
+      "description": "Response data",
+      "children": [
+        {
+          "name": "fsr_order_list",
+          "type": "array",
+          "description": "List of orders",
+          "children": [
+            {
+              "name": "actual_shipping_time",
+              "type": "integer",
+              "description": "Actual shipping timestamp"
+            },
+            {
+              "name": "late_by_days",
+              "type": "integer",
+              "description": "Number of late days"
+            },
+            {
+              "name": "order_sn",
+              "type": "string",
+              "description": "Order serial number"
+            },
+            {
+              "name": "shipping_deadline",
+              "type": "integer",
+              "description": "Shipping deadline timestamp"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "update_log": [],
+  "hidden_fields": [],
+  "metadata": {
+    "total_chunks": 2,
+    "chunks_with_errors": 0,
+    "total_parameters_before_dedup": 0,
+    "total_parameters_after_dedup": 0,
+    "update_log_entries": 0,
+    "hidden_fields_count": 0,
+    "source_results": "workspaces\\v2.account_health.get_metric_source_detail\\results\\all_chunks_results.json"
+  }
+}

@@ -1,0 +1,36 @@
+======================================================================
+API SPECIFICATION SUMMARY
+======================================================================
+
+Endpoint: POST /storage/upload_url
+Description: Get storage upload url
+
+Parameters (3):
+----------------------------------------------------------------------
+* filename (string)
+   File name with extension
+* directory (string)
+   Directory path
+  doc_type (string)
+   Document type
+
+Response Fields (2):
+----------------------------------------------------------------------
+  url (string)
+   Upload URL
+  key (string)
+   Storage key
+
+Metadata:
+----------------------------------------------------------------------
+  total_chunks: 1
+  chunks_with_errors: 0
+  total_parameters_before_dedup: 3
+  total_parameters_after_dedup: 3
+  update_log_entries: 2
+  hidden_fields_count: 0
+  source_results: workspaces\v2.order.get_order_list\results\all_chunks_results.json
+
+======================================================================
+Legend: * = required parameter
+======================================================================

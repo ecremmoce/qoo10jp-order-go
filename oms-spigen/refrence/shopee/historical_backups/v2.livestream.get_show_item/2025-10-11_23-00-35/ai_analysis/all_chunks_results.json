@@ -1,0 +1,135 @@
+[
+  {
+    "chunk_index": 1,
+    "total_chunks": 1,
+    "endpoint": "/openpartner/get_video_scan",
+    "method": "GET",
+    "description": "Video scan retrieval API",
+    "update_log": [
+      {
+        "date": "2024-04-21",
+        "change": "Version 3.0"
+      }
+    ],
+    "parameters": [
+      {
+        "name": "session_id",
+        "type": "string",
+        "required": true,
+        "description": "Partner ID is assigned upon registration to successfully identify both sides",
+        "children": []
+      },
+      {
+        "name": "access_token",
+        "type": "string",
+        "required": true,
+        "description": "The token for API system; refers to identity pure parameter to identify requests",
+        "children": []
+      },
+      {
+        "name": "sign",
+        "type": "string",
+        "required": true,
+        "description": "Signature encryption (Certificate as shown in pic), consists of: app_key + session_id + access_token + app_secret",
+        "children": []
+      }
+    ],
+    "response_fields": [
+      {
+        "name": "session_id",
+        "type": "string",
+        "description": "The identifier of broadcast session",
+        "children": []
+      },
+      {
+        "name": "text",
+        "type": "string",
+        "description": "Image text line by line data; Empty is no error happened",
+        "children": []
+      },
+      {
+        "name": "timestamp",
+        "type": "string",
+        "description": "Image scan results line by line data",
+        "children": []
+      },
+      {
+        "name": "session_id",
+        "type": "string",
+        "description": "The identifier for get result by each image",
+        "children": []
+      },
+      {
+        "name": "time",
+        "type": "float",
+        "description": "Time consuming cost for analyzing",
+        "children": []
+      },
+      {
+        "name": "file_size",
+        "type": "integer",
+        "description": "The time of the data in the recording log on current server, unit: sec, 1 day share recording will only keep updated data in the previous 100 parameters",
+        "children": []
+      },
+      {
+        "name": "file_id",
+        "type": "integer",
+        "description": "Request unique identifier for an error",
+        "children": []
+      },
+      {
+        "name": "status",
+        "type": "string",
+        "description": "Name of the level in your language",
+        "children": []
+      },
+      {
+        "name": "context",
+        "type": "string",
+        "description": "The time right now representing the context unit of the text",
+        "children": []
+      },
+      {
+        "name": "content_pos",
+        "type": "float",
+        "description": "The vertical part of the face in the being processed image; point value range: 0.0-1.0",
+        "children": []
+      },
+      {
+        "name": "original_pos",
+        "type": "float",
+        "description": "The original part of the text in the being processed image",
+        "children": []
+      }
+    ],
+    "error_codes": [
+      {
+        "code": "error_404",
+        "description": "Server data failed"
+      },
+      {
+        "code": "error_403",
+        "description": "Parameter accept"
+      },
+      {
+        "code": "error_400",
+        "description": "The session/session_id [x] path is not belong to you"
+      }
+    ],
+    "notes": "The documentation includes request parameters, response parameters, error codes, and examples. The API appears to be related to video scanning or processing functionality.",
+    "chunk_metadata": {
+      "index": 1,
+      "total": 1,
+      "y_start": 0,
+      "y_end": 4672,
+      "overlap_top": 0,
+      "overlap_bottom": 0,
+      "height": 4672,
+      "path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\platforms\\shopee\\apis\\workspaces\\v2.livestream.get_show_item\\chunks\\chunk_001.png",
+      "filename": "chunk_001.png",
+      "width": 837
+    },
+    "analysis_timestamp": "2025-10-11T23:00:34.651862",
+    "model": "claude-3-5-sonnet-20241022"
+  }
+]

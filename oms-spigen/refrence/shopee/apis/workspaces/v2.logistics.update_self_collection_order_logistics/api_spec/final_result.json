@@ -1,0 +1,99 @@
+{
+  "endpoint": "/logistics/update_set_collection_order_logistics",
+  "method": "HTTP",
+  "description": "Use this api to update the seller status for buyer to collect the parcel directly from your premises. Only includes collection that within in apply fee collection, and that the order has been parceled by the buyer. The shared call in logistics_get_seller_status or v2.logistics.get_package_detail_for_seller should have a v2.logistics.get_pickup_status_list to get this package_number or other details.",
+  "parameters": [
+    {
+      "name": "partner_id",
+      "type": "string",
+      "required": true,
+      "description": "Partner ID is assigned once registration is successful. Required for all requests.",
+      "children": []
+    },
+    {
+      "name": "timestamp",
+      "type": "timestamp",
+      "required": true,
+      "description": "This is to indicate the timestamp of the request. Required for all requests. Expires in 5 minutes.",
+      "children": []
+    },
+    {
+      "name": "access_token",
+      "type": "string",
+      "required": true,
+      "description": "The token for api access, users to identify your permission to the api. Valid for multiple use and expires in 4 hours",
+      "children": []
+    },
+    {
+      "name": "shop_id",
+      "type": "int",
+      "required": true,
+      "description": "Shopee's unique identifier for a shop. Required inputs for regular seller orders.",
+      "children": []
+    },
+    {
+      "name": "sign",
+      "type": "string",
+      "required": true,
+      "description": "Authentication signature calculated using partner_id, api_path, timestamp, access_token, shop_id and partner_key. More details.",
+      "children": []
+    },
+    {
+      "name": "package_number",
+      "type": "string",
+      "required": true,
+      "description": "Request unique identifier for the package under an order",
+      "children": []
+    },
+    {
+      "name": "set_collection_logistics_status",
+      "type": "string",
+      "required": true,
+      "description": "Order logistics status, available values: ready_for_collection order_collected",
+      "children": []
+    },
+    {
+      "name": "error_image_url",
+      "type": "string",
+      "required": false,
+      "description": "List of image url list the error that have already provided the order at the store. Please ensure the url can be accessible. Only required if user set order_collection_failed. Maximum 1 image to upload and get the image url. All the images should be pure pixel-like elements. 1 face only.",
+      "children": []
+    }
+  ],
+  "response_fields": [
+    {
+      "name": "error",
+      "type": "string",
+      "description": "Indicate error type if fail error. Empty if no error happened",
+      "children": []
+    },
+    {
+      "name": "message",
+      "type": "string",
+      "description": "Indicate error details if fail error. Empty if no error happened",
+      "children": []
+    },
+    {
+      "name": "request_id",
+      "type": "string",
+      "description": "The identifier for an API request for error tracking",
+      "children": []
+    }
+  ],
+  "update_log": [
+    {
+      "date": "2024-09-19",
+      "change": "New API"
+    }
+  ],
+  "hidden_fields": [],
+  "metadata": {
+    "total_chunks": 1,
+    "chunks_with_errors": 0,
+    "total_parameters_before_dedup": 8,
+    "total_parameters_after_dedup": 8,
+    "update_log_entries": 1,
+    "hidden_fields_count": 0,
+    "source_results": "workspaces\\v2.logistics.update_self_collection_order_logistics\\results\\all_chunks_results.json"
+  }
+}

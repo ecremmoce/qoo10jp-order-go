@@ -1,0 +1,38 @@
+======================================================================
+API SPECIFICATION SUMMARY
+======================================================================
+
+Endpoint: POST http://easemob/mobile-dev/debo/main/oapi/global_product/category_recommended
+Description: Global product category recommended
+
+Parameters (4):
+----------------------------------------------------------------------
+* global_id (string)
+* global_proc_code (string)
+   trade or item
+  activity_token (string)
+  age (string)
+   Statistics parameters system id: pc,app parameter
+
+Response Fields (3):
+----------------------------------------------------------------------
+  msg (string)
+   Initialize your book first time. finalize the year initialized
+  received (string)
+   Initialize your server first time finalize the year initialized
+  received_at (string)
+   Initialize money first time finalize the year initialized
+
+Metadata:
+----------------------------------------------------------------------
+  total_chunks: 1
+  chunks_with_errors: 0
+  total_parameters_before_dedup: 4
+  total_parameters_after_dedup: 4
+  update_log_entries: 3
+  hidden_fields_count: 0
+  source_results: workspaces\v2.global_product.category_recommend\results\all_chunks_results.json
+
+======================================================================
+Legend: * = required parameter
+======================================================================

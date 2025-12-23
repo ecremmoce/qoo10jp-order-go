@@ -1,0 +1,41 @@
+======================================================================
+API SPECIFICATION SUMMARY
+======================================================================
+
+Endpoint: None v2/leechdom/delete_item_list
+
+Parameters (4):
+----------------------------------------------------------------------
+* session_id (string)
+   The identifier of leechdom session
+* time_id (uint64)
+   The id of time to delete
+* item_id (uint64)
+   Shopper's unique identifier for an item
+* shop_id (uint64)
+   The shop id of the item
+
+Response Fields (4):
+----------------------------------------------------------------------
+  code (string)
+   Indicate error type if API error. Empty if no error
+  message (string)
+   Error message details if API error. Empty if no error
+  request_id (string)
+   The identifier for an API request for error tracking
+  response (object)
+   Detail information you are querying
+
+Metadata:
+----------------------------------------------------------------------
+  total_chunks: 1
+  chunks_with_errors: 0
+  total_parameters_before_dedup: 4
+  total_parameters_after_dedup: 4
+  update_log_entries: 1
+  hidden_fields_count: 0
+  source_results: workspaces\v2.livestream.delete_item_list\results\all_chunks_results.json
+
+======================================================================
+Legend: * = required parameter
+======================================================================

@@ -1,0 +1,31 @@
+======================================================================
+API SPECIFICATION SUMMARY
+======================================================================
+
+Endpoint: None None
+
+Parameters (2):
+----------------------------------------------------------------------
+* url (string)
+   Payment URL from the bank
+* amount (string)
+   Transaction amount
+
+Response Fields (1):
+----------------------------------------------------------------------
+  error_code (string)
+   Error code values
+
+Metadata:
+----------------------------------------------------------------------
+  total_chunks: 1
+  chunks_with_errors: 0
+  total_parameters_before_dedup: 2
+  total_parameters_after_dedup: 2
+  update_log_entries: 0
+  hidden_fields_count: 0
+  source_results: workspaces\v2.product.unlist_item\results\all_chunks_results.json
+
+======================================================================
+Legend: * = required parameter
+======================================================================

@@ -1,0 +1,84 @@
+{
+  "chunk_index": 1,
+  "total_chunks": 1,
+  "endpoint": null,
+  "method": null,
+  "description": null,
+  "update_log": [],
+  "hidden_fields": [],
+  "parameters": [
+    {
+      "name": "URL",
+      "type": "string",
+      "required": true,
+      "description": "API endpoint URLs",
+      "children": []
+    },
+    {
+      "name": "URL-prefix",
+      "type": "string",
+      "required": true,
+      "description": null,
+      "children": []
+    },
+    {
+      "name": "url",
+      "type": "string",
+      "required": true,
+      "description": null,
+      "children": []
+    }
+  ],
+  "response_parameters": [
+    {
+      "name": "code",
+      "type": "string",
+      "required": true,
+      "description": "Status code for API result",
+      "children": []
+    },
+    {
+      "name": "message",
+      "type": "string",
+      "required": true,
+      "description": "Status error message",
+      "children": []
+    },
+    {
+      "name": "channel_id",
+      "type": "string",
+      "required": true,
+      "description": "The identifier for unit request",
+      "children": []
+    }
+  ],
+  "error_codes": [
+    {
+      "code": "error_404",
+      "description": "Could not find any error"
+    },
+    {
+      "code": "error_param",
+      "description": "There's a problem. Please try again"
+    },
+    {
+      "code": "error_sign",
+      "description": "Invalid signature"
+    }
+  ],
+  "notes": "The image shows API documentation with common parameters, response parameters, request examples, and error codes. The documentation appears to be for some kind of REST API service. Many sections are partially visible or truncated.",
+  "chunk_metadata": {
+    "index": 1,
+    "total": 1,
+    "y_start": 0,
+    "y_end": 5364,
+    "overlap_top": 0,
+    "overlap_bottom": 0,
+    "height": 5364,
+    "path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\platforms\\shopee\\apis\\workspaces\\v2.product.get_category\\chunks\\chunk_001.png",
+    "filename": "chunk_001.png",
+    "width": 837
+  },
+  "analysis_timestamp": "2025-10-11T23:40:11.186448",
+  "model": "claude-3-5-sonnet-20241022"
+}

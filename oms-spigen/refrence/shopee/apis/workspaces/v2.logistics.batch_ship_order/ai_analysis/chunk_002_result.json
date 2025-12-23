@@ -1,0 +1,82 @@
+{
+  "chunk_index": 2,
+  "endpoint": null,
+  "method": null,
+  "description": null,
+  "parameters": [],
+  "response_fields": [
+    {
+      "name": "error_param",
+      "type": "string",
+      "description": "parameter invalid",
+      "children": []
+    },
+    {
+      "name": "logistics.error_sender_address",
+      "type": "string",
+      "description": "Pickup address not valid. Please add/tag a new pickup_address in Seller Center to continue shipping",
+      "children": []
+    },
+    {
+      "name": "error_param",
+      "type": "string",
+      "description": "The information you queried is not found.",
+      "children": []
+    },
+    {
+      "name": "error_param",
+      "type": "string",
+      "description": "Wrong parameters, detail: {msg}.",
+      "children": []
+    },
+    {
+      "name": "error_server",
+      "type": "string",
+      "description": "Something wrong. Please try later.",
+      "children": []
+    },
+    {
+      "name": "error_shop",
+      "type": "string",
+      "description": "shopid is invalid",
+      "children": []
+    },
+    {
+      "name": "error_not_found",
+      "type": "string",
+      "description": "Fail to get order fulfillment group, please try again later.",
+      "children": []
+    },
+    {
+      "name": "error_param",
+      "type": "string",
+      "description": "request not from gateway",
+      "children": []
+    },
+    {
+      "name": "error_status",
+      "type": "string",
+      "description": "Buyer hasn't completed pre-authorization yet.",
+      "children": []
+    },
+    {
+      "name": "error_param",
+      "type": "string",
+      "description": "Please do not request with tracking_no for this channel which does not require tracking_no.",
+      "children": []
+    }
+  ],
+  "chunk_metadata": {
+    "index": 2,
+    "total": 2,
+    "y_start": 7250,
+    "y_end": 8660,
+    "overlap_top": 500,
+    "overlap_bottom": 0,
+    "height": 1410,
+    "path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\workspaces\\v2.logistics.batch_ship_order\\chunks\\chunk_002.png",
+    "filename": "chunk_002.png",
+    "width": 837
+  },
+  "chunk_path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\workspaces\\v2.logistics.batch_ship_order\\chunks\\chunk_002.png"
+}

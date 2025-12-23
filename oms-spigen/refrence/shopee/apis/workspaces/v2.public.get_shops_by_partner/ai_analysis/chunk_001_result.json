@@ -1,0 +1,91 @@
+{
+  "chunk_index": 1,
+  "total_chunks": 1,
+  "endpoint": "/x2/public_api_check_pic_partner",
+  "method": "POST",
+  "description": "Check image parameters in the partner",
+  "update_log": [],
+  "hidden_fields": [],
+  "parameters": [
+    {
+      "name": "partner_id",
+      "type": "int",
+      "required": true,
+      "description": "Partner ID (a required user registration or successful Request ID or alipay ID)",
+      "children": []
+    },
+    {
+      "name": "requestId",
+      "type": "timestamp",
+      "required": false,
+      "description": "This is a token for browsing of the report. Required for alipay partner queries",
+      "children": []
+    }
+  ],
+  "response_fields": [
+    {
+      "name": "auth_time",
+      "type": "string",
+      "required": false,
+      "description": "Authorization time",
+      "children": []
+    },
+    {
+      "name": "msg_id",
+      "type": "int",
+      "required": true,
+      "description": "Message ID",
+      "children": []
+    },
+    {
+      "name": "auth_type",
+      "type": "timestamp",
+      "required": false,
+      "description": "The timestamp after the shop was authorized",
+      "children": []
+    },
+    {
+      "name": "expire_time",
+      "type": "timestamp",
+      "required": false,
+      "description": "Use this field to decide the expiration date for other information",
+      "children": []
+    },
+    {
+      "name": "result_id",
+      "type": "string",
+      "required": false,
+      "description": "The ID that will be set for each result",
+      "children": []
+    }
+  ],
+  "error_codes": [
+    {
+      "code": "error_param",
+      "description": "Invalid parameter"
+    },
+    {
+      "code": "error_system",
+      "description": "System error"
+    },
+    {
+      "code": "error_expired",
+      "description": "Data not exist"
+    }
+  ],
+  "notes": "The documentation includes both request parameters, response parameters, and error codes. There are also example requests and responses shown in the image but not fully captured in this structured format as they appear to be implementation examples.",
+  "chunk_metadata": {
+    "index": 1,
+    "total": 1,
+    "y_start": 0,
+    "y_end": 4272,
+    "overlap_top": 0,
+    "overlap_bottom": 0,
+    "height": 4272,
+    "path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\workspaces\\v2.public.get_shops_by_partner\\chunks\\chunk_001.png",
+    "filename": "chunk_001.png",
+    "width": 837
+  },
+  "analysis_timestamp": "2025-10-10T06:37:42.270383",
+  "model": "claude-3-5-sonnet-20241022"
+}

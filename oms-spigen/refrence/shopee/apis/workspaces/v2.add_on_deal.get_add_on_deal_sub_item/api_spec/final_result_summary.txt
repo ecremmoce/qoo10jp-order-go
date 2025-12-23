@@ -1,0 +1,43 @@
+======================================================================
+API SPECIFICATION SUMMARY
+======================================================================
+
+Endpoint: None cc_dkl_sm_dedl_plt_mt_lock_put_del
+
+Parameters (7):
+----------------------------------------------------------------------
+* url (string)
+   HTTP request
+* headers (object)
+   HTTP request header
+* Test (string)
+   Test url
+  url_pre (string)
+   The url pre added to the call on test
+* proc_id (string)
+   Dragon's process identifier for an info
+* result_id (string)
+   The identifier of the DA request for each checking
+* lock_info_del (string)
+   The pre processed result of each call date. Gets the pre processed result of an info if no need to process it or if job info was applied.
+
+Response Fields (2):
+----------------------------------------------------------------------
+  message (string)
+   The description of error code
+  result_id (string)
+   The identifier of the DA request for each checking
+
+Metadata:
+----------------------------------------------------------------------
+  total_chunks: 1
+  chunks_with_errors: 0
+  total_parameters_before_dedup: 7
+  total_parameters_after_dedup: 7
+  update_log_entries: 2
+  hidden_fields_count: 0
+  source_results: workspaces\v2.add_on_deal.get_add_on_deal_sub_item\results\all_chunks_results.json
+
+======================================================================
+Legend: * = required parameter
+======================================================================

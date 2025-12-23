@@ -1,0 +1,67 @@
+{
+  "chunk_index": 1,
+  "total_chunks": 1,
+  "endpoint": null,
+  "method": null,
+  "description": "Shopee Open Platform documentation introduction page",
+  "update_log": [
+    {
+      "date": "2024-11-11",
+      "change": "Last updated"
+    }
+  ],
+  "hidden_fields": [],
+  "parameters": [],
+  "response_fields": [],
+  "metadata": {
+    "languages_supported": [
+      "English",
+      "简体中文",
+      "繁體中文",
+      "Português",
+      "ไทย"
+    ],
+    "platform_features": {
+      "api_capabilities": [
+        "Orders API",
+        "Products API",
+        "Marketing API",
+        "Push notification services"
+      ],
+      "developer_services": [
+        "APP development",
+        "APP testing",
+        "APP release",
+        "APP maintenance",
+        "API testing tools",
+        "Test accounts",
+        "Sandbox testing environments"
+      ]
+    },
+    "user_types": [
+      {
+        "type": "Software service providers",
+        "description": "Comprehensive range of Open APIs for Shopee's key ecommerce processes"
+      },
+      {
+        "type": "Sellers with software development capabilities",
+        "description": "For sellers who want to develop software tailored to their business needs"
+      }
+    ]
+  },
+  "notes": "This is an introduction page rather than an API endpoint documentation. It contains general information about the Shopee Open Platform, its features, benefits, and supported user types. The page appears to be part of a larger documentation structure with various sections like API calls, Push Mechanism notifications, Authorization and Authentication, etc. listed in the left navigation menu.",
+  "chunk_metadata": {
+    "index": 1,
+    "total": 1,
+    "y_start": 0,
+    "y_end": 1080,
+    "overlap_top": 0,
+    "overlap_bottom": 0,
+    "height": 1080,
+    "path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\platforms\\shopee\\apis\\workspaces\\developer-guide.4\\chunks\\chunk_001.png",
+    "filename": "chunk_001.png",
+    "width": 1920
+  },
+  "analysis_timestamp": "2025-10-12T00:08:35.905911",
+  "model": "claude-3-5-sonnet-20241022"
+}

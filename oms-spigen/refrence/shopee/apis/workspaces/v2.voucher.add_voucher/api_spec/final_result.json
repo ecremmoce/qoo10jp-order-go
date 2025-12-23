@@ -1,0 +1,90 @@
+{
+  "endpoint": null,
+  "method": null,
+  "description": null,
+  "parameters": [
+    {
+      "name": "source_type",
+      "type": "string",
+      "required": true,
+      "description": "Source type identifier",
+      "children": []
+    },
+    {
+      "name": "callback_url",
+      "type": "string",
+      "required": true,
+      "description": "Callback URL for notifications",
+      "children": []
+    },
+    {
+      "name": "api_key",
+      "type": "string",
+      "required": true,
+      "description": "Authentication key for API access",
+      "children": []
+    },
+    {
+      "name": "object_params",
+      "type": "object",
+      "required": false,
+      "description": "Additional configuration parameters",
+      "children": [
+        {
+          "name": "param1",
+          "type": "string",
+          "required": false,
+          "description": "First optional parameter",
+          "children": []
+        },
+        {
+          "name": "param2",
+          "type": "integer",
+          "required": false,
+          "description": "Second optional parameter",
+          "children": []
+        }
+      ]
+    }
+  ],
+  "response_fields": [],
+  "update_log": [
+    {
+      "date": "2023-09-26",
+      "change": "The api_key parameter is now required."
+    },
+    {
+      "date": "2023-09-25",
+      "change": "Added new error code 40002."
+    },
+    {
+      "date": "2023-09-22",
+      "change": "Added object_params to support additional customization."
+    },
+    {
+      "date": "2023-09-20",
+      "change": "Initial API release."
+    }
+  ],
+  "hidden_fields": [
+    {
+      "name": "api_key",
+      "found_in": "update log entry",
+      "extracted_from_description": true
+    },
+    {
+      "name": "object_params",
+      "found_in": "update log entry",
+      "extracted_from_description": true
+    }
+  ],
+  "metadata": {
+    "total_chunks": 1,
+    "chunks_with_errors": 0,
+    "total_parameters_before_dedup": 4,
+    "total_parameters_after_dedup": 4,
+    "update_log_entries": 4,
+    "hidden_fields_count": 2,
+    "source_results": "workspaces\\v2.voucher.add_voucher\\results\\all_chunks_results.json"
+  }
+}

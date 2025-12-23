@@ -1,0 +1,39 @@
+======================================================================
+API SPECIFICATION SUMMARY
+======================================================================
+
+Endpoint: GET api_pref/ads_pref_config
+Description: API for language and regionwide settings
+
+Parameters (8):
+----------------------------------------------------------------------
+* url (string)
+   URL of current page
+  test_url (string)
+   Test URL for Chinese language
+  session_id (string)
+   Session identifier
+* ads_pref_config_id (integer)
+   Full or part config. Global ads unit ids field values can be updated as requested in app_config, but they are not live until ads_pref_config_id changes.
+  request_id (string)
+   Unique request identifier for tracking
+  message (string)
+   Status message
+  exception (object)
+   Error information
+  result (object)
+   Result data
+
+Metadata:
+----------------------------------------------------------------------
+  total_chunks: 1
+  chunks_with_errors: 0
+  total_parameters_before_dedup: 8
+  total_parameters_after_dedup: 8
+  update_log_entries: 0
+  hidden_fields_count: 0
+  source_results: workspaces\v2.push.set_app_push_config\results\all_chunks_results.json
+
+======================================================================
+Legend: * = required parameter
+======================================================================

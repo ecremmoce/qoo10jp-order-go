@@ -1,0 +1,114 @@
+[
+  {
+    "chunk_index": 1,
+    "total_chunks": 1,
+    "endpoint": "/short_video_recommended_price",
+    "method": "POST",
+    "description": "Get product information for recommended price",
+    "update_log": [],
+    "parameters": [
+      {
+        "name": "postfix_1",
+        "type": "int",
+        "required": false,
+        "description": "Postfix 1 to calculate post reputation by successful comments or unlocked",
+        "children": []
+      },
+      {
+        "name": "postfix_2",
+        "type": "int",
+        "required": false,
+        "description": "Will be filled if 5 minutes after the 1st posting. Result will be checked in 5 minutes",
+        "children": []
+      },
+      {
+        "name": "msg_id",
+        "type": "string",
+        "required": true,
+        "description": "Request msg identity to a row, using a identity post parameter to recommend price",
+        "children": []
+      },
+      {
+        "name": "type",
+        "type": "string",
+        "required": true,
+        "description": "Optional parameter to control_id, get_profit_parameter, short_video_index, show_page_source",
+        "children": []
+      },
+      {
+        "name": "short_msg_option",
+        "type": "string",
+        "required": false,
+        "description": "Short msg option",
+        "children": []
+      },
+      {
+        "name": "media_id",
+        "type": "string",
+        "required": false,
+        "description": "id of main image",
+        "children": []
+      },
+      {
+        "name": "url",
+        "type": "string",
+        "required": true,
+        "description": "Indicate error link first error. Display if the error exists",
+        "children": []
+      },
+      {
+        "name": "running",
+        "type": "string",
+        "required": false,
+        "description": "Indicate errors during first error. Display if the error happens",
+        "children": []
+      },
+      {
+        "name": "request_id",
+        "type": "string",
+        "required": false,
+        "description": "The identifier for an API request for error",
+        "children": []
+      },
+      {
+        "name": "short_type_price",
+        "type": "string",
+        "required": false,
+        "description": "id of short msg",
+        "children": []
+      }
+    ],
+    "response_fields": [
+      {
+        "name": "msg_type",
+        "type": "string",
+        "description": "error msg type"
+      },
+      {
+        "name": "error_data",
+        "type": "string",
+        "description": "was not exist"
+      },
+      {
+        "name": "error_detail",
+        "type": "string",
+        "description": "parameter invalid"
+      }
+    ],
+    "notes": "The documentation appears to be for a price recommendation API for short videos. Some parameters have Chinese language references in the original which have been translated. The API seems to handle both successful price recommendations and various error conditions.",
+    "chunk_metadata": {
+      "index": 1,
+      "total": 1,
+      "y_start": 0,
+      "y_end": 4506,
+      "overlap_top": 0,
+      "overlap_bottom": 0,
+      "height": 4506,
+      "path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\workspaces\\v2.product.get_direct_shop_recommended_price\\chunks\\chunk_001.png",
+      "filename": "chunk_001.png",
+      "width": 837
+    },
+    "analysis_timestamp": "2025-10-10T06:27:38.716218",
+    "model": "claude-3-5-sonnet-20241022"
+  }
+]

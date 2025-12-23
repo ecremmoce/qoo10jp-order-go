@@ -1,0 +1,107 @@
+[
+  {
+    "chunk_index": 1,
+    "total_chunks": 1,
+    "endpoint": null,
+    "method": null,
+    "description": null,
+    "update_log": [],
+    "hidden_fields": [],
+    "parameters": [
+      {
+        "name": "url_type",
+        "type": "string",
+        "required": true,
+        "description": "URL type",
+        "children": []
+      },
+      {
+        "name": "file_name",
+        "type": "string",
+        "required": true,
+        "description": null,
+        "children": []
+      },
+      {
+        "name": "content_type",
+        "type": "string",
+        "required": true,
+        "description": null,
+        "children": []
+      },
+      {
+        "name": "unique_id",
+        "type": "string",
+        "required": true,
+        "description": null,
+        "children": []
+      }
+    ],
+    "response_fields": [
+      {
+        "name": "get_presigned_url",
+        "type": "object",
+        "description": "Pre-signed URL response object",
+        "children": [
+          {
+            "name": "url",
+            "type": "string",
+            "description": "The pre-signed URL"
+          },
+          {
+            "name": "fields",
+            "type": "object",
+            "description": "Fields required for the upload",
+            "children": [
+              {
+                "name": "key",
+                "type": "string",
+                "description": null
+              },
+              {
+                "name": "x-amz-credential",
+                "type": "string",
+                "description": null
+              },
+              {
+                "name": "x-amz-algorithm",
+                "type": "string",
+                "description": null
+              },
+              {
+                "name": "x-amz-date",
+                "type": "string",
+                "description": null
+              },
+              {
+                "name": "policy",
+                "type": "string",
+                "description": null
+              },
+              {
+                "name": "x-amz-signature",
+                "type": "string",
+                "description": null
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "notes": "This appears to be API documentation for generating pre-signed URLs, likely for S3 or similar object storage. The image shows both request parameters and response fields, with a detailed structure for the response including AWS S3 specific fields.",
+    "chunk_metadata": {
+      "index": 1,
+      "total": 1,
+      "y_start": 0,
+      "y_end": 6213,
+      "overlap_top": 0,
+      "overlap_bottom": 0,
+      "height": 6213,
+      "path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\workspaces\\v2.ads.get_gms_campaign_performance\\chunks\\chunk_001.png",
+      "filename": "chunk_001.png",
+      "width": 837
+    },
+    "analysis_timestamp": "2025-10-10T05:30:30.736035",
+    "model": "claude-3-5-sonnet-20241022"
+  }
+]

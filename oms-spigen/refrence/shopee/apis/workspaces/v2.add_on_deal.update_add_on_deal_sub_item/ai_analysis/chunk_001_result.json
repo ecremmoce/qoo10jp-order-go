@@ -1,0 +1,87 @@
+{
+  "chunk_index": 1,
+  "total_chunks": 1,
+  "endpoint": "/api/v2/im/chat/get_msg_list",
+  "method": "POST",
+  "description": "Message list query interface",
+  "update_log": [],
+  "hidden_fields": [],
+  "parameters": [
+    {
+      "name": "page",
+      "type": "integer",
+      "required": true,
+      "description": "Page number, starts from 1",
+      "children": []
+    },
+    {
+      "name": "pageSize",
+      "type": "integer",
+      "required": true,
+      "description": "Number of items per page",
+      "children": []
+    },
+    {
+      "name": "chatId",
+      "type": "string",
+      "required": true,
+      "description": "Chat ID",
+      "children": []
+    }
+  ],
+  "response_fields": [
+    {
+      "name": "total",
+      "type": "integer",
+      "description": "Total number of records",
+      "children": []
+    },
+    {
+      "name": "data",
+      "type": "array",
+      "description": "Message list",
+      "children": [
+        {
+          "name": "id",
+          "type": "string",
+          "description": "Message ID"
+        },
+        {
+          "name": "chatId",
+          "type": "string",
+          "description": "Chat ID"
+        },
+        {
+          "name": "type",
+          "type": "string",
+          "description": "Message type"
+        },
+        {
+          "name": "content",
+          "type": "string",
+          "description": "Message content"
+        },
+        {
+          "name": "createdAt",
+          "type": "string",
+          "description": "Creation time"
+        }
+      ]
+    }
+  ],
+  "notes": "The image shows what appears to be a chat message listing API with basic pagination parameters and message details in the response. The documentation includes both request parameters and response fields with clear hierarchical structure.",
+  "chunk_metadata": {
+    "index": 1,
+    "total": 1,
+    "y_start": 0,
+    "y_end": 6167,
+    "overlap_top": 0,
+    "overlap_bottom": 0,
+    "height": 6167,
+    "path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\workspaces\\v2.add_on_deal.update_add_on_deal_sub_item\\chunks\\chunk_001.png",
+    "filename": "chunk_001.png",
+    "width": 837
+  },
+  "analysis_timestamp": "2025-10-10T05:26:40.342426",
+  "model": "claude-3-5-sonnet-20241022"
+}

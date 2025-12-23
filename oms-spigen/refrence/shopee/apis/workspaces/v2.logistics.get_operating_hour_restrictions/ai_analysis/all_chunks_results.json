@@ -1,0 +1,130 @@
+[
+  {
+    "chunk_index": 1,
+    "endpoint": null,
+    "method": null,
+    "description": null,
+    "parameters": [
+      {
+        "name": "saturday",
+        "type": "object",
+        "required": true,
+        "description": "The restrictions specific for Saturday",
+        "children": [
+          {
+            "name": "mandatory",
+            "type": "boolean",
+            "required": true,
+            "description": "If this value is true, they must be marked as open"
+          },
+          {
+            "name": "minimum_special_reg_hour",
+            "type": "int64",
+            "required": true,
+            "description": "Minimum number of hours required for the seller to operate on that day"
+          },
+          {
+            "name": "minimum_start_time",
+            "type": "string",
+            "required": true,
+            "description": "The start hour for that day should not be set earlier than this time"
+          },
+          {
+            "name": "minimum_end_time",
+            "type": "string",
+            "required": true,
+            "description": "The end hour for that day should not be set earlier than this time"
+          },
+          {
+            "name": "operating_24_hr",
+            "type": "boolean",
+            "required": true,
+            "description": "If the toggle value is true, the user can set the start_time to 00:00 and the end_time to 23:59 to indicate that the shop is operating 24 hours a day"
+          }
+        ]
+      }
+    ],
+    "response_fields": [],
+    "chunk_metadata": {
+      "index": 1,
+      "total": 3,
+      "y_start": 0,
+      "y_end": 8000,
+      "overlap_top": 0,
+      "overlap_bottom": 500,
+      "height": 8000,
+      "path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\workspaces\\v2.logistics.get_operating_hour_restrictions\\chunks\\chunk_001.png",
+      "filename": "chunk_001.png",
+      "width": 837
+    },
+    "chunk_path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\workspaces\\v2.logistics.get_operating_hour_restrictions\\chunks\\chunk_001.png"
+  },
+  {
+    "chunk_index": 2,
+    "endpoint": "/api/path/to/endpoint",
+    "method": "POST",
+    "description": "Example request and response documentation",
+    "parameters": [],
+    "response_fields": [
+      {
+        "name": "error_permission",
+        "type": "string",
+        "description": "Sorry you don't have the permission detail: This shop isn't eligible to set up Regular Operating Hours"
+      },
+      {
+        "name": "error_data",
+        "type": "string",
+        "description": "parse data failed"
+      },
+      {
+        "name": "error_date",
+        "type": "string",
+        "description": "date not exist"
+      },
+      {
+        "name": "error_param",
+        "type": "string",
+        "description": "parameter invalid"
+      },
+      {
+        "name": "error_notfound",
+        "type": "string",
+        "description": "The information you queried is not found"
+      }
+    ],
+    "chunk_metadata": {
+      "index": 2,
+      "total": 3,
+      "y_start": 7623,
+      "y_end": 15623,
+      "overlap_top": 500,
+      "overlap_bottom": 500,
+      "height": 8000,
+      "path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\workspaces\\v2.logistics.get_operating_hour_restrictions\\chunks\\chunk_002.png",
+      "filename": "chunk_002.png",
+      "width": 837
+    },
+    "chunk_path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\workspaces\\v2.logistics.get_operating_hour_restrictions\\chunks\\chunk_002.png"
+  },
+  {
+    "chunk_index": 3,
+    "endpoint": null,
+    "method": null,
+    "description": "API Permissions and Updates documentation",
+    "parameters": [],
+    "response_fields": [],
+    "chunk_metadata": {
+      "index": 3,
+      "total": 3,
+      "y_start": 14756,
+      "y_end": 18067,
+      "overlap_top": 500,
+      "overlap_bottom": 0,
+      "height": 3311,
+      "path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\workspaces\\v2.logistics.get_operating_hour_restrictions\\chunks\\chunk_003.png",
+      "filename": "chunk_003.png",
+      "width": 837
+    },
+    "chunk_path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\workspaces\\v2.logistics.get_operating_hour_restrictions\\chunks\\chunk_003.png"
+  }
+]

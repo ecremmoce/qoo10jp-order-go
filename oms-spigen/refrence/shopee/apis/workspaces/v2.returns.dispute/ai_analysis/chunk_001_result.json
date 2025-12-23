@@ -1,0 +1,76 @@
+{
+  "chunk_index": 1,
+  "endpoint": null,
+  "method": null,
+  "description": "Error response documentation",
+  "parameters": [],
+  "response_fields": [
+    {
+      "name": "error_param",
+      "type": "string",
+      "description": "Return SN or ID is invalid.",
+      "children": []
+    },
+    {
+      "name": "error_param",
+      "type": "string",
+      "description": "The information you queried is not found.",
+      "children": []
+    },
+    {
+      "name": "error_param",
+      "type": "string",
+      "description": "Wrong parameters, detail: {msg}.",
+      "children": []
+    },
+    {
+      "name": "error_server",
+      "type": "string",
+      "description": "Something wrong. Please try later.",
+      "children": []
+    },
+    {
+      "name": "error_shop",
+      "type": "string",
+      "description": "shopid is invalid",
+      "children": []
+    },
+    {
+      "name": "error_data",
+      "type": "string",
+      "description": "The return case is missing initial evidence from the buyer and will be auto-cancelled if the buyer does not provide evidence by the due date.",
+      "children": []
+    },
+    {
+      "name": "error_param",
+      "type": "string",
+      "description": "request not from gateway",
+      "children": []
+    },
+    {
+      "name": "error_return_status",
+      "type": "string",
+      "description": "Cannot raise dispute because return SN is not in REQUESTED, RETURN_PROCESSING, or RETURN_ACCEPTED",
+      "children": []
+    },
+    {
+      "name": "dispute.request.param.error",
+      "type": "string",
+      "description": "Key: 'XXX' Error:Field validation for 'XX' failed on the 'required' tag",
+      "children": []
+    }
+  ],
+  "chunk_metadata": {
+    "index": 1,
+    "total": 2,
+    "y_start": 0,
+    "y_end": 8000,
+    "overlap_top": 0,
+    "overlap_bottom": 500,
+    "height": 8000,
+    "path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\workspaces\\v2.returns.dispute\\chunks\\chunk_001.png",
+    "filename": "chunk_001.png",
+    "width": 837
+  },
+  "chunk_path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\workspaces\\v2.returns.dispute\\chunks\\chunk_001.png"
+}

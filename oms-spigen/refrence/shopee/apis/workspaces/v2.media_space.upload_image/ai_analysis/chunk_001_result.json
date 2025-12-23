@@ -1,0 +1,98 @@
+{
+  "chunk_index": 1,
+  "total_chunks": 1,
+  "endpoint": null,
+  "method": null,
+  "description": null,
+  "update_log": [],
+  "hidden_fields": [],
+  "parameters": [
+    {
+      "name": "url",
+      "type": "string",
+      "required": true,
+      "description": "URL of the image",
+      "children": []
+    },
+    {
+      "name": "url_mobile",
+      "type": "string",
+      "required": false,
+      "description": "Mobile URL of the image",
+      "children": []
+    },
+    {
+      "name": "text",
+      "type": "string",
+      "required": false,
+      "description": null,
+      "children": []
+    }
+  ],
+  "response_fields": [
+    {
+      "name": "grid",
+      "type": "string",
+      "required": false,
+      "description": "Related to grid layout",
+      "children": []
+    },
+    {
+      "name": "currency",
+      "type": "string",
+      "required": false,
+      "description": null,
+      "children": []
+    },
+    {
+      "name": "request_id",
+      "type": "string",
+      "required": false,
+      "description": null,
+      "children": []
+    },
+    {
+      "name": "image_url",
+      "type": "string",
+      "required": false,
+      "description": "Return url of image",
+      "children": []
+    },
+    {
+      "name": "image_id",
+      "type": "string",
+      "required": false,
+      "description": "ID of image",
+      "children": []
+    }
+  ],
+  "error_codes": [
+    {
+      "code": "error_generic",
+      "description": "Generic error"
+    },
+    {
+      "code": "error_param",
+      "description": "Parameter error"
+    },
+    {
+      "code": "error_system",
+      "description": "System error"
+    }
+  ],
+  "notes": "The documentation appears to be for an image-related API. It shows common parameters, response parameters, and error codes. Some descriptions are missing in the original documentation.",
+  "chunk_metadata": {
+    "index": 1,
+    "total": 1,
+    "y_start": 0,
+    "y_end": 5096,
+    "overlap_top": 0,
+    "overlap_bottom": 0,
+    "height": 5096,
+    "path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\workspaces\\v2.media_space.upload_image\\chunks\\chunk_001.png",
+    "filename": "chunk_001.png",
+    "width": 837
+  },
+  "analysis_timestamp": "2025-10-10T06:11:00.509725",
+  "model": "claude-3-5-sonnet-20241022"
+}

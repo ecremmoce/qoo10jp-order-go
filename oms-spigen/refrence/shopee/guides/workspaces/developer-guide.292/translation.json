@@ -1,0 +1,54 @@
+{
+  "document_id": "developer-guide.292",
+  "document_type": "guide",
+  "platform": "shopee",
+  "content_ko": "# Passo a Passo Logística API\n\n## API 모범 사례 > Brand Coop API 모범 사례... > Passo a Passo Logística API\n\n### 흐름도\n\n```\nv2.logistics.get_shipping_parameter\n          ↓\n      Drop Off ←→ Pick Up\n          ↓\n   v2.logistics.ship_order\n          ↓\nv2.logistics.get_tracking_number\n          ↓\nv2.logistics.get_airway_document_parameter\n          ↓\nv2.logistics.create_shipping_document\n          ↓\nv2.logistics.get_shipping_document_result\n          ↓\nv2.logistics.download_shipping_document\n          ↓\n         Fim\n```\n\n### 참고 및 정보 상자\n\n**ℹ️ 참고 1:**\n배송을 구성하기 위한 정보를 수집합니다. 판매자가 확인 없이 주문을 로컬에서 처리할 수 있도록 모드 주소를 수집합니다.\n\n**ℹ️ 참고 2:**\n이 API를 호출한 후 주문 상태가 자동으로 \"READY_TO_SHIP\"(Shopee에 게시)으로 업데이트됩니다. \"v2.order.get_order_list\"를 사용하여 \"PROCESSED\" 목록을 호출합니다.\n\n**ℹ️ 참고 3:**\n\"PROCESSED\" 상태에서만 더 일찍 호출할 수 있습니다. 실패한 시도(API에 오류가 발생)가 있는 경우 판매자의 주문에는 영향을 미치지 않습니다.\n\n**ℹ️ 참고 4:**\n일반 AWB 및 Thermal AWB 유형이 있을 수 있습니다. 귀사의 물류 회사에서 배송 문서를 받을 필요가 없는 경우 문서 획득 단계를 건너뛰고 배송 문서 다운로드 단계로 바로 이동할 수 있습니다.\n\n**ℹ️ 참고 5:**\nTrackingNo가 생성된 후에 라벨을 만들 수 있습니다.\n\n**ℹ️ 참고 6:**\n이 API가 모든 배송 문서의 상태가 표시되는 상태를 반환하면 모든 문서를 다운로드할 수 있습니다.\n\n**ℹ️ 참고 7:**\n6단계에서 결과가 제공되지 않으면 다운로드할 CDF를 얻기 위해 \"v2.logistics.get_shipping_document_result\"를 계속 호출합니다. TrackingNo,_init가 반환되지 않으면 이 값을 null로 설정할 수 있습니다.\n\n---\n\n## v2에서 배송 채널과 관련된 호출 흐름은 다음과 같습니다.\n\n### 1. Shopee는 판매자를 위해 배송 채널을 활성화합니다(예: Correios, 모든 판매자에게 공개, Total Express 등).\n\n### 2. 스토어에서 활성화된 물류 채널을 확인하려면\n\n1. 엔드포인트 v2.logistics.get_channel_list를 호출합니다.\n\n### 3. 판매자는 제공할 수 있도록 해제된 각 품목에 대한 물류 채널을 얻어야 합니다(Shopee 물류).\n\n1. 제품의 배송 채널을 활성화/비활성화하려면 v2.product.edit, v2.product.update_price의 품목에서 logistic_info 내의 logistic_info.logistic_id를 준비해야 합니다.\n\n### 4. 판매자는 구매자가 선택한 배송 채널로 주문을 받습니다.\n\n### 5. 배송 준비(ship_order)를 하기 전에 주문에 대한 NF-e를 알려야 하는지 여부를 확인하려면 다음을 수행할 수 있습니다.\n\n1. v2.order.get_order_detail 호출을 사용합니다. 각 호출에는 \"order_status\" \"INVOICE_PENDING\", \"READY_TO_SHIP\" 매개변수가 있습니다.\n2. NF-e 정보를 제공하려면 v2.order.add_invoice_data 호출을 사용합니다.\n3. 5단계를 확인한 후 v2.logistics.get_shipping_parameter, v2.logistics.ship_order를 \"invoice_data\" 매개변수와 함께 사용합니다.\n\n### 6. 노드 v2.logistics.ship_order에 대한 배송 및 드롭을 수행하려면\n\n1. 구매자가 선택한 배송 채널에 따라 판매자는 주문을 게시하거나 수거를 기다립니다.\n2. 수거(pickup) 또는 게시(dropoff)인지 확인하려면 v2.logistics.get_shipping_parameter를 사용합니다.\n3. Dropoff: 판매자는 물류에 보내야 합니다. v2.logistics.ship_order를 사용한 후\n4. dropoff인 경우(Correios를 통해 dropoff로 가는 경우) info_needed가 비어 있으면(\"dropoff\" []), ship_order 요청은 다음과 같아야 합니다.\n\n```json\n{\n  \"order_sn\": \"12CR12DCXXXXX\",\n  \n  \"dropoff\": []\n}\n```\n\n### 8. pickup인 경우(pickup이 아닌 다른 모든 루프, Coleta Correios 포함) info_needed에 \"pickup\"(\"address_id\",\"pickup_time_id\")이 있는 경우 ship_order 요청은 다음과 같아야 합니다.\n\n```json\n{\n  \"order_sn\": \"12CR12DCXXXXX\",\n  \n  \"pickup\": []\n}\n```\n\n**매개변수가 있는 예:**\n\n```json\n\"address_id\":10,box_address_list.address_id | in_get_address_list.n.ne.id do_self_ship(log_parameter)\n\n\"pickup_time_id\":10,box_address_list.time_slot_list.pickup_time_id do_self_ship(log_parameter)\n```\n\n---\n\n## 9. 그런 다음 추적 코드를 얻으려면 엔드포인트 v2.logistics.get_tracking_number를 호출하면 됩니다.\n\n### 10. 라벨에 사용할 수 있는 매개변수를 얻으려면 v2.logistics.get_shipping_document_parameter를 사용합니다.\n\n1. 라벨에 사용할 수 있는 매개변수를 얻으려면 v2.logistics.get_shipping_document_parameter(유형 \"NORMAL_AIR_WAYBILL\")는 라벨이 각각 pdf 또는 .zip 형식으로 생성될 수 있음을 반환합니다(.txt 형식의 라벨이 포함되어 있으며 .ZPL 형식은 컨텍스트 언어임).\n\n### 11. Shopee에 하나 이상의 주문에 대한 라벨 생성을 요청하려면\n\n1. v2.logistics.create_shipping_document를 호출합니다.\n2. \"tracking_number\" 매개변수를 보내야 합니다.\n\n### 12. 라벨이 이미 생성되었는지 아니면 아직 처리 중인지 확인하려면\n\n1. v2.logistics.get_shipping_document_resultHolder는 응답 \"status\" \"READY\"로 라벨을 얻을 수 있습니다.\n\n### 13. Shopee 프로세스에 대한 라벨(AIR WAYBILL)을 얻으려면\n\n1. v2.logistics.download_shipping_document\n\n---\n\n## 주문 호출 흐름에 대한 자세한 내용은 추적 배송 및 추적 번호 가져오기 및 항공 운송장 인쇄 섹션의 설명서를 참조하십시오.\n\n[https://open.shopee.com/developer/public/v2](https://open.shopee.com/developer/public/v2)\n\n---\n\n## FAQ\n\n### 모든 배송은 Shopee와 직접 연결된 배송 채널(운송업체)을 통해 이루어집니다.\n\nA: 아니요, Shopee는 무료이며 판매자가 지불합니다.\n\n---\n\n### 모든 배송 라벨은 Shopee에서 생성하거나 판매자 또는 통합업체/ERP에서 라벨을 생성해서는 안 됩니까?\n\nA: 라벨이 있는 경우 라벨은 v2.logistics.download_shipping_document를 통해 Shopee에서 얻어야 합니다.\n\n---\n\n### 각 판매자는 단일 배송 채널을 가지고 있습니다. 즉, 다른 판매자는 다른 배송 채널에 액세스할 수 있습니다.\n\nA: 예, 각 판매자는 Correios에 대한 액세스 권한을 가지고 있으며 판매자 2는 Loggi에만 액세스할 수 있습니다.\n\n---\n\n### Shopee는 언제든지 판매자의 배송 채널 액세스를 활성화하거나 비활성화할 수 있습니다.\n\nA: 예\n\n---\n\n### 판매자는 Shopee Geren Invoice Issue를 통해 원하는 제한으로 NF-e를 입력할 수 있습니다.\n\nA: 예\n\n---\n\n### NF-e 데이터를 받으면 다음을 평가합니다.\n\n1. 주문 총액(예: item_price * qty)이 주문서의 총액과 동일한지 확인합니다. 최소 키가 item_price에 잘못된 정보인 경우\n2. 전송된 품목(sku만 해당)이 주문에 있는지 확인합니다(다른 품목은 무시됨).\n3. NF-e 번호와 판매자가 Shopee 등록(CNPJ 및 UF) 또는 NF-e의 다른 필드에 제공한 데이터 간의 관계가 null인지 확인합니다(NF-e 번호만 유효성 검사됨).\n4. NF-e 날짜가 주문 결제 날짜 이후인지 확인합니다(완료된 경우).\n\n---\n\n### 참고 자료:\n\n1. V1: https://open.shopee.com/documents?module=63\n2. V2: https://open.shopee.com/documents?version=2",
+  "translated_at": "2025-10-16T09:09:56",
+  "char_count": 4719,
+  "metadata_ko": {
+    "title": "Passo a Passo Logística API",
+    "summary": "이 가이드는 Logistics API의 단계별 안내를 제공하며, Shopee의 물류 서비스와 통합하기 위한 호출 흐름 및 모범 사례를 자세히 설명합니다. 배송 문서 생성, 추적, 다양한 배송 채널 처리 등 다양한 시나리오를 다룹니다.",
+    "keywords": [
+      "Logistics API",
+      "배송",
+      "추적",
+      "배송 문서",
+      "배송 채널",
+      "주문 관리",
+      "Shopee API",
+      "v2 API"
+    ],
+    "category": "모범 사례",
+    "tags": [
+      "logistics",
+      "shipping",
+      "api",
+      "integration",
+      "workflow"
+    ],
+    "difficulty": "medium",
+    "importance": 4,
+    "use_cases": [
+      "배송 프로세스 자동화",
+      "배송 문서 생성",
+      "주문 상태 추적",
+      "다양한 배송 업체와 통합",
+      "배송 채널 관리"
+    ],
+    "related_apis": [
+      "v2.logistics.get_shipping_parameter",
+      "v2.logistics.ship_order",
+      "v2.logistics.get_tracking_number",
+      "v2.logistics.get_airway_document_parameter",
+      "v2.logistics.create_shipping_document",
+      "v2.logistics.get_shipping_document_result",
+      "v2.logistics.download_shipping_document",
+      "v2.logistics.get_channel_list",
+      "v2.product.edit",
+      "v2.product.update_price",
+      "v2.order.get_order_detail",
+      "v2.order.add_invoice_data"
+    ]
+  },
+  "metadata_translated_at": "2025-10-16T09:10:00"
+}

@@ -1,0 +1,89 @@
+{
+  "endpoint": "/api/exchange/market/spot/create/batch",
+  "method": "POST",
+  "description": "Create multiple spot orders",
+  "parameters": [
+    {
+      "name": "URL",
+      "type": "string",
+      "required": true,
+      "description": "Endpoint URL",
+      "children": []
+    },
+    {
+      "name": "symbol_a",
+      "type": "string",
+      "required": true,
+      "description": "Primary trading token",
+      "children": []
+    },
+    {
+      "name": "symbol_b",
+      "type": "string",
+      "required": true,
+      "description": "Secondary trading token",
+      "children": []
+    },
+    {
+      "name": "side",
+      "type": "string",
+      "required": true,
+      "description": "Trading direction: buy/sell",
+      "children": []
+    },
+    {
+      "name": "price",
+      "type": "string",
+      "required": true,
+      "description": "Order price",
+      "children": []
+    },
+    {
+      "name": "amount",
+      "type": "string",
+      "required": true,
+      "description": "Order amount",
+      "children": []
+    },
+    {
+      "name": "timestamp",
+      "type": "integer",
+      "required": true,
+      "description": "The server time when this order is created",
+      "children": []
+    },
+    {
+      "name": "client_oid",
+      "type": "string",
+      "required": false,
+      "description": "The client oid can be used to identify an order",
+      "children": []
+    },
+    {
+      "name": "time_type",
+      "type": "string",
+      "required": false,
+      "description": "The time type",
+      "children": []
+    },
+    {
+      "name": "order_type",
+      "type": "string",
+      "required": false,
+      "description": "The order type",
+      "children": []
+    }
+  ],
+  "response_fields": [],
+  "update_log": [],
+  "hidden_fields": [],
+  "metadata": {
+    "total_chunks": 1,
+    "chunks_with_errors": 0,
+    "total_parameters_before_dedup": 10,
+    "total_parameters_after_dedup": 10,
+    "update_log_entries": 0,
+    "hidden_fields_count": 0,
+    "source_results": "workspaces\\v2.shop.update_profile\\results\\all_chunks_results.json"
+  }
+}

@@ -1,0 +1,110 @@
+[
+  {
+    "chunk_index": 1,
+    "total_chunks": 1,
+    "endpoint": "bg_pics_delete_{bg_pics}",
+    "method": "DELETE",
+    "description": null,
+    "update_log": [
+      {
+        "date": "2023-08-16",
+        "change": "New SDK for batch publishing"
+      },
+      {
+        "date": "2023-07-27",
+        "change": "Add Error Coding Information"
+      },
+      {
+        "date": "2023-07-26",
+        "change": "Interface Parameter and Response Parameter"
+      }
+    ],
+    "parameters": [
+      {
+        "name": "partner_id",
+        "type": "string",
+        "required": true,
+        "description": "For example, partner ID, unique merchant or user identifier",
+        "children": []
+      },
+      {
+        "name": "bg_pics",
+        "type": "string",
+        "required": true,
+        "description": "The name of the picture using to identify one parameter to be set",
+        "children": []
+      },
+      {
+        "name": "sign",
+        "type": "string",
+        "required": true,
+        "description": "Stringified request identifier for a shop. Request param for signature.",
+        "children": []
+      },
+      {
+        "name": "request_id",
+        "type": "string",
+        "required": true,
+        "description": "The identifier for all POI request for each third party.",
+        "children": []
+      },
+      {
+        "name": "rid",
+        "type": "string",
+        "required": false,
+        "description": "Request identifier for shop ID every request happened",
+        "children": []
+      }
+    ],
+    "response_fields": [],
+    "error_codes": [
+      {
+        "code": "error_param",
+        "description": "There is no param, failed to parse"
+      },
+      {
+        "code": "error_json",
+        "description": "invalid json"
+      },
+      {
+        "code": "error_parse",
+        "description": "Failed to parse"
+      },
+      {
+        "code": "error_missing",
+        "description": "Missing sign"
+      },
+      {
+        "code": "error_param",
+        "description": "There is no parameter"
+      },
+      {
+        "code": "error_store",
+        "description": "invalid timestamp"
+      },
+      {
+        "code": "error_json",
+        "description": "parse daily failed"
+      },
+      {
+        "code": "error_data",
+        "description": "data not exist"
+      }
+    ],
+    "notes": "The documentation shows both Common Parameters and Required Parameters sections. The endpoint appears to be for deleting background pictures. There are also extensive error codes listed.",
+    "chunk_metadata": {
+      "index": 1,
+      "total": 1,
+      "y_start": 0,
+      "y_end": 4547,
+      "overlap_top": 0,
+      "overlap_bottom": 0,
+      "height": 4547,
+      "path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\workspaces\\v2.top_picks.delete_top_picks\\chunks\\chunk_001.png",
+      "filename": "chunk_001.png",
+      "width": 837
+    },
+    "analysis_timestamp": "2025-10-10T06:50:51.319317",
+    "model": "claude-3-5-sonnet-20241022"
+  }
+]

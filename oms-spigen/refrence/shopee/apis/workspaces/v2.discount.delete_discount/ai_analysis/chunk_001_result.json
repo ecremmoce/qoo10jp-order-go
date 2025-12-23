@@ -1,0 +1,100 @@
+{
+  "chunk_index": 1,
+  "total_chunks": 1,
+  "endpoint": "DiscountDelete_discount",
+  "method": null,
+  "description": "Discount delete, discount",
+  "update_log": [
+    {
+      "date": "2023-07-19",
+      "change": "Add Error Example Information"
+    },
+    {
+      "date": "2023-06-26",
+      "change": "Optimize the Return Information of Response Parameter"
+    },
+    {
+      "date": "2023-06-13",
+      "change": "Update parameters parameter description"
+    }
+  ],
+  "parameters": {
+    "common_parameters": [
+      {
+        "name": "access_token",
+        "type": "string",
+        "required": true,
+        "description": "Use the key to call config to obtain your permission to operate"
+      },
+      {
+        "name": "shop_id",
+        "type": "int",
+        "required": true,
+        "description": "Uniquee id"
+      },
+      {
+        "name": "sign",
+        "type": "string",
+        "required": true,
+        "description": "Signature"
+      }
+    ],
+    "request_parameters": [
+      {
+        "name": "discount_id",
+        "type": "int",
+        "required": true,
+        "description": "Discount unique identifier for a discount"
+      }
+    ],
+    "response_parameters": [
+      {
+        "name": "error",
+        "type": "string",
+        "required": false,
+        "description": "Indicate error details if any error. Empty if no error occurred"
+      },
+      {
+        "name": "discount_id",
+        "type": "int",
+        "required": false,
+        "description": "Discount unique identifier for a discount"
+      },
+      {
+        "name": "result_type",
+        "type": "string",
+        "required": false,
+        "description": "The results of the API request for error details"
+      }
+    ]
+  },
+  "error_codes": [
+    {
+      "code": "error_param",
+      "description": "Parameter not valid"
+    },
+    {
+      "code": "error_sign",
+      "description": "Invalid timestamp"
+    },
+    {
+      "code": "error_permission",
+      "description": "The information you operate is not found"
+    }
+  ],
+  "notes": "The documentation shows a complete API specification for deleting discounts, including common parameters, request parameters, response parameters, error examples and error codes. The endpoint appears to be for a discount deletion operation but the full URL path structure is not clearly visible in the image.",
+  "chunk_metadata": {
+    "index": 1,
+    "total": 1,
+    "y_start": 0,
+    "y_end": 4444,
+    "overlap_top": 0,
+    "overlap_bottom": 0,
+    "height": 4444,
+    "path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\workspaces\\v2.discount.delete_discount\\chunks\\chunk_001.png",
+    "filename": "chunk_001.png",
+    "width": 837
+  },
+  "analysis_timestamp": "2025-10-10T05:36:02.709669",
+  "model": "claude-3-5-sonnet-20241022"
+}

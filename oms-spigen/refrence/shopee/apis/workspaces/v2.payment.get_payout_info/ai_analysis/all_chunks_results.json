@@ -1,0 +1,85 @@
+[
+  {
+    "chunk_index": 1,
+    "total_chunks": 1,
+    "endpoint": null,
+    "method": null,
+    "description": null,
+    "update_log": [],
+    "hidden_fields": [],
+    "parameters": [
+      {
+        "name": "url",
+        "type": "string",
+        "required": true,
+        "description": "Image upload endpoint URL",
+        "children": []
+      },
+      {
+        "name": "url_ssl",
+        "type": "string",
+        "required": true,
+        "description": "HTTPS version of upload endpoint URL",
+        "children": []
+      },
+      {
+        "name": "url_ssl_standard",
+        "type": "string",
+        "required": true,
+        "description": "Standard HTTPS upload endpoint URL",
+        "children": []
+      },
+      {
+        "name": "check_test_type",
+        "type": "string",
+        "required": false,
+        "description": "Specifies approach used to check if in test",
+        "children": []
+      },
+      {
+        "name": "offline_msg",
+        "type": "string",
+        "required": false,
+        "description": "Message shown when offline",
+        "children": []
+      },
+      {
+        "name": "start_pos",
+        "type": "integer",
+        "required": false,
+        "description": "The start position",
+        "children": []
+      },
+      {
+        "name": "from_pos",
+        "type": "integer",
+        "required": false,
+        "description": "The from position",
+        "children": []
+      },
+      {
+        "name": "end_pos",
+        "type": "integer",
+        "required": false,
+        "description": "The end position",
+        "children": []
+      }
+    ],
+    "response_fields": [],
+    "notes": "This appears to be configuration documentation, possibly for an image upload service. The documentation shows various URL endpoints and configuration parameters. There are additional parameters and error codes shown in the image but they are partially cut off or not clearly visible enough to include with certainty.",
+    "chunk_metadata": {
+      "index": 1,
+      "total": 1,
+      "y_start": 0,
+      "y_end": 5784,
+      "overlap_top": 0,
+      "overlap_bottom": 0,
+      "height": 5784,
+      "path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\workspaces\\v2.payment.get_payout_info\\chunks\\chunk_001.png",
+      "filename": "chunk_001.png",
+      "width": 837
+    },
+    "analysis_timestamp": "2025-10-10T06:21:48.069083",
+    "model": "claude-3-5-sonnet-20241022"
+  }
+]

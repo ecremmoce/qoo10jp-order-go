@@ -1,0 +1,48 @@
+======================================================================
+API SPECIFICATION SUMMARY
+======================================================================
+
+Endpoint: POST /api/path/to/endpoint
+Description: Example request and response documentation
+
+Parameters (1):
+----------------------------------------------------------------------
+* saturday (object)
+   The restrictions specific for Saturday
+  * mandatory (boolean)
+     If this value is true, they must be marked as open
+  * minimum_special_reg_hour (int64)
+     Minimum number of hours required for the seller to operate on that day
+  * minimum_start_time (string)
+     The start hour for that day should not be set earlier than this time
+  * minimum_end_time (string)
+     The end hour for that day should not be set earlier than this time
+  * operating_24_hr (boolean)
+     If the toggle value is true, the user can set the start_time to 00:00 and the end_time to 23:59 to indicate that the shop is operating 24 hours a day
+
+Response Fields (5):
+----------------------------------------------------------------------
+  error_permission (string)
+   Sorry you don't have the permission detail: This shop isn't eligible to set up Regular Operating Hours
+  error_data (string)
+   parse data failed
+  error_date (string)
+   date not exist
+  error_param (string)
+   parameter invalid
+  error_notfound (string)
+   The information you queried is not found
+
+Metadata:
+----------------------------------------------------------------------
+  total_chunks: 3
+  chunks_with_errors: 0
+  total_parameters_before_dedup: 1
+  total_parameters_after_dedup: 1
+  update_log_entries: 0
+  hidden_fields_count: 0
+  source_results: workspaces\v2.logistics.get_operating_hour_restrictions\results\all_chunks_results.json
+
+======================================================================
+Legend: * = required parameter
+======================================================================

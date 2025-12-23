@@ -1,0 +1,98 @@
+{
+  "chunk_index": 1,
+  "total_chunks": 1,
+  "endpoint": null,
+  "method": null,
+  "description": null,
+  "update_log": [],
+  "hidden_fields": [],
+  "parameters": [
+    {
+      "name": "time_gate",
+      "type": "string",
+      "required": true,
+      "description": "The parameter is not full visible",
+      "truncated": true,
+      "children": []
+    },
+    {
+      "name": "time_gate_message_text",
+      "type": "string",
+      "required": false,
+      "description": "Message displayed when time record fails during waiting time",
+      "children": []
+    },
+    {
+      "name": "time_gate_interval",
+      "type": "integer",
+      "required": false,
+      "description": "Added rate limit for each user",
+      "children": []
+    },
+    {
+      "name": "time_gate_first_wait_fail",
+      "type": "string",
+      "required": false,
+      "description": "Default time to fail if situation is either case starts",
+      "children": []
+    },
+    {
+      "name": "time_gate_fail_this_fail",
+      "type": "string",
+      "required": false,
+      "description": "This will fail once all specific fails fail to start sync",
+      "children": []
+    },
+    {
+      "name": "time_gate_all_fail",
+      "type": "string",
+      "required": false,
+      "description": "Then verify if time sync doesn't fail much",
+      "children": []
+    },
+    {
+      "name": "time_gate_all_on_hold",
+      "type": "string",
+      "required": false,
+      "description": "Process each hold in queue + add check",
+      "children": []
+    },
+    {
+      "name": "error_code",
+      "type": "string",
+      "required": false,
+      "description": "Return error code for failed system",
+      "children": []
+    },
+    {
+      "name": "error_message",
+      "type": "string",
+      "required": false,
+      "description": "Error message for failed system",
+      "children": []
+    },
+    {
+      "name": "error_stack",
+      "type": "string",
+      "required": false,
+      "description": "Error stack trace for queue",
+      "children": []
+    }
+  ],
+  "response_fields": [],
+  "notes": "The image appears to be API documentation for some kind of time-gated or rate-limiting system with error handling. Many parameters relate to time gate controls and error reporting. Some descriptions appear to be truncated or partially visible in the image.",
+  "chunk_metadata": {
+    "index": 1,
+    "total": 1,
+    "y_start": 0,
+    "y_end": 6116,
+    "overlap_top": 0,
+    "overlap_bottom": 0,
+    "height": 6116,
+    "path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\workspaces\\v2.follow_prize.update_follow_prize\\chunks\\chunk_001.png",
+    "filename": "chunk_001.png",
+    "width": 837
+  },
+  "analysis_timestamp": "2025-10-10T05:44:28.194592",
+  "model": "claude-3-5-sonnet-20241022"
+}

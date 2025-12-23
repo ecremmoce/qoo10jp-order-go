@@ -1,0 +1,46 @@
+======================================================================
+API SPECIFICATION SUMMARY
+======================================================================
+
+Endpoint: POST /api/v2/im/chat/get_msg_list
+Description: Message list query interface
+
+Parameters (3):
+----------------------------------------------------------------------
+* page (integer)
+   Page number, starts from 1
+* pageSize (integer)
+   Number of items per page
+* chatId (string)
+   Chat ID
+
+Response Fields (2):
+----------------------------------------------------------------------
+  total (integer)
+   Total number of records
+  data (array)
+   Message list
+    id (string)
+     Message ID
+    chatId (string)
+     Chat ID
+    type (string)
+     Message type
+    content (string)
+     Message content
+    createdAt (string)
+     Creation time
+
+Metadata:
+----------------------------------------------------------------------
+  total_chunks: 1
+  chunks_with_errors: 0
+  total_parameters_before_dedup: 3
+  total_parameters_after_dedup: 3
+  update_log_entries: 0
+  hidden_fields_count: 0
+  source_results: workspaces\v2.add_on_deal.update_add_on_deal_sub_item\results\all_chunks_results.json
+
+======================================================================
+Legend: * = required parameter
+======================================================================

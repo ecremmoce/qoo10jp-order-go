@@ -1,0 +1,39 @@
+======================================================================
+API SPECIFICATION SUMMARY
+======================================================================
+
+Endpoint: None /locale/add_locale_locale_del
+
+Parameters (4):
+----------------------------------------------------------------------
+* partner_id (string)
+   Partner ID, a required open repository is successful
+* access_token (string)
+   This is the access key token, using to identify your permission to use our. Need the method can access service in here.
+  shop_id (string)
+   Shopid's unique identifier for a shop. Required please for merchants
+* locale_desc_id (string)
+   Shopid's unique identifier for a locale deal
+
+Response Fields (3):
+----------------------------------------------------------------------
+  error (string)
+   Include error type if not empty. Empty if no error
+  message (string)
+   Include error details if not error. Empty if no message
+  request_id (string)
+   The identifier of this API request for error
+
+Metadata:
+----------------------------------------------------------------------
+  total_chunks: 1
+  chunks_with_errors: 0
+  total_parameters_before_dedup: 4
+  total_parameters_after_dedup: 4
+  update_log_entries: 5
+  hidden_fields_count: 0
+  source_results: workspaces\v2.bundle_deal.delete_bundle_deal\results\all_chunks_results.json
+
+======================================================================
+Legend: * = required parameter
+======================================================================

@@ -1,0 +1,60 @@
+{
+  "chunk_index": 2,
+  "endpoint": null,
+  "method": null,
+  "description": null,
+  "parameters": [
+    {
+      "name": "error_model_based",
+      "type": "object",
+      "required": true,
+      "description": "Brand information request",
+      "children": []
+    },
+    {
+      "name": "error_has_cancel_prev_category_value",
+      "type": "boolean",
+      "required": true,
+      "description": "Old category path needs places to later"
+    },
+    {
+      "name": "error_has_global_tax",
+      "type": "boolean",
+      "required": true,
+      "description": "Global tax on focus"
+    },
+    {
+      "name": "error_has_global_tax_answers",
+      "type": "object",
+      "required": true,
+      "description": "Global tax answers in use",
+      "children": []
+    },
+    {
+      "name": "error_has_attributes_pre",
+      "type": "boolean",
+      "required": true,
+      "description": "Attributes exist"
+    },
+    {
+      "name": "error_post",
+      "type": "boolean",
+      "required": true,
+      "description": "Indicate that model uses attributes"
+    }
+  ],
+  "response_fields": [],
+  "chunk_metadata": {
+    "index": 2,
+    "total": 2,
+    "y_start": 7254,
+    "y_end": 11621,
+    "overlap_top": 500,
+    "overlap_bottom": 0,
+    "height": 4367,
+    "path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\workspaces\\v2.global_product.update_global_item\\chunks\\chunk_002.png",
+    "filename": "chunk_002.png",
+    "width": 837
+  },
+  "chunk_path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\workspaces\\v2.global_product.update_global_item\\chunks\\chunk_002.png"
+}

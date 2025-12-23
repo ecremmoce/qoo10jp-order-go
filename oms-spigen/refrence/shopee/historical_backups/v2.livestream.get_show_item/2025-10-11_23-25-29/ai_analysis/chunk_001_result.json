@@ -1,0 +1,102 @@
+{
+  "chunk_index": 1,
+  "total_chunks": 1,
+  "endpoint": "/openserver/api_video/achievement/get_video_item",
+  "method": "GET",
+  "description": null,
+  "update_log": [],
+  "hidden_fields": [],
+  "parameters": [
+    {
+      "name": "achievement_id",
+      "type": "string",
+      "required": true,
+      "description": "Achievement ID parameter",
+      "children": []
+    },
+    {
+      "name": "url",
+      "type": "string",
+      "required": true,
+      "description": "Video url parameter",
+      "children": []
+    },
+    {
+      "name": "vid_url",
+      "type": "string",
+      "required": true,
+      "description": "The video url for player/3rd party player",
+      "children": []
+    },
+    {
+      "name": "msg_src",
+      "type": "string",
+      "required": true,
+      "description": "Original source identifier for an error",
+      "children": []
+    },
+    {
+      "name": "msg_id",
+      "type": "string",
+      "required": true,
+      "description": "The message id of the error",
+      "children": []
+    },
+    {
+      "name": "error",
+      "type": "string",
+      "required": true,
+      "description": "Name of the error in your language",
+      "children": []
+    }
+  ],
+  "response_parameters": [
+    {
+      "name": "result",
+      "type": "string",
+      "description": "The result of the request",
+      "children": []
+    },
+    {
+      "name": "extra_info",
+      "type": "object",
+      "description": "The time of the item in the shopping list or current status",
+      "children": []
+    },
+    {
+      "name": "msg_src",
+      "type": "string",
+      "description": "Original source identifier for an error",
+      "children": []
+    }
+  ],
+  "error_codes": [
+    {
+      "code": "error_404",
+      "description": "Item does not exist"
+    },
+    {
+      "code": "error_denied",
+      "description": "Permission denied"
+    },
+    {
+      "code": "error_param",
+      "description": "Wrong parameters"
+    }
+  ],
+  "notes": "The documentation includes request parameters, response parameters, request/response examples, error examples and error codes. The examples section shows sample JSON payloads but are partially truncated in the image.",
+  "chunk_metadata": {
+    "index": 1,
+    "total": 1,
+    "y_start": 0,
+    "y_end": 4672,
+    "overlap_top": 0,
+    "overlap_bottom": 0,
+    "height": 4672,
+    "path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\platforms\\shopee\\apis\\workspaces\\v2.livestream.get_show_item\\chunks\\chunk_001.png",
+    "filename": "chunk_001.png",
+    "width": 837
+  },
+  "analysis_timestamp": "2025-10-11T23:25:29.017889",
+  "model": "claude-3-5-sonnet-20241022"
+}

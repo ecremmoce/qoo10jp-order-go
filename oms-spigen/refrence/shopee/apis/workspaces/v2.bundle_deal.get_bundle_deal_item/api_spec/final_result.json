@@ -1,0 +1,73 @@
+{
+  "endpoint": "/bundle_deal_api_access/bundle_deal_text",
+  "method": null,
+  "description": null,
+  "parameters": [
+    {
+      "name": "bundle_deal_id",
+      "type": "string",
+      "required": true,
+      "description": "Platform ID assigned after registration is successful",
+      "children": []
+    },
+    {
+      "name": "article_point",
+      "type": "string",
+      "required": true,
+      "description": "The point this API visitor calls to identify your permission to use the API",
+      "children": []
+    },
+    {
+      "name": "msg_id",
+      "type": "string",
+      "required": true,
+      "description": "Message ID. Format prefix is [article_point]_[partner_key]_[time]",
+      "children": []
+    }
+  ],
+  "response_fields": [
+    {
+      "name": "error",
+      "type": "object",
+      "description": "Error response object",
+      "children": [
+        {
+          "name": "code",
+          "type": "integer",
+          "description": "Error code",
+          "children": []
+        },
+        {
+          "name": "message",
+          "type": "string",
+          "description": "Error message",
+          "children": []
+        }
+      ]
+    }
+  ],
+  "update_log": [
+    {
+      "date": "2021-08-04",
+      "change": "Added input by user parameters"
+    },
+    {
+      "date": "2021-06-15",
+      "change": "Add 418 in bundle validation"
+    },
+    {
+      "date": "2021-04-01",
+      "change": "Update the bundle validation of Request Parameter and Response Parameter"
+    }
+  ],
+  "hidden_fields": [],
+  "metadata": {
+    "total_chunks": 1,
+    "chunks_with_errors": 0,
+    "total_parameters_before_dedup": 3,
+    "total_parameters_after_dedup": 3,
+    "update_log_entries": 3,
+    "hidden_fields_count": 0,
+    "source_results": "workspaces\\v2.bundle_deal.get_bundle_deal_item\\results\\all_chunks_results.json"
+  }
+}

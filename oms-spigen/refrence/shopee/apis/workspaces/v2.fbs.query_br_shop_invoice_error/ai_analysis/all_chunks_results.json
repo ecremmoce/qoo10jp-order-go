@@ -1,0 +1,208 @@
+[
+  {
+    "chunk_index": 1,
+    "total_chunks": 1,
+    "endpoint": "http://openapi.shopee.com/v2/shop/query_jx_shop_vendor_error",
+    "method": null,
+    "description": "File API handle failed across channels for FBV related parameter screening relevant Required by V15 Request, State Check, and More",
+    "update_log": [],
+    "hidden_fields": [],
+    "parameters": [
+      {
+        "name": "partner_id",
+        "type": "int",
+        "required": true,
+        "description": "Partner ID is assigned upon registration is available Required.",
+        "children": []
+      },
+      {
+        "name": "timestamp",
+        "type": "timestamp",
+        "required": true,
+        "description": "The timestamp of when the request is created in second",
+        "children": []
+      },
+      {
+        "name": "access_token",
+        "type": "string",
+        "required": true,
+        "description": "The service can identify identity through access_token. We can limit for multiple use and access it here",
+        "children": []
+      },
+      {
+        "name": "shop_id",
+        "type": "string",
+        "required": true,
+        "description": "Shopee's unique identifier for a shop. Request must be must id64.",
+        "children": []
+      },
+      {
+        "name": "page_no",
+        "type": "int32",
+        "required": false,
+        "description": "1",
+        "children": []
+      },
+      {
+        "name": "page_size",
+        "type": "int32",
+        "required": false,
+        "description": "max: 100",
+        "children": []
+      }
+    ],
+    "response_fields": [
+      {
+        "name": "message",
+        "type": "string",
+        "description": "Indicate error state if an error. Empty if no error happened",
+        "children": []
+      },
+      {
+        "name": "error",
+        "type": "string",
+        "description": "Indicate error type if an error. Empty if no error happened",
+        "children": []
+      },
+      {
+        "name": "response",
+        "type": "object",
+        "description": "",
+        "children": []
+      },
+      {
+        "name": "total",
+        "type": "int64",
+        "description": "",
+        "children": []
+      },
+      {
+        "name": "shop_id",
+        "type": "int64",
+        "description": "Shopee's unique identifier for a shop",
+        "children": []
+      },
+      {
+        "name": "jx_reason_code",
+        "type": "int32",
+        "description": "1: expired\n2: Apply not for validation\n3: Apply to be error\n4: More Transfer",
+        "children": []
+      },
+      {
+        "name": "jx_reason_id",
+        "type": "string",
+        "description": "Return by default. The business FBV request audit ID",
+        "children": []
+      },
+      {
+        "name": "fbv_reason",
+        "type": "string",
+        "description": "Record location state reason",
+        "children": []
+      },
+      {
+        "name": "fbv_type",
+        "type": "int32",
+        "description": "1. Jux fbv sale error\n2. Other fbv sale error",
+        "children": []
+      },
+      {
+        "name": "notice_deadline_time",
+        "type": "int64",
+        "description": "The expired time of fbv failed means it end soon after the reason error would be canceled",
+        "children": []
+      },
+      {
+        "name": "shop_type",
+        "type": "int64",
+        "description": "",
+        "children": []
+      },
+      {
+        "name": "shop_name_id",
+        "type": "string",
+        "description": "ID of item",
+        "children": []
+      },
+      {
+        "name": "shop_model_id",
+        "type": "string",
+        "description": "ID of model",
+        "children": []
+      },
+      {
+        "name": "shop_type_name",
+        "type": "string",
+        "description": "Name of item",
+        "children": []
+      },
+      {
+        "name": "shop_model_name",
+        "type": "string",
+        "description": "Name of model",
+        "children": []
+      },
+      {
+        "name": "fbv_reason2",
+        "type": "string",
+        "description": "Record location state reason",
+        "children": []
+      },
+      {
+        "name": "remove_id",
+        "type": "string",
+        "description": "Remove ID",
+        "children": []
+      },
+      {
+        "name": "remove_state",
+        "type": "string",
+        "description": "This identify the jwt fbv request for once and once. It will block the shop id item",
+        "children": []
+      },
+      {
+        "name": "request_id",
+        "type": "string",
+        "description": "This identity for jwt fbv request for error tracing",
+        "children": []
+      }
+    ],
+    "error_codes": [
+      {
+        "code": "fbv_err_param",
+        "description": "fbv is invalid"
+      },
+      {
+        "code": "fbv_err_record_fbv_found",
+        "description": "fbv is not found"
+      },
+      {
+        "code": "fbv_err_region_not_ok",
+        "description": "Region is not ok"
+      },
+      {
+        "code": "fbv_err_shop_fbv_not_related",
+        "description": "Shop and fbv is not related"
+      },
+      {
+        "code": "fbv_err_system",
+        "description": "System error caused by sync site"
+      }
+    ],
+    "notes": "The documentation appears to be for a shop vendor error query API. The endpoint URLs are fully specified including the domain. The API seems to handle FBV (possibly Fulfillment By Vendor) related errors and status checks.",
+    "chunk_metadata": {
+      "index": 1,
+      "total": 1,
+      "y_start": 0,
+      "y_end": 3968,
+      "overlap_top": 0,
+      "overlap_bottom": 0,
+      "height": 3968,
+      "path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\workspaces\\v2.fbs.query_br_shop_invoice_error\\chunks\\chunk_001.png",
+      "filename": "chunk_001.png",
+      "width": 837
+    },
+    "analysis_timestamp": "2025-10-10T05:38:35.117632",
+    "model": "claude-3-5-sonnet-20241022"
+  }
+]

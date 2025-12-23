@@ -1,0 +1,83 @@
+{
+  "chunk_index": 1,
+  "total_chunks": 1,
+  "endpoint": null,
+  "method": null,
+  "description": null,
+  "update_log": [
+    {
+      "date": "2021-07-19",
+      "change": "Removed: api/order/seller"
+    },
+    {
+      "date": "2021-07-19",
+      "change": "Added new apis"
+    },
+    {
+      "date": "2021-07-19",
+      "change": "Changed: api/customer/post/address/create content type changed"
+    },
+    {
+      "date": "2021-07-19",
+      "change": "Changed: api/customer/post/address/update content type changed"
+    },
+    {
+      "date": "2021-07-19",
+      "change": "Changed: api/customer/post/address/delete content type changed"
+    }
+  ],
+  "parameters": [
+    {
+      "name": "page",
+      "type": "integer",
+      "required": false,
+      "description": "Page number for pagination",
+      "children": []
+    },
+    {
+      "name": "limit",
+      "type": "integer",
+      "required": false,
+      "description": "Number of items per page",
+      "children": []
+    },
+    {
+      "name": "sort",
+      "type": "string",
+      "required": false,
+      "description": "Sorting parameter",
+      "children": []
+    },
+    {
+      "name": "order_by",
+      "type": "string",
+      "required": false,
+      "description": "Field to order results by",
+      "children": []
+    },
+    {
+      "name": "search",
+      "type": "string",
+      "required": false,
+      "description": "Search query parameter",
+      "children": []
+    }
+  ],
+  "hidden_fields": [],
+  "response_fields": [],
+  "notes": "The image appears to be an API documentation page showing common query parameters and an update log. The documentation seems to be paginated and includes search/sort functionality. Many entries appear to be related to customer address management APIs.",
+  "chunk_metadata": {
+    "index": 1,
+    "total": 1,
+    "y_start": 0,
+    "y_end": 6988,
+    "overlap_top": 0,
+    "overlap_bottom": 0,
+    "height": 6988,
+    "path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\workspaces\\v2.discount.update_discount_item\\chunks\\chunk_001.png",
+    "filename": "chunk_001.png",
+    "width": 837
+  },
+  "analysis_timestamp": "2025-10-10T05:37:20.940375",
+  "model": "claude-3-5-sonnet-20241022"
+}

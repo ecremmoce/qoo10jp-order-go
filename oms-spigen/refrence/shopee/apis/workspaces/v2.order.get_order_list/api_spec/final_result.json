@@ -1,0 +1,62 @@
+{
+  "endpoint": "/storage/upload_url",
+  "method": "POST",
+  "description": "Get storage upload url",
+  "parameters": [
+    {
+      "name": "filename",
+      "type": "string",
+      "required": true,
+      "description": "File name with extension",
+      "children": []
+    },
+    {
+      "name": "directory",
+      "type": "string",
+      "required": true,
+      "description": "Directory path",
+      "children": []
+    },
+    {
+      "name": "doc_type",
+      "type": "string",
+      "required": false,
+      "description": "Document type",
+      "children": []
+    }
+  ],
+  "response_fields": [
+    {
+      "name": "url",
+      "type": "string",
+      "description": "Upload URL",
+      "children": []
+    },
+    {
+      "name": "key",
+      "type": "string",
+      "description": "Storage key",
+      "children": []
+    }
+  ],
+  "update_log": [
+    {
+      "date": "2021-08-17",
+      "change": "Change log report parameters"
+    },
+    {
+      "date": "2021-08-13",
+      "change": "Add doc_type field, allow pattern to match/handle browser auto-append types"
+    }
+  ],
+  "hidden_fields": [],
+  "metadata": {
+    "total_chunks": 1,
+    "chunks_with_errors": 0,
+    "total_parameters_before_dedup": 3,
+    "total_parameters_after_dedup": 3,
+    "update_log_entries": 2,
+    "hidden_fields_count": 0,
+    "source_results": "workspaces\\v2.order.get_order_list\\results\\all_chunks_results.json"
+  }
+}

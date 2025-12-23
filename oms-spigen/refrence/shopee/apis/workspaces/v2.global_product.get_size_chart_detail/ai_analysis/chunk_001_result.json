@@ -1,0 +1,54 @@
+{
+  "chunk_index": 1,
+  "total_chunks": 1,
+  "endpoint": "/global_product/get_size_chart_latest",
+  "method": "GET",
+  "description": null,
+  "update_log": [],
+  "hidden_fields": [],
+  "parameters": [
+    {
+      "name": "seller_id",
+      "type": "string",
+      "required": true,
+      "description": "Passed in as escaped query parameter",
+      "truncated": false,
+      "continued": false,
+      "children": []
+    },
+    {
+      "name": "serial_name",
+      "type": "string",
+      "required": true,
+      "description": "The basic API format. Used to identify each parameter in the API system to support API updates.",
+      "truncated": false,
+      "continued": false,
+      "children": []
+    },
+    {
+      "name": "module_id",
+      "type": "string",
+      "required": true,
+      "description": "The value of module id in the request. When calling this API you need to provide it first, then we can judge whether it is necessary to perform automatic data calculation.",
+      "truncated": false,
+      "continued": false,
+      "children": []
+    }
+  ],
+  "response_fields": [],
+  "notes": "The image shows common parameters section at the top with several URLs for different request methods. The parameters section shows three main parameters: seller_id, serial_name, and module_id. All parameters appear to be required based on formatting. The documentation appears to be for retrieving size chart data.",
+  "chunk_metadata": {
+    "index": 1,
+    "total": 1,
+    "y_start": 0,
+    "y_end": 4641,
+    "overlap_top": 0,
+    "overlap_bottom": 0,
+    "height": 4641,
+    "path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\workspaces\\v2.global_product.get_size_chart_detail\\chunks\\chunk_001.png",
+    "filename": "chunk_001.png",
+    "width": 837
+  },
+  "analysis_timestamp": "2025-10-10T05:49:38.513592",
+  "model": "claude-3-5-sonnet-20241022"
+}

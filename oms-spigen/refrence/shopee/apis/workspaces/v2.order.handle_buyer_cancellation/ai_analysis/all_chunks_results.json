@@ -1,0 +1,115 @@
+[
+  {
+    "chunk_index": 1,
+    "total_chunks": 1,
+    "endpoint": "/handle_buyer_cancellation",
+    "method": "POST",
+    "description": "API for order buyer cancellation processing",
+    "update_log": [],
+    "hidden_fields": [],
+    "parameters": [
+      {
+        "name": "partner_id",
+        "type": "string",
+        "required": true,
+        "description": "Partner unique identifier for all requests",
+        "children": []
+      },
+      {
+        "name": "msg_id",
+        "type": "string",
+        "required": true,
+        "description": "Request unique identifier for all requests. Express unique orders by year",
+        "children": []
+      },
+      {
+        "name": "type",
+        "type": "string",
+        "required": true,
+        "description": "Business unique identifier for partner_id",
+        "children": []
+      },
+      {
+        "name": "order_id",
+        "type": "string",
+        "required": true,
+        "description": "The order identification used to handle business",
+        "children": []
+      },
+      {
+        "name": "message_id",
+        "type": "string",
+        "required": true,
+        "description": "The identifier for an API request for once",
+        "children": []
+      },
+      {
+        "name": "error",
+        "type": "string",
+        "required": true,
+        "description": "Indicate error type if the error. Empty if no error",
+        "children": []
+      },
+      {
+        "name": "message",
+        "type": "string",
+        "required": true,
+        "description": "Indicate error details if the error. Empty if no message",
+        "children": []
+      },
+      {
+        "name": "status_time",
+        "type": "timestamp",
+        "required": true,
+        "description": "The time when the order is updated",
+        "children": []
+      }
+    ],
+    "response_fields": [],
+    "error_codes": [
+      {
+        "code": "buyer_cancel_error_failed",
+        "description": "Cancel buyer failed"
+      },
+      {
+        "code": "error_invalid_order_status_data",
+        "description": "Wrong order status"
+      },
+      {
+        "code": "error_no_record",
+        "description": "There is no record, failed or empty"
+      },
+      {
+        "code": "error_parameter",
+        "description": "Sorry you don't have the permission: order_prog"
+      },
+      {
+        "code": "error_token",
+        "description": "Invalid error or token"
+      },
+      {
+        "code": "invalid_status_update",
+        "description": "Invalid status update"
+      },
+      {
+        "code": "error_parent",
+        "description": "Invalid parent_id"
+      }
+    ],
+    "notes": "The documentation includes Common Parameters, Required Parameters, Response Parameters, Request/Response Examples and Error Codes sections. The image shows a comprehensive API documentation for handling buyer cancellations.",
+    "chunk_metadata": {
+      "index": 1,
+      "total": 1,
+      "y_start": 0,
+      "y_end": 4371,
+      "overlap_top": 0,
+      "overlap_bottom": 0,
+      "height": 4371,
+      "path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\workspaces\\v2.order.handle_buyer_cancellation\\chunks\\chunk_001.png",
+      "filename": "chunk_001.png",
+      "width": 837
+    },
+    "analysis_timestamp": "2025-10-10T06:16:59.319325",
+    "model": "claude-3-5-sonnet-20241022"
+  }
+]

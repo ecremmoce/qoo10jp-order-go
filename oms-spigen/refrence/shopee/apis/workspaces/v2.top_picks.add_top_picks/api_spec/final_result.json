@@ -1,0 +1,102 @@
+{
+  "endpoint": null,
+  "method": null,
+  "description": null,
+  "parameters": [
+    {
+      "name": "URL",
+      "type": "string",
+      "required": true,
+      "description": null,
+      "children": []
+    },
+    {
+      "name": "API Secret",
+      "type": "string",
+      "required": true,
+      "description": null,
+      "children": []
+    },
+    {
+      "name": "symbol",
+      "type": "string",
+      "required": true,
+      "description": "Trading pair",
+      "children": []
+    },
+    {
+      "name": "amount",
+      "type": "string",
+      "required": true,
+      "description": "The value is not 0 and no more than 8 decimal places",
+      "children": []
+    },
+    {
+      "name": "fee",
+      "type": "string",
+      "required": false,
+      "description": "Withdrawal fee",
+      "children": []
+    },
+    {
+      "name": "to_address",
+      "type": "string",
+      "required": true,
+      "description": "Withdrawal address",
+      "children": []
+    },
+    {
+      "name": "tag",
+      "type": "string",
+      "required": false,
+      "description": null,
+      "children": []
+    }
+  ],
+  "response_fields": [
+    {
+      "name": "code",
+      "type": "integer",
+      "description": "The result is returned successfully when 0"
+    },
+    {
+      "name": "msg",
+      "type": "string",
+      "description": "Success or error"
+    },
+    {
+      "name": "result",
+      "type": "object",
+      "description": "Withdrawal details"
+    },
+    {
+      "name": "data",
+      "type": "object",
+      "description": "Data structure"
+    }
+  ],
+  "update_log": [
+    {
+      "date": "2025-09-26",
+      "change": "Updated the withdraw mechanism."
+    },
+    {
+      "date": "2023-07-27",
+      "change": "Updated the withdraw refreshment of Request Parameter and Response Parameter"
+    },
+    {
+      "date": "2023-07-17",
+      "change": "Limited url path"
+    }
+  ],
+  "hidden_fields": [],
+  "metadata": {
+    "total_chunks": 1,
+    "chunks_with_errors": 0,
+    "total_parameters_before_dedup": 7,
+    "total_parameters_after_dedup": 7,
+    "update_log_entries": 3,
+    "hidden_fields_count": 0,
+    "source_results": "workspaces\\v2.top_picks.add_top_picks\\results\\all_chunks_results.json"
+  }
+}

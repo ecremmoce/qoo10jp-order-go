@@ -1,0 +1,135 @@
+[
+  {
+    "chunk_index": 1,
+    "endpoint": null,
+    "method": null,
+    "description": "Error response documentation",
+    "parameters": [],
+    "response_fields": [
+      {
+        "name": "error_param",
+        "type": "string",
+        "description": "Return SN or ID is invalid.",
+        "children": []
+      },
+      {
+        "name": "error_param",
+        "type": "string",
+        "description": "The information you queried is not found.",
+        "children": []
+      },
+      {
+        "name": "error_param",
+        "type": "string",
+        "description": "Wrong parameters, detail: {msg}.",
+        "children": []
+      },
+      {
+        "name": "error_server",
+        "type": "string",
+        "description": "Something wrong. Please try later.",
+        "children": []
+      },
+      {
+        "name": "error_shop",
+        "type": "string",
+        "description": "shopid is invalid",
+        "children": []
+      },
+      {
+        "name": "error_data",
+        "type": "string",
+        "description": "The return case is missing initial evidence from the buyer and will be auto-cancelled if the buyer does not provide evidence by the due date.",
+        "children": []
+      },
+      {
+        "name": "error_param",
+        "type": "string",
+        "description": "request not from gateway",
+        "children": []
+      },
+      {
+        "name": "error_return_status",
+        "type": "string",
+        "description": "Cannot raise dispute because return SN is not in REQUESTED, RETURN_PROCESSING, or RETURN_ACCEPTED",
+        "children": []
+      },
+      {
+        "name": "dispute.request.param.error",
+        "type": "string",
+        "description": "Key: 'XXX' Error:Field validation for 'XX' failed on the 'required' tag",
+        "children": []
+      }
+    ],
+    "chunk_metadata": {
+      "index": 1,
+      "total": 2,
+      "y_start": 0,
+      "y_end": 8000,
+      "overlap_top": 0,
+      "overlap_bottom": 500,
+      "height": 8000,
+      "path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\workspaces\\v2.returns.dispute\\chunks\\chunk_001.png",
+      "filename": "chunk_001.png",
+      "width": 837
+    },
+    "chunk_path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\workspaces\\v2.returns.dispute\\chunks\\chunk_001.png"
+  },
+  {
+    "chunk_index": 2,
+    "endpoint": null,
+    "method": null,
+    "description": "API Permissions and Update Log documentation",
+    "parameters": [],
+    "response_fields": [
+      {
+        "name": "API Permissions",
+        "type": "object",
+        "description": "APP types that can call this API",
+        "children": [
+          {
+            "name": "allowed_apps",
+            "type": "array",
+            "description": "ERP System, Seller In House System, Customer Service, Swam ERP",
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "Update Log",
+        "type": "array",
+        "description": "List of updates",
+        "children": [
+          {
+            "name": "2024-12-31",
+            "type": "string",
+            "description": "Add new image_list request parameter"
+          },
+          {
+            "name": "2024-05-07",
+            "type": "string",
+            "description": "sunset the request filed \"dispute_reason\", please follow the new flow to raise dispute, may refer https://open.shopee.cn/announcements/883"
+          },
+          {
+            "name": "2023-12-29",
+            "type": "string",
+            "description": "add new request field \"dispute_reason_id\""
+          }
+        ]
+      }
+    ],
+    "chunk_metadata": {
+      "index": 2,
+      "total": 2,
+      "y_start": 7250,
+      "y_end": 8610,
+      "overlap_top": 500,
+      "overlap_bottom": 0,
+      "height": 1360,
+      "path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\workspaces\\v2.returns.dispute\\chunks\\chunk_002.png",
+      "filename": "chunk_002.png",
+      "width": 837
+    },
+    "chunk_path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\workspaces\\v2.returns.dispute\\chunks\\chunk_002.png"
+  }
+]

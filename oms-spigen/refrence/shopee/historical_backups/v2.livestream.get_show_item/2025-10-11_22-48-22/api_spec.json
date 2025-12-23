@@ -1,0 +1,82 @@
+{
+  "endpoint": "/openapi/get_view_json",
+  "method": "GET",
+  "description": "API for retrieving view parameters",
+  "parameters": [
+    {
+      "name": "source_id",
+      "type": "string",
+      "required": true,
+      "description": "Parent ID is assigned after registration is successful.",
+      "children": []
+    },
+    {
+      "name": "access_token",
+      "type": "string",
+      "required": true,
+      "description": "The tokens for API system need to identify your permission to access this API.",
+      "children": []
+    },
+    {
+      "name": "sign",
+      "type": "string",
+      "required": true,
+      "description": "Signature",
+      "children": []
+    }
+  ],
+  "response_fields": [
+    {
+      "name": "error",
+      "type": "string",
+      "description": "The name of the error if one occurred",
+      "children": []
+    },
+    {
+      "name": "data_info",
+      "type": "object",
+      "description": "The base info data in the response",
+      "children": []
+    },
+    {
+      "name": "msg_id",
+      "type": "string",
+      "description": "Message identifier for an error",
+      "children": []
+    },
+    {
+      "name": "error_rate",
+      "type": "float",
+      "description": "The error rate of the task",
+      "children": []
+    },
+    {
+      "name": "camera_pos",
+      "type": "float",
+      "description": "The camera position",
+      "children": []
+    },
+    {
+      "name": "camera_proj",
+      "type": "float",
+      "description": "The camera projection",
+      "children": []
+    }
+  ],
+  "update_log": [
+    {
+      "date": "2023-06-14",
+      "change": "Version 1.0"
+    }
+  ],
+  "hidden_fields": [],
+  "metadata": {
+    "total_chunks": 1,
+    "chunks_with_errors": 0,
+    "total_parameters_before_dedup": 3,
+    "total_parameters_after_dedup": 3,
+    "update_log_entries": 1,
+    "hidden_fields_count": 0,
+    "source_results": "platforms\\shopee\\apis\\workspaces\\v2.livestream.get_show_item\\results\\all_chunks_results.json"
+  }
+}

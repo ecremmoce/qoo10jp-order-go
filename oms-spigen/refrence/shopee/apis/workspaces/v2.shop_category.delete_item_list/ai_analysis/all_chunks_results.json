@@ -1,0 +1,85 @@
+[
+  {
+    "chunk_index": 1,
+    "total_chunks": 1,
+    "endpoint": "/v1/shop_category/delete_item_api_id",
+    "method": null,
+    "description": null,
+    "update_log": [
+      {
+        "date": "2023-07-27",
+        "change": "API flow changes advanced"
+      },
+      {
+        "date": "2023-06-16",
+        "change": "Update shared parameter structure and translation reference"
+      }
+    ],
+    "parameters": [
+      {
+        "name": "url",
+        "type": "string",
+        "required": true,
+        "description": "Base request URL",
+        "children": []
+      },
+      {
+        "name": "pong_category_id",
+        "type": "integer",
+        "required": true,
+        "description": "The id of shop partner",
+        "children": []
+      },
+      {
+        "name": "shop_id",
+        "type": "string",
+        "required": true,
+        "description": null,
+        "children": []
+      },
+      {
+        "name": "error",
+        "type": "string",
+        "required": false,
+        "description": "Error message details",
+        "children": []
+      }
+    ],
+    "response_fields": [
+      {
+        "name": "error_code",
+        "type": "integer",
+        "description": null
+      }
+    ],
+    "error_codes": [
+      {
+        "code": "shop_partner",
+        "description": "There is no policy token to query"
+      },
+      {
+        "code": "shop_global",
+        "description": "Shared policy token"
+      },
+      {
+        "code": "shop_invalid",
+        "description": "Invalid request token"
+      }
+    ],
+    "notes": "The documentation shows multiple parameter sections including Common Parameters, Required Parameters, and Response Parameters. There are also several error codes listed at the bottom. The update log shows recent changes to the API structure and flow.",
+    "chunk_metadata": {
+      "index": 1,
+      "total": 1,
+      "y_start": 0,
+      "y_end": 5018,
+      "overlap_top": 0,
+      "overlap_bottom": 0,
+      "height": 5018,
+      "path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\workspaces\\v2.shop_category.delete_item_list\\chunks\\chunk_001.png",
+      "filename": "chunk_001.png",
+      "width": 837
+    },
+    "analysis_timestamp": "2025-10-10T06:46:17.003512",
+    "model": "claude-3-5-sonnet-20241022"
+  }
+]

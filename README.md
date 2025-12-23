@@ -1,6 +1,6 @@
-# Qoo10JP Order Collector
+# Shopee Order Collector
 
-Qoo10JP 주문 데이터를 수집하고 관리하는 Go 애플리케이션입니다.
+Shopee 주문 데이터를 수집하고 관리하는 Go 애플리케이션입니다.
 
 ## 기술 스택
 
@@ -9,26 +9,27 @@ Qoo10JP 주문 데이터를 수집하고 관리하는 Go 애플리케이션입�
 - **Supabase** - 데이터베이스 및 백엔드 서비스
 - **Redis** - 캐싱 및 세션 관리
 - **N8N** - 워크플로우 자동화
-- **Qoo10JP API** - 주문 데이터 소스
+- **Shopee API** - 주문 데이터 소스
 
 ## 프로젝트 구조
 
 ```
-qoo10jp-order-go/
+shopee_order_go/
 ├── cmd/                    # 애플리케이션 진입점
 │   └── main.go
 ├── internal/               # 내부 패키지
 │   ├── api/               # API 라우터 및 핸들러
 │   ├── config/            # 설정 관리
 │   ├── models/            # 데이터 모델
-│   ├── repository/        # 데이터 저장소 계층
 │   └── services/          # 비즈니스 로직
 ├── pkg/                   # 외부 패키지
-│   ├── qoo10jp/          # Qoo10JP API 클라이언트
+│   ├── shopee/           # Shopee API 클라이언트 ✅
 │   ├── supabase/         # Supabase 클라이언트
-│   └── redis/            # Redis 클라이언트
-├── configs/              # 설정 파일
+│   ├── redis/            # Redis 클라이언트
+│   └── webhook/          # 웹훅 클라이언트
 ├── scripts/              # 유틸리티 스크립트
+├── workflow/             # N8N 워크플로우
+├── web/                  # 관리자 페이지
 ├── go.mod
 ├── go.sum
 └── README.md
@@ -57,10 +58,10 @@ N8N_API_KEY=your_n8n_api_key
 N8N_WEBHOOK_URL=your_n8n_webhook_url
 N8N_AUTH_ENDPOINT=your_n8n_auth_endpoint
 
-# Qoo10JP API Configuration
-QOO10JP_API_KEY=your_qoo10jp_api_key
-QOO10JP_API_SECRET=your_qoo10jp_api_secret
-QOO10JP_BASE_URL=https://api.qoo10.jp
+# Shopee API Configuration
+SHOPEE_PARTNER_ID=your_shopee_partner_id
+SHOPEE_PARTNER_KEY=your_shopee_partner_key
+SHOPEE_BASE_URL=https://partner.shopeemobile.com
 
 # Server Configuration
 PORT=8080
@@ -70,7 +71,7 @@ GIN_MODE=debug
 WORKER_COUNT=3
 
 # Webhook Configuration
-ORDER_COLLECTION_WEBHOOK_URL=https://n01.acsell.ai/webhook-test/qoo10-order-collect-message
+ORDER_COLLECTION_WEBHOOK_URL=https://n01.acsell.ai/webhook-test/shopee-order-collect-message
 ```
 
 ### 2. 의존성 설치
@@ -283,7 +284,7 @@ curl http://localhost:8080/api/v1/scheduler/status
 이 애플리케이션은 **Redis Queue 기반 Worker 시스템**을 사용합니다:
 
 1. **N8N 워크플로우**가 5분마다 Supabase에서 활성 계정을 조회
-2. 각 계정 정보를 **Redis Queue** (`qoo10jp_order_queue`)에 추가
+2. 각 계정 정보를 **Redis Queue** (`shopee_order_queue`)에 추가
 3. **Go Worker들**이 Queue에서 작업을 가져와 주문 수집 실행
 4. 여러 Worker가 동시 실행되어도 **중복 처리 방지** 보장
 
@@ -340,7 +341,7 @@ curl http://localhost:8080/api/v1/scheduler/status
 ### Worker 설정
 
 - **Worker 개수**: 3개 (기본값)
-- **Queue 이름**: `qoo10jp_order_queue`
+- **Queue 이름**: `shopee_order_queue`
 - **처리 방식**: FIFO (First In, First Out)
 - **재시도**: 최대 3회
 - **타임아웃**: 30초
@@ -350,7 +351,7 @@ curl http://localhost:8080/api/v1/scheduler/status
 #### Queue 상태 확인
 ```bash
 # Redis CLI로 직접 확인
-redis-cli LLEN qoo10jp_order_queue
+redis-cli LLEN shopee_order_queue
 
 # API로 확인 (상태 응답에 포함)
 curl http://localhost:8080/api/v1/scheduler/status
@@ -367,13 +368,13 @@ curl http://localhost:8080/api/v1/scheduler/status
 #### Worker가 작업을 처리하지 않는 경우
 1. **Worker 상태 확인**: `GET /api/v1/scheduler/status`
 2. **Worker 재시작**: `POST /api/v1/scheduler/worker/stop` → `POST /api/v1/scheduler/worker/start`
-3. **Queue 확인**: Redis에서 `qoo10jp_order_queue` 길이 확인
+3. **Queue 확인**: Redis에서 `shopee_order_queue` 길이 확인
 4. **로그 확인**: 콘솔 창에서 오류 메시지 확인
 
 #### 일반적인 오류
 - **Redis 연결 실패**: `.env` 파일의 Redis 설정 확인
 - **Supabase 연결 실패**: API 키 및 URL 확인
-- **Qoo10JP API 오류**: 계정별 인증 키 확인
+- **Shopee API 오류**: 파트너 ID/KEY 확인
 
 ## 개발
 
@@ -388,7 +389,7 @@ go test ./...
 
 ### 빌드
 ```bash
-go build -o bin/qoo10jp-order-go cmd/main.go
+go build -o shopee-order-go.exe cmd/main.go
 ```
 
 ## 배포
@@ -418,24 +419,24 @@ CMD ["./main"]
 환경변수 `ORDER_COLLECTION_WEBHOOK_URL`에 웹훅 URL을 설정하세요:
 
 ```bash
-ORDER_COLLECTION_WEBHOOK_URL=https://n01.acsell.ai/webhook-test/qoo10-order-collect-message
+ORDER_COLLECTION_WEBHOOK_URL=https://n01.acsell.ai/webhook-test/shopee-order-collect-message
 ```
 
 ### 웹훅 메시지 형식
 
 #### 1. 주문 수집 시작
 ```
-GET https://your-webhook-url?message=qoo10주문수집시작%20(계정:%20계정명)
+GET https://your-webhook-url?message=Shopee주문수집시작%20(계정:%20계정명)
 ```
 
 #### 2. 주문 수집 완료
 ```
-GET https://your-webhook-url?message=qoo10주문수집완료%20(계정:%20계정명,%205/10개%20저장)
+GET https://your-webhook-url?message=Shopee주문수집완료%20(계정:%20계정명,%205/10개%20저장)
 ```
 
 #### 3. 주문 수집 실패
 ```
-GET https://your-webhook-url?message=qoo10주문수집실패%20(계정:%20계정명,%20오류:%20API%20연결%20실패)
+GET https://your-webhook-url?message=Shopee주문수집실패%20(계정:%20계정명,%20오류:%20API%20연결%20실패)
 ```
 
 ### 웹훅 테스트
@@ -457,6 +458,70 @@ go run scripts/test-webhook.go
 - **오류 처리**: 웹훅 실패 시 로그 기록
 - **URL 인코딩**: 한글 메시지 자동 인코딩
 - **타임아웃**: 10초 타임아웃 설정
+- **Rate Limiting**: 동일 메시지 타입당 최소 5초 간격
+
+## 📚 Shopee API 구현 현황
+
+### ✅ 완료된 작업
+
+1. **Shopee API 클라이언트 구현** (`pkg/shopee/client.go`)
+   - ✅ HMAC-SHA256 인증 구현
+   - ✅ `v2.order.get_order_list` - 주문 목록 조회
+   - ✅ `v2.order.get_order_detail` - 주문 상세 조회
+   - ✅ 페이지네이션 지원 (cursor 방식)
+
+2. **데이터 모델 정의** (`internal/models/shopee_order.go`)
+   - ✅ `ShopeeOrder` - 주문 정보
+   - ✅ `ShopeeOrderItem` - 주문 상품
+   - ✅ `ShopeeOrderFilter` - 조회 필터
+
+### 🚧 진행 예정
+
+1. **주문 수집 서비스** (`internal/services/shopee_order_service.go`)
+   - ⏳ Shopee API를 통한 주문 수집
+   - ⏳ Supabase 저장 로직
+   - ⏳ 배치 처리 및 중복 체크
+
+2. **데이터베이스 스키마**
+   - ⏳ `shopee_orders` 테이블 생성
+   - ⏳ 인덱스 설정 (order_sn, platform_account_id)
+
+3. **API 라우트 추가**
+   - ⏳ `POST /api/v1/shopee/orders/collect` - 주문 수집
+   - ⏳ `GET /api/v1/shopee/orders` - 주문 조회
+   - ⏳ 필터링 및 페이지네이션
+
+4. **워커 통합**
+   - ⏳ Redis 메시지에서 shop_id, access_token 파싱
+   - ⏳ Shopee API 호출 및 주문 저장
+   - ⏳ 웹훅 알림 (수집 시작/완료/실패)
+
+### 📋 Shopee API 주요 스펙
+
+#### 인증 방식
+```
+GET https://partner.shopeemobile.com/api/v2/order/get_order_list
+  ?partner_id={partner_id}
+  &timestamp={timestamp}
+  &sign={hmac_sha256_signature}
+  &shop_id={shop_id}
+  &access_token={access_token}
+  &time_range_field=create_time
+  &time_from={unix_timestamp}
+  &time_to={unix_timestamp}
+  &page_size=100
+```
+
+#### 서명 생성
+```
+base_string = {partner_id}{api_path}{timestamp}
+sign = HMAC-SHA256(base_string, partner_key)
+```
+
+#### 페이지네이션
+- 첫 요청: `cursor` 없이 호출
+- 다음 페이지: 응답의 `next_cursor` 사용
+- `more=false`일 때까지 반복
 
 ## 라이센스
 

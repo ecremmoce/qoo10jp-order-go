@@ -1,0 +1,33 @@
+======================================================================
+API SPECIFICATION SUMMARY
+======================================================================
+
+Endpoint: DELETE /openapi/mex/swap/order/v4_delete_ws_deal_or_deal
+Description: Delete order API endpoint
+
+Parameters (5):
+----------------------------------------------------------------------
+* access_token (string)
+   Request for all requests
+* type (string)
+   Signature generator to verify user permission
+* deal_or_deal_or (string)
+   The identifier of the API request for error tracking
+* message (string)
+   The description of error code
+* result_id (string)
+   The identifier of the API request for error tracking
+
+Metadata:
+----------------------------------------------------------------------
+  total_chunks: 1
+  chunks_with_errors: 0
+  total_parameters_before_dedup: 5
+  total_parameters_after_dedup: 5
+  update_log_entries: 3
+  hidden_fields_count: 0
+  source_results: workspaces\v2.add_on_deal.end_add_on_deal\results\all_chunks_results.json
+
+======================================================================
+Legend: * = required parameter
+======================================================================

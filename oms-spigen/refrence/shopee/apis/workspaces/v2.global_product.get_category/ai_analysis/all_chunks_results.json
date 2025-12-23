@@ -1,0 +1,107 @@
+[
+  {
+    "chunk_index": 1,
+    "total_chunks": 1,
+    "endpoint": "/global_product/get_category",
+    "method": "GET",
+    "description": "Get product category details",
+    "update_log": [],
+    "hidden_fields": [],
+    "parameters": [
+      {
+        "name": "parent_id",
+        "type": "string",
+        "required": false,
+        "description": "Parent ID to retrieve user operation in hierarchy",
+        "children": []
+      },
+      {
+        "name": "access_token",
+        "type": "string",
+        "required": false,
+        "description": "The access token to authorize your API operation to be applied. Ensure it's correct.",
+        "children": []
+      },
+      {
+        "name": "language",
+        "type": "string",
+        "required": false,
+        "description": "Please language should be set as 'en'",
+        "children": []
+      }
+    ],
+    "response_fields": [
+      {
+        "name": "result",
+        "type": "string",
+        "description": "Response status"
+      },
+      {
+        "name": "message",
+        "type": "string",
+        "description": "Response message"
+      },
+      {
+        "name": "warning",
+        "type": "string",
+        "description": "Warning message"
+      },
+      {
+        "name": "response",
+        "type": "object",
+        "description": null,
+        "children": [
+          {
+            "name": "category_id",
+            "type": "string",
+            "description": "Category ID"
+          },
+          {
+            "name": "parent_category_id",
+            "type": "string",
+            "description": "Parent category ID"
+          },
+          {
+            "name": "parent_category_name",
+            "type": "string",
+            "description": "Parent category name"
+          },
+          {
+            "name": "has_children",
+            "type": "boolean",
+            "description": "Whether has children for show category"
+          }
+        ]
+      }
+    ],
+    "error_codes": [
+      {
+        "code": "error_token",
+        "description": "Token is not found, please check token"
+      },
+      {
+        "code": "error_auth",
+        "description": "Invalid access token"
+      },
+      {
+        "code": "error_general",
+        "description": "There is no global id found"
+      }
+    ],
+    "notes": "The documentation shows a comprehensive API endpoint for retrieving product category information with clear parameters, response fields, and error codes. The API appears to support hierarchical category structures with parent-child relationships.",
+    "chunk_metadata": {
+      "index": 1,
+      "total": 1,
+      "y_start": 0,
+      "y_end": 4863,
+      "overlap_top": 0,
+      "overlap_bottom": 0,
+      "height": 4863,
+      "path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\workspaces\\v2.global_product.get_category\\chunks\\chunk_001.png",
+      "filename": "chunk_001.png",
+      "width": 837
+    },
+    "analysis_timestamp": "2025-10-10T05:46:22.540182",
+    "model": "claude-3-5-sonnet-20241022"
+  }
+]

@@ -1,0 +1,156 @@
+[
+  {
+    "chunk_index": 1,
+    "endpoint": null,
+    "method": null,
+    "description": null,
+    "parameters": [
+      {
+        "name": "order_sn_list",
+        "type": "array",
+        "required": true,
+        "description": "List of order serial numbers to query",
+        "children": []
+      }
+    ],
+    "response_fields": [],
+    "chunk_metadata": {
+      "index": 1,
+      "total": 3,
+      "y_start": 0,
+      "y_end": 8000,
+      "overlap_top": 0,
+      "overlap_bottom": 500,
+      "height": 8000,
+      "path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\workspaces\\v2.payment.get_escrow_detail_batch\\chunks\\chunk_001.png",
+      "filename": "chunk_001.png",
+      "width": 837
+    },
+    "chunk_path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\workspaces\\v2.payment.get_escrow_detail_batch\\chunks\\chunk_001.png"
+  },
+  {
+    "chunk_index": 2,
+    "endpoint": null,
+    "method": null,
+    "description": null,
+    "parameters": [],
+    "response_fields": [
+      {
+        "name": "message",
+        "type": "string",
+        "description": "Response message",
+        "children": []
+      },
+      {
+        "name": "request_id",
+        "type": "string",
+        "description": "Request identifier",
+        "children": []
+      },
+      {
+        "name": "response",
+        "type": "object",
+        "description": "Response data",
+        "children": [
+          {
+            "name": "order_payment_info",
+            "type": "object",
+            "description": "Payment information",
+            "children": [
+              {
+                "name": "buyer_payment_info",
+                "type": "object",
+                "description": "Buyer payment details",
+                "children": []
+              },
+              {
+                "name": "buyer_service_fee",
+                "type": "number",
+                "description": "Service fee amount",
+                "children": []
+              },
+              {
+                "name": "buyer_tax_amount",
+                "type": "number",
+                "description": "Tax amount",
+                "children": []
+              },
+              {
+                "name": "credit_card_number",
+                "type": "string",
+                "description": "Credit card number",
+                "children": []
+              },
+              {
+                "name": "credit_card_promotion",
+                "type": "number",
+                "description": "Credit card promotion value",
+                "children": []
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "chunk_metadata": {
+      "index": 2,
+      "total": 3,
+      "y_start": 7513,
+      "y_end": 15513,
+      "overlap_top": 500,
+      "overlap_bottom": 500,
+      "height": 8000,
+      "path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\workspaces\\v2.payment.get_escrow_detail_batch\\chunks\\chunk_002.png",
+      "filename": "chunk_002.png",
+      "width": 837
+    },
+    "chunk_path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\workspaces\\v2.payment.get_escrow_detail_batch\\chunks\\chunk_002.png"
+  },
+  {
+    "chunk_index": 3,
+    "endpoint": null,
+    "method": null,
+    "description": null,
+    "parameters": [],
+    "response_fields": [
+      {
+        "name": "error",
+        "type": "string",
+        "description": "Error code",
+        "children": []
+      },
+      {
+        "name": "error_detail_list",
+        "type": "array",
+        "description": "List of error details",
+        "children": [
+          {
+            "name": "error_code",
+            "type": "string",
+            "description": "Specific error code",
+            "children": []
+          },
+          {
+            "name": "message",
+            "type": "string",
+            "description": "Error message",
+            "children": []
+          }
+        ]
+      }
+    ],
+    "chunk_metadata": {
+      "index": 3,
+      "total": 3,
+      "y_start": 15198,
+      "y_end": 18066,
+      "overlap_top": 500,
+      "overlap_bottom": 0,
+      "height": 2868,
+      "path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\workspaces\\v2.payment.get_escrow_detail_batch\\chunks\\chunk_003.png",
+      "filename": "chunk_003.png",
+      "width": 837
+    },
+    "chunk_path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\workspaces\\v2.payment.get_escrow_detail_batch\\chunks\\chunk_003.png"
+  }
+]

@@ -1,0 +1,62 @@
+{
+  "endpoint": "/openapi/mex/swap/order/v4_delete_ws_deal_or_deal",
+  "method": "DELETE",
+  "description": "Delete order API endpoint",
+  "parameters": [
+    {
+      "name": "access_token",
+      "type": "string",
+      "required": true,
+      "description": "Request for all requests"
+    },
+    {
+      "name": "type",
+      "type": "string",
+      "required": true,
+      "description": "Signature generator to verify user permission"
+    },
+    {
+      "name": "deal_or_deal_or",
+      "type": "string",
+      "required": true,
+      "description": "The identifier of the API request for error tracking"
+    },
+    {
+      "name": "message",
+      "type": "string",
+      "required": true,
+      "description": "The description of error code"
+    },
+    {
+      "name": "result_id",
+      "type": "string",
+      "required": true,
+      "description": "The identifier of the API request for error tracking"
+    }
+  ],
+  "response_fields": [],
+  "update_log": [
+    {
+      "date": "2021-08-24",
+      "change": "Add first complete information"
+    },
+    {
+      "date": "2021-05-25",
+      "change": "Update the details"
+    },
+    {
+      "date": "2021-04-27",
+      "change": "New API"
+    }
+  ],
+  "hidden_fields": [],
+  "metadata": {
+    "total_chunks": 1,
+    "chunks_with_errors": 0,
+    "total_parameters_before_dedup": 5,
+    "total_parameters_after_dedup": 5,
+    "update_log_entries": 3,
+    "hidden_fields_count": 0,
+    "source_results": "workspaces\\v2.add_on_deal.end_add_on_deal\\results\\all_chunks_results.json"
+  }
+}

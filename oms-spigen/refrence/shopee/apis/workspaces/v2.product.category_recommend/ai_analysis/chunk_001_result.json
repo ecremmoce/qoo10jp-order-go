@@ -1,0 +1,163 @@
+{
+  "chunk_index": 1,
+  "total_chunks": 1,
+  "endpoint": null,
+  "method": null,
+  "description": null,
+  "update_log": [
+    {
+      "date": "2021-01-26",
+      "change": "Added error_code global request parameter"
+    },
+    {
+      "date": "2021-01-19",
+      "change": "Update basic structure"
+    },
+    {
+      "date": "2021-01-18",
+      "change": "Initial API"
+    }
+  ],
+  "parameters": [
+    {
+      "name": "url",
+      "type": "string",
+      "required": true,
+      "description": "API address"
+    },
+    {
+      "name": "method",
+      "type": "string",
+      "required": true,
+      "description": null
+    },
+    {
+      "name": "test_no",
+      "type": "string",
+      "required": false,
+      "description": null
+    }
+  ],
+  "response_fields": [
+    {
+      "name": "text",
+      "type": "string",
+      "description": "Return text string. Empty if no error occurred"
+    },
+    {
+      "name": "message",
+      "type": "string",
+      "description": "Return error text string. Empty if no error occurred"
+    },
+    {
+      "name": "result_id",
+      "type": "string",
+      "description": "Return result ID string. Empty if no error occurred"
+    }
+  ],
+  "error_codes": [
+    {
+      "code": "error_param",
+      "description": "Check and update_save are empty"
+    },
+    {
+      "code": "error_product_desc",
+      "description": "Invalid error_product_desc"
+    },
+    {
+      "code": "error_update_save",
+      "description": "No permission to update save"
+    },
+    {
+      "code": "error_check",
+      "description": "Check error is empty"
+    },
+    {
+      "code": "error_save",
+      "description": "Already exist"
+    },
+    {
+      "code": "error_save_desc",
+      "description": "Invalid file checking"
+    },
+    {
+      "code": "error_save_file",
+      "description": "Save file not found"
+    },
+    {
+      "code": "error_save_permission",
+      "description": "Save file permission denied"
+    },
+    {
+      "code": "error_product",
+      "description": "Incomplete record"
+    },
+    {
+      "code": "error_incomplete_record",
+      "description": "The required key password is not found"
+    },
+    {
+      "code": "error_already_exist",
+      "description": "Something wrong. Please try later"
+    },
+    {
+      "code": "error_product_code",
+      "description": "Product code exist"
+    },
+    {
+      "code": "error_create_permission",
+      "description": "Request error from gateway"
+    },
+    {
+      "code": "error_update_permission_file",
+      "description": "Create a permission"
+    },
+    {
+      "code": "error_update_permission_code",
+      "description": "I can not delete a string save that is allowed to be updated by date"
+    },
+    {
+      "code": "error_save",
+      "description": "Custom error above 50 page size or limited by support[]:support type"
+    },
+    {
+      "code": "error_save_limit_desc",
+      "description": "Custom error limit 1 (not_add)"
+    },
+    {
+      "code": "error_save_file",
+      "description": "Custom error limit 1 (not_add)"
+    },
+    {
+      "code": "error_save_permission",
+      "description": "Create a permission"
+    },
+    {
+      "code": "error_save",
+      "description": "Custom error above 50 page size or limited by support[]:support type"
+    },
+    {
+      "code": "error_save_limit_desc",
+      "description": "I can not delete a string save that is allowed to be updated by date"
+    },
+    {
+      "code": "error_update_code_file",
+      "description": "Not page save not found"
+    }
+  ],
+  "notes": "The image appears to be an API documentation page showing common parameters, response parameters, and error codes. There are several sections including update history, but no specific endpoint or method is shown in this portion of the documentation.",
+  "chunk_metadata": {
+    "index": 1,
+    "total": 1,
+    "y_start": 0,
+    "y_end": 5063,
+    "overlap_top": 0,
+    "overlap_bottom": 0,
+    "height": 5063,
+    "path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\workspaces\\v2.product.category_recommend\\chunks\\chunk_001.png",
+    "filename": "chunk_001.png",
+    "width": 837
+  },
+  "analysis_timestamp": "2025-10-10T06:24:28.727325",
+  "model": "claude-3-5-sonnet-20241022"
+}

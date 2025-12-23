@@ -1,0 +1,40 @@
+{
+  "document_id": "v2.product.get_attribute_tree",
+  "document_type": "api",
+  "platform": "shopee",
+  "content_ko": "# 공통 파라미터\n\n| 이름 | 타입 | 필수 여부 | 설명 |\n|------|------|----------|-------------|\n| page | integer | 아니오 | 페이지 번호 |\n| size | integer | 아니오 | 페이지 당 크기 |\n| order_column | string | 아니오 | 정렬 기준 |\n\n# 요청 파라미터\n\n| 이름 | 타입 | 필수 여부 | 설명 |\n|------|------|----------|-------------|\n| category | string | 아니오 | 카테고리 |\n| keyword | string | 아니오 | 검색 키워드 |\n| member_no | int64 | 아니오 | 회원 번호 |\n\n# 응답 파라미터\n\n| 이름 | 타입 | 설명 |\n|------|------|-------------|\n| id | string | ID |\n| category | string | 카테고리 |\n| content | string | 내용 |\n| created_at | string | 생성 날짜 |\n| status | string | 상태 |\n| profile_url | string | 프로필 이미지 URL |\n| email_yn | int | 이메일 알림 상태 |\n| push_yn | int | 푸시 알림 상태 |\n| sms_yn | int | SMS 알림 상태 |\n| modified_at | string | 마지막 수정 날짜 |\n\n# 응답 예시\n\n```json\n{\n  \"success\": true,\n  \"code\": 200,\n  \"message\": \"Success\",\n  \"data\": {\n    \"id\": \"123\",\n    \"category\": \"notice\",\n    \"content\": \"Test content\"\n  }\n}\n```\n\n# 오류 코드\n\n| 코드 | 설명 |\n|------|-------------|\n| 400 | Bad Request |\n| 401 | Unauthorized |\n| 403 | Forbidden |\n| 404 | Not Found |\n| 500 | Internal Server Error |\n\n# API 엔드포인트\n\n- GET /api/v1/resource \n- POST /api/v1/resource\n- PUT /api/v1/resource/{id}\n- DELETE /api/v1/resource/{id}\n\n이 문서는 요청/응답 파라미터, 예시, 오류 코드 및 엔드포인트를 다루는 여러 섹션을 포함합니다. 모든 파라미터는 타입, 필수 여부 및 설명과 함께 문서화되어 있습니다. 응답 형식은 표준 상태 코드 및 메시지와 함께 JSON인 것으로 보입니다.",
+  "translated_at": "2025-10-16T05:52:16",
+  "char_count": 1322,
+  "metadata_ko": {
+    "title": "Resource API",
+    "summary": "이 API는 리소스 관리를 위한 CRUD 작업을 제공합니다. 리소스 검색, 생성, 업데이트 및 삭제를 지원하며, 페이지네이션, 정렬, 그리고 카테고리 및 키워드에 의한 필터링을 지원합니다.",
+    "keywords": [
+      "resource",
+      "API",
+      "CRUD",
+      "GET",
+      "POST",
+      "PUT",
+      "DELETE",
+      "pagination",
+      "sorting",
+      "filtering"
+    ],
+    "category": "일반",
+    "tags": [
+      "REST",
+      "API",
+      "Resource Management"
+    ],
+    "difficulty": "중간",
+    "importance": 4,
+    "use_cases": [
+      "기사 또는 블로그 게시물 목록 관리.",
+      "제품 카탈로그 처리.",
+      "문서 모음 관리.",
+      "사용자 프로필 데이터베이스 유지 관리."
+    ],
+    "related_apis": []
+  },
+  "metadata_translated_at": "2025-10-16T05:52:18"
+}

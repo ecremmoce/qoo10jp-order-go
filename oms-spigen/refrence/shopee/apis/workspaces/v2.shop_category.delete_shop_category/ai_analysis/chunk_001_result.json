@@ -1,0 +1,119 @@
+{
+  "chunk_index": 1,
+  "total_chunks": 1,
+  "endpoint": "/v1/blog_category/delete_shop_category",
+  "method": "POST",
+  "description": "API to delete blog category",
+  "update_log": [
+    {
+      "date": "2025-04-27",
+      "change": "API first 1.0 code integration"
+    },
+    {
+      "date": "2024-03-19",
+      "change": "Modified the Export Structure of Request Parameter and Response Parameter"
+    }
+  ],
+  "parameters": [
+    {
+      "name": "partner_id",
+      "type": "string",
+      "required": true,
+      "description": "Partner ID is assigned upon registration is ecosystem",
+      "children": []
+    },
+    {
+      "name": "timestamp",
+      "type": "string",
+      "required": true,
+      "description": "This is to indicate the timestamp of the request. Required for preventing data tampering",
+      "children": []
+    },
+    {
+      "name": "access_token",
+      "type": "string",
+      "required": true,
+      "description": "The token for API access, used to identify your permission to use API. Will be verified every time it is used.",
+      "children": []
+    },
+    {
+      "name": "shop_id",
+      "type": "string",
+      "required": true,
+      "description": "Uniquely tracks identifier for a shop",
+      "children": []
+    }
+  ],
+  "response_parameters": [
+    {
+      "name": "request_id",
+      "type": "string",
+      "required": true,
+      "description": "The identifier of the API request for trace",
+      "children": []
+    },
+    {
+      "name": "message",
+      "type": "string",
+      "required": false,
+      "description": "The error or fail error notice if the request fails and will be empty if the request succeeds",
+      "children": []
+    },
+    {
+      "name": "msg_category_id",
+      "type": "string",
+      "required": false,
+      "description": "Shop category's unique identifier",
+      "children": []
+    }
+  ],
+  "error_codes": [
+    {
+      "code": "error_param",
+      "description": "There is no system_failure or policy"
+    },
+    {
+      "code": "error_param",
+      "description": "Invalid access token"
+    },
+    {
+      "code": "error_param",
+      "description": "There is no partner_id or empty"
+    },
+    {
+      "code": "error_param",
+      "description": "Wrong signature"
+    },
+    {
+      "code": "error_param",
+      "description": "Invalid timestamp"
+    },
+    {
+      "code": "error_param",
+      "description": "Something wrong. Please try later"
+    },
+    {
+      "code": "error_param",
+      "description": "Request not from platform"
+    },
+    {
+      "code": "error_param",
+      "description": "Currently a primary category cannot be deleted"
+    }
+  ],
+  "notes": "The documentation includes common parameters, request parameters, response parameters, request examples, response examples, and error codes. All parameters and their descriptions have been captured.",
+  "chunk_metadata": {
+    "index": 1,
+    "total": 1,
+    "y_start": 0,
+    "y_end": 4580,
+    "overlap_top": 0,
+    "overlap_bottom": 0,
+    "height": 4580,
+    "path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\workspaces\\v2.shop_category.delete_shop_category\\chunks\\chunk_001.png",
+    "filename": "chunk_001.png",
+    "width": 837
+  },
+  "analysis_timestamp": "2025-10-10T06:46:34.439521",
+  "model": "claude-3-5-sonnet-20241022"
+}

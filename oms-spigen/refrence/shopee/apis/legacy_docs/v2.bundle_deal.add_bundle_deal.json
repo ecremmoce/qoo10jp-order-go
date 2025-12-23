@@ -1,0 +1,72 @@
+{
+  "endpoint": null,
+  "method": null,
+  "description": null,
+  "parameters": [
+    {
+      "name": "type",
+      "type": "string",
+      "required": true,
+      "description": "Type identifier",
+      "children": []
+    },
+    {
+      "name": "lang",
+      "type": "string",
+      "required": false,
+      "description": "Language code",
+      "children": []
+    },
+    {
+      "name": "data",
+      "type": "object",
+      "required": true,
+      "description": "Main data object",
+      "children": [
+        {
+          "name": "review_settings",
+          "type": "object",
+          "required": false,
+          "description": "Review configuration settings",
+          "children": [
+            {
+              "name": "enabled",
+              "type": "boolean",
+              "required": true,
+              "description": "Enable/disable reviews",
+              "children": []
+            },
+            {
+              "name": "moderation_required",
+              "type": "boolean",
+              "required": false,
+              "description": "Whether reviews require moderation",
+              "children": []
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "response_fields": [],
+  "update_log": [
+    {
+      "date": "2023-10-10",
+      "change": "Added new parameters to modify review settings"
+    },
+    {
+      "date": "2023-09-26",
+      "change": "API launch"
+    }
+  ],
+  "hidden_fields": [],
+  "metadata": {
+    "total_chunks": 1,
+    "chunks_with_errors": 0,
+    "total_parameters_before_dedup": 3,
+    "total_parameters_after_dedup": 3,
+    "update_log_entries": 2,
+    "hidden_fields_count": 0,
+    "source_results": "workspaces\\v2.bundle_deal.add_bundle_deal\\results\\all_chunks_results.json"
+  }
+}

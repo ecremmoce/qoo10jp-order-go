@@ -1,0 +1,43 @@
+======================================================================
+API SPECIFICATION SUMMARY
+======================================================================
+
+Endpoint: POST api/ogp/batch_update_s3_warehouse_tracking_status
+Description: API for updating warehouse tracking status
+
+Parameters (10):
+----------------------------------------------------------------------
+* url (string)
+   API endpoint URLs for different environments
+* host (string)
+   API host URLs
+* params_id (string)
+   Param id to support page navigation is successful
+  tracking_id (string)
+   The tracking number
+* order_id (string)
+   The basic API setting, only to redirect user parameters to the new table bit method and return a result
+* msg_id (string)
+   Message body identifier for a track. Request param to be used
+  error (string)
+   Indicate error type if bit error. Empty if no errors
+  message (string)
+   Indicate error details if bit error. Empty if no errors
+  request_id (string)
+   The identifier for an API request the error belongs
+  code (integer)
+   Response status code
+
+Metadata:
+----------------------------------------------------------------------
+  total_chunks: 1
+  chunks_with_errors: 0
+  total_parameters_before_dedup: 10
+  total_parameters_after_dedup: 10
+  update_log_entries: 2
+  hidden_fields_count: 0
+  source_results: workspaces\v2.logistics.batch_update_tpf_warehouse_tracking_status\results\all_chunks_results.json
+
+======================================================================
+Legend: * = required parameter
+======================================================================

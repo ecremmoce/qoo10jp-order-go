@@ -1,0 +1,109 @@
+[
+  {
+    "chunk_index": 1,
+    "endpoint": null,
+    "method": null,
+    "description": null,
+    "parameters": [
+      {
+        "name": "user_credentials",
+        "type": "object",
+        "required": true,
+        "description": null,
+        "children": [
+          {
+            "name": "email",
+            "type": "string",
+            "required": true,
+            "description": "User's email address"
+          },
+          {
+            "name": "password",
+            "type": "string",
+            "required": true,
+            "description": "User's password"
+          }
+        ]
+      },
+      {
+        "name": "server_settings",
+        "type": "object",
+        "required": false,
+        "description": null,
+        "children": [
+          {
+            "name": "region",
+            "type": "string",
+            "required": true,
+            "description": "Server region code"
+          },
+          {
+            "name": "timeout",
+            "type": "integer",
+            "required": false,
+            "description": "Connection timeout in seconds"
+          }
+        ]
+      }
+    ],
+    "response_fields": [
+      {
+        "name": "status",
+        "type": "string",
+        "description": "Response status message"
+      },
+      {
+        "name": "data",
+        "type": "object",
+        "description": "Response payload",
+        "children": [
+          {
+            "name": "session_token",
+            "type": "string",
+            "description": "Authentication token"
+          }
+        ]
+      }
+    ],
+    "chunk_metadata": {
+      "index": 1,
+      "total": 2,
+      "y_start": 0,
+      "y_end": 8000,
+      "overlap_top": 0,
+      "overlap_bottom": 500,
+      "height": 8000,
+      "path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\workspaces\\v2.returns.get_return_detail\\chunks\\chunk_001.png",
+      "filename": "chunk_001.png",
+      "width": 837
+    },
+    "chunk_path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\workspaces\\v2.returns.get_return_detail\\chunks\\chunk_001.png"
+  },
+  {
+    "chunk_index": 2,
+    "endpoint": "/ping",
+    "method": "GET",
+    "description": "Simple ping endpoint to test API connectivity",
+    "parameters": [],
+    "response_fields": [
+      {
+        "name": "status",
+        "type": "string",
+        "description": "Always returns 'pong'"
+      }
+    ],
+    "chunk_metadata": {
+      "index": 2,
+      "total": 2,
+      "y_start": 7603,
+      "y_end": 13312,
+      "overlap_top": 500,
+      "overlap_bottom": 0,
+      "height": 5709,
+      "path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\workspaces\\v2.returns.get_return_detail\\chunks\\chunk_002.png",
+      "filename": "chunk_002.png",
+      "width": 837
+    },
+    "chunk_path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\workspaces\\v2.returns.get_return_detail\\chunks\\chunk_002.png"
+  }
+]

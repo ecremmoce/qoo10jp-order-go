@@ -1,0 +1,48 @@
+{
+  "document_id": "developer-guide.290",
+  "document_type": "guide",
+  "platform": "shopee",
+  "content_ko": "# 공지 | 콘솔\n\n## API 모범 사례 > Shopee Entrega Direta\n\n오후 3시 이전에 결제된 주문은 당일 배송되며, 오후 3시 이후에 결제된 주문은 다음 날 배송됩니다.\n\nShopee Entrega Direta는 현재 SP 시티에서만 서비스되므로, 판매자는 Shopee Entrega Direta가 활성화되면 항상 2개의 채널을 사용할 수 있습니다.\n\n**참고:** *이 채널은 Shopee 상업 팀에서 정한 규칙에 따라 선택된 판매자에게만 제공됩니다. 자세한 내용은* [article](article) *을 참조하십시오.*\n\n---\n\n## OpenAPI 변경 사항\n\n### 1 - 주문 식별 (새로운 물류 채널):\n\n- v2.order.get_order_detail API, \"shipping_carrier\" 파라미터: \"Shopee Entrega Direta\"\n\n### 2 - 판매자가 사용할 수 있는 채널 식별 및 상품 생성:\n\n- v2.logistics.get_channel_list, 파라미터 \"logistic_channel_id\": 90022\n\n### 3 - 주문 마감일 (ship_by_date):\n\n- 주문 배송 마감일은 결제 확인 시점에 따라 결정되므로, 판매자가 v2.order.get_order_detail API의 \"ship_by_date\" 파라미터를 통해 제공되는 마감일에 접근할 수 있도록 해야 합니다.\n\n### 4 - 상품 생성:\n\n- 이 채널은 판매자에게 유일하게 제공되는 채널이 아니므로, 상품을 생성할 때 사용 가능한 채널을 식별할 때 항상 사용 가능한 모든 채널(예: Shopee Direct Delivery 및 Standard Delivery)을 언급하십시오.\n- Shopee Direct Delivery라는 하나의 활성 물류 채널만 사용하여 상품을 생성하려고 시도하는 것은 불가능합니다.\n\n---\n\n## 물류 허브\n\n파트너 및 물류 허브가 판매자가 물류 채널을 통해 주문을 관리하도록 지원하는 경우(예: Tracken, Log Manager) 통합을 위한 주요 API 및 흐름은 다음과 같습니다.\n\n### 1 - Shopee Open Platform에서 계정 및 APP 생성:\n\n- 판매자의 API 및 주문 데이터에 액세스하려면 Open Platform에서 계정을 생성해야 합니다.\n- 계정이 생성되면 APP(모든 OpenAPI 기능에 액세스하려면 ERP 시스템 유형이 바람직함)을 생성하고 API 호출을 시작하기 전에 판매자를 계정에 연결합니다.\n- 이러한 흐름은 다음 문서에 자세히 설명되어 있습니다.\n  - [Developer account registration](Developer%20account%20registration)\n  - [App management](App%20management)\n  - [Authorization and Authentication](Authorization%20and%20Authentication)\n\n### 2 - 권장 API 및 웹훅 (Push):\n\n- v2.order.get_order_list - 주문 식별용;\n- v2.order.get_order_detail API - 주문 세부 정보 및 주문의 물류 채널을 확인하는 유일한 방법 (\"shipping_channel\" 파라미터를 통해 \"Shopee Entrega Direta\"가 반환됨);\n- v2.logistics.get_tracking_number API - 주문 추적 번호 식별용;\n- v2.logistics.create_shipping_document - 라벨 생성용 (판매자의 ERP가 이미 이 호출을 수행하므로 필요하지 않을 수 있음);\n- v2.logistics.get_shipping_document_result - 라벨이 이미 성공적으로 생성되었는지 확인하고 다운로드 가능한지 확인;\n- v2.logistics.download_shipping_document API - 배송 라벨 다운로드용;\n- order_status_push - 새 주문 및 주문 상태 업데이트 시 알림을 받기 위해;\n- order_tracking_push - 추적 번호가 생성되었을 때 알림을 받기 위해;\n- shipping_document_status_push - 라벨을 다운로드할 준비가 되었을 때 알림을 받기 위해;\n\n다음은 Shopee의 주문 흐름에 대한 자세한 문서 링크입니다.\n- [OpenAPI Logistics API Step by Step](OpenAPI%20Logistics%20API%20Step%20by%20Step)\n- [API Call Flows](API%20Call%20Flows)\n\n---\n\n## FAQ:\n\n### 1 - 모든 판매자가 Shopee Entrega Direta 채널에 액세스할 수 있습니까?\n\nA: 관리되는 판매자만 채널에 액세스할 수 있습니다. 자세한 내용은 계정 관리자에게 문의하십시오.\n\n### 2 - Shopee Entrega Direta 채널로 송장을 보내는 것이 필수입니까?\n\nA: 이 채널은 송장 전송, 배송 준비 및 라벨 생성을 정상적으로 수행해야 합니다.\n\n### 3 - v2.order.get_order_detail API에서 마스킹된 데이터, 왜 이런 일이 발생할 수 있습니까?\n\nA: a) 구매자 데이터는 민감한 데이터이며 주문이 READY_TO_SHIP 및 TO_RETURN 상태일 때만 사용할 수 있습니다.\n\nb) Open Platform Console의 IP Whitelist가 APP 수준에서 채워지지 않은 경우 데이터가 마스킹될 수 있습니다. 채워지면 올바른 상태에 있는 한 자동으로 사용할 수 있어야 합니다.\n\n---\n\nOpenAPI에 대한 추가 질문은 [OP Ticketing Platform](OP%20Ticketing%20Platform)에서 티켓을 생성할 수 있습니다.",
+  "translated_at": "2025-10-16T09:06:34",
+  "char_count": 2853,
+  "metadata_ko": {
+    "title": "콘솔 공지 | Shopee Entrega Direta",
+    "summary": "본 가이드는 Shopee Entrega Direta 물류 채널에 대한 정보(API 변경 사항, 물류 허브 통합 세부 정보, 자주 묻는 질문 포함)를 제공합니다. Shopee Open Platform을 통해 Shopee Entrega Direta 채널에 액세스하고 활용하는 데 필요한 단계를 설명합니다.",
+    "keywords": [
+      "Shopee Entrega Direta",
+      "물류 채널",
+      "OpenAPI",
+      "API integration",
+      "주문 관리",
+      "배송",
+      "물류 허브"
+    ],
+    "category": "통합",
+    "tags": [
+      "물류",
+      "API",
+      "배송",
+      "전자상거래",
+      "개발자 가이드"
+    ],
+    "difficulty": "중간",
+    "importance": 4,
+    "use_cases": [
+      "물류 허브를 Shopee 플랫폼과 통합합니다.",
+      "Shopee Entrega Direta 채널을 사용하여 주문을 관리합니다.",
+      "Shopee 판매자를 위한 ERP 시스템을 개발합니다.",
+      "배송 라벨 생성 및 추적을 자동화합니다.",
+      "Shopee Entrega Direta 관련 API 변경 사항을 이해합니다."
+    ],
+    "related_apis": [
+      "v2.order.get_order_detail",
+      "v2.logistics.get_channel_list",
+      "v2.order.get_order_list",
+      "v2.logistics.get_tracking_number",
+      "v2.logistics.create_shipping_document",
+      "v2.logistics.get_shipping_document_result",
+      "v2.logistics.download_shipping_document"
+    ]
+  },
+  "metadata_translated_at": "2025-10-16T09:06:38"
+}

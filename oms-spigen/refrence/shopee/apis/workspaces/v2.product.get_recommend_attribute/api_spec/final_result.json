@@ -1,0 +1,76 @@
+{
+  "endpoint": "checklist_agreement_attribute",
+  "method": null,
+  "description": null,
+  "parameters": [
+    {
+      "name": "partner_id",
+      "type": "string",
+      "required": true,
+      "description": "Partner ID is assigned upon registration is successful",
+      "children": []
+    },
+    {
+      "name": "timestamp",
+      "type": "string",
+      "required": true,
+      "description": "Used to enforce the freshness of the request. Request will expired after 15 minutes",
+      "children": []
+    },
+    {
+      "name": "access_token",
+      "type": "string",
+      "required": true,
+      "description": "The token for API caller using to identify app permission to our API. Platform admin will provide at token.",
+      "children": []
+    },
+    {
+      "name": "shop_id",
+      "type": "string",
+      "required": true,
+      "description": "Shopee's unique identifier for a shop. Required param to call APIs",
+      "children": []
+    }
+  ],
+  "response_fields": [
+    {
+      "name": "msg",
+      "type": "string",
+      "required": false,
+      "description": "Success description message",
+      "children": []
+    },
+    {
+      "name": "request_id",
+      "type": "string",
+      "required": false,
+      "description": "The identifier for an API request for error tracking",
+      "children": []
+    },
+    {
+      "name": "warning",
+      "type": "string",
+      "required": false,
+      "description": "Warning message for this request",
+      "children": []
+    },
+    {
+      "name": "response",
+      "type": "object",
+      "required": false,
+      "description": null,
+      "children": []
+    }
+  ],
+  "update_log": [],
+  "hidden_fields": [],
+  "metadata": {
+    "total_chunks": 1,
+    "chunks_with_errors": 0,
+    "total_parameters_before_dedup": 4,
+    "total_parameters_after_dedup": 4,
+    "update_log_entries": 0,
+    "hidden_fields_count": 0,
+    "source_results": "workspaces\\v2.product.get_recommend_attribute\\results\\all_chunks_results.json"
+  }
+}

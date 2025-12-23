@@ -1,0 +1,40 @@
+{
+  "chunk_index": 2,
+  "endpoint": null,
+  "method": null,
+  "description": null,
+  "parameters": [],
+  "response_fields": [
+    {
+      "name": "error_email",
+      "type": "string",
+      "description": "System error, please try again later or contact the team",
+      "children": []
+    },
+    {
+      "name": "error_permission",
+      "type": "string",
+      "description": "Global permission denied/check failed",
+      "children": []
+    },
+    {
+      "name": "error_parent_category",
+      "type": "string",
+      "description": "Your current merchant is a special merchant, please ensure all your shop are under same region",
+      "children": []
+    }
+  ],
+  "chunk_metadata": {
+    "index": 2,
+    "total": 2,
+    "y_start": 7250,
+    "y_end": 11265,
+    "overlap_top": 500,
+    "overlap_bottom": 0,
+    "height": 4015,
+    "path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\workspaces\\v2.global_product.add_global_item\\chunks\\chunk_002.png",
+    "filename": "chunk_002.png",
+    "width": 837
+  },
+  "chunk_path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\workspaces\\v2.global_product.add_global_item\\chunks\\chunk_002.png"
+}

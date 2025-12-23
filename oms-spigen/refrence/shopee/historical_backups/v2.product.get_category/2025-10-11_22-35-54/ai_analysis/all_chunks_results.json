@@ -1,0 +1,80 @@
+[
+  {
+    "chunk_index": 1,
+    "total_chunks": 1,
+    "endpoint": null,
+    "method": null,
+    "description": "Product external API category parameters documentation",
+    "update_log": [],
+    "hidden_fields": [],
+    "parameters": [
+      {
+        "name": "URL",
+        "type": "string",
+        "required": true,
+        "description": "API endpoint URL structure",
+        "children": []
+      },
+      {
+        "name": "base_url",
+        "type": "string",
+        "required": true,
+        "description": "Base URL for the API",
+        "children": []
+      },
+      {
+        "name": "category_id",
+        "type": "string",
+        "required": true,
+        "description": "Category identifier",
+        "children": []
+      }
+    ],
+    "response_fields": [
+      {
+        "name": "error",
+        "type": "string",
+        "description": "Error code and error text"
+      },
+      {
+        "name": "message",
+        "type": "string",
+        "description": "Error message for failed API calls"
+      },
+      {
+        "name": "request_id",
+        "type": "string",
+        "description": "The identifier for API request"
+      }
+    ],
+    "error_codes": [
+      {
+        "code": "error_gen",
+        "description": "General error code for errors"
+      },
+      {
+        "code": "error_product",
+        "description": "Product related error"
+      },
+      {
+        "code": "error_api",
+        "description": "API related error"
+      }
+    ],
+    "notes": "The image shows comprehensive API documentation including common parameters, request parameters, response parameters, request examples, error examples and error codes. The documentation appears to be for a product category related API endpoint. Some sections are partially visible but contain detailed technical specifications.",
+    "chunk_metadata": {
+      "index": 1,
+      "total": 1,
+      "y_start": 0,
+      "y_end": 5364,
+      "overlap_top": 0,
+      "overlap_bottom": 0,
+      "height": 5364,
+      "path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\platforms\\shopee\\apis\\workspaces\\v2.product.get_category\\chunks\\chunk_001.png",
+      "filename": "chunk_001.png",
+      "width": 837
+    },
+    "analysis_timestamp": "2025-10-11T22:35:54.058156",
+    "model": "claude-3-5-sonnet-20241022"
+  }
+]

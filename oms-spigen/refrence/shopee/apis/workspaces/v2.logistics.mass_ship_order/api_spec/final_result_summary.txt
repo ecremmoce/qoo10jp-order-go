@@ -1,0 +1,43 @@
+======================================================================
+API SPECIFICATION SUMMARY
+======================================================================
+
+Endpoint: None None
+
+Parameters (2):
+----------------------------------------------------------------------
+  status_message (string)
+   Used to provide specific success/failure message
+* body (object)
+   The request body parameters
+    page_size (string)
+     Number of records per page
+    catalog_number (string)
+     Optional catalog number for the product
+    message (string)
+     Optional message displayed to the user
+
+Response Fields (4):
+----------------------------------------------------------------------
+  error_code (string)
+   Error code if any
+  error_message (string)
+   Detailed error message if applicable
+  status (string)
+   Status of the request (success/failure)
+  data (object)
+   Response data object
+
+Metadata:
+----------------------------------------------------------------------
+  total_chunks: 1
+  chunks_with_errors: 0
+  total_parameters_before_dedup: 2
+  total_parameters_after_dedup: 2
+  update_log_entries: 0
+  hidden_fields_count: 0
+  source_results: workspaces\v2.logistics.mass_ship_order\results\all_chunks_results.json
+
+======================================================================
+Legend: * = required parameter
+======================================================================

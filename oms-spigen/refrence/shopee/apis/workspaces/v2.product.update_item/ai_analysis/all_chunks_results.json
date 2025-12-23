@@ -1,0 +1,152 @@
+[
+  {
+    "chunk_index": 1,
+    "endpoint": null,
+    "method": null,
+    "description": null,
+    "parameters": [],
+    "response_fields": [
+      {
+        "name": "error_in_item_promotion_image_item_lock",
+        "type": "string",
+        "description": "Can't update images when item is under promotion."
+      },
+      {
+        "name": "error_in_item_promotion_name_item_lock",
+        "type": "string",
+        "description": "Can't update item_name when item is under promotion."
+      },
+      {
+        "name": "error_in_item_promotion_unlist_lock",
+        "type": "string",
+        "description": "Can't unlist item when item is under promotion."
+      },
+      {
+        "name": "error_in_item_promotion_description_lock",
+        "type": "string",
+        "description": "Can't update description when item is under promotion."
+      }
+    ],
+    "chunk_metadata": {
+      "index": 1,
+      "total": 4,
+      "y_start": 0,
+      "y_end": 8000,
+      "overlap_top": 0,
+      "overlap_bottom": 500,
+      "height": 8000,
+      "path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\workspaces\\v2.product.update_item\\chunks\\chunk_001.png",
+      "filename": "chunk_001.png",
+      "width": 837
+    },
+    "chunk_path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\workspaces\\v2.product.update_item\\chunks\\chunk_001.png"
+  },
+  {
+    "chunk_index": 2,
+    "endpoint": null,
+    "method": null,
+    "description": null,
+    "parameters": [],
+    "response_fields": [
+      {
+        "name": "error_flash_sale_days_to_ship_lock",
+        "type": "string",
+        "description": "Days_to_ship cannot be changed when item is under ongoing/upcoming flash sale."
+      },
+      {
+        "name": "error_slash_price_not_lowest",
+        "type": "string",
+        "description": "In slash sale, price should not be lower or same as slash price."
+      },
+      {
+        "name": "error_whole_sale_min_count_incorrect",
+        "type": "string",
+        "description": "Internal error, please contact openapi team."
+      },
+      {
+        "name": "error_whole_sale_price_setting_incorrect",
+        "type": "string",
+        "description": "Wholesale price can't more than original price."
+      },
+      {
+        "name": "error_video_info_not_found",
+        "type": "string",
+        "description": "Video_info not found."
+      }
+    ],
+    "chunk_metadata": {
+      "index": 2,
+      "total": 4,
+      "y_start": 7258,
+      "y_end": 15258,
+      "overlap_top": 500,
+      "overlap_bottom": 500,
+      "height": 8000,
+      "path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\workspaces\\v2.product.update_item\\chunks\\chunk_002.png",
+      "filename": "chunk_002.png",
+      "width": 837
+    },
+    "chunk_path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\workspaces\\v2.product.update_item\\chunks\\chunk_002.png"
+  },
+  {
+    "chunk_index": 3,
+    "endpoint": null,
+    "method": null,
+    "description": "API Permissions section showing app types that can call this API",
+    "parameters": [],
+    "response_fields": [],
+    "permissions": [
+      "ERP System",
+      "Seller In House System",
+      "Product Management"
+    ],
+    "chunk_metadata": {
+      "index": 3,
+      "total": 4,
+      "y_start": 14750,
+      "y_end": 22750,
+      "overlap_top": 500,
+      "overlap_bottom": 500,
+      "height": 8000,
+      "path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\workspaces\\v2.product.update_item\\chunks\\chunk_003.png",
+      "filename": "chunk_003.png",
+      "width": 837
+    },
+    "chunk_path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\workspaces\\v2.product.update_item\\chunks\\chunk_003.png"
+  },
+  {
+    "chunk_index": 4,
+    "endpoint": null,
+    "method": null,
+    "description": "Update Log section",
+    "parameters": [],
+    "response_fields": [],
+    "update_log": [
+      {
+        "date": "2025-09-19",
+        "details": "The request field \"certification_type\" has been removed. If this field is still passed in the request, it will be ignored by the system."
+      },
+      {
+        "date": "2025-04-29",
+        "details": "Update certification_info"
+      },
+      {
+        "date": "2025-04-28",
+        "details": "Add permit ID for PH product certification"
+      }
+    ],
+    "chunk_metadata": {
+      "index": 4,
+      "total": 4,
+      "y_start": 22250,
+      "y_end": 23238,
+      "overlap_top": 500,
+      "overlap_bottom": 0,
+      "height": 988,
+      "path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\workspaces\\v2.product.update_item\\chunks\\chunk_004.png",
+      "filename": "chunk_004.png",
+      "width": 837
+    },
+    "chunk_path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\workspaces\\v2.product.update_item\\chunks\\chunk_004.png"
+  }
+]

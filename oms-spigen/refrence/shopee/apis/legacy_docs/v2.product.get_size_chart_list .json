@@ -1,0 +1,11 @@
+{
+  "endpoint": "https://partner.shopeemobile.com/api/v2/product/get_size_chart_list",
+  "method": "GET",
+  "description": "Shopee v2.product.get_size_chart_list  API",
+  "parameters": [],
+  "response_fields": [],
+  "metadata": {
+    "source_url": "https://open.shopee.com/documents/v2/v2.product.get_size_chart_list ?module=89&type=1",
+    "extraction_method": "regex_parallel"
+  }
+}

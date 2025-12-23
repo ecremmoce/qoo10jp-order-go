@@ -1,0 +1,140 @@
+[
+  {
+    "chunk_index": 1,
+    "total_chunks": 1,
+    "endpoint": "/v2/push/get_lost_push_message",
+    "method": "GET",
+    "description": "Get the lost push messages that were not within 3 days of the current time and not confirmed to have been consumed",
+    "update_log": [
+      {
+        "date": "2023-11-17",
+        "change": "New API"
+      }
+    ],
+    "parameters": {
+      "common_parameters": [
+        {
+          "name": "partner_id",
+          "type": "int",
+          "required": true,
+          "description": "Partner ID in assigned user registration is successful, required for all requests"
+        },
+        {
+          "name": "timestamp",
+          "type": "timestamp",
+          "required": true,
+          "description": "This is to indicate the timestamp of the request. Required for all requests. Format: in Eulixspace"
+        }
+      ],
+      "request_parameters": [
+        {
+          "name": "request_id",
+          "type": "string",
+          "required": true,
+          "description": "The identifier for an API request for error tracking"
+        }
+      ],
+      "response_parameters": [
+        {
+          "name": "error",
+          "type": "string",
+          "required": false,
+          "description": "Indicates error type if/it error. Empty if no error occurred"
+        },
+        {
+          "name": "message",
+          "type": "string",
+          "required": false,
+          "description": "Indicates error details if/it error. Empty if no error happened"
+        },
+        {
+          "name": "warning",
+          "type": "string",
+          "required": false,
+          "description": "Indicates warning details if/it warning. Empty if no warning happened"
+        },
+        {
+          "name": "push_message_list",
+          "type": "object[]",
+          "required": false,
+          "description": "Returns the pushed OSS get push messages list once lost within 3 days of the current time",
+          "children": [
+            {
+              "name": "chop_id",
+              "type": "int",
+              "required": true,
+              "description": "Request's unique identifier for a chop"
+            },
+            {
+              "name": "timestamp",
+              "type": "timestamp",
+              "required": true,
+              "description": "Timestamp that indicates the message sent date"
+            }
+          ]
+        },
+        {
+          "name": "last_chop_page",
+          "type": "boolean",
+          "required": false,
+          "description": "This is to indicate if there are more push messages to be consumed in more than 100. If 0 indicate in one day need to confirm the messages to be consumed"
+        },
+        {
+          "name": "last_message_id",
+          "type": "int",
+          "required": false,
+          "description": "Specifies the end entry of data returned in the current call"
+        }
+      ]
+    },
+    "error_codes": [
+      {
+        "code": "error_data",
+        "description": "parse data failed"
+      },
+      {
+        "code": "error_data",
+        "description": "data not exist"
+      },
+      {
+        "code": "error_param",
+        "description": "parameter invalid"
+      },
+      {
+        "code": "error_param",
+        "description": "The information you submit is not found"
+      },
+      {
+        "code": "error_param",
+        "description": "Wrong parameter, check input"
+      },
+      {
+        "code": "error_server",
+        "description": "Something wrong. Please try later"
+      },
+      {
+        "code": "error_push",
+        "description": "Request not from gateway"
+      },
+      {
+        "code": "error_server",
+        "description": "error server"
+      }
+    ],
+    "notes": "The documentation includes multiple URL endpoints for different environments (production, Chinese Mainland, etc.) which were listed at the top of the page.",
+    "chunk_metadata": {
+      "index": 1,
+      "total": 1,
+      "y_start": 0,
+      "y_end": 3831,
+      "overlap_top": 0,
+      "overlap_bottom": 0,
+      "height": 3831,
+      "path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\workspaces\\v2.push.get_lost_push_message\\chunks\\chunk_001.png",
+      "filename": "chunk_001.png",
+      "width": 837
+    },
+    "analysis_timestamp": "2025-10-10T06:39:04.809808",
+    "model": "claude-3-5-sonnet-20241022"
+  }
+]

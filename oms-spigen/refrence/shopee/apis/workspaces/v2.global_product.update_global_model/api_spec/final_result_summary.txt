@@ -1,0 +1,37 @@
+======================================================================
+API SPECIFICATION SUMMARY
+======================================================================
+
+Endpoint: None None
+
+Parameters (4):
+----------------------------------------------------------------------
+* URL (string)
+   https://extension.crowdin.com/groups/{group_pattern_title}.md
+* group_pattern (string)
+   If 0 global match
+* group_name_id (string)
+   Returns only groups with specified name
+  string_match (string)
+   You may set string to be groups mode
+
+Response Fields (2):
+----------------------------------------------------------------------
+  type (string)
+   Groups with type by string
+  message (string)
+   Message about groups
+
+Metadata:
+----------------------------------------------------------------------
+  total_chunks: 1
+  chunks_with_errors: 0
+  total_parameters_before_dedup: 4
+  total_parameters_after_dedup: 4
+  update_log_entries: 0
+  hidden_fields_count: 0
+  source_results: workspaces\v2.global_product.update_global_model\results\all_chunks_results.json
+
+======================================================================
+Legend: * = required parameter
+======================================================================

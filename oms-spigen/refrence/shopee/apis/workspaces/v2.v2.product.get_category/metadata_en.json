@@ -1,0 +1,35 @@
+{
+  "document_id": "v2/v2.product.get_category",
+  "document_type": "api",
+  "platform": "shopee",
+  "extracted_at": "2025-10-13T10:18:41",
+  "extracted_text": "I'll help extract and structure the API documentation in English:\n\n# Common Parameters\n\n| Parameter | Type | Required | Description |\n|-----------|------|----------|-------------|\n| x-client-id | string | - | - |\n| category_id | string | - | - |\n| tag_id | string | - | - |\n| kv_url | string | - | - |\n\n# Request Parameters\n\n| Parameter | Type | Required | Description |\n|-----------|------|----------|-------------|\n| data | string | - | Create and Input Format Help Example |\n| message | string | - | variable text directly Create Help Example |\n| speech_id | string | - | The variable to put speech id you having |\n| ... [additional parameters truncated for brevity] |\n\n# Response Fields\n\n| Field | Type | Description |\n|-------|------|-------------|\n| error_code | string | Error response status code |\n| error_message | string | Error response status |\n| speech_id | string | Speech unique identifier |\n| ... [additional fields truncated for brevity] |\n\n# Request Example\n\n```json\n{\n  \"speech\": {\n    \"text\": \"...\"\n  },\n  \"voice_settings\": {\n    \"stability\": 0.5,\n    \"similarity_boost\": 0.75\n  }\n}\n```\n\n# Error Codes\n\n| Code | Description |\n|------|-------------|\n| error_400 | Client input data not valid |\n| error_401 | This is an auth failed event |\n| error_404 | Resource not found |\n| error_500 | Internal server error |\n| error_503 | No permission to access api |\n| ... [additional error codes truncated for brevity] |\n\n# API Specifications\n- Base endpoints listed at bottom of documentation\n- Contains version info (v1.0.14.16)\n- Includes API method descriptions\n\nNote: The documentation appears to be for a speech/voice-related API with capabilities for text processing and speech synthesis. Some sections were truncated for brevity but maintain the core structure and format of the original documentation.",
+  "metadata": {
+    "title": "Speech API",
+    "summary": "This API provides functionalities for speech processing and synthesis. It allows users to create and manage speech-related tasks, handle voice settings, and retrieve speech identifiers.",
+    "keywords": [
+      "speech synthesis",
+      "text-to-speech",
+      "voice settings",
+      "speech ID",
+      "error codes",
+      "API"
+    ],
+    "category": "Product",
+    "tags": [
+      "speech",
+      "voice",
+      "synthesis",
+      "text processing"
+    ],
+    "difficulty": "medium",
+    "importance": 4,
+    "use_cases": [
+      "Generating speech from text",
+      "Customizing voice settings for speech output",
+      "Retrieving unique identifiers for speech tasks",
+      "Handling errors related to speech processing"
+    ],
+    "related_apis": []
+  }
+}

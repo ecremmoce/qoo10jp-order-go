@@ -1,0 +1,37 @@
+======================================================================
+API SPECIFICATION SUMMARY
+======================================================================
+
+Endpoint: GET /_d/{org_key}/{app_key}/{site_code}.json
+Description: Appears to be an API endpoint for retrieving data with organization, application and site parameters
+
+Parameters (7):
+----------------------------------------------------------------------
+* org_key (string)
+   Organization key identifier
+* app_key (string)
+   Application key identifier
+* site_code (string)
+   Site code identifier
+  show_id (string)
+   Show identifier
+  category (string)
+   Category filter
+  start (integer)
+   Starting index
+  limit (integer)
+   Number of results to return
+
+Metadata:
+----------------------------------------------------------------------
+  total_chunks: 1
+  chunks_with_errors: 0
+  total_parameters_before_dedup: 7
+  total_parameters_after_dedup: 7
+  update_log_entries: 0
+  hidden_fields_count: 0
+  source_results: workspaces\v2.shop_flash_sale.get_shop_flash_sale_items\results\all_chunks_results.json
+
+======================================================================
+Legend: * = required parameter
+======================================================================

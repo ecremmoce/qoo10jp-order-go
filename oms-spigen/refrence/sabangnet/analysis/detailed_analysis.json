@@ -1,0 +1,107 @@
+{
+  "total_sheets": 11,
+  "by_feature": {
+    "products": [
+      "상품등록&수정",
+      "상품요약수정",
+      "추가상품등록&수정",
+      "상품 쇼핑몰별 DATA 수정"
+    ],
+    "reference": [
+      "쇼핑몰 코드 조회",
+      "상품정보고시 코드 조회",
+      "카테고리"
+    ],
+    "orders": [
+      "주문수집"
+    ],
+    "invoices": [
+      "송장등록"
+    ],
+    "claims": [
+      "클레임수집"
+    ],
+    "inquiries": [
+      "문의사항 수집"
+    ]
+  },
+  "structures": {
+    "상품등록&수정": {
+      "feature": "products",
+      "xml_root": "SABANG_GOODS_REGI",
+      "header_count": 5,
+      "data_count": 116,
+      "has_auth": true
+    },
+    "쇼핑몰 코드 조회": {
+      "feature": "reference",
+      "xml_root": "SEND_COMPAYNY_ID",
+      "header_count": 0,
+      "data_count": 0,
+      "has_auth": false
+    },
+    "상품정보고시 코드 조회": {
+      "feature": "reference",
+      "xml_root": "SEND_COMPAYNY_ID",
+      "header_count": 0,
+      "data_count": 1,
+      "has_auth": false
+    },
+    "상품요약수정": {
+      "feature": "products",
+      "xml_root": "SABANG_GOODS_REGI",
+      "header_count": 5,
+      "data_count": 8,
+      "has_auth": true
+    },
+    "추가상품등록&수정": {
+      "feature": "products",
+      "xml_root": "SABANG_PACKAGE_REGI",
+      "header_count": 3,
+      "data_count": 13,
+      "has_auth": true
+    },
+    "카테고리": {
+      "feature": "reference",
+      "xml_root": "SABANG_CATEGORY_LIST",
+      "header_count": 3,
+      "data_count": 0,
+      "has_auth": true
+    },
+    "주문수집": {
+      "feature": "orders",
+      "xml_root": "SABANG_ORDER_LIST",
+      "header_count": 3,
+      "data_count": 12,
+      "has_auth": true
+    },
+    "송장등록": {
+      "feature": "invoices",
+      "xml_root": "SABANG_INV_REGI",
+      "header_count": 5,
+      "data_count": 4,
+      "has_auth": true
+    },
+    "클레임수집": {
+      "feature": "claims",
+      "xml_root": "SABANG_ORDER_LIST",
+      "header_count": 3,
+      "data_count": 22,
+      "has_auth": true
+    },
+    "상품 쇼핑몰별 DATA 수정": {
+      "feature": "products",
+      "xml_root": "SABANG_GOODS_REGI",
+      "header_count": 5,
+      "data_count": 15,
+      "has_auth": true
+    },
+    "문의사항 수집": {
+      "feature": "inquiries",
+      "xml_root": "SEND_AUTH_KEY",
+      "header_count": 1,
+      "data_count": 16,
+      "has_auth": true
+    }
+  }
+}

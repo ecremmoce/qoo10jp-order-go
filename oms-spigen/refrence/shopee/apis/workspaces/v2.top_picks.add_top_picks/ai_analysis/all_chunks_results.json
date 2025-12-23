@@ -1,0 +1,111 @@
+[
+  {
+    "chunk_index": 1,
+    "total_chunks": 1,
+    "endpoint": null,
+    "method": null,
+    "description": null,
+    "update_log": [
+      {
+        "date": "2025-09-26",
+        "change": "Updated the withdraw mechanism."
+      },
+      {
+        "date": "2023-07-27",
+        "change": "Updated the withdraw refreshment of Request Parameter and Response Parameter"
+      },
+      {
+        "date": "2023-07-17",
+        "change": "Limited url path"
+      }
+    ],
+    "parameters": [
+      {
+        "name": "URL",
+        "type": "string",
+        "required": true,
+        "description": null,
+        "children": []
+      },
+      {
+        "name": "API Secret",
+        "type": "string",
+        "required": true,
+        "description": null,
+        "children": []
+      },
+      {
+        "name": "symbol",
+        "type": "string",
+        "required": true,
+        "description": "Trading pair",
+        "children": []
+      },
+      {
+        "name": "amount",
+        "type": "string",
+        "required": true,
+        "description": "The value is not 0 and no more than 8 decimal places",
+        "children": []
+      },
+      {
+        "name": "fee",
+        "type": "string",
+        "required": false,
+        "description": "Withdrawal fee",
+        "children": []
+      },
+      {
+        "name": "to_address",
+        "type": "string",
+        "required": true,
+        "description": "Withdrawal address",
+        "children": []
+      },
+      {
+        "name": "tag",
+        "type": "string",
+        "required": false,
+        "description": null,
+        "children": []
+      }
+    ],
+    "response_fields": [
+      {
+        "name": "code",
+        "type": "integer",
+        "description": "The result is returned successfully when 0"
+      },
+      {
+        "name": "msg",
+        "type": "string",
+        "description": "Success or error"
+      },
+      {
+        "name": "result",
+        "type": "object",
+        "description": "Withdrawal details"
+      },
+      {
+        "name": "data",
+        "type": "object",
+        "description": "Data structure"
+      }
+    ],
+    "notes": "This appears to be an API documentation for a cryptocurrency withdrawal endpoint. The documentation includes common parameters, request parameters, response parameters, and example requests/responses. The URL patterns shown in the common parameters section appear to be related to websocket connections.",
+    "chunk_metadata": {
+      "index": 1,
+      "total": 1,
+      "y_start": 0,
+      "y_end": 5202,
+      "overlap_top": 0,
+      "overlap_bottom": 0,
+      "height": 5202,
+      "path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\workspaces\\v2.top_picks.add_top_picks\\chunks\\chunk_001.png",
+      "filename": "chunk_001.png",
+      "width": 837
+    },
+    "analysis_timestamp": "2025-10-10T06:50:36.478944",
+    "model": "claude-3-5-sonnet-20241022"
+  }
+]

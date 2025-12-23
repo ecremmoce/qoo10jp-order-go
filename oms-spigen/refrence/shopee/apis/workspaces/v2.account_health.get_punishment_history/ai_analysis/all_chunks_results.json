@@ -1,0 +1,120 @@
+[
+  {
+    "chunk_index": 1,
+    "total_chunks": 1,
+    "endpoint": "https://openstore.epaylinks.cn/api/settle/batch_withdraw_inbound",
+    "method": null,
+    "description": "API documentation for batch withdraw inbound",
+    "update_log": [],
+    "hidden_fields": [],
+    "parameters": [
+      {
+        "name": "URL",
+        "type": "string",
+        "required": true,
+        "description": "API endpoint URL",
+        "children": []
+      },
+      {
+        "name": "URL_Shared",
+        "type": "string",
+        "required": true,
+        "description": "Shared URL endpoint",
+        "children": []
+      },
+      {
+        "name": "URL_UAT",
+        "type": "string",
+        "required": true,
+        "description": "UAT environment URL",
+        "children": []
+      },
+      {
+        "name": "URL_PRE",
+        "type": "string",
+        "required": true,
+        "description": "Pre-production URL",
+        "children": []
+      },
+      {
+        "name": "time_str",
+        "type": "string",
+        "required": true,
+        "description": "Time string parameter",
+        "children": []
+      },
+      {
+        "name": "msg_id",
+        "type": "string",
+        "required": true,
+        "description": "Message identifier",
+        "children": []
+      },
+      {
+        "name": "version",
+        "type": "string",
+        "required": true,
+        "description": "API version",
+        "children": []
+      },
+      {
+        "name": "pid",
+        "type": "string",
+        "required": true,
+        "description": "Partner identifier",
+        "children": []
+      },
+      {
+        "name": "timestamp",
+        "type": "string",
+        "required": true,
+        "description": "Request timestamp",
+        "children": []
+      },
+      {
+        "name": "request_id",
+        "type": "string",
+        "required": true,
+        "description": "Unique request identifier",
+        "children": []
+      },
+      {
+        "name": "sign_type",
+        "type": "string",
+        "required": true,
+        "description": "Type of signature used",
+        "children": []
+      },
+      {
+        "name": "sign",
+        "type": "string",
+        "required": true,
+        "description": "Request signature",
+        "children": []
+      },
+      {
+        "name": "parameter_list",
+        "type": "array",
+        "required": true,
+        "description": "List of parameter objects",
+        "children": []
+      }
+    ],
+    "response_fields": [],
+    "notes": "The image shows an API documentation interface with common parameters, request parameters, and response parameters sections. Some sections appear to be collapsed or not fully visible in the screenshot.",
+    "chunk_metadata": {
+      "index": 1,
+      "total": 1,
+      "y_start": 0,
+      "y_end": 5287,
+      "overlap_top": 0,
+      "overlap_bottom": 0,
+      "height": 5287,
+      "path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\workspaces\\v2.account_health.get_punishment_history\\chunks\\chunk_001.png",
+      "filename": "chunk_001.png",
+      "width": 837
+    },
+    "analysis_timestamp": "2025-10-10T05:23:21.749759",
+    "model": "claude-3-5-sonnet-20241022"
+  }
+]

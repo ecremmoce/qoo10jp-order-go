@@ -1,0 +1,50 @@
+======================================================================
+API SPECIFICATION SUMMARY
+======================================================================
+
+Endpoint: POST /logistics/tool_real_packaging_info
+Description: API to get logistics packaging information for calculating commission
+
+Parameters (8):
+----------------------------------------------------------------------
+* access_token (string)
+   The token for API access, used to identify user permission to use this API
+* shop_id (string)
+   Shop ID
+  request_id (string)
+   Request if needed to call to trace
+* weight (float)
+   The weight of the packaging in centimeters
+* width (float)
+   The width of the packaging in centimeters
+* length (float)
+   The length of the packaging in centimeters
+  packaging_fee (float)
+   The packaging fee size or cost aspects level
+  value (float)
+   The packaging fee cost
+
+Response Fields (4):
+----------------------------------------------------------------------
+  request_id (string)
+   Request ID
+  error (string)
+   Error code if any error. Empty if no error
+  message (string)
+   Error message if any error. Empty if no error
+  response (boolean)
+   Detail information you are scanning
+
+Metadata:
+----------------------------------------------------------------------
+  total_chunks: 1
+  chunks_with_errors: 0
+  total_parameters_before_dedup: 8
+  total_parameters_after_dedup: 8
+  update_log_entries: 1
+  hidden_fields_count: 0
+  source_results: workspaces\v2.logistics.set_mart_packaging_info\results\all_chunks_results.json
+
+======================================================================
+Legend: * = required parameter
+======================================================================

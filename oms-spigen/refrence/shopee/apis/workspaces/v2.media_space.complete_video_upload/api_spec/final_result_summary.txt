@@ -1,0 +1,40 @@
+======================================================================
+API SPECIFICATION SUMMARY
+======================================================================
+
+Endpoint: POST /media_space_complete_video_upload
+Description: API for video upload and save to processing queue when all parts are uploaded successfully
+
+Parameters (3):
+----------------------------------------------------------------------
+* partner_id (int)
+   Partner ID (≥ assigned user registration in hierarchy) Provided by all requests
+* media_id (string)
+   The media identifier by the system. Returned by previous operations
+* code_type (string)
+   Standard parameters provided by platform, ok: all done, something just occurred
+
+Response Fields (4):
+----------------------------------------------------------------------
+  message (string)
+   Indicate error details if any error. Empty if no error happened
+  request_id (string)
+   The identifier of this upload request, used to track system error (internal use) and can be ignored during normal system operation
+  error (string)
+   Indicate error type if an error. Empty if no error happened
+  warning (string)
+   Warning message
+
+Metadata:
+----------------------------------------------------------------------
+  total_chunks: 1
+  chunks_with_errors: 0
+  total_parameters_before_dedup: 3
+  total_parameters_after_dedup: 3
+  update_log_entries: 0
+  hidden_fields_count: 0
+  source_results: workspaces\v2.media_space.complete_video_upload\results\all_chunks_results.json
+
+======================================================================
+Legend: * = required parameter
+======================================================================

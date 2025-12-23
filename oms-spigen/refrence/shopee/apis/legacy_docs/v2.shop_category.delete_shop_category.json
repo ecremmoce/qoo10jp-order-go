@@ -1,0 +1,56 @@
+{
+  "endpoint": "/v1/blog_category/delete_shop_category",
+  "method": "POST",
+  "description": "API to delete blog category",
+  "parameters": [
+    {
+      "name": "partner_id",
+      "type": "string",
+      "required": true,
+      "description": "Partner ID is assigned upon registration is ecosystem",
+      "children": []
+    },
+    {
+      "name": "timestamp",
+      "type": "string",
+      "required": true,
+      "description": "This is to indicate the timestamp of the request. Required for preventing data tampering",
+      "children": []
+    },
+    {
+      "name": "access_token",
+      "type": "string",
+      "required": true,
+      "description": "The token for API access, used to identify your permission to use API. Will be verified every time it is used.",
+      "children": []
+    },
+    {
+      "name": "shop_id",
+      "type": "string",
+      "required": true,
+      "description": "Uniquely tracks identifier for a shop",
+      "children": []
+    }
+  ],
+  "response_fields": [],
+  "update_log": [
+    {
+      "date": "2025-04-27",
+      "change": "API first 1.0 code integration"
+    },
+    {
+      "date": "2024-03-19",
+      "change": "Modified the Export Structure of Request Parameter and Response Parameter"
+    }
+  ],
+  "hidden_fields": [],
+  "metadata": {
+    "total_chunks": 1,
+    "chunks_with_errors": 0,
+    "total_parameters_before_dedup": 4,
+    "total_parameters_after_dedup": 4,
+    "update_log_entries": 2,
+    "hidden_fields_count": 0,
+    "source_results": "workspaces\\v2.shop_category.delete_shop_category\\results\\all_chunks_results.json"
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "chunk_index": 1,
+  "total_chunks": 1,
+  "endpoint": null,
+  "method": null,
+  "description": null,
+  "update_log": [],
+  "hidden_fields": [],
+  "parameters": [],
+  "response_fields": [],
+  "common_parameters": [
+    {
+      "name": "URL",
+      "type": "string",
+      "description": "https://partner.shopeemobile.com/undefined",
+      "required": true
+    },
+    {
+      "name": "URL (Chinese Mainland)",
+      "type": "string",
+      "description": "https://openplatform.shopee.cn/undefined",
+      "required": true
+    },
+    {
+      "name": "URL (Brazil)",
+      "type": "string",
+      "description": "https://openplatform.shopee.com.br/undefined",
+      "required": true
+    },
+    {
+      "name": "Test URL",
+      "type": "string",
+      "description": "https://openplatform.sandbox.test-stable.shopee.sg/undefined",
+      "required": true
+    },
+    {
+      "name": "Test URL (Chinese Mainland)",
+      "type": "string",
+      "description": "https://openplatform.sandbox.test-stable.shopee.cn/undefined",
+      "required": true
+    }
+  ],
+  "notes": "This appears to be API documentation for a Shopee Partner API endpoint. The documentation shows several sections including Common Parameters, Request Parameters, Response Parameters, Request Example, Response Example, Error Example, Error Codes, API Permissions, and Update Log. Most sections are collapsed (showing 'More' buttons) and their contents are not visible. There's a note stating 'No APP type can call this API.' under API Permissions. The main content shows HTTP addresses for different regional environments including production and test URLs.",
+  "chunk_metadata": {
+    "index": 1,
+    "total": 1,
+    "y_start": 0,
+    "y_end": 1449,
+    "overlap_top": 0,
+    "overlap_bottom": 0,
+    "height": 1449,
+    "path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\workspaces\\v2.ads.get_ads_f찼cil_shop_rate\\chunks\\chunk_001.png",
+    "filename": "chunk_001.png",
+    "width": 837
+  },
+  "analysis_timestamp": "2025-10-10T05:29:35.084620",
+  "model": "claude-3-5-sonnet-20241022"
+}

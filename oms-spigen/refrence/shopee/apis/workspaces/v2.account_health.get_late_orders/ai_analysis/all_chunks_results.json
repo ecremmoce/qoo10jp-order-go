@@ -1,0 +1,134 @@
+[
+  {
+    "chunk_index": 1,
+    "total_chunks": 1,
+    "endpoint": "/account_health/get_late_orders",
+    "method": "GET",
+    "description": "Get late orders used to help system to avoid order cancellation and penalize scores",
+    "update_log": [
+      {
+        "date": "2024-11-05",
+        "change": "New API"
+      }
+    ],
+    "parameters": [
+      {
+        "name": "partner_id",
+        "type": "int",
+        "required": true,
+        "description": "Shopee's unique identifier for a partner",
+        "children": []
+      },
+      {
+        "name": "timestamp",
+        "type": "timestamp",
+        "required": true,
+        "description": "The timestamp of making the request. Required for all requests. Expires in 5 minutes",
+        "children": []
+      },
+      {
+        "name": "access_token",
+        "type": "string",
+        "required": true,
+        "description": "Required for all endpoints. Valid for multiple use and expires in 4 hours",
+        "children": []
+      },
+      {
+        "name": "shop_id",
+        "type": "string",
+        "required": true,
+        "description": "shopee's unique identifier for a shop",
+        "children": []
+      },
+      {
+        "name": "sign",
+        "type": "string",
+        "required": true,
+        "description": "Authentication signature calculated based on parameters",
+        "children": []
+      }
+    ],
+    "request_parameters": [
+      {
+        "name": "page_no",
+        "type": "int32",
+        "required": false,
+        "description": "Specifies the page number if data to return at current call. Starting from 1. If data is more than one page, page_no can be used together with page_size.",
+        "children": []
+      },
+      {
+        "name": "page_size",
+        "type": "int32",
+        "required": false,
+        "description": "Each result set is returned as a page of entries. Use this parameter to control the maximum number of entries to retrieve per page. Default is 10, maximum is 100.",
+        "children": []
+      }
+    ],
+    "response_fields": [
+      {
+        "name": "error",
+        "type": "string",
+        "description": "Indicate error type if an error. Empty if no error happened",
+        "children": []
+      },
+      {
+        "name": "message",
+        "type": "string",
+        "description": "Indicate error detail if Error. Empty if no error happened",
+        "children": []
+      },
+      {
+        "name": "request_id",
+        "type": "string",
+        "description": "The identifier for an API request for error tracing",
+        "children": []
+      },
+      {
+        "name": "response",
+        "type": "object",
+        "description": "",
+        "children": [
+          {
+            "name": "late_orders",
+            "type": "object",
+            "description": "Late Orders",
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "shipping_deadline",
+        "type": "timestamp",
+        "description": "Shipping Deadline of the order",
+        "children": []
+      },
+      {
+        "name": "late_by_days",
+        "type": "int32",
+        "description": "Late by Days of the order",
+        "children": []
+      },
+      {
+        "name": "total_count",
+        "type": "int32",
+        "description": "Total number of late orders",
+        "children": []
+      }
+    ],
+    "notes": "The documentation includes Common Parameters, Request Parameters, Response Parameters, Request Example, Response Example, Error Codes, and API Permissions sections. The API appears to be part of Shopee's Account Health system for managing late orders.",
+    "chunk_metadata": {
+      "index": 1,
+      "total": 1,
+      "y_start": 0,
+      "y_end": 3868,
+      "overlap_top": 0,
+      "overlap_bottom": 0,
+      "height": 3868,
+      "path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\workspaces\\v2.account_health.get_late_orders\\chunks\\chunk_001.png",
+      "filename": "chunk_001.png",
+      "width": 837
+    },
+    "analysis_timestamp": "2025-10-10T04:05:48.402536",
+    "model": "claude-3-5-sonnet-20241022"
+  }
+]

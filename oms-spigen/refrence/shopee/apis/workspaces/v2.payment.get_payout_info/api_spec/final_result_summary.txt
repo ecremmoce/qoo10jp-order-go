@@ -1,0 +1,38 @@
+======================================================================
+API SPECIFICATION SUMMARY
+======================================================================
+
+Endpoint: None None
+
+Parameters (8):
+----------------------------------------------------------------------
+* url (string)
+   Image upload endpoint URL
+* url_ssl (string)
+   HTTPS version of upload endpoint URL
+* url_ssl_standard (string)
+   Standard HTTPS upload endpoint URL
+  check_test_type (string)
+   Specifies approach used to check if in test
+  offline_msg (string)
+   Message shown when offline
+  start_pos (integer)
+   The start position
+  from_pos (integer)
+   The from position
+  end_pos (integer)
+   The end position
+
+Metadata:
+----------------------------------------------------------------------
+  total_chunks: 1
+  chunks_with_errors: 0
+  total_parameters_before_dedup: 8
+  total_parameters_after_dedup: 8
+  update_log_entries: 0
+  hidden_fields_count: 0
+  source_results: workspaces\v2.payment.get_payout_info\results\all_chunks_results.json
+
+======================================================================
+Legend: * = required parameter
+======================================================================

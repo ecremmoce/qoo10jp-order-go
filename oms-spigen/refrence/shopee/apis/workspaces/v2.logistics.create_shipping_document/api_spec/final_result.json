@@ -1,0 +1,86 @@
+{
+  "endpoint": null,
+  "method": null,
+  "description": null,
+  "parameters": [
+    {
+      "name": "address",
+      "type": "string",
+      "required": true,
+      "description": "NFT metadata permanent storage url",
+      "children": []
+    },
+    {
+      "name": "uri_file",
+      "type": "string",
+      "required": true,
+      "description": "NFT metadata url file name",
+      "children": []
+    },
+    {
+      "name": "owner",
+      "type": "string",
+      "required": true,
+      "description": "nft owner metadata url",
+      "children": []
+    }
+  ],
+  "response_fields": [
+    {
+      "name": "api_key",
+      "type": "string",
+      "description": "Your public blockchain when user login success"
+    },
+    {
+      "name": "application_json_get_token",
+      "type": "string",
+      "description": "The public token before admin verify will be service a timestamp"
+    },
+    {
+      "name": "get_token",
+      "type": "string",
+      "description": "Public metadata url metadata"
+    },
+    {
+      "name": "post_token",
+      "type": "string",
+      "description": "Public metadata url update"
+    },
+    {
+      "name": "application_metadata_nft_uri",
+      "type": "string",
+      "description": "The public system sync contract verify sync will be trigger permanent sync"
+    },
+    {
+      "name": "application_metadata_nft_put",
+      "type": "string",
+      "description": "The public system only verify, then verify trigger external though verify"
+    },
+    {
+      "name": "application_metadata_nft_post",
+      "type": "string",
+      "description": "All contract url external though"
+    },
+    {
+      "name": "update_metadata_number_put",
+      "type": "string",
+      "description": "Please input your contract name sync sync verify"
+    },
+    {
+      "name": "trigger_create_verify_put",
+      "type": "string",
+      "description": "Please sync contract your contract name"
+    }
+  ],
+  "update_log": [],
+  "hidden_fields": [],
+  "metadata": {
+    "total_chunks": 1,
+    "chunks_with_errors": 0,
+    "total_parameters_before_dedup": 3,
+    "total_parameters_after_dedup": 3,
+    "update_log_entries": 0,
+    "hidden_fields_count": 0,
+    "source_results": "workspaces\\v2.logistics.create_shipping_document\\results\\all_chunks_results.json"
+  }
+}

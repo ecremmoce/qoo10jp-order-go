@@ -1,0 +1,106 @@
+{
+  "chunk_index": 1,
+  "total_chunks": 1,
+  "endpoint": "/v2/logistics/delete_special_operating_hour",
+  "method": "GET",
+  "description": "API to delete a specific service operating hour for a shop",
+  "update_log": [
+    {
+      "date": "2019-04-06",
+      "change": "New API"
+    }
+  ],
+  "parameters": [
+    {
+      "name": "partner_id",
+      "type": "int",
+      "required": true,
+      "description": "Partner ID is assigned when registration is successful",
+      "children": []
+    },
+    {
+      "name": "timestamp",
+      "type": "timestamp",
+      "required": true,
+      "description": "This is to indicate the timestamp of the request. Request to be expired in 3 mins",
+      "children": []
+    },
+    {
+      "name": "access_token",
+      "type": "string",
+      "required": true,
+      "description": "The token for API access, using to identify your permission in the api. Sign-in images will get it from your sign-in",
+      "children": []
+    },
+    {
+      "name": "shop_id",
+      "type": "int",
+      "required": true,
+      "description": "Shopee's unique identifier for a shop. Required param for logistics APIs",
+      "children": []
+    },
+    {
+      "name": "sign",
+      "type": "string",
+      "required": true,
+      "description": "Signature generated in partner_id and salt, timestamp, token_basic_sign_of_other_info parameter sorting",
+      "children": []
+    },
+    {
+      "name": "name",
+      "type": "string",
+      "required": true,
+      "description": "Name of the special operating hour which you wish to be removed from",
+      "children": []
+    }
+  ],
+  "response_fields": [
+    {
+      "name": "error",
+      "type": "string",
+      "description": "Indicate error type if hit error. Empty if no error happened",
+      "children": []
+    },
+    {
+      "name": "message",
+      "type": "string",
+      "description": "Indicate error details if hit error. Empty if no error happened",
+      "children": []
+    },
+    {
+      "name": "request_id",
+      "type": "string",
+      "description": "The identifier for an API request for error tracking",
+      "children": []
+    }
+  ],
+  "error_codes": [
+    {
+      "code": "error_permission",
+      "description": "Sorry you don't have the permission. detail: You shop isn't eligible to set up Special Operating Hours"
+    },
+    {
+      "code": "error_permission",
+      "description": "Special Operating Hours not found for this shop"
+    },
+    {
+      "code": "error_data",
+      "description": "Store Not Valid"
+    }
+  ],
+  "notes": "The documentation includes multiple URL variants including Chinese and test versions. There are also example request/response formats in various programming languages (Java, PHP, cURL, Python) which I've not included in the structured data as they're just examples.",
+  "chunk_metadata": {
+    "index": 1,
+    "total": 1,
+    "y_start": 0,
+    "y_end": 3663,
+    "overlap_top": 0,
+    "overlap_bottom": 0,
+    "height": 3663,
+    "path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\workspaces\\v2.logistics.delete_special_operating_hour\\chunks\\chunk_001.png",
+    "filename": "chunk_001.png",
+    "width": 837
+  },
+  "analysis_timestamp": "2025-10-10T06:00:56.787875",
+  "model": "claude-3-5-sonnet-20241022"
+}

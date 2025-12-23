@@ -1,0 +1,58 @@
+{
+  "endpoint": null,
+  "method": null,
+  "description": null,
+  "parameters": [
+    {
+      "name": "URL",
+      "type": "string",
+      "required": true,
+      "description": "https://extension.crowdin.com/groups/{group_pattern_title}.md",
+      "children": []
+    },
+    {
+      "name": "group_pattern",
+      "type": "string",
+      "required": true,
+      "description": "If 0 global match",
+      "children": []
+    },
+    {
+      "name": "group_name_id",
+      "type": "string",
+      "required": true,
+      "description": "Returns only groups with specified name",
+      "children": []
+    },
+    {
+      "name": "string_match",
+      "type": "string",
+      "required": false,
+      "description": "You may set string to be groups mode",
+      "children": []
+    }
+  ],
+  "response_fields": [
+    {
+      "name": "type",
+      "type": "string",
+      "description": "Groups with type by string"
+    },
+    {
+      "name": "message",
+      "type": "string",
+      "description": "Message about groups"
+    }
+  ],
+  "update_log": [],
+  "hidden_fields": [],
+  "metadata": {
+    "total_chunks": 1,
+    "chunks_with_errors": 0,
+    "total_parameters_before_dedup": 4,
+    "total_parameters_after_dedup": 4,
+    "update_log_entries": 0,
+    "hidden_fields_count": 0,
+    "source_results": "workspaces\\v2.global_product.update_global_model\\results\\all_chunks_results.json"
+  }
+}

@@ -1,0 +1,50 @@
+======================================================================
+API SPECIFICATION SUMMARY
+======================================================================
+
+Endpoint: POST /products/get-attribute-tree
+Description: Get product attribute categories and their values
+
+Parameters (1):
+----------------------------------------------------------------------
+* language (string)
+   Language parameters
+
+Response Fields (3):
+----------------------------------------------------------------------
+  code (string)
+   Response code
+  msg (string)
+   Response message
+  data (object)
+   Response data
+    category_name (string)
+     Category name
+    category_id (integer)
+     Category ID
+    attribute_list (array)
+     List of attributes
+      attribute_id (integer)
+       Attribute ID
+      attribute_name (string)
+       Attribute name
+      value_list (array)
+       List of attribute values
+        value_id (integer)
+         Value ID
+        value_name (string)
+         Value name
+
+Metadata:
+----------------------------------------------------------------------
+  total_chunks: 1
+  chunks_with_errors: 0
+  total_parameters_before_dedup: 1
+  total_parameters_after_dedup: 1
+  update_log_entries: 0
+  hidden_fields_count: 0
+  source_results: workspaces\v2.product.get_attribute_tree\results\all_chunks_results.json
+
+======================================================================
+Legend: * = required parameter
+======================================================================

@@ -1,0 +1,115 @@
+{
+  "chunk_index": 1,
+  "total_chunks": 1,
+  "endpoint": "/v2/bestsellers/get_item_count",
+  "method": "GET",
+  "description": "Get the number of items in the shopping bag, including the current number of items in the shopping bag, the report final at the bottom, etc.",
+  "update_log": [
+    {
+      "date": "2023-06-26",
+      "change": "New API"
+    }
+  ],
+  "parameters": [
+    {
+      "name": "service_id",
+      "type": "string",
+      "required": true,
+      "description": "Partner API id assigned when registration is successful",
+      "children": []
+    },
+    {
+      "name": "timestamp",
+      "type": "timestamp",
+      "required": true,
+      "description": "This is a timestamp of the request. Required for all requests. Expires in 5 minutes.",
+      "children": []
+    },
+    {
+      "name": "access_token",
+      "type": "string",
+      "required": true,
+      "description": "Obtained unique identifier using it identify your permission to the api, Valid for 90 days and will expire 14 hours",
+      "children": []
+    },
+    {
+      "name": "user_id",
+      "type": "int",
+      "required": true,
+      "description": "Request unique identifier for a user",
+      "children": []
+    },
+    {
+      "name": "sign",
+      "type": "string",
+      "required": true,
+      "description": "Signature parameter (timestamps on different urls)",
+      "children": []
+    }
+  ],
+  "response_fields": [
+    {
+      "name": "error",
+      "type": "string",
+      "description": "Indicate error type if has error. Empty if no error happened",
+      "children": []
+    },
+    {
+      "name": "message",
+      "type": "string",
+      "description": "Indicate error details if has error. Empty if no error occurred",
+      "children": []
+    },
+    {
+      "name": "request_id",
+      "type": "string",
+      "description": "The identifier for an API request for error tracking",
+      "children": []
+    },
+    {
+      "name": "total_item_count",
+      "type": "int64",
+      "description": "The number of items in the shopping bag",
+      "children": []
+    },
+    {
+      "name": "max_item_count",
+      "type": "int64",
+      "description": "The maximum number of items allowed in the shopping bag at the bottom",
+      "children": []
+    }
+  ],
+  "error_codes": [
+    {
+      "code": "error_data",
+      "description": "Some data not found"
+    },
+    {
+      "code": "error_fail",
+      "description": "Data not exist"
+    },
+    {
+      "code": "error_param",
+      "description": "Parameter invalid"
+    },
+    {
+      "code": "error_auth",
+      "description": "You are not authorized"
+    }
+  ],
+  "notes": "The documentation includes extensive error code listings and example requests/responses in both JSON and Python formats.",
+  "chunk_metadata": {
+    "index": 1,
+    "total": 1,
+    "y_start": 0,
+    "y_end": 4044,
+    "overlap_top": 0,
+    "overlap_bottom": 0,
+    "height": 4044,
+    "path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\workspaces\\v2.livestream.get_item_count\\chunks\\chunk_001.png",
+    "filename": "chunk_001.png",
+    "width": 837
+  },
+  "analysis_timestamp": "2025-10-10T05:54:55.630413",
+  "model": "claude-3-5-sonnet-20241022"
+}

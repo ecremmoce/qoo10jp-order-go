@@ -1,0 +1,137 @@
+[
+  {
+    "chunk_index": 1,
+    "total_chunks": 1,
+    "endpoint": null,
+    "method": null,
+    "description": null,
+    "update_log": [],
+    "hidden_fields": [],
+    "parameters": [
+      {
+        "name": "url",
+        "type": "string",
+        "required": true,
+        "description": "Base URL parameter",
+        "children": []
+      },
+      {
+        "name": "url_prepare_download",
+        "type": "string",
+        "required": true,
+        "description": "URL for prepare download action",
+        "children": []
+      },
+      {
+        "name": "url_m3u8",
+        "type": "string",
+        "required": true,
+        "description": "URL for m3u8 resource",
+        "children": []
+      },
+      {
+        "name": "storage_id",
+        "type": "string",
+        "required": true,
+        "description": "The media ID of object",
+        "children": []
+      },
+      {
+        "name": "progress_callback_interval",
+        "type": "string",
+        "required": false,
+        "description": "Time interval to call back",
+        "children": []
+      },
+      {
+        "name": "progress_callback_method",
+        "type": "string",
+        "required": false,
+        "description": "The time interval to call back",
+        "children": []
+      }
+    ],
+    "response_fields": [
+      {
+        "name": "result_id",
+        "type": "string",
+        "description": "The result is an M3U request for each"
+      },
+      {
+        "name": "download",
+        "type": "string",
+        "description": "The new description"
+      },
+      {
+        "name": "media_id",
+        "type": "string",
+        "description": "The media number of object"
+      }
+    ],
+    "error_codes": [
+      {
+        "code": "error_busy",
+        "description": "Cannot accept your new URL"
+      },
+      {
+        "code": "error_invalid_length",
+        "description": "All request removed for"
+      },
+      {
+        "code": "error_already_exists",
+        "description": "Cannot add URL in bound when client last request already"
+      },
+      {
+        "code": "error_bounds",
+        "description": "There is no active start index"
+      },
+      {
+        "code": "error_gap",
+        "description": "There is gap in active"
+      },
+      {
+        "code": "error_gap_add",
+        "description": "No parameter to add on gap"
+      },
+      {
+        "code": "error_gap_remove",
+        "description": "Missing tag"
+      },
+      {
+        "code": "error_gap_move",
+        "description": "No parameter"
+      },
+      {
+        "code": "error_gap_invalid",
+        "description": "Invalid requesting"
+      },
+      {
+        "code": "error_too_big",
+        "description": "Something wrong, Please try help"
+      },
+      {
+        "code": "error_too_small",
+        "description": "Something wrong, Please try help"
+      },
+      {
+        "code": "error_invalid_url",
+        "description": "The information you searched is not found"
+      }
+    ],
+    "notes": "This appears to be an API documentation for some kind of media or video download service. The documentation includes common parameters, required parameters, response parameters, and a comprehensive list of error codes. The structure suggests it's for handling M3U8 playlists and media downloads.",
+    "chunk_metadata": {
+      "index": 1,
+      "total": 1,
+      "y_start": 0,
+      "y_end": 5063,
+      "overlap_top": 0,
+      "overlap_bottom": 0,
+      "height": 5063,
+      "path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\workspaces\\v2.returns.offer\\chunks\\chunk_001.png",
+      "filename": "chunk_001.png",
+      "width": 837
+    },
+    "analysis_timestamp": "2025-10-10T06:42:12.539333",
+    "model": "claude-3-5-sonnet-20241022"
+  }
+]

@@ -1,0 +1,105 @@
+{
+  "endpoint": "/short_video_recommended_price",
+  "method": "POST",
+  "description": "Get product information for recommended price",
+  "parameters": [
+    {
+      "name": "postfix_1",
+      "type": "int",
+      "required": false,
+      "description": "Postfix 1 to calculate post reputation by successful comments or unlocked",
+      "children": []
+    },
+    {
+      "name": "postfix_2",
+      "type": "int",
+      "required": false,
+      "description": "Will be filled if 5 minutes after the 1st posting. Result will be checked in 5 minutes",
+      "children": []
+    },
+    {
+      "name": "msg_id",
+      "type": "string",
+      "required": true,
+      "description": "Request msg identity to a row, using a identity post parameter to recommend price",
+      "children": []
+    },
+    {
+      "name": "type",
+      "type": "string",
+      "required": true,
+      "description": "Optional parameter to control_id, get_profit_parameter, short_video_index, show_page_source",
+      "children": []
+    },
+    {
+      "name": "short_msg_option",
+      "type": "string",
+      "required": false,
+      "description": "Short msg option",
+      "children": []
+    },
+    {
+      "name": "media_id",
+      "type": "string",
+      "required": false,
+      "description": "id of main image",
+      "children": []
+    },
+    {
+      "name": "url",
+      "type": "string",
+      "required": true,
+      "description": "Indicate error link first error. Display if the error exists",
+      "children": []
+    },
+    {
+      "name": "running",
+      "type": "string",
+      "required": false,
+      "description": "Indicate errors during first error. Display if the error happens",
+      "children": []
+    },
+    {
+      "name": "request_id",
+      "type": "string",
+      "required": false,
+      "description": "The identifier for an API request for error",
+      "children": []
+    },
+    {
+      "name": "short_type_price",
+      "type": "string",
+      "required": false,
+      "description": "id of short msg",
+      "children": []
+    }
+  ],
+  "response_fields": [
+    {
+      "name": "msg_type",
+      "type": "string",
+      "description": "error msg type"
+    },
+    {
+      "name": "error_data",
+      "type": "string",
+      "description": "was not exist"
+    },
+    {
+      "name": "error_detail",
+      "type": "string",
+      "description": "parameter invalid"
+    }
+  ],
+  "update_log": [],
+  "hidden_fields": [],
+  "metadata": {
+    "total_chunks": 1,
+    "chunks_with_errors": 0,
+    "total_parameters_before_dedup": 10,
+    "total_parameters_after_dedup": 10,
+    "update_log_entries": 0,
+    "hidden_fields_count": 0,
+    "source_results": "workspaces\\v2.product.get_direct_shop_recommended_price\\results\\all_chunks_results.json"
+  }
+}

@@ -1,0 +1,43 @@
+======================================================================
+API SPECIFICATION SUMMARY
+======================================================================
+
+Endpoint: POST /api/exchange/market/spot/create/batch
+Description: Create multiple spot orders
+
+Parameters (10):
+----------------------------------------------------------------------
+* URL (string)
+   Endpoint URL
+* symbol_a (string)
+   Primary trading token
+* symbol_b (string)
+   Secondary trading token
+* side (string)
+   Trading direction: buy/sell
+* price (string)
+   Order price
+* amount (string)
+   Order amount
+* timestamp (integer)
+   The server time when this order is created
+  client_oid (string)
+   The client oid can be used to identify an order
+  time_type (string)
+   The time type
+  order_type (string)
+   The order type
+
+Metadata:
+----------------------------------------------------------------------
+  total_chunks: 1
+  chunks_with_errors: 0
+  total_parameters_before_dedup: 10
+  total_parameters_after_dedup: 10
+  update_log_entries: 0
+  hidden_fields_count: 0
+  source_results: workspaces\v2.shop.update_profile\results\all_chunks_results.json
+
+======================================================================
+Legend: * = required parameter
+======================================================================

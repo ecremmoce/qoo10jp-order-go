@@ -1,0 +1,119 @@
+[
+  {
+    "chunk_index": 1,
+    "total_chunks": 1,
+    "endpoint": null,
+    "method": null,
+    "description": null,
+    "update_log": [
+      {
+        "date": "20230927",
+        "change": "API officially released"
+      }
+    ],
+    "hidden_fields": [],
+    "parameters": [
+      {
+        "name": "id",
+        "type": "string",
+        "required": true,
+        "description": null,
+        "children": []
+      },
+      {
+        "name": "type",
+        "type": "string",
+        "required": true,
+        "description": "Values can be 'default', 'custom'",
+        "children": []
+      },
+      {
+        "name": "url",
+        "type": "string",
+        "required": false,
+        "description": null,
+        "children": []
+      },
+      {
+        "name": "preset",
+        "type": "array",
+        "required": false,
+        "description": "This is a default preset array of values. Required to be property.",
+        "children": []
+      },
+      {
+        "name": "enable_data",
+        "type": "string",
+        "required": false,
+        "description": "The data to tell which one to handle user extensions on the source properties to provide a mask",
+        "children": []
+      },
+      {
+        "name": "source",
+        "type": "object",
+        "required": true,
+        "description": "Source's unique identifier to be searched. Required for all methods, ensuring unique identification for each data point",
+        "children": []
+      }
+    ],
+    "response_parameters": [
+      {
+        "name": "message",
+        "type": "string",
+        "description": "Warning message",
+        "children": []
+      },
+      {
+        "name": "warning",
+        "type": "string",
+        "description": "Warning message",
+        "children": []
+      },
+      {
+        "name": "result_id",
+        "type": "string",
+        "description": "Validation id to be used for test",
+        "children": []
+      },
+      {
+        "name": "publishable_date",
+        "type": "integer",
+        "description": "Date of publishable data",
+        "children": []
+      }
+    ],
+    "error_codes": [
+      {
+        "code": "error_param",
+        "description": "There is an error, check it apply"
+      },
+      {
+        "code": "error_param_blank",
+        "description": "Invalid param_blank"
+      },
+      {
+        "code": "error_request",
+        "description": "The parameter is invalid and cannot be validated"
+      },
+      {
+        "code": "error_data",
+        "description": "Invalid data checking"
+      }
+    ],
+    "notes": "The documentation includes extensive error codes and both request/response parameters. The API appears to be related to handling some kind of preset or custom data validation with publishing capabilities.",
+    "chunk_metadata": {
+      "index": 1,
+      "total": 1,
+      "y_start": 0,
+      "y_end": 4994,
+      "overlap_top": 0,
+      "overlap_bottom": 0,
+      "height": 4994,
+      "path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\workspaces\\v2.global_product.get_publishable_shop\\chunks\\chunk_001.png",
+      "filename": "chunk_001.png",
+      "width": 837
+    },
+    "analysis_timestamp": "2025-10-10T05:47:59.323228",
+    "model": "claude-3-5-sonnet-20241022"
+  }
+]

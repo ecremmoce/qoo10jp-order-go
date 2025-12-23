@@ -1,0 +1,82 @@
+{
+  "endpoint": "/gateway/api/xxxxxxxxx/{appKey}/merchant_update_statistics",
+  "method": "POST",
+  "description": null,
+  "parameters": [
+    {
+      "name": "URL",
+      "type": "string",
+      "required": true,
+      "description": "Request URL endpoint",
+      "children": []
+    },
+    {
+      "name": "URL_Method",
+      "type": "string",
+      "required": true,
+      "description": "HTTP request method",
+      "children": []
+    },
+    {
+      "name": "URL_Return",
+      "type": "string",
+      "required": true,
+      "description": "Return URL",
+      "children": []
+    },
+    {
+      "name": "status_id",
+      "type": "string",
+      "required": true,
+      "description": "Status ID for the request",
+      "children": []
+    },
+    {
+      "name": "message",
+      "type": "string",
+      "required": true,
+      "description": "Response message",
+      "children": []
+    },
+    {
+      "name": "created",
+      "type": "string",
+      "required": true,
+      "description": "Creation timestamp",
+      "children": []
+    },
+    {
+      "name": "min_alpha_period",
+      "type": "float",
+      "required": true,
+      "description": "Minimum alpha period value",
+      "children": []
+    },
+    {
+      "name": "max_alpha_period",
+      "type": "float",
+      "required": true,
+      "description": "Maximum alpha period value",
+      "children": []
+    },
+    {
+      "name": "min_alpha",
+      "type": "float",
+      "required": true,
+      "description": "Minimum alpha value",
+      "children": []
+    }
+  ],
+  "response_fields": [],
+  "update_log": [],
+  "hidden_fields": [],
+  "metadata": {
+    "total_chunks": 1,
+    "chunks_with_errors": 0,
+    "total_parameters_before_dedup": 9,
+    "total_parameters_after_dedup": 9,
+    "update_log_entries": 0,
+    "hidden_fields_count": 0,
+    "source_results": "workspaces\\v2.returns.get_available_solutions\\results\\all_chunks_results.json"
+  }
+}

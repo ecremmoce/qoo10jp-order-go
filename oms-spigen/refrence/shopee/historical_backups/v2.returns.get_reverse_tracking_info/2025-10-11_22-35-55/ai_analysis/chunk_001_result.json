@@ -1,0 +1,88 @@
+{
+  "chunk_index": 1,
+  "total_chunks": 1,
+  "endpoint": null,
+  "method": null,
+  "description": null,
+  "update_log": [],
+  "hidden_fields": [
+    {
+      "name": "custom_field_8",
+      "found_in": "parameter description",
+      "extracted_from_description": true
+    },
+    {
+      "name": "custom_fields",
+      "found_in": "parameter name",
+      "extracted_from_description": true
+    }
+  ],
+  "parameters": [
+    {
+      "name": "custom_fields",
+      "type": "array",
+      "required": false,
+      "description": "Array of custom field definitions",
+      "children": [
+        {
+          "name": "id",
+          "type": "string",
+          "required": true,
+          "description": "Unique identifier for the custom field",
+          "children": []
+        },
+        {
+          "name": "type",
+          "type": "string",
+          "required": true,
+          "description": "Type of the custom field",
+          "children": []
+        },
+        {
+          "name": "name",
+          "type": "string",
+          "required": true,
+          "description": "Name of the custom field",
+          "children": []
+        },
+        {
+          "name": "description",
+          "type": "string",
+          "required": false,
+          "description": "Description of the custom field",
+          "children": []
+        },
+        {
+          "name": "options",
+          "type": "array",
+          "required": false,
+          "description": "List of options for select/multiselect fields",
+          "children": []
+        },
+        {
+          "name": "validation",
+          "type": "object",
+          "required": false,
+          "description": "Validation rules for the custom field",
+          "children": []
+        }
+      ]
+    }
+  ],
+  "response_fields": [],
+  "notes": "The image appears to show API documentation for custom fields configuration. While the full endpoint and method are not visible in this chunk, it shows detailed parameter structure for custom fields including their types, validation rules, and options. The documentation appears to be part of a larger API specification.",
+  "chunk_metadata": {
+    "index": 1,
+    "total": 1,
+    "y_start": 0,
+    "y_end": 6784,
+    "overlap_top": 0,
+    "overlap_bottom": 0,
+    "height": 6784,
+    "path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\platforms\\shopee\\apis\\workspaces\\v2.returns.get_reverse_tracking_info\\chunks\\chunk_001.png",
+    "filename": "chunk_001.png",
+    "width": 837
+  },
+  "analysis_timestamp": "2025-10-11T22:35:55.202737",
+  "model": "claude-3-5-sonnet-20241022"
+}

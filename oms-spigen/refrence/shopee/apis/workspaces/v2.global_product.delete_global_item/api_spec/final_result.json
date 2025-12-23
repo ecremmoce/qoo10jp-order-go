@@ -1,0 +1,65 @@
+{
+  "endpoint": null,
+  "method": "POST",
+  "description": "Publish related params detail",
+  "parameters": [
+    {
+      "name": "url",
+      "type": "string",
+      "required": true,
+      "description": "External URL",
+      "children": []
+    },
+    {
+      "name": "title",
+      "type": "string",
+      "required": false,
+      "description": "Title",
+      "children": []
+    },
+    {
+      "name": "text",
+      "type": "string",
+      "required": false,
+      "description": "Text content",
+      "children": []
+    }
+  ],
+  "response_fields": [
+    {
+      "name": "status",
+      "type": "string",
+      "description": "Status code (e.g. success/failed)",
+      "children": []
+    },
+    {
+      "name": "message",
+      "type": "string",
+      "description": "Response message",
+      "children": []
+    },
+    {
+      "name": "velocity",
+      "type": "string",
+      "description": "Velocity message",
+      "children": []
+    },
+    {
+      "name": "requestId",
+      "type": "object",
+      "description": "Request ID of the request in case",
+      "children": []
+    }
+  ],
+  "update_log": [],
+  "hidden_fields": [],
+  "metadata": {
+    "total_chunks": 1,
+    "chunks_with_errors": 0,
+    "total_parameters_before_dedup": 3,
+    "total_parameters_after_dedup": 3,
+    "update_log_entries": 0,
+    "hidden_fields_count": 0,
+    "source_results": "workspaces\\v2.global_product.delete_global_item\\results\\all_chunks_results.json"
+  }
+}

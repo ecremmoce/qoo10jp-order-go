@@ -1,0 +1,174 @@
+{
+  "chunk_index": 1,
+  "total_chunks": 1,
+  "endpoint": "v1/playerfun/bonus/bet_list",
+  "method": "POST",
+  "description": "API for player betting parameters",
+  "update_log": [],
+  "hidden_fields": [],
+  "parameters": [
+    {
+      "name": "URL",
+      "type": "string",
+      "required": true,
+      "description": "https://openapi.server.crops/v1/playerfun/bonus/bet_list",
+      "children": []
+    },
+    {
+      "name": "Test URL",
+      "type": "string",
+      "required": true,
+      "description": "https://openapi.test-server.crops/v1/playerfun/bonus/bet_list",
+      "children": []
+    },
+    {
+      "name": "partner_id",
+      "type": "integer",
+      "required": true,
+      "description": "Partner ID is assigned with registration in merchant center",
+      "children": []
+    },
+    {
+      "name": "player_id",
+      "type": "string",
+      "required": true,
+      "description": "Player ID from partner system",
+      "children": []
+    },
+    {
+      "name": "timestamp",
+      "type": "string",
+      "required": true,
+      "description": "Unix timestamp",
+      "children": []
+    }
+  ],
+  "response_parameters": [
+    {
+      "name": "error",
+      "type": "integer",
+      "required": true,
+      "description": "0 indicates successful response; If any error exists, the error code will be returned",
+      "children": []
+    },
+    {
+      "name": "message",
+      "type": "string",
+      "required": true,
+      "description": "Error message if error exists",
+      "children": []
+    },
+    {
+      "name": "request_id",
+      "type": "string",
+      "required": true,
+      "description": "Request identifier for audit tracking",
+      "children": []
+    }
+  ],
+  "error_codes": [
+    {
+      "code": "error_param",
+      "description": "There is no access token in sign"
+    },
+    {
+      "code": "error_partner",
+      "description": "Invalid access token"
+    },
+    {
+      "code": "error_param_p",
+      "description": "There is no partner id in query"
+    },
+    {
+      "code": "error_param_t",
+      "description": "No timestamp in credentials"
+    },
+    {
+      "code": "error_player",
+      "description": "Wrong sign"
+    },
+    {
+      "code": "error_sign",
+      "description": "Invalid timestamp"
+    },
+    {
+      "code": "error_player_exist",
+      "description": "Server side failed"
+    },
+    {
+      "code": "error_partner_api",
+      "description": "Partner api error"
+    },
+    {
+      "code": "error_partner_domain",
+      "description": "Incorrect header"
+    },
+    {
+      "code": "error_partner_plat",
+      "description": "The information you submitted is not found"
+    },
+    {
+      "code": "error_partner_plat_data",
+      "description": "Wrong operation status, busy"
+    },
+    {
+      "code": "error_partner_plat_data",
+      "description": "Something wrong, Please try later"
+    },
+    {
+      "code": "error_partner_plat_data_time",
+      "description": "Return is empty"
+    },
+    {
+      "code": "error_partner_plat_http",
+      "description": "Cannot get partner params"
+    },
+    {
+      "code": "error_partner_plat_null",
+      "description": "Get marked data information input return is type"
+    },
+    {
+      "code": "error_player",
+      "description": "The content is being write,due to technical issues,try later"
+    },
+    {
+      "code": "error_player_bonus",
+      "description": "Partner platform failed to inject data in product,Fail request"
+    },
+    {
+      "code": "error_player_txt",
+      "description": "Product not found"
+    },
+    {
+      "code": "error_player",
+      "description": "Update error input_id error_data"
+    },
+    {
+      "code": "error_player_verify_plus",
+      "description": "Cannot use request ID to calculate the 'sign24h' content return type"
+    },
+    {
+      "code": "error_verify_sign",
+      "description": "Cannot use request ID to calculate MD5, please choose next user manage"
+    },
+    {
+      "code": "error_verify_day",
+      "description": "The date calc can not write properly"
+    }
+  ],
+  "notes": "The documentation includes comprehensive error codes and both test and production URLs. The API appears to be related to player bonus/betting functionality with authentication requirements.",
+  "chunk_metadata": {
+    "index": 1,
+    "total": 1,
+    "y_start": 0,
+    "y_end": 4721,
+    "overlap_top": 0,
+    "overlap_bottom": 0,
+    "height": 4721,
+    "path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\workspaces\\v2.product.get_boosted_list\\chunks\\chunk_001.png",
+    "filename": "chunk_001.png",
+    "width": 837
+  },
+  "analysis_timestamp": "2025-10-10T06:26:27.861129",
+  "model": "claude-3-5-sonnet-20241022"
+}

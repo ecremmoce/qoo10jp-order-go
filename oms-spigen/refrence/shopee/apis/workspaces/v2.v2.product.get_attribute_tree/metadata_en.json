@@ -1,0 +1,37 @@
+{
+  "document_id": "v2/v2.product.get_attribute_tree",
+  "document_type": "api",
+  "platform": "shopee",
+  "extracted_at": "2025-10-13T10:21:24",
+  "extracted_text": "I'll help extract and structure the API documentation in English:\n\n# API Documentation\n\n## Common Parameters\n\n| Parameter | Type | Required | Description |\n|-----------|------|----------|-------------|\n| crop_size | string | - | Crop image size |\n| save_path | string | - | The storage path when image save |\n| mode_key | string | - | When using image editing mode |\n| edited_by | string | - | Editor information |\n\n## Request Parameters\n\n| Parameter | Type | Required | Description |\n|-----------|------|----------|-------------|\n| category | string | Yes | Category field |\n\n(Additional fields are shown in the image but text is not clearly readable)\n\n## Response Parameters\n\n| Field | Type | Description |\n|-------|------|-------------|\n| id | string | - |\n| category | string | Required |\n| ordering | string | Required |\n| images | array | Required |\n| thumbnail | string | Required |\n| status | string | Required |\n| attribute_key | string | - |\n| created_at | string | - |\n| updated_at | string | - |\n| deleted_at | string | - |\n\n## Response Example\n\n```json\n{\n  \"result\": {\n    \"id\": \"...\",\n    \"category\": \"...\",\n    \"ordering\": \"...\"\n  }\n}\n```\n\n## Error Codes\n\n| Code | Description |\n|------|-------------|\n| error_400 | Bad request |\n| error_401 | Unauthorized |\n| error_403 | Forbidden |\n| error_404 | Not found |\n| error_500 | Internal server error |\n\nNote: Some content in the image is partially visible or cut off, so I've included the clearly visible fields and structure. The documentation appears to be for some kind of image management API with categorization and editing capabilities.",
+  "metadata": {
+    "title": "Image Management API",
+    "summary": "This API manages images, allowing for categorization, editing, and retrieval. It provides endpoints for creating, updating, and retrieving image metadata, including categories, ordering, and associated thumbnails.",
+    "keywords": [
+      "image",
+      "management",
+      "category",
+      "editing",
+      "thumbnail",
+      "metadata",
+      "API",
+      "crop",
+      "storage"
+    ],
+    "category": "Product",
+    "tags": [
+      "image processing",
+      "content management",
+      "media"
+    ],
+    "difficulty": "medium",
+    "importance": 4,
+    "use_cases": [
+      "Categorizing images for a product catalog.",
+      "Managing image thumbnails for faster loading.",
+      "Tracking image edits and versions.",
+      "Displaying images in a specific order."
+    ],
+    "related_apis": []
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "chunk_index": 3,
+  "endpoint": null,
+  "method": null,
+  "description": "API Permissions and Updates documentation",
+  "parameters": [],
+  "response_fields": [],
+  "chunk_metadata": {
+    "index": 3,
+    "total": 3,
+    "y_start": 14756,
+    "y_end": 18067,
+    "overlap_top": 500,
+    "overlap_bottom": 0,
+    "height": 3311,
+    "path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\workspaces\\v2.logistics.get_operating_hour_restrictions\\chunks\\chunk_003.png",
+    "filename": "chunk_003.png",
+    "width": 837
+  },
+  "chunk_path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\workspaces\\v2.logistics.get_operating_hour_restrictions\\chunks\\chunk_003.png"
+}

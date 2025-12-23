@@ -1,0 +1,79 @@
+{
+  "chunk_index": 1,
+  "total_chunks": 1,
+  "endpoint": null,
+  "method": null,
+  "description": "API documentation showing common parameters, required parameters, and error codes",
+  "update_log": [],
+  "hidden_fields": [],
+  "parameters": [
+    {
+      "name": "URL",
+      "type": "string",
+      "required": true,
+      "description": "API endpoint URL",
+      "children": []
+    },
+    {
+      "name": "sig",
+      "type": "string",
+      "required": true,
+      "description": "Signature parameter",
+      "children": []
+    },
+    {
+      "name": "timestamp",
+      "type": "integer",
+      "required": true,
+      "description": "Current timestamp",
+      "children": []
+    },
+    {
+      "name": "sex_id",
+      "type": "string",
+      "required": false,
+      "description": "Sex identifier parameter",
+      "children": []
+    },
+    {
+      "name": "capacity",
+      "type": "string",
+      "required": false,
+      "description": "Capacity parameter",
+      "children": []
+    }
+  ],
+  "error_codes": [
+    {
+      "code": "error_general",
+      "description": "General error occurred"
+    },
+    {
+      "code": "error_params",
+      "description": "Parameter error"
+    },
+    {
+      "code": "error_sig",
+      "description": "Signature error"
+    },
+    {
+      "code": "error_timestamp",
+      "description": "Timestamp error"
+    }
+  ],
+  "notes": "The image shows API documentation with common parameters, required parameters, and error codes. There are also example requests and responses shown but they are partially cut off in the image. The documentation appears to be from a REST API interface.",
+  "chunk_metadata": {
+    "index": 1,
+    "total": 1,
+    "y_start": 0,
+    "y_end": 5237,
+    "overlap_top": 0,
+    "overlap_bottom": 0,
+    "height": 5237,
+    "path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\workspaces\\v2.product.get_item_extra_info\\chunks\\chunk_001.png",
+    "filename": "chunk_001.png",
+    "width": 837
+  },
+  "analysis_timestamp": "2025-10-10T06:28:18.569666",
+  "model": "claude-3-5-sonnet-20241022"
+}

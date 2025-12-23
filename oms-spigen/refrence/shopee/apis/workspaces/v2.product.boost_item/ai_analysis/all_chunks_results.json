@@ -1,0 +1,100 @@
+[
+  {
+    "chunk_index": 1,
+    "total_chunks": 1,
+    "endpoint": null,
+    "method": null,
+    "description": null,
+    "update_log": [],
+    "hidden_fields": [],
+    "parameters": [
+      {
+        "name": "URL",
+        "type": "string",
+        "required": true,
+        "description": "API endpoint URL",
+        "children": []
+      },
+      {
+        "name": "WSSE",
+        "type": "string",
+        "required": true,
+        "description": "Authentication header value",
+        "children": []
+      },
+      {
+        "name": "header_id",
+        "type": "string",
+        "required": true,
+        "description": "Request header ID",
+        "children": []
+      }
+    ],
+    "response_fields": [],
+    "error_codes": [
+      {
+        "code": "error_param",
+        "description": "There is an error, pleas try again"
+      },
+      {
+        "code": "error_param_error",
+        "description": "Invalid param error"
+      },
+      {
+        "code": "error_param_id",
+        "description": "There is an error, please try"
+      },
+      {
+        "code": "error_auth",
+        "description": "Authorization is invalid or not"
+      },
+      {
+        "code": "error_auth_expired",
+        "description": "Auth token expired"
+      },
+      {
+        "code": "error_default",
+        "description": "Some default error"
+      },
+      {
+        "code": "error_collection",
+        "description": "Invalid request"
+      },
+      {
+        "code": "error_file",
+        "description": "File file not exist"
+      },
+      {
+        "code": "error_store",
+        "description": "Something wrong, Please try later"
+      },
+      {
+        "code": "error_server",
+        "description": "Request has failed"
+      },
+      {
+        "code": "error_parse",
+        "description": "Have a mistyping - not yet passed"
+      },
+      {
+        "code": "error_partner_token_not_set",
+        "description": "Partner token not exist"
+      }
+    ],
+    "notes": "The image shows API documentation with common parameters, required parameters, response parameters, request/response examples, and a comprehensive list of error codes. The documentation appears to be for some kind of authentication or authorization-related API endpoint.",
+    "chunk_metadata": {
+      "index": 1,
+      "total": 1,
+      "y_start": 0,
+      "y_end": 5164,
+      "overlap_top": 0,
+      "overlap_bottom": 0,
+      "height": 5164,
+      "path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\workspaces\\v2.product.boost_item\\chunks\\chunk_001.png",
+      "filename": "chunk_001.png",
+      "width": 837
+    },
+    "analysis_timestamp": "2025-10-10T06:24:07.258846",
+    "model": "claude-3-5-sonnet-20241022"
+  }
+]

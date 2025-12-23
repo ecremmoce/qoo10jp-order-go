@@ -1,0 +1,50 @@
+{
+  "document_id": "developer-guide.28",
+  "document_type": "guide",
+  "platform": "shopee",
+  "content_ko": "# CNSC API 통합 가이드\n\n## 시작하기 - CNSC API 통합 가이드\n\n중요: CNSC 판매자와 FBP 개발자(ISV)를 관리하는 CNSC 쇼핑몰은 CNSC 업그레이드에 주의해야 하며, 주문 API를 마이그레이션해야 하는 API를 제공합니다. 개발자가 사용해야 하는 API에는 글로벌 상품 API, 글로벌 주문 API, 물류 API, 금융 API, 퍼스트마일 물류 API가 포함되며, 판매자 API는 변경할 수 없습니다. CNSC로 업그레이드된 쇼핑몰은 오류 없이 주문을 관리하기 위해 이전 API 호출을 사용할 수 없습니다.\n\n또는 쇼핑몰이 CNSC로 업그레이드되었는지 어떻게 판단할 수 있습니까?\nAPI를 통해 CB 지역을 조회할 수 있습니다. 반환 매개변수가 \"CNSC\"이면 해당 쇼핑몰은 CNSC 지역에 속합니다. 매개변수 cbcshipType_id가 반환되지 않으면 매개변수 merchant_ext를 쿼리합니다. CB 유형이 판매자의 경우 \"CNSC\"(cbcshipType)이면 CNSC로 업그레이드된 새 쇼핑몰입니다.\n\nQ: 제 시스템에 상품 관련 기능, 즉 상품 생성 및 상품 업데이트 기능이 없고 일부 애플리케이션만 지원하는 경우 어떻게 해야 합니까?\nA: 시스템에 상품 관리 기능이 없으면 사용할 API가 없습니다.\n\n---\n\n## 2. CNSC API 통합 방법\n\n### 2.1 개발자로 등록 (이미 개발자 계정이 있는 경우 이 단계를 건너뛸 수 있습니다.)\n\na. \"가입\"을 클릭하고 \"계약\"을 읽고 Shopee Open Platform 계정을 등록하여 https://open.shopee.com 에 접속합니다.\n\n[스크린샷은 \"Documentation English SIGN UP\" 탐색 및 이메일/비밀번호 필드가 있는 가입 양식이 있는 Shopee Open Platform 홈페이지를 보여줍니다.]\n\nb. 인증 이메일을 받게 됩니다. 이메일을 확인하고 비밀번호를 설정하십시오.\n\n---\n\n**Open Platform**\n\n### 개발자님께,\n\nShopee Open Platform 계정을 성공적으로 생성했습니다.\n\n이메일 주소를 확인하려면 다음 버튼을 클릭하십시오.\n\n**[이메일 확인]**\n\n감사합니다.\n\nShopee Open Platform\n\n---\n\nc. 계정으로 로그인합니다.\n\n[스크린샷은 이메일/비밀번호 필드가 있는 Shopee Open Platform 로그인 양식을 보여줍니다.]\n\n---\n\n### 2.2 계정 정보 완료 (이미 승인된 개발자 계정이 있는 경우 이 단계를 건너뛸 수 있습니다.)\n\na. 등록하려는 개발자 계정의 계정 유형은 앱 유형이어야 합니다(쇼핑몰 유형은 Seller Center 및 Open API를 사용하는 개별 판매자의 계정입니다). 개발자의 유형에 따라 다른 유형의 앱이 표시됩니다. 자세한 내용은 앱 통합 페이지를 참조하십시오.\n\nb. 선택한 쇼핑몰 유형에 따라 적절한 프로필을 작성하십시오. 정보는 Shopee 플랫폼과 일치해야 합니다.\n\n---\n\n### 2.3 앱 생성\n\nShopee Channels를 사용하려면 먼저 앱을 만들어야 합니다. 승인된 판매자로서 개발자 프로필에서 앱을 만들 수 있습니다.\n\na. 기존 API 유형은 V2 API를 지원하지 않습니다. 기존 앱이 Original 유형인 경우 설명서에 따라 앱 업그레이드 프로세스를 완료하십시오.\n\nb. 앱을 만들려면 다음 경로를 통해 새로 만들 수 있습니다.\n각 페이지의 왼쪽 상단에서 기사에 따라 권한을 확인하십시오.\n\nc. 앱을 만든 후 다음 경로를 통해 새로 만들 수 있습니다.\nAPI 유형으로 Open API를 선택할 수 있습니다. 생성 시 V2를 선택하십시오. 자세한 내용은 정보를 읽어보십시오.\n\n---\n\n### 2.4 앱 출시\n\n앱 상태를 온라인으로 제출해야 합니다. \"Go Live\"를 클릭하여 \"파트너\" 또는 \"콘솔\" 또는 \"앱 목록\" 또는 \"개발/샌드박스 선택\" 등에서 라이브 환경 API 사용을 요청합니다.\n\n[스크린샷은 앱 ID, 앱 키, 테스트 쇼핑몰 등을 포함한 문서, 영어 및 앱 세부 정보가 있는 앱 관리 인터페이스를 보여줍니다.]\n\n**기본 정보**\n- App ID: [redacted]\n- App Key: [키 관리 버튼 표시]\n- App secret: [숨김]\n- Test API URL: [URL 표시]\n- Redirect URL (callback): https://\n- Status: Development\n- Inventory\n- Test shop link: https://\n- API valid code: [코드 표시]\n- Your return (self): Singapore\n- Testing (self): Global Product\n\n**앱 API는 24시간 후에 자동으로 루틴을 완료하고 API 상태가 온라인 상태로 변경되며 앱이 프로덕션에 자동으로 배포됩니다.**\n\n---\n\n# API 테스트 가이드\n\n## 개요\n- **APP**: xxx\n- **Testing**: [link]\n- **API**: xxx 및 xxx\n- **API call xxx**: xxx\n- **App Service Region**: Singapore\n- **Live Consultation**: xxx\n\nAPP는 24시간 후에 자동으로 모드를 완료하고 APP 상태가 온라인 상태로 변경되며 개발자는 라이브 환경의 라이브 프리미엄 및 파트너 도움말을 확인할 수 있습니다.\n\n---\n\n## 2.5 API 테스트 시작\n\n### 1단계: 테스트 계정 생성\n1) 테스트를 시작하려면 Cassie에서 중국 판매자를 만들어야 합니다.\n\n**테스트 계정 생성 양식:**\n- **Merchant ID**: [필드]\n- **Merchant Name**: [필드]\n- **Merchant Status**: Organization OP (Suspended)\n- **Account Status**: Active\n- **API Key**: [redacted]\n\n**테스트 계정 생성 대화 상자:**\n- Local Time\n- Local Date\n- Cross-Border Shop ☐ China Domestic ☐\n- Location: [드롭다운]\n- Industry: [드롭다운]\n- Username: [필드]\n- Password: [필드]\n- Confirm Password: [필드]\n- Submit button\n\n---\n\n### 2단계: 로그인 및 구성\n2) https://seller-test-admin.tuyacn.cn 에 로그인합니다. 우편번호는 123456입니다.\n   * 참고: 사용자 지역 전환 또는 체크인 시간 초과 중에는 확인이 필요합니다.\n\n**中国发起跨境商家联系中心**\n如果您联系在异中国的分销\n\n**验证码登录/注册表单:**\n- 账号登录\n- 手机登录显示\n- 输入账号/手机号\n- 输入密码\n- [password] 필드\n- 登录 button\n\n---\n\n### 3단계: 통화 설정\n3) 통화 쇼핑몰 유형을 설정합니다.\n   * 참고: CNSC 샌드박스에서 테스트할 때 모든 CNY 통화를 사용할 수 있습니다.\n   * 실제 CNSC(라이브 환경)에서는 통화 옵션이 테스트 및 지원에 대해 USD 또는 CNY입니다(향후 ABC).\n\n**店铺管理后台跨境商家统筹工具选择页面**\n\n货运管理界面选择:\n- 国内店铺类型: [표시된 옵션]\n- 币种选择框 (통화 선택)\n- 确认 (확인) button\n\n---\n\n### 4단계: 마켓 정보 가져오기\n4) 마켓 정보를 가져옵니다. 잘못된 번호를 받으면 스크린샷에 올바른 번호 범위를 표시합니다.\n\n**마켓 정보 인터페이스:**\n- Market configuration settings\n- Location: [필드]\n- Language: [필드]  \n- Currency: [필드]\n\n---\n\n### 5단계: 인터페이스 언어\n5) 그런 다음 판매자 설정 페이지에서 인터페이스 언어를 영어로 설정할 수 있습니다.\n\n**판매자 설정 페이지:**\n- Profile settings\n- Language selection 드롭다운\n- \"Start to upgrade to Global BG\" 버튼 강조 표시\n\n---\n\n### 6단계: 공식 시작 페이지\n6) 공식 시작 페이지를 확인합니다. 설정을 완료하고 \"Start to upgrade to Global BG\" 버튼을 클릭하십시오.\n\n**Shop Connection Level Global BG 및 Shop BG 대화 상자:**\n\n이 대화 상자에는 여러 섹션이 있습니다.\n- Shop connection status information\n- Configuration requirements\n- API connection details\n- Terms and conditions text\n- Confirmation checkboxes\n- Action buttons at bottom\n\n**표시되는 주요 섹션:**\n- Shop information verification\n- API configuration requirements  \n- Terms of service agreement\n- Confirm and proceed options\n\n---\n\n## 참고 사항 및 경고\n\n⚠️ **중요**: \n- 테스트 환경은 우편번호 123456을 사용합니다.\n- 통화 옵션은 환경(샌드박스 vs 라이브)에 따라 다릅니다.\n- API 테스트 전에 모든 설정 단계를 완료하십시오.\n- 진행하기 전에 마켓 구성을 확인하십시오.\n\n---\n\n## 다음 단계\n\n이러한 설정 단계를 완료한 후 샌드박스 환경에서 API 통합 및 테스트를 진행할 수 있습니다.\n\n---\n\n# 개발자 가이드 - Shopee Open Platform\n\n## 2.6 판매자 및 쇼핑몰 인증\n\n쇼핑몰 계정이 CNSC로 업그레이드된 후에는 여러 쇼핑몰이 판매자에 속하므로 이 [FAQ](link)를 통해 판매자와 쇼핑몰 간의 관계에 대해 자세히 알아볼 수 있습니다.\n\n따라서 GlobalProduct API를 정상적으로 호출하려면 쇼핑몰을 다시 인증하고 인증 시 하위 계정 페이지를 전환하십시오.\n\n### Shopee Openplatform APP 인증을 위해 로그인\n\n**인터페이스 요소:**\n- Country selector: SG\n- Email / Phone / Username 필드\n- Password 필드\n- Forgot Password ? 링크\n- Log In button\n- OR separator\n- **Switch to Sub Account** 버튼 (화살표로 강조 표시)\n\nLanguage selector: English\n\n---\n\n### 인증 지침\n\n인증에는 기본 계정을 사용하십시오. 하위 계정은 인증을 완료할 수 없습니다. 기본 계정의 형식은 다음과 같습니다. **\" main\n\n계정에 성공적으로 로그인하면 인증 페이지가 표시됩니다. 먼저 인증하려는 쇼핑몰을 확인한 다음 Auth Merchant를 클릭하십시오. Auth Merchant를 확인하지 않으면 관련 글로벌 상품 API를 호출하거나 판매자 정보를 얻을 수 없습니다. 일부 쇼핑몰을 확인하지 않으면 API를 통해 관련 쇼핑몰에 상품을 게시할 수 없습니다. 따라서 완전히 관리하려는 판매자와 쇼핑몰을 확인하십시오.\n\n**인증 페이지 요소:**\n- 영어 언어 선택기가 있는 Shopee Open Platform 헤더\n- 판매자 정보 섹션(\"Auth Merchant\" 버튼을 가리키는 화살표로 강조 표시)\n- 다음을 보여주는 쇼핑몰 목록:\n  - [PH] rec_account: [ID info]\n  - [PH] rec_account: [ID info]  \n  - [PH] rec_account: [ID info]\n- \"Auth Merchant\" 확인란 및 버튼 (강조 표시)\n- 유사한 형식의 추가 쇼핑몰 항목\n- 하단의 Reject 및 Allow 버튼\n- \"Reject all (0/3)\" 옵션\n\n---\n\n### 콜백 정보\n\n인증에 성공하면 콜백 주소는 쇼핑몰 ID 대신 main_account_id를 반환합니다. Main_account_id는 나중에 AccessToken을 얻는 데 사용됩니다.\n\n그런 다음 이 [문서](link)에 따라 토큰을 새로 고치십시오.\n\nGetAccessToken API를 통해 해당 시점에 성공적으로 인증된 모든 판매자 ID 및 쇼핑몰 ID 목록을 얻을 수 있습니다.\n\n---\n\n### 중요 사항\n\n**이전에 시스템에 인증된 CNSC 쇼핑몰을 업그레이드하고 별도로 저장해야 하는 경우:** 인증을 완료하면 처음 얻은 새로 고침 토큰 및 액세스 토큰을 현재 인증된 판매자 ID 및 쇼핑몰 ID에서 공유할 수 있습니다. 그러나 RefreshAccessToken API를 호출하여 다른 쇼핑몰 ID에 대해 다른 새로 고침 토큰을 얻으면 다른 새로 고침 토큰 및 액세스 토큰이 반환되므로 토큰을 별도로 보관하십시오.\n\n판매자 ID와 쇼핑몰 ID 간의 관계를 얻으려면 [get_shop_list_by_merchant](link)를 호출하십시오.\n그런 다음 판매자 API [get_merchant_info](link)를 호출하여 각 판매자 정보를 얻고 [get_shop_info](link)를 호출하여 각 쇼핑몰 정보를 얻을 수 있습니다.\n\n---\n\n## 3. 요약\n\n**주요 사항:**\n\n1) 앱을 만들거나 기존 앱을 사용하는 경우 앱 유형이 V.2 GlobalProduct API를 호출할 수 있는지 확인하십시오. (유형: public_app/private_shop_app)\n\n2) GlobalProduct API를 호출하기 전에 쇼핑몰을 CNSC로 업그레이드해야 합니다.\n\n3) 판매자 사용자가 프로덕션 환경에서 CNSC API를 사용할 수 있도록 APP 상태가 **Online**인지 확인해야 합니다. 앱을 라이브로 클릭하면 Open Platform에서 상품 정보를 받기 시작합니다. APP는 24시간 후에 자동으로 승인됩니다.\n\n4) 판매자는 CNSC에 로그인하여 CNSC 상품 업그레이드가 성공하기 전에 관련 설정을 완료해야 합니다.\n\n5) 상품이 성공적으로 업그레이드된 경우에만 Global Product API를 정상적으로 호출할 수 있습니다.\n\n6) 인증이 완료된 후 토큰을 새로 고치십시오([문서](link) 기준).\n\n---\n\n### 지원\n\n이 문서에서 다루지 않는 기술 연결 문제가 있는 경우 [티켓 시스템](link)을 통해 Shopee Open Platform에 문의하십시오.",
+  "translated_at": "2025-10-16T08:25:49",
+  "char_count": 7036,
+  "metadata_ko": {
+    "title": "CNSC API 통합 가이드",
+    "summary": "본 가이드는 CNSC (Cross-border New Seller Center) API 통합에 대한 지침을 제공합니다. 개발자 등록, 앱 생성, API 테스트, 판매자/샵 인증을 다루며, CNSC로 업그레이드된 샵에 대한 특정 고려 사항을 포함합니다.",
+    "keywords": [
+      "CNSC",
+      "API integration",
+      "Shopee Open Platform",
+      "Developer registration",
+      "App creation",
+      "API testing",
+      "Merchant authorization",
+      "Shop authorization",
+      "Global Product API",
+      "Order APIs"
+    ],
+    "category": "통합",
+    "tags": [
+      "CNSC",
+      "API",
+      "Shopee",
+      "Cross-border",
+      "Developer",
+      "Integration Guide"
+    ],
+    "difficulty": "medium",
+    "importance": 5,
+    "use_cases": [
+      "Shopee의 CNSC API와 새로운 애플리케이션 통합",
+      "기존 애플리케이션을 CNSC 지원하도록 마이그레이션",
+      "CNSC 샵의 상품 및 주문 데이터 관리",
+      "CNSC 판매자를 위한 샵 인증 자동화",
+      "CNSC 샌드박스 환경에서 API 통합 테스트"
+    ],
+    "related_apis": [
+      "Global Product API",
+      "Global Order API",
+      "Logistics API",
+      "Finance API",
+      "First-mile Logistics API"
+    ]
+  },
+  "metadata_translated_at": "2025-10-16T08:25:52"
+}

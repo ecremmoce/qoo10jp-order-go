@@ -1,0 +1,97 @@
+[
+  {
+    "chunk_index": 1,
+    "total_chunks": 1,
+    "endpoint": null,
+    "method": null,
+    "description": null,
+    "update_log": [],
+    "hidden_fields": [],
+    "parameters": [
+      {
+        "name": "url",
+        "type": "string",
+        "required": true,
+        "description": "The target API URL",
+        "children": []
+      },
+      {
+        "name": "img_client",
+        "type": "string",
+        "required": false,
+        "description": "This is to display the hierarchy of the request. Required to distinguish if client is Chinese",
+        "children": []
+      },
+      {
+        "name": "article_type",
+        "type": "string",
+        "required": false,
+        "description": "The type to tell article using to decide user preference in order to process data",
+        "children": []
+      },
+      {
+        "name": "img_id",
+        "type": "string",
+        "required": false,
+        "description": "Identifies server-side numerical id: pids, file_path",
+        "children": []
+      }
+    ],
+    "response_parameters": [
+      {
+        "name": "error",
+        "type": "string",
+        "required": false,
+        "description": "indicate error type if error. Empty if no error occurred"
+      },
+      {
+        "name": "message",
+        "type": "string",
+        "required": false,
+        "description": "error message text empty. Empty if no error occurred"
+      },
+      {
+        "name": "request_id",
+        "type": "string",
+        "required": false,
+        "description": "The identifier for API request for use"
+      }
+    ],
+    "error_codes": [
+      "error_param",
+      "error_img_type",
+      "error_param_missing",
+      "error_json",
+      "error_processing",
+      "error_img_not_exists",
+      "error_img_too_small",
+      "error_param_invalid",
+      "error_system_error",
+      "error_img_data_not_found",
+      "error_img_too_many",
+      "error_request_too_often",
+      "error_img_style_not_supported",
+      "error_img_size_too_large",
+      "error_server_busy",
+      "error_img_not_face",
+      "error_img_face_too_small",
+      "error_img_detect_failed",
+      "error_you_ip_limited"
+    ],
+    "notes": "The documentation appears to be for an image processing API. It includes common parameters, response parameters, and a comprehensive list of error codes. The structure shows both request and response formats, with detailed error handling capabilities.",
+    "chunk_metadata": {
+      "index": 1,
+      "total": 1,
+      "y_start": 0,
+      "y_end": 5141,
+      "overlap_top": 0,
+      "overlap_bottom": 0,
+      "height": 5141,
+      "path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\workspaces\\v2.product.delete_item\\chunks\\chunk_001.png",
+      "filename": "chunk_001.png",
+      "width": 837
+    },
+    "analysis_timestamp": "2025-10-10T06:24:43.844739",
+    "model": "claude-3-5-sonnet-20241022"
+  }
+]

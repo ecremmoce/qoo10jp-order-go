@@ -1,0 +1,104 @@
+{
+  "chunk_index": 1,
+  "total_chunks": 1,
+  "endpoint": "/private_photo/your_photo_pro.dtpd",
+  "method": null,
+  "description": null,
+  "update_log": [],
+  "hidden_fields": [],
+  "parameters": [
+    {
+      "name": "id",
+      "type": "string",
+      "required": true,
+      "description": "Http://domain.example.com/photo/show_private_photo_pro.dtpd",
+      "children": []
+    },
+    {
+      "name": "length",
+      "type": "integer",
+      "required": true,
+      "description": null,
+      "children": []
+    },
+    {
+      "name": "offset",
+      "type": "string",
+      "required": true,
+      "description": "The row number set by the request frame",
+      "children": []
+    }
+  ],
+  "response_fields": [
+    {
+      "name": "created",
+      "type": "string",
+      "description": "Upload information via url sending"
+    },
+    {
+      "name": "create_at",
+      "type": "string",
+      "description": "The date of latest add by payment"
+    },
+    {
+      "name": "img_quality",
+      "type": "string",
+      "description": "Default value set by request frame"
+    },
+    {
+      "name": "url_pro",
+      "type": "string",
+      "description": "The photo url link provided"
+    },
+    {
+      "name": "url_guest",
+      "type": "string",
+      "description": "The url for guest use"
+    },
+    {
+      "name": "total_price",
+      "type": "string",
+      "description": "Total price that is free for this time"
+    },
+    {
+      "name": "guest_amount",
+      "type": "string",
+      "description": "Your total fee"
+    },
+    {
+      "name": "guest_count",
+      "type": "integer",
+      "description": "View guest count"
+    },
+    {
+      "name": "url_pics",
+      "type": "string",
+      "description": "The url sent of the uploaded store site"
+    },
+    {
+      "name": "style",
+      "type": "string",
+      "description": "Upload style set by frame. Default set to 6"
+    },
+    {
+      "name": "group_id",
+      "type": "string",
+      "description": "picture/biography/life/beauty/life/set"
+    }
+  ],
+  "notes": "The documentation appears to be for a photo management API. Some parameter descriptions are incomplete or unclear. The image shows both request parameters and response fields, with response fields being more thoroughly documented.",
+  "chunk_metadata": {
+    "index": 1,
+    "total": 1,
+    "y_start": 0,
+    "y_end": 5622,
+    "overlap_top": 0,
+    "overlap_bottom": 0,
+    "height": 5622,
+    "path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\workspaces\\v2.follow_prize.get_follow_prize_detail\\chunks\\chunk_001.png",
+    "filename": "chunk_001.png",
+    "width": 837
+  },
+  "analysis_timestamp": "2025-10-10T05:44:00.351668",
+  "model": "claude-3-5-sonnet-20241022"
+}

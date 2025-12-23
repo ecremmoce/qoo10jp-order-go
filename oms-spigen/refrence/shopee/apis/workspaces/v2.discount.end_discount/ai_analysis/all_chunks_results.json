@@ -1,0 +1,107 @@
+[
+  {
+    "chunk_index": 1,
+    "total_chunks": 1,
+    "endpoint": "/bocontent_account",
+    "method": null,
+    "description": "Account management API",
+    "update_log": [
+      {
+        "date": "2024-01-16",
+        "change": "Add Error Content Description"
+      }
+    ],
+    "parameters": [
+      {
+        "name": "url",
+        "type": "string",
+        "required": true,
+        "description": "Chinese language URL",
+        "children": []
+      },
+      {
+        "name": "url_en",
+        "type": "string",
+        "required": true,
+        "description": "English language URL",
+        "children": []
+      },
+      {
+        "name": "partner_id",
+        "type": "string",
+        "required": true,
+        "description": "Partner ID is assigned when registration is successful",
+        "children": []
+      },
+      {
+        "name": "access_token",
+        "type": "string",
+        "required": true,
+        "description": "Token used for both writing using to specify your permission to do so, and for retrieving your progress if it fails",
+        "children": []
+      },
+      {
+        "name": "title_id",
+        "type": "string",
+        "required": true,
+        "description": "Uniquely identifies an article",
+        "children": []
+      }
+    ],
+    "response_fields": [
+      {
+        "name": "error",
+        "type": "string",
+        "description": "Indicates error type if any; Empty if no error",
+        "children": []
+      },
+      {
+        "name": "message",
+        "type": "string",
+        "description": "Indicates error details if any; Empty if no error",
+        "children": []
+      },
+      {
+        "name": "request_id",
+        "type": "string",
+        "description": "The identifier for an API request for error tracing",
+        "children": []
+      },
+      {
+        "name": "account_id",
+        "type": "string",
+        "description": "Unique identifier for a account",
+        "children": []
+      }
+    ],
+    "error_codes": [
+      {
+        "code": "account_not_exist",
+        "description": "The inquired account cannot be existed"
+      },
+      {
+        "code": "error_pub",
+        "description": "No permission to submit spt"
+      },
+      {
+        "code": "error_param",
+        "description": "Something wrong, Please try later"
+      }
+    ],
+    "notes": "The documentation shows Common Parameters, Required Parameters, Response Parameters, Request Examples, Response Example, Error Example, Error Codes, and API Parameters sections. Some sections appear to be collapsed/expandable.",
+    "chunk_metadata": {
+      "index": 1,
+      "total": 1,
+      "y_start": 0,
+      "y_end": 4512,
+      "overlap_top": 0,
+      "overlap_bottom": 0,
+      "height": 4512,
+      "path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\workspaces\\v2.discount.end_discount\\chunks\\chunk_001.png",
+      "filename": "chunk_001.png",
+      "width": 837
+    },
+    "analysis_timestamp": "2025-10-10T05:36:29.336841",
+    "model": "claude-3-5-sonnet-20241022"
+  }
+]

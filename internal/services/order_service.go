@@ -3,10 +3,10 @@ package services
 import (
 	"fmt"
 	"log"
-	"qoo10jp-order-go/internal/models"
-	"qoo10jp-order-go/pkg/qoo10jp"
-	"qoo10jp-order-go/pkg/redis"
-	"qoo10jp-order-go/pkg/supabase"
+	"shopee-order-go/internal/models"
+	"shopee-order-go/pkg/qoo10jp"
+	"shopee-order-go/pkg/redis"
+	"shopee-order-go/pkg/supabase"
 	"time"
 )
 
@@ -37,9 +37,9 @@ func (s *OrderService) CollectOrders(startDate, endDate time.Time) error {
 
 	for {
 		// Check if we've already processed this page recently
-		cacheKey := fmt.Sprintf("orders:collected:%s:%s:page:%d", 
+		cacheKey := fmt.Sprintf("orders:collected:%s:%s:page:%d",
 			startDate.Format("2006-01-02"), endDate.Format("2006-01-02"), page)
-		
+
 		exists, err := s.redisClient.Exists(cacheKey)
 		if err != nil {
 			log.Printf("Redis error: %v", err)
@@ -123,7 +123,7 @@ func (s *OrderService) CollectOrders(startDate, endDate time.Time) error {
 
 func (s *OrderService) GetOrders(filter models.OrderFilter) ([]models.Order, error) {
 	query := s.buildQuery(filter)
-	
+
 	var orders []models.Order
 	err := s.supabaseClient.Select("orders", query, &orders)
 	if err != nil {
@@ -220,6 +220,3 @@ func (s *OrderService) buildQuery(filter models.OrderFilter) string {
 
 	return query
 }
-
-
-

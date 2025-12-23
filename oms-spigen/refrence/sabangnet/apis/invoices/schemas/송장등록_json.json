@@ -1,0 +1,32 @@
+{
+  "type": "object",
+  "title": "송장등록",
+  "description": "- 사방넷 주문 중 주문확인, 출고대기, 교환발송준비 상태의 주문에 운송장번호와 택배사 코드를 입력합니다. - 주문확인 상태의 주문에 운송장을 입력할 경우 출고대기로 상태가 변경됩니다. - 출고대기 상태이나 쇼핑몰에 이미 송장이 전송 완료된 경우와 강제완료 상태는 송장정보 수정이 불가능합니다.",
+  "required": [
+    "sabangnetIdx",
+    "takCode",
+    "takInvoice"
+  ],
+  "properties": {
+    "sabangnetIdx": {
+      "type": "string",
+      "description": "주문번호(사방넷)",
+      "xml_name": "SABANGNET_IDX"
+    },
+    "takCode": {
+      "type": "string",
+      "description": "택배사코드",
+      "xml_name": "TAK_CODE"
+    },
+    "takInvoice": {
+      "type": "string",
+      "description": "송장번호",
+      "xml_name": "TAK_INVOICE"
+    },
+    "delvHopeDate": {
+      "type": "string",
+      "description": "배송희망일자",
+      "xml_name": "DELV_HOPE_DATE"
+    }
+  }
+}

@@ -1,0 +1,42 @@
+======================================================================
+API SPECIFICATION SUMMARY
+======================================================================
+
+Endpoint: None None
+Description: API Documentation Update Log
+
+Parameters (0):
+----------------------------------------------------------------------
+
+Response Fields (8):
+----------------------------------------------------------------------
+  logistics.shipping_order_needs_tracking_number (string)
+   Parameter tracking_number can not be null
+  logistics.shipping_order_real_ready_package_number (string)
+   Please don't request with package_number for this unpaid order
+  logistics.shipping_order_real_ready_to_ship (string)
+   The order is not ready to ship
+  logistics.error_param (string)
+   The address is invalid. Please check the address.
+  logistics.error_status (string)
+   Logistic status is not supported
+  error_param (string)
+   Invalid timestamp
+  error_network (string)
+   Inner http call failed
+  error_data (string)
+   data not exist
+
+Metadata:
+----------------------------------------------------------------------
+  total_chunks: 3
+  chunks_with_errors: 0
+  total_parameters_before_dedup: 0
+  total_parameters_after_dedup: 0
+  update_log_entries: 0
+  hidden_fields_count: 0
+  source_results: workspaces\v2.logistics.ship_order\results\all_chunks_results.json
+
+======================================================================
+Legend: * = required parameter
+======================================================================

@@ -1,0 +1,92 @@
+{
+  "endpoint": null,
+  "method": null,
+  "description": null,
+  "parameters": [
+    {
+      "name": "filter",
+      "type": "object",
+      "required": false,
+      "description": null,
+      "children": [
+        {
+          "name": "id",
+          "type": "string",
+          "required": false,
+          "description": "Item ID"
+        },
+        {
+          "name": "status",
+          "type": "string",
+          "required": false,
+          "description": null
+        },
+        {
+          "name": "type",
+          "type": "string",
+          "required": false,
+          "description": null
+        }
+      ]
+    },
+    {
+      "name": "sort",
+      "type": "string",
+      "required": false,
+      "description": null
+    },
+    {
+      "name": "order",
+      "type": "string",
+      "required": false,
+      "description": null
+    },
+    {
+      "name": "page",
+      "type": "integer",
+      "required": false,
+      "description": null
+    },
+    {
+      "name": "limit",
+      "type": "integer",
+      "required": false,
+      "description": null
+    }
+  ],
+  "response_fields": [
+    {
+      "name": "data",
+      "type": "array",
+      "description": "Response data array",
+      "children": [
+        {
+          "name": "id",
+          "type": "string",
+          "description": "Item ID"
+        },
+        {
+          "name": "updated_at",
+          "type": "string",
+          "description": "Last update timestamp"
+        },
+        {
+          "name": "created_at",
+          "type": "string",
+          "description": "Creation timestamp"
+        }
+      ]
+    }
+  ],
+  "update_log": [],
+  "hidden_fields": [],
+  "metadata": {
+    "total_chunks": 1,
+    "chunks_with_errors": 0,
+    "total_parameters_before_dedup": 5,
+    "total_parameters_after_dedup": 5,
+    "update_log_entries": 0,
+    "hidden_fields_count": 0,
+    "source_results": "workspaces\\v2.shop_flash_sale.update_shop_flash_sale_items\\results\\all_chunks_results.json"
+  }
+}

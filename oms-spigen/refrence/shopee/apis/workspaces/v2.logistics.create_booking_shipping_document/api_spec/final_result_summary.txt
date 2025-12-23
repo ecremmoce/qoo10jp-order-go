@@ -1,0 +1,56 @@
+======================================================================
+API SPECIFICATION SUMMARY
+======================================================================
+
+Endpoint: POST /v2/logistics/create_booking_shipping_document
+Description: Create logistics shipping document for bookings
+
+Parameters (7):
+----------------------------------------------------------------------
+* partner_id (integer)
+   Partner ID of a product user registered in successsful shipping API.
+* timestamp (string)
+   This is to indicate the timestamp of this request. Required by dataflow to prevent duplicated requests.
+* access_token (string)
+   Access token to call API. For details on how to get access token, please refer to Overview section of API documentation
+* sign (string)
+   Signature value utilized by a server. Generated according to a mechanism to verify data.
+* booking_id (string)
+   Unique shipping order identifier for a booking
+  booking_number (string)
+   The booking number of booking. Required for some logistics shipping providers
+  shipping_document_type (string)
+   The type of shipping document format
+
+Response Fields (8):
+----------------------------------------------------------------------
+  request_id (string)
+   The identifier for an API request for error tracking
+  error (string)
+   Indicate error type if any exists if no error then null
+  message (string)
+   Error message indicates what error (if any) has happened
+  booking_id (string)
+   Unique shipping order identifier for a booking
+  manifest (object)
+   Detail information you are querying
+  tracking_id (string)
+   The id of the result label
+  file_type (string)
+   Indicate what type of the file was returned as input
+  file_content (string)
+   Indicate what base64 if the encoded as base64 in uri or bytestream if raw text
+
+Metadata:
+----------------------------------------------------------------------
+  total_chunks: 1
+  chunks_with_errors: 0
+  total_parameters_before_dedup: 7
+  total_parameters_after_dedup: 7
+  update_log_entries: 0
+  hidden_fields_count: 0
+  source_results: workspaces\v2.logistics.create_booking_shipping_document\results\all_chunks_results.json
+
+======================================================================
+Legend: * = required parameter
+======================================================================

@@ -1,0 +1,46 @@
+======================================================================
+API SPECIFICATION SUMMARY
+======================================================================
+
+Endpoint: None None
+
+Parameters (6):
+----------------------------------------------------------------------
+* url (string)
+   HTTPS request URL
+* URL (string)
+   Chinese Mainland
+* Test URL (string)
+* partner_id (integer)
+   This is a unique business identifier or auth_id. Requires for tracking usage. Supply to you when signing up.
+* timestamp (string)
+   Unix timestamp
+* sign (string)
+   Authentication signature string
+
+Response Fields (5):
+----------------------------------------------------------------------
+  status_code (string)
+   Response code field, all business codes
+  access_token (string)
+   Response code field, all success codes refer to access_token after it expires
+  msg_id (string)
+   Response code field, all error codes refer to msg_id
+  message_id (string)
+   Response code field
+  error (string)
+   Response code field
+
+Metadata:
+----------------------------------------------------------------------
+  total_chunks: 1
+  chunks_with_errors: 0
+  total_parameters_before_dedup: 6
+  total_parameters_after_dedup: 6
+  update_log_entries: 0
+  hidden_fields_count: 0
+  source_results: workspaces\v2.public.get_access_token\results\all_chunks_results.json
+
+======================================================================
+Legend: * = required parameter
+======================================================================

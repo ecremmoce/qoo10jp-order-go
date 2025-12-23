@@ -1,0 +1,28 @@
+======================================================================
+API SPECIFICATION SUMMARY
+======================================================================
+
+Endpoint: GET /global_product/get_size_chart_latest
+
+Parameters (3):
+----------------------------------------------------------------------
+* seller_id (string)
+   Passed in as escaped query parameter
+* serial_name (string)
+   The basic API format. Used to identify each parameter in the API system to support API updates.
+* module_id (string)
+   The value of module id in the request. When calling this API you need to provide it first, then we can judge whether it is necessary to perform automatic data calculation.
+
+Metadata:
+----------------------------------------------------------------------
+  total_chunks: 1
+  chunks_with_errors: 0
+  total_parameters_before_dedup: 3
+  total_parameters_after_dedup: 3
+  update_log_entries: 0
+  hidden_fields_count: 0
+  source_results: workspaces\v2.global_product.get_size_chart_detail\results\all_chunks_results.json
+
+======================================================================
+Legend: * = required parameter
+======================================================================

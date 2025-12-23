@@ -1,0 +1,51 @@
+[
+  {
+    "chunk_index": 1,
+    "total_chunks": 1,
+    "endpoint": null,
+    "method": null,
+    "description": "Shopee Open Platform is a go-to source of Open APIs and services for developers serving Shopee sellers with different ecommerce needs",
+    "update_log": [
+      {
+        "date": "2024-11-11",
+        "change": "Last updated"
+      }
+    ],
+    "hidden_fields": [],
+    "parameters": [],
+    "response_fields": [],
+    "notes": "This appears to be an introduction/overview page of Shopee Open Platform documentation rather than a specific API endpoint. Key information extracted includes:\n\n1. Languages supported: English, 简体中文, 繁體中文, Português, ไทย\n\n2. Main features:\n- Powerful APIs for orders, products, marketing\n- Push notification services\n- Developer services including onboarding, testing, and maintenance\n- API testing tools and sandbox environments\n\n3. Two types of users:\n- Software service providers\n- Sellers with software development capabilities",
+    "metadata": {
+      "navigation_sections": [
+        "Getting Started",
+        "API Best Practices",
+        "Developer account registration",
+        "App management",
+        "API calls",
+        "Push Mechanism notifications",
+        "Authorization and Authentication",
+        "Sandbox Testing V2",
+        "Service Partner Program"
+      ],
+      "documentation_sections": [
+        "What is Shopee Open Platform?",
+        "Benefits of using Shopee Open API?",
+        "Who can access Shopee Open Platform?"
+      ]
+    },
+    "chunk_metadata": {
+      "index": 1,
+      "total": 1,
+      "y_start": 0,
+      "y_end": 1080,
+      "overlap_top": 0,
+      "overlap_bottom": 0,
+      "height": 1080,
+      "path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\platforms\\shopee\\apis\\workspaces\\developer-guide.4\\chunks\\chunk_001.png",
+      "filename": "chunk_001.png",
+      "width": 1920
+    },
+    "analysis_timestamp": "2025-10-11T23:44:33.877040",
+    "model": "claude-3-5-sonnet-20241022"
+  }
+]

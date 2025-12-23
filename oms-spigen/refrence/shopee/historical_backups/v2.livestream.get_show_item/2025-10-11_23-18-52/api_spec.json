@@ -1,0 +1,106 @@
+{
+  "endpoint": "/openapi/get_video_sum",
+  "method": "GET",
+  "description": null,
+  "parameters": [
+    {
+      "name": "content_id",
+      "type": "string",
+      "required": true,
+      "description": "Format ID is assigned after registration is successful",
+      "children": []
+    },
+    {
+      "name": "access_token",
+      "type": "string",
+      "required": true,
+      "description": "The login API is valid; users is directly sent passwords to OpenAPI.",
+      "children": []
+    },
+    {
+      "name": "sign",
+      "type": "string",
+      "required": true,
+      "description": "signature calculation method",
+      "children": []
+    }
+  ],
+  "response_fields": [
+    {
+      "name": "text",
+      "type": "string",
+      "description": "Original pure text of the text. Empty is no error happened.",
+      "children": []
+    },
+    {
+      "name": "timestamp",
+      "type": "string",
+      "description": "Original pure speech in the text. Empty if no error happened.",
+      "children": []
+    },
+    {
+      "name": "result_id",
+      "type": "string",
+      "description": "The identifier for an ASR request by each speech.",
+      "children": []
+    },
+    {
+      "name": "time_start",
+      "type": "float",
+      "description": "Each time interval can be start tag.",
+      "children": []
+    },
+    {
+      "name": "time_end",
+      "type": "float",
+      "description": "Each time interval can be ending tag.",
+      "children": []
+    },
+    {
+      "name": "status",
+      "type": "string",
+      "description": "Name of the text in your language",
+      "children": []
+    },
+    {
+      "name": "image_url",
+      "type": "string",
+      "description": "The image url of this item",
+      "children": []
+    },
+    {
+      "name": "channel",
+      "type": "float",
+      "description": "The layout code representing the content and data of the text",
+      "children": []
+    },
+    {
+      "name": "content_type",
+      "type": "float",
+      "description": "The content type of the text in the being processed. Content_type=0",
+      "children": []
+    },
+    {
+      "name": "original_type",
+      "type": "float",
+      "description": "The original type of the text in the being processed",
+      "children": []
+    }
+  ],
+  "update_log": [
+    {
+      "date": "2024-01-24",
+      "change": "API created"
+    }
+  ],
+  "hidden_fields": [],
+  "metadata": {
+    "total_chunks": 1,
+    "chunks_with_errors": 0,
+    "total_parameters_before_dedup": 3,
+    "total_parameters_after_dedup": 3,
+    "update_log_entries": 1,
+    "hidden_fields_count": 0,
+    "source_results": "platforms\\shopee\\apis\\workspaces\\v2.livestream.get_show_item\\results\\all_chunks_results.json"
+  }
+}

@@ -1,0 +1,42 @@
+======================================================================
+API SPECIFICATION SUMMARY
+======================================================================
+
+Endpoint: GET /payment/ad_fees_experience_select
+Description: Advertisement fee payment experience selection
+
+Parameters (4):
+----------------------------------------------------------------------
+* token (string)
+   Partner ID assigned post registration (provided by administrator)
+* timestamp (integer)
+   This is a datetime by timestamp of the request. Required for signature authentication
+* sign (string)
+   The MD5 hash of all query parameters, sorted by ASCII code. Can only be called one time and expires in 5 mins
+  ctp (string)
+   Channel trace analysis parameter
+
+Response Fields (4):
+----------------------------------------------------------------------
+  error_code (integer)
+   Error code
+  message (string)
+   Error message
+  amount_in (string)
+   Amount input
+  wechat_id (string)
+   WeChat ID
+
+Metadata:
+----------------------------------------------------------------------
+  total_chunks: 1
+  chunks_with_errors: 0
+  total_parameters_before_dedup: 4
+  total_parameters_after_dedup: 4
+  update_log_entries: 1
+  hidden_fields_count: 0
+  source_results: workspaces\v2.payment.set_item_installment_status\results\all_chunks_results.json
+
+======================================================================
+Legend: * = required parameter
+======================================================================

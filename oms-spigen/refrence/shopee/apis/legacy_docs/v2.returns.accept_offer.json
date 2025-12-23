@@ -1,0 +1,68 @@
+{
+  "endpoint": "/shared/accept_offer",
+  "method": null,
+  "description": null,
+  "parameters": [
+    {
+      "name": "URL",
+      "type": "string",
+      "required": true,
+      "description": "/shared/accept/share/url",
+      "children": []
+    },
+    {
+      "name": "URL (Chinese Network)",
+      "type": "string",
+      "required": true,
+      "description": "/share/space/market/chinese/network/url_offer",
+      "children": []
+    },
+    {
+      "name": "Test URL",
+      "type": "string",
+      "required": true,
+      "description": "/share/space/market/test/network/url_offer",
+      "children": []
+    },
+    {
+      "name": "Test URL (Chinese Network)",
+      "type": "string",
+      "required": true,
+      "description": "/share/space/market/test/share/chinese/network/url_offer",
+      "children": []
+    },
+    {
+      "name": "game_id",
+      "type": "string",
+      "required": true,
+      "description": "Game ID assigned with application in metadata",
+      "children": []
+    },
+    {
+      "name": "test",
+      "type": "string",
+      "required": true,
+      "description": "Must be true",
+      "children": []
+    },
+    {
+      "name": "token_id",
+      "type": "string",
+      "required": true,
+      "description": "The uuid number",
+      "children": []
+    }
+  ],
+  "response_fields": [],
+  "update_log": [],
+  "hidden_fields": [],
+  "metadata": {
+    "total_chunks": 1,
+    "chunks_with_errors": 0,
+    "total_parameters_before_dedup": 7,
+    "total_parameters_after_dedup": 7,
+    "update_log_entries": 0,
+    "hidden_fields_count": 0,
+    "source_results": "workspaces\\v2.returns.accept_offer\\results\\all_chunks_results.json"
+  }
+}

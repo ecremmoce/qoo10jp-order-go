@@ -1,0 +1,58 @@
+{
+  "chunk_index": 2,
+  "endpoint": null,
+  "method": null,
+  "description": null,
+  "parameters": [],
+  "response_fields": [
+    {
+      "name": "error",
+      "type": "string",
+      "description": "Indicate error type if hit error. Empty if no error happened",
+      "children": []
+    },
+    {
+      "name": "message",
+      "type": "string",
+      "description": "Indicate error details if hit error. Empty if no error happened",
+      "children": []
+    },
+    {
+      "name": "warning",
+      "type": "string",
+      "description": "Indicate warning details if hit warning. Empty if no warning happened",
+      "children": []
+    },
+    {
+      "name": "request_id",
+      "type": "string",
+      "description": "The identifier for an API request for error tracking",
+      "children": []
+    },
+    {
+      "name": "response",
+      "type": "object",
+      "description": null,
+      "children": []
+    },
+    {
+      "name": "item_id",
+      "type": "int64",
+      "description": "Shopeee's unique identifier for an item",
+      "children": []
+    }
+  ],
+  "chunk_metadata": {
+    "index": 2,
+    "total": 2,
+    "y_start": 7250,
+    "y_end": 10552,
+    "overlap_top": 500,
+    "overlap_bottom": 0,
+    "height": 3302,
+    "path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\workspaces\\v2.product.link_ssp\\chunks\\chunk_002.png",
+    "filename": "chunk_002.png",
+    "width": 837
+  },
+  "chunk_path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\workspaces\\v2.product.link_ssp\\chunks\\chunk_002.png"
+}

@@ -1,0 +1,55 @@
+{
+  "chunk_index": 2,
+  "endpoint": null,
+  "method": null,
+  "description": null,
+  "parameters": [],
+  "response_fields": [],
+  "error_codes": [
+    {
+      "code": "error_data",
+      "description": "parse data failed"
+    },
+    {
+      "code": "error_data",
+      "description": "data not exist"
+    },
+    {
+      "code": "error_param",
+      "description": "parameter invalid"
+    },
+    {
+      "code": "error_param",
+      "description": "The information you queried is not found"
+    },
+    {
+      "code": "error_param",
+      "description": "Wrong parameters, detail: (msg)"
+    },
+    {
+      "code": "error_server",
+      "description": "Something wrong. Please try later."
+    },
+    {
+      "code": "error_shop",
+      "description": "shopid is invalid"
+    },
+    {
+      "code": "error_param",
+      "description": "request not from gateway"
+    }
+  ],
+  "chunk_metadata": {
+    "index": 2,
+    "total": 2,
+    "y_start": 7401,
+    "y_end": 9219,
+    "overlap_top": 500,
+    "overlap_bottom": 0,
+    "height": 1818,
+    "path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\workspaces\\v2.account_health.get_metric_source_detail\\chunks\\chunk_002.png",
+    "filename": "chunk_002.png",
+    "width": 837
+  },
+  "chunk_path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\workspaces\\v2.account_health.get_metric_source_detail\\chunks\\chunk_002.png"
+}

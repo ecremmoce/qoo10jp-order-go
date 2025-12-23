@@ -1,0 +1,30 @@
+======================================================================
+API SPECIFICATION SUMMARY
+======================================================================
+
+Endpoint: None None
+
+Parameters (1):
+----------------------------------------------------------------------
+* get_balance_details (object)
+   Balance details information
+  * balance (integer)
+     Current balance
+  * frozen_balance (integer)
+     Frozen balance amount
+  * available_balance (integer)
+     Available balance
+
+Metadata:
+----------------------------------------------------------------------
+  total_chunks: 1
+  chunks_with_errors: 0
+  total_parameters_before_dedup: 1
+  total_parameters_after_dedup: 1
+  update_log_entries: 6
+  hidden_fields_count: 0
+  source_results: workspaces\v2.product.update_stock\results\all_chunks_results.json
+
+======================================================================
+Legend: * = required parameter
+======================================================================

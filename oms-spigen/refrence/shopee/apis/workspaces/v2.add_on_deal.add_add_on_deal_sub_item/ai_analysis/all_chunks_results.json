@@ -1,0 +1,81 @@
+[
+  {
+    "chunk_index": 1,
+    "total_chunks": 1,
+    "endpoint": "/api/calc_total_add_on_fee",
+    "method": "POST",
+    "description": "Calculate total add-on fee",
+    "update_log": [],
+    "hidden_fields": [],
+    "parameters": [
+      {
+        "name": "currency",
+        "type": "string",
+        "required": true,
+        "description": "Currency code",
+        "children": []
+      },
+      {
+        "name": "add_on",
+        "type": "array",
+        "required": true,
+        "description": "Array of add-on objects",
+        "children": [
+          {
+            "name": "code",
+            "type": "string",
+            "required": true,
+            "description": "Add-on code",
+            "children": []
+          },
+          {
+            "name": "type",
+            "type": "string",
+            "required": true,
+            "description": "Add-on type",
+            "children": []
+          }
+        ]
+      }
+    ],
+    "response_fields": [
+      {
+        "name": "code",
+        "type": "string",
+        "description": "Response code"
+      },
+      {
+        "name": "message",
+        "type": "string",
+        "description": "Response message"
+      },
+      {
+        "name": "data",
+        "type": "object",
+        "description": "Response data",
+        "children": [
+          {
+            "name": "total_fee",
+            "type": "decimal",
+            "description": "Total add-on fee"
+          }
+        ]
+      }
+    ],
+    "notes": "The documentation includes several example requests and responses, as well as error codes that are visible in the image. The parameter structure appears to be focused on calculating fees for add-on services with a specific currency.",
+    "chunk_metadata": {
+      "index": 1,
+      "total": 1,
+      "y_start": 0,
+      "y_end": 6128,
+      "overlap_top": 0,
+      "overlap_bottom": 0,
+      "height": 6128,
+      "path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\workspaces\\v2.add_on_deal.add_add_on_deal_sub_item\\chunks\\chunk_001.png",
+      "filename": "chunk_001.png",
+      "width": 837
+    },
+    "analysis_timestamp": "2025-10-10T05:24:06.157942",
+    "model": "claude-3-5-sonnet-20241022"
+  }
+]

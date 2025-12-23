@@ -1,0 +1,59 @@
+{
+  "endpoint": "/api/get_cart_cal_sub_table_performance",
+  "method": "GET",
+  "description": "Performance calculation for sub tables",
+  "parameters": [
+    {
+      "name": "cart_series",
+      "type": "string",
+      "required": true,
+      "description": "Cart series identifier",
+      "children": []
+    },
+    {
+      "name": "split",
+      "type": "string",
+      "required": false,
+      "description": "Split parameter",
+      "children": []
+    },
+    {
+      "name": "detail_schema",
+      "type": "string",
+      "required": false,
+      "description": "Detailed schema information",
+      "children": []
+    }
+  ],
+  "response_fields": [
+    {
+      "name": "code",
+      "type": "integer",
+      "description": "Response code",
+      "children": []
+    },
+    {
+      "name": "message",
+      "type": "string",
+      "description": "Response message",
+      "children": []
+    },
+    {
+      "name": "data",
+      "type": "object",
+      "description": "Response data object",
+      "children": []
+    }
+  ],
+  "update_log": [],
+  "hidden_fields": [],
+  "metadata": {
+    "total_chunks": 1,
+    "chunks_with_errors": 0,
+    "total_parameters_before_dedup": 3,
+    "total_parameters_after_dedup": 3,
+    "update_log_entries": 0,
+    "hidden_fields_count": 0,
+    "source_results": "workspaces\\v2.ads.get_all_cpc_ads_daily_performance\\results\\all_chunks_results.json"
+  }
+}

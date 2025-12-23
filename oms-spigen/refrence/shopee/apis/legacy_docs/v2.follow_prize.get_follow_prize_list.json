@@ -1,0 +1,96 @@
+{
+  "endpoint": null,
+  "method": null,
+  "description": null,
+  "parameters": [
+    {
+      "name": "common_path",
+      "type": "string",
+      "required": true,
+      "description": "URL for image upload",
+      "children": []
+    },
+    {
+      "name": "thumb_path",
+      "type": "string",
+      "required": true,
+      "description": null,
+      "children": []
+    },
+    {
+      "name": "thumb_url",
+      "type": "string",
+      "required": false,
+      "description": "Optional parameter to override the compressed file url",
+      "children": []
+    }
+  ],
+  "response_fields": [
+    {
+      "name": "create_time",
+      "type": "string",
+      "description": "Creation time",
+      "children": []
+    },
+    {
+      "name": "name",
+      "type": "string",
+      "description": "File name",
+      "children": []
+    },
+    {
+      "name": "private_path",
+      "type": "string",
+      "description": "The full path of the private-area stored file",
+      "children": []
+    },
+    {
+      "name": "message_id",
+      "type": "string",
+      "description": "Message ID",
+      "children": []
+    },
+    {
+      "name": "from_peer",
+      "type": "string",
+      "description": "The account that sent the message",
+      "children": []
+    },
+    {
+      "name": "thumb_path",
+      "type": "string",
+      "description": "The path of thumbnail stored in client device",
+      "children": []
+    },
+    {
+      "name": "crop_events",
+      "type": "object",
+      "description": "Thumbnail information",
+      "children": []
+    }
+  ],
+  "update_log": [
+    {
+      "date": "2025-07-26",
+      "change": "new api"
+    },
+    {
+      "date": "2025-07-23",
+      "change": "optimize business description"
+    },
+    {
+      "date": "2024-06-16",
+      "change": "update to java structure and improve parameter definitions"
+    }
+  ],
+  "hidden_fields": [],
+  "metadata": {
+    "total_chunks": 1,
+    "chunks_with_errors": 0,
+    "total_parameters_before_dedup": 3,
+    "total_parameters_after_dedup": 3,
+    "update_log_entries": 3,
+    "hidden_fields_count": 0,
+    "source_results": "workspaces\\v2.follow_prize.get_follow_prize_list\\results\\all_chunks_results.json"
+  }
+}

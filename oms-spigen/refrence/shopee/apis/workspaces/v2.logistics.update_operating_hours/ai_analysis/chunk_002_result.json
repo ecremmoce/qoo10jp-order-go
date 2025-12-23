@@ -1,0 +1,57 @@
+{
+  "chunk_index": 2,
+  "endpoint": null,
+  "method": null,
+  "description": null,
+  "parameters": [
+    {
+      "name": "grid",
+      "type": "string",
+      "required": false,
+      "description": "Unique identifier for area",
+      "children": []
+    },
+    {
+      "name": "message",
+      "type": "string",
+      "required": false,
+      "description": "Message text",
+      "children": []
+    },
+    {
+      "name": "request_id",
+      "type": "string",
+      "required": false,
+      "description": "Unique request identifier",
+      "children": []
+    },
+    {
+      "name": "regular_operating_hour",
+      "type": "object",
+      "required": false,
+      "description": "The result of irreplaceable data",
+      "children": []
+    },
+    {
+      "name": "error",
+      "type": "string",
+      "required": false,
+      "description": "The system will reject if there are any updated since yesterday",
+      "children": []
+    }
+  ],
+  "response_fields": [],
+  "chunk_metadata": {
+    "index": 2,
+    "total": 2,
+    "y_start": 7452,
+    "y_end": 11777,
+    "overlap_top": 500,
+    "overlap_bottom": 0,
+    "height": 4325,
+    "path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\workspaces\\v2.logistics.update_operating_hours\\chunks\\chunk_002.png",
+    "filename": "chunk_002.png",
+    "width": 837
+  },
+  "chunk_path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\workspaces\\v2.logistics.update_operating_hours\\chunks\\chunk_002.png"
+}

@@ -1,0 +1,79 @@
+[
+  {
+    "chunk_index": 1,
+    "total_chunks": 1,
+    "endpoint": "/api/get_cart_cal_sub_table_performance",
+    "method": "GET",
+    "description": "Performance calculation for sub tables",
+    "update_log": [],
+    "hidden_fields": [],
+    "parameters": [
+      {
+        "name": "cart_series",
+        "type": "string",
+        "required": true,
+        "description": "Cart series identifier",
+        "children": []
+      },
+      {
+        "name": "split",
+        "type": "string",
+        "required": false,
+        "description": "Split parameter",
+        "children": []
+      },
+      {
+        "name": "detail_schema",
+        "type": "string",
+        "required": false,
+        "description": "Detailed schema information",
+        "children": []
+      }
+    ],
+    "response_fields": [
+      {
+        "name": "code",
+        "type": "integer",
+        "description": "Response code",
+        "children": []
+      },
+      {
+        "name": "message",
+        "type": "string",
+        "description": "Response message",
+        "children": []
+      },
+      {
+        "name": "data",
+        "type": "object",
+        "description": "Response data object",
+        "children": []
+      }
+    ],
+    "error_codes": [
+      {
+        "code": "200",
+        "description": "Success"
+      },
+      {
+        "code": "400",
+        "description": "Bad request"
+      }
+    ],
+    "notes": "The image appears to be an API documentation page showing required and optional parameters, response structure, and error codes. There are additional sections that appear to contain examples and response samples, but they are partially cut off in the image.",
+    "chunk_metadata": {
+      "index": 1,
+      "total": 1,
+      "y_start": 0,
+      "y_end": 5742,
+      "overlap_top": 0,
+      "overlap_bottom": 0,
+      "height": 5742,
+      "path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\workspaces\\v2.ads.get_all_cpc_ads_daily_performance\\chunks\\chunk_001.png",
+      "filename": "chunk_001.png",
+      "width": 837
+    },
+    "analysis_timestamp": "2025-10-10T05:29:46.447764",
+    "model": "claude-3-5-sonnet-20241022"
+  }
+]

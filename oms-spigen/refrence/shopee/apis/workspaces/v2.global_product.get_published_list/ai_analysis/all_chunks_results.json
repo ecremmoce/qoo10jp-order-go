@@ -1,0 +1,84 @@
+[
+  {
+    "chunk_index": 1,
+    "total_chunks": 1,
+    "endpoint": "/public_protocol.get_protocol.json",
+    "method": "GET",
+    "description": "Protocol-related API endpoint",
+    "update_log": [],
+    "hidden_fields": [],
+    "parameters": [
+      {
+        "name": "URL",
+        "type": "string",
+        "required": true,
+        "description": "Base protocol URL",
+        "children": []
+      },
+      {
+        "name": "protocol_id",
+        "type": "string",
+        "required": true,
+        "description": "The protocol ID parameter",
+        "children": []
+      }
+    ],
+    "response_fields": [
+      {
+        "name": "error",
+        "type": "string",
+        "description": "Error message if any",
+        "children": []
+      },
+      {
+        "name": "protocol_api",
+        "type": "object",
+        "description": "Protocol API details",
+        "children": []
+      },
+      {
+        "name": "protocol_name",
+        "type": "string",
+        "description": "Name of protocol",
+        "children": []
+      },
+      {
+        "name": "file_region",
+        "type": "string",
+        "description": "Region of files",
+        "children": []
+      },
+      {
+        "name": "protocols_type",
+        "type": "string",
+        "description": "Type of protocols data",
+        "children": []
+      }
+    ],
+    "error_codes": [
+      {
+        "code": "error_param",
+        "description": "Required parameter error"
+      },
+      {
+        "code": "error_protocol_id",
+        "description": "Protocol ID not found"
+      }
+    ],
+    "notes": "The documentation includes example requests and responses, error codes, and API reference information. The image appears to be showing a complete API documentation page with various sections including Common Parameters, Required Parameters, Response Parameters, and Error Codes.",
+    "chunk_metadata": {
+      "index": 1,
+      "total": 1,
+      "y_start": 0,
+      "y_end": 5340,
+      "overlap_top": 0,
+      "overlap_bottom": 0,
+      "height": 5340,
+      "path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\workspaces\\v2.global_product.get_published_list\\chunks\\chunk_001.png",
+      "filename": "chunk_001.png",
+      "width": 837
+    },
+    "analysis_timestamp": "2025-10-10T05:48:11.515356",
+    "model": "claude-3-5-sonnet-20241022"
+  }
+]

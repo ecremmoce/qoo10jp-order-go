@@ -1,0 +1,120 @@
+{
+  "endpoint": "http://open.netease.com/image/{hz_image_server_device_tracking_number_id}",
+  "method": "GET",
+  "description": "Image access endpoint for tracking number",
+  "parameters": [
+    {
+      "name": "partner_id",
+      "type": "string",
+      "required": true,
+      "description": "Partner ID assigned upon registration is successful"
+    },
+    {
+      "name": "access_token",
+      "type": "string",
+      "required": true,
+      "description": "This needs to get a valid access token via permission. System is friendly."
+    },
+    {
+      "name": "img_id",
+      "type": "string",
+      "required": true,
+      "description": "Request unique identifier for a pkg. Required event for callback."
+    },
+    {
+      "name": "type",
+      "type": "string",
+      "required": true,
+      "description": "Type of data"
+    },
+    {
+      "name": "from_date",
+      "type": "string",
+      "required": true,
+      "description": "The start time of creation time"
+    },
+    {
+      "name": "to_date",
+      "type": "string",
+      "required": true,
+      "description": "The end time of creation time"
+    },
+    {
+      "name": "count",
+      "type": "string",
+      "required": false,
+      "description": "Specifies the sorting order of data to return in that cargo path. Default is ASC. Maximum 100 count parameter of data to be returned to show up. Note: If more than the maximum number of records is indicated, the default maximum count of 100 will be used."
+    },
+    {
+      "name": "post",
+      "type": "string",
+      "required": false,
+      "description": "Include post relation if found. Empty if no post indicated"
+    },
+    {
+      "name": "manifest",
+      "type": "string",
+      "required": false,
+      "description": "Include the info if the post. Empty if no post indicated"
+    },
+    {
+      "name": "tracking_number_id",
+      "type": "string",
+      "required": true,
+      "description": "The identifier for all API requests to post tracking"
+    },
+    {
+      "name": "response",
+      "type": "object",
+      "required": false,
+      "description": "Response parameters for tracking session"
+    },
+    {
+      "name": "last_tracking_date",
+      "type": "string",
+      "required": false,
+      "description": "The previous first time tracking session value returned."
+    },
+    {
+      "name": "status",
+      "type": "string",
+      "required": true,
+      "description": "The session status for this value tracking number status. Error codes: CANCEL PGK_ERROR NO_RECORD NOT_FOUND FOUND_IT PICKUP_ST"
+    },
+    {
+      "name": "record",
+      "type": "string",
+      "required": false,
+      "description": "Allows the header error [Object keys] to be returned as well as the current tracking header that will be used with any other"
+    },
+    {
+      "name": "service_data",
+      "type": "string",
+      "required": false,
+      "description": "This is to indicate whether the tracking number service is in use. If the value is true, tracking service will be true or post manifest to retrieve tracking number"
+    },
+    {
+      "name": "nav_pointer",
+      "type": "string",
+      "required": false,
+      "description": "A record body, any indicated errors with the header on it will show up in JSON, until a marker will be empty string there needs there"
+    }
+  ],
+  "response_fields": [],
+  "update_log": [
+    {
+      "date": "2024-01-23",
+      "change": "API released"
+    }
+  ],
+  "hidden_fields": [],
+  "metadata": {
+    "total_chunks": 1,
+    "chunks_with_errors": 0,
+    "total_parameters_before_dedup": 16,
+    "total_parameters_after_dedup": 16,
+    "update_log_entries": 1,
+    "hidden_fields_count": 0,
+    "source_results": "workspaces\\v2.first_mile.get_courier_delivery_tracking_number_list\\results\\all_chunks_results.json"
+  }
+}

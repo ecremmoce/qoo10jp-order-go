@@ -1,0 +1,63 @@
+{
+  "chunk_index": 1,
+  "total_chunks": 1,
+  "endpoint": null,
+  "method": null,
+  "description": "Shopee Open Platform is a go-to source of Open APIs and services for developers serving Shopee sellers with different ecommerce needs",
+  "update_log": [
+    {
+      "date": "2024-11-11",
+      "change": "Last updated"
+    }
+  ],
+  "hidden_fields": [],
+  "parameters": [],
+  "response_fields": [],
+  "notes": "This appears to be the introduction/overview page of Shopee Open Platform documentation. Key information extracted:\n\n1. Language Support: English, 简体中文, 繁體中文, Português, ไทย\n\n2. Main Sections Covered:\n- What is Shopee Open Platform?\n- Benefits of using Shopee Open API\n- Who can access Shopee Open Platform?\n\n3. Key Features:\n- Powerful APIs for orders, products, marketing\n- Comprehensive developer services\n- Open API testing tools\n- Management capabilities for APPs\n\n4. No specific API endpoints or parameters are shown on this page as it's an overview document.",
+  "documentation_structure": {
+    "sidebar_sections": [
+      {
+        "name": "Getting Started",
+        "subsections": [
+          "Introduction",
+          "Developer account registration",
+          "App management",
+          "API calls",
+          "Push Mechanism notifications",
+          "Authorization and Authentication",
+          "Sandbox Testing V2",
+          "Service Partner Program"
+        ]
+      },
+      {
+        "name": "API Best Practices",
+        "subsections": [
+          "Guidelines for Creating Product",
+          "Product creation preparation",
+          "Creating product",
+          "Creating global product",
+          "Publishing global product",
+          "Variant management",
+          "Product base info management",
+          "Stock & Price Management",
+          "Order Management",
+          "First Mile Binding"
+        ]
+      }
+    ]
+  },
+  "chunk_metadata": {
+    "index": 1,
+    "total": 1,
+    "y_start": 0,
+    "y_end": 1080,
+    "overlap_top": 0,
+    "overlap_bottom": 0,
+    "height": 1080,
+    "path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\platforms\\shopee\\apis\\workspaces\\developer-guide.4\\chunks\\chunk_001.png",
+    "filename": "chunk_001.png",
+    "width": 1920
+  },
+  "analysis_timestamp": "2025-10-12T00:10:55.593545",
+  "model": "claude-3-5-sonnet-20241022"
+}

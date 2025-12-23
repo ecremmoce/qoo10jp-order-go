@@ -1,0 +1,85 @@
+{
+  "endpoint": "/v1/claims/content_image",
+  "method": "POST",
+  "description": "API for handling content image claims",
+  "parameters": [
+    {
+      "name": "access_token",
+      "type": "string",
+      "required": true,
+      "description": "Token for OAuth user registration is successful",
+      "children": []
+    },
+    {
+      "name": "url",
+      "type": "string",
+      "required": true,
+      "description": "Chinese language news representation images.china/news/content_image",
+      "children": []
+    },
+    {
+      "name": "text_url",
+      "type": "string",
+      "required": true,
+      "description": "Chinese language combined similar news images/china/content_image",
+      "children": []
+    },
+    {
+      "name": "result_id",
+      "type": "string",
+      "required": false,
+      "description": "The identifier for an API request for error",
+      "children": []
+    },
+    {
+      "name": "error_code",
+      "type": "string",
+      "required": false,
+      "description": "The error number if error",
+      "children": []
+    }
+  ],
+  "response_fields": [
+    {
+      "name": "result_id",
+      "type": "string",
+      "description": "Identifier for an API request for error",
+      "children": []
+    },
+    {
+      "name": "error",
+      "type": "string",
+      "description": "Calculate error code if any. Empty if no error",
+      "children": []
+    },
+    {
+      "name": "timestamp",
+      "type": "string",
+      "description": "Calculate timestamp if error. Empty if no error",
+      "children": []
+    },
+    {
+      "name": "url",
+      "type": "string",
+      "description": "The URL uploaded to the image server can be used until the proper path return",
+      "children": []
+    },
+    {
+      "name": "thumbnail",
+      "type": "string",
+      "description": "The image thumbnail",
+      "children": []
+    }
+  ],
+  "update_log": [],
+  "hidden_fields": [],
+  "metadata": {
+    "total_chunks": 1,
+    "chunks_with_errors": 0,
+    "total_parameters_before_dedup": 5,
+    "total_parameters_after_dedup": 5,
+    "update_log_entries": 0,
+    "hidden_fields_count": 0,
+    "source_results": "workspaces\\v2.returns.convert_image\\results\\all_chunks_results.json"
+  }
+}

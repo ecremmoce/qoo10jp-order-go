@@ -1,0 +1,48 @@
+======================================================================
+API SPECIFICATION SUMMARY
+======================================================================
+
+Endpoint: HTTP /logistics/update_set_collection_order_logistics
+Description: Use this api to update the seller status for buyer to collect the parcel directly from your premises. Only includes collection that within in apply fee collection, and that the order has been parceled by the buyer. The shared call in logistics_get_seller_status or v2.logistics.get_package_detail_for_seller should have a v2.logistics.get_pickup_status_list to get this package_number or other details.
+
+Parameters (8):
+----------------------------------------------------------------------
+* partner_id (string)
+   Partner ID is assigned once registration is successful. Required for all requests.
+* timestamp (timestamp)
+   This is to indicate the timestamp of the request. Required for all requests. Expires in 5 minutes.
+* access_token (string)
+   The token for api access, users to identify your permission to the api. Valid for multiple use and expires in 4 hours
+* shop_id (int)
+   Shopee's unique identifier for a shop. Required inputs for regular seller orders.
+* sign (string)
+   Authentication signature calculated using partner_id, api_path, timestamp, access_token, shop_id and partner_key. More details.
+* package_number (string)
+   Request unique identifier for the package under an order
+* set_collection_logistics_status (string)
+   Order logistics status, available values: ready_for_collection order_collected
+  error_image_url (string)
+   List of image url list the error that have already provided the order at the store. Please ensure the url can be accessible. Only required if user set order_collection_failed. Maximum 1 image to upload and get the image url. All the images should be pure pixel-like elements. 1 face only.
+
+Response Fields (3):
+----------------------------------------------------------------------
+  error (string)
+   Indicate error type if fail error. Empty if no error happened
+  message (string)
+   Indicate error details if fail error. Empty if no error happened
+  request_id (string)
+   The identifier for an API request for error tracking
+
+Metadata:
+----------------------------------------------------------------------
+  total_chunks: 1
+  chunks_with_errors: 0
+  total_parameters_before_dedup: 8
+  total_parameters_after_dedup: 8
+  update_log_entries: 1
+  hidden_fields_count: 0
+  source_results: workspaces\v2.logistics.update_self_collection_order_logistics\results\all_chunks_results.json
+
+======================================================================
+Legend: * = required parameter
+======================================================================

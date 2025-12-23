@@ -1,0 +1,63 @@
+======================================================================
+API SPECIFICATION SUMMARY
+======================================================================
+
+Endpoint: GET v2_shop_item_sale_get_item_criteria
+Description: Get shop item criteria information
+
+Parameters (3):
+----------------------------------------------------------------------
+* partner_id (string)
+   Partner ID to uniquely identify each request. Required for all requests.
+* access_token (string)
+   The token for API access, used to identify your permission to access. Valid for 30 days.
+* shop_id (string)
+   Shopee's unique identifier for a shop. Required param for most APIs.
+
+Response Fields (4):
+----------------------------------------------------------------------
+  request_id (string)
+   The identifier for an API request for error tracking
+  error (string)
+   Indicate error type if exists. Empty if no error happened
+  message (string)
+   Indicate error details if fail exists. Empty if no error happened
+  response (object)
+    catalog_id (int64)
+    min_product_rating (float)
+    time_act_end_after (boolean)
+    min_price_final (int32)
+    min_date_to_ship (int32)
+    max_repetition_day (int32)
+    min_promotion_price (int32)
+     10
+    max_promoted_price (int64)
+     10
+    min_discount (int64)
+     Discount Unit: 10 means 10%
+    max_discount (int64)
+     Discount Unit: 100 means 100%. 1 means no limit
+    min_discount_price (int64)
+     100000000
+    max_discount_price (int64)
+     100000000
+    need_brand_prove (boolean)
+    pre_cfr (int32)
+    category_id (int64)
+    name (string)
+    parent_id (int64)
+    master_stock_category (int64)
+
+Metadata:
+----------------------------------------------------------------------
+  total_chunks: 1
+  chunks_with_errors: 0
+  total_parameters_before_dedup: 3
+  total_parameters_after_dedup: 3
+  update_log_entries: 1
+  hidden_fields_count: 0
+  source_results: workspaces\v2.shop_flash_sale.get_item_criteria\results\all_chunks_results.json
+
+======================================================================
+Legend: * = required parameter
+======================================================================

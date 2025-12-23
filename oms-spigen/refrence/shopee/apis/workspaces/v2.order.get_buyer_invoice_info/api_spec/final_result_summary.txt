@@ -1,0 +1,36 @@
+======================================================================
+API SPECIFICATION SUMMARY
+======================================================================
+
+Endpoint: None None
+
+Parameters (7):
+----------------------------------------------------------------------
+* seller_email (string)
+   卖家邮箱
+* seller_pwd (string)
+   卖家密码
+* api_key (string)
+   API密钥
+* sign_type (string)
+   签名类型
+* sign (string)
+   签名
+  price_currency_id (integer)
+   价格货币ID
+  new_sale_svc_fee_type (string)
+   新销售服务费类型
+
+Metadata:
+----------------------------------------------------------------------
+  total_chunks: 1
+  chunks_with_errors: 0
+  total_parameters_before_dedup: 7
+  total_parameters_after_dedup: 7
+  update_log_entries: 2
+  hidden_fields_count: 0
+  source_results: workspaces\v2.order.get_buyer_invoice_info\results\all_chunks_results.json
+
+======================================================================
+Legend: * = required parameter
+======================================================================

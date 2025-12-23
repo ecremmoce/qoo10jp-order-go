@@ -1,0 +1,40 @@
+======================================================================
+API SPECIFICATION SUMMARY
+======================================================================
+
+Endpoint: POST /api/v2/product/add_item
+Description: Add a product item
+
+Parameters (4):
+----------------------------------------------------------------------
+* seller_id (string)
+   Seller ID
+* buyer_id (string)
+   Buyer ID
+* seller_product_code (string)
+   Seller's product code
+* buyer_email_address (string)
+   Buyer's email address
+
+Response Fields (1):
+----------------------------------------------------------------------
+  result (object)
+   Result object
+    code (string)
+     Response code
+    message (string)
+     Response message
+
+Metadata:
+----------------------------------------------------------------------
+  total_chunks: 1
+  chunks_with_errors: 0
+  total_parameters_before_dedup: 4
+  total_parameters_after_dedup: 4
+  update_log_entries: 1
+  hidden_fields_count: 0
+  source_results: workspaces\v2.product.update_model\results\all_chunks_results.json
+
+======================================================================
+Legend: * = required parameter
+======================================================================

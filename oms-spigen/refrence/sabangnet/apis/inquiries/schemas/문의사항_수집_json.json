@@ -1,0 +1,91 @@
+{
+  "type": "object",
+  "title": "문의사항 수집",
+  "description": "",
+  "required": [
+    "csStDate",
+    "csEdDate"
+  ],
+  "properties": {
+    "csStDate": {
+      "type": "string",
+      "description": "검색 시작일자",
+      "xml_name": "CS_ST_DATE"
+    },
+    "csEdDate": {
+      "type": "string",
+      "description": "검색 마지막일자",
+      "xml_name": "CS_ED_DATE"
+    },
+    "csStatus": {
+      "type": "string",
+      "description": "검색 처리구분",
+      "xml_name": "CS_STATUS"
+    },
+    "비고": {
+      "type": "string",
+      "description": "",
+      "xml_name": "비고"
+    },
+    "문의 등록(수집시) 사방넷에서 부여되는 유니크번호": {
+      "type": "string",
+      "description": "",
+      "xml_name": "문의 등록(수집시) 사방넷에서 부여되는 유니크번호"
+    },
+    "수집된 문의사항의 쇼핑몰명": {
+      "type": "string",
+      "description": "",
+      "xml_name": "수집된 문의사항의 쇼핑몰명"
+    },
+    "수집된 문의사항의 쇼핑몰 로그인아이디": {
+      "type": "string",
+      "description": "",
+      "xml_name": "수집된 문의사항의 쇼핑몰 로그인아이디"
+    },
+    "001:신규접수, 002:답변저장, 003:답변전송, 004:강제완료": {
+      "type": "string",
+      "description": "",
+      "xml_name": "001:신규접수, 002:답변저장, 003:답변전송, 004:강제완료"
+    },
+    "수집일자": {
+      "type": "string",
+      "description": "",
+      "xml_name": "수집일자"
+    },
+    "쇼핑몰 주문번호": {
+      "type": "string",
+      "description": "",
+      "xml_name": "쇼핑몰 주문번호"
+    },
+    "쇼핑몰 상품코드": {
+      "type": "string",
+      "description": "",
+      "xml_name": "쇼핑몰 상품코드"
+    },
+    "질문자": {
+      "type": "string",
+      "description": "",
+      "xml_name": "질문자"
+    },
+    "질문일자": {
+      "type": "string",
+      "description": "",
+      "xml_name": "질문일자"
+    },
+    "문의구분 : 상품문의, q&a,긴급메시지,...": {
+      "type": "string",
+      "description": "",
+      "xml_name": "문의구분 : 상품문의, Q&A,긴급메시지,..."
+    },
+    "품번코드가 존재 할 경우 해당 품번의 자체상품코드": {
+      "type": "string",
+      "description": "",
+      "xml_name": "품번코드가 존재 할 경우 해당 품번의 자체상품코드"
+    },
+    "수집된 cs의 쇼핑몰 코드": {
+      "type": "string",
+      "description": "",
+      "xml_name": "수집된 CS의 쇼핑몰 코드"
+    }
+  }
+}

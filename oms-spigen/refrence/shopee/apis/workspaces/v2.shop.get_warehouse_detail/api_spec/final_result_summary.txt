@@ -1,0 +1,47 @@
+======================================================================
+API SPECIFICATION SUMMARY
+======================================================================
+
+Endpoint: None None
+
+Parameters (2):
+----------------------------------------------------------------------
+* url (string)
+   Request parameter URL
+* url_preview (string)
+   Preview URL
+
+Response Fields (9):
+----------------------------------------------------------------------
+* error (string)
+   Error message when there is an error
+* message_id (string)
+   Message identifier
+* preview_id (string)
+   Preview identifier
+* reference_id (string)
+   Reference address identifier
+* timestamp_text (string)
+   Time reference of the address
+* title (string)
+   Title of your reference address
+* description (string)
+   Description of your reference address
+* cover (string)
+   Cover image of your reference address
+* video_cover_data (object)
+   Video cover data information
+
+Metadata:
+----------------------------------------------------------------------
+  total_chunks: 1
+  chunks_with_errors: 0
+  total_parameters_before_dedup: 2
+  total_parameters_after_dedup: 2
+  update_log_entries: 0
+  hidden_fields_count: 0
+  source_results: workspaces\v2.shop.get_warehouse_detail\results\all_chunks_results.json
+
+======================================================================
+Legend: * = required parameter
+======================================================================

@@ -1,0 +1,76 @@
+{
+  "endpoint": "http://easemob/mobile-dev/debo/main/oapi/global_product/category_recommended",
+  "method": "POST",
+  "description": "Global product category recommended",
+  "parameters": [
+    {
+      "name": "global_id",
+      "type": "string",
+      "required": true,
+      "description": null,
+      "children": []
+    },
+    {
+      "name": "global_proc_code",
+      "type": "string",
+      "required": true,
+      "description": "trade or item",
+      "children": []
+    },
+    {
+      "name": "activity_token",
+      "type": "string",
+      "required": false,
+      "description": null,
+      "children": []
+    },
+    {
+      "name": "age",
+      "type": "string",
+      "required": false,
+      "description": "Statistics parameters system id: pc,app parameter",
+      "children": []
+    }
+  ],
+  "response_fields": [
+    {
+      "name": "msg",
+      "type": "string",
+      "description": "Initialize your book first time. finalize the year initialized"
+    },
+    {
+      "name": "received",
+      "type": "string",
+      "description": "Initialize your server first time finalize the year initialized"
+    },
+    {
+      "name": "received_at",
+      "type": "string",
+      "description": "Initialize money first time finalize the year initialized"
+    }
+  ],
+  "update_log": [
+    {
+      "date": "2023-06-17",
+      "change": "add default value"
+    },
+    {
+      "date": "2023-06-09",
+      "change": "create financial product"
+    },
+    {
+      "date": "2022-04-17",
+      "change": "add global_product_server charge related parameter"
+    }
+  ],
+  "hidden_fields": [],
+  "metadata": {
+    "total_chunks": 1,
+    "chunks_with_errors": 0,
+    "total_parameters_before_dedup": 4,
+    "total_parameters_after_dedup": 4,
+    "update_log_entries": 3,
+    "hidden_fields_count": 0,
+    "source_results": "workspaces\\v2.global_product.category_recommend\\results\\all_chunks_results.json"
+  }
+}

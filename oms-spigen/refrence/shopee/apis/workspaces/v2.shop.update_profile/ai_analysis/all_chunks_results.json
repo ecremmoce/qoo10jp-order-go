@@ -1,0 +1,113 @@
+[
+  {
+    "chunk_index": 1,
+    "total_chunks": 1,
+    "endpoint": "/api/exchange/market/spot/create/batch",
+    "method": "POST",
+    "description": "Create multiple spot orders",
+    "update_log": [],
+    "hidden_fields": [],
+    "parameters": [
+      {
+        "name": "URL",
+        "type": "string",
+        "required": true,
+        "description": "Endpoint URL",
+        "children": []
+      },
+      {
+        "name": "symbol_a",
+        "type": "string",
+        "required": true,
+        "description": "Primary trading token",
+        "children": []
+      },
+      {
+        "name": "symbol_b",
+        "type": "string",
+        "required": true,
+        "description": "Secondary trading token",
+        "children": []
+      },
+      {
+        "name": "side",
+        "type": "string",
+        "required": true,
+        "description": "Trading direction: buy/sell",
+        "children": []
+      },
+      {
+        "name": "price",
+        "type": "string",
+        "required": true,
+        "description": "Order price",
+        "children": []
+      },
+      {
+        "name": "amount",
+        "type": "string",
+        "required": true,
+        "description": "Order amount",
+        "children": []
+      },
+      {
+        "name": "timestamp",
+        "type": "integer",
+        "required": true,
+        "description": "The server time when this order is created",
+        "children": []
+      },
+      {
+        "name": "client_oid",
+        "type": "string",
+        "required": false,
+        "description": "The client oid can be used to identify an order",
+        "children": []
+      },
+      {
+        "name": "time_type",
+        "type": "string",
+        "required": false,
+        "description": "The time type",
+        "children": []
+      },
+      {
+        "name": "order_type",
+        "type": "string",
+        "required": false,
+        "description": "The order type",
+        "children": []
+      }
+    ],
+    "response_fields": [],
+    "error_codes": [
+      {
+        "code": "error_param",
+        "description": "There is no transaction_data in sync"
+      },
+      {
+        "code": "error_data_param",
+        "description": "Invalid data"
+      },
+      {
+        "code": "error_symbol",
+        "description": "Invalid symbol"
+      }
+    ],
+    "notes": "The documentation includes request examples, response examples, and error codes. The API appears to be for creating multiple spot trading orders in a batch operation.",
+    "chunk_metadata": {
+      "index": 1,
+      "total": 1,
+      "y_start": 0,
+      "y_end": 4904,
+      "overlap_top": 0,
+      "overlap_bottom": 0,
+      "height": 4904,
+      "path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\workspaces\\v2.shop.update_profile\\chunks\\chunk_001.png",
+      "filename": "chunk_001.png",
+      "width": 837
+    },
+    "analysis_timestamp": "2025-10-10T06:45:39.954807",
+    "model": "claude-3-5-sonnet-20241022"
+  }
+]

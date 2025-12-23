@@ -1,0 +1,109 @@
+{
+  "endpoint": "/account_health/get_late_orders",
+  "method": "GET",
+  "description": "Get late orders used to help system to avoid order cancellation and penalize scores",
+  "parameters": [
+    {
+      "name": "partner_id",
+      "type": "int",
+      "required": true,
+      "description": "Shopee's unique identifier for a partner",
+      "children": []
+    },
+    {
+      "name": "timestamp",
+      "type": "timestamp",
+      "required": true,
+      "description": "The timestamp of making the request. Required for all requests. Expires in 5 minutes",
+      "children": []
+    },
+    {
+      "name": "access_token",
+      "type": "string",
+      "required": true,
+      "description": "Required for all endpoints. Valid for multiple use and expires in 4 hours",
+      "children": []
+    },
+    {
+      "name": "shop_id",
+      "type": "string",
+      "required": true,
+      "description": "shopee's unique identifier for a shop",
+      "children": []
+    },
+    {
+      "name": "sign",
+      "type": "string",
+      "required": true,
+      "description": "Authentication signature calculated based on parameters",
+      "children": []
+    }
+  ],
+  "response_fields": [
+    {
+      "name": "error",
+      "type": "string",
+      "description": "Indicate error type if an error. Empty if no error happened",
+      "children": []
+    },
+    {
+      "name": "message",
+      "type": "string",
+      "description": "Indicate error detail if Error. Empty if no error happened",
+      "children": []
+    },
+    {
+      "name": "request_id",
+      "type": "string",
+      "description": "The identifier for an API request for error tracing",
+      "children": []
+    },
+    {
+      "name": "response",
+      "type": "object",
+      "description": "",
+      "children": [
+        {
+          "name": "late_orders",
+          "type": "object",
+          "description": "Late Orders",
+          "children": []
+        }
+      ]
+    },
+    {
+      "name": "shipping_deadline",
+      "type": "timestamp",
+      "description": "Shipping Deadline of the order",
+      "children": []
+    },
+    {
+      "name": "late_by_days",
+      "type": "int32",
+      "description": "Late by Days of the order",
+      "children": []
+    },
+    {
+      "name": "total_count",
+      "type": "int32",
+      "description": "Total number of late orders",
+      "children": []
+    }
+  ],
+  "update_log": [
+    {
+      "date": "2024-11-05",
+      "change": "New API"
+    }
+  ],
+  "hidden_fields": [],
+  "metadata": {
+    "total_chunks": 1,
+    "chunks_with_errors": 0,
+    "total_parameters_before_dedup": 5,
+    "total_parameters_after_dedup": 5,
+    "update_log_entries": 1,
+    "hidden_fields_count": 0,
+    "source_results": "workspaces\\v2.account_health.get_late_orders\\results\\all_chunks_results.json"
+  }
+}

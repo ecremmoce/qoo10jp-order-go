@@ -1,0 +1,187 @@
+[
+  {
+    "chunk_index": 1,
+    "endpoint": null,
+    "method": null,
+    "description": null,
+    "parameters": [
+      {
+        "name": "authorized_brand_id",
+        "type": "int64",
+        "required": false,
+        "description": null,
+        "children": []
+      },
+      {
+        "name": "model_list",
+        "type": "array",
+        "required": false,
+        "description": "Model list",
+        "children": []
+      },
+      {
+        "name": "ter_photo",
+        "type": "string",
+        "required": false,
+        "description": null,
+        "children": []
+      },
+      {
+        "name": "model_id",
+        "type": "string",
+        "required": false,
+        "description": "Seller SKU of the model, model_sku length restriction needs to be no more than 100 characters",
+        "children": []
+      },
+      {
+        "name": "original_price",
+        "type": "float",
+        "required": true,
+        "description": "Original price of this model",
+        "children": []
+      },
+      {
+        "name": "seller_stock",
+        "type": "array",
+        "required": false,
+        "description": "Seller stock {Please notice that stock=0,selling_stock=0 means out of stock. Please don't fill the seller_stock>0 when your real stock reached 0}",
+        "children": []
+      },
+      {
+        "name": "location_id",
+        "type": "string",
+        "required": false,
+        "description": "location id",
+        "children": []
+      },
+      {
+        "name": "stock",
+        "type": "int32",
+        "required": true,
+        "description": "stock",
+        "children": []
+      },
+      {
+        "name": "dimension",
+        "type": "object",
+        "required": false,
+        "description": "The dimension of the model. If don't set the dimension of this model, will use the dimension of item by default",
+        "children": []
+      },
+      {
+        "name": "package_length",
+        "type": "int32",
+        "required": true,
+        "description": "The length of package for this model, the unit is CM",
+        "children": []
+      },
+      {
+        "name": "package_width",
+        "type": "int32",
+        "required": true,
+        "description": "The width of package for this model, the unit is CM",
+        "children": []
+      },
+      {
+        "name": "package_height",
+        "type": "int32",
+        "required": true,
+        "description": "The height of package for this model, the unit is CM",
+        "children": []
+      },
+      {
+        "name": "pre_order",
+        "type": "object",
+        "required": false,
+        "description": "Pre-order information of this model",
+        "children": []
+      },
+      {
+        "name": "is_pre_order",
+        "type": "boolean",
+        "required": true,
+        "description": "Whether the model is pre order",
+        "children": []
+      },
+      {
+        "name": "days_to_ship",
+        "type": "int32",
+        "required": false,
+        "description": "Days to ship. Please set the days_to_ship longer than pre_order_days if it's a pre-order item",
+        "children": []
+      }
+    ],
+    "response_fields": [],
+    "chunk_metadata": {
+      "index": 1,
+      "total": 2,
+      "y_start": 0,
+      "y_end": 8000,
+      "overlap_top": 0,
+      "overlap_bottom": 500,
+      "height": 8000,
+      "path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\workspaces\\v2.product.link_ssp\\chunks\\chunk_001.png",
+      "filename": "chunk_001.png",
+      "width": 837
+    },
+    "chunk_path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\workspaces\\v2.product.link_ssp\\chunks\\chunk_001.png"
+  },
+  {
+    "chunk_index": 2,
+    "endpoint": null,
+    "method": null,
+    "description": null,
+    "parameters": [],
+    "response_fields": [
+      {
+        "name": "error",
+        "type": "string",
+        "description": "Indicate error type if hit error. Empty if no error happened",
+        "children": []
+      },
+      {
+        "name": "message",
+        "type": "string",
+        "description": "Indicate error details if hit error. Empty if no error happened",
+        "children": []
+      },
+      {
+        "name": "warning",
+        "type": "string",
+        "description": "Indicate warning details if hit warning. Empty if no warning happened",
+        "children": []
+      },
+      {
+        "name": "request_id",
+        "type": "string",
+        "description": "The identifier for an API request for error tracking",
+        "children": []
+      },
+      {
+        "name": "response",
+        "type": "object",
+        "description": null,
+        "children": []
+      },
+      {
+        "name": "item_id",
+        "type": "int64",
+        "description": "Shopeee's unique identifier for an item",
+        "children": []
+      }
+    ],
+    "chunk_metadata": {
+      "index": 2,
+      "total": 2,
+      "y_start": 7250,
+      "y_end": 10552,
+      "overlap_top": 500,
+      "overlap_bottom": 0,
+      "height": 3302,
+      "path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\workspaces\\v2.product.link_ssp\\chunks\\chunk_002.png",
+      "filename": "chunk_002.png",
+      "width": 837
+    },
+    "chunk_path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\workspaces\\v2.product.link_ssp\\chunks\\chunk_002.png"
+  }
+]

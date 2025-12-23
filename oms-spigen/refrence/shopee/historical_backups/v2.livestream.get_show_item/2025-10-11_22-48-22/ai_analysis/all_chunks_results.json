@@ -1,0 +1,105 @@
+[
+  {
+    "chunk_index": 1,
+    "total_chunks": 1,
+    "endpoint": "/openapi/get_view_json",
+    "method": "GET",
+    "description": "API for retrieving view parameters",
+    "update_log": [
+      {
+        "date": "2023-06-14",
+        "change": "Version 1.0"
+      }
+    ],
+    "parameters": [
+      {
+        "name": "source_id",
+        "type": "string",
+        "required": true,
+        "description": "Parent ID is assigned after registration is successful.",
+        "children": []
+      },
+      {
+        "name": "access_token",
+        "type": "string",
+        "required": true,
+        "description": "The tokens for API system need to identify your permission to access this API.",
+        "children": []
+      },
+      {
+        "name": "sign",
+        "type": "string",
+        "required": true,
+        "description": "Signature",
+        "children": []
+      }
+    ],
+    "response_fields": [
+      {
+        "name": "error",
+        "type": "string",
+        "description": "The name of the error if one occurred",
+        "children": []
+      },
+      {
+        "name": "data_info",
+        "type": "object",
+        "description": "The base info data in the response",
+        "children": []
+      },
+      {
+        "name": "msg_id",
+        "type": "string",
+        "description": "Message identifier for an error",
+        "children": []
+      },
+      {
+        "name": "error_rate",
+        "type": "float",
+        "description": "The error rate of the task",
+        "children": []
+      },
+      {
+        "name": "camera_pos",
+        "type": "float",
+        "description": "The camera position",
+        "children": []
+      },
+      {
+        "name": "camera_proj",
+        "type": "float",
+        "description": "The camera projection",
+        "children": []
+      }
+    ],
+    "error_codes": [
+      {
+        "code": "error_404",
+        "description": "Some data failed"
+      },
+      {
+        "code": "error_present",
+        "description": "Parameter invalid"
+      },
+      {
+        "code": "error_wrong",
+        "description": "Something wrong. Please try later"
+      }
+    ],
+    "notes": "The documentation includes both request parameters and response fields, as well as error codes. The endpoint appears to be part of an OpenAPI implementation for retrieving view-related JSON data.",
+    "chunk_metadata": {
+      "index": 1,
+      "total": 1,
+      "y_start": 0,
+      "y_end": 4672,
+      "overlap_top": 0,
+      "overlap_bottom": 0,
+      "height": 4672,
+      "path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\platforms\\shopee\\apis\\workspaces\\v2.livestream.get_show_item\\chunks\\chunk_001.png",
+      "filename": "chunk_001.png",
+      "width": 837
+    },
+    "analysis_timestamp": "2025-10-11T22:48:21.717795",
+    "model": "claude-3-5-sonnet-20241022"
+  }
+]

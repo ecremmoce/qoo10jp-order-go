@@ -1,0 +1,108 @@
+[
+  {
+    "chunk_index": 1,
+    "total_chunks": 1,
+    "endpoint": "https://platform.shopee/topping/booking",
+    "method": null,
+    "description": "V2 toppling shop_booking",
+    "update_log": [
+      {
+        "date": "2024-01-02",
+        "change": "New API"
+      }
+    ],
+    "parameters": [
+      {
+        "name": "access_token",
+        "type": "string",
+        "required": true,
+        "description": "The token for API access, used to identify your permission to access the data",
+        "children": []
+      },
+      {
+        "name": "time_id",
+        "type": "integer",
+        "required": true,
+        "description": "Partner ID is accepted when negotiation is successful. Required for all requests.",
+        "children": []
+      },
+      {
+        "name": "booking_time",
+        "type": "string",
+        "required": false,
+        "description": "This is to indicate the timestamp of the request. Required for certain partners.",
+        "children": []
+      },
+      {
+        "name": "shop_id",
+        "type": "string",
+        "required": false,
+        "description": "Shopee's unique identifier for a shop. Required params for shop APIs.",
+        "children": []
+      },
+      {
+        "name": "address_id",
+        "type": "string",
+        "required": false,
+        "description": "The identity of address. Retrieved from to toppling/api_booking/address_params",
+        "children": []
+      },
+      {
+        "name": "phone_time_id",
+        "type": "string",
+        "required": false,
+        "description": "Some booking requires may not detail you time or more proper time limit. In such cases, you need get booking proper time first and get correct time limit to arrange a suitable timing for these situations.",
+        "children": []
+      }
+    ],
+    "response_fields": [
+      {
+        "name": "request_id",
+        "type": "string",
+        "description": "The identifier for an API request for error tracking",
+        "children": []
+      },
+      {
+        "name": "error",
+        "type": "string",
+        "description": "error_code",
+        "children": []
+      },
+      {
+        "name": "message",
+        "type": "string",
+        "description": "Invalid access_token",
+        "children": []
+      }
+    ],
+    "error_codes": [
+      {
+        "code": "error_404",
+        "description": "some data failed"
+      },
+      {
+        "code": "error_403",
+        "description": "data not exist"
+      },
+      {
+        "code": "error_401",
+        "description": "operation reject"
+      }
+    ],
+    "notes": "The documentation shows both Chinese and English versions of the API URLs. The error codes section appears to be truncated as there are more error codes visible in the image but cut off.",
+    "chunk_metadata": {
+      "index": 1,
+      "total": 1,
+      "y_start": 0,
+      "y_end": 4077,
+      "overlap_top": 0,
+      "overlap_bottom": 0,
+      "height": 4077,
+      "path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\workspaces\\v2.logistics.ship_booking\\chunks\\chunk_001.png",
+      "filename": "chunk_001.png",
+      "width": 837
+    },
+    "analysis_timestamp": "2025-10-10T06:07:43.753880",
+    "model": "claude-3-5-sonnet-20241022"
+  }
+]

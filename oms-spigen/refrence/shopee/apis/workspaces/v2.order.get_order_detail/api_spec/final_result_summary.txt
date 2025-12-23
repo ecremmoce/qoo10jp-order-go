@@ -1,0 +1,70 @@
+======================================================================
+API SPECIFICATION SUMMARY
+======================================================================
+
+Endpoint: POST /api/v2/conversations/{CONVERSATION_ID}/messages
+Description: Send a message in a conversation
+
+Parameters (2):
+----------------------------------------------------------------------
+* conversation_id (string)
+   The ID of the conversation
+* body (object)
+   Message content
+  * type (string)
+     Message type, can be 'comment' or 'activity'
+  * content (string)
+     The message content
+    message_type (string)
+     Type of incoming message
+    private (boolean)
+     If true, message will be private
+    attachments (array)
+     Array of attachments
+
+Response Fields (8):
+----------------------------------------------------------------------
+  id (integer)
+   Message ID
+  content (string)
+   Message content
+  message_type (string)
+   Type of message
+  content_type (string)
+   Content type of message
+  created_at (string)
+   Creation timestamp
+  private (boolean)
+   Privacy status
+  attachments (array)
+   Attached files
+  conversation (object)
+   Conversation details
+    id (integer)
+     Conversation ID
+    inbox_id (integer)
+     ID of associated inbox
+    status (string)
+     Current conversation status
+    timestamp (string)
+     Timestamp of conversation
+    contact_last_seen_at (string)
+     When contact was last active
+    agent_last_seen_at (string)
+     When agent was last active
+    additional_attributes (object)
+     Additional conversation attributes
+
+Metadata:
+----------------------------------------------------------------------
+  total_chunks: 2
+  chunks_with_errors: 0
+  total_parameters_before_dedup: 2
+  total_parameters_after_dedup: 2
+  update_log_entries: 0
+  hidden_fields_count: 0
+  source_results: workspaces\v2.order.get_order_detail\results\all_chunks_results.json
+
+======================================================================
+Legend: * = required parameter
+======================================================================

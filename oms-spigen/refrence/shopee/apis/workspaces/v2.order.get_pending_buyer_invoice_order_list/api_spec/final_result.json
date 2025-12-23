@@ -1,0 +1,67 @@
+{
+  "endpoint": "/v1/store/get_pending_home_owner_order_list",
+  "method": "GET",
+  "description": "The endpoint gets pending home orders. You can't combine each order to select a list to view by the pre-paying home based owner",
+  "parameters": [
+    {
+      "name": "offset",
+      "type": "string",
+      "required": false,
+      "description": "Identifies the starting point of data to return in the data set",
+      "children": []
+    },
+    {
+      "name": "limit",
+      "type": "integer",
+      "required": false,
+      "description": "Each result set is returned as a page of information, max numbers of entries to retrieve per request, max page size=1000, default=50",
+      "children": []
+    },
+    {
+      "name": "result_id",
+      "type": "string",
+      "required": false,
+      "description": "Previous id to request given pagination is correctly sorted by id. Required",
+      "children": []
+    },
+    {
+      "name": "type",
+      "type": "string",
+      "required": false,
+      "description": "This is to define the hierarchy of the header. Required to return null for this request",
+      "children": []
+    },
+    {
+      "name": "store_id",
+      "type": "string",
+      "required": false,
+      "description": "2021/09/16/0360",
+      "children": []
+    }
+  ],
+  "response_fields": [],
+  "update_log": [
+    {
+      "date": "2024-03-14",
+      "change": "Update the description, supporting the full text index to use this API"
+    },
+    {
+      "date": "2024-01-11",
+      "change": "Update API description"
+    },
+    {
+      "date": "2021-09-16",
+      "change": "Update API"
+    }
+  ],
+  "hidden_fields": [],
+  "metadata": {
+    "total_chunks": 1,
+    "chunks_with_errors": 0,
+    "total_parameters_before_dedup": 5,
+    "total_parameters_after_dedup": 5,
+    "update_log_entries": 3,
+    "hidden_fields_count": 0,
+    "source_results": "workspaces\\v2.order.get_pending_buyer_invoice_order_list\\results\\all_chunks_results.json"
+  }
+}

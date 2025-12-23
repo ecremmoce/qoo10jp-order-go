@@ -1,0 +1,115 @@
+[
+  {
+    "chunk_index": 1,
+    "total_chunks": 1,
+    "endpoint": null,
+    "method": null,
+    "description": null,
+    "update_log": [],
+    "hidden_fields": [],
+    "parameters": [
+      {
+        "name": "file",
+        "type": "string",
+        "required": true,
+        "description": "Base64-encoded file content",
+        "truncated": false,
+        "continued": false,
+        "children": []
+      },
+      {
+        "name": "file_url",
+        "type": "string",
+        "required": false,
+        "description": "Remote file URL",
+        "truncated": false,
+        "continued": false,
+        "children": []
+      },
+      {
+        "name": "content",
+        "type": "string",
+        "required": false,
+        "description": "Content text",
+        "truncated": false,
+        "continued": false,
+        "children": []
+      },
+      {
+        "name": "access_token",
+        "type": "string",
+        "required": true,
+        "description": "API access token",
+        "truncated": false,
+        "continued": false,
+        "children": []
+      }
+    ],
+    "response_fields": [
+      {
+        "name": "error",
+        "type": "string",
+        "description": "Indicates error type if any. Empty if no error occurred"
+      },
+      {
+        "name": "message",
+        "type": "string",
+        "description": "Error message"
+      },
+      {
+        "name": "result_id",
+        "type": "string",
+        "description": "Task ID"
+      }
+    ],
+    "error_codes": [
+      {
+        "code": "error_param",
+        "description": "There is no media, before or after"
+      },
+      {
+        "code": "error_url",
+        "description": "Invalid source_token"
+      },
+      {
+        "code": "error_file",
+        "description": "Something wrong. Please try later"
+      },
+      {
+        "code": "error_size",
+        "description": "Invalid file size"
+      },
+      {
+        "code": "error_type",
+        "description": "Invalid file type"
+      },
+      {
+        "code": "error_token",
+        "description": "Invalid token"
+      },
+      {
+        "code": "error_task",
+        "description": "Task not found"
+      },
+      {
+        "code": "error_permission",
+        "description": "Permission denied"
+      }
+    ],
+    "notes": "The documentation appears to be for a file upload or media processing API. It includes common parameters, response fields, and a comprehensive list of error codes. The parameters section shows both file upload options (base64, URL) and content text options.",
+    "chunk_metadata": {
+      "index": 1,
+      "total": 1,
+      "y_start": 0,
+      "y_end": 4938,
+      "overlap_top": 0,
+      "overlap_bottom": 0,
+      "height": 4938,
+      "path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\workspaces\\v2.product.delete_model\\chunks\\chunk_001.png",
+      "filename": "chunk_001.png",
+      "width": 837
+    },
+    "analysis_timestamp": "2025-10-10T06:24:57.375892",
+    "model": "claude-3-5-sonnet-20241022"
+  }
+]

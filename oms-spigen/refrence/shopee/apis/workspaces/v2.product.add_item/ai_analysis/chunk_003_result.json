@@ -1,0 +1,42 @@
+{
+  "chunk_index": 3,
+  "endpoint": null,
+  "method": null,
+  "description": null,
+  "parameters": [],
+  "response_fields": [
+    {
+      "name": "error_price_exceed_min_limitl",
+      "type": "string",
+      "description": "Original_price is less than min price limit"
+    },
+    {
+      "name": "error_price_exceed_max_limitl",
+      "type": "string",
+      "description": "Original_price is bigger than max price limit"
+    },
+    {
+      "name": "error_wholesale_price_less_than_ratio_limit",
+      "type": "string",
+      "description": "Wholesale price is less than ratio limit"
+    },
+    {
+      "name": "error_param_category_not_support_pre_order",
+      "type": "string",
+      "description": "Category does not support pre-order"
+    }
+  ],
+  "chunk_metadata": {
+    "index": 3,
+    "total": 4,
+    "y_start": 15017,
+    "y_end": 23017,
+    "overlap_top": 500,
+    "overlap_bottom": 500,
+    "height": 8000,
+    "path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\workspaces\\v2.product.add_item\\chunks\\chunk_003.png",
+    "filename": "chunk_003.png",
+    "width": 837
+  },
+  "chunk_path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\workspaces\\v2.product.add_item\\chunks\\chunk_003.png"
+}

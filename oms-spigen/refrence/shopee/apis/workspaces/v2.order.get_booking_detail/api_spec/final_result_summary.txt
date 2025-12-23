@@ -1,0 +1,46 @@
+======================================================================
+API SPECIFICATION SUMMARY
+======================================================================
+
+Endpoint: GET /api/v2/goods/getShopGoodsRebateBatchList
+Description: Get shop goods rebate batch list
+
+Parameters (3):
+----------------------------------------------------------------------
+* shop_id (integer)
+   Shop ID
+* current_page (integer)
+   Current page number
+* page_size (integer)
+   Number of items per page
+
+Response Fields (2):
+----------------------------------------------------------------------
+  total (integer)
+   Total number of records
+  data (array)
+   List of rebate batch data
+    batch_id (string)
+     Batch ID
+    batch_name (string)
+     Batch name
+    create_time (string)
+     Creation time
+    status (integer)
+     Status code
+    status_desc (string)
+     Status description
+
+Metadata:
+----------------------------------------------------------------------
+  total_chunks: 1
+  chunks_with_errors: 0
+  total_parameters_before_dedup: 3
+  total_parameters_after_dedup: 3
+  update_log_entries: 0
+  hidden_fields_count: 0
+  source_results: workspaces\v2.order.get_booking_detail\results\all_chunks_results.json
+
+======================================================================
+Legend: * = required parameter
+======================================================================

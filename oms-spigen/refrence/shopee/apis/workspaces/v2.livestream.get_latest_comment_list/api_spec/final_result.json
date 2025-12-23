@@ -1,0 +1,102 @@
+{
+  "endpoint": "/api/benchmark/get_latest_comment_list",
+  "method": "GET",
+  "description": null,
+  "parameters": [
+    {
+      "name": "partner_id",
+      "type": "int",
+      "required": true,
+      "description": "Partner ID or project and regulation is provided",
+      "children": []
+    },
+    {
+      "name": "access_token",
+      "type": "string",
+      "required": true,
+      "description": "Access token",
+      "children": []
+    },
+    {
+      "name": "post_id",
+      "type": "int",
+      "required": true,
+      "description": null,
+      "children": []
+    },
+    {
+      "name": "sign",
+      "type": "string",
+      "required": true,
+      "description": "Signature parameter to request in different APIs",
+      "children": []
+    }
+  ],
+  "response_fields": [
+    {
+      "name": "message",
+      "type": "string",
+      "description": "Response message type text. Equals the error response",
+      "children": []
+    },
+    {
+      "name": "request_id",
+      "type": "string",
+      "description": "The identifier for each request",
+      "children": []
+    },
+    {
+      "name": "response",
+      "type": "object",
+      "description": "Detail information you are querying",
+      "children": []
+    },
+    {
+      "name": "ret_offset",
+      "type": "int",
+      "description": "The offset for next page request",
+      "children": []
+    },
+    {
+      "name": "comment_id",
+      "type": "int",
+      "description": "The identifier of comment",
+      "children": []
+    },
+    {
+      "name": "content",
+      "type": "string",
+      "description": "The content of comments",
+      "children": []
+    },
+    {
+      "name": "timestamp",
+      "type": "timestamp",
+      "description": "Timestamp for storing comment info use",
+      "children": []
+    },
+    {
+      "name": "user_id",
+      "type": "int",
+      "description": "The user id of the one who posted the comment",
+      "children": []
+    },
+    {
+      "name": "complete",
+      "type": "bool",
+      "description": "The complete of the one who posted",
+      "children": []
+    }
+  ],
+  "update_log": [],
+  "hidden_fields": [],
+  "metadata": {
+    "total_chunks": 1,
+    "chunks_with_errors": 0,
+    "total_parameters_before_dedup": 4,
+    "total_parameters_after_dedup": 4,
+    "update_log_entries": 0,
+    "hidden_fields_count": 0,
+    "source_results": "workspaces\\v2.livestream.get_latest_comment_list\\results\\all_chunks_results.json"
+  }
+}

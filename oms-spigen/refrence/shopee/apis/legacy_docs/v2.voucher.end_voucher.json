@@ -1,0 +1,71 @@
+{
+  "endpoint": "/api/wechat/mini_voucher",
+  "method": null,
+  "description": null,
+  "parameters": [
+    {
+      "name": "voucher_id",
+      "type": "string",
+      "required": true,
+      "description": "The base for id system, using a stable code generated in the api. Will be valid for voucher list.",
+      "children": []
+    },
+    {
+      "name": "shop_id",
+      "type": "integer",
+      "required": true,
+      "description": "Shopping center identifier for a shop. Required parts for the api",
+      "children": []
+    },
+    {
+      "name": "partner_id",
+      "type": "string",
+      "required": true,
+      "description": null,
+      "children": []
+    }
+  ],
+  "response_fields": [
+    {
+      "name": "error",
+      "type": "string",
+      "description": "Indicates error type if true error. Empty if no error happened"
+    },
+    {
+      "name": "message",
+      "type": "string",
+      "description": "Indicates error details if any error. Empty if no error"
+    },
+    {
+      "name": "success",
+      "type": "boolean",
+      "description": "Standard response code of success true or false"
+    },
+    {
+      "name": "response",
+      "type": "object",
+      "description": "Response information you are querying"
+    },
+    {
+      "name": "partner_id",
+      "type": "string",
+      "description": "The unique identifier for the voucher it is being queried"
+    }
+  ],
+  "update_log": [
+    {
+      "date": "2023-06-27",
+      "change": "Initial API release"
+    }
+  ],
+  "hidden_fields": [],
+  "metadata": {
+    "total_chunks": 1,
+    "chunks_with_errors": 0,
+    "total_parameters_before_dedup": 3,
+    "total_parameters_after_dedup": 3,
+    "update_log_entries": 1,
+    "hidden_fields_count": 0,
+    "source_results": "workspaces\\v2.voucher.end_voucher\\results\\all_chunks_results.json"
+  }
+}

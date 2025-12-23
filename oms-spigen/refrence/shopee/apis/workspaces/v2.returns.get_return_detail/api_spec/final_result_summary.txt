@@ -1,0 +1,42 @@
+======================================================================
+API SPECIFICATION SUMMARY
+======================================================================
+
+Endpoint: GET /ping
+Description: Simple ping endpoint to test API connectivity
+
+Parameters (2):
+----------------------------------------------------------------------
+* user_credentials (object)
+  * email (string)
+     User's email address
+  * password (string)
+     User's password
+  server_settings (object)
+  * region (string)
+     Server region code
+    timeout (integer)
+     Connection timeout in seconds
+
+Response Fields (2):
+----------------------------------------------------------------------
+  status (string)
+   Response status message
+  data (object)
+   Response payload
+    session_token (string)
+     Authentication token
+
+Metadata:
+----------------------------------------------------------------------
+  total_chunks: 2
+  chunks_with_errors: 0
+  total_parameters_before_dedup: 2
+  total_parameters_after_dedup: 2
+  update_log_entries: 0
+  hidden_fields_count: 0
+  source_results: workspaces\v2.returns.get_return_detail\results\all_chunks_results.json
+
+======================================================================
+Legend: * = required parameter
+======================================================================

@@ -1,0 +1,98 @@
+{
+  "chunk_index": 1,
+  "total_chunks": 1,
+  "endpoint": "/bundle_deal_api_access/bundle_deal_text",
+  "method": null,
+  "description": null,
+  "update_log": [
+    {
+      "date": "2021-08-04",
+      "change": "Added input by user parameters"
+    },
+    {
+      "date": "2021-06-15",
+      "change": "Add 418 in bundle validation"
+    },
+    {
+      "date": "2021-04-01",
+      "change": "Update the bundle validation of Request Parameter and Response Parameter"
+    }
+  ],
+  "parameters": [
+    {
+      "name": "bundle_deal_id",
+      "type": "string",
+      "required": true,
+      "description": "Platform ID assigned after registration is successful",
+      "children": []
+    },
+    {
+      "name": "article_point",
+      "type": "string",
+      "required": true,
+      "description": "The point this API visitor calls to identify your permission to use the API",
+      "children": []
+    },
+    {
+      "name": "msg_id",
+      "type": "string",
+      "required": true,
+      "description": "Message ID. Format prefix is [article_point]_[partner_key]_[time]",
+      "children": []
+    }
+  ],
+  "response_fields": [
+    {
+      "name": "error",
+      "type": "object",
+      "description": "Error response object",
+      "children": [
+        {
+          "name": "code",
+          "type": "integer",
+          "description": "Error code",
+          "children": []
+        },
+        {
+          "name": "message",
+          "type": "string",
+          "description": "Error message",
+          "children": []
+        }
+      ]
+    }
+  ],
+  "error_codes": [
+    {
+      "code": "bundle_deal_not_exist",
+      "description": "Bundle deal doesn't exist"
+    },
+    {
+      "code": "error_point",
+      "description": "There is no access_token in point"
+    },
+    {
+      "code": "error_get",
+      "description": "No permission to access api"
+    },
+    {
+      "code": "error_params",
+      "description": "Wrong params"
+    }
+  ],
+  "notes": "The image shows an API documentation page with common parameters, request parameters, response parameters, error examples and error codes. Some sections appear to be collapsible based on the UI elements shown.",
+  "chunk_metadata": {
+    "index": 1,
+    "total": 1,
+    "y_start": 0,
+    "y_end": 4625,
+    "overlap_top": 0,
+    "overlap_bottom": 0,
+    "height": 4625,
+    "path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\workspaces\\v2.bundle_deal.get_bundle_deal_item\\chunks\\chunk_001.png",
+    "filename": "chunk_001.png",
+    "width": 837
+  },
+  "analysis_timestamp": "2025-10-10T05:34:45.361861",
+  "model": "claude-3-5-sonnet-20241022"
+}

@@ -2,12 +2,15 @@ package supabase
 
 import (
 	"bytes"
+	"database/sql"
 	"encoding/json"
 	"fmt"
 	"io"
 	"net/http"
-	"qoo10jp-order-go/internal/config"
+	"shopee-order-go/internal/config"
 	"strings"
+	
+	_ "github.com/lib/pq"
 )
 
 type Client struct {
@@ -15,6 +18,7 @@ type Client struct {
 	anonKey    string
 	serviceKey string
 	httpClient *http.Client
+	db         *sql.DB
 }
 
 func NewClient(cfg config.SupabaseConfig) (*Client, error) {
@@ -32,7 +36,7 @@ func NewClient(cfg config.SupabaseConfig) (*Client, error) {
 
 func (c *Client) Insert(table string, data interface{}) error {
 	url := fmt.Sprintf("%s/rest/v1/%s", c.baseURL, table)
-	
+
 	jsonData, err := json.Marshal(data)
 	if err != nil {
 		return err
@@ -155,7 +159,7 @@ func (c *Client) Delete(table string, query string) error {
 // BulkInsert 벌크 삽입 (배열 데이터를 한 번에 삽입)
 func (c *Client) BulkInsert(table string, data interface{}) error {
 	url := fmt.Sprintf("%s/rest/v1/%s", c.baseURL, table)
-	
+
 	jsonData, err := json.Marshal(data)
 	if err != nil {
 		return err
@@ -186,7 +190,7 @@ func (c *Client) BulkInsert(table string, data interface{}) error {
 // BulkUpsert 벌크 업서트 (존재하면 업데이트, 없으면 삽입)
 func (c *Client) BulkUpsert(table string, data interface{}, conflictColumns ...string) error {
 	url := fmt.Sprintf("%s/rest/v1/%s", c.baseURL, table)
-	
+
 	jsonData, err := json.Marshal(data)
 	if err != nil {
 		return err
@@ -198,7 +202,7 @@ func (c *Client) BulkUpsert(table string, data interface{}, conflictColumns ...s
 	}
 
 	c.setHeaders(req)
-	
+
 	// UPSERT를 위한 헤더 설정
 	if len(conflictColumns) > 0 {
 		onConflict := strings.Join(conflictColumns, ",")
@@ -231,7 +235,7 @@ func (c *Client) SelectIn(table string, column string, values []string, addition
 	// IN 쿼리 생성
 	inValues := fmt.Sprintf("(%s)", strings.Join(values, ","))
 	query := fmt.Sprintf("%s=in.%s", column, inValues)
-	
+
 	if additionalQuery != "" {
 		query += "&" + additionalQuery
 	}
@@ -247,7 +251,7 @@ func (c *Client) BulkDelete(table string, column string, values []string) error 
 
 	inValues := fmt.Sprintf("(%s)", strings.Join(values, ","))
 	query := fmt.Sprintf("%s=in.%s", column, inValues)
-	
+
 	return c.Delete(table, query)
 }
 
@@ -259,4 +263,21 @@ func (c *Client) setHeaders(req *http.Request) {
 	} else {
 		req.Header.Set("Authorization", "Bearer "+c.anonKey)
 	}
+}
+
+// ExecuteSQL executes raw SQL query (for direct Postgres access if DB connection is available)
+// Note: This is a simplified version. For production, use proper database/sql connection
+func (c *Client) ExecuteSQL(query string, args ...interface{}) (sql.Result, error) {
+	if c.db != nil {
+		return c.db.Exec(query, args...)
+	}
+	return nil, fmt.Errorf("database connection not available - use REST API methods instead")
+}
+
+// Query executes a SQL query and returns rows
+func (c *Client) Query(query string, args ...interface{}) (*sql.Rows, error) {
+	if c.db != nil {
+		return c.db.Query(query, args...)
+	}
+	return nil, fmt.Errorf("database connection not available - use REST API methods instead")
 }

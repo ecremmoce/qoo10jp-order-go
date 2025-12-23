@@ -1,0 +1,90 @@
+{
+  "endpoint": null,
+  "method": null,
+  "description": null,
+  "parameters": [
+    {
+      "name": "time_gate",
+      "type": "string",
+      "required": true,
+      "description": "The parameter is not full visible",
+      "truncated": true,
+      "children": []
+    },
+    {
+      "name": "time_gate_message_text",
+      "type": "string",
+      "required": false,
+      "description": "Message displayed when time record fails during waiting time",
+      "children": []
+    },
+    {
+      "name": "time_gate_interval",
+      "type": "integer",
+      "required": false,
+      "description": "Added rate limit for each user",
+      "children": []
+    },
+    {
+      "name": "time_gate_first_wait_fail",
+      "type": "string",
+      "required": false,
+      "description": "Default time to fail if situation is either case starts",
+      "children": []
+    },
+    {
+      "name": "time_gate_fail_this_fail",
+      "type": "string",
+      "required": false,
+      "description": "This will fail once all specific fails fail to start sync",
+      "children": []
+    },
+    {
+      "name": "time_gate_all_fail",
+      "type": "string",
+      "required": false,
+      "description": "Then verify if time sync doesn't fail much",
+      "children": []
+    },
+    {
+      "name": "time_gate_all_on_hold",
+      "type": "string",
+      "required": false,
+      "description": "Process each hold in queue + add check",
+      "children": []
+    },
+    {
+      "name": "error_code",
+      "type": "string",
+      "required": false,
+      "description": "Return error code for failed system",
+      "children": []
+    },
+    {
+      "name": "error_message",
+      "type": "string",
+      "required": false,
+      "description": "Error message for failed system",
+      "children": []
+    },
+    {
+      "name": "error_stack",
+      "type": "string",
+      "required": false,
+      "description": "Error stack trace for queue",
+      "children": []
+    }
+  ],
+  "response_fields": [],
+  "update_log": [],
+  "hidden_fields": [],
+  "metadata": {
+    "total_chunks": 1,
+    "chunks_with_errors": 0,
+    "total_parameters_before_dedup": 10,
+    "total_parameters_after_dedup": 10,
+    "update_log_entries": 0,
+    "hidden_fields_count": 0,
+    "source_results": "workspaces\\v2.follow_prize.update_follow_prize\\results\\all_chunks_results.json"
+  }
+}

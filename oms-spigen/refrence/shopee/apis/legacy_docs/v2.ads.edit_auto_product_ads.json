@@ -1,0 +1,67 @@
+{
+  "endpoint": "/api/user/auth_product_ads",
+  "method": "POST",
+  "description": "Product advertisement authorization",
+  "parameters": [
+    {
+      "name": "open_url",
+      "type": "string",
+      "required": true,
+      "description": "The URL for advertisement",
+      "children": []
+    },
+    {
+      "name": "url_title",
+      "type": "string",
+      "required": true,
+      "description": "Advertisement content title",
+      "children": []
+    },
+    {
+      "name": "url_desc",
+      "type": "string",
+      "required": true,
+      "description": "Advertisement content description",
+      "children": []
+    },
+    {
+      "name": "access_token",
+      "type": "string",
+      "required": true,
+      "description": "This is a standard app request parameter",
+      "children": []
+    },
+    {
+      "name": "image_url",
+      "type": "string",
+      "required": false,
+      "description": "The image URL for the icon/header link",
+      "children": []
+    },
+    {
+      "name": "mini_app",
+      "type": "string",
+      "required": false,
+      "description": "Mini app identifier",
+      "children": []
+    }
+  ],
+  "response_fields": [
+    {
+      "name": "message_id",
+      "type": "string",
+      "description": "Unique identifier for a message"
+    }
+  ],
+  "update_log": [],
+  "hidden_fields": [],
+  "metadata": {
+    "total_chunks": 1,
+    "chunks_with_errors": 0,
+    "total_parameters_before_dedup": 6,
+    "total_parameters_after_dedup": 6,
+    "update_log_entries": 0,
+    "hidden_fields_count": 0,
+    "source_results": "workspaces\\v2.ads.edit_auto_product_ads\\results\\all_chunks_results.json"
+  }
+}

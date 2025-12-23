@@ -1,0 +1,122 @@
+{
+  "chunk_index": 1,
+  "total_chunks": 1,
+  "endpoint": "http://example.com/cloud-cart/v3/{client_id}_market_cart_op_data",
+  "method": null,
+  "description": null,
+  "update_log": [],
+  "hidden_fields": [],
+  "parameters": [
+    {
+      "name": "client_id",
+      "type": "string",
+      "required": true,
+      "description": "Partner ID is passed by partner registration in merchant.",
+      "children": []
+    },
+    {
+      "name": "access_token",
+      "type": "string",
+      "required": true,
+      "description": "This is a standard token obtained from the cart authentication API in merchant.",
+      "children": []
+    },
+    {
+      "name": "sign",
+      "type": "string",
+      "required": true,
+      "description": "The sign rule of the API request for each permission.",
+      "children": []
+    },
+    {
+      "name": "app",
+      "type": "string",
+      "required": true,
+      "description": "First code",
+      "children": []
+    },
+    {
+      "name": "request_id",
+      "type": "string",
+      "required": true,
+      "description": "The identifier of the API request for each request",
+      "children": []
+    },
+    {
+      "name": "v",
+      "type": "string",
+      "required": true,
+      "description": "The first letter of the date at this article",
+      "children": []
+    },
+    {
+      "name": "tws_time",
+      "type": "int",
+      "required": true,
+      "description": "Timestamp",
+      "children": []
+    },
+    {
+      "name": "tws_biz",
+      "type": "int",
+      "required": true,
+      "description": "The first part of the date at this article",
+      "children": []
+    },
+    {
+      "name": "cart_get_limit",
+      "type": "int",
+      "required": true,
+      "description": "Maximum number of gift which can be get",
+      "children": []
+    },
+    {
+      "name": "promotion_purchase_limit",
+      "type": "int",
+      "required": true,
+      "description": "Max. number of whole products that a promotion can purchase",
+      "children": []
+    },
+    {
+      "name": "cart_op_data_all",
+      "type": "string",
+      "required": true,
+      "description": "The id for cart at last",
+      "children": []
+    }
+  ],
+  "response_fields": [],
+  "error_codes": [
+    {
+      "code": "shipping_area",
+      "description": "Invalid shipping area"
+    },
+    {
+      "code": "shipping_date",
+      "description": "Invalid shipping date"
+    },
+    {
+      "code": "store_error",
+      "description": "There is no gift in store"
+    },
+    {
+      "code": "wrong_sign",
+      "description": "Wrong sign"
+    }
+  ],
+  "notes": "The documentation shows both common parameters and response parameters. There are also error codes listed at the bottom. The endpoint appears to be for cart operations with authentication and various limits.",
+  "chunk_metadata": {
+    "index": 1,
+    "total": 1,
+    "y_start": 0,
+    "y_end": 4899,
+    "overlap_top": 0,
+    "overlap_bottom": 0,
+    "height": 4899,
+    "path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\workspaces\\v2.add_on_deal.get_add_on_deal\\chunks\\chunk_001.png",
+    "filename": "chunk_001.png",
+    "width": 837
+  },
+  "analysis_timestamp": "2025-10-10T05:25:17.403652",
+  "model": "claude-3-5-sonnet-20241022"
+}

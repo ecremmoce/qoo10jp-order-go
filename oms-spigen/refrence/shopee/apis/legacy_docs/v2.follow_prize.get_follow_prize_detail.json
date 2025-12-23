@@ -1,0 +1,96 @@
+{
+  "endpoint": "/private_photo/your_photo_pro.dtpd",
+  "method": null,
+  "description": null,
+  "parameters": [
+    {
+      "name": "id",
+      "type": "string",
+      "required": true,
+      "description": "Http://domain.example.com/photo/show_private_photo_pro.dtpd",
+      "children": []
+    },
+    {
+      "name": "length",
+      "type": "integer",
+      "required": true,
+      "description": null,
+      "children": []
+    },
+    {
+      "name": "offset",
+      "type": "string",
+      "required": true,
+      "description": "The row number set by the request frame",
+      "children": []
+    }
+  ],
+  "response_fields": [
+    {
+      "name": "created",
+      "type": "string",
+      "description": "Upload information via url sending"
+    },
+    {
+      "name": "create_at",
+      "type": "string",
+      "description": "The date of latest add by payment"
+    },
+    {
+      "name": "img_quality",
+      "type": "string",
+      "description": "Default value set by request frame"
+    },
+    {
+      "name": "url_pro",
+      "type": "string",
+      "description": "The photo url link provided"
+    },
+    {
+      "name": "url_guest",
+      "type": "string",
+      "description": "The url for guest use"
+    },
+    {
+      "name": "total_price",
+      "type": "string",
+      "description": "Total price that is free for this time"
+    },
+    {
+      "name": "guest_amount",
+      "type": "string",
+      "description": "Your total fee"
+    },
+    {
+      "name": "guest_count",
+      "type": "integer",
+      "description": "View guest count"
+    },
+    {
+      "name": "url_pics",
+      "type": "string",
+      "description": "The url sent of the uploaded store site"
+    },
+    {
+      "name": "style",
+      "type": "string",
+      "description": "Upload style set by frame. Default set to 6"
+    },
+    {
+      "name": "group_id",
+      "type": "string",
+      "description": "picture/biography/life/beauty/life/set"
+    }
+  ],
+  "update_log": [],
+  "hidden_fields": [],
+  "metadata": {
+    "total_chunks": 1,
+    "chunks_with_errors": 0,
+    "total_parameters_before_dedup": 3,
+    "total_parameters_after_dedup": 3,
+    "update_log_entries": 0,
+    "hidden_fields_count": 0,
+    "source_results": "workspaces\\v2.follow_prize.get_follow_prize_detail\\results\\all_chunks_results.json"
+  }
+}

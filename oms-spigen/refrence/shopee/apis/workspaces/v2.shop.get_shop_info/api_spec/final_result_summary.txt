@@ -1,0 +1,40 @@
+======================================================================
+API SPECIFICATION SUMMARY
+======================================================================
+
+Endpoint: POST /api/v2/login
+Description: Login authentication API
+
+Parameters (2):
+----------------------------------------------------------------------
+* username (string)
+   Login username/email
+* password (string)
+   Login password
+
+Response Fields (3):
+----------------------------------------------------------------------
+  code (integer)
+   Response status code
+  message (string)
+   Response message
+  data (object)
+   Response data object
+    token (string)
+     Authentication token
+    expires_in (integer)
+     Token expiration time in seconds
+
+Metadata:
+----------------------------------------------------------------------
+  total_chunks: 1
+  chunks_with_errors: 0
+  total_parameters_before_dedup: 2
+  total_parameters_after_dedup: 2
+  update_log_entries: 2
+  hidden_fields_count: 0
+  source_results: workspaces\v2.shop.get_shop_info\results\all_chunks_results.json
+
+======================================================================
+Legend: * = required parameter
+======================================================================

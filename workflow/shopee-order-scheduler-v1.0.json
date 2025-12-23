@@ -1,0 +1,236 @@
+{
+  "name": "shopee-order-scheduler-v1.0",
+  "nodes": [
+    {
+      "parameters": {
+        "triggerTimes": {
+          "item": [
+            {
+              "mode": "everyMinute"
+            }
+          ]
+        }
+      },
+      "name": "Every 5 Minutes",
+      "type": "n8n-nodes-base.cron",
+      "typeVersion": 1,
+      "position": [
+        -432,
+        -16
+      ],
+      "id": "13a0584a-c767-4fd3-8988-558e8b11866a"
+    },
+    {
+      "parameters": {
+        "operation": "getAll",
+        "tableId": "shopee_access_tokens",
+        "returnAll": true,
+        "matchType": "allFilters",
+        "filters": {
+          "conditions": [
+            {
+              "keyName": "is_active",
+              "condition": "eq",
+              "keyValue": "true"
+            }
+          ]
+        },
+        "options": {
+          "select": "*, sales_platform_accounts_shopee!inner(shop_name)"
+        }
+      },
+      "name": "Get Active Accounts",
+      "type": "n8n-nodes-base.supabase",
+      "typeVersion": 1,
+      "position": [
+        -224,
+        -16
+      ],
+      "id": "1869e07a-bedd-4914-8503-2b595058da75",
+      "credentials": {
+        "supabaseApi": {
+          "id": "2decYS56WYHYUPWi",
+          "name": "Supabase account-acsell"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "string": [
+            {
+              "value1": "={{ $input.all().length }}",
+              "operation": "isNotEmpty"
+            }
+          ]
+        }
+      },
+      "name": "Check If Accounts Exist",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 1,
+      "position": [
+        -32,
+        -16
+      ],
+      "id": "ab4c3124-49de-4420-9b02-7d05c33dfd7f"
+    },
+    {
+      "parameters": {
+        "options": {}
+      },
+      "name": "Split Each Account",
+      "type": "n8n-nodes-base.splitInBatches",
+      "typeVersion": 3,
+      "position": [
+        176,
+        -112
+      ],
+      "id": "47acdf79-366e-46b7-ac81-be4ede0a6d0a"
+    },
+    {
+      "parameters": {
+        "operation": "push",
+        "list": "shopee_order_queue",
+        "messageData": "={{ JSON.stringify({ account_id: $json.id, account_name: $json.sales_platform_accounts_shopee[0]?.shop_name || ('Shop-' + $json.shop_id), platform: 'shopee', shop_id: $json.shop_id, access_token: $json.access_token, timestamp: new Date().toISOString() }) }}"
+      },
+      "type": "@fancyheat/n8n-nodes-redis-enhanced.redisEnhanced",
+      "typeVersion": 1,
+      "position": [
+        560,
+        -112
+      ],
+      "id": "62ec4d5d-8f42-4828-a1bc-9a575a6e2502",
+      "name": "Redis Enhanced",
+      "credentials": {
+        "redis": {
+          "id": "zE1Y2AlnzqmYnUPT",
+          "name": "redis_connection"
+        }
+      }
+    },
+    {
+      "parameters": {},
+      "name": "No Active Accounts",
+      "type": "n8n-nodes-base.noOp",
+      "typeVersion": 1,
+      "position": [
+        176,
+        96
+      ],
+      "id": "a21eb441-c5d7-4ec7-b227-23d567539e99"
+    },
+    {
+      "parameters": {
+        "select": "channel",
+        "channelId": {
+          "__rl": true,
+          "value": "C09FQSWH2TD",
+          "mode": "list",
+          "cachedResultName": "acsell-ai"
+        },
+        "text": "={{ $json.seller_id }} 주문수집 요청",
+        "otherOptions": {}
+      },
+      "type": "n8n-nodes-base.slack",
+      "typeVersion": 2.3,
+      "position": [
+        384,
+        -208
+      ],
+      "id": "57e7314b-998d-4d11-95e6-e182a8e44201",
+      "name": "Send a message",
+      "webhookId": "11553391-43cc-45cd-82f8-951fde00639a",
+      "credentials": {
+        "slackApi": {
+          "id": "XR9r9cSTypkvBmoC",
+          "name": "Slack account"
+        }
+      }
+    }
+  ],
+  "pinData": {},
+  "connections": {
+    "Every 5 Minutes": {
+      "main": [
+        [
+          {
+            "node": "Get Active Accounts",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Get Active Accounts": {
+      "main": [
+        [
+          {
+            "node": "Check If Accounts Exist",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Check If Accounts Exist": {
+      "main": [
+        [
+          {
+            "node": "Split Each Account",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "No Active Accounts",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Split Each Account": {
+      "main": [
+        [
+          {
+            "node": "Send a message",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Redis Enhanced",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Redis Enhanced": {
+      "main": [
+        [
+          {
+            "node": "Split Each Account",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": false,
+  "settings": {
+    "executionOrder": "v1",
+    "timezone": "Asia/Seoul",
+    "callerPolicy": "workflowsFromSameOwner"
+  },
+  "versionId": "8b543c16-9463-4675-b589-122a23f3f1ba",
+  "meta": {
+    "templateCredsSetupCompleted": true,
+    "instanceId": "f250376847468ef71913716e149635733b4b8efaa1e3a4a13a2fff8384a6074a"
+  },
+  "id": "WOVfBH1J5vMpd4cc",
+  "tags": []
+}

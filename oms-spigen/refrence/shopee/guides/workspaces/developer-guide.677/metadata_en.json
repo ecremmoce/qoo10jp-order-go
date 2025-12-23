@@ -1,0 +1,53 @@
+{
+  "document_id": "developer-guide.677",
+  "document_type": "guide",
+  "platform": "shopee",
+  "extracted_at": "2025-10-16T09:00:32",
+  "extracted_text": "# API Best Practices > Shipper Service - Package\n\n## 1 Sorting group\nSorting group: The name that is used to select the pack list flow together when stopping with this logistics channel\n\n## 2 Business Operation Logic\n\n### 2.1 Automatic Drop Shipment\nFor orders with logistics channel 50029, when the order status becomes \"READY_TO_SHIP\", the system will automatically get the origin info (the order) package drop info to qualify it if drop-to-client shipment exists.\n- If drop-to-client shipment exists, package drop will be executed and update the status of that 3 drop-to-client type in 1 package, each containing 1 quantity\n\n### 2.2 Average Shipment Dropping\nWhen using logistics channel 50029 to drop items, sellers no longer need to pack by order lines. The steps are as follows:\n- The package SKU ID Label is still a route and stock SKU. Do not use the SKU Label on the shipping parcel.\n- When stopping, pack according to the batch stock SKU\n\nPlease refer to the Seller Education Hub article for more details: [提报发货包, 智能发货包], [三方发货报包]\n\n## 3 Query item's Unpackaged SKU ID\nThe \"Unpackage SKU ID-U Label\" records the SKU item within the logistics channel. You can obtain the information through the API:\n- V3 [logistics/get_shipping_parameter](/open-api/01_logistics_get_shipping_parameter)\n- V2 [product:search_unpackage_master_sku](/open-api/02_product_search_unpackage_master_sku)\n\n## 4 Obtain order information and detail\nThis logistics channel does not automatically take orders. Be sure to get package level information while using the following API:\n- V3 [order:search_package_list](/open-api/03_order_search_package_list) To query the package list\n- V3 [order:get_package_detail](/open-api/04_order_get_package_detail) To query the package detail\n\nAfter obtaining the order information, confirm that the \"shipping_carrier\" field matches value \"package_id\" is included in the request parameter, \"response_optional_fields\"\n\n## 5 Basic Shipping Logic\n\n### 5.1 Required API Call Flow\nThis logistics channel does not automatically split orders, please ensure \"package_number\" is included in the request parameter of the following API:\n- V3 [order:ship_package](/open-api/05_order_ship_package) When shipping orders (also shipping parameter \"tracking_number\" is required in the \"package_list\")\nAlso:\n- V2 [logistics:init_and_order](/open-api/06_logistics_init_and_order) When arrange shipments, you can obtain the value in the \"sorting_group\" field\n\n### 5.2 Average Shipment Dropping\nSteps:\n1) Obtain Unpackage sku id dead call flow\nThe Unpackage SKU ID is a unique identifier for the Unpackage sku id used corresponding to the package.\n- V3 [logistics:get_shipping_document_parameter](/open-api/07_logistics_get_shipping_document_parameter)\n- V2 [logistics:get_airway_bill_for_seller](/open-api/08_logistics_get_airway_bill_for_seller)\n- V2 [logistics:get_tracking_number](/open-api/09_logistics_get_tracking_number)\n\nThe value for the logistics channel ID field \"response_OPTIONAL_UNPACKAGED_LABEL\" is the \"shipping_document_type\"\n\n2) Obtain To Label ID\nAfter completing the package according to the sorting group, you can obtain the TO label file through the following API:\n- V3 [logistics:download_shipping_document](/open-api/10_logistics_download_shipping_document) Download TO label (including drop-ship info, which are mandatory labels that will affect the drop-off process)\n\n## 6 Other Process\n\n### 6.1 Create or Update U-Label before order creation\n1. If the printing Unpackaged SKU ID-Label before order creation\n   Support and uploading to make sure for the seller can create the order created, for advanced labeling and efficiency.\n\nYou can obtain the file by calling the following APIs as supposed:\n- V3 [logistics:batch_ship_package](/open-api/11_logistics_batch_ship_package) Call \"Create a print job\"\n- V3 [logistics:download_shipping_document_job](/open-api/12_logistics_download_shipping_document_job) Download the label files\n\nPlease note that the data must begin with parcel channel 50029 enables to use this advance label print process for efficiency.\n\n### 6.2 Custom-design U-Label\nIn the logistics system, we recommend that you design the \"Unpackaged SKU ID Label according to system preferences. You can refer to the \"Seller Help\" section specification in the FAQ attachment to create labels (delivery by return shipper).\n- Make sure the \"Unpackage_sku_id\" and \"Unpackaged_sku_id_group\" fields through the API\n- Guidelines for reference only, the official specifications are in the FAQ attachment (only in English version):\n  * Cannot exceed 10cm x 10cm\n  * EC mode is not allowed\n  * Avoid presenting the QR code or other obscuring obstructions to the QR code\n  * Font size or text is minimal to readable\n  * Paint tool and bar-break instructions have been removed\n  * Ensure that custom label has no effect the display or layout of non-custom areas.\n\n## 7 Recommended API Call Flow\n\n### 7.1 Printing Unpackaged SKU ID-Label before order creation\n\n[THIS IS FLOWCHART: Shows the process flow for printing Unpackaged SKU ID Label before order creation, with multiple decision points and process steps in yellow boxes]\n\n### 7.2 If the printing Unpackaged SKU ID-Label before order creation\n\n[THIS IS FLOWCHART: Shows an alternative process flow with multiple steps and decision points, including order creation and label printing processes]\n\n## 8 FAQ\n\n**Q: For orders under the logistics channel with multiple packages, where the logistics statuses of the packages differ, how will the Order status be displayed?**\n\nA: Please to see FAQ for the [Order system chapter(/open-faq/01)]\n\n**Q: Why is the \"shipping_carrier\" field of the order-level empty while I retrieve order details through the V2 (order:get_order_detail) API?**\n\nA: Unless under the logistics channel of this logistics carrier, the API will not display a value. Please retrieve the \"shipping_carrier\" field from each shipment in the \"package_list.\"\n\n**Q: Why does the system return an error message when I call the Shipment (or Unpackaged SKU ID-Label) API?**\n\nA: The logistics channel automatically split orders. Please request that the \"package_number\" field parameter is included in the API when calling logistics-related APIs.\n\n## 9 Data Definition\n\nPlease refer to the [V3 Order System(https://example.com)] page.",
+  "metadata": {
+    "title": "Shipper Service - Package",
+    "summary": "This guide provides best practices for using the Shipper Service package functionality. It covers topics such as sorting groups, business operation logic, querying unpackaged SKU IDs, obtaining order information, basic shipping logic, and other processes related to package handling within the logistics channel.",
+    "keywords": [
+      "Shipper Service",
+      "Package",
+      "Logistics Channel",
+      "Unpackaged SKU ID",
+      "Shipping",
+      "Sorting Group",
+      "Drop Shipment",
+      "API",
+      "Order Management"
+    ],
+    "category": "Best Practices",
+    "tags": [
+      "Shipping",
+      "Logistics",
+      "API",
+      "Package Management",
+      "Order Fulfillment"
+    ],
+    "difficulty": "medium",
+    "importance": 4,
+    "use_cases": [
+      "Managing packages within a specific logistics channel.",
+      "Implementing automatic drop shipment processes.",
+      "Querying unpackaged SKU IDs for items.",
+      "Obtaining order information and package details.",
+      "Shipping packages using the required API call flow."
+    ],
+    "related_apis": [
+      "/open-api/01_logistics_get_shipping_parameter",
+      "/open-api/02_product_search_unpackage_master_sku",
+      "/open-api/03_order_search_package_list",
+      "/open-api/04_order_get_package_detail",
+      "/open-api/05_order_ship_package",
+      "/open-api/06_logistics_init_and_order",
+      "/open-api/07_logistics_get_shipping_document_parameter",
+      "/open-api/08_logistics_get_airway_bill_for_seller",
+      "/open-api/09_logistics_get_tracking_number",
+      "/open-api/10_logistics_download_shipping_document",
+      "/open-api/11_logistics_batch_ship_package",
+      "/open-api/12_logistics_download_shipping_document_job"
+    ]
+  }
+}

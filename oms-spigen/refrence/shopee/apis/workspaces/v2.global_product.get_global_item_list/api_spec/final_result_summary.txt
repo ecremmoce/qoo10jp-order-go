@@ -1,0 +1,38 @@
+======================================================================
+API SPECIFICATION SUMMARY
+======================================================================
+
+Endpoint: POST /url_generation/get_photo_url
+Description: Test Openapi parameter description
+
+Parameters (4):
+----------------------------------------------------------------------
+* url (string)
+   Test Openapi parameter description
+  width (integer)
+   Width of the image
+  height (integer)
+   Height of the image
+  quality (integer)
+   Quality of the image (1-100)
+
+Response Fields (2):
+----------------------------------------------------------------------
+  url (string)
+   Generated image URL
+  message (string)
+   Status message
+
+Metadata:
+----------------------------------------------------------------------
+  total_chunks: 1
+  chunks_with_errors: 0
+  total_parameters_before_dedup: 4
+  total_parameters_after_dedup: 4
+  update_log_entries: 0
+  hidden_fields_count: 0
+  source_results: workspaces\v2.global_product.get_global_item_list\results\all_chunks_results.json
+
+======================================================================
+Legend: * = required parameter
+======================================================================

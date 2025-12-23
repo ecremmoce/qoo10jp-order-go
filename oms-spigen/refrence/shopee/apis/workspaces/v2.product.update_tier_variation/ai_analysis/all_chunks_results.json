@@ -1,0 +1,97 @@
+[
+  {
+    "chunk_index": 1,
+    "total_chunks": 1,
+    "endpoint": null,
+    "method": null,
+    "description": null,
+    "update_log": [
+      {
+        "date": "2022-09-26",
+        "change": "Add new field"
+      },
+      {
+        "date": "2022-09-23",
+        "change": "Release 2.0"
+      },
+      {
+        "date": "2022-08-24",
+        "change": "Add new fields"
+      },
+      {
+        "date": "2022-08-18",
+        "change": "Support new currency codes"
+      },
+      {
+        "date": "2022-07-26",
+        "change": "Add new field"
+      },
+      {
+        "date": "2022-07-21",
+        "change": "Release 1.0"
+      }
+    ],
+    "parameters": [
+      {
+        "name": "request_id",
+        "type": "string",
+        "required": true,
+        "description": "Request ID, max length 50",
+        "children": []
+      },
+      {
+        "name": "version",
+        "type": "string",
+        "required": true,
+        "description": "API version number",
+        "children": []
+      },
+      {
+        "name": "biz_product",
+        "type": "string",
+        "required": true,
+        "description": "Business product type",
+        "children": []
+      },
+      {
+        "name": "biz_data",
+        "type": "object",
+        "required": true,
+        "description": "Business data",
+        "children": [
+          {
+            "name": "user_id",
+            "type": "string",
+            "required": true,
+            "description": "User ID",
+            "children": []
+          },
+          {
+            "name": "order_id",
+            "type": "string",
+            "required": true,
+            "description": "Order ID",
+            "children": []
+          }
+        ]
+      }
+    ],
+    "hidden_fields": [],
+    "response_fields": [],
+    "notes": "The image appears to show an API documentation page with multiple sections including an update log and parameter definitions. The documentation seems to be for version 2.0 of the API based on the update log entries.",
+    "chunk_metadata": {
+      "index": 1,
+      "total": 1,
+      "y_start": 0,
+      "y_end": 7577,
+      "overlap_top": 0,
+      "overlap_bottom": 0,
+      "height": 7577,
+      "path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\workspaces\\v2.product.update_tier_variation\\chunks\\chunk_001.png",
+      "filename": "chunk_001.png",
+      "width": 837
+    },
+    "analysis_timestamp": "2025-10-10T06:36:43.139987",
+    "model": "claude-3-5-sonnet-20241022"
+  }
+]

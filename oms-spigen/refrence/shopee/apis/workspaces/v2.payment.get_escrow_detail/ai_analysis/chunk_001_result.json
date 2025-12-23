@@ -1,0 +1,100 @@
+{
+  "chunk_index": 1,
+  "endpoint": null,
+  "method": null,
+  "description": null,
+  "parameters": [],
+  "response_fields": [
+    {
+      "name": "p_paid_to_credit_car",
+      "type": "bool",
+      "description": "Whether the order is paid to credit card",
+      "children": []
+    },
+    {
+      "name": "merchant_subtotal",
+      "type": "float",
+      "description": "The subtotal amount",
+      "children": []
+    },
+    {
+      "name": "sales_number",
+      "type": "float",
+      "description": "The number provided to sales to bill store items room to the guest.",
+      "children": []
+    },
+    {
+      "name": "shipping_fee",
+      "type": "float",
+      "description": "The shipping fee paid by folio",
+      "children": []
+    },
+    {
+      "name": "shipping_fee_pct_gra",
+      "type": "float",
+      "description": "The shipping fee percent tax",
+      "children": []
+    },
+    {
+      "name": "shipping_number",
+      "type": "float",
+      "description": "The number provided to trigger to affect the charged room to be paid by folio",
+      "children": []
+    },
+    {
+      "name": "created_order_number",
+      "type": "float",
+      "description": "This is an element of ref used by Store at checkout to affect store items orders in Internal Store System",
+      "children": []
+    },
+    {
+      "name": "taxes_and_packaging",
+      "type": "float",
+      "description": "The tax charged in the folio for packaging",
+      "children": []
+    },
+    {
+      "name": "bank_in_store_tables",
+      "type": "float",
+      "description": "The final amount of all orders between members of the Internet, contributed by all reservation Guests, Store, Spa and Health of Purchase",
+      "children": []
+    },
+    {
+      "name": "bank_routing_fee",
+      "type": "float",
+      "description": "A fee charged to the bank for the stored routing and merchandise returned to the Internet, City to City local order",
+      "children": []
+    },
+    {
+      "name": "request_id",
+      "type": "string",
+      "description": "The identifier for an API request for error tracking",
+      "children": []
+    },
+    {
+      "name": "error",
+      "type": "string",
+      "description": "Error code",
+      "children": []
+    },
+    {
+      "name": "message",
+      "type": "string",
+      "description": "Error message",
+      "children": []
+    }
+  ],
+  "chunk_metadata": {
+    "index": 1,
+    "total": 3,
+    "y_start": 0,
+    "y_end": 8000,
+    "overlap_top": 0,
+    "overlap_bottom": 500,
+    "height": 8000,
+    "path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\workspaces\\v2.payment.get_escrow_detail\\chunks\\chunk_001.png",
+    "filename": "chunk_001.png",
+    "width": 837
+  },
+  "chunk_path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\workspaces\\v2.payment.get_escrow_detail\\chunks\\chunk_001.png"
+}

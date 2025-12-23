@@ -1,0 +1,253 @@
+# Fulfilled by Shopee (BR) - API 모범 사례
+
+**카테고리**: 모범 사례
+**난이도**: medium
+**중요도**: 4/5
+**최종 업데이트**: 2025-10-16T09:25:01
+
+## 개요
+
+본 가이드는 브라질에서 Fulfilled by Shopee (FBS) 프로그램을 사용하는 모범 사례를 설명하며, API 통합에 중점을 둡니다. 워크플로우, 재고 관리, 주문 식별 및 세금 데이터 제출을 다루며, Shopee의 FBS 프로그램과 통합하는 개발자에게 필수적인 정보를 제공합니다.
+
+## 주요 키워드
+
+- Fulfilled by Shopee
+- FBS
+- API
+- 브라질
+- 재고 관리
+- 주문 관리
+- 세금 데이터
+- Seller Center
+- Workflow
+
+## 본문
+
+# Shopee 풀필먼트 (BR) - API 모범 사례
+
+## 탐색
+- API 모범 사례 > Brazil Open API 모범 사례... > Shopee 풀필먼트 (BR)
+
+## 목차
+- "Shopee 풀필먼트" 주문 식별
+- "Shopee 풀필먼트" 주문 워크플로 변경 사항
+- 세금 데이터 제출
+- FAQ
+
+---
+
+## 셀러 센터를 통한 워크플로
+
+1. **등록**: "Shopee 풀필먼트" 온보딩 프로세스는 셀러에게 새로운 기능에 대한 액세스 권한을 부여하는 것으로 시작됩니다. 셀러는 특정 정보를 작성해야 하며, 이 정보는 Shopee 팀의 검토를 위해 전송됩니다.
+
+2. **상품 지정**: 승인되면 셀러는 "Shopee 풀필먼트"에 상품을 지정할 수 있습니다. 추가 승인 후, 이러한 상품은 Shopee로 배송되도록 예약할 수 있습니다.
+
+   **중요**: 이 과정에서 상품에 대한 모든 세금 관련 데이터를 완료해야 합니다. 그렇지 않으면 상품이 승인되지 않습니다.
+
+3. **Shopee로 배송**: 지정된 상품의 Shopee 배송을 예약합니다.
+
+4. **재고**: Shopee 창고의 상품 유입 및 유출을 모니터링합니다.
+
+5. **판매 추적**: "Shopee 풀필먼트"의 판매를 추적합니다.
+
+6. **창고 회수**: Shopee 창고에서 제거해야 할 상품을 지정합니다.
+
+7. **보고서 다운로드**: "Shopee 풀필먼트"에서 생성된 재무 보고서 및 문서를 모니터링하고 다운로드합니다.
+
+---
+
+## OpenAPI를 통한 워크플로
+
+### 1 - "Shopee 풀필먼트" 활성 셀러 식별
+
+셀러가 Shopee 풀필먼트에서 활성화되면 API v2 `shop.get_shop_info`는 `shop_fulfillment_flag` 파라미터를 "PFF - FBS Shopee" 값으로 반환합니다.
+
+### 2 - "Shopee 풀필먼트" 재고 및 창고 관리
+
+셀러의 상품이 Shopee에 도착하면 API v2 `product.get_item_base_info`에 `shopee_stock` 파라미터가 표시됩니다. 여기에는 다음이 포함됩니다.
+
+- **location_id**: 창고 위치 참조
+- **stock**: 사용 가능한 재고 수량
+- **if_saleable**: 창고 재고가 판매 준비가 되었는지 여부를 나타냅니다. 예:
+
+```json
+{
+  "shopee_stock": {
+    "location_id": 12345,
+    "stock": 100,
+    "if_saleable": true
+  }
+}
+```
+
+**중요**: shopee_stock 파라미터는 쿼리 용도로만 사용되며 API를 통해 수정할 수 없습니다.
+
+### 3 - "Shopee 풀필먼트" 주문 식별
+
+Shopee 풀필먼트와 관련된 주문은 API v2 `order.get_order_detail`의 `optional_fields` 응답에서 `fulfillment_flag` 파라미터로 식별할 수 있습니다. 가능한 값은 다음과 같습니다.
+
+- **fulfilled_by_local_seller**: 표준 주문 프로세스가 계속됩니다.
+- **fulfilled_by_shopee**: Shopee가 송장, 재고 관리 및 물류를 완전히 처리합니다.
+
+또한 `logistic_channel_id` 파라미터를 사용하여 API v2 `order.get_order_list`에 새로운 필터링 옵션이 추가되었습니다. Shopee 풀필먼트의 경우 `logistic_id`는 91007입니다.
+
+---
+
+## "Shopee 풀필먼트" 주문 워크플로 변경 사항
+
+1. "Shopee 풀필먼트" 주문에 대한 모든 송장 및 문서는 Shopee에서 발행하며 셀러 센터에서 다운로드할 수 있습니다.
+
+2. Shopee는 셀러의 개입 없이 배송 준비, 라벨 생성 및 전체 물류 프로세스를 자동으로 처리합니다.
+
+3. ERP/HUB 시스템은 Shopee 풀필먼트의 주문을 식별하여 셀러의 잘못된 재고에서 재고를 차감하는 것을 방지해야 합니다.
+
+---
+
+## OpenAPI를 통한 세금 데이터 업로드
+
+세금 데이터는 모든 상품에 필수적인 것은 아니며, OpenAPI를 통한 상품 생성은 세금 데이터의 부재로 인해 차단되지 않습니다. 그러나 "Shopee 풀필먼트" 프로세스는 셀러 센터에 의존하므로 세금 데이터가 없는 상품은 지정할 수 없습니다. 셀러를 지원하기 위해 ERP/HUB는 아직 Shopee 풀필먼트에 추가되지 않은 상품에 대해서도 Shopee에 대한 자동 세금 데이터 제출을 통합하는 것이 좋습니다. 이렇게 하면 셀러 센터를 통한 수동 입력의 필요성을 피하면서 지정 프로세스를 간소화할 수 있습니다.
+
+세금 데이터는 `tax_info` 파라미터를 사용하여 API v2 `product.add_item`을 통해 제출할 수 있습니다.
+
+---
+
+## FAQ
+
+### Shopee 풀필먼트의 문서 및 송장을 OpenAPI를 통해 다운로드할 수 있습니까?
+
+**A**: 아니요, 현재 송장 및 문서는 셀러 센터를 통해서만 다운로드할 수 있습니다.
+
+---
+
+추가 질문이 있으시면 **티켓 플랫폼**을 통해 문의해 주십시오.
+
+## 사용 사례
+
+1. ERP 시스템을 Shopee의 FBS 프로그램과 통합.
+2. FBS 판매자를 위한 재고 관리 자동화.
+3. 정확한 처리를 위한 FBS 주문 식별.
+4. Shopee에서 Fulfillment할 제품에 대한 세금 데이터 제출.
+5. Seller Center를 통한 창고 출고 관리
+
+## 관련 API
+
+- shop.get_shop_info
+- product.get_item_base_info
+- order.get_order_detail
+- order.get_order_list
+- product.add_item
+
+---
+
+## 원문 (English)
+
+### Summary
+
+This guide outlines the best practices for using the Fulfilled by Shopee (FBS) program in Brazil, focusing on API integrations. It covers workflows, inventory management, order identification, and tax data submission, providing essential information for developers integrating with Shopee's FBS program.
+
+### Content
+
+# Fulfilled by Shopee (BR) - API Best Practices
+
+## Navigation
+- API Best Practices > Brazil Open API Best Prac... > Fulfilled by Shopee (BR)
+
+## Table of Contents
+- Identification of orders under "Fulfilled by Shopee"
+- Workflow changes for "Fulfilled by Shopee" orders
+- Submission of Tax Data
+- FAQ
+
+---
+
+## Workflows through Seller Center
+
+1. **Registration**: The onboarding process for "Fulfilled by Sahopee" starts with granting sellers access to the new functionality. Sellers need to fill out certain information, which is sent for review by the Shopee team.
+
+2. **Product Nomination**: Once approved, sellers can nominate items for "Fulfilled by Shopee." After further approval, these items can be scheduled for delivery to Shopee.
+
+   **Important**: In this process, all tax-related data for the items must be completed; otherwise, the items will not be approved.
+
+3. **Delivery to Shopee**: Schedule the delivery of nominated items to Shopee.
+
+4. **Inventory**: Monitor the inflow and outflow of items in Shopee warehouses.
+
+5. **Sales Tracking**: Track sales from "Fulfilled by Shopee."
+
+6. **Warehouse Withdrawal**: Indicate which products should be removed from Shopee's warehouse.
+
+7. **Download Reports**: Monitor and download financial reports and documents generated by "Fulfilled by Shopee."
+
+---
+
+## Workflows via OpenAPI
+
+### 1 - Identification of Active Sellers for "Fulfilled by Shopee"
+
+When a seller is active in Fulfilled by Shopee, the API v2 `shop.get_shop_info` will return the parameter `shop_fulfillment_flag` with the value "PFF - FBS Shopee."
+
+### 2 - Inventory and Warehouse Management for "Fulfilled by Shopee"
+
+Once the seller's products arrive at Shopee, the parameter `shopee_stock` will appear in the API v2 `product.get_item_base_info`. This includes:
+
+- **location_id**: Reference to the warehouse location
+- **stock**: Quantity of stock available
+- **if_saleable**: Indicates if the warehouse stock is ready for sale. For example:
+
+```json
+{
+  "shopee_stock": {
+    "location_id": 12345,
+    "stock": 100,
+    "if_saleable": true
+  }
+}
+```
+
+**Important**: The shopee_stock parameter is for query purposes only and cannot be modified via API.
+
+### 3 - Identification of Orders under "Fulfilled by Shopee"
+
+Orders associated with Fulfilled by Shopee can be identified by the `fulfillment_flag` parameter in the response `optional_fields` of the API v2 `order.get_order_detail`. Possible values include:
+
+- **fulfilled_by_local_seller**: The standard order process continues.
+- **fulfilled_by_shopee**: Shopee handles invoices, stock control, and logistics entirely.
+
+Additionally, a new filtering option has been added to the API v2 `order.get_order_list` using the `logistic_channel_id` parameter. For Fulfilled by Shopee, the `logistic_id` is 91007.
+
+---
+
+## Workflow Changes for "Fulfilled by Shopee" Orders
+
+1. All invoices and documents for "Fulfilled by Shopee" orders will be issued by Shopee and can be downloaded from Seller Center.
+
+2. Shopee will automatically handle shipping arrangements, label generation, and the entire logistics process without seller involvement.
+
+3. ERPs/HUB systems must identify orders under Fulfilled by Shopee to avoid deducting inventory from the seller's incorrect stock.
+
+---
+
+## Uploading of Tax Data via OpenAPI
+
+Tax data is not mandatory for all items, and the creation of items via OpenAPI is not blocked due to the absence of tax data. However, since the "Fulfilled by Shopee" process relies on Seller Center, items without tax data cannot be nominated. To support sellers, ERPs/HUBs are encouraged to integrate automatic tax data submission to Shopee, even for items not yet added to Fulfilled by Shopee. This will streamline the nomination process, avoiding the need for manual input via Seller Center.
+
+Tax data can be submitted through the API v2 `product.add_item` using the `tax_info` parameter.
+
+---
+
+## FAQ
+
+### Can documents and invoices be downloaded via OpenAPI for Fulfilled by Shopee?
+
+**A**: No, currently, invoices and documents can only be downloaded via Seller Center.
+
+---
+
+For further questions, please contact us through the **Ticket Platform**.
+
+---
+
+**문서 ID**: developer-guide.568
+**플랫폼**: shopee
+**URL**: https://open.shopee.com/developer-guide/568
+**처리 완료**: 2025-10-16T09:25:01

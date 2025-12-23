@@ -1,0 +1,76 @@
+{
+  "chunk_index": 1,
+  "total_chunks": 1,
+  "endpoint": "/url_generation/get_photo_url",
+  "method": "POST",
+  "description": "Test Openapi parameter description",
+  "update_log": [],
+  "hidden_fields": [],
+  "parameters": [
+    {
+      "name": "url",
+      "type": "string",
+      "required": true,
+      "description": "Test Openapi parameter description",
+      "truncated": false,
+      "continued": false,
+      "children": []
+    },
+    {
+      "name": "width",
+      "type": "integer",
+      "required": false,
+      "description": "Width of the image",
+      "truncated": false,
+      "continued": false,
+      "children": []
+    },
+    {
+      "name": "height",
+      "type": "integer",
+      "required": false,
+      "description": "Height of the image",
+      "truncated": false,
+      "continued": false,
+      "children": []
+    },
+    {
+      "name": "quality",
+      "type": "integer",
+      "required": false,
+      "description": "Quality of the image (1-100)",
+      "truncated": false,
+      "continued": false,
+      "children": []
+    }
+  ],
+  "response_fields": [
+    {
+      "name": "url",
+      "type": "string",
+      "description": "Generated image URL",
+      "children": []
+    },
+    {
+      "name": "message",
+      "type": "string",
+      "description": "Status message",
+      "children": []
+    }
+  ],
+  "notes": "This appears to be an API for generating photo URLs with optional parameters for image dimensions and quality. The documentation includes request/response examples and error codes but they are partially cut off in the image. The full error code list is visible at the bottom of the documentation.",
+  "chunk_metadata": {
+    "index": 1,
+    "total": 1,
+    "y_start": 0,
+    "y_end": 5733,
+    "overlap_top": 0,
+    "overlap_bottom": 0,
+    "height": 5733,
+    "path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\workspaces\\v2.global_product.get_global_item_list\\chunks\\chunk_001.png",
+    "filename": "chunk_001.png",
+    "width": 837
+  },
+  "analysis_timestamp": "2025-10-10T05:47:12.925034",
+  "model": "claude-3-5-sonnet-20241022"
+}

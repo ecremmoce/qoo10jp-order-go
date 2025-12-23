@@ -1,0 +1,82 @@
+{
+  "endpoint": "/api/merchant/get_item_set_list",
+  "method": "POST",
+  "description": "API to retrieve item sets",
+  "parameters": [
+    {
+      "name": "timestamp",
+      "type": "string",
+      "required": true,
+      "description": "Unix timestamp",
+      "children": []
+    },
+    {
+      "name": "shop_id",
+      "type": "uint64",
+      "required": true,
+      "description": "Specify the selling price to shop to want to access. This needs to be related to a shop bound to your partner authorization",
+      "children": []
+    },
+    {
+      "name": "keyword",
+      "type": "string",
+      "required": false,
+      "description": "Search keyword",
+      "children": []
+    }
+  ],
+  "response_fields": [
+    {
+      "name": "error",
+      "type": "string",
+      "description": "Error message if the error exists",
+      "children": []
+    },
+    {
+      "name": "message",
+      "type": "string",
+      "description": "Error information you are battling",
+      "children": []
+    },
+    {
+      "name": "warn",
+      "type": "boolean",
+      "description": "This is to indicate whether the list is more than 24 hours. If this field is true, you may need to update the cache for a better performance",
+      "children": []
+    },
+    {
+      "name": "next_offset",
+      "type": "int64",
+      "description": "The identifier of the item set",
+      "children": []
+    },
+    {
+      "name": "item_set_list",
+      "type": "array",
+      "description": "The items of the item set",
+      "children": []
+    },
+    {
+      "name": "item_count",
+      "type": "int64",
+      "description": "The number of items in the item set",
+      "children": []
+    }
+  ],
+  "update_log": [
+    {
+      "date": "2024-06-21",
+      "change": "Initial API"
+    }
+  ],
+  "hidden_fields": [],
+  "metadata": {
+    "total_chunks": 1,
+    "chunks_with_errors": 0,
+    "total_parameters_before_dedup": 3,
+    "total_parameters_after_dedup": 3,
+    "update_log_entries": 1,
+    "hidden_fields_count": 0,
+    "source_results": "workspaces\\v2.livestream.get_item_set_list\\results\\all_chunks_results.json"
+  }
+}

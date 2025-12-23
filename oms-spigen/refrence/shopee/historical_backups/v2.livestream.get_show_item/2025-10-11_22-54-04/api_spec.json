@@ -1,0 +1,88 @@
+{
+  "endpoint": "c2/benchmark/get_voice_auth",
+  "method": "POST",
+  "description": null,
+  "parameters": [
+    {
+      "name": "benchmarkId",
+      "type": "string",
+      "required": true,
+      "description": null,
+      "children": []
+    },
+    {
+      "name": "url",
+      "type": "string",
+      "required": true,
+      "description": "Web request url to access",
+      "children": []
+    },
+    {
+      "name": "voicejson",
+      "type": "string",
+      "required": true,
+      "description": null,
+      "children": []
+    },
+    {
+      "name": "session_id",
+      "type": "string",
+      "required": true,
+      "description": "For each id is assigned upon registration is successful",
+      "children": []
+    }
+  ],
+  "response_fields": [
+    {
+      "name": "success",
+      "type": "bool",
+      "description": "true if success"
+    },
+    {
+      "name": "session_id",
+      "type": "string",
+      "description": "The identifier for your request"
+    },
+    {
+      "name": "result",
+      "type": "string",
+      "description": null
+    },
+    {
+      "name": "url",
+      "type": "string",
+      "description": "Endpoint url for the next step"
+    },
+    {
+      "name": "file_bin",
+      "type": "data",
+      "description": "The time of the data in the completed test run"
+    },
+    {
+      "name": "voice",
+      "type": "string",
+      "description": "Name of the item in your language"
+    },
+    {
+      "name": "count",
+      "type": "float",
+      "description": "The count of the tests"
+    },
+    {
+      "name": "data_bin",
+      "type": "string",
+      "description": "The binary code representing the contents and state of the form"
+    }
+  ],
+  "update_log": [],
+  "hidden_fields": [],
+  "metadata": {
+    "total_chunks": 1,
+    "chunks_with_errors": 0,
+    "total_parameters_before_dedup": 4,
+    "total_parameters_after_dedup": 4,
+    "update_log_entries": 0,
+    "hidden_fields_count": 0,
+    "source_results": "platforms\\shopee\\apis\\workspaces\\v2.livestream.get_show_item\\results\\all_chunks_results.json"
+  }
+}

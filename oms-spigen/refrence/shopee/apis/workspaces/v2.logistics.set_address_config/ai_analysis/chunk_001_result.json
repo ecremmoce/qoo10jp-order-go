@@ -1,0 +1,104 @@
+{
+  "chunk_index": 1,
+  "total_chunks": 1,
+  "endpoint": "/logistic_address_config",
+  "method": null,
+  "description": null,
+  "update_log": [],
+  "hidden_fields": [],
+  "parameters": [
+    {
+      "name": "common_parameters",
+      "type": "object",
+      "required": true,
+      "description": null,
+      "children": [
+        {
+          "name": "partner_id",
+          "type": "string",
+          "required": true,
+          "description": "Partner ID is assigned upon registration is successful"
+        },
+        {
+          "name": "access_token",
+          "type": "string",
+          "required": true,
+          "description": "This token for API calling, using to identify your permission to do api. Need to refresh and add params for signature."
+        },
+        {
+          "name": "shop_id",
+          "type": "string",
+          "required": true,
+          "description": "Shopee's unique identifier for a shop. Required param for seller app."
+        }
+      ]
+    },
+    {
+      "name": "request_parameters",
+      "type": "object",
+      "required": true,
+      "description": null,
+      "children": [
+        {
+          "name": "zone_pickup_address_list",
+          "type": "array",
+          "required": true,
+          "description": "Delete shop pickup address in list"
+        },
+        {
+          "name": "pickup_type_zone",
+          "type": "string",
+          "required": true,
+          "description": "The type of your pickup address"
+        },
+        {
+          "name": "address_id",
+          "type": "string",
+          "required": true,
+          "description": "The identifier of the address"
+        },
+        {
+          "name": "address_type",
+          "type": "string",
+          "required": true,
+          "description": "PICKUP_ADDRESS PICKUP_ADDRESS_WITHOUT_PICKUP_POINT"
+        }
+      ]
+    }
+  ],
+  "response_fields": [
+    {
+      "name": "request_id",
+      "type": "string",
+      "required": true,
+      "description": "The identifier for an API request for error tracing"
+    },
+    {
+      "name": "error",
+      "type": "string",
+      "required": true,
+      "description": "Indicate error details if there is any. Empty if no error happened"
+    },
+    {
+      "name": "message",
+      "type": "string",
+      "required": true,
+      "description": "Indicate error details if there is any. Empty if no error happened"
+    }
+  ],
+  "notes": "The documentation includes error codes and examples sections at the bottom. The endpoint appears to be related to logistics address configuration in an e-commerce system, likely Shopee's API based on the parameters.",
+  "chunk_metadata": {
+    "index": 1,
+    "total": 1,
+    "y_start": 0,
+    "y_end": 4523,
+    "overlap_top": 0,
+    "overlap_bottom": 0,
+    "height": 4523,
+    "path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\workspaces\\v2.logistics.set_address_config\\chunks\\chunk_001.png",
+    "filename": "chunk_001.png",
+    "width": 837
+  },
+  "analysis_timestamp": "2025-10-10T06:07:11.617589",
+  "model": "claude-3-5-sonnet-20241022"
+}

@@ -1,0 +1,40 @@
+======================================================================
+API SPECIFICATION SUMMARY
+======================================================================
+
+Endpoint: None None
+
+Parameters (9):
+----------------------------------------------------------------------
+* url (string)
+   API server URL reference
+* client_id (string)
+   Client identifier
+* url_client (string)
+   Client URL parameter
+* message (string)
+   Request message content
+* time (string)
+   Timestamp
+* service_number (string)
+   Service identifier number
+  locale_id (integer)
+   The locale/language identifier
+* message_number (string)
+   Message sequence identifier
+* content_matching_info (string)
+   Content matching information
+
+Metadata:
+----------------------------------------------------------------------
+  total_chunks: 1
+  chunks_with_errors: 0
+  total_parameters_before_dedup: 9
+  total_parameters_after_dedup: 9
+  update_log_entries: 0
+  hidden_fields_count: 0
+  source_results: workspaces\v2.logistics.get_shipping_document_parameter\results\all_chunks_results.json
+
+======================================================================
+Legend: * = required parameter
+======================================================================

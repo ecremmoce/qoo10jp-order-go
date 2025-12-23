@@ -1,0 +1,89 @@
+{
+  "endpoint": null,
+  "method": null,
+  "description": null,
+  "parameters": [
+    {
+      "name": "URL",
+      "type": "string",
+      "required": true,
+      "description": "System reference URL",
+      "children": []
+    },
+    {
+      "name": "video_title",
+      "type": "string",
+      "required": false,
+      "description": "Video title",
+      "children": []
+    },
+    {
+      "name": "voice_id",
+      "type": "string",
+      "required": true,
+      "description": "Voice ID to be used",
+      "children": []
+    },
+    {
+      "name": "max_id",
+      "type": "integer",
+      "required": false,
+      "description": "Used for pagination of the request. Required if pagination is needed.",
+      "children": []
+    },
+    {
+      "name": "translate",
+      "type": "string",
+      "required": false,
+      "description": "Language code (e.g. ja,en,zh)",
+      "children": []
+    },
+    {
+      "name": "country",
+      "type": "string",
+      "required": false,
+      "description": "Variable country prefix (e.g., jp)",
+      "children": []
+    },
+    {
+      "name": "special_id",
+      "type": "string",
+      "required": false,
+      "description": "Two digits to be used for each request.",
+      "children": []
+    },
+    {
+      "name": "method",
+      "type": "string",
+      "required": false,
+      "description": "Method used to deliver content.",
+      "children": []
+    },
+    {
+      "name": "creative_type",
+      "type": "string",
+      "required": false,
+      "description": "Content creation type defined by feature",
+      "children": []
+    },
+    {
+      "name": "suggestion",
+      "type": "string",
+      "required": false,
+      "description": "Content provider can set suggestions for content flow",
+      "children": []
+    }
+  ],
+  "response_fields": [],
+  "update_log": [],
+  "hidden_fields": [],
+  "metadata": {
+    "total_chunks": 1,
+    "chunks_with_errors": 0,
+    "total_parameters_before_dedup": 10,
+    "total_parameters_after_dedup": 10,
+    "update_log_entries": 0,
+    "hidden_fields_count": 0,
+    "source_results": "workspaces\\v2.product.get_item_violation_info\\results\\all_chunks_results.json"
+  }
+}

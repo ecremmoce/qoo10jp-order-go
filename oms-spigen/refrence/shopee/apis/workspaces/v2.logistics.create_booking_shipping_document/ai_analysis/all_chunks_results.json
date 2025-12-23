@@ -1,0 +1,119 @@
+[
+  {
+    "chunk_index": 1,
+    "total_chunks": 1,
+    "endpoint": "/v2/logistics/create_booking_shipping_document",
+    "method": "POST",
+    "description": "Create logistics shipping document for bookings",
+    "update_log": [],
+    "hidden_fields": [],
+    "parameters": [
+      {
+        "name": "partner_id",
+        "type": "integer",
+        "required": true,
+        "description": "Partner ID of a product user registered in successsful shipping API.",
+        "children": []
+      },
+      {
+        "name": "timestamp",
+        "type": "string",
+        "required": true,
+        "description": "This is to indicate the timestamp of this request. Required by dataflow to prevent duplicated requests.",
+        "children": []
+      },
+      {
+        "name": "access_token",
+        "type": "string",
+        "required": true,
+        "description": "Access token to call API. For details on how to get access token, please refer to Overview section of API documentation",
+        "children": []
+      },
+      {
+        "name": "sign",
+        "type": "string",
+        "required": true,
+        "description": "Signature value utilized by a server. Generated according to a mechanism to verify data.",
+        "children": []
+      },
+      {
+        "name": "booking_id",
+        "type": "string",
+        "required": true,
+        "description": "Unique shipping order identifier for a booking",
+        "children": []
+      },
+      {
+        "name": "booking_number",
+        "type": "string",
+        "required": false,
+        "description": "The booking number of booking. Required for some logistics shipping providers",
+        "children": []
+      },
+      {
+        "name": "shipping_document_type",
+        "type": "string",
+        "required": false,
+        "description": "The type of shipping document format",
+        "children": []
+      }
+    ],
+    "response_fields": [
+      {
+        "name": "request_id",
+        "type": "string",
+        "description": "The identifier for an API request for error tracking"
+      },
+      {
+        "name": "error",
+        "type": "string",
+        "description": "Indicate error type if any exists if no error then null"
+      },
+      {
+        "name": "message",
+        "type": "string",
+        "description": "Error message indicates what error (if any) has happened"
+      },
+      {
+        "name": "booking_id",
+        "type": "string",
+        "description": "Unique shipping order identifier for a booking"
+      },
+      {
+        "name": "manifest",
+        "type": "object",
+        "description": "Detail information you are querying"
+      },
+      {
+        "name": "tracking_id",
+        "type": "string",
+        "description": "The id of the result label"
+      },
+      {
+        "name": "file_type",
+        "type": "string",
+        "description": "Indicate what type of the file was returned as input"
+      },
+      {
+        "name": "file_content",
+        "type": "string",
+        "description": "Indicate what base64 if the encoded as base64 in uri or bytestream if raw text"
+      }
+    ],
+    "notes": "The documentation includes error codes and API permissions sections at the bottom. The endpoint appears to be part of a logistics/shipping document creation system.",
+    "chunk_metadata": {
+      "index": 1,
+      "total": 1,
+      "y_start": 0,
+      "y_end": 4445,
+      "overlap_top": 0,
+      "overlap_bottom": 0,
+      "height": 4445,
+      "path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\workspaces\\v2.logistics.create_booking_shipping_document\\chunks\\chunk_001.png",
+      "filename": "chunk_001.png",
+      "width": 837
+    },
+    "analysis_timestamp": "2025-10-10T05:59:47.045289",
+    "model": "claude-3-5-sonnet-20241022"
+  }
+]

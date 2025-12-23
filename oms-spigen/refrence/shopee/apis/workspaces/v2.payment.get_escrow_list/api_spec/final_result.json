@@ -1,0 +1,61 @@
+{
+  "endpoint": null,
+  "method": null,
+  "description": null,
+  "parameters": [
+    {
+      "name": "URL",
+      "type": "string",
+      "required": true,
+      "description": "Authentication server URLs",
+      "children": []
+    },
+    {
+      "name": "sso_url",
+      "type": "string",
+      "required": true,
+      "description": null,
+      "children": []
+    },
+    {
+      "name": "oauth_url",
+      "type": "string",
+      "required": true,
+      "description": null,
+      "children": []
+    },
+    {
+      "name": "settings",
+      "type": "object",
+      "required": false,
+      "description": null,
+      "children": []
+    },
+    {
+      "name": "allow_user_auth",
+      "type": "boolean",
+      "required": false,
+      "description": "Specifies whether users can authenticate",
+      "children": []
+    },
+    {
+      "name": "client_id",
+      "type": "string",
+      "required": true,
+      "description": "The application client ID",
+      "children": []
+    }
+  ],
+  "response_fields": [],
+  "update_log": [],
+  "hidden_fields": [],
+  "metadata": {
+    "total_chunks": 1,
+    "chunks_with_errors": 0,
+    "total_parameters_before_dedup": 6,
+    "total_parameters_after_dedup": 6,
+    "update_log_entries": 0,
+    "hidden_fields_count": 0,
+    "source_results": "workspaces\\v2.payment.get_escrow_list\\results\\all_chunks_results.json"
+  }
+}

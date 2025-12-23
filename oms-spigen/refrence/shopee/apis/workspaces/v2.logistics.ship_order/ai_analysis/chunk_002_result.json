@@ -1,0 +1,52 @@
+{
+  "chunk_index": 2,
+  "endpoint": null,
+  "method": null,
+  "description": null,
+  "parameters": [],
+  "response_fields": [
+    {
+      "name": "logistics.error_param",
+      "type": "string",
+      "description": "The address is invalid. Please check the address.",
+      "children": []
+    },
+    {
+      "name": "logistics.error_status",
+      "type": "string",
+      "description": "Logistic status is not supported",
+      "children": []
+    },
+    {
+      "name": "error_param",
+      "type": "string",
+      "description": "Invalid timestamp",
+      "children": []
+    },
+    {
+      "name": "error_network",
+      "type": "string",
+      "description": "Inner http call failed",
+      "children": []
+    },
+    {
+      "name": "error_data",
+      "type": "string",
+      "description": "data not exist",
+      "children": []
+    }
+  ],
+  "chunk_metadata": {
+    "index": 2,
+    "total": 3,
+    "y_start": 7250,
+    "y_end": 15250,
+    "overlap_top": 500,
+    "overlap_bottom": 500,
+    "height": 8000,
+    "path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\workspaces\\v2.logistics.ship_order\\chunks\\chunk_002.png",
+    "filename": "chunk_002.png",
+    "width": 837
+  },
+  "chunk_path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\workspaces\\v2.logistics.ship_order\\chunks\\chunk_002.png"
+}

@@ -1,0 +1,52 @@
+======================================================================
+API SPECIFICATION SUMMARY
+======================================================================
+
+Endpoint: POST /short_video_recommended_price
+Description: Get product information for recommended price
+
+Parameters (10):
+----------------------------------------------------------------------
+  postfix_1 (int)
+   Postfix 1 to calculate post reputation by successful comments or unlocked
+  postfix_2 (int)
+   Will be filled if 5 minutes after the 1st posting. Result will be checked in 5 minutes
+* msg_id (string)
+   Request msg identity to a row, using a identity post parameter to recommend price
+* type (string)
+   Optional parameter to control_id, get_profit_parameter, short_video_index, show_page_source
+  short_msg_option (string)
+   Short msg option
+  media_id (string)
+   id of main image
+* url (string)
+   Indicate error link first error. Display if the error exists
+  running (string)
+   Indicate errors during first error. Display if the error happens
+  request_id (string)
+   The identifier for an API request for error
+  short_type_price (string)
+   id of short msg
+
+Response Fields (3):
+----------------------------------------------------------------------
+  msg_type (string)
+   error msg type
+  error_data (string)
+   was not exist
+  error_detail (string)
+   parameter invalid
+
+Metadata:
+----------------------------------------------------------------------
+  total_chunks: 1
+  chunks_with_errors: 0
+  total_parameters_before_dedup: 10
+  total_parameters_after_dedup: 10
+  update_log_entries: 0
+  hidden_fields_count: 0
+  source_results: workspaces\v2.product.get_direct_shop_recommended_price\results\all_chunks_results.json
+
+======================================================================
+Legend: * = required parameter
+======================================================================

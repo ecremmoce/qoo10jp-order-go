@@ -1,0 +1,86 @@
+{
+  "type": "object",
+  "title": "상품 쇼핑몰별 DATA 수정",
+  "description": "- 품번안의 상품명, 판매가, 상세설명 등 고정값이 아닌 쇼핑몰마다 다르게 입력해서 송신해야 하는 경우 사용합니다. - 쇼핑몰별 재고분할 경우 자체상품코드 기준으로 입력된 값의 합이 100보다 적게 입력해야 합니다. 기존값 + 추가 입력값이 100이 넘을 경우 실패됩니다. - 쇼핑몰코드는 사방넷 메뉴 기본정보 > 쇼핑몰관리(지원) 메뉴를 참고하거나 쇼핑몰코드 조회 API를 참고해서 입력합니다.",
+  "required": [
+    "mallCode",
+    "compaynyGoodsCd"
+  ],
+  "properties": {
+    "mallCode": {
+      "type": "string",
+      "description": "쇼핑몰CODE",
+      "xml_name": "MALL_CODE"
+    },
+    "compaynyGoodsCd": {
+      "type": "string",
+      "description": "자체상품코드",
+      "xml_name": "COMPAYNY_GOODS_CD"
+    },
+    "mallGoodsPrice": {
+      "type": "string",
+      "description": "판매가",
+      "xml_name": "MALL_GOODS_PRICE"
+    },
+    "mallProdName": {
+      "type": "string",
+      "description": "상품명",
+      "xml_name": "MALL_PROD_NAME"
+    },
+    "mallProdDesc": {
+      "type": "string",
+      "description": "상품상세설명",
+      "xml_name": "MALL_PROD_DESC"
+    },
+    "mallProp1Cd": {
+      "type": "string",
+      "description": "속성분류코드",
+      "xml_name": "MALL_PROP1_CD"
+    },
+    "buinfoId3": {
+      "type": "string",
+      "description": "부가정보Ⅱ코드",
+      "xml_name": "BUINFO_ID3"
+    },
+    "mallStockRate": {
+      "type": "string",
+      "description": "재고분할 퍼센트",
+      "xml_name": "MALL_STOCK_RATE"
+    },
+    "certno": {
+      "type": "string",
+      "description": "인증번호",
+      "xml_name": "CERTNO"
+    },
+    "issuedate": {
+      "type": "string",
+      "description": "발급일자",
+      "xml_name": "ISSUEDATE"
+    },
+    "certdate": {
+      "type": "string",
+      "description": "인증일자",
+      "xml_name": "CERTDATE"
+    },
+    "avlstDm": {
+      "type": "string",
+      "description": "인증유효 시작일",
+      "xml_name": "AVLST_DM"
+    },
+    "avledDm": {
+      "type": "string",
+      "description": "인증유효 마지막일",
+      "xml_name": "AVLED_DM"
+    },
+    "certAgency": {
+      "type": "string",
+      "description": "인증기관",
+      "xml_name": "CERT_AGENCY"
+    },
+    "certfield": {
+      "type": "string",
+      "description": "인증분야",
+      "xml_name": "CERTFIELD"
+    }
+  }
+}

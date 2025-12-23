@@ -1,0 +1,50 @@
+======================================================================
+API SPECIFICATION SUMMARY
+======================================================================
+
+Endpoint: GET /product/set/item_process_sequence_read
+Description: API for retrieving product sequence details
+
+Parameters (4):
+----------------------------------------------------------------------
+* url (string)
+   API endpoint URL
+* method (string)
+   HTTP method
+* test_url (string)
+   Test environment URL
+* params (object)
+   Request parameters
+  * size_n (integer)
+     Parameter ID assigned after registration is successful
+  * timestamp (string)
+     Unix timestamp
+  * sign (string)
+     The MD5 hash of the above parameters. Used for request validation
+
+Response Fields (5):
+----------------------------------------------------------------------
+* size_n (mixed)
+   Indicates item size in your Entity line organization
+* message (string)
+   Indicates status/error message
+* severity (string)
+   Severity status (error, warning, etc.)
+* sequence (mixed)
+   The Severity line on IP specified for your training
+* error_codes (object)
+   Various error codes and their meanings
+
+Metadata:
+----------------------------------------------------------------------
+  total_chunks: 1
+  chunks_with_errors: 0
+  total_parameters_before_dedup: 4
+  total_parameters_after_dedup: 4
+  update_log_entries: 0
+  hidden_fields_count: 0
+  source_results: workspaces\v2.product.get_item_content_diagnosis_result\results\all_chunks_results.json
+
+======================================================================
+Legend: * = required parameter
+======================================================================

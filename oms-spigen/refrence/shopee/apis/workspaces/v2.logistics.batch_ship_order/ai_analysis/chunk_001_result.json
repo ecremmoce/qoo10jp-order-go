@@ -1,0 +1,94 @@
+{
+  "chunk_index": 1,
+  "endpoint": null,
+  "method": null,
+  "description": null,
+  "parameters": [],
+  "response_fields": [
+    {
+      "name": "error_param",
+      "type": "string",
+      "description": "There is no access_token in query.",
+      "children": []
+    },
+    {
+      "name": "error_auth",
+      "type": "string",
+      "description": "Invalid access_token.",
+      "children": []
+    },
+    {
+      "name": "error_param",
+      "type": "string",
+      "description": "Invalid partner_id",
+      "children": []
+    },
+    {
+      "name": "error_param",
+      "type": "string",
+      "description": "There is no partner_id in query.",
+      "children": []
+    },
+    {
+      "name": "error_auth",
+      "type": "string",
+      "description": "No permission to current api.",
+      "children": []
+    },
+    {
+      "name": "error_param",
+      "type": "string",
+      "description": "There is no sign in query.",
+      "children": []
+    },
+    {
+      "name": "error_sign",
+      "type": "string",
+      "description": "Wrong sign.",
+      "children": []
+    },
+    {
+      "name": "error_param",
+      "type": "string",
+      "description": "no timestamp",
+      "children": []
+    },
+    {
+      "name": "error_param",
+      "type": "string",
+      "description": "Invalid timestamp",
+      "children": []
+    },
+    {
+      "name": "error_network",
+      "type": "string",
+      "description": "Inner http call failed",
+      "children": []
+    },
+    {
+      "name": "error_data",
+      "type": "string",
+      "description": "parse data failed",
+      "children": []
+    },
+    {
+      "name": "error_data",
+      "type": "string",
+      "description": "data not exist",
+      "children": []
+    }
+  ],
+  "chunk_metadata": {
+    "index": 1,
+    "total": 2,
+    "y_start": 0,
+    "y_end": 8000,
+    "overlap_top": 0,
+    "overlap_bottom": 500,
+    "height": 8000,
+    "path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\workspaces\\v2.logistics.batch_ship_order\\chunks\\chunk_001.png",
+    "filename": "chunk_001.png",
+    "width": 837
+  },
+  "chunk_path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\workspaces\\v2.logistics.batch_ship_order\\chunks\\chunk_001.png"
+}

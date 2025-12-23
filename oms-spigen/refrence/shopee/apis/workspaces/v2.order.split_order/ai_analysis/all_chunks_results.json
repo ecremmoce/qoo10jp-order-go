@@ -1,0 +1,129 @@
+[
+  {
+    "chunk_index": 1,
+    "total_chunks": 1,
+    "endpoint": "/api/v2/product/add_item",
+    "method": "POST",
+    "description": "Add item to product",
+    "update_log": [
+      {
+        "date": "2023-09-26",
+        "change": "Added call_back_url param"
+      }
+    ],
+    "parameters": [
+      {
+        "name": "access_token",
+        "type": "string",
+        "required": true,
+        "description": "API authentication token",
+        "children": []
+      },
+      {
+        "name": "name",
+        "type": "string",
+        "required": true,
+        "description": "Product name",
+        "children": []
+      },
+      {
+        "name": "category_id",
+        "type": "integer",
+        "required": true,
+        "description": "Product category ID",
+        "children": []
+      },
+      {
+        "name": "description",
+        "type": "string",
+        "required": true,
+        "description": "Product description",
+        "children": []
+      },
+      {
+        "name": "images",
+        "type": "array",
+        "required": true,
+        "description": "Array of image URLs",
+        "children": []
+      },
+      {
+        "name": "price",
+        "type": "float",
+        "required": true,
+        "description": "Product price",
+        "children": []
+      },
+      {
+        "name": "stock",
+        "type": "integer",
+        "required": true,
+        "description": "Available stock quantity",
+        "children": []
+      },
+      {
+        "name": "shipping_type",
+        "type": "string",
+        "required": true,
+        "description": "Shipping method type",
+        "children": []
+      },
+      {
+        "name": "shipping_fee",
+        "type": "float",
+        "required": false,
+        "description": "Shipping fee amount",
+        "children": []
+      },
+      {
+        "name": "call_back_url",
+        "type": "string",
+        "required": false,
+        "description": "Callback URL for notifications",
+        "children": []
+      }
+    ],
+    "response_fields": [
+      {
+        "name": "code",
+        "type": "integer",
+        "description": "Response status code",
+        "children": []
+      },
+      {
+        "name": "message",
+        "type": "string",
+        "description": "Response message",
+        "children": []
+      },
+      {
+        "name": "data",
+        "type": "object",
+        "description": "Response data object",
+        "children": [
+          {
+            "name": "product_id",
+            "type": "integer",
+            "description": "ID of the created product",
+            "children": []
+          }
+        ]
+      }
+    ],
+    "notes": "The documentation appears to be for a product creation API endpoint. The image shows clear parameter definitions and response structure. There's a recent update log entry indicating the addition of a callback URL parameter.",
+    "chunk_metadata": {
+      "index": 1,
+      "total": 1,
+      "y_start": 0,
+      "y_end": 6510,
+      "overlap_top": 0,
+      "overlap_bottom": 0,
+      "height": 6510,
+      "path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\workspaces\\v2.order.split_order\\chunks\\chunk_001.png",
+      "filename": "chunk_001.png",
+      "width": 837
+    },
+    "analysis_timestamp": "2025-10-10T06:17:56.304867",
+    "model": "claude-3-5-sonnet-20241022"
+  }
+]

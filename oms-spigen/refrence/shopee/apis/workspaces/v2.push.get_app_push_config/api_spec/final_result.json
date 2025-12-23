@@ -1,0 +1,82 @@
+{
+  "endpoint": "/push/get_app_push_config",
+  "method": "POST",
+  "description": "Get push app configuration settings",
+  "parameters": [
+    {
+      "name": "push_id",
+      "type": "string",
+      "required": true,
+      "description": "Partner ID (A serialized push registration ID available for all partners)",
+      "children": []
+    },
+    {
+      "name": "timestamp",
+      "type": "string",
+      "required": true,
+      "description": "Timestamp",
+      "children": []
+    },
+    {
+      "name": "client_id",
+      "type": "string",
+      "required": true,
+      "description": "String identifier for error tracking",
+      "children": []
+    },
+    {
+      "name": "app",
+      "type": "string",
+      "required": true,
+      "description": "Indicate which app this error is from. Empty if no error.",
+      "children": []
+    },
+    {
+      "name": "message",
+      "type": "string",
+      "required": true,
+      "description": "Indicate your desired error text. Empty if no error.",
+      "children": []
+    },
+    {
+      "name": "check_id",
+      "type": "string",
+      "required": true,
+      "description": "Filter client private user. Get user first, empty if no error.",
+      "children": []
+    },
+    {
+      "name": "account_time",
+      "type": "timestamp",
+      "required": true,
+      "description": "The last push suspended time caused by too many pushes sent",
+      "children": []
+    },
+    {
+      "name": "max_push_interval",
+      "type": "int",
+      "required": true,
+      "description": "[3600,14400,28800] The push failed time window",
+      "children": []
+    },
+    {
+      "name": "push_config_ip_id",
+      "type": "int",
+      "required": true,
+      "description": "[1,2,3] Get this flag to indicate push config type",
+      "children": []
+    }
+  ],
+  "response_fields": [],
+  "update_log": [],
+  "hidden_fields": [],
+  "metadata": {
+    "total_chunks": 1,
+    "chunks_with_errors": 0,
+    "total_parameters_before_dedup": 9,
+    "total_parameters_after_dedup": 9,
+    "update_log_entries": 0,
+    "hidden_fields_count": 0,
+    "source_results": "workspaces\\v2.push.get_app_push_config\\results\\all_chunks_results.json"
+  }
+}

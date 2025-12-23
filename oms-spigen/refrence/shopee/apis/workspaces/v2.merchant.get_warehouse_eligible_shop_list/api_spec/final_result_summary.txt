@@ -1,0 +1,49 @@
+======================================================================
+API SPECIFICATION SUMMARY
+======================================================================
+
+Endpoint: None /openapi/warehouse/get_warehouse_eligible_shop_list
+
+Parameters (7):
+----------------------------------------------------------------------
+* timestamp (string)
+   UTC+8 timezone
+* url (string)
+   Request URL
+* access_token (string)
+   Access token to identify user permission to use API
+* merchant_id (integer)
+   Shopeeid unique identifier for a merchant
+  page (integer)
+   Indicate which page to retrieve
+  warehouse_id (integer)
+   Warehouse address identifier
+  operation_type (integer)
+   Operation type
+
+Response Fields (5):
+----------------------------------------------------------------------
+  request_id (string)
+   The identifier of the API request for each attempt
+  error (string)
+   Indicate error type if any error. Empty if no error happened
+  message (string)
+   Indicate error details if any error. Empty if no happened
+  more (boolean)
+   Indicate flag bit of the warehouse
+  shop_list (array)
+   List of eligible shops
+
+Metadata:
+----------------------------------------------------------------------
+  total_chunks: 1
+  chunks_with_errors: 0
+  total_parameters_before_dedup: 7
+  total_parameters_after_dedup: 7
+  update_log_entries: 1
+  hidden_fields_count: 0
+  source_results: workspaces\v2.merchant.get_warehouse_eligible_shop_list\results\all_chunks_results.json
+
+======================================================================
+Legend: * = required parameter
+======================================================================

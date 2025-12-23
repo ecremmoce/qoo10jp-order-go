@@ -1,0 +1,85 @@
+[
+  {
+    "chunk_index": 1,
+    "total_chunks": 1,
+    "endpoint": "/v1/project/get_cos_chat_detail",
+    "method": "GET",
+    "description": null,
+    "update_log": [],
+    "parameters": {
+      "common_parameters": [
+        {
+          "name": "X-TC-Action",
+          "type": "string",
+          "required": true,
+          "description": null
+        },
+        {
+          "name": "URL",
+          "type": "string",
+          "required": true,
+          "description": "https://captcha.tencentcloudapi.com/project/get_cos_chat_detail"
+        }
+      ],
+      "request_parameters": [
+        {
+          "name": "project_id",
+          "type": "string",
+          "required": true,
+          "description": "ID or new-style label"
+        },
+        {
+          "name": "msg_id",
+          "type": "string",
+          "required": true,
+          "description": null
+        }
+      ],
+      "response_parameters": [
+        {
+          "name": "message",
+          "type": "string",
+          "required": false,
+          "description": "Message"
+        },
+        {
+          "name": "warning",
+          "type": "string",
+          "required": false,
+          "description": "Warning message"
+        },
+        {
+          "name": "request_id",
+          "type": "string",
+          "required": false,
+          "description": "The identifier for an API request for which errors occurred"
+        }
+      ]
+    },
+    "error_codes": [
+      {
+        "code": "error_404",
+        "description": "cannot find such label"
+      },
+      {
+        "code": "error_project",
+        "description": "cannot find such project"
+      }
+    ],
+    "notes": "The documentation includes example requests and responses, error codes, and API permissions sections. Some descriptions appear to be truncated or partially visible in the image.",
+    "chunk_metadata": {
+      "index": 1,
+      "total": 1,
+      "y_start": 0,
+      "y_end": 4622,
+      "overlap_top": 0,
+      "overlap_bottom": 0,
+      "height": 4622,
+      "path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\workspaces\\v2.product.get_size_chart_detail\\chunks\\chunk_001.png",
+      "filename": "chunk_001.png",
+      "width": 837
+    },
+    "analysis_timestamp": "2025-10-10T06:30:54.822973",
+    "model": "claude-3-5-sonnet-20241022"
+  }
+]

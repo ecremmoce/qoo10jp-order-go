@@ -1,0 +1,94 @@
+{
+  "chunk_index": 1,
+  "total_chunks": 1,
+  "endpoint": null,
+  "method": null,
+  "description": null,
+  "update_log": [],
+  "hidden_fields": [],
+  "parameters": [
+    {
+      "name": "category_id",
+      "type": "integer",
+      "required": true,
+      "description": "The unique identifier for a category",
+      "children": []
+    },
+    {
+      "name": "image",
+      "type": "string",
+      "required": false,
+      "description": "Image URL",
+      "children": []
+    },
+    {
+      "name": "label",
+      "type": "string",
+      "required": false,
+      "description": "Label text",
+      "children": []
+    },
+    {
+      "name": "value",
+      "type": "string",
+      "required": false,
+      "description": "Value identifier",
+      "children": []
+    },
+    {
+      "name": "metadata",
+      "type": "object",
+      "required": false,
+      "description": "Additional metadata information",
+      "children": [
+        {
+          "name": "brand_name",
+          "type": "string",
+          "required": false,
+          "description": "Name of the brand",
+          "children": []
+        },
+        {
+          "name": "model_name",
+          "type": "string",
+          "required": false,
+          "description": "Name of the model",
+          "children": []
+        }
+      ]
+    }
+  ],
+  "response_fields": [
+    {
+      "name": "error_code",
+      "type": "integer",
+      "description": "Error code if request fails"
+    },
+    {
+      "name": "msg",
+      "type": "string",
+      "description": "Error message or success confirmation"
+    },
+    {
+      "name": "data",
+      "type": "object",
+      "description": "Response data object",
+      "children": []
+    }
+  ],
+  "notes": "The documentation appears to be showing both request parameters and response fields. Some sections appear to have additional technical details that might be cut off in the image. The documentation includes examples and formatting specifications that suggest this is part of a larger API documentation set.",
+  "chunk_metadata": {
+    "index": 1,
+    "total": 1,
+    "y_start": 0,
+    "y_end": 6324,
+    "overlap_top": 0,
+    "overlap_bottom": 0,
+    "height": 6324,
+    "path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\workspaces\\v2.voucher.get_voucher\\chunks\\chunk_001.png",
+    "filename": "chunk_001.png",
+    "width": 837
+  },
+  "analysis_timestamp": "2025-10-10T06:52:18.564292",
+  "model": "claude-3-5-sonnet-20241022"
+}

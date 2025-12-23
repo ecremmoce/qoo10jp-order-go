@@ -1,0 +1,67 @@
+{
+  "endpoint": null,
+  "method": null,
+  "description": "API Documentation Update Log",
+  "parameters": [],
+  "response_fields": [
+    {
+      "name": "error_check_luc_fail",
+      "type": "string",
+      "description": "{{error_info}}"
+    },
+    {
+      "name": "error_category_is_block",
+      "type": "string",
+      "description": "Category is restricted"
+    },
+    {
+      "name": "error_inner",
+      "type": "string",
+      "description": "Update item failed {{error_info}}"
+    },
+    {
+      "name": "error_param",
+      "type": "string",
+      "description": "Attribute format is invalid. NCC field only allows Eng Alphanumeric input"
+    },
+    {
+      "name": "error_desc_image_no_pass",
+      "type": "string",
+      "description": "{{error_info}}"
+    },
+    {
+      "name": "error_auth",
+      "type": "string",
+      "description": "Your shop can not use model level dts"
+    },
+    {
+      "name": "error_system_busy",
+      "type": "string",
+      "description": "Our system is taking some time to respond, please try later."
+    }
+  ],
+  "update_log": [
+    {
+      "date": "2025-09-15",
+      "details": "The tier_variation structure in the documentation has been deprecated. Please use the standardise_tier_variation structure when uploading variations."
+    },
+    {
+      "date": "2023-01-03",
+      "details": "add model_status field"
+    },
+    {
+      "date": "2022-07-26",
+      "details": "update the description"
+    }
+  ],
+  "hidden_fields": [],
+  "metadata": {
+    "total_chunks": 2,
+    "chunks_with_errors": 0,
+    "total_parameters_before_dedup": 0,
+    "total_parameters_after_dedup": 0,
+    "update_log_entries": 3,
+    "hidden_fields_count": 0,
+    "source_results": "workspaces\\v2.global_product.create_publish_task\\results\\all_chunks_results.json"
+  }
+}

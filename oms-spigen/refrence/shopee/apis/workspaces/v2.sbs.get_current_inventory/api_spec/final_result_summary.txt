@@ -1,0 +1,32 @@
+======================================================================
+API SPECIFICATION SUMMARY
+======================================================================
+
+Endpoint: None None
+
+Parameters (5):
+----------------------------------------------------------------------
+* qty (string)
+   Quantity of items
+  hs_code (string)
+   Product HS code
+  sku (string)
+   Product SKU
+  lang (string)
+   Language code
+  current_location (string)
+   Current location of product
+
+Metadata:
+----------------------------------------------------------------------
+  total_chunks: 1
+  chunks_with_errors: 0
+  total_parameters_before_dedup: 5
+  total_parameters_after_dedup: 5
+  update_log_entries: 3
+  hidden_fields_count: 2
+  source_results: workspaces\v2.sbs.get_current_inventory\results\all_chunks_results.json
+
+======================================================================
+Legend: * = required parameter
+======================================================================

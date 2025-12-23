@@ -1,0 +1,89 @@
+{
+  "chunk_index": 1,
+  "total_chunks": 1,
+  "endpoint": null,
+  "method": null,
+  "description": null,
+  "update_log": [
+    {
+      "date": "2023-06-15",
+      "change": "Added new fields"
+    },
+    {
+      "date": "2022-12-01",
+      "change": "API revisions"
+    },
+    {
+      "date": "2022-09-26",
+      "change": "Initial release"
+    }
+  ],
+  "hidden_fields": [],
+  "parameters": [
+    {
+      "name": "order_payment",
+      "type": "object",
+      "required": true,
+      "description": "Order payment details",
+      "children": [
+        {
+          "name": "stripe_payment_method_id",
+          "type": "string",
+          "required": true,
+          "description": "Stripe payment method ID",
+          "children": []
+        },
+        {
+          "name": "stripe_setup_intent_id",
+          "type": "string",
+          "required": true,
+          "description": "Stripe setup intent ID",
+          "children": []
+        },
+        {
+          "name": "stripe_payment_intent_id",
+          "type": "string",
+          "required": true,
+          "description": "Stripe payment intent ID",
+          "children": []
+        },
+        {
+          "name": "gateway_order_id",
+          "type": "string",
+          "required": true,
+          "description": "Payment gateway order ID",
+          "children": []
+        }
+      ]
+    }
+  ],
+  "response_fields": [
+    {
+      "name": "status",
+      "type": "string",
+      "description": "Response status",
+      "children": []
+    },
+    {
+      "name": "message",
+      "type": "string",
+      "description": "Response message",
+      "children": []
+    }
+  ],
+  "notes": "The image appears to be a payment-related API documentation showing both request parameters and response fields. The documentation includes an update log section showing three updates between 2022-2023. The parameters section focuses on payment processing details with Stripe integration.",
+  "chunk_metadata": {
+    "index": 1,
+    "total": 1,
+    "y_start": 0,
+    "y_end": 7711,
+    "overlap_top": 0,
+    "overlap_bottom": 0,
+    "height": 7711,
+    "path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\workspaces\\v2.logistics.get_operating_hours\\chunks\\chunk_001.png",
+    "filename": "chunk_001.png",
+    "width": 837
+  },
+  "analysis_timestamp": "2025-10-10T06:05:01.524902",
+  "model": "claude-3-5-sonnet-20241022"
+}

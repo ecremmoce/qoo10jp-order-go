@@ -1,0 +1,130 @@
+{
+  "chunk_index": 1,
+  "total_chunks": 1,
+  "endpoint": "/push/get_app_push_config",
+  "method": "POST",
+  "description": "Get push app configuration settings",
+  "update_log": [],
+  "hidden_fields": [],
+  "parameters": [
+    {
+      "name": "push_id",
+      "type": "string",
+      "required": true,
+      "description": "Partner ID (A serialized push registration ID available for all partners)",
+      "children": []
+    },
+    {
+      "name": "timestamp",
+      "type": "string",
+      "required": true,
+      "description": "Timestamp",
+      "children": []
+    },
+    {
+      "name": "client_id",
+      "type": "string",
+      "required": true,
+      "description": "String identifier for error tracking",
+      "children": []
+    },
+    {
+      "name": "app",
+      "type": "string",
+      "required": true,
+      "description": "Indicate which app this error is from. Empty if no error.",
+      "children": []
+    },
+    {
+      "name": "message",
+      "type": "string",
+      "required": true,
+      "description": "Indicate your desired error text. Empty if no error.",
+      "children": []
+    },
+    {
+      "name": "check_id",
+      "type": "string",
+      "required": true,
+      "description": "Filter client private user. Get user first, empty if no error.",
+      "children": []
+    },
+    {
+      "name": "account_time",
+      "type": "timestamp",
+      "required": true,
+      "description": "The last push suspended time caused by too many pushes sent",
+      "children": []
+    },
+    {
+      "name": "max_push_interval",
+      "type": "int",
+      "required": true,
+      "description": "[3600,14400,28800] The push failed time window",
+      "children": []
+    },
+    {
+      "name": "push_config_ip_id",
+      "type": "int",
+      "required": true,
+      "description": "[1,2,3] Get this flag to indicate push config type",
+      "children": []
+    }
+  ],
+  "response_parameters": [
+    {
+      "name": "request_id",
+      "type": "string",
+      "description": "The identifier for an API request for error tracking"
+    }
+  ],
+  "error_codes": [
+    {
+      "code": "error_data",
+      "description": "some data failed"
+    },
+    {
+      "code": "error_net",
+      "description": "data fed well"
+    },
+    {
+      "code": "error_push",
+      "description": "connection failed"
+    },
+    {
+      "code": "error_param",
+      "description": "This information not opened or not found"
+    },
+    {
+      "code": "error_param",
+      "description": "Wrong parameter, status [msg]"
+    },
+    {
+      "code": "error_push",
+      "description": "something wrong 'Please try again'"
+    },
+    {
+      "code": "error_param",
+      "description": "reload not this getbag"
+    },
+    {
+      "code": "error_reload",
+      "description": "error reload"
+    }
+  ],
+  "notes": "The documentation includes request examples in multiple programming languages (PHP, cURL, Python) and shows both request and response examples. There are also several API permissions listed at the bottom of the image.",
+  "chunk_metadata": {
+    "index": 1,
+    "total": 1,
+    "y_start": 0,
+    "y_end": 4310,
+    "overlap_top": 0,
+    "overlap_bottom": 0,
+    "height": 4310,
+    "path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\workspaces\\v2.push.get_app_push_config\\chunks\\chunk_001.png",
+    "filename": "chunk_001.png",
+    "width": 837
+  },
+  "analysis_timestamp": "2025-10-10T06:38:43.483163",
+  "model": "claude-3-5-sonnet-20241022"
+}

@@ -1,0 +1,39 @@
+======================================================================
+API SPECIFICATION SUMMARY
+======================================================================
+
+Endpoint: None None
+
+Parameters (10):
+----------------------------------------------------------------------
+* url (string)
+   Stream endpoint
+* url_ws (string)
+   WebSocket endpoint
+  test_url (string)
+   Test environment endpoint
+* prefix_id (string)
+   Prefix ID assigned after application is successful
+* share_token (string)
+   Authentication token required for data sharing
+* msg_id (string)
+   Unique message ID
+  error_message (string)
+   Error message details
+  error (string)
+  msg (string)
+  booking_status (string)
+
+Metadata:
+----------------------------------------------------------------------
+  total_chunks: 1
+  chunks_with_errors: 0
+  total_parameters_before_dedup: 10
+  total_parameters_after_dedup: 10
+  update_log_entries: 0
+  hidden_fields_count: 0
+  source_results: workspaces\v2.order.get_booking_list\results\all_chunks_results.json
+
+======================================================================
+Legend: * = required parameter
+======================================================================

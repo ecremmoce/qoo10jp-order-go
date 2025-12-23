@@ -1,0 +1,91 @@
+{
+  "endpoint": "/openapi/get_video_info",
+  "method": "GET",
+  "description": "API for retrieving video information",
+  "parameters": [
+    {
+      "name": "secret_id",
+      "type": "string",
+      "required": true,
+      "description": "Partner ID is assigned upon registration to successful onboarding of the network",
+      "children": []
+    },
+    {
+      "name": "access_token",
+      "type": "string",
+      "required": true,
+      "description": "The token for API system, which is initially sent permission to partner when first authentication",
+      "children": []
+    },
+    {
+      "name": "sign",
+      "type": "string",
+      "required": true,
+      "description": "Digital signature formulated as shown in Ex.",
+      "children": []
+    },
+    {
+      "name": "timestamp",
+      "type": "integer",
+      "required": true,
+      "description": "UNIX timestamp",
+      "children": []
+    }
+  ],
+  "response_fields": [
+    {
+      "name": "code",
+      "type": "integer",
+      "description": "Response status code",
+      "children": []
+    },
+    {
+      "name": "message",
+      "type": "string",
+      "description": "Response message",
+      "children": []
+    },
+    {
+      "name": "request_id",
+      "type": "string",
+      "description": "The identifier for an API request for each tracking",
+      "children": []
+    },
+    {
+      "name": "video_info",
+      "type": "object",
+      "description": "Video information",
+      "children": [
+        {
+          "name": "title",
+          "type": "string",
+          "description": "Title of the video",
+          "children": []
+        },
+        {
+          "name": "desc",
+          "type": "string",
+          "description": "Description of the video",
+          "children": []
+        },
+        {
+          "name": "cover",
+          "type": "string",
+          "description": "Cover image URL",
+          "children": []
+        }
+      ]
+    }
+  ],
+  "update_log": [],
+  "hidden_fields": [],
+  "metadata": {
+    "total_chunks": 1,
+    "chunks_with_errors": 0,
+    "total_parameters_before_dedup": 4,
+    "total_parameters_after_dedup": 4,
+    "update_log_entries": 0,
+    "hidden_fields_count": 0,
+    "source_results": "platforms\\shopee\\apis\\workspaces\\v2.livestream.get_show_item\\results\\all_chunks_results.json"
+  }
+}

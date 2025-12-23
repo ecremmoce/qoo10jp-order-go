@@ -1,0 +1,50 @@
+======================================================================
+API SPECIFICATION SUMMARY
+======================================================================
+
+Endpoint: None None
+Description: Error response documentation
+
+Parameters (0):
+----------------------------------------------------------------------
+
+Response Fields (8):
+----------------------------------------------------------------------
+  error_param (string)
+   Return SN or ID is invalid.
+  error_server (string)
+   Something wrong. Please try later.
+  error_shop (string)
+   shopid is invalid
+  error_data (string)
+   The return case is missing initial evidence from the buyer and will be auto-cancelled if the buyer does not provide evidence by the due date.
+  error_return_status (string)
+   Cannot raise dispute because return SN is not in REQUESTED, RETURN_PROCESSING, or RETURN_ACCEPTED
+  dispute.request.param.error (string)
+   Key: 'XXX' Error:Field validation for 'XX' failed on the 'required' tag
+  API Permissions (object)
+   APP types that can call this API
+    allowed_apps (array)
+     ERP System, Seller In House System, Customer Service, Swam ERP
+  Update Log (array)
+   List of updates
+    2024-12-31 (string)
+     Add new image_list request parameter
+    2024-05-07 (string)
+     sunset the request filed "dispute_reason", please follow the new flow to raise dispute, may refer https://open.shopee.cn/announcements/883
+    2023-12-29 (string)
+     add new request field "dispute_reason_id"
+
+Metadata:
+----------------------------------------------------------------------
+  total_chunks: 2
+  chunks_with_errors: 0
+  total_parameters_before_dedup: 0
+  total_parameters_after_dedup: 0
+  update_log_entries: 0
+  hidden_fields_count: 0
+  source_results: workspaces\v2.returns.dispute\results\all_chunks_results.json
+
+======================================================================
+Legend: * = required parameter
+======================================================================

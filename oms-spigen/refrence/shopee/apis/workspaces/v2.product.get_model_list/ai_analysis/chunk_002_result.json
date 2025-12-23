@@ -1,0 +1,47 @@
+{
+  "chunk_index": 2,
+  "endpoint": null,
+  "method": null,
+  "description": null,
+  "parameters": [],
+  "response_fields": [],
+  "permissions": [
+    "ERP System",
+    "Seller In House System",
+    "Product Management",
+    "Accounting And Finance",
+    "Customer Service",
+    "Customized APP",
+    "Ads Service",
+    "Swam ERP",
+    "Livestream Management",
+    "Ads Facil"
+  ],
+  "update_log": [
+    {
+      "date": "2025-09-05",
+      "details": "add to new response field 'local_promotion_price' and 'local_price'"
+    },
+    {
+      "date": "2025-02-17",
+      "details": "Add is_fulfillment_by_shopee"
+    },
+    {
+      "date": "2024-11-01",
+      "details": "Update the description of total_reserved_stock to return the total reserved stock for P item and all A items under the P item"
+    }
+  ],
+  "chunk_metadata": {
+    "index": 2,
+    "total": 2,
+    "y_start": 7250,
+    "y_end": 9169,
+    "overlap_top": 500,
+    "overlap_bottom": 0,
+    "height": 1919,
+    "path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\workspaces\\v2.product.get_model_list\\chunks\\chunk_002.png",
+    "filename": "chunk_002.png",
+    "width": 837
+  },
+  "chunk_path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\workspaces\\v2.product.get_model_list\\chunks\\chunk_002.png"
+}

@@ -1,0 +1,46 @@
+{
+  "document_id": "developer-guide.290",
+  "document_type": "guide",
+  "platform": "shopee",
+  "extracted_at": "2025-10-16T09:06:24",
+  "extracted_text": "# Announcement | Console\n\n## API Best Practices > Shopee Entrega Direta\n\npaid before 3pm will be delivered on the same day, orders paid after 3pm will be delivered the next day).\n\nThe seller will always have 2 channels available when Shopee Entrega Direta is active, as Shopee Entrega Direta currently only serves SP city.\n\n**Note:** *This channel will be made available to selected sellers, in accordance with the rules established by the Shopee commercial team. For more details follow the* [article](article).\n\n---\n\n## OpenAPI changes\n\n### 1 - Order identification (new logistics channel):\n\n- v2.order.get_order_detail API, \"shipping_carrier\" parameter: \"Shopee Entrega Direta\"\n\n### 2 - Identification of channels available to the seller and creation of items:\n\n- v2.logistics.get_channel_list, parameter \"logistic_channel_id\": 90022\n\n### 3 - Order deadline (ship_by_date):\n\n- As the order delivery deadline is defined by the moment payment is confirmed, it is necessary to ensure that the seller has access to the deadline provided by the v2.order.get_order_detail API, \"ship_by_date\" parameter.\n\n### 4 - Item creation:\n\n- This channel will never be the only one available to a seller, so whenever you create an item, when identifying the available channels, always mention all those available (Shopee Direct Delivery and Standard Delivery for example).\n- Attempting to create an item with only one active logistics channel, namely Shopee Direct Delivery, will not be possible;\n\n---\n\n## Logistic HUBs\n\nFor partners and logistics HUBs that help sellers manage orders with their logistics channels (e.g. Tracken, Log Manager), below are the main APIs and flows for your integration:\n\n### 1 - Create an account and APP on the Shopee Open Platform:\n\n- To access sellers' APIs and order data, you will need to create an account on the Open Platform.\n- Once the account is created, create an APP (preferably an ERP System type to have access to all OpenAPI functionalities) and connect sellers to their account before starting to call the API.\n- These flows are further detailed in the following articles:\n  - [Developer account registration](Developer%20account%20registration)\n  - [App management](App%20management)\n  - [Authorization and Authentication](Authorization%20and%20Authentication)\n\n### 2 - Recommended APIs and Webhooks (Pushs):\n\n- v2.order.get_order_list - for identifying orders;\n- v2.order.get_order_detail API - for order details and the only way to check the order's logistics channel (via the \"shipping_channel\" parameter where \"Shopee Entrega Direta\" will be returned);\n- v2.logistics.get_tracking_number API - to identify order tracking number;\n- v2.logistics.create_shipping_document - for creating labels (it is worth noting that the seller's ERP will already make this call and it may not be necessary);\n- v2.logistics.get_shipping_document_result - to check if the label has already been created successfully and is available for download;\n- v2.logistics.download_shipping_document API - to download the shipping label;\n- order_status_push - to be notified when a new order and when there is any order status update;\n- order_tracking_push - To be notified when the tracking_number has been created;\n- shipping_document_status_push - to be notified when the label is ready for download;\n\nBelow is a link to more articles about order flow on Shopee:\n- [OpenAPI Logistics API Step by Step](OpenAPI%20Logistics%20API%20Step%20by%20Step)\n- [API Call Flows](API%20Call%20Flows)\n\n---\n\n## FAQ:\n\n### 1 - Do all sellers have access to the Shopee Entrega Direta channel?\n\nA: Only managed sellers have access to the channel, for more information contact your Account Manager.\n\n### 2 - Is it mandatory to send an invoice to the Shopee Entrega Direta channel?\n\nA: The channel requires sending an invoice, organizing shipping and generating a label normally.\n\n### 3 - Masked data in the v2.order.get_order_detail API, why can this happen?\n\nA: a) buyer data is sensitive data and is only made available when the order is in READY_TO_SHIP and TO_RETURN status.\n\nb) If the IP Whitelist (from the Open Platform Console) is not filled in at the APP level, the data can be masked, once filled in it should automatically be available (as long as it is in the correct status).\n\n---\n\nFor further questions about OpenAPI, you can raise a ticket on the [OP Ticketing Platform](OP%20Ticketing%20Platform).",
+  "metadata": {
+    "title": "Console Announcement | Shopee Entrega Direta",
+    "summary": "This guide provides information about the Shopee Entrega Direta logistics channel, including API changes, integration details for logistics hubs, and frequently asked questions. It outlines the necessary steps for accessing and utilizing the Shopee Entrega Direta channel through the Shopee Open Platform.",
+    "keywords": [
+      "Shopee Entrega Direta",
+      "logistics channel",
+      "OpenAPI",
+      "API integration",
+      "order management",
+      "shipping",
+      "logistics hubs"
+    ],
+    "category": "Integration",
+    "tags": [
+      "logistics",
+      "API",
+      "shipping",
+      "e-commerce",
+      "developer guide"
+    ],
+    "difficulty": "medium",
+    "importance": 4,
+    "use_cases": [
+      "Integrating a logistics hub with Shopee's platform.",
+      "Managing orders using the Shopee Entrega Direta channel.",
+      "Developing an ERP system for Shopee sellers.",
+      "Automating shipping label creation and tracking.",
+      "Understanding the API changes related to Shopee Entrega Direta."
+    ],
+    "related_apis": [
+      "v2.order.get_order_detail",
+      "v2.logistics.get_channel_list",
+      "v2.order.get_order_list",
+      "v2.logistics.get_tracking_number",
+      "v2.logistics.create_shipping_document",
+      "v2.logistics.get_shipping_document_result",
+      "v2.logistics.download_shipping_document"
+    ]
+  }
+}

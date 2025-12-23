@@ -1,0 +1,40 @@
+======================================================================
+API SPECIFICATION SUMMARY
+======================================================================
+
+Endpoint: None None
+Description: API Documentation Update Log
+
+Parameters (0):
+----------------------------------------------------------------------
+
+Response Fields (7):
+----------------------------------------------------------------------
+  error_check_luc_fail (string)
+   {{error_info}}
+  error_category_is_block (string)
+   Category is restricted
+  error_inner (string)
+   Update item failed {{error_info}}
+  error_param (string)
+   Attribute format is invalid. NCC field only allows Eng Alphanumeric input
+  error_desc_image_no_pass (string)
+   {{error_info}}
+  error_auth (string)
+   Your shop can not use model level dts
+  error_system_busy (string)
+   Our system is taking some time to respond, please try later.
+
+Metadata:
+----------------------------------------------------------------------
+  total_chunks: 2
+  chunks_with_errors: 0
+  total_parameters_before_dedup: 0
+  total_parameters_after_dedup: 0
+  update_log_entries: 3
+  hidden_fields_count: 0
+  source_results: workspaces\v2.global_product.create_publish_task\results\all_chunks_results.json
+
+======================================================================
+Legend: * = required parameter
+======================================================================

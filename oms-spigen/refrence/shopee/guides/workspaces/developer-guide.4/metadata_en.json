@@ -1,0 +1,41 @@
+{
+  "document_id": "developer-guide.4",
+  "document_type": "guide",
+  "platform": "shopee",
+  "extracted_at": "2025-10-16T08:01:35",
+  "extracted_text": "# Introduction\n\n**Last Updated: 2024-11-11**\n\n**Language Supported:** English / 简体中文 / 繁體中文 / Português / ไทย\n\n## What is Shopee Open Platform?\n\nCreated to support developers serving Shopee sellers with different ecommerce needs, Shopee Open Platform is your go-to source of Open APIs and services.\n\n- **Powerful APIs:** Get access to a wide range of Open APIs with Shopee Open Platform, including those for orders, products, marketing and more. By tapping on Open API and push notification services released by Shopee, you can create customized software services to satisfy common seller needs such as order fulfillment, product optimization, shop promotion and more.\n\n- **Comprehensive developer services:** Enjoy end-to-end developer support at the stages of onboarding, APP development, APP testing, APP release, and APP maintenance. You can find tools for efficiency within the Shopee Open Platform to:\n  - Manage your APPs\n  - Access Open API testing tools, test accounts and sandbox testing environments\n  - Get important information such as the latest news (Announcement page), Open API articles (Documentation), answers to your queries (Support Center), and also search for articles\n\n## Benefits of using Shopee Open API?\n\nShopee Open API provides sellers with quick and easy access to important shop data for selling on Shopee. This includes information for product, order, and campaign management, amongst others. Available in all markets, Shopee Open Platform allows you to integrate a single set of Open APIs even if you sell or support sellers in more than one market.\n\n## Who can access Shopee Open Platform?\n\nShopee Open Platform, specifically the Shopee Open Platform Console, caters to 2 types of developers, providing the most suitable solutions for each's business needs:\n\n- **Software service providers:** We offer a comprehensive range of Open APIs that cover all of Shopee's key ecommerce processes for software businesses. By leveraging on Shopee Open Platform, you'll be able to deliver a variety of APPs to meet sellers' needs for shop operations, marketing, and more.\n\n- **Sellers with software development capabilities:** If you're a seller who wants to develop software tailored to your business needs, integrate your systems with Shopee's to discover untapped potential in the areas of operations optimization and data management.",
+  "metadata": {
+    "title": "Introduction to Shopee Open Platform",
+    "summary": "This guide introduces the Shopee Open Platform, a resource for developers supporting Shopee sellers. It provides access to Open APIs and developer services for creating customized software solutions for e-commerce needs.",
+    "keywords": [
+      "Shopee Open Platform",
+      "Open APIs",
+      "developer services",
+      "software service providers",
+      "sellers",
+      "API integration",
+      "ecommerce",
+      "shop operations"
+    ],
+    "category": "Introduction",
+    "tags": [
+      "Open API",
+      "developer guide",
+      "platform overview"
+    ],
+    "difficulty": "easy",
+    "importance": 5,
+    "use_cases": [
+      "Developing apps for order fulfillment",
+      "Creating software for product optimization",
+      "Building tools for shop promotion",
+      "Integrating seller systems with Shopee",
+      "Developing software for data management"
+    ],
+    "related_apis": [
+      "Orders API",
+      "Products API",
+      "Marketing API"
+    ]
+  }
+}

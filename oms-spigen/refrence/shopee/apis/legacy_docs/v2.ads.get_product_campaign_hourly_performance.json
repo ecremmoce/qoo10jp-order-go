@@ -1,0 +1,96 @@
+{
+  "endpoint": null,
+  "method": null,
+  "description": null,
+  "parameters": [
+    {
+      "name": "uuid",
+      "type": "string",
+      "required": true,
+      "description": "Device UUID",
+      "children": []
+    },
+    {
+      "name": "mac",
+      "type": "string",
+      "required": true,
+      "description": "Device MAC address",
+      "children": []
+    },
+    {
+      "name": "config_id",
+      "type": "string",
+      "required": false,
+      "description": "Configuration ID",
+      "children": []
+    },
+    {
+      "name": "category",
+      "type": "string",
+      "required": false,
+      "description": "Device category",
+      "children": []
+    },
+    {
+      "name": "name",
+      "type": "string",
+      "required": false,
+      "description": "Device name",
+      "children": []
+    },
+    {
+      "name": "ip",
+      "type": "string",
+      "required": false,
+      "description": "IP address",
+      "children": []
+    },
+    {
+      "name": "gateway",
+      "type": "string",
+      "required": false,
+      "description": "Gateway address",
+      "children": []
+    },
+    {
+      "name": "alias",
+      "type": "string",
+      "required": false,
+      "description": "Device alias",
+      "children": []
+    },
+    {
+      "name": "version",
+      "type": "string",
+      "required": false,
+      "description": "Firmware version",
+      "children": []
+    }
+  ],
+  "response_fields": [
+    {
+      "name": "result",
+      "type": "object",
+      "description": "Response object",
+      "children": [
+        {
+          "name": "success",
+          "type": "boolean",
+          "description": "Operation success status",
+          "children": []
+        }
+      ]
+    }
+  ],
+  "update_log": [],
+  "hidden_fields": [],
+  "metadata": {
+    "total_chunks": 1,
+    "chunks_with_errors": 0,
+    "total_parameters_before_dedup": 9,
+    "total_parameters_after_dedup": 9,
+    "update_log_entries": 0,
+    "hidden_fields_count": 0,
+    "source_results": "workspaces\\v2.ads.get_product_campaign_hourly_performance\\results\\all_chunks_results.json"
+  }
+}

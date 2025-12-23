@@ -1,0 +1,106 @@
+{
+  "chunk_index": 1,
+  "total_chunks": 1,
+  "endpoint": "/api/get/product_level_campaign_vt_list",
+  "method": "GET",
+  "description": null,
+  "update_log": [
+    {
+      "date": "Nov-03",
+      "change": "First version"
+    }
+  ],
+  "parameters": [
+    {
+      "name": "partner_id",
+      "type": "string",
+      "required": true,
+      "description": "Partner ID is assigned when registration is successful",
+      "children": []
+    },
+    {
+      "name": "timestamp",
+      "type": "string",
+      "required": true,
+      "description": "This is to indicate the timestamp of the request. Required for all requests.",
+      "children": []
+    },
+    {
+      "name": "access_token",
+      "type": "string",
+      "required": true,
+      "description": "The token for API access, using to identify your permission to call API. Apply for access and inquire in future.",
+      "children": []
+    },
+    {
+      "name": "shop_id",
+      "type": "int64",
+      "required": true,
+      "description": "Shopee's unique identifier for a shop.",
+      "children": []
+    },
+    {
+      "name": "sign",
+      "type": "string",
+      "required": true,
+      "description": "Unique authentication key for each request",
+      "children": []
+    }
+  ],
+  "response_fields": [
+    {
+      "name": "message",
+      "type": "string",
+      "description": "Error code description"
+    },
+    {
+      "name": "warning",
+      "type": "string",
+      "description": "If some data cannot respond normally, tell the warning"
+    },
+    {
+      "name": "request_id",
+      "type": "string",
+      "description": "request id value for each request"
+    },
+    {
+      "name": "response",
+      "type": "object",
+      "description": null
+    },
+    {
+      "name": "error",
+      "type": "string",
+      "description": "response error"
+    }
+  ],
+  "error_codes": [
+    {
+      "code": "error_auth",
+      "description": "The authorization key expired is not found"
+    },
+    {
+      "code": "error_param",
+      "description": "Wrong parameter"
+    },
+    {
+      "code": "error_server",
+      "description": "Something wrong. Please try later"
+    }
+  ],
+  "notes": "The documentation shows both request and response parameters, along with error codes and API permissions. The endpoint appears to be for retrieving product level campaign information.",
+  "chunk_metadata": {
+    "index": 1,
+    "total": 1,
+    "y_start": 0,
+    "y_end": 4187,
+    "overlap_top": 0,
+    "overlap_bottom": 0,
+    "height": 4187,
+    "path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\workspaces\\v2.ads.get_product_level_campaign_id_list\\chunks\\chunk_001.png",
+    "filename": "chunk_001.png",
+    "width": 837
+  },
+  "analysis_timestamp": "2025-10-10T05:31:21.451851",
+  "model": "claude-3-5-sonnet-20241022"
+}

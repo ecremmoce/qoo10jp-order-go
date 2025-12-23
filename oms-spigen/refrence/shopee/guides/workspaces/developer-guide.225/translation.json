@@ -1,0 +1,48 @@
+{
+  "document_id": "developer-guide.225",
+  "document_type": "guide",
+  "platform": "shopee",
+  "content_ko": "# API 모범 사례 > First Mile 바인딩\n\n## 용어\n\n**Pick up (수거)**: 채널의 문전 수거, \"logistics_channel_name\": \"shopeef\" (\"logistics_channel_id\": 81s)만 수거를 지원합니다.\n\n**Drop off (위탁)**: 채널 대리점에 배송, \"logistics_channel_name\": \"shopeef\" (\"logistics_channel_id\": 81s) 및 \"logistics_channel_name\": \"Self Deliver\" (\"logistics_channel_id\": 0)을 예상합니다. 다른 채널은 위탁입니다.\n\n**Self deliver (자체 배송)**: 자체 배송, 타사 물류를 사용하지 않음, \"logistics_channel_name\": \"Self Deliver\"\n\n**first_mile_tracking_number**: first-mile 추적 번호\n\n## 모범 사례\n\n다양한 유형의 first-mile 배송 방법은 다음과 같이 분류할 수 있습니다.\n- Pick up (수거)\n- Drop off (위탁)\n- Self deliver (자체 배송)\n\n개발자는 first_mile get_channel_list API를 통해 first-mile 채널 목록과 해당 채널에서 지원하는 배송 방법을 얻을 수 있습니다.\n\n### Pick up 모드의 경우:\n\n1단계: v2.first_mile.generate_first_mile_tracking_number API를 통해 first mile 추적 번호를 생성하고 v2.first_mile.get_tracking_number_list API를 사용하여 생성된 first mile 추적 번호 목록을 쿼리할 수 있습니다.\n\n2단계: v2.first_mile.get_unibind_order_list API를 사용하여 first-mile 추적 번호와 바인딩할 주문 목록을 쿼리할 수 있으며, v2.first_mile.bind_first_mile_tracking_number API를 통해 바인딩하십시오. v2.first_mile.get_detail API를 사용하여 first-mile 추적 번호 세부 정보를 쿼리할 수 있습니다.\n\n3단계: v2.first_mile.get_waybill API를 호출하여 first mile 패키지 라벨을 인쇄합니다.\n\n### Drop off 모드의 경우:\n\n1단계: 판매자는 채널 추적 번호를 오프라인으로 획득합니다.\n\n2단계: v2.first_mile.get_unbind_order_list API를 통해 first-mile 추적 번호와 바인딩할 주문 목록을 가져오고 v2.first_mile.bind_first_mile_tracking_number API를 통해 바인딩합니다. v2.first_mile.get_detail API를 사용하여 first-mile 추적 번호 세부 정보를 쿼리할 수 있습니다.\n\n### Self deliver 모드의 경우:\n\n1단계: 판매자는 v2.first_mile.get_unbind_order_list API를 통해 first-mile 추적 번호와 바인딩할 주문 목록을 가져옵니다.\n\n2단계: v2.first_mile.generate_first_mile_tracking_number API를 통해 first mile 추적 번호를 생성하고 v2.first_mile.get_tracking_number_list API를 사용하여 생성된 first mile 추적 번호 목록을 쿼리할 수 있습니다 (ship_method가 self-deliver인 경우: first_mile_tracking_number=order_sn, self-deliver logistics_channel_id는 null로 업로드해야 합니다).\n\n## FAQ\n\n**Q: first-mile 추적 번호에 대해 여러 상점의 주문을 바인딩하는 것이 허용됩니까?**\nA: 예, 하지만 여러 상점의 주문이 동일한 운송/환승/창고를 사용하는지 확인하십시오. API에는 인증이 있으므로 v2.first_mile.bind_first_mile_tracking_number API를 호출할 때 한 번의 호출에 대해 하나의 상점 주문만 호출할 수 있으므로 매번 호출할 때 order_sn과 shop_id가 일치하는지 확인하십시오.\n\n**Q: 바인딩에 성공하면 주문 상태가 변경됩니까?**\nA: 예, FM 바인딩에 성공하고 스캔되면 바인딩된 모든 주문의 주문 상태가 PROCESSED에서 SHIPPED로 업데이트됩니다.\n\n**Q: 주문을 배송하고 항공 운송장을 먼저 인쇄해야 합니까, 아니면 first mile 바인딩을 먼저 해야 합니까?**\nA: 올바른 순서는 주문을 먼저 배송한 다음 항공 운송장을 인쇄하고 주문에 대한 first mile 추적 번호를 바인딩하는 것입니다.\n\n**Q: 주문의 first mile 추적 번호를 어떻게 확인할 수 있습니까?**\nA: v2.logistics.get_tracking_number API를 사용하고 요청 매개변수 response_optional_fields: first_mile_tracking_number를 업로드하면 주문의 first-mile 추적 번호를 얻을 수 있습니다.\n\n**Q: first_mile_tracking_number 상태는 무엇으로 바인딩할 수 있습니까?**\nA: v2.first_mile.get_detail API를 통해 first-mile 추적 번호 상태를 쿼리할 수 있습니다.\n\n1. ship_method가 수거인 경우:\n   - first_mile_tracking_number가 방금 생성된 경우 상태는 NOT_AVAILABLE이며, 이때 주문을 바인딩할 수 있습니다.\n   - first_mile_tracking_number 추적 상태가 ORDER_RECEIVED인 경우 이미 바인딩된 주문이 있음을 의미하며 다른 주문을 계속 바인딩할 수 있습니다.\n   - first_mile_tracking_number 상태가 PICKED_UP인 경우 소포가 채널에 의해 수거되었음을 나타내며 더 이상 주문을 바인딩할 수 없습니다.\n   - first_mile_tracking_number 상태가 DELIVERED인 경우 소포가 창고에 도착했음을 의미하며 더 이상 주문을 바인딩할 수 없습니다.\n\n2. ship_method가 위탁 또는 자체 배송인 경우: 상태 제한이 없습니다.\n\n**Q: 자체 배송도 first mile 바인딩을 위해 API를 호출해야 합니까?**\nA: 예, 자체 배송은 판매자의 오프라인 배송 작업이지만 first-mile 바인딩을 위해 v2.first_mile.bind_first_mile_tracking_number API를 호출해야 합니다.\n\n**Q: 주문에 대한 first mile 추적 번호를 어떤 상태로 언바인딩할 수 있습니까?**\nA: 1. ship_method가 수거인 경우 first_mile_tracking_number 상태가 ORDER_RECEIVED인 경우에만 언바인딩할 수 있습니다.\n   2. ship_method가 위탁 또는 자체 배송인 경우 first_mile_tracking_number 상태 제한이 없습니다.\n\n## 데이터 정의\n\n**First Mile 추적 번호 상태**\n- ORDER_RECEIVED\n- PICKED_UP\n- DELIVERED",
+  "translated_at": "2025-10-16T08:53:15",
+  "char_count": 3585,
+  "metadata_ko": {
+    "title": "API 모범 사례 > First Mile 바인딩",
+    "summary": "본 가이드는 Shopee API에서 first-mile 바인딩을 위한 모범 사례를 설명합니다. 픽업, 드롭오프, 자체 배송과 같은 다양한 배송 방법을 다루며, 각 방법에 필요한 단계와 API 호출을 자세히 설명합니다. 또한 자주 묻는 질문에 대한 답변과 추적 번호 상태에 대한 데이터 정의를 제공합니다.",
+    "keywords": [
+      "first mile",
+      "binding",
+      "pick up",
+      "drop off",
+      "self deliver",
+      "tracking number",
+      "shipping methods",
+      "API",
+      "order status"
+    ],
+    "category": "모범 사례",
+    "tags": [
+      "물류",
+      "배송",
+      "API 통합",
+      "first mile 추적"
+    ],
+    "difficulty": "중간",
+    "importance": 4,
+    "use_cases": [
+      "first-mile 추적을 배송 관리 시스템에 통합",
+      "주문을 first-mile 추적 번호에 바인딩하는 프로세스 자동화",
+      "API를 통한 다양한 배송 방법 (픽업, 드롭오프, 자체 배송) 처리",
+      "first-mile 추적 및 주문 상태 업데이트 관련 문제 해결"
+    ],
+    "related_apis": [
+      "v2.first_mile.generate_first_mile_tracking_number",
+      "v2.first_mile.get_tracking_number_list",
+      "v2.first_mile.get_unibind_order_list",
+      "v2.first_mile.bind_first_mile_tracking_number",
+      "v2.first_mile.get_detail",
+      "v2.first_mile.get_waybill",
+      "v2.logistics.get_tracking_number"
+    ]
+  },
+  "metadata_translated_at": "2025-10-16T08:53:19"
+}

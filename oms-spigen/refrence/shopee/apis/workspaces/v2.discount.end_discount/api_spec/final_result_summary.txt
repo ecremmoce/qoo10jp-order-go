@@ -1,0 +1,44 @@
+======================================================================
+API SPECIFICATION SUMMARY
+======================================================================
+
+Endpoint: None /bocontent_account
+Description: Account management API
+
+Parameters (5):
+----------------------------------------------------------------------
+* url (string)
+   Chinese language URL
+* url_en (string)
+   English language URL
+* partner_id (string)
+   Partner ID is assigned when registration is successful
+* access_token (string)
+   Token used for both writing using to specify your permission to do so, and for retrieving your progress if it fails
+* title_id (string)
+   Uniquely identifies an article
+
+Response Fields (4):
+----------------------------------------------------------------------
+  error (string)
+   Indicates error type if any; Empty if no error
+  message (string)
+   Indicates error details if any; Empty if no error
+  request_id (string)
+   The identifier for an API request for error tracing
+  account_id (string)
+   Unique identifier for a account
+
+Metadata:
+----------------------------------------------------------------------
+  total_chunks: 1
+  chunks_with_errors: 0
+  total_parameters_before_dedup: 5
+  total_parameters_after_dedup: 5
+  update_log_entries: 1
+  hidden_fields_count: 0
+  source_results: workspaces\v2.discount.end_discount\results\all_chunks_results.json
+
+======================================================================
+Legend: * = required parameter
+======================================================================

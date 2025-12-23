@@ -1,0 +1,37 @@
+======================================================================
+API SPECIFICATION SUMMARY
+======================================================================
+
+Endpoint: None None
+
+Parameters (3):
+----------------------------------------------------------------------
+* url (string)
+   The request URL
+  url_id (string)
+   The unique identifier for the URL
+* token (string)
+   Authentication token
+
+Response Fields (3):
+----------------------------------------------------------------------
+  ret (string)
+   Response status code
+  msg (string)
+   Response message
+  ret_url_id (string)
+   The identifier of the processed URL
+
+Metadata:
+----------------------------------------------------------------------
+  total_chunks: 1
+  chunks_with_errors: 0
+  total_parameters_before_dedup: 3
+  total_parameters_after_dedup: 3
+  update_log_entries: 0
+  hidden_fields_count: 0
+  source_results: workspaces\v2.add_on_deal.add_add_on_deal_main_item\results\all_chunks_results.json
+
+======================================================================
+Legend: * = required parameter
+======================================================================

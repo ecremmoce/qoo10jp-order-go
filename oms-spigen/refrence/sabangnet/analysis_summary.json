@@ -1,0 +1,21 @@
+{
+  "total_sheets": 11,
+  "total_apis": 431,
+  "sheets": [
+    "상품등록&수정",
+    "쇼핑몰 코드 조회",
+    "상품정보고시 코드 조회",
+    "상품요약수정",
+    "추가상품등록&수정",
+    "카테고리",
+    "주문수집",
+    "송장등록",
+    "클레임수집",
+    "상품 쇼핑몰별 DATA 수정",
+    "문의사항 수집"
+  ],
+  "output_files": {
+    "json": "refrence\\sabangnet\\api_guide_full.json",
+    "markdown": "refrence\\sabangnet\\API_GUIDE.md"
+  }
+}

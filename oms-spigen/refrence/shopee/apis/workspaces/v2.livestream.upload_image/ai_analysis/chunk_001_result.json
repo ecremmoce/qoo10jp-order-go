@@ -1,0 +1,90 @@
+{
+  "chunk_index": 1,
+  "total_chunks": 1,
+  "endpoint": "/v2/livestream/upload_image",
+  "method": "POST",
+  "description": "Upload an image for livestream use case",
+  "update_log": [
+    {
+      "date": "2024-06-14",
+      "change": "New API"
+    }
+  ],
+  "parameters": {
+    "common_parameters": [
+      {
+        "name": "partner_id",
+        "type": "string",
+        "required": true,
+        "description": "Permanent unique identifier is successful. Required for all requests"
+      },
+      {
+        "name": "timestamp",
+        "type": "timestamp",
+        "required": true,
+        "description": "Unix time stamp for API validity, needs to identify your permission to call APIs. Expires in 5 minutes"
+      },
+      {
+        "name": "sign",
+        "type": "string",
+        "required": true,
+        "description": "Signature generated to indicate your different API permission. partner_key sig HMAC-SHA256 hashing algorithm generated string"
+      }
+    ],
+    "request_parameters": [
+      {
+        "name": "image",
+        "type": "file",
+        "required": true,
+        "description": "The image file to upload"
+      }
+    ],
+    "response_parameters": [
+      {
+        "name": "code",
+        "type": "string",
+        "description": "Indicates error type if not zero. Empty if no error happened"
+      },
+      {
+        "name": "message",
+        "type": "string",
+        "description": "Indicates error status if not zero. Empty if no error happened"
+      },
+      {
+        "name": "request_id",
+        "type": "string",
+        "description": "The identifier for an API request for error tracking"
+      },
+      {
+        "name": "image_url",
+        "type": "string",
+        "description": "The image URL"
+      }
+    ]
+  },
+  "error_codes": [
+    {
+      "code": "error_data",
+      "description": "data not found"
+    },
+    {
+      "code": "error_param",
+      "description": "parameter invalid"
+    }
+  ],
+  "notes": "This appears to be an API for uploading images in a livestream context. The documentation includes complete request/response parameters, error codes, and authentication requirements via partner_id, timestamp and sign parameters.",
+  "chunk_metadata": {
+    "index": 1,
+    "total": 1,
+    "y_start": 0,
+    "y_end": 3893,
+    "overlap_top": 0,
+    "overlap_bottom": 0,
+    "height": 3893,
+    "path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\workspaces\\v2.livestream.upload_image\\chunks\\chunk_001.png",
+    "filename": "chunk_001.png",
+    "width": 837
+  },
+  "analysis_timestamp": "2025-10-10T05:58:52.077515",
+  "model": "claude-3-5-sonnet-20241022"
+}

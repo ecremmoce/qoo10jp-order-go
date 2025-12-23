@@ -1,0 +1,54 @@
+======================================================================
+API SPECIFICATION SUMMARY
+======================================================================
+
+Endpoint: POST /logistics/get_shipping_document_result
+Description: Use this API to retrieve the status of the shipping document task.
+
+Parameters (5):
+----------------------------------------------------------------------
+* url (string)
+   URL path
+  url_chinese (string)
+   Chinese localized URL path
+* test (string)
+   Test parameter
+* shipping_id (string)
+   Shopeepay transaction identifier for a shipping
+* shipping_document_task (string)
+   The task of shipping document manifest
+
+Response Fields (9):
+----------------------------------------------------------------------
+  request_id (string)
+   The identifier for an API request (for error tracking)
+  message (string)
+   Error message if any occurred
+  warning (string)
+   Simple warning message (no actual task error)
+  booking_id (string)
+   Shopeepay identifier for a booking
+  result_id (string)
+   The ID of the result task
+  booking_sn (string)
+   Shopeepay identifier for a booking
+  status (string)
+   The status of the shipping document task (no shipping task exists)
+  file_error (string)
+   Indicate error type if any occurred for error
+  file_message (string)
+   Indicate error details if any occurred to error
+
+Metadata:
+----------------------------------------------------------------------
+  total_chunks: 1
+  chunks_with_errors: 0
+  total_parameters_before_dedup: 5
+  total_parameters_after_dedup: 5
+  update_log_entries: 0
+  hidden_fields_count: 0
+  source_results: workspaces\v2.logistics.get_booking_shipping_document_result\results\all_chunks_results.json
+
+======================================================================
+Legend: * = required parameter
+======================================================================

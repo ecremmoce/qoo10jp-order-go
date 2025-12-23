@@ -4,36 +4,38 @@ import (
 	"context"
 	"fmt"
 	"log"
-	"qoo10jp-order-go/internal/config"
-	"qoo10jp-order-go/internal/models"
-	"qoo10jp-order-go/pkg/webhook"
+	"shopee-order-go/internal/config"
+	"shopee-order-go/internal/models"
+	"shopee-order-go/pkg/webhook"
 	"sync"
 	"time"
 )
 
 type WorkerService struct {
-	cfg              *config.Config
-	schedulerService *SchedulerService
-	workerCount      int
-	ctx              context.Context
-	cancel           context.CancelFunc
-	wg               sync.WaitGroup
-	isRunning        bool
-	mu               sync.RWMutex
-	webhookClient    *webhook.Client
+	cfg                *config.Config
+	schedulerService   *SchedulerService
+	shopeeOrderService *ShopeeOrderService
+	workerCount        int
+	ctx                context.Context
+	cancel             context.CancelFunc
+	wg                 sync.WaitGroup
+	isRunning          bool
+	mu                 sync.RWMutex
+	webhookClient      *webhook.Client
 }
 
-func NewWorkerService(cfg *config.Config, schedulerService *SchedulerService, workerCount int) *WorkerService {
+func NewWorkerService(cfg *config.Config, schedulerService *SchedulerService, shopeeOrderService *ShopeeOrderService, workerCount int) *WorkerService {
 	ctx, cancel := context.WithCancel(context.Background())
-	
+
 	return &WorkerService{
-		cfg:              cfg,
-		schedulerService: schedulerService,
-		workerCount:      workerCount,
-		ctx:              ctx,
-		cancel:           cancel,
-		isRunning:        false,
-		webhookClient:    webhook.NewClient(10 * time.Second),
+		cfg:                cfg,
+		schedulerService:   schedulerService,
+		shopeeOrderService: shopeeOrderService,
+		workerCount:        workerCount,
+		ctx:                ctx,
+		cancel:             cancel,
+		isRunning:          false,
+		webhookClient:      webhook.NewClient(10 * time.Second),
 	}
 }
 
@@ -70,20 +72,20 @@ func (w *WorkerService) Stop() {
 	}
 
 	log.Println("Stopping worker service...")
-	
+
 	// Cancel context to signal workers to stop
 	w.cancel()
-	
+
 	// Wait for all workers to finish
 	log.Println("Waiting for workers to finish...")
 	w.wg.Wait()
-	
+
 	// Reset state
 	w.isRunning = false
-	
+
 	// Create new context for future starts
 	w.ctx, w.cancel = context.WithCancel(context.Background())
-	
+
 	log.Println("Worker service stopped successfully")
 }
 
@@ -97,9 +99,9 @@ func (w *WorkerService) IsRunning() bool {
 // worker is the main worker loop that processes jobs from the queue
 func (w *WorkerService) worker(workerID int) {
 	defer w.wg.Done()
-	
+
 	log.Printf("Worker %d started", workerID)
-	
+
 	for {
 		select {
 		case <-w.ctx.Done():
@@ -113,12 +115,12 @@ func (w *WorkerService) worker(workerID int) {
 				return
 			default:
 			}
-			
+
 			// Try to process a job with enhanced error handling
 			err := w.processJobWithRetry(workerID)
 			if err != nil {
 				log.Printf("워커 %d: ⚠️ 작업 처리 오류: %v", workerID, err)
-				
+
 				// Check context before sleeping
 				select {
 				case <-w.ctx.Done():
@@ -148,7 +150,7 @@ func (w *WorkerService) processJobWithRetry(workerID int) error {
 	workerKey := fmt.Sprintf("worker_%d_status", workerID)
 	w.schedulerService.redisClient.Set(workerKey, "processing", 30*time.Second)
 	defer w.schedulerService.redisClient.Set(workerKey, "idle", 30*time.Second)
-	
+
 	// Try to get a job with timeout
 	jobData, err := w.schedulerService.redisClient.PopFromQueue(OrderJobQueue)
 	if err != nil {
@@ -191,18 +193,18 @@ func (w *WorkerService) processJobWithRetry(workerID int) error {
 	startTime := time.Now()
 	err = w.schedulerService.executeJob(job)
 	duration := time.Since(startTime)
-	
+
 	if err != nil {
 		// Increment retry count and requeue if retries available
 		job.RetryCount++
 		if job.RetryCount < job.MaxRetries {
-			log.Printf("워커 %d: ❌ 작업 %s 실패 (%v), 재시도 대기열 추가 (%d/%d회): %v", 
+			log.Printf("워커 %d: ❌ 작업 %s 실패 (%v), 재시도 대기열 추가 (%d/%d회): %v",
 				workerID, job.ID, duration, job.RetryCount, job.MaxRetries, err)
-			
+
 			retryJobData, _ := job.ToJSON()
 			w.schedulerService.redisClient.PushToQueue(OrderJobQueue, retryJobData)
 		} else {
-			log.Printf("워커 %d: ❌ 작업 %s 영구 실패 (%d회 재시도 후, 소요시간: %v)", 
+			log.Printf("워커 %d: ❌ 작업 %s 영구 실패 (%d회 재시도 후, 소요시간: %v)",
 				workerID, job.ID, job.RetryCount, duration)
 			w.schedulerService.redisClient.PushToQueue("failed_jobs", jobData)
 		}
@@ -211,7 +213,7 @@ func (w *WorkerService) processJobWithRetry(workerID int) error {
 
 	// Increment processed counter
 	w.schedulerService.redisClient.Incr("order_jobs_processed")
-	
+
 	log.Printf("워커 %d: ✅ 작업 %s 성공 완료 (%v)", workerID, job.ID, duration)
 	return nil
 }
@@ -219,72 +221,70 @@ func (w *WorkerService) processJobWithRetry(workerID int) error {
 // processN8NMessage processes a message from n8n workflow with account credentials
 func (w *WorkerService) processN8NMessage(workerID int, msg *models.N8NOrderMessage) error {
 	startTime := time.Now()
-	
-	log.Printf("워커 %d: 🔑 계정 %s 주문 수집 시작", workerID, msg.AccountName)
-	
-	// 주문 수집 시작 웹훅 호출
-	w.sendOrderCollectionStartWebhook(msg.AccountName)
-	
-	// 실제 Qoo10JP 주문 서비스 사용
-	qoo10jpOrderService := NewQoo10JPOrderService(w.cfg, w.schedulerService.supabaseClient, w.schedulerService.redisClient)
-	
-	// 2025년 1월 1일부터 89일간 주문 수집 (API 제한)
-	startDate := time.Date(2025, 1, 1, 0, 0, 0, 0, time.UTC)
-	endDate := startDate.AddDate(0, 0, 89)
-	
-	log.Printf("워커 %d: 📅 주문 조회 기간: %s ~ %s", workerID, 
-		startDate.Format("2006-01-02"), endDate.Format("2006-01-02"))
-	
-	// 테스트 계정인지 확인
-	isTestAccount := msg.AccountID == "test-account-id"
-	
-	var savedCount, totalCount int
+
+	log.Printf("워커 %d: 📨 메시지 수신 - 플랫폼: %s, 계정 ID: %s, 계정명: %s",
+		workerID, msg.Platform, msg.AccountID, msg.AccountName)
+
+	// 작업 수신 웹훅 호출
+	w.sendOrderCollectionStartWebhook(msg.AccountName, msg.AccountID, msg.Platform)
+
+	var savedCount int
 	var collectErr error
-	
-	if isTestAccount {
-		// 테스트 계정의 경우 실제 API 호출 없이 시뮬레이션
-		log.Printf("워커 %d: 🧪 테스트 계정 감지, 시뮬레이션 모드로 실행", workerID)
-		time.Sleep(2 * time.Second) // API 호출 시뮬레이션
-		savedCount = 3
-		totalCount = 5
-		log.Printf("워커 %d: 📦 시뮬레이션: %d개 주문 처리 완료", workerID, savedCount)
-	} else {
-		// 실제 주문 수집 서비스 호출 (계정 ID를 platformAccountID로 사용)
-		collectErr = qoo10jpOrderService.CollectOrders(startDate, endDate, msg.AccountID)
-		if collectErr != nil {
-			log.Printf("워커 %d: ❌ 주문 수집 실패 (계정: %s): %v", workerID, msg.AccountName, collectErr)
-			savedCount = 0
-			totalCount = 0
+
+	// 플랫폼별 주문 수집 처리
+	if msg.Platform == "shopee" {
+		// Shopee 주문 수집
+		log.Printf("워커 %d: 🛒 Shopee 주문 수집 시작", workerID)
+
+		if msg.ShopID == 0 || msg.AccessToken == "" {
+			collectErr = fmt.Errorf("Shopee shop_id 또는 access_token이 없습니다")
+			log.Printf("워커 %d: ❌ %v", workerID, collectErr)
 		} else {
-			// 수집된 주문 개수 조회 (최근 수집된 주문들)
-			filter := models.Qoo10JPOrderFilter{
-				PlatformAccountID: msg.AccountID,
-				StartDate:         &startDate,
-				EndDate:           &endDate,
-				Limit:             1000, // 충분히 큰 수로 설정
-			}
+			// 최근 15일간 주문 수집 (Shopee API 제한)
+			endDate := time.Now()
+			startDate := endDate.AddDate(0, 0, -15)
 			
-			orders, err := qoo10jpOrderService.GetOrders(filter)
-			if err != nil {
-				log.Printf("워커 %d: ⚠️ 수집된 주문 조회 실패: %v", workerID, err)
-				savedCount = 0
-				totalCount = 0
+			log.Printf("워커 %d: 📅 수집 기간: %s ~ %s (Partner ID: %d)", workerID, 
+				startDate.Format("2006-01-02"), endDate.Format("2006-01-02"), w.cfg.Shopee.PartnerID)
+			
+			// .env에서 읽은 고정 partner_id 사용
+			collectErr = w.shopeeOrderService.CollectOrders(startDate, endDate, msg.ShopID, w.cfg.Shopee.PartnerID, msg.AccessToken)
+
+			if collectErr != nil {
+				log.Printf("워커 %d: ❌ Shopee 주문 수집 실패: %v", workerID, collectErr)
 			} else {
-				savedCount = len(orders)
-				totalCount = savedCount // 실제로는 API에서 받은 총 개수를 사용해야 하지만, 현재는 저장된 개수와 동일하게 처리
+				// 수집된 주문 개수 조회
+				filter := models.ShopeeOrderFilter{
+					PlatformAccountID: fmt.Sprintf("%d", msg.ShopID),
+					StartDate:         &startDate,
+					EndDate:           &endDate,
+					Limit:             1000,
+				}
+
+				orders, err := w.shopeeOrderService.GetOrders(filter)
+				if err != nil {
+					log.Printf("워커 %d: ⚠️ 수집된 주문 조회 실패: %v", workerID, err)
+					savedCount = 0
+				} else {
+					savedCount = len(orders)
+				}
+
+				log.Printf("워커 %d: ✅ Shopee 주문 수집 완료 (%d건)", workerID, savedCount)
 			}
 		}
+	} else {
+		// 다른 플랫폼은 아직 미구현
+		log.Printf("워커 %d: ⏸️  플랫폼 '%s' 주문 수집 로직 대기 중", workerID, msg.Platform)
+		time.Sleep(500 * time.Millisecond)
 	}
-	
+
 	duration := time.Since(startTime)
-	log.Printf("워커 %d: ✅ 주문 수집 완료 (계정: %s, %d개 저장, 소요시간: %v)", 
-		workerID, msg.AccountName, savedCount, duration)
-	
-	// 주문 수집 완료 웹훅 호출
-	log.Printf("워커 %d: 🔗 완료 웹훅 호출 준비 (계정: %s, 저장: %d, 전체: %d, 오류: %v)", 
-		workerID, msg.AccountName, savedCount, totalCount, collectErr)
-	w.sendOrderCollectionEndWebhook(msg.AccountName, savedCount, totalCount, collectErr)
-	
+	log.Printf("워커 %d: ✅ 메시지 처리 완료 (계정: %s, 소요시간: %v)",
+		workerID, msg.AccountName, duration)
+
+	// 작업 완료 웹훅 호출
+	w.sendOrderCollectionEndWebhook(msg.AccountName, msg.AccountID, msg.Platform, savedCount, duration, collectErr)
+
 	return nil
 }
 
@@ -309,20 +309,20 @@ func (w *WorkerService) SetWorkerCount(newCount int) error {
 	// If service is running, restart with new count
 	if w.isRunning {
 		log.Println("Restarting worker service with new count...")
-		
+
 		// Stop current workers
 		w.cancel()
 		w.wg.Wait()
-		
+
 		// Create new context and restart
 		w.ctx, w.cancel = context.WithCancel(context.Background())
-		
+
 		// Start new workers
 		for i := 0; i < w.workerCount; i++ {
 			w.wg.Add(1)
 			go w.worker(i + 1)
 		}
-		
+
 		log.Printf("Worker service restarted with %d workers", w.workerCount)
 	}
 
@@ -345,24 +345,24 @@ func (w *WorkerService) GetStatus() map[string]interface{} {
 
 	// 오늘 처리된 주문 수 계산 (Redis에서 가져오거나 임시 값)
 	todayProcessed := w.getTodayProcessedCount()
-	
+
 	// 다음 실행까지 남은 시간 계산
 	nextExecutionMinutes := w.getNextExecutionMinutes(schedulerState.NextScheduleTime)
-	
+
 	// 최근 오류 상태 확인
 	recentErrors := w.getRecentErrorStatus()
 
 	return map[string]interface{}{
-		"is_running":           w.isRunning,
-		"worker_count":         activeWorkerCount,
-		"configured_workers":   w.workerCount,
-		"queue_length":         queueLength,
-		"last_execution_time":  schedulerState.LastExecutionTime,
-		"next_schedule_time":   schedulerState.NextScheduleTime,
-		"scheduler_is_running": schedulerState.IsRunning,
-		"today_processed":      todayProcessed,
+		"is_running":             w.isRunning,
+		"worker_count":           activeWorkerCount,
+		"configured_workers":     w.workerCount,
+		"queue_length":           queueLength,
+		"last_execution_time":    schedulerState.LastExecutionTime,
+		"next_schedule_time":     schedulerState.NextScheduleTime,
+		"scheduler_is_running":   schedulerState.IsRunning,
+		"today_processed":        todayProcessed,
 		"next_execution_minutes": nextExecutionMinutes,
-		"recent_errors":        recentErrors,
+		"recent_errors":          recentErrors,
 	}
 }
 
@@ -390,19 +390,19 @@ func (w *WorkerService) getNextExecutionMinutes(nextScheduleTime time.Time) int 
 	if nextScheduleTime.IsZero() {
 		return -1 // 스케줄 없음
 	}
-	
+
 	now := time.Now()
 	if nextScheduleTime.Before(now) {
 		return 0 // 이미 지난 시간
 	}
-	
+
 	duration := nextScheduleTime.Sub(now)
 	minutes := int(duration.Minutes())
-	
+
 	if minutes > 60 {
 		return -2 // 1시간 이상은 시간으로 표시하도록 프론트엔드에서 처리
 	}
-	
+
 	return minutes
 }
 
@@ -414,131 +414,115 @@ func (w *WorkerService) getRecentErrorStatus() string {
 }
 
 // sendOrderCollectionStartWebhook sends a webhook when order collection starts
-func (w *WorkerService) sendOrderCollectionStartWebhook(accountName string) {
+func (w *WorkerService) sendOrderCollectionStartWebhook(accountName, accountID, platform string) {
 	webhookURL := w.cfg.Webhook.OrderCollectionURL
 	if webhookURL == "" {
 		return
 	}
-	
+
 	now := time.Now()
-	
-	// 수집 기간 정보
-	startDate := time.Date(2025, 1, 1, 0, 0, 0, 0, time.UTC)
-	endDate := startDate.AddDate(0, 0, 89)
-	dateRange := fmt.Sprintf("%s ~ %s (89일간)", 
-		startDate.Format("2006-01-02"), endDate.Format("2006-01-02"))
-	
-	message := fmt.Sprintf("🚀 [QOO10JP] %s 계정 주문수집 시작\n"+
-		"⏰ 시작시간: %s\n"+
-		"📅 수집기간: %s\n"+
-		"🔄 상태: 주문 데이터 수집 중...\n"+
-		"⚡ 예상소요: 약 2-5분", 
-		accountName, now.Format("2006-01-02 15:04:05"), dateRange)
-	
+
+	platformName := platform
+	if platformName == "" {
+		platformName = "Unknown"
+	}
+
+	message := fmt.Sprintf("🚀 [%s] 주문 수집 시작\n"+
+		"⏰ 시간: %s\n"+
+		"👤 계정: %s\n"+
+		"🆔 ID: %s\n"+
+		"🔄 상태: 주문 데이터 수집 중...",
+		platformName, now.Format("2006-01-02 15:04:05"), accountName, accountID)
+
 	data := map[string]interface{}{
-		"platform":     "QOO10JP",
+		"platform":     platformName,
 		"account_name": accountName,
+		"account_id":   accountID,
 		"status":       "started",
 		"action":       "order_collection",
 		"timestamp":    now.Format("2006-01-02 15:04:05"),
-		"date_range":   dateRange,
-		"estimated_duration": "2-5분",
 	}
-	
-	// 비동기로 웹훅 호출 (워커 처리 속도에 영향 주지 않도록)
+
+	// 비동기로 웹훅 호출
 	go func() {
 		err := w.webhookClient.SendWebhookWithRetry(webhookURL, message, data, 2)
 		if err != nil {
-			log.Printf("⚠️ 주문수집 시작 웹훅 호출 실패: %v", err)
+			log.Printf("⚠️ 주문 수집 시작 웹훅 호출 실패: %v", err)
 		} else {
-			log.Printf("✅ 주문수집 시작 웹훅 전송 성공: %s", message)
+			log.Printf("✅ 주문 수집 시작 웹훅 전송 성공")
 		}
 	}()
 }
 
 // sendOrderCollectionEndWebhook sends a webhook when order collection ends
-func (w *WorkerService) sendOrderCollectionEndWebhook(accountName string, savedCount, totalCount int, collectErr error) {
+func (w *WorkerService) sendOrderCollectionEndWebhook(accountName, accountID, platform string, savedCount int, duration time.Duration, collectErr error) {
 	webhookURL := w.cfg.Webhook.OrderCollectionURL
-	log.Printf("🔗 웹훅 URL 확인: %s", webhookURL)
 	if webhookURL == "" {
-		log.Printf("❌ 웹훅 URL이 설정되지 않음")
 		return
 	}
-	
+
 	now := time.Now()
+
+	platformName := platform
+	if platformName == "" {
+		platformName = "Unknown"
+	}
+
 	var message string
 	var status string
-	
-	// 수집 기간 정보
-	startDate := time.Date(2025, 1, 1, 0, 0, 0, 0, time.UTC)
-	endDate := startDate.AddDate(0, 0, 89)
-	dateRange := fmt.Sprintf("%s ~ %s (89일간)", 
-		startDate.Format("2006-01-02"), endDate.Format("2006-01-02"))
-	
+
 	if collectErr != nil {
-		message = fmt.Sprintf("🚨 [QOO10JP] %s 계정 주문수집 실패\n"+
+		message = fmt.Sprintf("🚨 [%s] 주문 수집 실패\n"+
 			"⏰ 시간: %s\n"+
-			"📅 기간: %s\n"+
-			"❌ 오류: %s", 
-			accountName, now.Format("2006-01-02 15:04:05"), dateRange, collectErr.Error())
+			"👤 계정: %s\n"+
+			"🆔 ID: %s\n"+
+			"❌ 오류: %s\n"+
+			"⏱️  소요시간: %v",
+			platformName, now.Format("2006-01-02 15:04:05"), accountName, accountID, collectErr.Error(), duration)
 		status = "failed"
 	} else {
 		if savedCount > 0 {
-			// 성공률 계산
-			successRate := float64(savedCount) / float64(totalCount) * 100
-			if totalCount == 0 {
-				successRate = 100.0
-			}
-			
-			message = fmt.Sprintf("✅ [QOO10JP] %s 계정 주문수집 완료\n"+
-				"⏰ 완료시간: %s\n"+
-				"📅 수집기간: %s\n"+
-				"📦 수집결과: %d건 성공 (전체 %d건)\n"+
-				"📊 성공률: %.1f%%\n"+
-				"🎯 상태: 정상처리 완료", 
-				accountName, now.Format("2006-01-02 15:04:05"), dateRange, 
-				savedCount, totalCount, successRate)
+			message = fmt.Sprintf("✅ [%s] 주문 수집 완료\n"+
+				"⏰ 시간: %s\n"+
+				"👤 계정: %s\n"+
+				"🆔 ID: %s\n"+
+				"📦 수집결과: %d건\n"+
+				"⏱️  소요시간: %v",
+				platformName, now.Format("2006-01-02 15:04:05"), accountName, accountID, savedCount, duration)
 		} else {
-			message = fmt.Sprintf("ℹ️ [QOO10JP] %s 계정 주문수집 완료\n"+
-				"⏰ 완료시간: %s\n"+
-				"📅 수집기간: %s\n"+
+			message = fmt.Sprintf("ℹ️ [%s] 주문 수집 완료\n"+
+				"⏰ 시간: %s\n"+
+				"👤 계정: %s\n"+
+				"🆔 ID: %s\n"+
 				"📦 수집결과: 신규 주문 없음\n"+
-				"🎯 상태: 정상처리 완료 (업데이트 불필요)", 
-				accountName, now.Format("2006-01-02 15:04:05"), dateRange)
+				"⏱️  소요시간: %v",
+				platformName, now.Format("2006-01-02 15:04:05"), accountName, accountID, duration)
 		}
 		status = "completed"
 	}
-	
+
 	data := map[string]interface{}{
-		"platform":     "QOO10JP",
+		"platform":     platformName,
 		"account_name": accountName,
+		"account_id":   accountID,
 		"status":       status,
 		"action":       "order_collection",
 		"saved_count":  savedCount,
-		"total_count":  totalCount,
 		"timestamp":    now.Format("2006-01-02 15:04:05"),
-		"date_range":   dateRange,
-		"success_rate": func() float64 {
-			if totalCount == 0 {
-				return 100.0
-			}
-			return float64(savedCount) / float64(totalCount) * 100
-		}(),
+		"duration_ms":  duration.Milliseconds(),
 	}
-	
+
 	if collectErr != nil {
 		data["error"] = collectErr.Error()
 	}
-	
+
 	// 비동기로 웹훅 호출
-	log.Printf("🚀 완료 웹훅 전송 시작: %s", message)
 	go func() {
-		log.Printf("🔄 웹훅 호출 중: %s", webhookURL)
 		err := w.webhookClient.SendWebhookWithRetry(webhookURL, message, data, 2)
 		if err != nil {
-			log.Printf("⚠️ 주문수집 종료 웹훅 호출 실패: %v", err)
+			log.Printf("⚠️ 주문 수집 완료 웹훅 호출 실패: %v", err)
 		} else {
-			log.Printf("✅ 주문수집 완료 웹훅 전송 성공: %s", message)
+			log.Printf("✅ 주문 수집 완료 웹훅 전송 성공")
 		}
 	}()
 }

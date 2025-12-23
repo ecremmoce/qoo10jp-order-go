@@ -1,0 +1,65 @@
+======================================================================
+API SPECIFICATION SUMMARY
+======================================================================
+
+Endpoint: None None
+
+Parameters (0):
+----------------------------------------------------------------------
+
+Response Fields (15):
+----------------------------------------------------------------------
+  error_nil_name_new_item (string)
+   Item_name cannot be empty
+  error_item_name_is_too_short (string)
+   Item_name length is less than min limit
+  error_title_exceeds_max_length (string)
+   The length of item_name is bigger than max limit
+  error_title_character_forbidden (string)
+   Item_name contains forbidden characters
+  error_desc_length_min_limit (string)
+   Description length is less than the min limit
+  error_image_num_min (string)
+   {{error_info}}
+  error_forbidden_category (string)
+   The category is forbidden
+  error_brand_forbidden (string)
+   The brand is forbidden
+  error_param_dts_exceeds_max_limit (string)
+   Days_to_ship exceeds max limit
+  error_price_exceed_min_limitl (string)
+   Original_price is less than min price limit
+  error_price_exceed_max_limitl (string)
+   Original_price is bigger than max price limit
+  error_wholesale_price_less_than_ratio_limit (string)
+   Wholesale price is less than ratio limit
+  error_param_category_not_support_pre_order (string)
+   Category does not support pre-order
+  API Permissions (object)
+   APP types that can call this API
+    ERP System (string)
+    Seller In House System (string)
+    Product Management (string)
+    Swam ERP (string)
+  Update Log (object)
+   API update history
+    2025-09-19 (string)
+     The request field certification_type has been removed. If this field is still passed in the request, it will be ignored by the system
+    2025-04-28 (string)
+     Add permit_id
+    2025-04-23 (string)
+     Add PH certification_info
+
+Metadata:
+----------------------------------------------------------------------
+  total_chunks: 4
+  chunks_with_errors: 0
+  total_parameters_before_dedup: 0
+  total_parameters_after_dedup: 0
+  update_log_entries: 0
+  hidden_fields_count: 0
+  source_results: workspaces\v2.product.add_item\results\all_chunks_results.json
+
+======================================================================
+Legend: * = required parameter
+======================================================================

@@ -1,0 +1,204 @@
+[
+  {
+    "chunk_index": 1,
+    "endpoint": null,
+    "method": null,
+    "description": null,
+    "parameters": [],
+    "response_fields": [
+      {
+        "name": "error_nil_name_new_item",
+        "type": "string",
+        "description": "Item_name cannot be empty"
+      },
+      {
+        "name": "error_item_name_is_too_short",
+        "type": "string",
+        "description": "Item_name length is less than min limit"
+      },
+      {
+        "name": "error_title_exceeds_max_length",
+        "type": "string",
+        "description": "The length of item_name is bigger than max limit"
+      },
+      {
+        "name": "error_title_character_forbidden",
+        "type": "string",
+        "description": "Item_name contains forbidden characters"
+      }
+    ],
+    "chunk_metadata": {
+      "index": 1,
+      "total": 4,
+      "y_start": 0,
+      "y_end": 8000,
+      "overlap_top": 0,
+      "overlap_bottom": 500,
+      "height": 8000,
+      "path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\workspaces\\v2.product.add_item\\chunks\\chunk_001.png",
+      "filename": "chunk_001.png",
+      "width": 837
+    },
+    "chunk_path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\workspaces\\v2.product.add_item\\chunks\\chunk_001.png"
+  },
+  {
+    "chunk_index": 2,
+    "endpoint": null,
+    "method": null,
+    "description": null,
+    "parameters": [],
+    "response_fields": [
+      {
+        "name": "error_desc_length_min_limit",
+        "type": "string",
+        "description": "Description length is less than the min limit"
+      },
+      {
+        "name": "error_image_num_min",
+        "type": "string",
+        "description": "{{error_info}}"
+      },
+      {
+        "name": "error_forbidden_category",
+        "type": "string",
+        "description": "The category is forbidden"
+      },
+      {
+        "name": "error_brand_forbidden",
+        "type": "string",
+        "description": "The brand is forbidden"
+      },
+      {
+        "name": "error_param_dts_exceeds_max_limit",
+        "type": "string",
+        "description": "Days_to_ship exceeds max limit"
+      }
+    ],
+    "chunk_metadata": {
+      "index": 2,
+      "total": 4,
+      "y_start": 7342,
+      "y_end": 15342,
+      "overlap_top": 500,
+      "overlap_bottom": 500,
+      "height": 8000,
+      "path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\workspaces\\v2.product.add_item\\chunks\\chunk_002.png",
+      "filename": "chunk_002.png",
+      "width": 837
+    },
+    "chunk_path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\workspaces\\v2.product.add_item\\chunks\\chunk_002.png"
+  },
+  {
+    "chunk_index": 3,
+    "endpoint": null,
+    "method": null,
+    "description": null,
+    "parameters": [],
+    "response_fields": [
+      {
+        "name": "error_price_exceed_min_limitl",
+        "type": "string",
+        "description": "Original_price is less than min price limit"
+      },
+      {
+        "name": "error_price_exceed_max_limitl",
+        "type": "string",
+        "description": "Original_price is bigger than max price limit"
+      },
+      {
+        "name": "error_wholesale_price_less_than_ratio_limit",
+        "type": "string",
+        "description": "Wholesale price is less than ratio limit"
+      },
+      {
+        "name": "error_param_category_not_support_pre_order",
+        "type": "string",
+        "description": "Category does not support pre-order"
+      }
+    ],
+    "chunk_metadata": {
+      "index": 3,
+      "total": 4,
+      "y_start": 15017,
+      "y_end": 23017,
+      "overlap_top": 500,
+      "overlap_bottom": 500,
+      "height": 8000,
+      "path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\workspaces\\v2.product.add_item\\chunks\\chunk_003.png",
+      "filename": "chunk_003.png",
+      "width": 837
+    },
+    "chunk_path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\workspaces\\v2.product.add_item\\chunks\\chunk_003.png"
+  },
+  {
+    "chunk_index": 4,
+    "endpoint": null,
+    "method": null,
+    "description": null,
+    "parameters": [],
+    "response_fields": [
+      {
+        "name": "API Permissions",
+        "type": "object",
+        "description": "APP types that can call this API",
+        "children": [
+          {
+            "name": "ERP System",
+            "type": "string",
+            "description": null
+          },
+          {
+            "name": "Seller In House System",
+            "type": "string",
+            "description": null
+          },
+          {
+            "name": "Product Management",
+            "type": "string",
+            "description": null
+          },
+          {
+            "name": "Swam ERP",
+            "type": "string",
+            "description": null
+          }
+        ]
+      },
+      {
+        "name": "Update Log",
+        "type": "object",
+        "description": "API update history",
+        "children": [
+          {
+            "name": "2025-09-19",
+            "type": "string",
+            "description": "The request field certification_type has been removed. If this field is still passed in the request, it will be ignored by the system"
+          },
+          {
+            "name": "2025-04-28",
+            "type": "string",
+            "description": "Add permit_id"
+          },
+          {
+            "name": "2025-04-23",
+            "type": "string",
+            "description": "Add PH certification_info"
+          }
+        ]
+      }
+    ],
+    "chunk_metadata": {
+      "index": 4,
+      "total": 4,
+      "y_start": 22250,
+      "y_end": 24121,
+      "overlap_top": 500,
+      "overlap_bottom": 0,
+      "height": 1871,
+      "path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\workspaces\\v2.product.add_item\\chunks\\chunk_004.png",
+      "filename": "chunk_004.png",
+      "width": 837
+    },
+    "chunk_path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\workspaces\\v2.product.add_item\\chunks\\chunk_004.png"
+  }
+]

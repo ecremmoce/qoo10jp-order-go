@@ -1,0 +1,85 @@
+{
+  "chunk_index": 1,
+  "total_chunks": 1,
+  "endpoint": "/show_prize_and_follow_prize",
+  "method": "GET",
+  "description": "Prize/follow prize information API",
+  "update_log": [
+    {
+      "date": "2020-08-14",
+      "change": "Optimize the shared parameter and required parameter description information"
+    },
+    {
+      "date": "2021-09-27",
+      "change": "Add Error Codes information"
+    }
+  ],
+  "parameters": [
+    {
+      "name": "campaign_id",
+      "type": "string",
+      "required": true,
+      "description": "The unique identifier for the shared follow campaign"
+    },
+    {
+      "name": "prize",
+      "type": "string",
+      "required": false,
+      "description": "Indicate what type of prize. Empty if the prize information is all types"
+    }
+  ],
+  "response_fields": [
+    {
+      "name": "response",
+      "type": "string",
+      "description": "Content information you are learning"
+    },
+    {
+      "name": "campaign_id",
+      "type": "string",
+      "description": "The unique identifier for the shared follow campaign"
+    },
+    {
+      "name": "prize",
+      "type": "string",
+      "description": "Indicate what type of prize. Empty if the prize information is all types"
+    }
+  ],
+  "error_codes": [
+    {
+      "code": "follow_prize_campaign_none",
+      "description": "The promotion id is not shared"
+    },
+    {
+      "code": "follow_prize_campaign_invalid",
+      "description": "Error: the request follow prize can be shared"
+    },
+    {
+      "code": "error_param",
+      "description": "Wrong parameter"
+    },
+    {
+      "code": "error_sign",
+      "description": "Wrong sign"
+    },
+    {
+      "code": "error_time",
+      "description": "Time error"
+    }
+  ],
+  "notes": "The documentation shows both request/response parameters and includes comprehensive error codes. The API appears to be related to prize and follow campaign functionality.",
+  "chunk_metadata": {
+    "index": 1,
+    "total": 1,
+    "y_start": 0,
+    "y_end": 4479,
+    "overlap_top": 0,
+    "overlap_bottom": 0,
+    "height": 4479,
+    "path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\workspaces\\v2.follow_prize.end_follow_prize\\chunks\\chunk_001.png",
+    "filename": "chunk_001.png",
+    "width": 837
+  },
+  "analysis_timestamp": "2025-10-10T05:43:45.486816",
+  "model": "claude-3-5-sonnet-20241022"
+}

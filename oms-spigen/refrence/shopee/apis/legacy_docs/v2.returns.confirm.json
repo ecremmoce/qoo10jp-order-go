@@ -1,0 +1,76 @@
+{
+  "endpoint": null,
+  "method": null,
+  "description": null,
+  "parameters": [
+    {
+      "name": "access_token",
+      "type": "string",
+      "required": true,
+      "description": "Authentication token for API access",
+      "children": []
+    },
+    {
+      "name": "request_parameters",
+      "type": "object",
+      "required": true,
+      "description": "Container for request parameters",
+      "children": [
+        {
+          "name": "page_size",
+          "type": "integer",
+          "required": false,
+          "description": "Number of results per page",
+          "children": []
+        },
+        {
+          "name": "page_number",
+          "type": "integer",
+          "required": false,
+          "description": "Page number for pagination",
+          "children": []
+        },
+        {
+          "name": "sort_by",
+          "type": "string",
+          "required": false,
+          "description": "Field to sort results by",
+          "children": []
+        }
+      ]
+    }
+  ],
+  "response_fields": [],
+  "update_log": [
+    {
+      "date": "2024-01-12",
+      "change": "Updated product search criteria"
+    },
+    {
+      "date": "2024-01-08",
+      "change": "Added new access token restrictions"
+    },
+    {
+      "date": "2023-12-29",
+      "change": "Updated API rate limits"
+    },
+    {
+      "date": "2023-12-22",
+      "change": "Changed authentication method"
+    },
+    {
+      "date": "2023-12-15",
+      "change": "Added pagination support"
+    }
+  ],
+  "hidden_fields": [],
+  "metadata": {
+    "total_chunks": 1,
+    "chunks_with_errors": 0,
+    "total_parameters_before_dedup": 2,
+    "total_parameters_after_dedup": 2,
+    "update_log_entries": 5,
+    "hidden_fields_count": 0,
+    "source_results": "workspaces\\v2.returns.confirm\\results\\all_chunks_results.json"
+  }
+}

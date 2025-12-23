@@ -1,0 +1,152 @@
+{
+  "chunk_index": 1,
+  "total_chunks": 1,
+  "endpoint": "https://partner.myapexmedia.com/api/v2/livestream/delete_show_item",
+  "method": "POST",
+  "description": "Delete a livestream show item",
+  "update_log": [
+    {
+      "date": "2025-06-24",
+      "change": "New API"
+    }
+  ],
+  "parameters": {
+    "common_parameters": [
+      {
+        "name": "partner_id",
+        "type": "int",
+        "required": true,
+        "description": "The identity of a partner. Required for all requests."
+      },
+      {
+        "name": "timestamp",
+        "type": "timestamp",
+        "required": true,
+        "description": "The Unix timestamp when the request is initiated. Required for all requests. Expires in 5 minutes."
+      },
+      {
+        "name": "access_token",
+        "type": "string",
+        "required": true,
+        "description": "The token for API access, cases sensitive and expires in 4 hours."
+      },
+      {
+        "name": "sign",
+        "type": "string",
+        "required": true,
+        "description": "Signature generated according to different APIs."
+      }
+    ],
+    "request_parameters": [
+      {
+        "name": "session_id",
+        "type": "int64",
+        "required": true,
+        "description": "The identifier of livestream session"
+      }
+    ],
+    "response_parameters": [
+      {
+        "name": "error",
+        "type": "string",
+        "description": "Include error type if the error. Empty if no error"
+      },
+      {
+        "name": "message",
+        "type": "string",
+        "description": "Include error detail if the error. Empty if no error"
+      },
+      {
+        "name": "request_id",
+        "type": "string",
+        "description": "The identifier for an API request for error"
+      },
+      {
+        "name": "response",
+        "type": "object",
+        "description": "Other information you are querying"
+      }
+    ]
+  },
+  "error_codes": [
+    {
+      "code": "error_data",
+      "description": "same data failed"
+    },
+    {
+      "code": "error_data",
+      "description": "data not exist"
+    },
+    {
+      "code": "error_param",
+      "description": "parameter invalid"
+    },
+    {
+      "code": "error_param",
+      "description": "invalid session_id"
+    },
+    {
+      "code": "error_auth",
+      "description": "You are not authorized"
+    },
+    {
+      "code": "error_data",
+      "description": "The session/session_id(=1234) is not belong to you"
+    },
+    {
+      "code": "error_permit",
+      "description": "This API is not supported for current region"
+    },
+    {
+      "code": "error_param",
+      "description": "Parse data error: [err_msg]"
+    },
+    {
+      "code": "error_param",
+      "description": "The data required, please try again later"
+    },
+    {
+      "code": "error_server",
+      "description": "Server internal error: [err_msg]"
+    },
+    {
+      "code": "error_data",
+      "description": "The session/session_id(=1234) is ended"
+    },
+    {
+      "code": "error_data",
+      "description": "The session/session_id(=1234) is not exist"
+    },
+    {
+      "code": "error_data",
+      "description": "The session/session_id(=1234) is not expired"
+    },
+    {
+      "code": "error_data",
+      "description": "The information you queried is not found"
+    },
+    {
+      "code": "error_param",
+      "description": "Wrong parameter: [err_msg]"
+    },
+    {
+      "code": "error_param",
+      "description": "Something wrong: Please try later"
+    }
+  ],
+  "notes": "The documentation includes comprehensive error codes and three types of parameters: common parameters required for all requests, specific request parameters, and response parameters. The API is related to deleting livestream show items and requires authentication via partner_id, timestamp, access_token, and sign.",
+  "chunk_metadata": {
+    "index": 1,
+    "total": 1,
+    "y_start": 0,
+    "y_end": 3874,
+    "overlap_top": 0,
+    "overlap_bottom": 0,
+    "height": 3874,
+    "path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\workspaces\\v2.livestream.delete_show_item\\chunks\\chunk_001.png",
+    "filename": "chunk_001.png",
+    "width": 837
+  },
+  "analysis_timestamp": "2025-10-10T05:54:15.295311",
+  "model": "claude-3-5-sonnet-20241022"
+}

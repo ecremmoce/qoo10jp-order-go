@@ -1,0 +1,73 @@
+{
+  "endpoint": "/v1/bill/get_bill_detail",
+  "method": "GET",
+  "description": "Get bill details for the specified bill",
+  "parameters": [
+    {
+      "name": "bill_no",
+      "type": "string",
+      "required": true,
+      "description": "The bill number to query",
+      "children": []
+    },
+    {
+      "name": "user_key_id",
+      "type": "string",
+      "required": false,
+      "description": "The user's key id",
+      "children": []
+    }
+  ],
+  "response_fields": [
+    {
+      "name": "message",
+      "type": "string",
+      "description": "The description of error code",
+      "children": []
+    },
+    {
+      "name": "request_id",
+      "type": "string",
+      "description": "The identifier of the API request to help support for an error",
+      "children": []
+    },
+    {
+      "name": "code",
+      "type": "integer",
+      "description": "The request status code",
+      "children": []
+    },
+    {
+      "name": "user_bill_key_id",
+      "type": "string",
+      "description": "The request bill added to the url url key id",
+      "children": []
+    },
+    {
+      "name": "bill_no_key_id",
+      "type": "string",
+      "description": "Request's image identifier for url url key id",
+      "children": []
+    }
+  ],
+  "update_log": [
+    {
+      "date": "2021-07-25",
+      "change": "Added Example Extended"
+    },
+    {
+      "date": "2021-06-16",
+      "change": "Updates the Sample Information of Request Parameter and Response Parameter"
+    }
+  ],
+  "hidden_fields": [],
+  "metadata": {
+    "total_chunks": 1,
+    "chunks_with_errors": 0,
+    "total_parameters_before_dedup": 2,
+    "total_parameters_after_dedup": 2,
+    "update_log_entries": 2,
+    "hidden_fields_count": 0,
+    "source_results": "workspaces\\v2.add_on_deal.delete_add_on_deal_main_item\\results\\all_chunks_results.json"
+  }
+}

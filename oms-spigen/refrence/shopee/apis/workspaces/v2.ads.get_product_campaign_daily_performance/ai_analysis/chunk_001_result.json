@@ -1,0 +1,154 @@
+{
+  "chunk_index": 1,
+  "total_chunks": 1,
+  "endpoint": "/api/2/product/add_item",
+  "method": "POST",
+  "description": "Add new item to product",
+  "update_log": [
+    {
+      "date": "2023-06-07",
+      "change": "API released"
+    }
+  ],
+  "hidden_fields": [],
+  "parameters": [
+    {
+      "name": "platform_id",
+      "type": "integer",
+      "required": true,
+      "description": "Platform ID",
+      "children": []
+    },
+    {
+      "name": "item",
+      "type": "object",
+      "required": true,
+      "description": "Item details",
+      "children": [
+        {
+          "name": "item_no",
+          "type": "string",
+          "required": true,
+          "description": "Item number",
+          "children": []
+        },
+        {
+          "name": "title",
+          "type": "string",
+          "required": true,
+          "description": "Item title",
+          "children": []
+        },
+        {
+          "name": "description",
+          "type": "string",
+          "required": true,
+          "description": "Item description",
+          "children": []
+        },
+        {
+          "name": "category_id",
+          "type": "string",
+          "required": true,
+          "description": "Category ID",
+          "children": []
+        },
+        {
+          "name": "brand_id",
+          "type": "string",
+          "required": true,
+          "description": "Brand ID",
+          "children": []
+        },
+        {
+          "name": "images",
+          "type": "array",
+          "required": true,
+          "description": "Image URLs",
+          "children": []
+        },
+        {
+          "name": "price",
+          "type": "float",
+          "required": true,
+          "description": "Item price",
+          "children": []
+        },
+        {
+          "name": "stock",
+          "type": "integer",
+          "required": true,
+          "description": "Available stock quantity",
+          "children": []
+        },
+        {
+          "name": "weight",
+          "type": "float",
+          "required": true,
+          "description": "Item weight in grams",
+          "children": []
+        },
+        {
+          "name": "attributes",
+          "type": "array",
+          "required": false,
+          "description": "Item attributes",
+          "children": [
+            {
+              "name": "name",
+              "type": "string",
+              "required": true,
+              "description": "Attribute name",
+              "children": []
+            },
+            {
+              "name": "value",
+              "type": "string",
+              "required": true,
+              "description": "Attribute value",
+              "children": []
+            }
+          ]
+        },
+        {
+          "name": "variations",
+          "type": "array",
+          "required": false,
+          "description": "Item variations",
+          "children": [
+            {
+              "name": "name",
+              "type": "string",
+              "required": true,
+              "description": "Variation name",
+              "children": []
+            },
+            {
+              "name": "options",
+              "type": "array",
+              "required": true,
+              "description": "Variation options",
+              "children": []
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "response_fields": [],
+  "notes": "The documentation shows a complete API endpoint for adding items to a product catalog with detailed nested structures for item details, attributes, and variations.",
+  "chunk_metadata": {
+    "index": 1,
+    "total": 1,
+    "y_start": 0,
+    "y_end": 6822,
+    "overlap_top": 0,
+    "overlap_bottom": 0,
+    "height": 6822,
+    "path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\workspaces\\v2.ads.get_product_campaign_daily_performance\\chunks\\chunk_001.png",
+    "filename": "chunk_001.png",
+    "width": 837
+  },
+  "analysis_timestamp": "2025-10-10T05:30:55.055505",
+  "model": "claude-3-5-sonnet-20241022"
+}

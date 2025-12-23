@@ -1,0 +1,90 @@
+{
+  "endpoint": "/v2/bestsellers/get_item_count",
+  "method": "GET",
+  "description": "Get the number of items in the shopping bag, including the current number of items in the shopping bag, the report final at the bottom, etc.",
+  "parameters": [
+    {
+      "name": "service_id",
+      "type": "string",
+      "required": true,
+      "description": "Partner API id assigned when registration is successful",
+      "children": []
+    },
+    {
+      "name": "timestamp",
+      "type": "timestamp",
+      "required": true,
+      "description": "This is a timestamp of the request. Required for all requests. Expires in 5 minutes.",
+      "children": []
+    },
+    {
+      "name": "access_token",
+      "type": "string",
+      "required": true,
+      "description": "Obtained unique identifier using it identify your permission to the api, Valid for 90 days and will expire 14 hours",
+      "children": []
+    },
+    {
+      "name": "user_id",
+      "type": "int",
+      "required": true,
+      "description": "Request unique identifier for a user",
+      "children": []
+    },
+    {
+      "name": "sign",
+      "type": "string",
+      "required": true,
+      "description": "Signature parameter (timestamps on different urls)",
+      "children": []
+    }
+  ],
+  "response_fields": [
+    {
+      "name": "error",
+      "type": "string",
+      "description": "Indicate error type if has error. Empty if no error happened",
+      "children": []
+    },
+    {
+      "name": "message",
+      "type": "string",
+      "description": "Indicate error details if has error. Empty if no error occurred",
+      "children": []
+    },
+    {
+      "name": "request_id",
+      "type": "string",
+      "description": "The identifier for an API request for error tracking",
+      "children": []
+    },
+    {
+      "name": "total_item_count",
+      "type": "int64",
+      "description": "The number of items in the shopping bag",
+      "children": []
+    },
+    {
+      "name": "max_item_count",
+      "type": "int64",
+      "description": "The maximum number of items allowed in the shopping bag at the bottom",
+      "children": []
+    }
+  ],
+  "update_log": [
+    {
+      "date": "2023-06-26",
+      "change": "New API"
+    }
+  ],
+  "hidden_fields": [],
+  "metadata": {
+    "total_chunks": 1,
+    "chunks_with_errors": 0,
+    "total_parameters_before_dedup": 5,
+    "total_parameters_after_dedup": 5,
+    "update_log_entries": 1,
+    "hidden_fields_count": 0,
+    "source_results": "workspaces\\v2.livestream.get_item_count\\results\\all_chunks_results.json"
+  }
+}

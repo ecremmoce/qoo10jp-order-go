@@ -1,0 +1,133 @@
+{
+  "chunk_index": 1,
+  "total_chunks": 1,
+  "endpoint": "/v1/payees/get_address_list",
+  "method": "POST",
+  "description": "Get payee cryptocurrency wallet addresses",
+  "update_log": [],
+  "hidden_fields": [],
+  "parameters": [
+    {
+      "name": "timestamp",
+      "type": "string",
+      "required": true,
+      "description": "UTC timestamp",
+      "children": []
+    },
+    {
+      "name": "URL",
+      "type": "string",
+      "required": true,
+      "description": "Client timestamp",
+      "children": []
+    },
+    {
+      "name": "Test URL",
+      "type": "string",
+      "required": true,
+      "description": "Test client timestamp",
+      "children": []
+    }
+  ],
+  "response_fields": [
+    {
+      "name": "request_id",
+      "type": "string",
+      "required": true,
+      "description": "The identifier for all UK request for this API",
+      "children": []
+    },
+    {
+      "name": "prior",
+      "type": "string",
+      "required": false,
+      "description": "Indicates what type this Error Entity if an error happened",
+      "children": []
+    },
+    {
+      "name": "message",
+      "type": "string",
+      "required": false,
+      "description": "Error message only is there if Entity is an error",
+      "children": []
+    },
+    {
+      "name": "chat_publico_address",
+      "type": "string",
+      "required": false,
+      "description": "String",
+      "children": []
+    },
+    {
+      "name": "address_id",
+      "type": "string",
+      "required": false,
+      "description": "The address ID of your client",
+      "children": []
+    },
+    {
+      "name": "address_type",
+      "type": "string",
+      "required": false,
+      "description": "The address type",
+      "children": []
+    },
+    {
+      "name": "reject",
+      "type": "string",
+      "required": false,
+      "description": "The type of specific address",
+      "children": []
+    },
+    {
+      "name": "id",
+      "type": "string",
+      "required": false,
+      "description": "The id of specific address",
+      "children": []
+    },
+    {
+      "name": "address",
+      "type": "string",
+      "required": false,
+      "description": "The address description of specific address",
+      "children": []
+    },
+    {
+      "name": "delete",
+      "type": "string",
+      "required": false,
+      "description": "The record of specific address",
+      "children": []
+    },
+    {
+      "name": "record",
+      "type": "string",
+      "required": false,
+      "description": "The record of specific address",
+      "children": []
+    },
+    {
+      "name": "address_type",
+      "type": "string",
+      "required": false,
+      "description": "The flag of this address available types",
+      "children": []
+    }
+  ],
+  "notes": "The documentation includes error codes and example responses which I've not included in the structured data as they weren't part of the core parameter/response specifications.",
+  "chunk_metadata": {
+    "index": 1,
+    "total": 1,
+    "y_start": 0,
+    "y_end": 4696,
+    "overlap_top": 0,
+    "overlap_bottom": 0,
+    "height": 4696,
+    "path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\workspaces\\v2.logistics.get_address_list\\chunks\\chunk_001.png",
+    "filename": "chunk_001.png",
+    "width": 837
+  },
+  "analysis_timestamp": "2025-10-10T06:02:20.807074",
+  "model": "claude-3-5-sonnet-20241022"
+}

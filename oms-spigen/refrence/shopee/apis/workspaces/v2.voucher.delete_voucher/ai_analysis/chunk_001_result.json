@@ -1,0 +1,109 @@
+{
+  "chunk_index": 1,
+  "total_chunks": 1,
+  "endpoint": "/voucher/details_voucher",
+  "method": null,
+  "description": "Get voucher details",
+  "update_log": [
+    {
+      "date": "2023-08-04",
+      "change": "Latest Public Release"
+    },
+    {
+      "date": "2023-07-27",
+      "change": "Add ECB Currency Information"
+    },
+    {
+      "date": "2023-06-21",
+      "change": "Optimize for details information of Request Parameter and Response Parameter"
+    }
+  ],
+  "parameters": [
+    {
+      "name": "voucher_id",
+      "type": "string",
+      "required": true,
+      "description": "Voucher ID (a program open registration is successful)",
+      "children": []
+    },
+    {
+      "name": "access_token",
+      "type": "string",
+      "required": true,
+      "description": "Used for API OAuth2 using to identify user permission to use api. The token info that you obtained is 2 hours",
+      "children": []
+    },
+    {
+      "name": "shop_id",
+      "type": "string",
+      "required": true,
+      "description": "Shopee's unique identifier for a shop. Required param to use API.",
+      "children": []
+    }
+  ],
+  "response_fields": [
+    {
+      "name": "voucher_id",
+      "type": "string",
+      "description": "The unique identifier for the voucher you want",
+      "children": []
+    },
+    {
+      "name": "error",
+      "type": "string",
+      "description": "indicate error type (if error). Empty if no error",
+      "children": []
+    },
+    {
+      "name": "message",
+      "type": "string",
+      "description": "indicate error details (if error). Empty if no error",
+      "children": []
+    },
+    {
+      "name": "request_id",
+      "type": "string",
+      "description": "The identifier of the API request for error tracking",
+      "children": []
+    },
+    {
+      "name": "response",
+      "type": "object",
+      "description": "Detail information you are querying",
+      "children": []
+    }
+  ],
+  "error_codes": [
+    {
+      "code": "error_param",
+      "description": "Invalid params"
+    },
+    {
+      "code": "error_auth",
+      "description": "Authentication failed"
+    },
+    {
+      "code": "error_permission",
+      "description": "No permission to access"
+    },
+    {
+      "code": "error_not_found",
+      "description": "Resource not found"
+    }
+  ],
+  "notes": "The documentation appears to be for a voucher details API endpoint. It includes comprehensive parameter definitions, response fields, and error codes. The update log shows recent changes related to currency information and parameter optimizations.",
+  "chunk_metadata": {
+    "index": 1,
+    "total": 1,
+    "y_start": 0,
+    "y_end": 4497,
+    "overlap_top": 0,
+    "overlap_bottom": 0,
+    "height": 4497,
+    "path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\workspaces\\v2.voucher.delete_voucher\\chunks\\chunk_001.png",
+    "filename": "chunk_001.png",
+    "width": 837
+  },
+  "analysis_timestamp": "2025-10-10T06:51:50.448283",
+  "model": "claude-3-5-sonnet-20241022"
+}

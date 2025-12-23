@@ -1,0 +1,122 @@
+{
+  "chunk_index": 1,
+  "total_chunks": 1,
+  "endpoint": "/logistics/get_booking_tracking_number",
+  "method": "GET",
+  "description": "After arranging domestic/air logistics ship_booking for the integrated channel, use this API to get the tracking number, which is displayed separately for printing shipping labels",
+  "update_log": [
+    {
+      "date": "2024-07-02",
+      "change": "New API"
+    }
+  ],
+  "parameters": [
+    {
+      "name": "partner_id",
+      "type": "int",
+      "required": true,
+      "description": "Partner ID is assigned upon registration is successful"
+    },
+    {
+      "name": "timestamp",
+      "type": "timestamp",
+      "required": true,
+      "description": "This is to indicate the timestamp of the request. Required for all requests. Expires in 5 minutes"
+    },
+    {
+      "name": "access_token",
+      "type": "string",
+      "required": true,
+      "description": "This token for API access, using to identify your permission to the api, refer to /auth/token use and expires in 4 hours"
+    },
+    {
+      "name": "shop_id",
+      "type": "int",
+      "required": true,
+      "description": "Shopee's unique identifier for a shop. Required param for seller API."
+    },
+    {
+      "name": "sign",
+      "type": "string",
+      "required": true,
+      "description": "Authentication parameter for partner_id, api path, timestamp, access_token, shop_id and partner_key via HMAC-SHA256 algorithm"
+    },
+    {
+      "name": "booking_sn",
+      "type": "string",
+      "required": true,
+      "description": "Shopee's unique identifier for a booking"
+    }
+  ],
+  "response_fields": [
+    {
+      "name": "request_id",
+      "type": "string",
+      "description": "The identifier for an API request for error tracking"
+    },
+    {
+      "name": "error",
+      "type": "string",
+      "description": "Indicate error type if hit error. Empty if no error happened"
+    },
+    {
+      "name": "message",
+      "type": "string",
+      "description": "Indicate error details if hit error. Empty if no error happened"
+    },
+    {
+      "name": "tracking_number",
+      "type": "string",
+      "description": "The tracking number of this booking"
+    }
+  ],
+  "error_codes": [
+    {
+      "code": "error_auth",
+      "description": "wrong parameters or token"
+    },
+    {
+      "code": "error_data",
+      "description": "data not exist"
+    },
+    {
+      "code": "error_params",
+      "description": "parameter invalid"
+    },
+    {
+      "code": "error_param",
+      "description": "The information you provided is not found"
+    },
+    {
+      "code": "error_system",
+      "description": "Wrong parameters, data error"
+    },
+    {
+      "code": "error_server",
+      "description": "Something wrong, Please try later"
+    },
+    {
+      "code": "error_req",
+      "description": "request is invalid"
+    },
+    {
+      "code": "error_parallel",
+      "description": "request too fast (parallel)"
+    }
+  ],
+  "notes": "The documentation includes sample URLs for different regions (Chinese Mainland, Brazil, etc.) and provides both cURL and Python request examples.",
+  "chunk_metadata": {
+    "index": 1,
+    "total": 1,
+    "y_start": 0,
+    "y_end": 3528,
+    "overlap_top": 0,
+    "overlap_bottom": 0,
+    "height": 3528,
+    "path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\workspaces\\v2.logistics.get_booking_tracking_number\\chunks\\chunk_001.png",
+    "filename": "chunk_001.png",
+    "width": 837
+  },
+  "analysis_timestamp": "2025-10-10T06:03:51.451040",
+  "model": "claude-3-5-sonnet-20241022"
+}

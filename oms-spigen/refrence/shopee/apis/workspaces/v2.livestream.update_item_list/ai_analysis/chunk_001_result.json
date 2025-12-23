@@ -1,0 +1,89 @@
+{
+  "chunk_index": 1,
+  "total_chunks": 1,
+  "endpoint": null,
+  "method": null,
+  "description": "Q2 Dashboard update item_pd API",
+  "update_log": [
+    {
+      "date": "2024-04-24",
+      "change": "New API"
+    }
+  ],
+  "parameters": [
+    {
+      "name": "session_id",
+      "type": "string",
+      "required": true,
+      "description": "Pattern of 32 standard case alpha-numeric characters",
+      "children": []
+    },
+    {
+      "name": "store_name",
+      "type": "string",
+      "required": true,
+      "description": "The store name is required in the request",
+      "children": []
+    },
+    {
+      "name": "item_id",
+      "type": "string",
+      "required": true,
+      "description": "The item id of the item",
+      "children": []
+    }
+  ],
+  "response_fields": [
+    {
+      "name": "message",
+      "type": "string",
+      "description": "Status message about the error state if an error happened",
+      "children": []
+    },
+    {
+      "name": "result_id",
+      "type": "string",
+      "description": "The identifier for API request error tracking",
+      "children": []
+    }
+  ],
+  "error_codes": [
+    {
+      "code": "error_404",
+      "description": "store data error"
+    },
+    {
+      "code": "error_data",
+      "description": "data not exist"
+    },
+    {
+      "code": "error_param",
+      "description": "parameter invalid"
+    },
+    {
+      "code": "error_operation",
+      "description": "The {item_name} or {item_pd} is not exist in the shopping bag but exist in the request; please use delete API"
+    }
+  ],
+  "content_parameters": {
+    "urls": {
+      "Chrome followed": "https://partner.mystore.com/cn/mychromestore/update_item_pd",
+      "URL direct": "https://partner.mystore.com/us/mystore/update_item_pd"
+    }
+  },
+  "notes": "This appears to be an API for updating items in a Q2 Dashboard system. The documentation includes multiple endpoint URLs for different regions and comprehensive error handling. The API requires authentication via session_id and includes store-specific operations.",
+  "chunk_metadata": {
+    "index": 1,
+    "total": 1,
+    "y_start": 0,
+    "y_end": 4277,
+    "overlap_top": 0,
+    "overlap_bottom": 0,
+    "height": 4277,
+    "path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\workspaces\\v2.livestream.update_item_list\\chunks\\chunk_001.png",
+    "filename": "chunk_001.png",
+    "width": 837
+  },
+  "analysis_timestamp": "2025-10-10T05:58:01.404537",
+  "model": "claude-3-5-sonnet-20241022"
+}

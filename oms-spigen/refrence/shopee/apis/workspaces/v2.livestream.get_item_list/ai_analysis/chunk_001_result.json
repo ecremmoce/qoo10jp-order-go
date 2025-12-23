@@ -1,0 +1,85 @@
+{
+  "chunk_index": 1,
+  "total_chunks": 1,
+  "endpoint": "http://gateway.erp.example.com/checkinstall_get_so",
+  "method": "GET",
+  "description": "Check installation API endpoint",
+  "update_log": [],
+  "hidden_fields": [],
+  "parameters": [
+    {
+      "name": "URL",
+      "type": "string",
+      "required": true,
+      "description": null,
+      "children": []
+    },
+    {
+      "name": "URL_EN",
+      "type": "string",
+      "required": true,
+      "description": null,
+      "children": []
+    }
+  ],
+  "response_parameters": [
+    {
+      "name": "error",
+      "type": "integer",
+      "required": true,
+      "description": "Error code",
+      "children": []
+    },
+    {
+      "name": "msg",
+      "type": "string",
+      "required": true,
+      "description": "Response message",
+      "children": []
+    },
+    {
+      "name": "msg_en",
+      "type": "string",
+      "required": true,
+      "description": "English response message",
+      "children": []
+    },
+    {
+      "name": "result",
+      "type": "object",
+      "required": true,
+      "description": null,
+      "children": [
+        {
+          "name": "api_url",
+          "type": "string",
+          "required": true,
+          "description": null,
+          "children": []
+        },
+        {
+          "name": "id",
+          "type": "integer",
+          "required": true,
+          "description": null,
+          "children": []
+        }
+      ]
+    }
+  ],
+  "notes": "The documentation appears to be for an API endpoint that checks installation status. It includes request parameters and detailed response parameters. The image shows code examples and error codes but some sections appear to be cut off.",
+  "chunk_metadata": {
+    "index": 1,
+    "total": 1,
+    "y_start": 0,
+    "y_end": 5418,
+    "overlap_top": 0,
+    "overlap_bottom": 0,
+    "height": 5418,
+    "path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\workspaces\\v2.livestream.get_item_list\\chunks\\chunk_001.png",
+    "filename": "chunk_001.png",
+    "width": 837
+  },
+  "analysis_timestamp": "2025-10-10T05:55:06.672236",
+  "model": "claude-3-5-sonnet-20241022"
+}

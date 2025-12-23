@@ -1,0 +1,39 @@
+======================================================================
+API SPECIFICATION SUMMARY
+======================================================================
+
+Endpoint: None None
+
+Parameters (3):
+----------------------------------------------------------------------
+* date_str (string)
+   Format: YYYY-MM-DD HH:mm:ss
+  status (string)
+   Multiple status values can be passed using commas
+  user_id (string)
+   User ID
+
+Response Fields (3):
+----------------------------------------------------------------------
+  code (integer)
+   Response code
+  message (string)
+   Response message
+  data (object)
+   Response data object
+    list (array)
+     List of data items
+
+Metadata:
+----------------------------------------------------------------------
+  total_chunks: 1
+  chunks_with_errors: 0
+  total_parameters_before_dedup: 3
+  total_parameters_after_dedup: 3
+  update_log_entries: 3
+  hidden_fields_count: 0
+  source_results: workspaces\v2.product.get_item_list\results\all_chunks_results.json
+
+======================================================================
+Legend: * = required parameter
+======================================================================

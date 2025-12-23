@@ -1,0 +1,86 @@
+{
+  "chunk_index": 1,
+  "total_chunks": 1,
+  "endpoint": null,
+  "method": null,
+  "description": null,
+  "update_log": [
+    {
+      "date": "2023-10-24",
+      "change": "New parameter: current_location"
+    },
+    {
+      "date": "2023-06-16",
+      "change": "Added optional parameters"
+    },
+    {
+      "date": "2023-06-15",
+      "change": "New optional parameters added"
+    }
+  ],
+  "hidden_fields": [
+    {
+      "name": "shipping_date",
+      "found_in": "parameter description",
+      "extracted_from_description": true
+    },
+    {
+      "name": "product_img",
+      "found_in": "parameter description",
+      "extracted_from_description": true
+    }
+  ],
+  "parameters": [
+    {
+      "name": "qty",
+      "type": "string",
+      "required": true,
+      "description": "Quantity of items",
+      "children": []
+    },
+    {
+      "name": "hs_code",
+      "type": "string",
+      "required": false,
+      "description": "Product HS code",
+      "children": []
+    },
+    {
+      "name": "sku",
+      "type": "string",
+      "required": false,
+      "description": "Product SKU",
+      "children": []
+    },
+    {
+      "name": "lang",
+      "type": "string",
+      "required": false,
+      "description": "Language code",
+      "children": []
+    },
+    {
+      "name": "current_location",
+      "type": "string",
+      "required": false,
+      "description": "Current location of product",
+      "children": []
+    }
+  ],
+  "response_fields": [],
+  "notes": "The documentation appears to be partially visible, showing mainly parameters and an update log section. Some sections may be truncated or not visible in this image. The image shows what appears to be API documentation with Chinese/English bilingual content.",
+  "chunk_metadata": {
+    "index": 1,
+    "total": 1,
+    "y_start": 0,
+    "y_end": 6285,
+    "overlap_top": 0,
+    "overlap_bottom": 0,
+    "height": 6285,
+    "path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\workspaces\\v2.sbs.get_current_inventory\\chunks\\chunk_001.png",
+    "filename": "chunk_001.png",
+    "width": 837
+  },
+  "analysis_timestamp": "2025-10-10T06:43:33.834181",
+  "model": "claude-3-5-sonnet-20241022"
+}

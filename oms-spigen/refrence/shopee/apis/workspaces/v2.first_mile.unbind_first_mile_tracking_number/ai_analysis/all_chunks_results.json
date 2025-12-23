@@ -1,0 +1,90 @@
+[
+  {
+    "chunk_index": 1,
+    "total_chunks": 1,
+    "endpoint": null,
+    "method": null,
+    "description": null,
+    "update_log": [],
+    "hidden_fields": [],
+    "parameters": [
+      {
+        "name": "uniq",
+        "type": "string",
+        "required": true,
+        "description": "Unique identifier for the API request",
+        "children": []
+      },
+      {
+        "name": "method",
+        "type": "string",
+        "required": true,
+        "description": "API method name",
+        "children": []
+      },
+      {
+        "name": "sign",
+        "type": "string",
+        "required": true,
+        "description": "Request signature based on specified algorithm",
+        "children": []
+      },
+      {
+        "name": "api_key",
+        "type": "string",
+        "required": true,
+        "description": "API key for authentication",
+        "children": []
+      },
+      {
+        "name": "timestamp",
+        "type": "string",
+        "required": true,
+        "description": "Current timestamp",
+        "children": []
+      },
+      {
+        "name": "version",
+        "type": "string",
+        "required": true,
+        "description": "API version number",
+        "children": []
+      }
+    ],
+    "response_fields": [
+      {
+        "name": "status",
+        "type": "string",
+        "description": "Response status code",
+        "children": []
+      },
+      {
+        "name": "message",
+        "type": "string",
+        "description": "Response message",
+        "children": []
+      },
+      {
+        "name": "data",
+        "type": "object",
+        "description": "Response data object",
+        "children": []
+      }
+    ],
+    "notes": "The image appears to show a standard API documentation page with common request parameters and response structure. There are some error codes and examples visible in the lower portion of the image, but they're partially cut off or not clearly readable.",
+    "chunk_metadata": {
+      "index": 1,
+      "total": 1,
+      "y_start": 0,
+      "y_end": 6422,
+      "overlap_top": 0,
+      "overlap_bottom": 0,
+      "height": 6422,
+      "path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\workspaces\\v2.first_mile.unbind_first_mile_tracking_number\\chunks\\chunk_001.png",
+      "filename": "chunk_001.png",
+      "width": 837
+    },
+    "analysis_timestamp": "2025-10-10T05:42:52.839241",
+    "model": "claude-3-5-sonnet-20241022"
+  }
+]

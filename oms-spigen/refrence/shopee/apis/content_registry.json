@@ -1,0 +1,18 @@
+{
+  "v2.product.get_category": {
+    "content_hash": "635e6c855aeca405cb2531b60a7068d4f309b6c6c7b04c26a06cb52485adf0bd",
+    "last_checked": "2025-10-16T05:52:01.508296",
+    "url": "https://open.shopee.com/documents/v2/v2.product.get_category?module=89&type=1",
+    "title": "V2.Product.Get Category",
+    "last_changed": "2025-10-16T05:52:01.508320",
+    "preview": "v2.product.get_category GET /api/v2/product/get_category Get category tree data. More detail please "
+  },
+  "v2.product.get_attribute_tree": {
+    "content_hash": "635e6c855aeca405cb2531b60a7068d4f309b6c6c7b04c26a06cb52485adf0bd",
+    "last_checked": "2025-10-16T05:52:26.562634",
+    "url": "https://open.shopee.com/documents/v2/v2.product.get_attribute_tree?module=89&type=1",
+    "title": "V2.Product.Get Attribute Tree",
+    "last_changed": "2025-10-16T05:52:26.562649",
+    "preview": "v2.product.get_attribute_tree GET /api/v2/product/get_attribute_tree Get the attribute tree for cate"
+  }
+}

@@ -1,0 +1,43 @@
+======================================================================
+API SPECIFICATION SUMMARY
+======================================================================
+
+Endpoint: POST /shipping/document
+Description: Cross-border shipping document API
+
+Parameters (5):
+----------------------------------------------------------------------
+* order_id (string)
+   The unique order ID
+* type (string)
+   Document type to be shipped
+  shipping_document_type (string)
+   Shipping document metadata
+  var_url (string)
+   Document unique variable for var type
+  partner_number (string)
+   Logistic partner order number, only needed if var_type = PARTNER_NUMBER
+
+Response Fields (1):
+----------------------------------------------------------------------
+  error_codes (object)
+    shipping_order_not_exist (unknown)
+     Input order id doesn't exist
+    error_partner_number (unknown)
+     Input partner number is incorrect or invalid
+    shipping_document_download (unknown)
+     Document error when download from server
+
+Metadata:
+----------------------------------------------------------------------
+  total_chunks: 1
+  chunks_with_errors: 0
+  total_parameters_before_dedup: 5
+  total_parameters_after_dedup: 5
+  update_log_entries: 1
+  hidden_fields_count: 0
+  source_results: workspaces\v2.logistics.download_shipping_document\results\all_chunks_results.json
+
+======================================================================
+Legend: * = required parameter
+======================================================================

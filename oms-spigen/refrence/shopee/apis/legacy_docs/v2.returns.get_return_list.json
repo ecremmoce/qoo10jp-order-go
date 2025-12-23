@@ -1,0 +1,52 @@
+{
+  "endpoint": null,
+  "method": null,
+  "description": null,
+  "parameters": [
+    {
+      "name": "error_param",
+      "type": "object",
+      "required": false,
+      "description": "Core server error",
+      "children": [
+        {
+          "name": "error_field",
+          "type": "string",
+          "required": false,
+          "description": "Core server error"
+        },
+        {
+          "name": "error_deleted",
+          "type": "string",
+          "required": false,
+          "description": "Core server error"
+        },
+        {
+          "name": "error_duplicate",
+          "type": "string",
+          "required": false,
+          "description": "Core server error"
+        }
+      ]
+    },
+    {
+      "name": "error_param",
+      "type": "string",
+      "required": false,
+      "description": "Various error messages including: 'The period between create_time_from and create_time_to must not more than 31 days', 'Invalid disable_reason', 'No partner_id_purch', 'The update_time_from must be after create_time_from', 'There is no access_token in param', 'No permission to system api', 'Hiring type mismatch', etc.",
+      "children": []
+    }
+  ],
+  "response_fields": [],
+  "update_log": [],
+  "hidden_fields": [],
+  "metadata": {
+    "total_chunks": 2,
+    "chunks_with_errors": 0,
+    "total_parameters_before_dedup": 2,
+    "total_parameters_after_dedup": 2,
+    "update_log_entries": 0,
+    "hidden_fields_count": 0,
+    "source_results": "workspaces\\v2.returns.get_return_list\\results\\all_chunks_results.json"
+  }
+}

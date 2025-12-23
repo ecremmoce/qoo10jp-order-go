@@ -1,0 +1,80 @@
+[
+  {
+    "chunk_index": 1,
+    "total_chunks": 1,
+    "endpoint": null,
+    "method": null,
+    "description": null,
+    "update_log": [],
+    "hidden_fields": [],
+    "parameters": [
+      {
+        "name": "URL",
+        "type": "string",
+        "required": true,
+        "description": "API endpoint URL",
+        "children": []
+      },
+      {
+        "name": "url_id",
+        "type": "string",
+        "required": true,
+        "description": "API endpoint identifier",
+        "children": []
+      },
+      {
+        "name": "project_id",
+        "type": "string",
+        "required": true,
+        "description": "Project identifier",
+        "children": []
+      },
+      {
+        "name": "quality_type",
+        "type": "string",
+        "required": true,
+        "description": "Type of quality settings",
+        "children": []
+      },
+      {
+        "name": "message",
+        "type": "string",
+        "required": false,
+        "description": "Response message",
+        "children": []
+      }
+    ],
+    "response_fields": [
+      {
+        "name": "code",
+        "type": "integer",
+        "description": "Response status code"
+      },
+      {
+        "name": "msg",
+        "type": "string",
+        "description": "Response message"
+      },
+      {
+        "name": "success",
+        "type": "boolean",
+        "description": "Whether the request was successful"
+      }
+    ],
+    "notes": "The documentation appears to be an API reference showing various parameters and response fields. There are also some code examples shown at the bottom of the image. The full context of the API's purpose is not immediately clear from this section alone.",
+    "chunk_metadata": {
+      "index": 1,
+      "total": 1,
+      "y_start": 0,
+      "y_end": 5436,
+      "overlap_top": 0,
+      "overlap_bottom": 0,
+      "height": 5436,
+      "path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\workspaces\\v2.product.get_item_list_by_content_diagnosis\\chunks\\chunk_001.png",
+      "filename": "chunk_001.png",
+      "width": 837
+    },
+    "analysis_timestamp": "2025-10-10T06:28:50.993599",
+    "model": "claude-3-5-sonnet-20241022"
+  }
+]

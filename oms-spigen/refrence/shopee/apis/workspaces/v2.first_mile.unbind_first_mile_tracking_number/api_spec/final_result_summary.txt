@@ -1,0 +1,43 @@
+======================================================================
+API SPECIFICATION SUMMARY
+======================================================================
+
+Endpoint: None None
+
+Parameters (6):
+----------------------------------------------------------------------
+* uniq (string)
+   Unique identifier for the API request
+* method (string)
+   API method name
+* sign (string)
+   Request signature based on specified algorithm
+* api_key (string)
+   API key for authentication
+* timestamp (string)
+   Current timestamp
+* version (string)
+   API version number
+
+Response Fields (3):
+----------------------------------------------------------------------
+  status (string)
+   Response status code
+  message (string)
+   Response message
+  data (object)
+   Response data object
+
+Metadata:
+----------------------------------------------------------------------
+  total_chunks: 1
+  chunks_with_errors: 0
+  total_parameters_before_dedup: 6
+  total_parameters_after_dedup: 6
+  update_log_entries: 0
+  hidden_fields_count: 0
+  source_results: workspaces\v2.first_mile.unbind_first_mile_tracking_number\results\all_chunks_results.json
+
+======================================================================
+Legend: * = required parameter
+======================================================================

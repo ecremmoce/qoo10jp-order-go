@@ -1,0 +1,44 @@
+======================================================================
+API SPECIFICATION SUMMARY
+======================================================================
+
+Endpoint: GET /api/get/product_level_campaign_vt_list
+
+Parameters (5):
+----------------------------------------------------------------------
+* partner_id (string)
+   Partner ID is assigned when registration is successful
+* timestamp (string)
+   This is to indicate the timestamp of the request. Required for all requests.
+* access_token (string)
+   The token for API access, using to identify your permission to call API. Apply for access and inquire in future.
+* shop_id (int64)
+   Shopee's unique identifier for a shop.
+* sign (string)
+   Unique authentication key for each request
+
+Response Fields (5):
+----------------------------------------------------------------------
+  message (string)
+   Error code description
+  warning (string)
+   If some data cannot respond normally, tell the warning
+  request_id (string)
+   request id value for each request
+  response (object)
+  error (string)
+   response error
+
+Metadata:
+----------------------------------------------------------------------
+  total_chunks: 1
+  chunks_with_errors: 0
+  total_parameters_before_dedup: 5
+  total_parameters_after_dedup: 5
+  update_log_entries: 1
+  hidden_fields_count: 0
+  source_results: workspaces\v2.ads.get_product_level_campaign_id_list\results\all_chunks_results.json
+
+======================================================================
+Legend: * = required parameter
+======================================================================

@@ -1,0 +1,54 @@
+======================================================================
+API SPECIFICATION SUMMARY
+======================================================================
+
+Endpoint: POST /v1/payees/get_address_list
+Description: Get payee cryptocurrency wallet addresses
+
+Parameters (3):
+----------------------------------------------------------------------
+* timestamp (string)
+   UTC timestamp
+* URL (string)
+   Client timestamp
+* Test URL (string)
+   Test client timestamp
+
+Response Fields (11):
+----------------------------------------------------------------------
+* request_id (string)
+   The identifier for all UK request for this API
+  prior (string)
+   Indicates what type this Error Entity if an error happened
+  message (string)
+   Error message only is there if Entity is an error
+  chat_publico_address (string)
+   String
+  address_id (string)
+   The address ID of your client
+  address_type (string)
+   The address type
+  reject (string)
+   The type of specific address
+  id (string)
+   The id of specific address
+  address (string)
+   The address description of specific address
+  delete (string)
+   The record of specific address
+  record (string)
+   The record of specific address
+
+Metadata:
+----------------------------------------------------------------------
+  total_chunks: 1
+  chunks_with_errors: 0
+  total_parameters_before_dedup: 3
+  total_parameters_after_dedup: 3
+  update_log_entries: 0
+  hidden_fields_count: 0
+  source_results: workspaces\v2.logistics.get_address_list\results\all_chunks_results.json
+
+======================================================================
+Legend: * = required parameter
+======================================================================

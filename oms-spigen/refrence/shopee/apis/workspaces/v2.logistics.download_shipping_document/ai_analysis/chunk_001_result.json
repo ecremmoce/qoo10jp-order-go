@@ -1,0 +1,80 @@
+{
+  "chunk_index": 1,
+  "total_chunks": 1,
+  "endpoint": "/shipping/document",
+  "method": "POST",
+  "description": "Cross-border shipping document API",
+  "update_log": [
+    {
+      "date": "2024-02-07",
+      "change": "Add THAILAND_SHIPPER_LABEL_TYPE for shipping documents type"
+    }
+  ],
+  "parameters": [
+    {
+      "name": "order_id",
+      "type": "string",
+      "required": true,
+      "description": "The unique order ID"
+    },
+    {
+      "name": "type",
+      "type": "string",
+      "required": true,
+      "description": "Document type to be shipped"
+    },
+    {
+      "name": "shipping_document_type",
+      "type": "string",
+      "required": false,
+      "description": "Shipping document metadata"
+    },
+    {
+      "name": "var_url",
+      "type": "string",
+      "required": false,
+      "description": "Document unique variable for var type"
+    },
+    {
+      "name": "partner_number",
+      "type": "string",
+      "required": false,
+      "description": "Logistic partner order number, only needed if var_type = PARTNER_NUMBER"
+    }
+  ],
+  "response_fields": [
+    {
+      "name": "error_codes",
+      "type": "object",
+      "children": [
+        {
+          "name": "shipping_order_not_exist",
+          "description": "Input order id doesn't exist"
+        },
+        {
+          "name": "error_partner_number",
+          "description": "Input partner number is incorrect or invalid"
+        },
+        {
+          "name": "shipping_document_download",
+          "description": "Document error when download from server"
+        }
+      ]
+    }
+  ],
+  "notes": "The documentation shows a complete API specification for shipping document handling, including common parameters, required parameters, response examples, and error codes. The API appears to be related to cross-border shipping document management.",
+  "chunk_metadata": {
+    "index": 1,
+    "total": 1,
+    "y_start": 0,
+    "y_end": 5022,
+    "overlap_top": 0,
+    "overlap_bottom": 0,
+    "height": 5022,
+    "path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\workspaces\\v2.logistics.download_shipping_document\\chunks\\chunk_001.png",
+    "filename": "chunk_001.png",
+    "width": 837
+  },
+  "analysis_timestamp": "2025-10-10T06:01:24.364749",
+  "model": "claude-3-5-sonnet-20241022"
+}

@@ -1,0 +1,103 @@
+{
+  "chunk_index": 1,
+  "total_chunks": 1,
+  "endpoint": "v2/product/get_new_chat_list",
+  "method": "GET",
+  "description": "Get new chat list for follow step support test (free to use without chat)",
+  "update_log": [
+    {
+      "date": "2023-06-26",
+      "change": "New API"
+    }
+  ],
+  "parameters": [
+    {
+      "name": "partner_id",
+      "type": "string",
+      "required": true,
+      "description": "The basic API system using to identify your permission to the api, please ask developer to get it",
+      "children": []
+    },
+    {
+      "name": "timestamp",
+      "type": "string",
+      "required": true,
+      "description": "Timestamp",
+      "children": []
+    },
+    {
+      "name": "access_token",
+      "type": "string",
+      "required": true,
+      "description": "The basic API system using to identify your permission to the api, please ask developer to get it",
+      "children": []
+    },
+    {
+      "name": "chat_id",
+      "type": "integer",
+      "required": true,
+      "description": "The size of one page",
+      "children": []
+    },
+    {
+      "name": "center",
+      "type": "string",
+      "required": true,
+      "description": "Specifies the starting point of data to return in the center of timeline",
+      "children": []
+    }
+  ],
+  "response_fields": [
+    {
+      "name": "error",
+      "type": "string",
+      "description": "Indicate error type if an error. Empty if no error happened",
+      "children": []
+    },
+    {
+      "name": "message",
+      "type": "string",
+      "description": "parameter is invalid",
+      "children": []
+    },
+    {
+      "name": "warning",
+      "type": "string",
+      "description": "Warning message",
+      "children": []
+    },
+    {
+      "name": "request_id",
+      "type": "string",
+      "description": "The identifier for an API request for error tracking",
+      "children": []
+    },
+    {
+      "name": "chat_start_id",
+      "type": "integer",
+      "description": "ID of new chat start",
+      "children": []
+    },
+    {
+      "name": "test_count",
+      "type": "string",
+      "description": "Total number of new chat (field name remained integer_id)",
+      "children": []
+    }
+  ],
+  "notes": "The documentation includes error codes and API permissions sections at the bottom. The API appears to be related to retrieving chat lists with pagination functionality.",
+  "chunk_metadata": {
+    "index": 1,
+    "total": 1,
+    "y_start": 0,
+    "y_end": 4014,
+    "overlap_top": 0,
+    "overlap_bottom": 0,
+    "height": 4014,
+    "path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\platforms\\shopee\\apis\\workspaces\\v2.product.get_size_chart_list\\chunks\\chunk_001.png",
+    "filename": "chunk_001.png",
+    "width": 837
+  },
+  "analysis_timestamp": "2025-10-11T22:35:57.822747",
+  "model": "claude-3-5-sonnet-20241022"
+}

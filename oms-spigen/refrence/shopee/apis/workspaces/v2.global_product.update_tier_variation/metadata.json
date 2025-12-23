@@ -1,0 +1,19 @@
+{
+  "title": "Shopee Open Platform",
+  "url": "https://open.shopee.com/documents/v2/v2.global_product.update_tier_variation?module=89&type=1",
+  "viewport": {
+    "width": 1920,
+    "height": 1080
+  },
+  "dimensions": {
+    "scrollHeight": 1080,
+    "scrollWidth": 1920,
+    "clientHeight": 1080,
+    "clientWidth": 1920
+  },
+  "timestamp": "2025-10-10T04:39:02.770446",
+  "image_size": {
+    "width": 1920,
+    "height": 1080
+  }
+}

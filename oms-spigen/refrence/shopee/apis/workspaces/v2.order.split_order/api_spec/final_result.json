@@ -1,0 +1,120 @@
+{
+  "endpoint": "/api/v2/product/add_item",
+  "method": "POST",
+  "description": "Add item to product",
+  "parameters": [
+    {
+      "name": "access_token",
+      "type": "string",
+      "required": true,
+      "description": "API authentication token",
+      "children": []
+    },
+    {
+      "name": "name",
+      "type": "string",
+      "required": true,
+      "description": "Product name",
+      "children": []
+    },
+    {
+      "name": "category_id",
+      "type": "integer",
+      "required": true,
+      "description": "Product category ID",
+      "children": []
+    },
+    {
+      "name": "description",
+      "type": "string",
+      "required": true,
+      "description": "Product description",
+      "children": []
+    },
+    {
+      "name": "images",
+      "type": "array",
+      "required": true,
+      "description": "Array of image URLs",
+      "children": []
+    },
+    {
+      "name": "price",
+      "type": "float",
+      "required": true,
+      "description": "Product price",
+      "children": []
+    },
+    {
+      "name": "stock",
+      "type": "integer",
+      "required": true,
+      "description": "Available stock quantity",
+      "children": []
+    },
+    {
+      "name": "shipping_type",
+      "type": "string",
+      "required": true,
+      "description": "Shipping method type",
+      "children": []
+    },
+    {
+      "name": "shipping_fee",
+      "type": "float",
+      "required": false,
+      "description": "Shipping fee amount",
+      "children": []
+    },
+    {
+      "name": "call_back_url",
+      "type": "string",
+      "required": false,
+      "description": "Callback URL for notifications",
+      "children": []
+    }
+  ],
+  "response_fields": [
+    {
+      "name": "code",
+      "type": "integer",
+      "description": "Response status code",
+      "children": []
+    },
+    {
+      "name": "message",
+      "type": "string",
+      "description": "Response message",
+      "children": []
+    },
+    {
+      "name": "data",
+      "type": "object",
+      "description": "Response data object",
+      "children": [
+        {
+          "name": "product_id",
+          "type": "integer",
+          "description": "ID of the created product",
+          "children": []
+        }
+      ]
+    }
+  ],
+  "update_log": [
+    {
+      "date": "2023-09-26",
+      "change": "Added call_back_url param"
+    }
+  ],
+  "hidden_fields": [],
+  "metadata": {
+    "total_chunks": 1,
+    "chunks_with_errors": 0,
+    "total_parameters_before_dedup": 10,
+    "total_parameters_after_dedup": 10,
+    "update_log_entries": 1,
+    "hidden_fields_count": 0,
+    "source_results": "workspaces\\v2.order.split_order\\results\\all_chunks_results.json"
+  }
+}

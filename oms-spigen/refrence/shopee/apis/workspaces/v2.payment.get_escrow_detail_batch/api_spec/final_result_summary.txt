@@ -1,0 +1,53 @@
+======================================================================
+API SPECIFICATION SUMMARY
+======================================================================
+
+Endpoint: None None
+
+Parameters (1):
+----------------------------------------------------------------------
+* order_sn_list (array)
+   List of order serial numbers to query
+
+Response Fields (5):
+----------------------------------------------------------------------
+  message (string)
+   Response message
+  request_id (string)
+   Request identifier
+  response (object)
+   Response data
+    order_payment_info (object)
+     Payment information
+      buyer_payment_info (object)
+       Buyer payment details
+      buyer_service_fee (number)
+       Service fee amount
+      buyer_tax_amount (number)
+       Tax amount
+      credit_card_number (string)
+       Credit card number
+      credit_card_promotion (number)
+       Credit card promotion value
+  error (string)
+   Error code
+  error_detail_list (array)
+   List of error details
+    error_code (string)
+     Specific error code
+    message (string)
+     Error message
+
+Metadata:
+----------------------------------------------------------------------
+  total_chunks: 3
+  chunks_with_errors: 0
+  total_parameters_before_dedup: 1
+  total_parameters_after_dedup: 1
+  update_log_entries: 0
+  hidden_fields_count: 0
+  source_results: workspaces\v2.payment.get_escrow_detail_batch\results\all_chunks_results.json
+
+======================================================================
+Legend: * = required parameter
+======================================================================

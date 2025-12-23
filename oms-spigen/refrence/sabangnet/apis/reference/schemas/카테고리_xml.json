@@ -1,0 +1,43 @@
+{
+  "xml_root": "SABANG_CATEGORY_LIST",
+  "header_fields": [
+    {
+      "name": "SEND_COMPAYNY_ID",
+      "description": "사방넷 로그인아이디",
+      "required": true,
+      "note": "사방넷 어드민 로그인 아이디입력",
+      "section": "header"
+    },
+    {
+      "name": "SEND_AUTH_KEY",
+      "description": "사방넷에서 발급한 인증키",
+      "required": true,
+      "note": "사방넷에서 발급 받은 인증키(만약 받지 않았다면 사방넷에서 인증키 발급 요청)",
+      "section": "header"
+    },
+    {
+      "name": "SEND_DATE",
+      "description": "전송일자",
+      "required": true,
+      "note": "YYYYMMDD",
+      "section": "header"
+    }
+  ],
+  "data_fields": [],
+  "authentication": {
+    "SEND_COMPAYNY_ID": {
+      "name": "SEND_COMPAYNY_ID",
+      "description": "사방넷 로그인아이디",
+      "required": true,
+      "note": "사방넷 어드민 로그인 아이디입력",
+      "section": "header"
+    },
+    "SEND_AUTH_KEY": {
+      "name": "SEND_AUTH_KEY",
+      "description": "사방넷에서 발급한 인증키",
+      "required": true,
+      "note": "사방넷에서 발급 받은 인증키(만약 받지 않았다면 사방넷에서 인증키 발급 요청)",
+      "section": "header"
+    }
+  }
+}

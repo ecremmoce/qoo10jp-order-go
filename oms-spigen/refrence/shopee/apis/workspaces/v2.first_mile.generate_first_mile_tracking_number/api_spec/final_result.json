@@ -1,0 +1,73 @@
+{
+  "endpoint": "test/api/parameter/kce_site_tracking_number",
+  "method": null,
+  "description": null,
+  "parameters": [
+    {
+      "name": "URL",
+      "type": "string",
+      "required": true,
+      "description": "https://openplatform.crispshop.tech/{environment}/kce_site_tracking_number",
+      "children": []
+    },
+    {
+      "name": "environment",
+      "type": "string",
+      "required": true,
+      "description": "The value must be set according to your requirements",
+      "children": []
+    },
+    {
+      "name": "request_id",
+      "type": "string",
+      "required": false,
+      "description": "The identifier for an API request life cycle",
+      "children": []
+    },
+    {
+      "name": "lang",
+      "type": "string",
+      "required": false,
+      "description": "Language to be used in the response",
+      "children": []
+    },
+    {
+      "name": "timestamp",
+      "type": "string",
+      "required": false,
+      "description": "Request timestamp",
+      "children": []
+    },
+    {
+      "name": "kce_site_tracking_number",
+      "type": "string",
+      "required": true,
+      "description": "The kce site tracking number parameter",
+      "children": []
+    },
+    {
+      "name": "sign",
+      "type": "string",
+      "required": true,
+      "description": "Signature parameter to protect all API data from being tampered with during transmission",
+      "children": []
+    }
+  ],
+  "response_fields": [],
+  "update_log": [
+    {
+      "date": "2023-06-13",
+      "change": "first version"
+    }
+  ],
+  "hidden_fields": [],
+  "metadata": {
+    "total_chunks": 1,
+    "chunks_with_errors": 0,
+    "total_parameters_before_dedup": 7,
+    "total_parameters_after_dedup": 7,
+    "update_log_entries": 1,
+    "hidden_fields_count": 0,
+    "source_results": "workspaces\\v2.first_mile.generate_first_mile_tracking_number\\results\\all_chunks_results.json"
+  }
+}

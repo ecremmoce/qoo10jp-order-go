@@ -1,0 +1,42 @@
+{
+  "chunk_index": 2,
+  "endpoint": null,
+  "method": null,
+  "description": "API Documentation Update Log",
+  "parameters": [],
+  "response_fields": [],
+  "permissions": {
+    "app_types": [
+      "ERP System",
+      "Seller In House System",
+      "Product Management"
+    ]
+  },
+  "update_log": [
+    {
+      "date": "2025-09-15",
+      "details": "The tier_variation structure in the documentation has been deprecated. Please use the standardise_tier_variation structure when uploading variations."
+    },
+    {
+      "date": "2023-01-03",
+      "details": "add model_status field"
+    },
+    {
+      "date": "2022-07-26",
+      "details": "update the description"
+    }
+  ],
+  "chunk_metadata": {
+    "index": 2,
+    "total": 2,
+    "y_start": 7251,
+    "y_end": 8949,
+    "overlap_top": 500,
+    "overlap_bottom": 0,
+    "height": 1698,
+    "path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\workspaces\\v2.global_product.create_publish_task\\chunks\\chunk_002.png",
+    "filename": "chunk_002.png",
+    "width": 837
+  },
+  "chunk_path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\workspaces\\v2.global_product.create_publish_task\\chunks\\chunk_002.png"
+}

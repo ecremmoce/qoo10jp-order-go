@@ -1,0 +1,139 @@
+[
+  {
+    "chunk_index": 1,
+    "total_chunks": 1,
+    "endpoint": "/checkin/special/offer",
+    "method": null,
+    "description": null,
+    "update_log": [],
+    "hidden_fields": [],
+    "parameters": [
+      {
+        "name": "url",
+        "type": "string",
+        "required": true,
+        "description": "Third parties' checkin service check/checkin_special_offer_upload_result",
+        "truncated": false,
+        "continued": false,
+        "children": []
+      },
+      {
+        "name": "pic",
+        "type": "string",
+        "required": false,
+        "description": null,
+        "truncated": false,
+        "continued": false,
+        "children": []
+      },
+      {
+        "name": "Url_pic",
+        "type": "string",
+        "required": false,
+        "description": "Image url",
+        "truncated": false,
+        "continued": false,
+        "children": []
+      },
+      {
+        "name": "pic_url",
+        "type": "string",
+        "required": false,
+        "description": null,
+        "truncated": false,
+        "continued": false,
+        "children": []
+      },
+      {
+        "name": "detail",
+        "type": "object",
+        "required": true,
+        "description": "Request data details",
+        "truncated": false,
+        "continued": false,
+        "children": []
+      },
+      {
+        "name": "upload",
+        "type": "string",
+        "required": false,
+        "description": "Upload url",
+        "truncated": false,
+        "continued": false,
+        "children": []
+      }
+    ],
+    "response_fields": [
+      {
+        "name": "error_code",
+        "type": "integer",
+        "description": "There is an error, please try again"
+      },
+      {
+        "name": "error_msg",
+        "type": "string",
+        "description": "Invalid access_token"
+      },
+      {
+        "name": "error_message",
+        "type": "string",
+        "description": "There is no other_id in event"
+      },
+      {
+        "name": "error_present",
+        "type": "string",
+        "description": "The parameter is must have"
+      },
+      {
+        "name": "error_right",
+        "type": "string",
+        "description": "There is no right to pass"
+      },
+      {
+        "name": "error_expired",
+        "type": "string",
+        "description": "It's overdue"
+      },
+      {
+        "name": "error_parameter",
+        "type": "string",
+        "description": "Invalid Parameter"
+      },
+      {
+        "name": "error_fail",
+        "type": "string",
+        "description": "Until this one failed"
+      },
+      {
+        "name": "error_file",
+        "type": "string",
+        "description": "Store failed"
+      },
+      {
+        "name": "error_exist",
+        "type": "string",
+        "description": "Parameter exist"
+      },
+      {
+        "name": "error_product",
+        "type": "string",
+        "description": "The product has passed or fail trust"
+      }
+    ],
+    "notes": "The documentation appears to be for a check-in service API that handles special offers and image uploads. Some parameters lack complete descriptions, and the HTTP method is not explicitly specified in the visible portion of the documentation.",
+    "chunk_metadata": {
+      "index": 1,
+      "total": 1,
+      "y_start": 0,
+      "y_end": 5039,
+      "overlap_top": 0,
+      "overlap_bottom": 0,
+      "height": 5039,
+      "path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\workspaces\\v2.media_space.get_video_upload_result\\chunks\\chunk_001.png",
+      "filename": "chunk_001.png",
+      "width": 837
+    },
+    "analysis_timestamp": "2025-10-10T06:10:33.770686",
+    "model": "claude-3-5-sonnet-20241022"
+  }
+]

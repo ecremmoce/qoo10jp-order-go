@@ -1,0 +1,39 @@
+======================================================================
+API SPECIFICATION SUMMARY
+======================================================================
+
+Endpoint: None None
+
+Parameters (2):
+----------------------------------------------------------------------
+* common_parameters (object)
+  * time (integer)
+     Current timestamp in seconds
+  * nonce (string)
+     Random string
+  * access_key (string)
+     Your access key
+  optional_parameters (object)
+    order_type (string)
+     Default is 'limit'
+    price (string)
+     Price per unit
+    volume (string)
+     Trade volume
+    visible (boolean)
+     Visibility in order book
+    strategy_type (string)
+
+Metadata:
+----------------------------------------------------------------------
+  total_chunks: 1
+  chunks_with_errors: 0
+  total_parameters_before_dedup: 2
+  total_parameters_after_dedup: 2
+  update_log_entries: 0
+  hidden_fields_count: 0
+  source_results: workspaces\v2.follow_prize.add_follow_prize\results\all_chunks_results.json
+
+======================================================================
+Legend: * = required parameter
+======================================================================

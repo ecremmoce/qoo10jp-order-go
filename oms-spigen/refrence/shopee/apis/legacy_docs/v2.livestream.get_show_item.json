@@ -1,0 +1,76 @@
+{
+  "endpoint": "/openapi/get_wise_sum",
+  "method": "GET",
+  "description": null,
+  "parameters": [
+    {
+      "name": "uid",
+      "type": "string",
+      "required": true,
+      "description": "Partner ID is assigned upon registration to successful applicants for API access",
+      "children": []
+    },
+    {
+      "name": "access_token",
+      "type": "string",
+      "required": true,
+      "description": "The token for API access, which is initially pre-processed to ensure security",
+      "children": []
+    },
+    {
+      "name": "sign",
+      "type": "string",
+      "required": true,
+      "description": "Digital signature calculated as shown in doc",
+      "children": []
+    }
+  ],
+  "response_fields": [
+    {
+      "name": "error",
+      "type": "string",
+      "description": "Name of the error in case language",
+      "children": []
+    },
+    {
+      "name": "code",
+      "type": "integer",
+      "description": "The error code",
+      "children": []
+    },
+    {
+      "name": "time_date",
+      "type": "integer",
+      "description": "The time of the data in the counting key of",
+      "children": []
+    },
+    {
+      "name": "eth_cny",
+      "type": "float",
+      "description": "RMB price per unit of eth today",
+      "children": []
+    },
+    {
+      "name": "eth_usd",
+      "type": "float",
+      "description": "USD price per unit of eth today",
+      "children": []
+    }
+  ],
+  "update_log": [
+    {
+      "date": "2023-08-24",
+      "change": "Version 1.0"
+    }
+  ],
+  "hidden_fields": [],
+  "metadata": {
+    "total_chunks": 1,
+    "chunks_with_errors": 0,
+    "total_parameters_before_dedup": 3,
+    "total_parameters_after_dedup": 3,
+    "update_log_entries": 1,
+    "hidden_fields_count": 0,
+    "source_results": "workspaces\\v2.livestream.get_show_item\\results\\all_chunks_results.json"
+  }
+}

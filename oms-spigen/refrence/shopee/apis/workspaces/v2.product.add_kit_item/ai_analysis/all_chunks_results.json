@@ -1,0 +1,103 @@
+[
+  {
+    "chunk_index": 1,
+    "total_chunks": 1,
+    "endpoint": null,
+    "method": null,
+    "description": null,
+    "update_log": [],
+    "hidden_fields": [
+      {
+        "name": "product_variant_id",
+        "found_in": "parameter description",
+        "extracted_from_description": true
+      },
+      {
+        "name": "campaign_id",
+        "found_in": "parameter description",
+        "extracted_from_description": true
+      }
+    ],
+    "parameters": [
+      {
+        "name": "category_id",
+        "type": "string",
+        "required": false,
+        "description": "Filter products by category id",
+        "children": []
+      },
+      {
+        "name": "image",
+        "type": "string",
+        "required": false,
+        "description": "Filter products by image",
+        "children": []
+      },
+      {
+        "name": "images",
+        "type": "array",
+        "required": false,
+        "description": "Filter products by multiple images",
+        "children": []
+      },
+      {
+        "name": "name",
+        "type": "string",
+        "required": false,
+        "description": "Filter products by name",
+        "children": []
+      },
+      {
+        "name": "reference_id",
+        "type": "string",
+        "required": false,
+        "description": "Filter products by reference id",
+        "children": []
+      },
+      {
+        "name": "description",
+        "type": "string",
+        "required": false,
+        "description": "Filter products by description",
+        "children": []
+      },
+      {
+        "name": "variants",
+        "type": "array",
+        "required": false,
+        "description": "Filter products by variants. Each variant can have fields like product_variant_id and campaign_id",
+        "children": []
+      },
+      {
+        "name": "price",
+        "type": "float",
+        "required": false,
+        "description": "Filter products by price",
+        "children": []
+      },
+      {
+        "name": "stock",
+        "type": "integer",
+        "required": false,
+        "description": "Filter products by stock quantity",
+        "children": []
+      }
+    ],
+    "response_fields": [],
+    "notes": "The image appears to show a list of filter parameters for a product-related API. While there's no explicit endpoint or method shown, the parameters suggest this is likely a product search or filtering endpoint. Some parameters appear to be basic product attributes (name, price, stock) while others handle more complex data like variants and images.",
+    "chunk_metadata": {
+      "index": 1,
+      "total": 1,
+      "y_start": 0,
+      "y_end": 6706,
+      "overlap_top": 0,
+      "overlap_bottom": 0,
+      "height": 6706,
+      "path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\workspaces\\v2.product.add_kit_item\\chunks\\chunk_001.png",
+      "filename": "chunk_001.png",
+      "width": 837
+    },
+    "analysis_timestamp": "2025-10-10T06:23:19.662071",
+    "model": "claude-3-5-sonnet-20241022"
+  }
+]

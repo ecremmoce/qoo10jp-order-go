@@ -1,0 +1,99 @@
+[
+  {
+    "chunk_index": 1,
+    "total_chunks": 1,
+    "endpoint": null,
+    "method": null,
+    "description": null,
+    "update_log": [],
+    "hidden_fields": [],
+    "parameters": [
+      {
+        "name": "url",
+        "type": "string",
+        "required": true,
+        "description": "Stream endpoint",
+        "children": []
+      },
+      {
+        "name": "url_ws",
+        "type": "string",
+        "required": true,
+        "description": "WebSocket endpoint",
+        "children": []
+      },
+      {
+        "name": "test_url",
+        "type": "string",
+        "required": false,
+        "description": "Test environment endpoint",
+        "children": []
+      },
+      {
+        "name": "prefix_id",
+        "type": "string",
+        "required": true,
+        "description": "Prefix ID assigned after application is successful",
+        "children": []
+      },
+      {
+        "name": "share_token",
+        "type": "string",
+        "required": true,
+        "description": "Authentication token required for data sharing",
+        "children": []
+      },
+      {
+        "name": "msg_id",
+        "type": "string",
+        "required": true,
+        "description": "Unique message ID",
+        "children": []
+      },
+      {
+        "name": "error_message",
+        "type": "string",
+        "required": false,
+        "description": "Error message details",
+        "children": []
+      },
+      {
+        "name": "error",
+        "type": "string",
+        "required": false,
+        "description": null,
+        "children": []
+      },
+      {
+        "name": "msg",
+        "type": "string",
+        "required": false,
+        "description": null,
+        "children": []
+      },
+      {
+        "name": "booking_status",
+        "type": "string",
+        "required": false,
+        "description": null,
+        "children": []
+      }
+    ],
+    "response_fields": [],
+    "notes": "The image appears to be API documentation showing various parameters and their descriptions. Some parameters lack complete descriptions. There are also error codes visible at the bottom of the image but they are partially cut off.",
+    "chunk_metadata": {
+      "index": 1,
+      "total": 1,
+      "y_start": 0,
+      "y_end": 4826,
+      "overlap_top": 0,
+      "overlap_bottom": 0,
+      "height": 4826,
+      "path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\workspaces\\v2.order.get_booking_list\\chunks\\chunk_001.png",
+      "filename": "chunk_001.png",
+      "width": 837
+    },
+    "analysis_timestamp": "2025-10-10T06:14:36.636758",
+    "model": "claude-3-5-sonnet-20241022"
+  }
+]

@@ -1,0 +1,136 @@
+[
+  {
+    "chunk_index": 1,
+    "total_chunks": 1,
+    "endpoint": "/v2/return/get_shipping_center",
+    "method": "GET",
+    "description": "Get the list of shipping centers and request parameters needed before calling v2/return/upload_shipping_proof",
+    "update_log": [
+      {
+        "date": "2024-09-19",
+        "change": "New API"
+      }
+    ],
+    "parameters": [
+      {
+        "name": "partner_id",
+        "type": "string",
+        "required": true,
+        "description": "Partner ID is assigned upon registration is successful",
+        "children": []
+      },
+      {
+        "name": "timestamp",
+        "type": "timestamp",
+        "required": true,
+        "description": "Unix timestamp of the request. Required for calculating sign.",
+        "children": []
+      },
+      {
+        "name": "access_token",
+        "type": "string",
+        "required": true,
+        "description": "This field is required to call the API. Access token expires in 24 hours.",
+        "children": []
+      },
+      {
+        "name": "sign",
+        "type": "string",
+        "required": true,
+        "description": "Required parameter for authentication",
+        "children": []
+      },
+      {
+        "name": "return_sn",
+        "type": "string",
+        "required": true,
+        "description": "The serial number of return",
+        "children": []
+      }
+    ],
+    "response_fields": [
+      {
+        "name": "status",
+        "type": "string",
+        "description": "Indicate error type if/if error. Empty if no error happened",
+        "children": []
+      },
+      {
+        "name": "message",
+        "type": "string",
+        "description": "Indicate error details if/if error. Empty if no error happened",
+        "children": []
+      },
+      {
+        "name": "request_id",
+        "type": "string",
+        "description": "Generated UUID based to an error. Required needs for error tracking",
+        "children": []
+      },
+      {
+        "name": "response",
+        "type": "object",
+        "description": "Response object",
+        "children": [
+          {
+            "name": "is_shipping_proof_ready",
+            "type": "boolean",
+            "description": "To indicate whether uploading shipping proof is possible for partner to upload shipping proof",
+            "children": []
+          },
+          {
+            "name": "has_provided_carrier_pre",
+            "type": "boolean",
+            "description": "To indicate whether carrier information is provided",
+            "children": []
+          },
+          {
+            "name": "shipping_proof_timeout",
+            "type": "datetime",
+            "description": "To display list of timeout parameters needed to provide",
+            "children": []
+          },
+          {
+            "name": "is_tracking_number_m_mandatory",
+            "type": "boolean",
+            "description": "To indicate whether it is mandatory to provide tracking number during uploading shipping proof",
+            "children": []
+          },
+          {
+            "name": "is_shipping_image_file_mandatory",
+            "type": "boolean",
+            "description": "To indicate whether it is mandatory to provide shipping image file/s when uploading shipping proof",
+            "children": []
+          },
+          {
+            "name": "reverse_logistic_carrier_list",
+            "type": "object",
+            "description": "The list of logistic carriers available for users to select",
+            "children": []
+          },
+          {
+            "name": "reverse_logistics_user_id",
+            "type": "string",
+            "description": "To indicate the selected carrier name from the list of carrier names provided",
+            "children": []
+          }
+        ]
+      }
+    ],
+    "notes": "The API appears to be related to a return shipping system, with functionality to get shipping centers and prepare for uploading shipping proof. The documentation includes example requests and responses in multiple programming languages (Java, PHP, CURL, Python) which were visible in the image but not fully expanded.",
+    "chunk_metadata": {
+      "index": 1,
+      "total": 1,
+      "y_start": 0,
+      "y_end": 3959,
+      "overlap_top": 0,
+      "overlap_bottom": 0,
+      "height": 3959,
+      "path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\workspaces\\v2.returns.get_shipping_carrier\\chunks\\chunk_001.png",
+      "filename": "chunk_001.png",
+      "width": 837
+    },
+    "analysis_timestamp": "2025-10-10T06:41:55.145620",
+    "model": "claude-3-5-sonnet-20241022"
+  }
+]

@@ -1,0 +1,91 @@
+{
+  "chunk_index": 1,
+  "total_chunks": 1,
+  "endpoint": null,
+  "method": null,
+  "description": null,
+  "update_log": [],
+  "hidden_fields": [],
+  "parameters": [
+    {
+      "name": "common_parameters",
+      "type": "object",
+      "required": true,
+      "description": null,
+      "children": [
+        {
+          "name": "time",
+          "type": "integer",
+          "required": true,
+          "description": "Current timestamp in seconds"
+        },
+        {
+          "name": "nonce",
+          "type": "string",
+          "required": true,
+          "description": "Random string"
+        },
+        {
+          "name": "access_key",
+          "type": "string",
+          "required": true,
+          "description": "Your access key"
+        }
+      ]
+    },
+    {
+      "name": "optional_parameters",
+      "type": "object",
+      "required": false,
+      "description": null,
+      "children": [
+        {
+          "name": "order_type",
+          "type": "string",
+          "required": false,
+          "description": "Default is 'limit'"
+        },
+        {
+          "name": "price",
+          "type": "string",
+          "required": false,
+          "description": "Price per unit"
+        },
+        {
+          "name": "volume",
+          "type": "string",
+          "required": false,
+          "description": "Trade volume"
+        },
+        {
+          "name": "visible",
+          "type": "boolean",
+          "required": false,
+          "description": "Visibility in order book"
+        },
+        {
+          "name": "strategy_type",
+          "type": "string",
+          "required": false,
+          "description": null
+        }
+      ]
+    }
+  ],
+  "response_fields": [],
+  "notes": "This appears to be an API documentation for a trading system with common authentication parameters and optional trading parameters. Some descriptions are partially visible or cut off in the image. The documentation seems to continue beyond what's shown in this chunk.",
+  "chunk_metadata": {
+    "index": 1,
+    "total": 1,
+    "y_start": 0,
+    "y_end": 6119,
+    "overlap_top": 0,
+    "overlap_bottom": 0,
+    "height": 6119,
+    "path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\workspaces\\v2.follow_prize.add_follow_prize\\chunks\\chunk_001.png",
+    "filename": "chunk_001.png",
+    "width": 837
+  },
+  "analysis_timestamp": "2025-10-10T05:43:17.313617",
+  "model": "claude-3-5-sonnet-20241022"
+}

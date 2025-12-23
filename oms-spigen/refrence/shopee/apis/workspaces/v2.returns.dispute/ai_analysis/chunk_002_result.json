@@ -1,0 +1,57 @@
+{
+  "chunk_index": 2,
+  "endpoint": null,
+  "method": null,
+  "description": "API Permissions and Update Log documentation",
+  "parameters": [],
+  "response_fields": [
+    {
+      "name": "API Permissions",
+      "type": "object",
+      "description": "APP types that can call this API",
+      "children": [
+        {
+          "name": "allowed_apps",
+          "type": "array",
+          "description": "ERP System, Seller In House System, Customer Service, Swam ERP",
+          "children": []
+        }
+      ]
+    },
+    {
+      "name": "Update Log",
+      "type": "array",
+      "description": "List of updates",
+      "children": [
+        {
+          "name": "2024-12-31",
+          "type": "string",
+          "description": "Add new image_list request parameter"
+        },
+        {
+          "name": "2024-05-07",
+          "type": "string",
+          "description": "sunset the request filed \"dispute_reason\", please follow the new flow to raise dispute, may refer https://open.shopee.cn/announcements/883"
+        },
+        {
+          "name": "2023-12-29",
+          "type": "string",
+          "description": "add new request field \"dispute_reason_id\""
+        }
+      ]
+    }
+  ],
+  "chunk_metadata": {
+    "index": 2,
+    "total": 2,
+    "y_start": 7250,
+    "y_end": 8610,
+    "overlap_top": 500,
+    "overlap_bottom": 0,
+    "height": 1360,
+    "path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\workspaces\\v2.returns.dispute\\chunks\\chunk_002.png",
+    "filename": "chunk_002.png",
+    "width": 837
+  },
+  "chunk_path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\workspaces\\v2.returns.dispute\\chunks\\chunk_002.png"
+}

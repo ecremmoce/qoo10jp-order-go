@@ -1,0 +1,109 @@
+{
+  "endpoint": "/cs/bind_sms/bind_course_delivery_first_time_tracking_number",
+  "method": "POST",
+  "description": "API for tracking number delivery",
+  "parameters": [
+    {
+      "name": "payment_method",
+      "type": "string",
+      "required": true,
+      "description": "The payment method for payment and cost deduction when delivery",
+      "children": []
+    },
+    {
+      "name": "binding_id",
+      "type": "string",
+      "required": true,
+      "description": "If your usage scenario is to be delivered independently based on the size of the order or based on the actual logistics situation, you need to fill in binding_number",
+      "children": []
+    },
+    {
+      "name": "order_id",
+      "type": "int64",
+      "required": true,
+      "description": "Shopee's unique identifier for an order",
+      "children": []
+    },
+    {
+      "name": "sms_id",
+      "type": "string",
+      "required": true,
+      "description": "Shopee's unique identifier for the package when using mass tools on first package delivery",
+      "children": []
+    },
+    {
+      "name": "tracking_number",
+      "type": "string",
+      "required": true,
+      "description": "Shopee's unique identifier for the package",
+      "children": []
+    }
+  ],
+  "response_fields": [
+    {
+      "name": "error",
+      "type": "string",
+      "description": "Indicate error type if the error. Empty if no error happened",
+      "children": []
+    },
+    {
+      "name": "message",
+      "type": "string",
+      "description": "Indicate error detail if the error. Empty if no error",
+      "children": []
+    },
+    {
+      "name": "request_id",
+      "type": "string",
+      "description": "The identifier for api call request",
+      "children": []
+    },
+    {
+      "name": "response",
+      "type": "object",
+      "description": "",
+      "children": []
+    },
+    {
+      "name": "binding_id",
+      "type": "string",
+      "description": "binding id",
+      "children": []
+    },
+    {
+      "name": "order_id",
+      "type": "int64",
+      "description": "Shopee's unique identifier for an order",
+      "children": []
+    },
+    {
+      "name": "sms_id",
+      "type": "string",
+      "description": "Shopee's unique identifier for the package when delivered",
+      "children": []
+    },
+    {
+      "name": "tracking_number",
+      "type": "string",
+      "description": "Shopee's unique identifier for the package",
+      "children": []
+    },
+    {
+      "name": "fail_error",
+      "type": "string",
+      "description": "Indicate error type if the request fail or error",
+      "children": []
+    }
+  ],
+  "update_log": [],
+  "hidden_fields": [],
+  "metadata": {
+    "total_chunks": 1,
+    "chunks_with_errors": 0,
+    "total_parameters_before_dedup": 5,
+    "total_parameters_after_dedup": 5,
+    "update_log_entries": 0,
+    "hidden_fields_count": 0,
+    "source_results": "workspaces\\v2.first_mile.bind_courier_delivery_first_mile_tracking_number\\results\\all_chunks_results.json"
+  }
+}

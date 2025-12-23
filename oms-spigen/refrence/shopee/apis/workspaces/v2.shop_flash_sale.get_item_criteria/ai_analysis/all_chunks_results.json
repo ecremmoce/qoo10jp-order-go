@@ -1,0 +1,155 @@
+[
+  {
+    "chunk_index": 1,
+    "total_chunks": 1,
+    "endpoint": "v2_shop_item_sale_get_item_criteria",
+    "method": "GET",
+    "description": "Get shop item criteria information",
+    "update_log": [
+      {
+        "date": "2024-09-13",
+        "change": "New API"
+      }
+    ],
+    "parameters": [
+      {
+        "name": "partner_id",
+        "type": "string",
+        "required": true,
+        "description": "Partner ID to uniquely identify each request. Required for all requests."
+      },
+      {
+        "name": "access_token",
+        "type": "string",
+        "required": true,
+        "description": "The token for API access, used to identify your permission to access. Valid for 30 days."
+      },
+      {
+        "name": "shop_id",
+        "type": "string",
+        "required": true,
+        "description": "Shopee's unique identifier for a shop. Required param for most APIs."
+      }
+    ],
+    "response_fields": [
+      {
+        "name": "request_id",
+        "type": "string",
+        "description": "The identifier for an API request for error tracking"
+      },
+      {
+        "name": "error",
+        "type": "string",
+        "description": "Indicate error type if exists. Empty if no error happened"
+      },
+      {
+        "name": "message",
+        "type": "string",
+        "description": "Indicate error details if fail exists. Empty if no error happened"
+      },
+      {
+        "name": "response",
+        "type": "object",
+        "children": [
+          {
+            "name": "catalog_id",
+            "type": "int64"
+          },
+          {
+            "name": "min_product_rating",
+            "type": "float"
+          },
+          {
+            "name": "time_act_end_after",
+            "type": "boolean"
+          },
+          {
+            "name": "min_price_final",
+            "type": "int32"
+          },
+          {
+            "name": "min_date_to_ship",
+            "type": "int32"
+          },
+          {
+            "name": "max_repetition_day",
+            "type": "int32"
+          },
+          {
+            "name": "min_promotion_price",
+            "type": "int32",
+            "description": "10"
+          },
+          {
+            "name": "max_promoted_price",
+            "type": "int64",
+            "description": "10"
+          },
+          {
+            "name": "min_discount",
+            "type": "int64",
+            "description": "Discount Unit: 10 means 10%"
+          },
+          {
+            "name": "max_discount",
+            "type": "int64",
+            "description": "Discount Unit: 100 means 100%. 1 means no limit"
+          },
+          {
+            "name": "min_discount_price",
+            "type": "int64",
+            "description": "100000000"
+          },
+          {
+            "name": "max_discount_price",
+            "type": "int64",
+            "description": "100000000"
+          },
+          {
+            "name": "need_brand_prove",
+            "type": "boolean"
+          },
+          {
+            "name": "pre_cfr",
+            "type": "int32"
+          },
+          {
+            "name": "catalog_id",
+            "type": "int64"
+          },
+          {
+            "name": "category_id",
+            "type": "int64"
+          },
+          {
+            "name": "name",
+            "type": "string"
+          },
+          {
+            "name": "parent_id",
+            "type": "int64"
+          },
+          {
+            "name": "master_stock_category",
+            "type": "int64"
+          }
+        ]
+      }
+    ],
+    "notes": "The documentation includes error codes and API permissions sections that are partially visible at the bottom of the image. Some response parameters appear to have numeric values in their descriptions which might represent default or example values.",
+    "chunk_metadata": {
+      "index": 1,
+      "total": 1,
+      "y_start": 0,
+      "y_end": 4138,
+      "overlap_top": 0,
+      "overlap_bottom": 0,
+      "height": 4138,
+      "path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\workspaces\\v2.shop_flash_sale.get_item_criteria\\chunks\\chunk_001.png",
+      "filename": "chunk_001.png",
+      "width": 837
+    },
+    "analysis_timestamp": "2025-10-10T06:48:48.156151",
+    "model": "claude-3-5-sonnet-20241022"
+  }
+]

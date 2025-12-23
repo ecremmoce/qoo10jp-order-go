@@ -1,0 +1,90 @@
+[
+  {
+    "chunk_index": 1,
+    "total_chunks": 1,
+    "endpoint": "/public_purchase_trade_list",
+    "method": "POST",
+    "description": "Public purchase trade list endpoint",
+    "update_log": [],
+    "hidden_fields": [],
+    "parameters": [
+      {
+        "name": "URL",
+        "type": "string",
+        "required": true,
+        "description": "Base endpoint URL",
+        "children": []
+      },
+      {
+        "name": "prefix_p",
+        "type": "string",
+        "required": true,
+        "description": "",
+        "children": []
+      },
+      {
+        "name": "direction",
+        "type": "integer",
+        "required": false,
+        "description": "Request query direction parameter",
+        "children": []
+      },
+      {
+        "name": "size",
+        "type": "integer",
+        "required": false,
+        "description": "Size of results",
+        "children": []
+      }
+    ],
+    "response_fields": [
+      {
+        "name": "status",
+        "type": "string",
+        "description": "Status result",
+        "children": []
+      },
+      {
+        "name": "message",
+        "type": "string",
+        "description": "Message details",
+        "children": []
+      },
+      {
+        "name": "result",
+        "type": "array",
+        "description": "Array of results",
+        "children": []
+      }
+    ],
+    "error_codes": [
+      {
+        "code": "error_param",
+        "description": "There is an error, detail in alert"
+      },
+      {
+        "code": "error_limit",
+        "description": "Result overflow limited"
+      },
+      {
+        "code": "error_data",
+        "description": "Data does not exist"
+      }
+    ],
+    "notes": "The documentation includes common parameters, request parameters, response parameters, request examples, response examples and error codes. The full error code list appears to continue beyond what's visible in the image.",
+    "chunk_metadata": {
+      "index": 1,
+      "total": 1,
+      "y_start": 0,
+      "y_end": 5527,
+      "overlap_top": 0,
+      "overlap_bottom": 0,
+      "height": 5527,
+      "path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\workspaces\\v2.global_product.get_brand_list\\chunks\\chunk_001.png",
+      "filename": "chunk_001.png",
+      "width": 837
+    },
+    "analysis_timestamp": "2025-10-10T05:46:08.514788",
+    "model": "claude-3-5-sonnet-20241022"
+  }
+]

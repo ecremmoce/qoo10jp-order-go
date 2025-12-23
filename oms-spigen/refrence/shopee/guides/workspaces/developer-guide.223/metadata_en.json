@@ -1,0 +1,50 @@
+{
+  "document_id": "developer-guide.223",
+  "document_type": "guide",
+  "platform": "shopee",
+  "extracted_at": "2025-10-16T08:47:49",
+  "extracted_text": "# Stock & Price Management\n\n## API response\n\n```json\n\"price_API\": {\n    \"seller_price\": 500,\n    \"original_price\": 1000,\n    \"release_price_of_current_price\": 937,\n    \"release_price_of_original_price\": 1663,\n    \"customer\": \"COP\"\n}\n```\n\n### Please note that\n- If your product has ongoing promotion, 'current_price' will show the promotion price during the promotion period. If not, it will show the same data as the 'release_price' (the original price of the product).\n- If your product has multiple promotions, you can get each promotion price through `id-product-per_item_promotion` API.\n- If you are are BU (CC) / PL seller, 'release_price_of_current_price/release_price_of_original_price' means the price with tax included.\n- If you are a marketplace, 'release_price_of_current_price/release_price_of_original_price' means the price with tax excluded.\n\n## 2. Updating product price\n\n**API:** `id-product-update_price`\n\n- If a product has variants, you can update multiple variants of the product to update the price in one call.\n- If a product does not have variants, updating one offer, will be one call. If you need to update more than one offer, all of the offers must be in one call from multiple times.\n- Please check the price updating rule at the `id-product-per_item_price` API.\n\n### 1) Example of updating the price of a product without variants\n\n```json\n\"Price_API\": {\"original_price\": \"1110\"}\n```\n\n### 2) Example of updating the price of a product with variants\n\n```json\n\"Price_API\": [\n    {\"sku\": \"sell_br\", \"sku3_original_price\": \"1234\", \"Original_price\": \"22.52\"}\n]\n```\n\nNote that if you are are BU (CC) / PL seller, the original_price is updated to be the withtest price.\n\n## 3. Updating global product price\n\n*The following is only applicable to cross-border sellers who have separate CBG/CMREC*\n\n**API:** `id-global_product-update_price`\n\n- If a global product has variants, you can update the price of multiple variants of this global product in one call. If not, only one supports updating one global_item_id in one call. If you need to update more than one global_item_id, you need to call API multiple times.\n- For the price of the global product, please check the price currency that through the `countable-per_exchange_rate` API.\n- If you need the price of global products automatically synchronized to the product, please tick \"Auto-sync\" on Seller Center's Product List page. For products with this feature, you can update the price directly through the `id-global-product-update_price` API based on the formula. If not, you can update the price through `id-product-update_price` API.\n\n## 4. Getting product stock\n\n**API:** `id-product-per_item_basic_info`\n\n- If a product has no variants, please use `id-product-per_item_basic_info` API to get the stock information.\n- If a product has variants, please use `id-product-per_model_info` API to get the stock information.\n\n### API response:\n\n```json\n\"stock_API\": {\n    \"return\": {\n        \"total_reserved_stock\": 0,\n        \"total_available_stock\": 100\n    },\n    \"seller_stock\": {\n        \"total_id\": \"788\",\n        \"Stock\": 48\n    },\n    \"resale_stock\": {\n        \"total_id\": \"788\",\n        \"Stock\": 30\n    },\n    \"resale_stock\": {\n        \"total_id\": \"788\",\n        \"Stock\": 30\n    }\n}\n```\n\n### Please note\n- Products may have both seller_stock and resale_stock, or it may have stock from multiple locations.\n- For cross-border stock calculation logic, please refer to the FAQ.\n\n## 5. Updating product stock\n\n**API:** `id-product-update_stock`\n\n- If a product has variants, you can upload multiple variants of the product to update the stock in one call.\n- If a product has no variants, updating one offer, will be one call. If you need to update more than one offer, all of the offers must be in one call from multiple times.\n- If you need to update stock, seller_stock update choose_stock, you need to call the API with stock type. If you choose, all of the types of stock that can be updated, you also can set the full list (all types of stocks can be sent in one call).\n\n### 1) Example of updating the stock of a product with no variants\n\n```json\n\"Stock_API\": {\"resale_stock\": {\"Product\": {\"Stock\"}}}\n```\n\n### 2) Example of updating the stock of a product with variants\n\n```json\n\"Stock_API\": {\"resale_API\": {\"Add\", \"resale_stock\": {\"product\": {\"10\"}}, \"resale_API\": {\"101\", \"resale_stock\": {\"product\": {\"Stock\"}}}}}\n```\n\n### Please note\n- If a product has variants, the price difference between the variants cannot exceed a certain multiple. For example, the resale of one of the most expensive variants divided by the price of the cheapest variants should not exceed certain numbers.\n\n| Region | multiple |\n|--------|----------|\n| BR | 4 |\n| SG/VN/PH/TH/MY/HA | 5 |\n| ID | 5 |\n| GLOB | 5 |\n| CN/EC | 3 |\n\n*If your product participates in certain promotion, sellers are not allow to modify either price of the product. More detail please check FAQ:* https://open-shopee-partners-faq\n\n## 6. Updating global product stock\n\n*The following is only applicable to cross-border sellers who have separate CBG/CMREC*\n\n**API:** `id-global_product-update_stock`\n\n- If a global product has variants, you can update the stock of multiple variants of the global product in one call. If not, only one supports updating one global_item_id in one call. If you need to update more than one global_item_id, you need to call API multiple times.\n- For a global product without variants, you can use the `id-global_product-update_stock` API to update stock. After updating global stock, the inventory of the products corresponding to the global products will be updated automatically. For a product with variants, you can only use the `id-product-update_stock` API to update the stock directly. \n- For products without auto-sync stock enabled, please use the `id-global_product-update_stock` API to update the global_item_stock. If you need to update more than one global_item_id, you can request it multiple times.\n\n---\n\n**End of extraction**",
+  "metadata": {
+    "title": "Stock & Price Management",
+    "summary": "This guide provides information on how to manage stock and prices for products, including updating product prices and stock levels. It covers different scenarios such as products with and without variants, as well as global products for cross-border sellers.",
+    "keywords": [
+      "stock management",
+      "price management",
+      "product variants",
+      "global products",
+      "API",
+      "cross-border sellers",
+      "seller stock",
+      "resale stock"
+    ],
+    "category": "API Management",
+    "tags": [
+      "stock",
+      "price",
+      "product",
+      "API",
+      "variants",
+      "global products"
+    ],
+    "difficulty": "medium",
+    "importance": 4,
+    "use_cases": [
+      "Updating the price of a product with or without variants.",
+      "Updating the stock level of a product with or without variants.",
+      "Managing prices and stock for cross-border sellers with global products.",
+      "Retrieving product stock information."
+    ],
+    "related_apis": [
+      "price_API",
+      "id-product-update_price",
+      "id-product-per_item_price",
+      "id-global_product-update_price",
+      "countable-per_exchange_rate",
+      "id-product-per_item_basic_info",
+      "id-product-per_model_info",
+      "stock_API",
+      "id-product-update_stock",
+      "id-global_product-update_stock"
+    ]
+  }
+}

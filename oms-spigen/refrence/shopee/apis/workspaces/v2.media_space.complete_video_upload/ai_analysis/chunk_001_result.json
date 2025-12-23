@@ -1,0 +1,174 @@
+{
+  "chunk_index": 1,
+  "total_chunks": 1,
+  "endpoint": "/media_space_complete_video_upload",
+  "method": "POST",
+  "description": "API for video upload and save to processing queue when all parts are uploaded successfully",
+  "update_log": [],
+  "hidden_fields": [],
+  "parameters": [
+    {
+      "name": "partner_id",
+      "type": "int",
+      "required": true,
+      "description": "Partner ID (≥ assigned user registration in hierarchy) Provided by all requests",
+      "children": []
+    },
+    {
+      "name": "media_id",
+      "type": "string",
+      "required": true,
+      "description": "The media identifier by the system. Returned by previous operations",
+      "children": []
+    },
+    {
+      "name": "code_type",
+      "type": "string",
+      "required": true,
+      "description": "Standard parameters provided by platform, ok: all done, something just occurred",
+      "children": []
+    }
+  ],
+  "response_parameters": [
+    {
+      "name": "code_upload_id",
+      "type": "int",
+      "required": true,
+      "description": "The ID of the upload request, returned in the API request",
+      "children": []
+    },
+    {
+      "name": "part_ids_list",
+      "type": "array",
+      "required": true,
+      "description": "All uploaded sequence number",
+      "children": []
+    },
+    {
+      "name": "upload_cost",
+      "type": "int",
+      "required": true,
+      "description": "Time cost for uploading the video file via upload_video_part_init API",
+      "children": []
+    }
+  ],
+  "response_fields": [
+    {
+      "name": "message",
+      "type": "string",
+      "description": "Indicate error details if any error. Empty if no error happened",
+      "children": []
+    },
+    {
+      "name": "request_id",
+      "type": "string",
+      "description": "The identifier of this upload request, used to track system error (internal use) and can be ignored during normal system operation",
+      "children": []
+    },
+    {
+      "name": "error",
+      "type": "string",
+      "description": "Indicate error type if an error. Empty if no error happened",
+      "children": []
+    },
+    {
+      "name": "warning",
+      "type": "string",
+      "description": "Warning message",
+      "children": []
+    }
+  ],
+  "error_codes": [
+    {
+      "code": "error_param",
+      "description": "There is no error_type in query"
+    },
+    {
+      "code": "error_param",
+      "description": "invalid media_token"
+    },
+    {
+      "code": "error_param",
+      "description": "invalid partner_id"
+    },
+    {
+      "code": "error_param",
+      "description": "There is no partner_id in query"
+    },
+    {
+      "code": "error_param",
+      "description": "error log"
+    },
+    {
+      "code": "error_param",
+      "description": "no resources"
+    },
+    {
+      "code": "error_param",
+      "description": "Invalid timestamp"
+    },
+    {
+      "code": "error_param",
+      "description": "error 404 fail"
+    },
+    {
+      "code": "error_data",
+      "description": "data not exist"
+    },
+    {
+      "code": "error_data",
+      "description": "duplicate invalid"
+    },
+    {
+      "code": "error_param",
+      "description": "The observation you specified is nil found"
+    },
+    {
+      "code": "error_param",
+      "description": "Wrong parameters: detail: [msg]"
+    },
+    {
+      "code": "error_param",
+      "description": "Invalid check data: There is no data"
+    },
+    {
+      "code": "error_param",
+      "description": "request not find gateway"
+    },
+    {
+      "code": "error_server",
+      "description": "Unknown error"
+    },
+    {
+      "code": "error_server",
+      "description": "Unknown error"
+    },
+    {
+      "code": "error_server",
+      "description": "Unknown internal error"
+    },
+    {
+      "code": "error_invalid_upload_id",
+      "description": "invalid upload_id"
+    },
+    {
+      "code": "error_upload_completed",
+      "description": "Upload already completed"
+    }
+  ],
+  "notes": "The documentation includes comprehensive error codes and response parameters for video upload completion API",
+  "chunk_metadata": {
+    "index": 1,
+    "total": 1,
+    "y_start": 0,
+    "y_end": 4290,
+    "overlap_top": 0,
+    "overlap_bottom": 0,
+    "height": 4290,
+    "path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\workspaces\\v2.media_space.complete_video_upload\\chunks\\chunk_001.png",
+    "filename": "chunk_001.png",
+    "width": 837
+  },
+  "analysis_timestamp": "2025-10-10T06:10:16.972254",
+  "model": "claude-3-5-sonnet-20241022"
+}

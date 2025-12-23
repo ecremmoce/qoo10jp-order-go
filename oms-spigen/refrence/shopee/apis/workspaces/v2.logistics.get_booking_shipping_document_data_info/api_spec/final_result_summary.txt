@@ -1,0 +1,53 @@
+======================================================================
+API SPECIFICATION SUMMARY
+======================================================================
+
+Endpoint: None None
+
+Parameters (8):
+----------------------------------------------------------------------
+  created_before (string)
+   Filter listings created before timestamp
+  created_after (string)
+   Filter listings created after timestamp
+  nft_ids (array)
+   Filter by NFT IDs
+  price_min (string)
+   Minimum price filter
+  price_max (string)
+   Maximum price filter
+  status (string)
+   Filter by listing status
+  offset (integer)
+   Pagination offset
+  limit (integer)
+   Pagination limit
+
+Response Fields (6):
+----------------------------------------------------------------------
+  listing_id (string)
+   Unique identifier for the listing
+  created_at (string)
+   Timestamp when listing was created
+  updated_at (string)
+   Timestamp when listing was last updated
+  status (string)
+   Current status of the listing
+  price (string)
+   Listed price
+  nft_id (string)
+   NFT identifier
+
+Metadata:
+----------------------------------------------------------------------
+  total_chunks: 1
+  chunks_with_errors: 0
+  total_parameters_before_dedup: 8
+  total_parameters_after_dedup: 8
+  update_log_entries: 0
+  hidden_fields_count: 0
+  source_results: workspaces\v2.logistics.get_booking_shipping_document_data_info\results\all_chunks_results.json
+
+======================================================================
+Legend: * = required parameter
+======================================================================

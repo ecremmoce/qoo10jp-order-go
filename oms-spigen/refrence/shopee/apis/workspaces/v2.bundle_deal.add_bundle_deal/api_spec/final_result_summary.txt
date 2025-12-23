@@ -1,0 +1,34 @@
+======================================================================
+API SPECIFICATION SUMMARY
+======================================================================
+
+Endpoint: None None
+
+Parameters (3):
+----------------------------------------------------------------------
+* type (string)
+   Type identifier
+  lang (string)
+   Language code
+* data (object)
+   Main data object
+    review_settings (object)
+     Review configuration settings
+    * enabled (boolean)
+       Enable/disable reviews
+      moderation_required (boolean)
+       Whether reviews require moderation
+
+Metadata:
+----------------------------------------------------------------------
+  total_chunks: 1
+  chunks_with_errors: 0
+  total_parameters_before_dedup: 3
+  total_parameters_after_dedup: 3
+  update_log_entries: 2
+  hidden_fields_count: 0
+  source_results: workspaces\v2.bundle_deal.add_bundle_deal\results\all_chunks_results.json
+
+======================================================================
+Legend: * = required parameter
+======================================================================

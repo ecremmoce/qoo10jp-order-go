@@ -1,0 +1,76 @@
+{
+  "endpoint": null,
+  "method": null,
+  "description": "External order interface for global model",
+  "parameters": [
+    {
+      "name": "URL",
+      "type": "string",
+      "required": true,
+      "description": "API endpoint URLs",
+      "children": []
+    },
+    {
+      "name": "URLS",
+      "type": "object",
+      "required": true,
+      "description": "Collection of API endpoints",
+      "children": [
+        {
+          "name": "http://external.shopee/order/v2/order",
+          "type": "string",
+          "required": true,
+          "description": "Production environment endpoint",
+          "children": []
+        },
+        {
+          "name": "http://external.shopee/order/v2/order/staging",
+          "type": "string",
+          "required": true,
+          "description": "Staging environment endpoint",
+          "children": []
+        }
+      ]
+    },
+    {
+      "name": "global_auth_id",
+      "type": "string",
+      "required": true,
+      "description": "Global auth ID",
+      "children": []
+    },
+    {
+      "name": "phone_number_id",
+      "type": "string",
+      "required": true,
+      "description": "Phone number ID",
+      "children": []
+    },
+    {
+      "name": "message",
+      "type": "string",
+      "required": true,
+      "description": "Message content",
+      "children": []
+    },
+    {
+      "name": "country",
+      "type": "string",
+      "required": true,
+      "description": "Country code",
+      "children": []
+    }
+  ],
+  "response_fields": [],
+  "update_log": [],
+  "hidden_fields": [],
+  "metadata": {
+    "total_chunks": 1,
+    "chunks_with_errors": 0,
+    "total_parameters_before_dedup": 6,
+    "total_parameters_after_dedup": 6,
+    "update_log_entries": 0,
+    "hidden_fields_count": 0,
+    "source_results": "workspaces\\v2.global_product.delete_global_model\\results\\all_chunks_results.json"
+  }
+}

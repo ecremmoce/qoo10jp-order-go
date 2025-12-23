@@ -1,0 +1,136 @@
+{
+  "chunk_index": 1,
+  "total_chunks": 1,
+  "endpoint": "/v2/bundle_deal/end/bundle_deal",
+  "method": null,
+  "description": "API endpoint for bundle deal operations",
+  "update_log": [
+    {
+      "date": "2020-09-26",
+      "change": "Added help for beta parameters"
+    },
+    {
+      "date": "2020-07-24",
+      "change": "Added the 4.x update schedule"
+    },
+    {
+      "date": "2020-06-30",
+      "change": "Optimized the merged information of Request Parameter and Response Parameter"
+    },
+    {
+      "date": "2017-04-23",
+      "change": "update"
+    },
+    {
+      "date": "2017-03-09",
+      "change": "New API"
+    }
+  ],
+  "parameters": [
+    {
+      "name": "partner_id",
+      "type": "string",
+      "required": true,
+      "description": "Partner ID is assigned when registration is successful",
+      "children": []
+    },
+    {
+      "name": "access_token",
+      "type": "string",
+      "required": true,
+      "description": "Token for API verification using to identify your permission to access the system and execute it there",
+      "children": []
+    },
+    {
+      "name": "shop_id",
+      "type": "integer",
+      "required": true,
+      "description": "Shopee's unique identifier for a shop. Required param for partner",
+      "children": []
+    },
+    {
+      "name": "bundle_deal_id",
+      "type": "integer",
+      "required": true,
+      "description": "Shopee's unique identifier for a bundle deal",
+      "children": []
+    }
+  ],
+  "response_fields": [
+    {
+      "name": "msg",
+      "type": "string",
+      "description": "indicate error type if any. Empty if no error",
+      "children": []
+    },
+    {
+      "name": "message",
+      "type": "string",
+      "description": "indicate error details if any. Empty if no error",
+      "children": []
+    },
+    {
+      "name": "request_id",
+      "type": "string",
+      "description": "The identifier of the API request for error tracking",
+      "children": []
+    },
+    {
+      "name": "response",
+      "type": "object",
+      "description": "Detail information you are sending",
+      "children": []
+    },
+    {
+      "name": "bundle_deal_id",
+      "type": "integer",
+      "description": "Shopee's unique identifier for a bundle deal",
+      "children": []
+    }
+  ],
+  "error_codes": [
+    {
+      "code": "error_bundle_deal_end_past_ended",
+      "description": "The ended bundle deal can not be ended"
+    },
+    {
+      "code": "error_bundle_deal_not_exist",
+      "description": "Bundle deal doesn't exist"
+    },
+    {
+      "code": "error_auth",
+      "description": "wrong API auth"
+    },
+    {
+      "code": "error_shop",
+      "description": "There is no action_id in user's data"
+    },
+    {
+      "code": "error_param",
+      "description": "wrong parameter"
+    },
+    {
+      "code": "error_system",
+      "description": "Save this url failed"
+    },
+    {
+      "code": "error_param",
+      "description": "please duty have"
+    }
+  ],
+  "notes": "The documentation shows both request and response parameters, along with extensive error codes. The API appears to be related to ending bundle deals in an e-commerce system.",
+  "chunk_metadata": {
+    "index": 1,
+    "total": 1,
+    "y_start": 0,
+    "y_end": 4515,
+    "overlap_top": 0,
+    "overlap_bottom": 0,
+    "height": 4515,
+    "path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\workspaces\\v2.bundle_deal.end_bundle_deal\\chunks\\chunk_001.png",
+    "filename": "chunk_001.png",
+    "width": 837
+  },
+  "analysis_timestamp": "2025-10-10T05:34:18.554188",
+  "model": "claude-3-5-sonnet-20241022"
+}

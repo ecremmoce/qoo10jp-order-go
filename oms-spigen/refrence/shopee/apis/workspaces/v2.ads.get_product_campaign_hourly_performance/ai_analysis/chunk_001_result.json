@@ -1,0 +1,104 @@
+{
+  "chunk_index": 1,
+  "total_chunks": 1,
+  "endpoint": null,
+  "method": null,
+  "description": null,
+  "update_log": [],
+  "hidden_fields": [],
+  "parameters": [
+    {
+      "name": "uuid",
+      "type": "string",
+      "required": true,
+      "description": "Device UUID",
+      "children": []
+    },
+    {
+      "name": "mac",
+      "type": "string",
+      "required": true,
+      "description": "Device MAC address",
+      "children": []
+    },
+    {
+      "name": "config_id",
+      "type": "string",
+      "required": false,
+      "description": "Configuration ID",
+      "children": []
+    },
+    {
+      "name": "category",
+      "type": "string",
+      "required": false,
+      "description": "Device category",
+      "children": []
+    },
+    {
+      "name": "name",
+      "type": "string",
+      "required": false,
+      "description": "Device name",
+      "children": []
+    },
+    {
+      "name": "ip",
+      "type": "string",
+      "required": false,
+      "description": "IP address",
+      "children": []
+    },
+    {
+      "name": "gateway",
+      "type": "string",
+      "required": false,
+      "description": "Gateway address",
+      "children": []
+    },
+    {
+      "name": "alias",
+      "type": "string",
+      "required": false,
+      "description": "Device alias",
+      "children": []
+    },
+    {
+      "name": "version",
+      "type": "string",
+      "required": false,
+      "description": "Firmware version",
+      "children": []
+    }
+  ],
+  "response_fields": [
+    {
+      "name": "result",
+      "type": "object",
+      "description": "Response object",
+      "children": [
+        {
+          "name": "success",
+          "type": "boolean",
+          "description": "Operation success status",
+          "children": []
+        }
+      ]
+    }
+  ],
+  "notes": "The image appears to be API documentation for device-related operations. While the specific endpoint and method are not visible in this portion of the documentation, it contains detailed parameter specifications for device identification and configuration.",
+  "chunk_metadata": {
+    "index": 1,
+    "total": 1,
+    "y_start": 0,
+    "y_end": 6586,
+    "overlap_top": 0,
+    "overlap_bottom": 0,
+    "height": 6586,
+    "path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\workspaces\\v2.ads.get_product_campaign_hourly_performance\\chunks\\chunk_001.png",
+    "filename": "chunk_001.png",
+    "width": 837
+  },
+  "analysis_timestamp": "2025-10-10T05:31:06.814458",
+  "model": "claude-3-5-sonnet-20241022"
+}

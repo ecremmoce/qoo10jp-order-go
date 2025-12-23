@@ -1,0 +1,107 @@
+[
+  {
+    "chunk_index": 1,
+    "total_chunks": 1,
+    "endpoint": "/v2/deposit/upload_shipping_proof",
+    "method": "HTTP request",
+    "description": "API documentation for uploading shipping proof",
+    "update_log": [
+      {
+        "date": "2023-08-19",
+        "change": "System launch"
+      }
+    ],
+    "parameters": [
+      {
+        "name": "URL",
+        "type": "string",
+        "required": true,
+        "description": "Chinese traditional images (https://test/manifest_shipping_proof)",
+        "children": []
+      },
+      {
+        "name": "owner_id",
+        "type": "string",
+        "required": true,
+        "description": "The wallet address of token",
+        "children": []
+      },
+      {
+        "name": "shipping_number",
+        "type": "string",
+        "required": false,
+        "description": "Express tracking number",
+        "children": []
+      },
+      {
+        "name": "image_id_list",
+        "type": "array",
+        "required": true,
+        "description": "List of image_id of shipping proof images",
+        "children": []
+      },
+      {
+        "name": "request_id",
+        "type": "string",
+        "required": true,
+        "description": "Top identifier for an API request for error tracking",
+        "children": []
+      },
+      {
+        "name": "message",
+        "type": "string",
+        "required": false,
+        "description": "Success error status (1:success, 0:failed)",
+        "children": []
+      }
+    ],
+    "error_codes": [
+      {
+        "code": "elevate_app_blank_shipping_no",
+        "description": "Tracking number field cannot be blank"
+      },
+      {
+        "code": "elevate_exceed_shipping_proof",
+        "description": "Shipping Proof already been provided"
+      },
+      {
+        "code": "elevate_greater_than_max_image_size",
+        "description": "Number of proof files exceeds limit. Image size cannot less than 2Meg file size"
+      },
+      {
+        "code": "elevate_blank_shipping_image",
+        "description": "Tracking number should be 1 to 1 characters"
+      },
+      {
+        "code": "elevate_invalid_proof_id",
+        "description": "Provided image ID is invalid"
+      },
+      {
+        "code": "invalid_request_shipping_no",
+        "description": "Required logistic courier name is required parameter"
+      },
+      {
+        "code": "elevate_missing_token",
+        "description": "Token is invalid"
+      }
+    ],
+    "api_permissions": [
+      "API token must be used to call"
+    ],
+    "notes": "The documentation includes both request parameters and error codes. The API appears to be related to uploading shipping proof with image verification and tracking number validation.",
+    "chunk_metadata": {
+      "index": 1,
+      "total": 1,
+      "y_start": 0,
+      "y_end": 4474,
+      "overlap_top": 0,
+      "overlap_bottom": 0,
+      "height": 4474,
+      "path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\workspaces\\v2.returns.upload_shipping_proof\\chunks\\chunk_001.png",
+      "filename": "chunk_001.png",
+      "width": 837
+    },
+    "analysis_timestamp": "2025-10-10T06:43:02.882782",
+    "model": "claude-3-5-sonnet-20241022"
+  }
+]

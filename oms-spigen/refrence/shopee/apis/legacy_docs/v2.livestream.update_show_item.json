@@ -1,0 +1,91 @@
+{
+  "endpoint": "v2/bookmark/update_show_item",
+  "method": null,
+  "description": null,
+  "parameters": [
+    {
+      "name": "partner_id",
+      "type": "int64",
+      "required": true,
+      "description": "Partner ID to establish user application is successful",
+      "children": []
+    },
+    {
+      "name": "timestamp",
+      "type": "timestamp",
+      "required": true,
+      "description": "This is to ensure the timeliness of the request. Request to all channels is within 24 minutes",
+      "children": []
+    },
+    {
+      "name": "access_token",
+      "type": "string",
+      "required": true,
+      "description": "The token for API system using to identify user permission to the api, with its creation use and create of 1 hour",
+      "children": []
+    },
+    {
+      "name": "sign",
+      "type": "string",
+      "required": true,
+      "description": "Signature generated for requests at different sites",
+      "children": []
+    },
+    {
+      "name": "request_id",
+      "type": "int64",
+      "required": true,
+      "description": "The identifier of bookmark session",
+      "children": []
+    },
+    {
+      "name": "show_id",
+      "type": "int64",
+      "required": true,
+      "description": "The show ID of the item",
+      "children": []
+    }
+  ],
+  "response_fields": [
+    {
+      "name": "error",
+      "type": "string",
+      "description": "Indicate error type if not exist. Empty if no error happened",
+      "children": []
+    },
+    {
+      "name": "message",
+      "type": "string",
+      "description": "Indicate error details if not error. Empty if no error happened",
+      "children": []
+    },
+    {
+      "name": "request_id",
+      "type": "string",
+      "description": "The identifier for JWT request for error tracking",
+      "children": []
+    },
+    {
+      "name": "response",
+      "type": "object",
+      "description": "Detail information you are returning",
+      "children": []
+    }
+  ],
+  "update_log": [
+    {
+      "date": "2025-09-24",
+      "change": "New API"
+    }
+  ],
+  "hidden_fields": [],
+  "metadata": {
+    "total_chunks": 1,
+    "chunks_with_errors": 0,
+    "total_parameters_before_dedup": 6,
+    "total_parameters_after_dedup": 6,
+    "update_log_entries": 1,
+    "hidden_fields_count": 0,
+    "source_results": "workspaces\\v2.livestream.update_show_item\\results\\all_chunks_results.json"
+  }
+}

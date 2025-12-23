@@ -1,0 +1,51 @@
+======================================================================
+API SPECIFICATION SUMMARY
+======================================================================
+
+Endpoint: POST /openapi/self_video_scan
+
+Parameters (3):
+----------------------------------------------------------------------
+* session_id (string)
+   Partner ID is assigned upon registration is successful
+* action_date (string)
+   The time in AUT system, need to strictly synchronize to prevent record mismatches
+* sign (string)
+   Digital signature (Generated as shown in doc)
+
+Response Fields (10):
+----------------------------------------------------------------------
+* code (string)
+   Image error test in full step, Empty is no error happened
+  message (string)
+   Image error details if there are step errors
+* result_id (string)
+   The identifier for up API request by each step
+  file_paths (array)
+   Path information can be used for
+  step_no (string)
+   The step of the face in the complete key of control results
+  error (string)
+   Name of the face in your language
+  image_id (string)
+   The image id of this step
+  user_data (object)
+   The image hash code representing the contents
+  control_flag (float)
+   The control end at the face in the being condition
+  original_price (float)
+   The original price of the face in the being
+
+Metadata:
+----------------------------------------------------------------------
+  total_chunks: 1
+  chunks_with_errors: 0
+  total_parameters_before_dedup: 3
+  total_parameters_after_dedup: 3
+  update_log_entries: 0
+  hidden_fields_count: 0
+  source_results: platforms\shopee\apis\workspaces\v2.livestream.get_show_item\results\all_chunks_results.json
+
+======================================================================
+Legend: * = required parameter
+======================================================================

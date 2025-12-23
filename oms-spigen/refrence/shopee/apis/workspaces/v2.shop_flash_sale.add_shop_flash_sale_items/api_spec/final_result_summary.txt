@@ -1,0 +1,51 @@
+======================================================================
+API SPECIFICATION SUMMARY
+======================================================================
+
+Endpoint: None /buy_best_rate_and_post
+
+Parameters (10):
+----------------------------------------------------------------------
+* URL (string)
+   https://openapihk.mixin.dev/webhook_best_rate/buy_best_rate_post
+  pay_url (string)
+   Post price for better rate
+* amount (string)
+   Amount
+  trace_id (string)
+   Trace id
+  best_price (string)
+   Best price
+  min_price (string)
+   Minimum price
+  max_post_price (bool)
+   Maximum post price
+  min_post_price (bool)
+   Minimum post price
+  asset_id (uuid)
+   The asset uuid we'd like to buy/sell
+  btc_asset_id (uuid)
+   The btc asset uuid we'd like to buy/sell
+
+Response Fields (3):
+----------------------------------------------------------------------
+  result (string)
+   Response result
+  message (string)
+   Response message
+  error (object)
+   Error details if any
+
+Metadata:
+----------------------------------------------------------------------
+  total_chunks: 1
+  chunks_with_errors: 0
+  total_parameters_before_dedup: 10
+  total_parameters_after_dedup: 10
+  update_log_entries: 0
+  hidden_fields_count: 0
+  source_results: workspaces\v2.shop_flash_sale.add_shop_flash_sale_items\results\all_chunks_results.json
+
+======================================================================
+Legend: * = required parameter
+======================================================================

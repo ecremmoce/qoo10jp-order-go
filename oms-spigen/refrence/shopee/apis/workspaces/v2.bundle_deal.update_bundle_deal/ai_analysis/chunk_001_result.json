@@ -1,0 +1,88 @@
+{
+  "chunk_index": 1,
+  "endpoint": null,
+  "method": null,
+  "description": null,
+  "parameters": [],
+  "response_fields": [
+    {
+      "name": "error_network",
+      "type": "string",
+      "description": "Inner http call failed",
+      "children": []
+    },
+    {
+      "name": "error_data",
+      "type": "string",
+      "description": "parse data failed",
+      "children": []
+    },
+    {
+      "name": "error_data",
+      "type": "string",
+      "description": "data not exist",
+      "children": []
+    },
+    {
+      "name": "error_param",
+      "type": "string",
+      "description": "parameter invalid",
+      "children": []
+    },
+    {
+      "name": "error_param",
+      "type": "string",
+      "description": "The information you queried is not found.",
+      "children": []
+    },
+    {
+      "name": "error_param",
+      "type": "string",
+      "description": "Wrong parameters, detail: {msg}.",
+      "children": []
+    },
+    {
+      "name": "error_server",
+      "type": "string",
+      "description": "Something wrong. Please try later.",
+      "children": []
+    },
+    {
+      "name": "error_shop",
+      "type": "string",
+      "description": "shopid is invalid",
+      "children": []
+    },
+    {
+      "name": "error_param",
+      "type": "string",
+      "description": "request not from gateway",
+      "children": []
+    },
+    {
+      "name": "bundle.bundle_deal_start_time_error",
+      "type": "string",
+      "description": "Promotion start time can only be changed to a later timing.",
+      "children": []
+    },
+    {
+      "name": "bundle.bundle_deal_start_time_error",
+      "type": "string",
+      "description": "The start_time of ongoing promotion can't be updated",
+      "children": []
+    }
+  ],
+  "chunk_metadata": {
+    "index": 1,
+    "total": 2,
+    "y_start": 0,
+    "y_end": 8000,
+    "overlap_top": 0,
+    "overlap_bottom": 500,
+    "height": 8000,
+    "path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\workspaces\\v2.bundle_deal.update_bundle_deal\\chunks\\chunk_001.png",
+    "filename": "chunk_001.png",
+    "width": 837
+  },
+  "chunk_path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\workspaces\\v2.bundle_deal.update_bundle_deal\\chunks\\chunk_001.png"
+}

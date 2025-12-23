@@ -1,0 +1,24 @@
+{
+  "source_image": "workspaces\\v2.public.get_access_token\\screenshot.png",
+  "source_dimensions": {
+    "width": 837,
+    "height": 4840
+  },
+  "total_chunks": 1,
+  "max_chunk_height": 8000,
+  "overlap": 500,
+  "chunks": [
+    {
+      "index": 1,
+      "total": 1,
+      "y_start": 0,
+      "y_end": 4840,
+      "overlap_top": 0,
+      "overlap_bottom": 0,
+      "height": 4840,
+      "path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\workspaces\\v2.public.get_access_token\\chunks\\chunk_001.png",
+      "filename": "chunk_001.png",
+      "width": 837
+    }
+  ]
+}

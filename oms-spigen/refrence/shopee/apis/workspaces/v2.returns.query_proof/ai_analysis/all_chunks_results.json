@@ -1,0 +1,154 @@
+[
+  {
+    "chunk_index": 1,
+    "total_chunks": 1,
+    "endpoint": "/v2/base/query/process/fintech/query_proof",
+    "method": "GET",
+    "description": "A clean query proof",
+    "update_log": [],
+    "hidden_fields": [],
+    "parameters": [
+      {
+        "name": "URL",
+        "type": "string",
+        "required": true,
+        "description": "Request base URL",
+        "children": []
+      },
+      {
+        "name": "URL",
+        "type": "string",
+        "required": true,
+        "description": "Request URL",
+        "children": []
+      },
+      {
+        "name": "biz_id",
+        "type": "string",
+        "required": true,
+        "description": "business id",
+        "children": []
+      },
+      {
+        "name": "system_id",
+        "type": "string",
+        "required": true,
+        "description": "Permission request system id",
+        "children": []
+      },
+      {
+        "name": "access_token",
+        "type": "string",
+        "required": true,
+        "description": "The token used to access the request",
+        "children": []
+      },
+      {
+        "name": "debug",
+        "type": "string",
+        "required": true,
+        "description": "test flag",
+        "children": []
+      },
+      {
+        "name": "proof_id",
+        "type": "string",
+        "required": false,
+        "description": "The token used to access the request",
+        "children": []
+      },
+      {
+        "name": "file_id",
+        "type": "string",
+        "required": false,
+        "description": "File hash or id",
+        "children": []
+      },
+      {
+        "name": "description",
+        "type": "string",
+        "required": false,
+        "description": "The text described in the shared proof",
+        "children": []
+      }
+    ],
+    "response_fields": [],
+    "error_codes": [
+      {
+        "code": "proof_not_exist",
+        "description": "The proof has not found"
+      },
+      {
+        "code": "error_proof",
+        "description": "Invalid access token"
+      },
+      {
+        "code": "error_server",
+        "description": "Server error"
+      },
+      {
+        "code": "error_system",
+        "description": "There is no system_id"
+      },
+      {
+        "code": "error_biz",
+        "description": "Missing biz"
+      },
+      {
+        "code": "error_data",
+        "description": "Something wrong Please try later"
+      },
+      {
+        "code": "error_token",
+        "description": "Get the proof token fail"
+      },
+      {
+        "code": "error_param",
+        "description": "parameter invalid"
+      },
+      {
+        "code": "error_file",
+        "description": "Save error for failed"
+      },
+      {
+        "code": "error_time",
+        "description": "Date can't be before 7 hours to date"
+      },
+      {
+        "code": "error_user",
+        "description": "Date can't go to later 7 hours to date"
+      },
+      {
+        "code": "image_sized",
+        "description": "Image exceed 5M"
+      },
+      {
+        "code": "error_upload_img",
+        "description": "The information size exceed 1 mile length"
+      },
+      {
+        "code": "error_param",
+        "description": "Missing parameters detect_image"
+      },
+      {
+        "code": "error_param",
+        "description": "Something wrong Please try later"
+      }
+    ],
+    "notes": "The documentation includes Common Parameters, Required Parameters, Response Examples and Error Codes sections. The API appears to be related to querying some kind of proof or verification system.",
+    "chunk_metadata": {
+      "index": 1,
+      "total": 1,
+      "y_start": 0,
+      "y_end": 4908,
+      "overlap_top": 0,
+      "overlap_bottom": 0,
+      "height": 4908,
+      "path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\workspaces\\v2.returns.query_proof\\chunks\\chunk_001.png",
+      "filename": "chunk_001.png",
+      "width": 837
+    },
+    "analysis_timestamp": "2025-10-10T06:42:31.087638",
+    "model": "claude-3-5-sonnet-20241022"
+  }
+]

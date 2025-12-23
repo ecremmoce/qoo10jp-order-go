@@ -1,0 +1,44 @@
+======================================================================
+API SPECIFICATION SUMMARY
+======================================================================
+
+Endpoint: POST /api/merchant/get_item_set_list
+Description: API to retrieve item sets
+
+Parameters (3):
+----------------------------------------------------------------------
+* timestamp (string)
+   Unix timestamp
+* shop_id (uint64)
+   Specify the selling price to shop to want to access. This needs to be related to a shop bound to your partner authorization
+  keyword (string)
+   Search keyword
+
+Response Fields (6):
+----------------------------------------------------------------------
+  error (string)
+   Error message if the error exists
+  message (string)
+   Error information you are battling
+  warn (boolean)
+   This is to indicate whether the list is more than 24 hours. If this field is true, you may need to update the cache for a better performance
+  next_offset (int64)
+   The identifier of the item set
+  item_set_list (array)
+   The items of the item set
+  item_count (int64)
+   The number of items in the item set
+
+Metadata:
+----------------------------------------------------------------------
+  total_chunks: 1
+  chunks_with_errors: 0
+  total_parameters_before_dedup: 3
+  total_parameters_after_dedup: 3
+  update_log_entries: 1
+  hidden_fields_count: 0
+  source_results: workspaces\v2.livestream.get_item_set_list\results\all_chunks_results.json
+
+======================================================================
+Legend: * = required parameter
+======================================================================

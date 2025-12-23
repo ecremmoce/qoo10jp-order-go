@@ -1,0 +1,36 @@
+{
+  "source_image": "workspaces\\v2.global_product.update_global_item\\screenshot.png",
+  "source_dimensions": {
+    "width": 837,
+    "height": 11867
+  },
+  "total_chunks": 2,
+  "max_chunk_height": 8000,
+  "overlap": 500,
+  "chunks": [
+    {
+      "index": 1,
+      "total": 2,
+      "y_start": 0,
+      "y_end": 8000,
+      "overlap_top": 0,
+      "overlap_bottom": 500,
+      "height": 8000,
+      "path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\workspaces\\v2.global_product.update_global_item\\chunks\\chunk_001.png",
+      "filename": "chunk_001.png",
+      "width": 837
+    },
+    {
+      "index": 2,
+      "total": 2,
+      "y_start": 7254,
+      "y_end": 11621,
+      "overlap_top": 500,
+      "overlap_bottom": 0,
+      "height": 4367,
+      "path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\workspaces\\v2.global_product.update_global_item\\chunks\\chunk_002.png",
+      "filename": "chunk_002.png",
+      "width": 837
+    }
+  ]
+}

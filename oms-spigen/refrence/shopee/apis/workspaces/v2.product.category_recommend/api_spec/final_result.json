@@ -1,0 +1,66 @@
+{
+  "endpoint": null,
+  "method": null,
+  "description": null,
+  "parameters": [
+    {
+      "name": "url",
+      "type": "string",
+      "required": true,
+      "description": "API address"
+    },
+    {
+      "name": "method",
+      "type": "string",
+      "required": true,
+      "description": null
+    },
+    {
+      "name": "test_no",
+      "type": "string",
+      "required": false,
+      "description": null
+    }
+  ],
+  "response_fields": [
+    {
+      "name": "text",
+      "type": "string",
+      "description": "Return text string. Empty if no error occurred"
+    },
+    {
+      "name": "message",
+      "type": "string",
+      "description": "Return error text string. Empty if no error occurred"
+    },
+    {
+      "name": "result_id",
+      "type": "string",
+      "description": "Return result ID string. Empty if no error occurred"
+    }
+  ],
+  "update_log": [
+    {
+      "date": "2021-01-26",
+      "change": "Added error_code global request parameter"
+    },
+    {
+      "date": "2021-01-19",
+      "change": "Update basic structure"
+    },
+    {
+      "date": "2021-01-18",
+      "change": "Initial API"
+    }
+  ],
+  "hidden_fields": [],
+  "metadata": {
+    "total_chunks": 1,
+    "chunks_with_errors": 0,
+    "total_parameters_before_dedup": 3,
+    "total_parameters_after_dedup": 3,
+    "update_log_entries": 3,
+    "hidden_fields_count": 0,
+    "source_results": "workspaces\\v2.product.category_recommend\\results\\all_chunks_results.json"
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "document_id": "developer-guide.383",
+  "document_type": "guide",
+  "platform": "shopee",
+  "extracted_at": "2025-10-16T09:15:37",
+  "extracted_text": "# Identifying a New Order\n\nCurrently there are ways to identify a new order via APIs\n\n## Steps\n\nPara usar o Push Marketplace devem também ser uma rota para fins OAuth ser criada, as duas Urls end usuaria o Pedido do a API informada callback URL, e essa Push também precisa configurar uma resposta de acordo must requisitos da API\n\n1. Voce deve também chamar o status ORDER\n2. Incluir um outro novo método POST1\n\nAtualmente é possível obter o Push Marketplace\n\nsão API \"v2_post_set_push_ordem\" informando prata Push dentro um efetivado, o Push para elegido e criados um status dos callers é \"o 'ready_status'\"\n\nDigitar de acordo as request:\n\n```json\n\"seller_url\" : [\n  \"v1/po_orders\"\n]\n\n\"apiback_url\" : \"http://1-38.10\"\n```\n\nIn Open Platform, Você logo va Open Platform > Consoles > App Management > Push Marketplace > Set Posts R app > app details da informar via instrução\n\n## Obtaining a GET Request\n\nPara obter a get_order_list, two response track todos os orders_id da pedque a periodo especifico\n\nSelecionar o parâmetro opcional \"response_optional_fields=order_status\" e requisitar também gerenciado os dados dos orders, como os seleção period lista.\n\n### API Call Example\n\n```http\ncurl --OauthID --request GET\n'https://open.tiktokapis.com/v1/fulfillment/api_order_list?\napp_key=12&access_token=USER_ACCESS_TOKEN&shop_id=12&create_time_from=1609862012&create_time_to=1609862012&update_time_from=1609862012&update_time_to=1609862012&\nresponse_optional_fields=order_status&cursor=ROW%3D1%3BINDEX%3D0&page_size=10'\n```\n\n### Response\n\n```json\n{\n  \"error\": \"\",\n  \"message\": \"\",\n  \"timestamp\": 0,\n  \"api\": true,\n  \"next\": \"\",\n  \"cargo_line\": [],\n  \"fee_id\": \"INITSTORED\",\n  \"order_status\": \"READY_TO_SHIP\",\n  \"seller_id\": \"INITSTORED\",\n  \"order_id\": \"TEMPLATE_SELLER\",\n  \"related_id\": \"?????????????\"\n}\n```\n\n---\n\n# Order Status on OpenAPI\n\nAs of 6 status orders as que o sellers podem be accessed:\n\n## 1. UNPAID\nOrder orders que autorizam de ser criadas e antes têm ao possível validar e pagamento:\nNormalmente orders de Status não têm apresentar esses status, pois os orders do Cartão de Crédito não validation em maiores do que pagamento.\n\n## 2. ON_HOLD\nPedido solicitar aparece apenas API do v1_get_order_list ou o namespace orders onde dos informado acerca\n\nParameters:\n- AWAITING_SHIPMENT\n- READY_TO_SHIP\n- Hold for confirmado de pagamento, go within form orders order be dados return order API (e g., pagamento está sendo validado).\n\n## 3. AWAITING_SHIPMENT\nOutros novos status whilst permite uma Organização de uso (v2_ship_getlist) combinação usar o normalizado order e sinalizado e permitir status do confirmação de pagamento, pois dentro destes permite n Post o User (e.g., orders com problemas de pagamento).\n\n## 4. PROCESSED\nOrders que ja foram entregues no v2_ship_order e dados no v2_ship_order a gerida to tracking Number\n\n## 5. SHIPPED\nOrders ja foram all entregue do paciente logístico\n\n## 6. TO_CONFIRM_RECEIVE\nWhen orders de são ao recebimento\n\n## 7. COMPLETED\nEsta status é when an item reçu final, qual-que ou a Lista do buyer, em that classa de devolução, reforma ou Seller de uma novos status\n\n## 8. IN_CANCEL\nIndica quando buyer ou a solicitação de devolução do pedido\n\nQuando a pedido é Cancelado, quais pode orders quando o buyer indicar o pedido, quando o Seller clica negativa o pedido, além sistema lugar de-ativando o pedido do order OpenAPI e Seller Center se enquadram por escudadas pela tabela [documentation link]\n\n---\n\n## Status Mapping\n\n| OpenAPI | SellerCenter |\n|---------|--------------|\n| UNPAID | - |\n| READY_TO_SHIP | A enviar (a iniciar) |\n\n---\n\n# 9 - CANCELLED\n\nQuando a order é Cancelada, que pode ocorrer quando o buyer cancela o pedido, quando o Seller não organiza o pedido ou quando o pedido é perdido durante a entrega.\n\nSegue comparação de status entre OpenAPI e Seller Center (que também pode ser encontrada na nossa [Documentação](link)):\n\n| OpenAPI | SellerCenter |\n|---------|--------------|\n| UNPAID | Não Pago |\n| READY_TO_SHIP | A enviar (A enviar) |\n| IN_CANCEL | Cancelado (A responder) |\n| CANCELLED | Cancelado (Cancelado) |\n| SHIPPED | A enviar (Processado) |\n| TO_RETURN | Enviado |\n| TO_CONFIRM_RECEIVE | Devolução Reembolso |\n| COMPLETED | Shipping (Shipped) |\n\n## Cancelamento de pedidos\n\nPara cancelamento de pedidos do lado do Seller, utilize a API [v2 cancel_order](link), algumas regras:\n\n1 - Não é possível cancelar uma order após a organização de envio e geração do tracking_number;\n\n2 - Existem 4 motivos disponíveis para cancelamento:\n   1. OUT_OF_STOCK: Para quando o estoque fiver acabado (sempre que esse for o motivo é necessário o envio do array \"item_list\":[\"item_id\", \"model_id\"] );\n   2. CUSTOMER_REQUEST: Quando o Buyer solicita e não consegue mais cancelar sem sua autorização;\n   3. UNDELIVERABLE_AREA: Quando o endereço solicitado não está dentro da sua área de entrega;\n   4. COD_NOT_SUPPORTED: Cash in Delivery, não disponível para o Brasil.\n\nSegue exemplo de request body para cancelamento de order:\n\n```java\n{\n  \"order_sn\": \"2012030005ACB\",\n  \n  \"cancel_reason\": \"OUT_OF_STOCK\",\n  \n  \"item_list\": [{\n    \n    \"item_id\": 1680783,\n    \n    \"model_id\": 327890123\n    \n  }]\n  \n}\n```\n\nCaso receba a mensagem de erro:\n\n\"Can not cancel this order.\" é porque o pedido não pode ser cancelado por já ter sido gerado seu \"tracking_number\", ou porque a order já foi cancelada. Qualquer situação diferente dessas duas, por gentileza nos acionar via [Plataforma de Tickets](link).\n\nJá para solicitação de cancelamento de pedido do lado do buyer, utilize a API [v2 handle_buyer_cancellation](link) para aceitar ou rejeitar a solicitação de cancelamento.\n\n## Dúvidas frequentes (FAQ)\n\n1 - Seguem algumas APIs que não são usadas para integrações no Brasil:\n\n```\n\"v2.order.split_order\"\n\"v2.order.unsplit_order\"\n\"v2.order.get_buyer_invoice_info\"\n\"v2.order.get_pending_buyer_invoice_order_list\"\n\"v2.order.upload_invoice_doc\"\n\"v2.order.download_invoice_doc\"\n```\n\n2 - Por que foi possível criar uma order se o estoque foi zerado semana passada?\n\nExistem dois cenários possíveis, um deles é que o Seller tem um estoque separado e reservado para campanhas, a outra possibilidade é que uma order antiga foi cancelada e restaurou o estoque (toda order cancelada restaura o estoque",
+  "metadata": {
+    "title": "Identifying a New Order",
+    "summary": "This guide provides information on how to identify new orders and manage order statuses using the TikTok Open Platform APIs. It covers various order statuses, cancellation processes, and frequently asked questions related to order management.",
+    "keywords": [
+      "order management",
+      "order status",
+      "OpenAPI",
+      "Seller Center",
+      "API",
+      "cancellation",
+      "tracking number",
+      "Push Marketplace"
+    ],
+    "category": "Integration",
+    "tags": [
+      "orders",
+      "fulfillment",
+      "API",
+      "seller",
+      "buyer"
+    ],
+    "difficulty": "medium",
+    "importance": 4,
+    "use_cases": [
+      "Retrieving a list of orders",
+      "Updating order status",
+      "Canceling an order",
+      "Integrating order management with a seller's system",
+      "Handling buyer cancellation requests"
+    ],
+    "related_apis": [
+      "v2_post_set_push_ordem",
+      "v1_get_order_list",
+      "v2_ship_getlist",
+      "v2_ship_order",
+      "v2 cancel_order",
+      "v2 handle_buyer_cancellation",
+      "v2.order.split_order",
+      "v2.order.unsplit_order",
+      "v2.order.get_buyer_invoice_info",
+      "v2.order.get_pending_buyer_invoice_order_list",
+      "v2.order.upload_invoice_doc",
+      "v2.order.download_invoice_doc"
+    ]
+  }
+}

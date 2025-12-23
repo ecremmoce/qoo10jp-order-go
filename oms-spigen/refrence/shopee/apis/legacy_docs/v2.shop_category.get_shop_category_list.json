@@ -1,0 +1,89 @@
+{
+  "endpoint": "/category/get_shop_category_id",
+  "method": "POST",
+  "description": "Get shop category information",
+  "parameters": [
+    {
+      "name": "url",
+      "type": "string",
+      "required": true,
+      "description": "API endpoint URL"
+    },
+    {
+      "name": "timestamp",
+      "type": "string",
+      "required": true,
+      "description": "Request timestamp"
+    },
+    {
+      "name": "shop_id",
+      "type": "string",
+      "required": true,
+      "description": "Specifies the unique ID of shop to obtain its category info"
+    },
+    {
+      "name": "language",
+      "type": "string",
+      "required": true,
+      "description": "Specifies the shop category language. Default: zh_CN"
+    },
+    {
+      "name": "shop_category_list",
+      "type": "array",
+      "required": true,
+      "description": "The shop category list",
+      "children": [
+        {
+          "name": "shop_category_id",
+          "type": "integer",
+          "description": "Shop category's unique identifier"
+        },
+        {
+          "name": "parent_shop_category_id",
+          "type": "integer",
+          "description": "Parent shop category's unique identifier"
+        },
+        {
+          "name": "name",
+          "type": "string",
+          "description": "Category name"
+        },
+        {
+          "name": "sort_weight",
+          "type": "integer",
+          "description": "Sort weight for display order"
+        },
+        {
+          "name": "has_children",
+          "type": "boolean",
+          "description": "Whether the category has child categories"
+        }
+      ]
+    }
+  ],
+  "response_fields": [],
+  "update_log": [
+    {
+      "date": "2023-07-27",
+      "change": "Add fields formally abandoned"
+    },
+    {
+      "date": "2023-05-15",
+      "change": "Update fields info and description"
+    },
+    {
+      "date": "2023-05-11",
+      "change": "Initial API operation parameters and interface provided"
+    }
+  ],
+  "hidden_fields": [],
+  "metadata": {
+    "total_chunks": 1,
+    "chunks_with_errors": 0,
+    "total_parameters_before_dedup": 5,
+    "total_parameters_after_dedup": 5,
+    "update_log_entries": 3,
+    "hidden_fields_count": 0,
+    "source_results": "workspaces\\v2.shop_category.get_shop_category_list\\results\\all_chunks_results.json"
+  }
+}

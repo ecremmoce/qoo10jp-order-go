@@ -1,0 +1,103 @@
+[
+  {
+    "chunk_index": 1,
+    "total_chunks": 1,
+    "endpoint": "test/api/parameter/kce_site_tracking_number",
+    "method": null,
+    "description": null,
+    "update_log": [
+      {
+        "date": "2023-06-13",
+        "change": "first version"
+      }
+    ],
+    "parameters": [
+      {
+        "name": "URL",
+        "type": "string",
+        "required": true,
+        "description": "https://openplatform.crispshop.tech/{environment}/kce_site_tracking_number",
+        "children": []
+      },
+      {
+        "name": "environment",
+        "type": "string",
+        "required": true,
+        "description": "The value must be set according to your requirements",
+        "children": []
+      },
+      {
+        "name": "request_id",
+        "type": "string",
+        "required": false,
+        "description": "The identifier for an API request life cycle",
+        "children": []
+      },
+      {
+        "name": "lang",
+        "type": "string",
+        "required": false,
+        "description": "Language to be used in the response",
+        "children": []
+      },
+      {
+        "name": "timestamp",
+        "type": "string",
+        "required": false,
+        "description": "Request timestamp",
+        "children": []
+      },
+      {
+        "name": "kce_site_tracking_number",
+        "type": "string",
+        "required": true,
+        "description": "The kce site tracking number parameter",
+        "children": []
+      },
+      {
+        "name": "sign",
+        "type": "string",
+        "required": true,
+        "description": "Signature parameter to protect all API data from being tampered with during transmission",
+        "children": []
+      }
+    ],
+    "error_codes": [
+      {
+        "code": "shop_permission",
+        "description": "You don't have shop permission: {shop_group}"
+      },
+      {
+        "code": "invalid_shop_not_support",
+        "description": "This is invalid http only support shop in {shop}"
+      },
+      {
+        "code": "invalid_shop_not_exists",
+        "description": "Parameter {shop_id} not exist"
+      },
+      {
+        "code": "invalid_shop_wrong_user",
+        "description": "Cannot be queried shop is wrong: invalid for {503456-01}"
+      },
+      {
+        "code": "invalid_not_integer",
+        "description": "The kce site code invalid: you pick to have that value"
+      }
+    ],
+    "notes": "The documentation shows both required and optional parameters, along with detailed error codes. The API appears to be related to tracking number functionality for a shop/commerce platform.",
+    "chunk_metadata": {
+      "index": 1,
+      "total": 1,
+      "y_start": 0,
+      "y_end": 4654,
+      "overlap_top": 0,
+      "overlap_bottom": 0,
+      "height": 4654,
+      "path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\workspaces\\v2.first_mile.generate_first_mile_tracking_number\\chunks\\chunk_001.png",
+      "filename": "chunk_001.png",
+      "width": 837
+    },
+    "analysis_timestamp": "2025-10-10T05:39:55.277134",
+    "model": "claude-3-5-sonnet-20241022"
+  }
+]

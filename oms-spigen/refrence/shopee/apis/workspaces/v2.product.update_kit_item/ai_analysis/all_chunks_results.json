@@ -1,0 +1,113 @@
+[
+  {
+    "chunk_index": 1,
+    "total_chunks": 1,
+    "endpoint": "/calculate-freight",
+    "method": "POST",
+    "description": "Freight calculation API",
+    "update_log": [
+      {
+        "date": "2023-05-10",
+        "change": "API update"
+      }
+    ],
+    "hidden_fields": [],
+    "parameters": [
+      {
+        "name": "shop_id",
+        "type": "string",
+        "required": true,
+        "description": null,
+        "children": []
+      },
+      {
+        "name": "items",
+        "type": "array",
+        "required": true,
+        "description": "Array of items",
+        "children": [
+          {
+            "name": "sku_id",
+            "type": "string",
+            "required": true,
+            "description": null,
+            "children": []
+          },
+          {
+            "name": "quantity",
+            "type": "integer",
+            "required": true,
+            "description": null,
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "address",
+        "type": "object",
+        "required": true,
+        "description": "Shipping address details",
+        "children": [
+          {
+            "name": "country",
+            "type": "string",
+            "required": true,
+            "description": "Two-letter country code",
+            "children": []
+          },
+          {
+            "name": "province",
+            "type": "string",
+            "required": true,
+            "description": null,
+            "children": []
+          },
+          {
+            "name": "city",
+            "type": "string",
+            "required": true,
+            "description": null,
+            "children": []
+          },
+          {
+            "name": "district",
+            "type": "string",
+            "required": false,
+            "description": null,
+            "children": []
+          },
+          {
+            "name": "street",
+            "type": "string",
+            "required": true,
+            "description": null,
+            "children": []
+          },
+          {
+            "name": "postcode",
+            "type": "string",
+            "required": false,
+            "description": null,
+            "children": []
+          }
+        ]
+      }
+    ],
+    "response_fields": [],
+    "notes": "The documentation appears to be a freight calculation API with nested parameters for items and shipping address. The response fields section was not visible in the image.",
+    "chunk_metadata": {
+      "index": 1,
+      "total": 1,
+      "y_start": 0,
+      "y_end": 6710,
+      "overlap_top": 0,
+      "overlap_bottom": 0,
+      "height": 6710,
+      "path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\workspaces\\v2.product.update_kit_item\\chunks\\chunk_001.png",
+      "filename": "chunk_001.png",
+      "width": 837
+    },
+    "analysis_timestamp": "2025-10-10T06:35:45.767814",
+    "model": "claude-3-5-sonnet-20241022"
+  }
+]

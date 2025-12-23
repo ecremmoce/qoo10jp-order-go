@@ -1,0 +1,83 @@
+{
+  "endpoint": null,
+  "method": null,
+  "description": null,
+  "parameters": [
+    {
+      "name": "method",
+      "type": "string",
+      "required": true,
+      "description": "Payment API signature generation method",
+      "children": []
+    },
+    {
+      "name": "url",
+      "type": "string",
+      "required": true,
+      "description": "API URL",
+      "children": []
+    },
+    {
+      "name": "version",
+      "type": "string",
+      "required": true,
+      "description": "API version",
+      "children": []
+    }
+  ],
+  "response_fields": [
+    {
+      "name": "hs_expire_datetime",
+      "type": "string",
+      "description": "The holding scenario expired time",
+      "children": []
+    },
+    {
+      "name": "status",
+      "type": "string",
+      "description": "Transaction status",
+      "children": []
+    },
+    {
+      "name": "message",
+      "type": "string",
+      "description": "Error message when failure occurs",
+      "children": []
+    },
+    {
+      "name": "service_name",
+      "type": "string",
+      "description": "The name of the API request service",
+      "children": []
+    },
+    {
+      "name": "cs_holding_balance",
+      "type": "string",
+      "description": "The total holding balance amount",
+      "children": []
+    },
+    {
+      "name": "payment_method",
+      "type": "string",
+      "description": "The payment method the brand name, default is empty",
+      "children": []
+    },
+    {
+      "name": "state",
+      "type": "string",
+      "description": "The pay state (true for transaction success)",
+      "children": []
+    }
+  ],
+  "update_log": [],
+  "hidden_fields": [],
+  "metadata": {
+    "total_chunks": 1,
+    "chunks_with_errors": 0,
+    "total_parameters_before_dedup": 3,
+    "total_parameters_after_dedup": 3,
+    "update_log_entries": 0,
+    "hidden_fields_count": 0,
+    "source_results": "workspaces\\v2.first_mile.get_detail\\results\\all_chunks_results.json"
+  }
+}

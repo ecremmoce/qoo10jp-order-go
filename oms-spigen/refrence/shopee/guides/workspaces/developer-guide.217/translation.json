@@ -1,0 +1,66 @@
+{
+  "document_id": "developer-guide.217",
+  "document_type": "guide",
+  "platform": "shopee",
+  "content_ko": "# API 호출 흐름 개요\n\n*굵은 글씨는 필수 프로세스이며, 일반 글씨는 필수가 아닌 프로세스입니다.*\n\n## 1. 제품 생성\n\n**시작**\n↓\n**initial_user_webhook_user**\n↓\n**selling_price.list.user_selling_currency** (선택 사항)\n↓\n**master_attributes.product_type** (선택 사항)\n↓\n**selling_location.user_selling_location** (선택 사항)\n↓\n**channel_product.get.linked.product_field** (선택 사항)\n↓\n**product.get.category**\n↓\n**product.get.reference**\n↓\n**product_search_by.id**\n↓\n**product.create.V2**\n↓\n**product.image.push**\n↓\n**product.create.qc.approval** ← **push.product.qc.result**\n↓\n**종료**\n\n---\n\n## 2. 글로벌 제품 생성\n\n**시작**\n↓\n**initial_user.webhook_user**\n↓\n**selling_price.list.user_selling_currency** (선택 사항)\n↓\n**Temp.logistics.detail.product.Type** (선택 사항)\n↓\n**selling_location.user_selling_location** (선택 사항)\n↓\n**master_attributes.get.global_category_id** (선택 사항)\n↓\n**global_product.get.global_item.list**\n↓\n**global_product.get.reference**\n↓\n**Global_product.get.product.id**\n↓\n**global.V2.create.product**\n↓\n**global.V2.product.image.push**\n↓\n**global.product.qc.result.check**\n↓\n**global.product.qc.approval** ← **push.product.qc.result**\n↓\n**종료**\n\n---\n\n## 3. 글로벌 제품 게시\n\n**시작**\n↓\n**global_product.get_publishable_shop**\n↓\n**logistics.get_channel_list**\n↓\n**global_product.create_publish_task**\n↓\n**global_product.get_publish_task_result**\n↓\n**global_product.get_published_list**\n↓\n**종료**\n\n---\n\n# 데이터 정의\n\n## 속성 값 데이터 유형\n(input_validation_type)\n- INT_TYPE\n- STRING_TYPE\n- ENUM_TYPE\n- FLOAT_TYPE\n- TIMESTAMP_TYPE\n- DATE_TYPE\n\n## 속성 입력 유형\n(input_type)\n- DROP_DOWN\n- TEXT_FILED\n- COMBO_BOX\n- MULTIPLE_SELECT\n- MULTIPLE_SELECT_COMBO_BOX\n\n## 물류 유형\n(fee_type)\n- SIZE_SELECTION\n- SIZE_INPUT\n- FIXED_DEFAULT_PRICE\n- CUSTOM_PRICE\n\n## 아이템 상태 유형\n(item_status)\n- NORMAL\n- DELETED\n- BANNED\n- UNLIST\n\n## 번역 언어\n(language)\n- zh-hans: 중국어 간체\n- zh-hant: 중국어 번체\n- ms-my: 말레이어\n- en-my: 영어 (말레이시아)\n- en: 영어\n- id: 인도네시아어\n- vi: 베트남어\n- th: 태국어\n- pt-br: 포르투갈어\n- es-mx: 스페인어 (멕시코)\n- pl: 폴란드어\n- es-CO: 스페인어 (콜롬비아)\n- es-CL: 스페인어 (칠레)\n\n## 재고 유형\n(stock_type)\n- 1: Shopee 창고 재고\n- 2: 판매자 재고\n\n## 제품 프로모션 유형\n(promotion_type)\n- Campaign\n- Discount Promotions\n- Flash Sale\n- Whole Sale\n- Group Buy\n- Bundle Deal\n- Welcome Package\n- Add-on Discount\n- Brand Sale\n- In ShopFlash Sale\n- Gift with purchase\n- Exclusive Price\n\n## 마켓 코드\n- SG: 싱가포르\n- MY: 말레이시아\n- TW: 대만\n- ID: 인도네시아\n- VN: 베트남\n- TH: 태국\n- BR: 브라질\n- PH: 필리핀\n- MX: 멕시코\n- CO: 콜롬비아\n- CL: 칠레\n- PL: 폴란드",
+  "translated_at": "2025-10-16T08:33:12",
+  "char_count": 2349,
+  "metadata_ko": {
+    "title": "API 호출 흐름 개요",
+    "summary": "본 가이드는 제품 생성, 글로벌 제품 생성, 글로벌 제품 게시를 위한 API 호출 흐름에 대한 개요를 제공합니다. 각 흐름에 관련된 필수 및 선택적 프로세스를 설명하여 API 통합에 대한 구조화된 접근 방식을 제공합니다.",
+    "keywords": [
+      "API call flow",
+      "제품 생성",
+      "글로벌 제품",
+      "게시",
+      "workflow",
+      "API integration"
+    ],
+    "category": "Integration",
+    "tags": [
+      "API",
+      "workflow",
+      "product",
+      "global product",
+      "publishing"
+    ],
+    "difficulty": "medium",
+    "importance": 4,
+    "use_cases": [
+      "제품 생성 API와 통합",
+      "글로벌 제품 목록 자동화",
+      "제품 게시 워크플로우 오케스트레이션",
+      "제품 관리를 위한 API 종속성 이해"
+    ],
+    "related_apis": [
+      "initial_user_webhook_user",
+      "selling_price.list.user_selling_currency",
+      "master_attributes.product_type",
+      "selling_location.user_selling_location",
+      "channel_product.get.linked.product_field",
+      "product.get.category",
+      "product.get.reference",
+      "product_search_by.id",
+      "product.create.V2",
+      "product.image.push",
+      "product.create.qc.approval",
+      "push.product.qc.result",
+      "initial_user.webhook_user",
+      "Temp.logistics.detail.product.Type",
+      "master_attributes.get.global_category_id",
+      "global_product.get.global_item.list",
+      "global_product.get.reference",
+      "Global_product.get.product.id",
+      "global.V2.create.product",
+      "global.V2.product.image.push",
+      "global.product.qc.result.check",
+      "global.product.qc.approval",
+      "global_product.get_publishable_shop",
+      "logistics.get_channel_list",
+      "global_product.create_publish_task",
+      "global_product.get_publish_task_result",
+      "global_product.get_published_list"
+    ]
+  },
+  "metadata_translated_at": "2025-10-16T08:33:16"
+}

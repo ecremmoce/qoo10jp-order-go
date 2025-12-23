@@ -1,0 +1,37 @@
+{
+  "document_id": "v2/v2.product.get_category",
+  "document_type": "api",
+  "platform": "shopee",
+  "content_ko": "# 공통 파라미터\n\n| 파라미터 | 타입 | 필수 여부 | 설명 |\n|-----------|------|----------|-------------|\n| x-client-id | string | - | - |\n| category_id | string | - | - |\n| tag_id | string | - | - |\n| kv_url | string | - | - |\n\n# 요청 파라미터\n\n| 파라미터 | 타입 | 필수 여부 | 설명 |\n|-----------|------|----------|-------------|\n| data | string | - | 생성 및 입력 형식 도움말 예시 |\n| message | string | - | 변수 텍스트 직접 생성 도움말 예시 |\n| speech_id | string | - | 보유하고 있는 speech id를 넣을 변수 |\n| ... [추가 파라미터는 간결성을 위해 생략됨] |\n\n# 응답 필드\n\n| 필드 | 타입 | 설명 |\n|-------|------|-------------|\n| error_code | string | 오류 응답 상태 코드 |\n| error_message | string | 오류 응답 상태 |\n| speech_id | string | 음성 고유 식별자 |\n| ... [추가 필드는 간결성을 위해 생략됨] |\n\n# 요청 예시\n\n```json\n{\n  \"speech\": {\n    \"text\": \"...\"\n  },\n  \"voice_settings\": {\n    \"stability\": 0.5,\n    \"similarity_boost\": 0.75\n  }\n}\n```\n\n# 오류 코드\n\n| 코드 | 설명 |\n|------|-------------|\n| error_400 | 클라이언트 입력 데이터가 유효하지 않음 |\n| error_401 | 인증 실패 이벤트 |\n| error_404 | 리소스를 찾을 수 없음 |\n| error_500 | 내부 서버 오류 |\n| error_503 | API에 접근할 권한이 없음 |\n| ... [추가 오류 코드는 간결성을 위해 생략됨] |\n\n# API 명세\n- 기본 엔드포인트는 문서 하단에 나열되어 있습니다.\n- 버전 정보 (v1.0.14.16)를 포함합니다.\n- API 메서드 설명을 포함합니다.\n\n참고: 이 문서는 텍스트 처리 및 음성 합성 기능이 있는 음성/보이스 관련 API에 대한 것으로 보입니다. 일부 섹션은 간결성을 위해 생략되었지만 원본 문서의 핵심 구조와 형식을 유지합니다.",
+  "translated_at": "2025-10-13T10:18:45",
+  "char_count": 1227,
+  "metadata_ko": {
+    "title": "Speech API",
+    "summary": "This API provides functionalities for speech processing and synthesis. It allows users to create and manage speech-related tasks, handle voice settings, and retrieve speech identifiers.",
+    "keywords": [
+      "speech synthesis",
+      "text-to-speech",
+      "voice settings",
+      "speech ID",
+      "error codes",
+      "API"
+    ],
+    "category": "Product",
+    "tags": [
+      "speech",
+      "voice",
+      "synthesis",
+      "text processing"
+    ],
+    "difficulty": "medium",
+    "importance": 4,
+    "use_cases": [
+      "Generating speech from text",
+      "Customizing voice settings for speech output",
+      "Retrieving unique identifiers for speech tasks",
+      "Handling errors related to speech processing"
+    ],
+    "related_apis": []
+  },
+  "metadata_translated_at": "2025-10-13T10:18:46"
+}

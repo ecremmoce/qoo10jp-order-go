@@ -1,0 +1,49 @@
+======================================================================
+API SPECIFICATION SUMMARY
+======================================================================
+
+Endpoint: GET http://partner.dingzepei.com/budget/recommended_item_list
+Description: Get recommended items list
+
+Parameters (5):
+----------------------------------------------------------------------
+* timestamp (timestamp)
+   Request timestamp, format: YYYYMMDDHHmmss
+* access_token (string)
+   Access token to verify user permission to the get recommended items service
+* shop_id (int)
+* sign (string)
+   Signature parameter to confirm authorization
+* request_id (string)
+   Request id is unique for each request
+
+Response Fields (7):
+----------------------------------------------------------------------
+  code (string)
+   Error code, empty when no error occurred
+  message (string)
+   Error description
+  warning (string)
+   If some data cannot request success, set the warning
+  request_id (string)
+   Request id is unique for each request
+  mix_id (int64)
+   Recommended item list id
+  max_status_cnt (int64)
+   The corresponding list no Page field belongs to max_id, maximum follow no next setting field. Assume cancel
+  suggest_ad_click_list (object[])
+   Current list of the ad id no the list. 1-3 pieces.
+
+Metadata:
+----------------------------------------------------------------------
+  total_chunks: 1
+  chunks_with_errors: 0
+  total_parameters_before_dedup: 5
+  total_parameters_after_dedup: 5
+  update_log_entries: 2
+  hidden_fields_count: 0
+  source_results: workspaces\v2.ads.get_recommended_item_list\results\all_chunks_results.json
+
+======================================================================
+Legend: * = required parameter
+======================================================================

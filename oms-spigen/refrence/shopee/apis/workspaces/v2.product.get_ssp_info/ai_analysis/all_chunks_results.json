@@ -1,0 +1,106 @@
+[
+  {
+    "chunk_index": 1,
+    "total_chunks": 1,
+    "endpoint": null,
+    "method": null,
+    "description": null,
+    "update_log": [
+      {
+        "date": "2023-12-05",
+        "change": "Added new endpoints /shopee/product_price/clear_batch_process_result and /shopee/product/remove_item_batch_process_result"
+      },
+      {
+        "date": "2023-11-23",
+        "change": "Added new endpoints"
+      },
+      {
+        "date": "2023-11-22",
+        "change": "Added new field seller_stock"
+      }
+    ],
+    "hidden_fields": [
+      {
+        "name": "seller_stock",
+        "found_in": "update log",
+        "extracted_from_description": true
+      }
+    ],
+    "parameters": [
+      {
+        "name": "batch_id",
+        "type": "string",
+        "required": true,
+        "description": "Batch process ID",
+        "children": []
+      },
+      {
+        "name": "error_code",
+        "type": "integer",
+        "required": false,
+        "description": "Error code",
+        "children": []
+      },
+      {
+        "name": "error_message",
+        "type": "string",
+        "required": false,
+        "description": "Error message",
+        "children": []
+      },
+      {
+        "name": "response",
+        "type": "object",
+        "required": false,
+        "description": "Response data",
+        "children": [
+          {
+            "name": "batch_result",
+            "type": "array",
+            "required": false,
+            "description": "Batch processing results",
+            "children": [
+              {
+                "name": "shop_id",
+                "type": "integer",
+                "required": false,
+                "description": "Shop ID",
+                "children": []
+              },
+              {
+                "name": "error_code",
+                "type": "integer",
+                "required": false,
+                "description": "Error code for this item",
+                "children": []
+              },
+              {
+                "name": "error_message",
+                "type": "string",
+                "required": false,
+                "description": "Error message for this item",
+                "children": []
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "response_fields": [],
+    "notes": "The image appears to be API documentation showing parameters and update history. The documentation seems to be for a batch processing API related to Shopee product management.",
+    "chunk_metadata": {
+      "index": 1,
+      "total": 1,
+      "y_start": 0,
+      "y_end": 7259,
+      "overlap_top": 0,
+      "overlap_bottom": 0,
+      "height": 7259,
+      "path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\workspaces\\v2.product.get_ssp_info\\chunks\\chunk_001.png",
+      "filename": "chunk_001.png",
+      "width": 837
+    },
+    "analysis_timestamp": "2025-10-10T06:31:53.287253",
+    "model": "claude-3-5-sonnet-20241022"
+  }
+]

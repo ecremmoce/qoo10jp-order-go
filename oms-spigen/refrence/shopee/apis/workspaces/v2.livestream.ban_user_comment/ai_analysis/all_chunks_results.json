@@ -1,0 +1,111 @@
+[
+  {
+    "chunk_index": 1,
+    "total_chunks": 1,
+    "endpoint": "/v2/blockchain/ban_user_comment",
+    "method": "POST",
+    "description": "Ban the user from posting comments (Only for BL to try)",
+    "update_log": [
+      {
+        "date": "2025-09-26",
+        "change": "New API"
+      }
+    ],
+    "parameters": [
+      {
+        "name": "partner_id",
+        "type": "string",
+        "required": true,
+        "description": "Partner ID to recognize your registration is successful",
+        "children": []
+      },
+      {
+        "name": "account_token",
+        "type": "string",
+        "required": true,
+        "description": "The token for API access, using to identify user permission to the api, valid for 5min and encode to 4 level",
+        "children": []
+      },
+      {
+        "name": "sign",
+        "type": "string",
+        "required": true,
+        "description": "Signature generated for different APIs",
+        "children": []
+      },
+      {
+        "name": "session_id",
+        "type": "string",
+        "required": true,
+        "description": "The identifier of blockchain session",
+        "children": []
+      },
+      {
+        "name": "ban_user_id",
+        "type": "string",
+        "required": true,
+        "description": "The user id that will be banned from posting comments",
+        "children": []
+      }
+    ],
+    "response_fields": [
+      {
+        "name": "status",
+        "type": "string",
+        "description": "Indicate error type if not done. Empty if no error happened",
+        "children": []
+      },
+      {
+        "name": "message",
+        "type": "string",
+        "description": "Show error details if not done. Empty if no error happened",
+        "children": []
+      },
+      {
+        "name": "request_id",
+        "type": "string",
+        "description": "The identifier for call API request for error tracking",
+        "children": []
+      },
+      {
+        "name": "response",
+        "type": "object",
+        "description": "Detail information you are returning",
+        "children": []
+      }
+    ],
+    "error_codes": [
+      {
+        "code": "error_1001",
+        "description": "some data failed"
+      },
+      {
+        "code": "error_1003",
+        "description": "data not exist"
+      },
+      {
+        "code": "error_1004",
+        "description": "operation invalid"
+      },
+      {
+        "code": "error_1005",
+        "description": "Too old not last succeed"
+      }
+    ],
+    "notes": "The documentation includes URL parameters, request parameters, response parameters, request examples, response examples, and error codes. The API appears to be related to banning users from commenting functionality in a blockchain system.",
+    "chunk_metadata": {
+      "index": 1,
+      "total": 1,
+      "y_start": 0,
+      "y_end": 4043,
+      "overlap_top": 0,
+      "overlap_bottom": 0,
+      "height": 4043,
+      "path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\workspaces\\v2.livestream.ban_user_comment\\chunks\\chunk_001.png",
+      "filename": "chunk_001.png",
+      "width": 837
+    },
+    "analysis_timestamp": "2025-10-10T05:53:23.454094",
+    "model": "claude-3-5-sonnet-20241022"
+  }
+]

@@ -1,0 +1,71 @@
+{
+  "endpoint": "/headwearsdk/update_session",
+  "method": "POST",
+  "description": "Headwear SDK update session endpoint",
+  "parameters": [
+    {
+      "name": "session_id",
+      "type": "string",
+      "required": true,
+      "description": "The identifier of headwear session",
+      "children": []
+    },
+    {
+      "name": "member_id",
+      "type": "string",
+      "required": false,
+      "description": "The description of the headwear session current ISD transaction",
+      "children": []
+    },
+    {
+      "name": "cover_photo_url",
+      "type": "string",
+      "required": true,
+      "description": "The cover image url of the headwear session, must be PNG format and upload the session image file and get its cover_photo_url",
+      "children": []
+    },
+    {
+      "name": "is_add",
+      "type": "boolean",
+      "required": true,
+      "description": "Indicate whether the headwear session IDs you received add",
+      "children": []
+    }
+  ],
+  "response_fields": [
+    {
+      "name": "error",
+      "type": "string",
+      "description": "Indicate error type if any error. Empty if no error",
+      "children": []
+    },
+    {
+      "name": "message",
+      "type": "string",
+      "description": "Indicate error details if any error. Empty if no response",
+      "children": []
+    },
+    {
+      "name": "request_id",
+      "type": "string",
+      "description": "The identifier for an API request for error tracking",
+      "children": []
+    }
+  ],
+  "update_log": [
+    {
+      "date": "2020-08-24",
+      "change": "New API"
+    }
+  ],
+  "hidden_fields": [],
+  "metadata": {
+    "total_chunks": 1,
+    "chunks_with_errors": 0,
+    "total_parameters_before_dedup": 4,
+    "total_parameters_after_dedup": 4,
+    "update_log_entries": 1,
+    "hidden_fields_count": 0,
+    "source_results": "workspaces\\v2.livestream.update_session\\results\\all_chunks_results.json"
+  }
+}

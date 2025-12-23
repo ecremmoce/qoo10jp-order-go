@@ -1,0 +1,40 @@
+======================================================================
+API SPECIFICATION SUMMARY
+======================================================================
+
+Endpoint: None None
+
+Parameters (9):
+----------------------------------------------------------------------
+  category_id (string)
+   Filter products by category id
+  image (string)
+   Filter products by image
+  images (array)
+   Filter products by multiple images
+  name (string)
+   Filter products by name
+  reference_id (string)
+   Filter products by reference id
+  description (string)
+   Filter products by description
+  variants (array)
+   Filter products by variants. Each variant can have fields like product_variant_id and campaign_id
+  price (float)
+   Filter products by price
+  stock (integer)
+   Filter products by stock quantity
+
+Metadata:
+----------------------------------------------------------------------
+  total_chunks: 1
+  chunks_with_errors: 0
+  total_parameters_before_dedup: 9
+  total_parameters_after_dedup: 9
+  update_log_entries: 0
+  hidden_fields_count: 2
+  source_results: workspaces\v2.product.add_kit_item\results\all_chunks_results.json
+
+======================================================================
+Legend: * = required parameter
+======================================================================

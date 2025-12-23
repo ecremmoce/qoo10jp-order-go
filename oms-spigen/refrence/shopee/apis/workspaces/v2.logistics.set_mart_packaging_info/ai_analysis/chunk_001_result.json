@@ -1,0 +1,113 @@
+{
+  "chunk_index": 1,
+  "total_chunks": 1,
+  "endpoint": "/logistics/tool_real_packaging_info",
+  "method": "POST",
+  "description": "API to get logistics packaging information for calculating commission",
+  "update_log": [
+    {
+      "date": "2024-01-07",
+      "change": "API Created"
+    }
+  ],
+  "parameters": [
+    {
+      "name": "access_token",
+      "type": "string",
+      "required": true,
+      "description": "The token for API access, used to identify user permission to use this API",
+      "children": []
+    },
+    {
+      "name": "shop_id",
+      "type": "string",
+      "required": true,
+      "description": "Shop ID",
+      "children": []
+    },
+    {
+      "name": "request_id",
+      "type": "string",
+      "required": false,
+      "description": "Request if needed to call to trace",
+      "children": []
+    },
+    {
+      "name": "weight",
+      "type": "float",
+      "required": true,
+      "description": "The weight of the packaging in centimeters",
+      "children": []
+    },
+    {
+      "name": "width",
+      "type": "float",
+      "required": true,
+      "description": "The width of the packaging in centimeters",
+      "children": []
+    },
+    {
+      "name": "length",
+      "type": "float",
+      "required": true,
+      "description": "The length of the packaging in centimeters",
+      "children": []
+    },
+    {
+      "name": "packaging_fee",
+      "type": "float",
+      "required": false,
+      "description": "The packaging fee size or cost aspects level",
+      "children": []
+    },
+    {
+      "name": "value",
+      "type": "float",
+      "required": false,
+      "description": "The packaging fee cost",
+      "children": []
+    }
+  ],
+  "response_fields": [
+    {
+      "name": "request_id",
+      "type": "string",
+      "description": "Request ID"
+    },
+    {
+      "name": "error",
+      "type": "string",
+      "description": "Error code if any error. Empty if no error"
+    },
+    {
+      "name": "message",
+      "type": "string",
+      "description": "Error message if any error. Empty if no error"
+    },
+    {
+      "name": "request_id",
+      "type": "string",
+      "description": "The identifier to call API request for error tracing"
+    },
+    {
+      "name": "response",
+      "type": "boolean",
+      "description": "Detail information you are scanning"
+    }
+  ],
+  "notes": "The documentation includes Common Parameters, Request Parameters, Response Parameters, Request Example, Response Example, Error Codes, and API Tools sections. The API appears to be related to logistics packaging information calculation.",
+  "chunk_metadata": {
+    "index": 1,
+    "total": 1,
+    "y_start": 0,
+    "y_end": 4405,
+    "overlap_top": 0,
+    "overlap_bottom": 0,
+    "height": 4405,
+    "path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\workspaces\\v2.logistics.set_mart_packaging_info\\chunks\\chunk_001.png",
+    "filename": "chunk_001.png",
+    "width": 837
+  },
+  "analysis_timestamp": "2025-10-10T06:07:26.684974",
+  "model": "claude-3-5-sonnet-20241022"
+}

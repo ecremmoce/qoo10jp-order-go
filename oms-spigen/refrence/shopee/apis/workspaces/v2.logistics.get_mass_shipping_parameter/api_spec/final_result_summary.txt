@@ -1,0 +1,51 @@
+======================================================================
+API SPECIFICATION SUMMARY
+======================================================================
+
+Endpoint: POST /api/v2/product/release_product
+Description: Release product API
+
+Parameters (2):
+----------------------------------------------------------------------
+* seller_id (string)
+   Seller ID
+* product (object)
+   Product information object
+  * title (string)
+     Product title
+  * price (float)
+     Product price
+  * description (string)
+     Product description
+  * category (string)
+     Product category
+  * images (array)
+     Array of product image URLs
+  * specifications (object)
+     Product specifications
+    * brand (string)
+       Product brand name
+    * model (string)
+       Product model number
+    * dimensions (object)
+       Product dimensions
+      * length (float)
+         Length in cm
+      * width (float)
+         Width in cm
+      * height (float)
+         Height in cm
+
+Metadata:
+----------------------------------------------------------------------
+  total_chunks: 1
+  chunks_with_errors: 0
+  total_parameters_before_dedup: 2
+  total_parameters_after_dedup: 2
+  update_log_entries: 1
+  hidden_fields_count: 0
+  source_results: workspaces\v2.logistics.get_mass_shipping_parameter\results\all_chunks_results.json
+
+======================================================================
+Legend: * = required parameter
+======================================================================

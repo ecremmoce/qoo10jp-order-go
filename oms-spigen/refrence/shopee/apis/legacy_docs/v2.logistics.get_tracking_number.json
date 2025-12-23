@@ -1,0 +1,85 @@
+{
+  "endpoint": "http://api.external.market/market/api/selling_system",
+  "method": "GET",
+  "description": "Market selling system API documentation",
+  "parameters": [
+    {
+      "name": "Content Parameters",
+      "type": "object",
+      "required": true,
+      "description": "Content parameters section",
+      "children": [
+        {
+          "name": "url_id",
+          "type": "string",
+          "required": true,
+          "description": "The URL identifier"
+        }
+      ]
+    },
+    {
+      "name": "Request Parameters",
+      "type": "object",
+      "required": true,
+      "description": "Request parameters section",
+      "children": [
+        {
+          "name": "seller_id",
+          "type": "string",
+          "required": true,
+          "description": "Request seller ID number for query"
+        },
+        {
+          "name": "market_serial_id",
+          "type": "string",
+          "required": false,
+          "description": "Market serial identifier"
+        }
+      ]
+    },
+    {
+      "name": "Response Parameters",
+      "type": "object",
+      "required": true,
+      "description": "Response parameters section",
+      "children": [
+        {
+          "name": "serial_id",
+          "type": "string",
+          "required": true,
+          "description": "The identifier for staff report for each building"
+        },
+        {
+          "name": "area",
+          "type": "string",
+          "required": true,
+          "description": "Geographic area"
+        },
+        {
+          "name": "building_number",
+          "type": "string",
+          "required": true,
+          "description": "Building identifier number"
+        },
+        {
+          "name": "selling_system",
+          "type": "string",
+          "required": true,
+          "description": "The building number in the case"
+        }
+      ]
+    }
+  ],
+  "response_fields": [],
+  "update_log": [],
+  "hidden_fields": [],
+  "metadata": {
+    "total_chunks": 1,
+    "chunks_with_errors": 0,
+    "total_parameters_before_dedup": 3,
+    "total_parameters_after_dedup": 3,
+    "update_log_entries": 0,
+    "hidden_fields_count": 0,
+    "source_results": "workspaces\\v2.logistics.get_tracking_number\\results\\all_chunks_results.json"
+  }
+}

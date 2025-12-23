@@ -1,0 +1,125 @@
+{
+  "endpoint": "/api/v2/product/release_product",
+  "method": "POST",
+  "description": "Release product API",
+  "parameters": [
+    {
+      "name": "seller_id",
+      "type": "string",
+      "required": true,
+      "description": "Seller ID",
+      "children": []
+    },
+    {
+      "name": "product",
+      "type": "object",
+      "required": true,
+      "description": "Product information object",
+      "children": [
+        {
+          "name": "title",
+          "type": "string",
+          "required": true,
+          "description": "Product title",
+          "children": []
+        },
+        {
+          "name": "price",
+          "type": "float",
+          "required": true,
+          "description": "Product price",
+          "children": []
+        },
+        {
+          "name": "description",
+          "type": "string",
+          "required": true,
+          "description": "Product description",
+          "children": []
+        },
+        {
+          "name": "category",
+          "type": "string",
+          "required": true,
+          "description": "Product category",
+          "children": []
+        },
+        {
+          "name": "images",
+          "type": "array",
+          "required": true,
+          "description": "Array of product image URLs",
+          "children": []
+        },
+        {
+          "name": "specifications",
+          "type": "object",
+          "required": true,
+          "description": "Product specifications",
+          "children": [
+            {
+              "name": "brand",
+              "type": "string",
+              "required": true,
+              "description": "Product brand name",
+              "children": []
+            },
+            {
+              "name": "model",
+              "type": "string",
+              "required": true,
+              "description": "Product model number",
+              "children": []
+            },
+            {
+              "name": "dimensions",
+              "type": "object",
+              "required": true,
+              "description": "Product dimensions",
+              "children": [
+                {
+                  "name": "length",
+                  "type": "float",
+                  "required": true,
+                  "description": "Length in cm",
+                  "children": []
+                },
+                {
+                  "name": "width",
+                  "type": "float",
+                  "required": true,
+                  "description": "Width in cm",
+                  "children": []
+                },
+                {
+                  "name": "height",
+                  "type": "float",
+                  "required": true,
+                  "description": "Height in cm",
+                  "children": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "response_fields": [],
+  "update_log": [
+    {
+      "date": "2023-08-28",
+      "change": "Added new fields and logic updates"
+    }
+  ],
+  "hidden_fields": [],
+  "metadata": {
+    "total_chunks": 1,
+    "chunks_with_errors": 0,
+    "total_parameters_before_dedup": 2,
+    "total_parameters_after_dedup": 2,
+    "update_log_entries": 1,
+    "hidden_fields_count": 0,
+    "source_results": "workspaces\\v2.logistics.get_mass_shipping_parameter\\results\\all_chunks_results.json"
+  }
+}

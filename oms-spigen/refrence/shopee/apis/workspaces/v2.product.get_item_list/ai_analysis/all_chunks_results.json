@@ -1,0 +1,89 @@
+[
+  {
+    "chunk_index": 1,
+    "total_chunks": 1,
+    "endpoint": null,
+    "method": null,
+    "description": null,
+    "update_log": [
+      {
+        "date": "2023-07-14",
+        "change": "Changed response parameter"
+      },
+      {
+        "date": "2023-06-16",
+        "change": "Added status values"
+      },
+      {
+        "date": "2023-04-26",
+        "change": "Initial release"
+      }
+    ],
+    "hidden_fields": [],
+    "parameters": [
+      {
+        "name": "date_str",
+        "type": "string",
+        "required": true,
+        "description": "Format: YYYY-MM-DD HH:mm:ss",
+        "children": []
+      },
+      {
+        "name": "status",
+        "type": "string",
+        "required": false,
+        "description": "Multiple status values can be passed using commas",
+        "children": []
+      },
+      {
+        "name": "user_id",
+        "type": "string",
+        "required": false,
+        "description": "User ID",
+        "children": []
+      }
+    ],
+    "response_fields": [
+      {
+        "name": "code",
+        "type": "integer",
+        "description": "Response code",
+        "children": []
+      },
+      {
+        "name": "message",
+        "type": "string",
+        "description": "Response message",
+        "children": []
+      },
+      {
+        "name": "data",
+        "type": "object",
+        "description": "Response data object",
+        "children": [
+          {
+            "name": "list",
+            "type": "array",
+            "description": "List of data items",
+            "children": []
+          }
+        ]
+      }
+    ],
+    "notes": "The image appears to be an API documentation page showing request parameters, response format and update history. The endpoint and method information are not visible in this chunk. There are several response examples shown but they appear to be truncated or partially visible.",
+    "chunk_metadata": {
+      "index": 1,
+      "total": 1,
+      "y_start": 0,
+      "y_end": 6189,
+      "overlap_top": 0,
+      "overlap_bottom": 0,
+      "height": 6189,
+      "path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\workspaces\\v2.product.get_item_list\\chunks\\chunk_001.png",
+      "filename": "chunk_001.png",
+      "width": 837
+    },
+    "analysis_timestamp": "2025-10-10T06:28:40.884437",
+    "model": "claude-3-5-sonnet-20241022"
+  }
+]

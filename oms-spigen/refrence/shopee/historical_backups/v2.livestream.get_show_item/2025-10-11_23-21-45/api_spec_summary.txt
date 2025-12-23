@@ -1,0 +1,54 @@
+======================================================================
+API SPECIFICATION SUMMARY
+======================================================================
+
+Endpoint: GET /openplatform/get_voice_json
+Description: Voice API endpoint
+
+Parameters (3):
+----------------------------------------------------------------------
+* session_id (string)
+   Parent ID is assigned upon registration in successful authentication for all requests
+* access_token (string)
+   The token for API system, which is identity care permission to access openplatform, expires in 2 hours
+* sign (string)
+   Signature generated dynamically as follows:sha1(session_id + access_token + time_stamp + secret_key), if your parameters are incorrect, it will be prompting parameter error
+
+Response Fields (11):
+----------------------------------------------------------------------
+  time (string)
+   Server time
+  timestamp (string)
+   Timestamp
+  session_id (string)
+   The number for user
+  code (integer)
+   Error information code got during
+  msg (string)
+   The state of the item in the receiving
+  msg_id (string)
+   The serial number of the item
+  status (string)
+   Name of the item in your language
+  price (integer)
+   The price of the item
+  total_price (float)
+   The total price rate representing the currency unit rate of the item
+  country_price (float)
+   The current price of the item in the listing percentage - shows your price based on percentage
+  original_price (float)
+   The original price of the item in the listing
+
+Metadata:
+----------------------------------------------------------------------
+  total_chunks: 1
+  chunks_with_errors: 0
+  total_parameters_before_dedup: 3
+  total_parameters_after_dedup: 3
+  update_log_entries: 1
+  hidden_fields_count: 0
+  source_results: platforms\shopee\apis\workspaces\v2.livestream.get_show_item\results\all_chunks_results.json
+
+======================================================================
+Legend: * = required parameter
+======================================================================

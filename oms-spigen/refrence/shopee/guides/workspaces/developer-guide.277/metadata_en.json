@@ -1,0 +1,53 @@
+{
+  "document_id": "developer-guide.277",
+  "document_type": "guide",
+  "platform": "shopee",
+  "extracted_at": "2025-10-16T08:58:56",
+  "extracted_text": "# Ads Open API Usage Rules\n\nWhen using the ads/storefront_api, you need to abide by the following rules as have listed as how Shopee can create a fair and equal marketplace for both sellers and buyers:\n\n1. When processing advertising data, you need to comply with the platform's **data protection policy**.\n2. With all items in S, Shopee's official cooperation CPS limit is used with platform users. If can be used to the new user/buyer for affiliate marketing use, the payment amount must be reasonable and cannot be used for other purposes.\n3. Since data may be used for any purpose other than shop operations and official Shopee cooperation projects, when accessing data through this API, you need to obtain the consent of the platform seller, and be able to use the information publicly.\n4. In no way/should a catalyst: you, our names and links, you will receive a warning email from Shopee. If you fail to modify it in time, you may lose your privileges.\n\n---\n\n# Ads Open API Instruction\n\n## Balance Ad Budget and Retrieve Budget Information\n\n- You can top up your ad account with **wallet balance** and we will notify you via email once done.\n- Your credits, before use, convert their balance status through this API to ensure that the balance is sufficient to run the advertisements.\n- If your balance is insufficient, you need to return to where the shop's ad settings, such as whether daily bid, get and price optimization features are enabled.\n\n### MyLite/Shopee-Budgetbalada-wallet-top-up\n\n[Interface elements showing budget balance and top-up options with \"Top-up balance\" button highlighted]\n\n**Campaign, Single** - Enable balance notifications\n\n[Screenshot showing \"Shopee Ads Shop Level Settings\" dialog with balance notification settings]\n\n---\n\n## 3. Retrieve Recommended Keywords and Product Data\n\nYou can use <CT ads_get_recommended_keywords_by_item> API to retrieve a list of recommended keywords for item, along with optional search keywords. Search info also view keyword popular scores, search volume, and suggested bids.\n\n- <CT ads_get_recommended_products> Item list that can be added to advertising campaigns. We also define if an item is recommended, and if item fails to promote, it will display a list of recommended SDGs shop-level ads specific campaigns.\n\n## Select Products\n\n[Table showing product selection interface with columns for Product, Status, Views, Product Name]\n\n---\n\n## Add Keywords\n\n[Table showing keyword data with columns for Keywords, Exposure (Last 30 D), Popularity, etc.]\n\n---\n\n## 4. Retrieve Campaign Level Data\n\nUse the <CT ads_get_campaign_list> API to retrieve the list of all campaigns associated with a specific shop.\n\nUse the API to get the list of all the campaigns.\n\n- <CT ads_get_product_campaign_data> and <CT ads_get_product_campaign_daily_performance> Use this API to retrieve detailed settings for a specific campaign and <CT ads_get_product_keyword_performance> and <CT ads_get_product_campaign_daily_performance> Use these APIs to obtain campaign-level performance data, such as ad spend, impressions, clicks, conversions, etc.\n\n### API_CREATE_1\n\n[Performance data table showing metrics like Exposure, Click, Cost, etc.]\n\n### Conversions\n\n[Conversion tracking interface]\n\n### Performance Chart\n\n[Chart showing performance metrics over time with data points for Exposure, Click, Direct Order, etc.]\n\n---\n\n## 5. Create Ads Product Ads\n\nUse <CT ads_create_product_ads> API to create ads. (Retrieve shop creation)\n\n---\n\n## Products\n\n**Budget Ad Storefront**\n\nAutomatically select best products(s)\n\n- Add products to the shop's storefront ads\n- Retrieve the ad in your Seller Center\n\n---\n\n## 6. Create Daily Max and Manual Product Ads\n\n- <CT ads_create_manual_product_ads>\n\nTo create daily max ads, pass bidding_method:manual\n\nTo create Manual ads, pass bidding_method:manual\n\n### Summary\n\n[Interface showing budget settings]\n\n### Manually manage products\n\n[Interface showing manual product management options]\n\n### Bidding\n\n[Interface showing bidding options with \"Set by CPC Model\" and \"Manually Individually\" radio buttons]\n\n---\n\n## Basic Settings\n\nWhen creating manual ads, bidding_method:manual, you can use <CT ads_set_environment_item_list> and <CT ads_set_recommended_keywords_list> to get suggested products and keywords for advertising. Then, input the budget and ad-tier-recommendations data to pass to the creation API.\n\n---\n\n## Retrieve Ad Budget and ROAs\n\n- Retrieve ad budget use ROAs\n- <CT ads_get_recommended_roi_target> Get the ROAs (Return on Ad Spend) value when creating CPC Max ads.\n\n---\n\n## Basic Settings\n\n[Warning box with text: \"❗ SET BY CPC MODEL - Automatically adjust keyword bidding for better exposure\"]\n\n**Notice: When creating CPC Max ads, PASS THE ROAs target value to the API (Return on Ad Spend).**\n\n---\n\n# 7. Retrieve Ad Budget and ROAS\n\n## API Endpoints\n\n- **v2.ads.get_product_recommended_roi_target**: Get the ROAS (Return on Ad Spend) value when creating GMV Max ads.\n\n- **v2.ads.get_create_product_ad_budget_suggestion**: Retrieve budget suggestions for creating product ads.\n\n---\n\n## Basic Settings\n\n### Budget\n- **Unlimited**\n- **Set daily budget**: Rp 0\n  - Suggested: Rp7,046\n\n### Duration\n- **No end date**\n- **Set start/end dates**: 📅 21/04 - 21/05 (GMT+7)\n\n---\n\n## Bidding\n\n### Bidding Method\n\n#### GMV Max\nLet Shopee find the best way to deliver your ads to shoppers for optimal performance over time.\n\n**Set your ROAS target**\n\n**GMV Max Auto Bidding**\nShopee increases or decreases within your daily budget while maintaining a healthy ROAS.\n\n#### GMV Max Custom ROAS 🅘\nSet a Target ROAS (goal) to enhance your ad's profitability. Achieve 86%-126% of your Target ROAS after 7 days of ad learning.\n\n**ROAS Options:**\n- ⭕ **ROAS = 3.0** - Better competitiveness than 30% of similar ads\n- **ROAS = 4.4** - Better competitiveness than 50% of similar ads  \n- **ROAS = 5.3** - Better competitiveness than 70% of similar ads\n- **Set a value**\n\n> For best results, avoid modifying your ROAS target setting in the first 14 days after publishing. [Learn more](link)\n\n#### Manual\nConfigure all bidding settings manually.\n\n---\n\n## Troubleshooting\n\nIf you encounter problems, it is recommended to check the [Developer Guide](link) and search for [FAQ](link).\n\nIf you encounter problems, please log in to the Open Platform Console to [Raise a ticket](link).\n\n---\n\n## Ads service API Permission\n\n📍 https://open.shopee.cn/faq/381\n\n---\n\n**Note**: ⓘ Learn about bidding methods",
+  "metadata": {
+    "title": "Ads Open API Usage Rules and Instructions",
+    "summary": "This guide provides rules and instructions for using the Ads Open API. It covers topics such as data protection, budget management, keyword retrieval, campaign data, ad creation, and ROAS optimization. The guide also includes troubleshooting tips and API permission information.",
+    "keywords": [
+      "Ads Open API",
+      "Advertising",
+      "Budget Management",
+      "Keywords",
+      "Campaign Data",
+      "Product Ads",
+      "ROAS",
+      "Bidding Methods"
+    ],
+    "category": "Integration",
+    "tags": [
+      "API",
+      "Ads",
+      "Shopee",
+      "Marketing",
+      "Developers"
+    ],
+    "difficulty": "medium",
+    "importance": 4,
+    "use_cases": [
+      "Managing ad campaigns programmatically",
+      "Retrieving recommended keywords for ads",
+      "Creating product ads via API",
+      "Optimizing ad budget and ROAS",
+      "Integrating ad data into external systems"
+    ],
+    "related_apis": [
+      "ads_get_recommended_keywords_by_item",
+      "ads_get_recommended_products",
+      "ads_get_campaign_list",
+      "ads_get_product_campaign_data",
+      "ads_get_product_campaign_daily_performance",
+      "ads_get_product_keyword_performance",
+      "ads_create_product_ads",
+      "ads_create_manual_product_ads",
+      "ads_set_environment_item_list",
+      "ads_set_recommended_keywords_list",
+      "ads_get_recommended_roi_target",
+      "v2.ads.get_product_recommended_roi_target",
+      "v2.ads.get_create_product_ad_budget_suggestion"
+    ]
+  }
+}

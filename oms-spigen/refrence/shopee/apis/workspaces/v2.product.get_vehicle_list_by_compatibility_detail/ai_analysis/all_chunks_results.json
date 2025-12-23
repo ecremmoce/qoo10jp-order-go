@@ -1,0 +1,122 @@
+[
+  {
+    "chunk_index": 1,
+    "total_chunks": 1,
+    "endpoint": "/compatibility_check",
+    "method": "GET",
+    "description": "Check compatibility settings",
+    "update_log": [],
+    "hidden_fields": [],
+    "parameters": [
+      {
+        "name": "compatibility_select",
+        "type": "string",
+        "required": true,
+        "description": "To select compatibility list will be input",
+        "children": []
+      },
+      {
+        "name": "event_id",
+        "type": "string",
+        "required": true,
+        "description": "ID of the event",
+        "children": []
+      },
+      {
+        "name": "model_id",
+        "type": "string",
+        "required": true,
+        "description": "ID of the model",
+        "children": []
+      },
+      {
+        "name": "language",
+        "type": "string",
+        "required": true,
+        "description": "A language is pre-defined by default",
+        "children": []
+      }
+    ],
+    "response_fields": [
+      {
+        "name": "error",
+        "type": "string",
+        "description": "Indicate error first line error. Empty if no error",
+        "children": []
+      },
+      {
+        "name": "message",
+        "type": "string",
+        "description": "Message error first line error. Empty if no error",
+        "children": []
+      },
+      {
+        "name": "warning",
+        "type": "string",
+        "description": "Always empty before first error. Empty if no error",
+        "children": []
+      },
+      {
+        "name": "model_type",
+        "type": "string",
+        "description": "Name of the model",
+        "children": []
+      },
+      {
+        "name": "event_id",
+        "type": "string",
+        "description": "ID of the event",
+        "children": []
+      },
+      {
+        "name": "model_name",
+        "type": "string",
+        "description": "Name of the model",
+        "children": []
+      },
+      {
+        "name": "line_id",
+        "type": "integer",
+        "description": "ID of the line",
+        "children": []
+      },
+      {
+        "name": "cell_name",
+        "type": "string",
+        "description": "Name of the cell",
+        "children": []
+      },
+      {
+        "name": "model_status",
+        "type": "string",
+        "description": "Name of the status",
+        "children": []
+      }
+    ],
+    "error_codes": [
+      {
+        "code": "error_404",
+        "description": "show alert failed"
+      },
+      {
+        "code": "error_500",
+        "description": "parameter error"
+      }
+    ],
+    "notes": "The documentation shows both request parameters and response fields in detail, along with error codes. The endpoint appears to be for checking compatibility settings.",
+    "chunk_metadata": {
+      "index": 1,
+      "total": 1,
+      "y_start": 0,
+      "y_end": 4785,
+      "overlap_top": 0,
+      "overlap_bottom": 0,
+      "height": 4785,
+      "path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\workspaces\\v2.product.get_vehicle_list_by_compatibility_detail\\chunks\\chunk_001.png",
+      "filename": "chunk_001.png",
+      "width": 837
+    },
+    "analysis_timestamp": "2025-10-10T06:32:40.369310",
+    "model": "claude-3-5-sonnet-20241022"
+  }
+]

@@ -1,0 +1,38 @@
+======================================================================
+API SPECIFICATION SUMMARY
+======================================================================
+
+Endpoint: None order_upload_invoice_doc
+Description: This endpoint is for file upload use cases, cannot be directly executed
+
+Parameters (3):
+----------------------------------------------------------------------
+* partner_id (string)
+   Partner ID or completed user registration is successful
+* access_token (string)
+   This is to ensure the timelines of the request. Required to complete at phase 3 (session)
+* sign (string)
+   Signature generated to confirm API call rate, timestamp, etc. For each multiple use and expires in 5 mins
+
+Response Fields (3):
+----------------------------------------------------------------------
+  partner_id (string)
+   No specifics for an VN request by error
+  error (string)
+   Invalid error auth. Please try error
+  message (string)
+   Invalid error token. For error. Empty if no message
+
+Metadata:
+----------------------------------------------------------------------
+  total_chunks: 1
+  chunks_with_errors: 0
+  total_parameters_before_dedup: 3
+  total_parameters_after_dedup: 3
+  update_log_entries: 2
+  hidden_fields_count: 0
+  source_results: workspaces\v2.order.upload_invoice_doc\results\all_chunks_results.json
+
+======================================================================
+Legend: * = required parameter
+======================================================================

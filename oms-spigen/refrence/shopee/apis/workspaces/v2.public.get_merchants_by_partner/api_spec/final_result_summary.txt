@@ -1,0 +1,37 @@
+======================================================================
+API SPECIFICATION SUMMARY
+======================================================================
+
+Endpoint: POST /openapi/openwelink/api/v2/public_api_parshield_by_partner
+Description: API to generate one time URL to access some web services in the partner
+
+Parameters (7):
+----------------------------------------------------------------------
+* partner_id (string)
+   Identifier for partner
+* service_type (string)
+   Service type (Chinese Statement, Read, etc.)
+* member_id (string)
+   Request's unique identifier for a merchant
+  auto_type (timestamp)
+   The timestamp when the valid end date will be generated
+  expire_time (timestamp)
+   The deadline to an API request for every sharing
+* request_id (string)
+   Request unique identifier
+  type (boolean)
+   This is to indicate whether the link is once time link or share. If the user's type is once time link then user can only visit the web service when URL is accessed once
+
+Metadata:
+----------------------------------------------------------------------
+  total_chunks: 1
+  chunks_with_errors: 0
+  total_parameters_before_dedup: 7
+  total_parameters_after_dedup: 7
+  update_log_entries: 1
+  hidden_fields_count: 0
+  source_results: workspaces\v2.public.get_merchants_by_partner\results\all_chunks_results.json
+
+======================================================================
+Legend: * = required parameter
+======================================================================

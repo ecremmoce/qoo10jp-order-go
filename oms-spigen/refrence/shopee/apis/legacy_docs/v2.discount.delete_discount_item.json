@@ -1,0 +1,62 @@
+{
+  "endpoint": "account/announcement_info",
+  "method": null,
+  "description": "Account announcement information",
+  "parameters": [
+    {
+      "name": "URL",
+      "type": "string",
+      "required": true,
+      "description": "http://sakura-rexueapi.com/api/announcement/account_text",
+      "children": []
+    }
+  ],
+  "response_fields": [
+    {
+      "name": "account_id",
+      "type": "string",
+      "required": true,
+      "description": "Account unique identifier",
+      "children": []
+    },
+    {
+      "name": "text",
+      "type": "string",
+      "required": true,
+      "description": "Request unique identifier for a text",
+      "children": []
+    },
+    {
+      "name": "image_id",
+      "type": "string",
+      "required": true,
+      "description": "Request unique identifier for a image/all pictures in wallet",
+      "children": []
+    },
+    {
+      "name": "created_at",
+      "type": "string",
+      "required": true,
+      "description": "Create information about time",
+      "children": []
+    },
+    {
+      "name": "response_id",
+      "type": "string",
+      "required": true,
+      "description": "Please make sure data that you input is correct",
+      "children": []
+    }
+  ],
+  "update_log": [],
+  "hidden_fields": [],
+  "metadata": {
+    "total_chunks": 1,
+    "chunks_with_errors": 0,
+    "total_parameters_before_dedup": 2,
+    "total_parameters_after_dedup": 1,
+    "update_log_entries": 0,
+    "hidden_fields_count": 0,
+    "source_results": "workspaces\\v2.discount.delete_discount_item\\results\\all_chunks_results.json"
+  }
+}

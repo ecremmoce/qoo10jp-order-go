@@ -1,0 +1,102 @@
+[
+  {
+    "chunk_index": 1,
+    "total_chunks": 1,
+    "endpoint": "/gateway/api/xxxxxxxxx/{appKey}/merchant_update_statistics",
+    "method": "POST",
+    "description": null,
+    "update_log": [],
+    "hidden_fields": [],
+    "parameters": [
+      {
+        "name": "URL",
+        "type": "string",
+        "required": true,
+        "description": "Request URL endpoint",
+        "children": []
+      },
+      {
+        "name": "URL_Method",
+        "type": "string",
+        "required": true,
+        "description": "HTTP request method",
+        "children": []
+      },
+      {
+        "name": "URL_Return",
+        "type": "string",
+        "required": true,
+        "description": "Return URL",
+        "children": []
+      },
+      {
+        "name": "status_id",
+        "type": "string",
+        "required": true,
+        "description": "Status ID for the request",
+        "children": []
+      },
+      {
+        "name": "message",
+        "type": "string",
+        "required": true,
+        "description": "Response message",
+        "children": []
+      },
+      {
+        "name": "created",
+        "type": "string",
+        "required": true,
+        "description": "Creation timestamp",
+        "children": []
+      },
+      {
+        "name": "min_alpha_period",
+        "type": "float",
+        "required": true,
+        "description": "Minimum alpha period value",
+        "children": []
+      },
+      {
+        "name": "max_alpha_period",
+        "type": "float",
+        "required": true,
+        "description": "Maximum alpha period value",
+        "children": []
+      },
+      {
+        "name": "min_alpha",
+        "type": "float",
+        "required": true,
+        "description": "Minimum alpha value",
+        "children": []
+      }
+    ],
+    "response_fields": [],
+    "error_codes": [
+      {
+        "code": "error_json_alpha",
+        "description": "Invalid alpha value"
+      },
+      {
+        "code": "error_json_alpha_period",
+        "description": "Invalid alpha period value"
+      }
+    ],
+    "notes": "The documentation appears to be for an API related to merchant statistics updates. It includes various parameters for alpha values and periods, along with error handling for invalid inputs. The full endpoint URL contains placeholder elements like {appKey}.",
+    "chunk_metadata": {
+      "index": 1,
+      "total": 1,
+      "y_start": 0,
+      "y_end": 5194,
+      "overlap_top": 0,
+      "overlap_bottom": 0,
+      "height": 5194,
+      "path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\workspaces\\v2.returns.get_available_solutions\\chunks\\chunk_001.png",
+      "filename": "chunk_001.png",
+      "width": 837
+    },
+    "analysis_timestamp": "2025-10-10T06:40:56.910309",
+    "model": "claude-3-5-sonnet-20241022"
+  }
+]

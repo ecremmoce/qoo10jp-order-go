@@ -1,0 +1,135 @@
+{
+  "xml_root": "SEND_AUTH_KEY",
+  "header_fields": [
+    {
+      "name": "SEND_COMPAYNY_ID",
+      "description": "사방넷 로그인아이디",
+      "required": true,
+      "note": "사방넷 어드민 로그인 아이디입력",
+      "section": "header"
+    }
+  ],
+  "data_fields": [
+    {
+      "name": "CS_ST_DATE",
+      "description": "검색 시작일자",
+      "required": true,
+      "note": "YYYYMMDD : 수집일자 기준 검색 시작일",
+      "section": "data"
+    },
+    {
+      "name": "CS_ED_DATE",
+      "description": "검색 마지막일자",
+      "required": true,
+      "note": "YYYYMMDD : 수집일자 기준 검색 종료일",
+      "section": "data"
+    },
+    {
+      "name": "CS_STATUS",
+      "description": "검색 처리구분",
+      "required": false,
+      "note": "001:신규접수, 002:답변저장, 003:답변전송, 004:강제완료, NULL:전체",
+      "section": "data"
+    },
+    {
+      "name": "비고",
+      "description": "",
+      "required": false,
+      "note": "",
+      "section": "data"
+    },
+    {
+      "name": "문의 등록(수집시) 사방넷에서 부여되는 유니크번호",
+      "description": "",
+      "required": false,
+      "note": "",
+      "section": "data"
+    },
+    {
+      "name": "수집된 문의사항의 쇼핑몰명",
+      "description": "",
+      "required": false,
+      "note": "",
+      "section": "data"
+    },
+    {
+      "name": "수집된 문의사항의 쇼핑몰 로그인아이디",
+      "description": "",
+      "required": false,
+      "note": "",
+      "section": "data"
+    },
+    {
+      "name": "001:신규접수, 002:답변저장, 003:답변전송, 004:강제완료",
+      "description": "",
+      "required": false,
+      "note": "",
+      "section": "data"
+    },
+    {
+      "name": "수집일자",
+      "description": "",
+      "required": false,
+      "note": "",
+      "section": "data"
+    },
+    {
+      "name": "쇼핑몰 주문번호",
+      "description": "",
+      "required": false,
+      "note": "",
+      "section": "data"
+    },
+    {
+      "name": "쇼핑몰 상품코드",
+      "description": "",
+      "required": false,
+      "note": "",
+      "section": "data"
+    },
+    {
+      "name": "질문자",
+      "description": "",
+      "required": false,
+      "note": "",
+      "section": "data"
+    },
+    {
+      "name": "질문일자",
+      "description": "",
+      "required": false,
+      "note": "",
+      "section": "data"
+    },
+    {
+      "name": "문의구분 : 상품문의, Q&A,긴급메시지,...",
+      "description": "",
+      "required": false,
+      "note": "",
+      "section": "data"
+    },
+    {
+      "name": "품번코드가 존재 할 경우 해당 품번의 자체상품코드",
+      "description": "",
+      "required": false,
+      "note": "",
+      "section": "data"
+    },
+    {
+      "name": "수집된 CS의 쇼핑몰 코드",
+      "description": "",
+      "required": false,
+      "note": "",
+      "section": "data"
+    }
+  ],
+  "authentication": {
+    "SEND_COMPAYNY_ID": {
+      "name": "SEND_COMPAYNY_ID",
+      "description": "사방넷 로그인아이디",
+      "required": true,
+      "note": "사방넷 어드민 로그인 아이디입력",
+      "section": "header"
+    }
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "document_id": "developer-guide.223",
+  "document_type": "guide",
+  "platform": "shopee",
+  "content_ko": "# 재고 & 가격 관리\n\n## API 응답\n\n```json\n\"price_API\": {\n    \"seller_price\": 500,\n    \"original_price\": 1000,\n    \"release_price_of_current_price\": 937,\n    \"release_price_of_original_price\": 1663,\n    \"customer\": \"COP\"\n}\n```\n\n### 참고 사항\n- 제품에 진행 중인 프로모션이 있는 경우 'current_price'는 프로모션 기간 동안 프로모션 가격을 표시합니다. 그렇지 않은 경우 'release_price'(제품의 원래 가격)와 동일한 데이터를 표시합니다.\n- 제품에 여러 프로모션이 있는 경우 `id-product-per_item_promotion` API를 통해 각 프로모션 가격을 얻을 수 있습니다.\n- 귀하가 BU (CC) / PL 판매자인 경우 'release_price_of_current_price/release_price_of_original_price'는 세금이 포함된 가격을 의미합니다.\n- 귀하가 마켓플레이스인 경우 'release_price_of_current_price/release_price_of_original_price'는 세금이 제외된 가격을 의미합니다.\n\n## 2. 제품 가격 업데이트\n\n**API:** `id-product-update_price`\n\n- 제품에 베리에이션이 있는 경우 제품의 여러 베리에이션을 업데이트하여 한 번의 호출로 가격을 업데이트할 수 있습니다.\n- 제품에 베리에이션이 없는 경우 하나의 오퍼를 업데이트하는 것은 한 번의 호출이 됩니다. 둘 이상의 오퍼를 업데이트해야 하는 경우 모든 오퍼가 여러 번의 호출이 아닌 한 번의 호출에 있어야 합니다.\n- `id-product-per_item_price` API에서 가격 업데이트 규칙을 확인하십시오.\n\n### 1) 베리에이션이 없는 제품의 가격 업데이트 예시\n\n```json\n\"Price_API\": {\"original_price\": \"1110\"}\n```\n\n### 2) 베리에이션이 있는 제품의 가격 업데이트 예시\n\n```json\n\"Price_API\": [\n    {\"sku\": \"sell_br\", \"sku3_original_price\": \"1234\", \"Original_price\": \"22.52\"}\n]\n```\n\nBU (CC) / PL 판매자인 경우 original_price는 세금이 포함된 가격으로 업데이트됩니다.\n\n## 3. 글로벌 제품 가격 업데이트\n\n*다음은 별도의 CBG/CMREC를 가진 해외 판매자에게만 적용됩니다.*\n\n**API:** `id-global_product-update_price`\n\n- 글로벌 제품에 베리에이션이 있는 경우 한 번의 호출로 이 글로벌 제품의 여러 베리에이션 가격을 업데이트할 수 있습니다. 그렇지 않은 경우 한 번의 호출로 하나의 global_item_id 업데이트만 지원합니다. 둘 이상의 global_item_id를 업데이트해야 하는 경우 API를 여러 번 호출해야 합니다.\n- 글로벌 제품의 가격은 `countable-per_exchange_rate` API를 통해 가격 통화를 확인하십시오.\n- 글로벌 제품의 가격을 제품에 자동으로 동기화해야 하는 경우 셀러 센터의 제품 목록 페이지에서 \"자동 동기화\"를 선택하십시오. 이 기능이 있는 제품의 경우 공식을 기반으로 `id-global-product-update_price` API를 통해 직접 가격을 업데이트할 수 있습니다. 그렇지 않은 경우 `id-product-update_price` API를 통해 가격을 업데이트할 수 있습니다.\n\n## 4. 제품 재고 가져오기\n\n**API:** `id-product-per_item_basic_info`\n\n- 제품에 베리에이션이 없는 경우 `id-product-per_item_basic_info` API를 사용하여 재고 정보를 가져오십시오.\n- 제품에 베리에이션이 있는 경우 `id-product-per_model_info` API를 사용하여 재고 정보를 가져오십시오.\n\n### API 응답:\n\n```json\n\"stock_API\": {\n    \"return\": {\n        \"total_reserved_stock\": 0,\n        \"total_available_stock\": 100\n    },\n    \"seller_stock\": {\n        \"total_id\": \"788\",\n        \"Stock\": 48\n    },\n    \"resale_stock\": {\n        \"total_id\": \"788\",\n        \"Stock\": 30\n    },\n    \"resale_stock\": {\n        \"total_id\": \"788\",\n        \"Stock\": 30\n    }\n}\n```\n\n### 참고 사항\n- 제품은 seller_stock과 resale_stock을 모두 가질 수도 있고 여러 위치의 재고를 가질 수도 있습니다.\n- 해외 재고 계산 로직은 FAQ를 참조하십시오.\n\n## 5. 제품 재고 업데이트\n\n**API:** `id-product-update_stock`\n\n- 제품에 베리에이션이 있는 경우 제품의 여러 베리에이션을 업로드하여 한 번의 호출로 재고를 업데이트할 수 있습니다.\n- 제품에 베리에이션이 없는 경우 하나의 오퍼를 업데이트하는 것은 한 번의 호출이 됩니다. 둘 이상의 오퍼를 업데이트해야 하는 경우 모든 오퍼가 여러 번의 호출이 아닌 한 번의 호출에 있어야 합니다.\n- 재고를 업데이트해야 하는 경우 seller_stock update choose_stock, 재고 유형과 함께 API를 호출해야 합니다. 선택하는 경우 업데이트할 수 있는 모든 유형의 재고, 전체 목록을 설정할 수도 있습니다(모든 유형의 재고를 한 번의 호출로 보낼 수 있음).\n\n### 1) 베리에이션이 없는 제품의 재고 업데이트 예시\n\n```json\n\"Stock_API\": {\"resale_stock\": {\"Product\": {\"Stock\"}}}\n```\n\n### 2) 베리에이션이 있는 제품의 재고 업데이트 예시\n\n```json\n\"Stock_API\": {\"resale_API\": {\"Add\", \"resale_stock\": {\"product\": {\"10\"}}, \"resale_API\": {\"101\", \"resale_stock\": {\"product\": {\"Stock\"}}}}}\n```\n\n### 참고 사항\n- 제품에 베리에이션이 있는 경우 베리에이션 간의 가격 차이가 특정 배수를 초과할 수 없습니다. 예를 들어 가장 비싼 베리에이션 중 하나의 재판매 가격을 가장 저렴한 베리에이션의 가격으로 나눈 값이 특정 숫자를 초과해서는 안 됩니다.\n\n| Region | multiple |\n|--------|----------|\n| BR | 4 |\n| SG/VN/PH/TH/MY/HA | 5 |\n| ID | 5 |\n| GLOB | 5 |\n| CN/EC | 3 |\n\n*제품이 특정 프로모션에 참여하는 경우 판매자는 제품 가격을 수정할 수 없습니다. 자세한 내용은 FAQ를 확인하십시오.* https://open-shopee-partners-faq\n\n## 6. 글로벌 제품 재고 업데이트\n\n*다음은 별도의 CBG/CMREC를 가진 해외 판매자에게만 적용됩니다.*\n\n**API:** `id-global_product-update_stock`\n\n- 글로벌 제품에 베리에이션이 있는 경우 한 번의 호출로 글로벌 제품의 여러 베리에이션 재고를 업데이트할 수 있습니다. 그렇지 않은 경우 한 번의 호출로 하나의 global_item_id 업데이트만 지원합니다. 둘 이상의 global_item_id를 업데이트해야 하는 경우 API를 여러 번 호출해야 합니다.\n- 베리에이션이 없는 글로벌 제품의 경우 `id-global_product-update_stock` API를 사용하여 재고를 업데이트할 수 있습니다. 글로벌 재고를 업데이트한 후 글로벌 제품에 해당하는 제품의 재고가 자동으로 업데이트됩니다. 베리에이션이 있는 제품의 경우 `id-product-update_stock` API만 사용하여 재고를 직접 업데이트할 수 있습니다.\n- 자동 동기화 재고가 활성화되지 않은 제품의 경우 `id-global_product-update_stock` API를 사용하여 global_item_stock을 업데이트하십시오. 둘 이상의 global_item_id를 업데이트해야 하는 경우 여러 번 요청할 수 있습니다.",
+  "translated_at": "2025-10-16T08:47:59",
+  "char_count": 4161,
+  "metadata_ko": {
+    "title": "재고 & 가격 관리",
+    "summary": "본 가이드는 제품 가격 및 재고 수준 업데이트를 포함하여 제품의 재고 및 가격을 관리하는 방법에 대한 정보를 제공합니다. 여기에는 배리에이션이 있는 제품과 없는 제품, 그리고 국경 간 판매자를 위한 글로벌 제품과 같은 다양한 시나리오가 포함됩니다.",
+    "keywords": [
+      "재고 관리",
+      "가격 관리",
+      "제품 배리에이션",
+      "글로벌 제품",
+      "API",
+      "국경 간 판매자",
+      "판매자 재고",
+      "재판매 재고"
+    ],
+    "category": "API 관리",
+    "tags": [
+      "stock",
+      "price",
+      "product",
+      "API",
+      "variants",
+      "global products"
+    ],
+    "difficulty": "medium",
+    "importance": 4,
+    "use_cases": [
+      "배리에이션이 있거나 없는 제품의 가격 업데이트.",
+      "배리에이션이 있거나 없는 제품의 재고 수준 업데이트.",
+      "글로벌 제품을 사용하는 국경 간 판매자의 가격 및 재고 관리.",
+      "제품 재고 정보 검색."
+    ],
+    "related_apis": [
+      "price_API",
+      "id-product-update_price",
+      "id-product-per_item_price",
+      "id-global_product-update_price",
+      "countable-per_exchange_rate",
+      "id-product-per_item_basic_info",
+      "id-product-per_model_info",
+      "stock_API",
+      "id-product-update_stock",
+      "id-global_product-update_stock"
+    ]
+  },
+  "metadata_translated_at": "2025-10-16T08:48:03"
+}

@@ -1,0 +1,100 @@
+[
+  {
+    "chunk_index": 1,
+    "total_chunks": 1,
+    "endpoint": null,
+    "method": null,
+    "description": null,
+    "update_log": [
+      {
+        "date": "2023-09-26",
+        "change": "The api_key parameter is now required."
+      },
+      {
+        "date": "2023-09-25",
+        "change": "Added new error code 40002."
+      },
+      {
+        "date": "2023-09-22",
+        "change": "Added object_params to support additional customization."
+      },
+      {
+        "date": "2023-09-20",
+        "change": "Initial API release."
+      }
+    ],
+    "hidden_fields": [
+      {
+        "name": "api_key",
+        "found_in": "update log entry",
+        "extracted_from_description": true
+      },
+      {
+        "name": "object_params",
+        "found_in": "update log entry",
+        "extracted_from_description": true
+      }
+    ],
+    "parameters": [
+      {
+        "name": "source_type",
+        "type": "string",
+        "required": true,
+        "description": "Source type identifier",
+        "children": []
+      },
+      {
+        "name": "callback_url",
+        "type": "string",
+        "required": true,
+        "description": "Callback URL for notifications",
+        "children": []
+      },
+      {
+        "name": "api_key",
+        "type": "string",
+        "required": true,
+        "description": "Authentication key for API access",
+        "children": []
+      },
+      {
+        "name": "object_params",
+        "type": "object",
+        "required": false,
+        "description": "Additional configuration parameters",
+        "children": [
+          {
+            "name": "param1",
+            "type": "string",
+            "required": false,
+            "description": "First optional parameter",
+            "children": []
+          },
+          {
+            "name": "param2",
+            "type": "integer",
+            "required": false,
+            "description": "Second optional parameter",
+            "children": []
+          }
+        ]
+      }
+    ],
+    "response_fields": [],
+    "notes": "The image appears to show an API documentation page with update logs and parameter definitions. Some sections may be cut off or partially visible. The error code 40002 is mentioned but its details are not shown in the visible portion.",
+    "chunk_metadata": {
+      "index": 1,
+      "total": 1,
+      "y_start": 0,
+      "y_end": 6723,
+      "overlap_top": 0,
+      "overlap_bottom": 0,
+      "height": 6723,
+      "path": "D:\\01.Work\\cursor_project\\ecremmoce-ai-ecosystem\\workspaces\\v2.voucher.add_voucher\\chunks\\chunk_001.png",
+      "filename": "chunk_001.png",
+      "width": 837
+    },
+    "analysis_timestamp": "2025-10-10T06:51:35.041917",
+    "model": "claude-3-5-sonnet-20241022"
+  }
+]

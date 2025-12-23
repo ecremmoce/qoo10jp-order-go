@@ -1,0 +1,79 @@
+{
+  "endpoint": null,
+  "method": null,
+  "description": null,
+  "parameters": [
+    {
+      "name": "shipping_provider",
+      "type": "string",
+      "required": true,
+      "description": "Shipping provider credentials profile, default: acme_std",
+      "children": []
+    },
+    {
+      "name": "order_address",
+      "type": "object",
+      "required": true,
+      "description": "Order address object containing delivery details",
+      "children": []
+    },
+    {
+      "name": "carrier",
+      "type": "string",
+      "required": true,
+      "description": "The shipping carrier to use",
+      "children": []
+    },
+    {
+      "name": "delivery_time",
+      "type": "string",
+      "required": false,
+      "description": "Delivery time of the shipment",
+      "children": []
+    },
+    {
+      "name": "request_id",
+      "type": "string",
+      "required": true,
+      "description": "A request identifier for a specific order",
+      "children": []
+    },
+    {
+      "name": "seller_sku_id",
+      "type": "string",
+      "required": true,
+      "description": "The SKU code that should be used",
+      "children": []
+    },
+    {
+      "name": "tracking_id",
+      "type": "string",
+      "required": true,
+      "description": "The tracking code that matches the carrier",
+      "children": []
+    }
+  ],
+  "response_fields": [
+    {
+      "name": "error_code",
+      "type": "integer",
+      "description": "Error code indicating success or failure"
+    },
+    {
+      "name": "error_message",
+      "type": "string",
+      "description": "Descriptive error message"
+    }
+  ],
+  "update_log": [],
+  "hidden_fields": [],
+  "metadata": {
+    "total_chunks": 1,
+    "chunks_with_errors": 0,
+    "total_parameters_before_dedup": 7,
+    "total_parameters_after_dedup": 7,
+    "update_log_entries": 0,
+    "hidden_fields_count": 0,
+    "source_results": "workspaces\\v2.bundle_deal.get_bundle_deal\\results\\all_chunks_results.json"
+  }
+}

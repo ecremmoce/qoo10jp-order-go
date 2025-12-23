@@ -1,0 +1,163 @@
+{
+  "xml_root": "SABANG_GOODS_REGI",
+  "header_fields": [
+    {
+      "name": "SEND_COMPAYNY_ID",
+      "description": "사방넷 로그인아이디",
+      "required": true,
+      "note": "사방넷 어드민 로그인 아이디입력",
+      "section": "header"
+    },
+    {
+      "name": "SEND_AUTH_KEY",
+      "description": "사방넷에서 발급한 인증키",
+      "required": true,
+      "note": "사방넷에서 발급 받은 인증키(만약 받지 않았다면 사방넷에서 인증키 발급 요청)",
+      "section": "header"
+    },
+    {
+      "name": "SEND_DATE",
+      "description": "전송일자",
+      "required": true,
+      "note": "YYYYMMDD",
+      "section": "header"
+    },
+    {
+      "name": "SEND_GOODS_CD_RT",
+      "description": "자체코드 반환여부",
+      "required": false,
+      "note": "상품등록/수정 성공시 결과에서 자체코드를 표시합니다. Y:반환, NULL:없음",
+      "section": "header"
+    },
+    {
+      "name": "RESULT_TYPE",
+      "description": "결과 메시지 타입",
+      "required": false,
+      "note": "미 입력시 기존 HTML형식의 결과값 형태, XML 입력시 XML 형태로 결과값을 출력합니다.",
+      "section": "header"
+    }
+  ],
+  "data_fields": [
+    {
+      "name": "MALL_CODE",
+      "description": "쇼핑몰CODE",
+      "required": true,
+      "note": "쇼핑몰 코드를 기재합니다. (사방넷메뉴 A>2 쇼핑몰관리(지원) 메뉴 참조)",
+      "section": "data"
+    },
+    {
+      "name": "COMPAYNY_GOODS_CD",
+      "description": "자체상품코드",
+      "required": true,
+      "note": "자사에서 사용하는 상품코드를 기재합니다. ( 30자리까지 )",
+      "section": "data"
+    },
+    {
+      "name": "MALL_GOODS_PRICE",
+      "description": "판매가",
+      "required": false,
+      "note": "입력시 첫글자는 반드시 ( ‘ ) 아포스트로피(ENTER좌측Key)로 시작해야 하며 숫자 사이에 ( , ) 콤마가 들어가면 안됩니다.",
+      "section": "data"
+    },
+    {
+      "name": "MALL_PROD_NAME",
+      "description": "상품명",
+      "required": false,
+      "note": "한글기준 50자리까지 사용가능하며 , HTML 태그 사용은 불가합니다.",
+      "section": "data"
+    },
+    {
+      "name": "MALL_PROD_DESC",
+      "description": "상품상세설명",
+      "required": false,
+      "note": "상품상세(HTML)을 기재합니다.",
+      "section": "data"
+    },
+    {
+      "name": "MALL_PROP1_CD",
+      "description": "속성분류코드",
+      "required": false,
+      "note": "속성분류코드를 숫자 3자리 형식으로 입력합니다.\n속성분류코드는 상품속성코드 조회 API나 사방넷 상품관리화면의 속성분류표를 참고하시기 바랍니다.\n예: 의류는 001을 입력합니다.",
+      "section": "data"
+    },
+    {
+      "name": "BUINFO_ID3",
+      "description": "부가정보Ⅱ코드",
+      "required": false,
+      "note": "사방넷메뉴 쇼핑몰 관리>> 쇼핑몰 부가정보Ⅱ 메뉴에서 등록한 부가정보Ⅱ 코드값을 입력합니다. 예) B0000001",
+      "section": "data"
+    },
+    {
+      "name": "MALL_STOCK_RATE",
+      "description": "재고분할 퍼센트",
+      "required": false,
+      "note": "숫자로 입력합니다. 품번에 설정된 쇼핑몰별 재고분할 합이 100 이하로 입력되어야 합니다.",
+      "section": "data"
+    },
+    {
+      "name": "CERTNO",
+      "description": "인증번호",
+      "required": false,
+      "note": "인증일자를 입력합니다. 8자리로 입력합니다. 예)20190901",
+      "section": "data"
+    },
+    {
+      "name": "ISSUEDATE",
+      "description": "발급일자",
+      "required": false,
+      "note": "발급일자를 입력합니다. 8자리로 입력합니다. 예)20190901",
+      "section": "data"
+    },
+    {
+      "name": "CERTDATE",
+      "description": "인증일자",
+      "required": false,
+      "note": "인증일자를 입력합니다. 8자리로 입력합니다. 예)20190901",
+      "section": "data"
+    },
+    {
+      "name": "AVLST_DM",
+      "description": "인증유효 시작일",
+      "required": false,
+      "note": "유효기간 시작일을 입력합니다. 8자리로 입력합니다. 예)20190901",
+      "section": "data"
+    },
+    {
+      "name": "AVLED_DM",
+      "description": "인증유효 마지막일",
+      "required": false,
+      "note": "유효기간 종료일을 입력합니다. 8자리로 입력합니다. 예)20190901",
+      "section": "data"
+    },
+    {
+      "name": "CERT_AGENCY",
+      "description": "인증기관",
+      "required": false,
+      "note": "인증검사기관을 입력합니다.",
+      "section": "data"
+    },
+    {
+      "name": "CERTFIELD",
+      "description": "인증분야",
+      "required": false,
+      "note": "인증분야를 입력합니다.",
+      "section": "data"
+    }
+  ],
+  "authentication": {
+    "SEND_COMPAYNY_ID": {
+      "name": "SEND_COMPAYNY_ID",
+      "description": "사방넷 로그인아이디",
+      "required": true,
+      "note": "사방넷 어드민 로그인 아이디입력",
+      "section": "header"
+    },
+    "SEND_AUTH_KEY": {
+      "name": "SEND_AUTH_KEY",
+      "description": "사방넷에서 발급한 인증키",
+      "required": true,
+      "note": "사방넷에서 발급 받은 인증키(만약 받지 않았다면 사방넷에서 인증키 발급 요청)",
+      "section": "header"
+    }
+  }
+}

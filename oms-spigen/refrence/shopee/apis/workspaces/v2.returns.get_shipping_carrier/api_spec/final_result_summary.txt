@@ -1,0 +1,58 @@
+======================================================================
+API SPECIFICATION SUMMARY
+======================================================================
+
+Endpoint: GET /v2/return/get_shipping_center
+Description: Get the list of shipping centers and request parameters needed before calling v2/return/upload_shipping_proof
+
+Parameters (5):
+----------------------------------------------------------------------
+* partner_id (string)
+   Partner ID is assigned upon registration is successful
+* timestamp (timestamp)
+   Unix timestamp of the request. Required for calculating sign.
+* access_token (string)
+   This field is required to call the API. Access token expires in 24 hours.
+* sign (string)
+   Required parameter for authentication
+* return_sn (string)
+   The serial number of return
+
+Response Fields (4):
+----------------------------------------------------------------------
+  status (string)
+   Indicate error type if/if error. Empty if no error happened
+  message (string)
+   Indicate error details if/if error. Empty if no error happened
+  request_id (string)
+   Generated UUID based to an error. Required needs for error tracking
+  response (object)
+   Response object
+    is_shipping_proof_ready (boolean)
+     To indicate whether uploading shipping proof is possible for partner to upload shipping proof
+    has_provided_carrier_pre (boolean)
+     To indicate whether carrier information is provided
+    shipping_proof_timeout (datetime)
+     To display list of timeout parameters needed to provide
+    is_tracking_number_m_mandatory (boolean)
+     To indicate whether it is mandatory to provide tracking number during uploading shipping proof
+    is_shipping_image_file_mandatory (boolean)
+     To indicate whether it is mandatory to provide shipping image file/s when uploading shipping proof
+    reverse_logistic_carrier_list (object)
+     The list of logistic carriers available for users to select
+    reverse_logistics_user_id (string)
+     To indicate the selected carrier name from the list of carrier names provided
+
+Metadata:
+----------------------------------------------------------------------
+  total_chunks: 1
+  chunks_with_errors: 0
+  total_parameters_before_dedup: 5
+  total_parameters_after_dedup: 5
+  update_log_entries: 1
+  hidden_fields_count: 0
+  source_results: workspaces\v2.returns.get_shipping_carrier\results\all_chunks_results.json
+
+======================================================================
+Legend: * = required parameter
+======================================================================
