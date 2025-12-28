@@ -1,0 +1,30 @@
+# Supabase Configuration
+SUPABASE_URL=https://cawyuwexdhlgoflckaxv.supabase.co
+SUPABASE_ANON_KEY=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImNhd3l1d2V4ZGhsZ29mbGNrYXh2Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NDMyNTc5MzksImV4cCI6MjA1ODgzMzkzOX0.P0BWRx9bITc4iHaac4wh4x460qp1XpWMzckAfj_7Nas
+SUPABASE_SERVICE_KEY=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImNhd3l1d2V4ZGhsZ29mbGNrYXh2Iiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImlhdCI6MTc0MzI1NzkzOSwiZXhwIjoyMDU4ODMzOTM5fQ.mW-UTqmU0l1AdeaL8BSLI3-qu9VC6LGr0WMWbDeBop8
+
+# Redis Configuration
+REDIS_URL=redis://192.168.0.203:6379
+REDIS_PASSWORD=djfTlrn!3333
+REDIS_DB=0
+
+# N8N Configuration
+N8N_BASE_URL=https://n01.acsell.ai
+N8N_API_KEY=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI5ODA5Y2YwNi04ZTJjLTQ1MDgtODM3Yi1iNmJjNmRiNzg1MDEiLCJpc3MiOiJuOG4iLCJhdWQiOiJwdWJsaWMtYXBpIiwiaWF0IjoxNzU2ODg3NzU3fQ.579kkJpHXXwL3g_b7jnQUmCI_oF4wsmNv6kWigHrG-Y
+N8N_WEBHOOK_URL=https://n01.acsell.ai/webhook/save-shop-auth-info-shopee
+N8N_AUTH_ENDPOINT=your_n8n_auth_endpoint
+
+# Qoo10JP API Configuration
+QOO10JP_API_KEY=your_qoo10jp_api_key
+QOO10JP_API_SECRET=your_qoo10jp_api_secret
+QOO10JP_BASE_URL=https://api.qoo10.jp
+
+# Server Configuration
+PORT=8082
+GIN_MODE=release
+
+# Worker Configuration
+WORKER_COUNT=3
+
+# Webhook Configuration
+ORDER_COLLECTION_WEBHOOK_URL=https://n01.acsell.ai/webhook/qoo10-order-collect-message

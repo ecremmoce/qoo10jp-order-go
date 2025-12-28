@@ -10,7 +10,7 @@ param(
 
 $AppName = "qoo10jp-order-go"
 $RemotePath = "/home/$User/qoo10jp-order-go"
-$Port = "8081"  # Shopee는 8080, Qoo10JP는 8081
+$Port = "8082"  # Shopee: 8080, Lazada: 8081, Qoo10JP: 8082
 $SSH_OPTS = "-o ServerAliveInterval=30 -o ServerAliveCountMax=3 -o ConnectTimeout=10"
 
 function Build-Linux {
