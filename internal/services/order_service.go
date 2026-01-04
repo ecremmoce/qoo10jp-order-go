@@ -3,10 +3,10 @@ package services
 import (
 	"fmt"
 	"log"
-	"shopee-order-go/internal/models"
-	"shopee-order-go/pkg/qoo10jp"
-	"shopee-order-go/pkg/redis"
-	"shopee-order-go/pkg/supabase"
+	"qoo10jp-order-go/internal/models"
+	"qoo10jp-order-go/pkg/qoo10jp"
+	"qoo10jp-order-go/pkg/redis"
+	"qoo10jp-order-go/pkg/supabase"
 	"time"
 )
 
@@ -68,7 +68,7 @@ func (s *OrderService) CollectOrders(startDate, endDate time.Time) error {
 		for _, qooOrder := range orderResp.ResultObject {
 			order, err := s.convertQoo10JPOrder(qooOrder)
 			if err != nil {
-				log.Printf("Failed to convert order %s: %v", qooOrder.OrderNo, err)
+				log.Printf("Failed to convert order %d: %v", qooOrder.OrderNo, err)
 				continue
 			}
 

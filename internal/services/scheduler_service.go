@@ -3,18 +3,24 @@ package services
 import (
 	"encoding/json"
 	"fmt"
+	"io"
 	"log"
-	"shopee-order-go/internal/models"
-	"shopee-order-go/pkg/redis"
-	"shopee-order-go/pkg/supabase"
+	"net/http"
+	"os"
+	"qoo10jp-order-go/internal/models"
+	"qoo10jp-order-go/pkg/redis"
+	"qoo10jp-order-go/pkg/supabase"
 	"time"
 
 	"github.com/google/uuid"
 )
 
 const (
-	OrderJobQueue     = "shopee_order_queue"
-	SchedulerStateKey = "scheduler_state"
+	OrderJobQueue        = "shopee_order_queue"
+	Qoo10JPOrderJobQueue = "qoo10jp_order_queue"
+	SchedulerStateKey    = "qoo10jp_scheduler_state"
+	// 기본 수집 간격 (분) - API 호출 실패 시 사용
+	DefaultCollectionInterval = 30
 )
 
 type SchedulerService struct {
@@ -131,9 +137,12 @@ func (s *SchedulerService) saveJobResult(result *models.JobResult) error {
 
 // updateSchedulerState updates the scheduler state with the last execution time
 func (s *SchedulerService) updateSchedulerState(lastExecution time.Time) error {
+	// 동적으로 수집 간격 가져오기
+	intervalMinutes := s.GetDynamicCollectionInterval()
+
 	state := &models.SchedulerState{
 		LastExecutionTime: lastExecution,
-		NextScheduleTime:  lastExecution.Add(5 * time.Minute), // Next execution in 5 minutes
+		NextScheduleTime:  lastExecution.Add(time.Duration(intervalMinutes) * time.Minute),
 		IsRunning:         false,
 		UpdatedAt:         time.Now(),
 	}
@@ -143,7 +152,70 @@ func (s *SchedulerService) updateSchedulerState(lastExecution time.Time) error {
 		return err
 	}
 
+	log.Printf("[Qoo10JP Scheduler] Next execution in %d minutes at %s",
+		intervalMinutes, state.NextScheduleTime.Format("15:04:05"))
+
 	return s.redisClient.Set(SchedulerStateKey, string(stateJSON), 0)
+}
+
+// GetDynamicCollectionInterval fetches the current collection interval from API
+func (s *SchedulerService) GetDynamicCollectionInterval() int {
+	apiURL := os.Getenv("PLATFORM_API_URL")
+	apiKey := os.Getenv("PLATFORM_API_KEY")
+
+	if apiURL == "" {
+		log.Printf("[Qoo10JP Scheduler] PLATFORM_API_URL not set, using default interval: %d minutes", DefaultCollectionInterval)
+		return DefaultCollectionInterval
+	}
+
+	// API 호출하여 현재 수집 간격 조회
+	req, err := http.NewRequest("GET", apiURL+"/api/v1/fulfillment/schedules", nil)
+	if err != nil {
+		log.Printf("[Qoo10JP Scheduler] Failed to create request: %v", err)
+		return DefaultCollectionInterval
+	}
+
+	if apiKey != "" {
+		req.Header.Set("X-API-Key", apiKey)
+	}
+
+	client := &http.Client{Timeout: 10 * time.Second}
+	resp, err := client.Do(req)
+	if err != nil {
+		log.Printf("[Qoo10JP Scheduler] Failed to fetch schedule: %v", err)
+		return DefaultCollectionInterval
+	}
+	defer resp.Body.Close()
+
+	if resp.StatusCode != http.StatusOK {
+		log.Printf("[Qoo10JP Scheduler] API returned status %d, using default interval", resp.StatusCode)
+		return DefaultCollectionInterval
+	}
+
+	body, err := io.ReadAll(resp.Body)
+	if err != nil {
+		log.Printf("[Qoo10JP Scheduler] Failed to read response: %v", err)
+		return DefaultCollectionInterval
+	}
+
+	var response struct {
+		Success bool `json:"success"`
+		Data    struct {
+			CurrentIntervalMinutes int `json:"current_interval_minutes"`
+		} `json:"data"`
+	}
+
+	if err := json.Unmarshal(body, &response); err != nil {
+		log.Printf("[Qoo10JP Scheduler] Failed to parse response: %v", err)
+		return DefaultCollectionInterval
+	}
+
+	if !response.Success || response.Data.CurrentIntervalMinutes <= 0 {
+		return DefaultCollectionInterval
+	}
+
+	log.Printf("[Qoo10JP Scheduler] Dynamic interval from API: %d minutes", response.Data.CurrentIntervalMinutes)
+	return response.Data.CurrentIntervalMinutes
 }
 
 // GetSchedulerState retrieves the current scheduler state

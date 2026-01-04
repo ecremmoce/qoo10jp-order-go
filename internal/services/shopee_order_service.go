@@ -7,10 +7,10 @@ import (
 	"strings"
 	"time"
 
-	"shopee-order-go/internal/config"
-	"shopee-order-go/internal/models"
-	"shopee-order-go/pkg/shopee"
-	"shopee-order-go/pkg/supabase"
+	"qoo10jp-order-go/internal/config"
+	"qoo10jp-order-go/internal/models"
+	"qoo10jp-order-go/pkg/shopee"
+	"qoo10jp-order-go/pkg/supabase"
 
 	"github.com/google/uuid"
 )

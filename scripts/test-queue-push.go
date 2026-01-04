@@ -4,9 +4,9 @@ import (
 	"encoding/json"
 	"fmt"
 	"log"
-	"shopee-order-go/internal/config"
-	"shopee-order-go/internal/models"
-	"shopee-order-go/pkg/redis"
+	"qoo10jp-order-go/internal/config"
+	"qoo10jp-order-go/internal/models"
+	"qoo10jp-order-go/pkg/redis"
 	"time"
 
 	"github.com/joho/godotenv"

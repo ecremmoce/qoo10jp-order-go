@@ -9,11 +9,11 @@ import (
 	"syscall"
 	"time"
 
-	"shopee-order-go/internal/api"
-	"shopee-order-go/internal/config"
-	"shopee-order-go/internal/services"
-	"shopee-order-go/pkg/redis"
-	"shopee-order-go/pkg/supabase"
+	"qoo10jp-order-go/internal/api"
+	"qoo10jp-order-go/internal/config"
+	"qoo10jp-order-go/internal/services"
+	"qoo10jp-order-go/pkg/redis"
+	"qoo10jp-order-go/pkg/supabase"
 
 	"github.com/gin-gonic/gin"
 	"github.com/joho/godotenv"
@@ -47,9 +47,13 @@ func main() {
 	// Initialize services
 	orderService := services.NewOrderService(supabaseClient, redisClient)
 	qoo10jpOrderService := services.NewQoo10JPOrderService(cfg, supabaseClient, redisClient)
+	qoo10jpOrderServiceV2 := services.NewQoo10JPOrderServiceV2(cfg, supabaseClient, redisClient)
 	shopeeOrderService := services.NewShopeeOrderService(cfg, supabaseClient)
 	schedulerService := services.NewSchedulerService(redisClient, supabaseClient, orderService)
-	workerService := services.NewWorkerService(cfg, schedulerService, shopeeOrderService, cfg.Worker.Count)
+
+	// V2 서비스를 사용하는 워커 서비스 생성
+	workerService := services.NewWorkerServiceV2(cfg, schedulerService, shopeeOrderService, qoo10jpOrderService, qoo10jpOrderServiceV2, cfg.Worker.Count)
+	log.Println("🚀 Qoo10JP V2 서비스 초기화 완료")
 
 	// Auto-start worker service
 	log.Println("Auto-starting worker service...")
@@ -66,6 +70,7 @@ func main() {
 
 	api.SetupRoutes(router, orderService)
 	api.SetupQoo10JPRoutes(router, qoo10jpOrderService)
+	api.SetupQoo10JPRoutesV2(router, qoo10jpOrderServiceV2) // V2 라우트 추가
 	api.SetupShopeeRoutes(router, shopeeOrderService)
 	api.SetupSchedulerRoutes(router, schedulerService, workerService)
 

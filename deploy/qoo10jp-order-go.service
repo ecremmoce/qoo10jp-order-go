@@ -1,0 +1,23 @@
+[Unit]
+Description=Qoo10JP Order Collection Worker
+After=network.target redis.service
+Wants=redis.service
+
+[Service]
+Type=simple
+User=james
+Group=james
+WorkingDirectory=/home/james/qoo10jp-order-go
+ExecStart=/home/james/qoo10jp-order-go/qoo10jp-order-go
+Restart=always
+RestartSec=5
+StandardOutput=append:/home/james/qoo10jp-order-go/qoo10jp-order-go.log
+StandardError=append:/home/james/qoo10jp-order-go/qoo10jp-order-go.log
+EnvironmentFile=/home/james/qoo10jp-order-go/.env
+
+# Resource limits
+LimitNOFILE=65535
+MemoryMax=512M
+
+[Install]
+WantedBy=multi-user.target

@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"log"
 	"os"
-	"shopee-order-go/pkg/webhook"
+	"qoo10jp-order-go/pkg/webhook"
 	"time"
 )
 

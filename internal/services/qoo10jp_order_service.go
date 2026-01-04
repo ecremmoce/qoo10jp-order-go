@@ -3,11 +3,11 @@ package services
 import (
 	"fmt"
 	"log"
-	"shopee-order-go/internal/config"
-	"shopee-order-go/internal/models"
-	"shopee-order-go/pkg/qoo10jp"
-	"shopee-order-go/pkg/redis"
-	"shopee-order-go/pkg/supabase"
+	"qoo10jp-order-go/internal/config"
+	"qoo10jp-order-go/internal/models"
+	"qoo10jp-order-go/pkg/qoo10jp"
+	"qoo10jp-order-go/pkg/redis"
+	"qoo10jp-order-go/pkg/supabase"
 	"strings"
 	"time"
 
@@ -359,7 +359,7 @@ func (s *Qoo10JPOrderService) processBatchOrders(qooOrders []qoo10jp.Order, plat
 	for _, qooOrder := range qooOrders {
 		order, err := s.convertQoo10JPOrder(qooOrder, platformAccountID)
 		if err != nil {
-			log.Printf("Failed to convert order %s: %v", qooOrder.OrderNo, err)
+			log.Printf("Failed to convert order %d: %v", qooOrder.OrderNo, err)
 			continue
 		}
 
@@ -449,7 +449,7 @@ func (s *Qoo10JPOrderService) processFallbackOrders(qooOrders []qoo10jp.Order, p
 	for _, qooOrder := range qooOrders {
 		order, err := s.convertQoo10JPOrder(qooOrder, platformAccountID)
 		if err != nil {
-			log.Printf("Failed to convert order %s: %v", qooOrder.OrderNo, err)
+			log.Printf("Failed to convert order %d: %v", qooOrder.OrderNo, err)
 			continue
 		}
 

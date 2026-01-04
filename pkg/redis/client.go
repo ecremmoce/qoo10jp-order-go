@@ -2,7 +2,7 @@ package redis
 
 import (
 	"context"
-	"shopee-order-go/internal/config"
+	"qoo10jp-order-go/internal/config"
 	"time"
 
 	"github.com/go-redis/redis/v8"

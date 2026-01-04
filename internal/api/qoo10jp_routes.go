@@ -2,8 +2,8 @@ package api
 
 import (
 	"net/http"
-	"shopee-order-go/internal/models"
-	"shopee-order-go/internal/services"
+	"qoo10jp-order-go/internal/models"
+	"qoo10jp-order-go/internal/services"
 	"strconv"
 	"time"
 

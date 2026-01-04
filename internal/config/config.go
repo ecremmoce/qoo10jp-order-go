@@ -6,14 +6,19 @@ import (
 )
 
 type Config struct {
-	Server   ServerConfig
-	Supabase SupabaseConfig
-	Redis    RedisConfig
-	N8N      N8NConfig
-	Qoo10JP  Qoo10JPConfig
-	Shopee   ShopeeConfig
-	Worker   WorkerConfig
-	Webhook  WebhookConfig
+	Server     ServerConfig
+	Supabase   SupabaseConfig
+	Redis      RedisConfig
+	N8N        N8NConfig
+	Qoo10JP    Qoo10JPConfig
+	Shopee     ShopeeConfig
+	Worker     WorkerConfig
+	Webhook    WebhookConfig
+	Encryption EncryptionConfig
+}
+
+type EncryptionConfig struct {
+	Key string // Base64-encoded 256-bit key
 }
 
 type ServerConfig struct {
@@ -97,6 +102,9 @@ func Load() *Config {
 		},
 		Webhook: WebhookConfig{
 			OrderCollectionURL: getEnv("ORDER_COLLECTION_WEBHOOK_URL", ""),
+		},
+		Encryption: EncryptionConfig{
+			Key: getEnv("ENCRYPTION_KEY", ""),
 		},
 	}
 }

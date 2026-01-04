@@ -1,0 +1,333 @@
+{
+  "name": "qoo10jp-order-scheduler-v1.0",
+  "nodes": [
+    {
+      "parameters": {
+        "rule": {
+          "interval": [
+            {
+              "field": "minutes",
+              "minutesInterval": 10
+            }
+          ]
+        }
+      },
+      "name": "Every 10 Minutes",
+      "type": "n8n-nodes-base.scheduleTrigger",
+      "typeVersion": 1.2,
+      "position": [
+        -432,
+        -16
+      ],
+      "id": "qoo10jp-cron-trigger"
+    },
+    {
+      "parameters": {
+        "operation": "getAll",
+        "tableId": "sales_platform_accounts_qoo10jp",
+        "returnAll": true,
+        "matchType": "allFilters",
+        "filters": {
+          "conditions": [
+            {
+              "keyName": "is_active",
+              "condition": "eq",
+              "keyValue": "true"
+            },
+            {
+              "keyName": "api_key_status",
+              "condition": "eq",
+              "keyValue": "active"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "name": "Get Active Qoo10JP Accounts",
+      "type": "n8n-nodes-base.supabase",
+      "typeVersion": 1,
+      "position": [
+        -224,
+        -16
+      ],
+      "id": "qoo10jp-get-accounts",
+      "credentials": {
+        "supabaseApi": {
+          "id": "2decYS56WYHYUPWi",
+          "name": "Supabase account-acsell"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": true,
+            "leftValue": "",
+            "typeValidation": "strict"
+          },
+          "conditions": [
+            {
+              "id": "qoo10jp-check-accounts",
+              "leftValue": "={{ $input.all().length }}",
+              "rightValue": 0,
+              "operator": {
+                "type": "number",
+                "operation": "gt"
+              }
+            }
+          ],
+          "combinator": "and"
+        },
+        "options": {}
+      },
+      "name": "Check If Accounts Exist",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2,
+      "position": [
+        -32,
+        -16
+      ],
+      "id": "qoo10jp-check-if"
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": true,
+            "leftValue": "",
+            "typeValidation": "strict"
+          },
+          "conditions": [
+            {
+              "id": "qoo10jp-check-api-key",
+              "leftValue": "={{ $json.certification_key }}",
+              "rightValue": "",
+              "operator": {
+                "type": "string",
+                "operation": "isNotEmpty"
+              }
+            },
+            {
+              "id": "qoo10jp-check-api-id",
+              "leftValue": "={{ $json.api_id }}",
+              "rightValue": "",
+              "operator": {
+                "type": "string",
+                "operation": "isNotEmpty"
+              }
+            }
+          ],
+          "combinator": "and"
+        },
+        "options": {}
+      },
+      "name": "Check API Credentials",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2,
+      "position": [
+        368,
+        -112
+      ],
+      "id": "qoo10jp-check-credentials"
+    },
+    {
+      "parameters": {
+        "options": {}
+      },
+      "name": "Split Each Account",
+      "type": "n8n-nodes-base.splitInBatches",
+      "typeVersion": 3,
+      "position": [
+        176,
+        -112
+      ],
+      "id": "qoo10jp-split-batch"
+    },
+    {
+      "parameters": {
+        "operation": "push",
+        "list": "qoo10jp_order_queue",
+        "messageData": "={{ JSON.stringify({ account_id: $json.id, account_name: $json.seller_id, platform: 'qoo10jp', api_id: $json.api_id, certification_key: $json.certification_key, seller_id: $json.seller_id, timestamp: new Date().toISOString() }) }}"
+      },
+      "type": "@fancyheat/n8n-nodes-redis-enhanced.redisEnhanced",
+      "typeVersion": 1,
+      "position": [
+        752,
+        -112
+      ],
+      "id": "qoo10jp-redis-push",
+      "name": "Push to Qoo10JP Queue",
+      "credentials": {
+        "redis": {
+          "id": "zE1Y2AlnzqmYnUPT",
+          "name": "redis_connection"
+        }
+      }
+    },
+    {
+      "parameters": {},
+      "name": "No Active Accounts",
+      "type": "n8n-nodes-base.noOp",
+      "typeVersion": 1,
+      "position": [
+        176,
+        96
+      ],
+      "id": "qoo10jp-no-accounts"
+    },
+    {
+      "parameters": {},
+      "name": "Skip - No API Credentials",
+      "type": "n8n-nodes-base.noOp",
+      "typeVersion": 1,
+      "position": [
+        560,
+        0
+      ],
+      "id": "qoo10jp-skip-no-credentials"
+    },
+    {
+      "parameters": {
+        "select": "channel",
+        "channelId": {
+          "__rl": true,
+          "value": "C09FQSWH2TD",
+          "mode": "list",
+          "cachedResultName": "acsell-ai"
+        },
+        "text": "🛒 [Qoo10JP] {{ $json.seller_id }} 주문수집 요청",
+        "otherOptions": {}
+      },
+      "type": "n8n-nodes-base.slack",
+      "typeVersion": 2.3,
+      "position": [
+        560,
+        -208
+      ],
+      "id": "qoo10jp-slack-notify",
+      "name": "Slack Notify",
+      "webhookId": "qoo10jp-slack-webhook",
+      "credentials": {
+        "slackApi": {
+          "id": "XR9r9cSTypkvBmoC",
+          "name": "Slack account"
+        }
+      }
+    }
+  ],
+  "pinData": {},
+  "connections": {
+    "Every 10 Minutes": {
+      "main": [
+        [
+          {
+            "node": "Get Active Qoo10JP Accounts",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Get Active Qoo10JP Accounts": {
+      "main": [
+        [
+          {
+            "node": "Check If Accounts Exist",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Check If Accounts Exist": {
+      "main": [
+        [
+          {
+            "node": "Split Each Account",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "No Active Accounts",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Split Each Account": {
+      "main": [
+        [
+          {
+            "node": "Check API Credentials",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Check API Credentials",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Check API Credentials": {
+      "main": [
+        [
+          {
+            "node": "Slack Notify",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Skip - No API Credentials",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Slack Notify": {
+      "main": [
+        [
+          {
+            "node": "Push to Qoo10JP Queue",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Push to Qoo10JP Queue": {
+      "main": [
+        [
+          {
+            "node": "Split Each Account",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": false,
+  "settings": {
+    "executionOrder": "v1",
+    "timezone": "Asia/Seoul",
+    "callerPolicy": "workflowsFromSameOwner"
+  },
+  "versionId": "1.0.0",
+  "meta": {
+    "templateCredsSetupCompleted": true,
+    "instanceId": "f250376847468ef71913716e149635733b4b8efaa1e3a4a13a2fff8384a6074a"
+  },
+  "id": "qoo10jp-order-scheduler",
+  "tags": ["qoo10jp", "order-collection"]
+}

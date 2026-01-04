@@ -83,17 +83,20 @@ type Qoo10JPOrderFilter struct {
 	PaymentStatus     string     `json:"payment_status"`
 	PlatformAccountID string     `json:"platform_account_id"`
 	BuyerID           string     `json:"buyer_id"`
+	SellerID          string     `json:"seller_id"` // V2 호환성
+	Status            string     `json:"status"`    // V2 호환성 (oms_status)
 	Limit             int        `json:"limit"`
 	Offset            int        `json:"offset"`
 }
 
 // Qoo10JP 주문 통계
 type Qoo10JPOrderStats struct {
-	TotalOrders    int     `json:"total_orders"`
-	TotalAmount    float64 `json:"total_amount"`
-	PendingOrders  int     `json:"pending_orders"`
-	CompletedOrders int    `json:"completed_orders"`
-	CancelledOrders int    `json:"cancelled_orders"`
+	TotalOrders     int     `json:"total_orders"`
+	TotalAmount     float64 `json:"total_amount"`
+	PendingOrders   int     `json:"pending_orders"`
+	ShippedOrders   int     `json:"shipped_orders"`   // V2 호환성
+	CompletedOrders int     `json:"completed_orders"`
+	CancelledOrders int     `json:"cancelled_orders"`
 }
 
 

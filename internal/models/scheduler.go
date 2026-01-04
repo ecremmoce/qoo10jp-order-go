@@ -24,12 +24,16 @@ type N8NOrderMessage struct {
 	CertificationKey string `json:"certification_key"`
 	AccountName      string `json:"account_name"`
 	Timestamp        string `json:"timestamp"`
-	
+	Platform         string `json:"platform,omitempty"` // "shopee", "qoo10jp", etc.
+
 	// Shopee specific fields
-	ShopID          int64  `json:"shop_id,omitempty"`
-	PartnerID       int64  `json:"partner_id,omitempty"`
-	AccessToken     string `json:"access_token,omitempty"`
-	Platform        string `json:"platform,omitempty"` // "shopee", "qoo10jp", etc.
+	ShopID      int64  `json:"shop_id,omitempty"`
+	PartnerID   int64  `json:"partner_id,omitempty"`
+	AccessToken string `json:"access_token,omitempty"`
+
+	// Qoo10JP specific fields
+	APIID    string `json:"api_id,omitempty"`
+	SellerID string `json:"seller_id,omitempty"`
 }
 
 // JobResult represents the result of a processed job

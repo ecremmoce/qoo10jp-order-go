@@ -4,39 +4,71 @@ import (
 	"context"
 	"fmt"
 	"log"
-	"shopee-order-go/internal/config"
-	"shopee-order-go/internal/models"
-	"shopee-order-go/pkg/webhook"
+	"qoo10jp-order-go/internal/config"
+	"qoo10jp-order-go/internal/models"
+	"qoo10jp-order-go/pkg/webhook"
 	"sync"
 	"time"
 )
 
 type WorkerService struct {
-	cfg                *config.Config
-	schedulerService   *SchedulerService
-	shopeeOrderService *ShopeeOrderService
-	workerCount        int
-	ctx                context.Context
-	cancel             context.CancelFunc
-	wg                 sync.WaitGroup
-	isRunning          bool
-	mu                 sync.RWMutex
-	webhookClient      *webhook.Client
+	cfg                    *config.Config
+	schedulerService       *SchedulerService
+	shopeeOrderService     *ShopeeOrderService
+	qoo10jpOrderService    *Qoo10JPOrderService
+	qoo10jpOrderServiceV2  *Qoo10JPOrderServiceV2 // V2 서비스 추가
+	workerCount            int
+	ctx                    context.Context
+	cancel                 context.CancelFunc
+	wg                     sync.WaitGroup
+	isRunning              bool
+	mu                     sync.RWMutex
+	webhookClient          *webhook.Client
+	useV2                  bool // V2 서비스 사용 여부
 }
 
-func NewWorkerService(cfg *config.Config, schedulerService *SchedulerService, shopeeOrderService *ShopeeOrderService, workerCount int) *WorkerService {
+func NewWorkerService(cfg *config.Config, schedulerService *SchedulerService, shopeeOrderService *ShopeeOrderService, qoo10jpOrderService *Qoo10JPOrderService, workerCount int) *WorkerService {
 	ctx, cancel := context.WithCancel(context.Background())
 
 	return &WorkerService{
-		cfg:                cfg,
-		schedulerService:   schedulerService,
-		shopeeOrderService: shopeeOrderService,
-		workerCount:        workerCount,
-		ctx:                ctx,
-		cancel:             cancel,
-		isRunning:          false,
-		webhookClient:      webhook.NewClient(10 * time.Second),
+		cfg:                  cfg,
+		schedulerService:     schedulerService,
+		shopeeOrderService:   shopeeOrderService,
+		qoo10jpOrderService:  qoo10jpOrderService,
+		workerCount:          workerCount,
+		ctx:                  ctx,
+		cancel:               cancel,
+		isRunning:            false,
+		webhookClient:        webhook.NewClient(10 * time.Second),
+		useV2:                false, // 기본값: 기존 서비스 사용
 	}
+}
+
+// NewWorkerServiceV2 creates a new WorkerService with V2 support
+func NewWorkerServiceV2(cfg *config.Config, schedulerService *SchedulerService, shopeeOrderService *ShopeeOrderService, qoo10jpOrderService *Qoo10JPOrderService, qoo10jpOrderServiceV2 *Qoo10JPOrderServiceV2, workerCount int) *WorkerService {
+	ctx, cancel := context.WithCancel(context.Background())
+
+	return &WorkerService{
+		cfg:                    cfg,
+		schedulerService:       schedulerService,
+		shopeeOrderService:     shopeeOrderService,
+		qoo10jpOrderService:    qoo10jpOrderService,
+		qoo10jpOrderServiceV2:  qoo10jpOrderServiceV2,
+		workerCount:            workerCount,
+		ctx:                    ctx,
+		cancel:                 cancel,
+		isRunning:              false,
+		webhookClient:          webhook.NewClient(10 * time.Second),
+		useV2:                  true, // V2 서비스 사용
+	}
+}
+
+// SetUseV2 enables or disables V2 service usage
+func (w *WorkerService) SetUseV2(useV2 bool) {
+	w.mu.Lock()
+	defer w.mu.Unlock()
+	w.useV2 = useV2
+	log.Printf("🔧 V2 서비스 사용 설정: %v", useV2)
 }
 
 // Start starts the worker service with specified number of workers
@@ -151,10 +183,21 @@ func (w *WorkerService) processJobWithRetry(workerID int) error {
 	w.schedulerService.redisClient.Set(workerKey, "processing", 30*time.Second)
 	defer w.schedulerService.redisClient.Set(workerKey, "idle", 30*time.Second)
 
-	// Try to get a job with timeout
-	jobData, err := w.schedulerService.redisClient.PopFromQueue(OrderJobQueue)
-	if err != nil {
-		return fmt.Errorf("failed to pop job from queue: %v", err)
+	// 두 큐를 번갈아가며 체크 (Shopee, Qoo10JP)
+	queues := []string{OrderJobQueue, Qoo10JPOrderJobQueue}
+	var jobData string
+	var err error
+
+	for _, queue := range queues {
+		jobData, err = w.schedulerService.redisClient.PopFromQueue(queue)
+		if err != nil {
+			log.Printf("워커 %d: ⚠️ 큐 %s 접근 실패: %v", workerID, queue, err)
+			continue
+		}
+		if jobData != "" {
+			log.Printf("워커 %d: 📥 큐 '%s'에서 작업 수신", workerID, queue)
+			break
+		}
 	}
 
 	if jobData == "" {
@@ -232,7 +275,8 @@ func (w *WorkerService) processN8NMessage(workerID int, msg *models.N8NOrderMess
 	var collectErr error
 
 	// 플랫폼별 주문 수집 처리
-	if msg.Platform == "shopee" {
+	switch msg.Platform {
+	case "shopee":
 		// Shopee 주문 수집
 		log.Printf("워커 %d: 🛒 Shopee 주문 수집 시작", workerID)
 
@@ -243,10 +287,10 @@ func (w *WorkerService) processN8NMessage(workerID int, msg *models.N8NOrderMess
 			// 최근 15일간 주문 수집 (Shopee API 제한)
 			endDate := time.Now()
 			startDate := endDate.AddDate(0, 0, -15)
-			
-			log.Printf("워커 %d: 📅 수집 기간: %s ~ %s (Partner ID: %d)", workerID, 
+
+			log.Printf("워커 %d: 📅 수집 기간: %s ~ %s (Partner ID: %d)", workerID,
 				startDate.Format("2006-01-02"), endDate.Format("2006-01-02"), w.cfg.Shopee.PartnerID)
-			
+
 			// .env에서 읽은 고정 partner_id 사용
 			collectErr = w.shopeeOrderService.CollectOrders(startDate, endDate, msg.ShopID, w.cfg.Shopee.PartnerID, msg.AccessToken)
 
@@ -272,9 +316,74 @@ func (w *WorkerService) processN8NMessage(workerID int, msg *models.N8NOrderMess
 				log.Printf("워커 %d: ✅ Shopee 주문 수집 완료 (%d건)", workerID, savedCount)
 			}
 		}
-	} else {
-		// 다른 플랫폼은 아직 미구현
-		log.Printf("워커 %d: ⏸️  플랫폼 '%s' 주문 수집 로직 대기 중", workerID, msg.Platform)
+
+	case "qoo10jp":
+		// Qoo10JP 주문 수집
+		log.Printf("워커 %d: 🛒 Qoo10JP 주문 수집 시작 (V2: %v)", workerID, w.useV2)
+
+		// 최근 30일간 주문 수집
+		endDate := time.Now()
+		startDate := endDate.AddDate(0, 0, -30)
+
+		log.Printf("워커 %d: 📅 수집 기간: %s ~ %s (계정: %s)", workerID,
+			startDate.Format("2006-01-02"), endDate.Format("2006-01-02"), msg.AccountName)
+
+		// V2 서비스 사용 여부에 따라 분기
+		if w.useV2 && w.qoo10jpOrderServiceV2 != nil {
+			// V2 서비스 사용 (seller_id 기반)
+			sellerID := msg.SellerID
+			if sellerID == "" {
+				sellerID = msg.AccountID // 호환성을 위해 AccountID 사용
+			}
+
+			result, err := w.qoo10jpOrderServiceV2.CollectOrdersForShop(sellerID, startDate, endDate)
+			if err != nil {
+				collectErr = err
+				log.Printf("워커 %d: ❌ Qoo10JP V2 주문 수집 실패: %v", workerID, err)
+			} else {
+				savedCount = result.TotalSaved + result.TotalUpdated
+				log.Printf("워커 %d: ✅ Qoo10JP V2 주문 수집 완료 (수집: %d, 저장: %d, 업데이트: %d, 건너뜀: %d)",
+					workerID, result.TotalCollected, result.TotalSaved, result.TotalUpdated, result.TotalSkipped)
+			}
+		} else {
+			// 기존 서비스 사용 (Legacy)
+			certKey := msg.CertificationKey
+			apiID := msg.APIID
+
+			if certKey == "" || apiID == "" {
+				collectErr = fmt.Errorf("Qoo10JP api_id 또는 certification_key가 없습니다")
+				log.Printf("워커 %d: ❌ %v", workerID, collectErr)
+			} else {
+				// Qoo10JP 주문 수집 실행
+				collectErr = w.qoo10jpOrderService.CollectOrders(startDate, endDate, msg.AccountID)
+
+				if collectErr != nil {
+					log.Printf("워커 %d: ❌ Qoo10JP 주문 수집 실패: %v", workerID, collectErr)
+				} else {
+					// 수집된 주문 개수 조회
+					filter := models.Qoo10JPOrderFilter{
+						PlatformAccountID: msg.AccountID,
+						StartDate:         &startDate,
+						EndDate:           &endDate,
+						Limit:             1000,
+					}
+
+					orders, err := w.qoo10jpOrderService.GetOrders(filter)
+					if err != nil {
+						log.Printf("워커 %d: ⚠️ 수집된 주문 조회 실패: %v", workerID, err)
+						savedCount = 0
+					} else {
+						savedCount = len(orders)
+					}
+
+					log.Printf("워커 %d: ✅ Qoo10JP 주문 수집 완료 (%d건)", workerID, savedCount)
+				}
+			}
+		}
+
+	default:
+		// 지원하지 않는 플랫폼
+		log.Printf("워커 %d: ⚠️ 지원하지 않는 플랫폼: '%s'", workerID, msg.Platform)
 		time.Sleep(500 * time.Millisecond)
 	}
 

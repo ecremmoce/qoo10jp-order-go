@@ -7,7 +7,7 @@ import (
 	"fmt"
 	"io"
 	"net/http"
-	"shopee-order-go/internal/config"
+	"qoo10jp-order-go/internal/config"
 	"strings"
 	
 	_ "github.com/lib/pq"

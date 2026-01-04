@@ -2,7 +2,7 @@ package api
 
 import (
 	"net/http"
-	"shopee-order-go/internal/services"
+	"qoo10jp-order-go/internal/services"
 	"time"
 
 	"github.com/gin-gonic/gin"

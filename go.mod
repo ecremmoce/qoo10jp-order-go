@@ -1,4 +1,4 @@
-module shopee-order-go
+module qoo10jp-order-go
 
 go 1.21
 
